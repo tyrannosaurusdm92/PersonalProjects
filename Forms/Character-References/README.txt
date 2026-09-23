@@ -9,8 +9,6 @@ https://tyrannosaurusdm92.github.io/PersonalProjects/Forms/Character-References/
 Entry point:
 index.html
 
-There is only one HTML file. The site opens normally at the GitHub Pages URL.
+Private administration remains available only by adding #admin to the public URL.
 
-The private administrator interface remains behind #admin and is not linked from the visitor-facing interface. Administrator authentication uses the backend one-time email code.
-
-The frontend uses the existing Apps Script endpoint for form schema, submissions, browser-based response editing, administrator authentication, response review and deletion, notification settings, and reference-only PDF export.
+The Apps Script deployment used by the form is configured in js/reference-app.js.

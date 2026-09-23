@@ -807,3 +807,6 @@ body.document-viewer-open{overflow:hidden}
 @media (max-width:760px){#merged-luxury-editorial__website-surface .admin-settings-grid{grid-template-columns:1fr}#merged-luxury-editorial__website-surface .edit-panel{grid-template-columns:1fr}#merged-luxury-editorial__website-surface .copy-row{grid-template-columns:1fr}}
 
 
+#merged-luxury-editorial__website-surface .backend-form-description summary{cursor:pointer;font-weight:900}
+#merged-luxury-editorial__website-surface .schema-description{margin-top:12px}
+#merged-luxury-editorial__website-surface .schema-description p{white-space:pre-wrap}

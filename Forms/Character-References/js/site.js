@@ -32,12 +32,9 @@ function activatePage(id,push=true){
   STORE.set('retroUniversal.activePage',id);
   if(push){
     setAdminHashVisibility(false);
-    const hash=String(location.hash||'');
-    if(hash==='#admin'){
+    if(location.hash==='#admin'){
       history.replaceState(null,'',location.pathname+location.search);
       window.dispatchEvent(new Event('hashchange'));
-    } else if(!/^#(?:home|about|resources|contact)$/.test(hash)){
-      history.replaceState(null,'',location.pathname+location.search);
     }
   }
   window.scrollTo({top:0,behavior:'instant'});
