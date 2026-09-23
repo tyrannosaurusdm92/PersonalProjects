@@ -4,7 +4,7 @@
 const API_URL='https://script.google.com/macros/s/AKfycbxdSerHFZpaNKTx4__lhms9jxzMkkG5CvrRTEQB51XHObqlgoFDl7JcLNSvSQB7RqQpdw/exec';
 const FORM_ID='will-saville-references';
 const EXPECTED_FIELDS=['name','pronouns','contactInfo','howIKnowWilliam','howLongKnown','characterDescription','otherDetails'];
-const SESSION_KEY='willReferences.adminSession.v2.1';
+const SESSION_KEY='willReferences.adminSession';
 const EDIT_KEYS=Object.freeze({responseId:'gf.responseId',editToken:'gf.editToken',response:'gf.responseDraft'});
 let backendSchema=null;
 const PACKET_DOCS_KEY='willReferences.packetDocuments.v2';
@@ -78,12 +78,23 @@ async function checkBackend(){
   const status=$('#backend-status');
   try{
     const [health,schema]=await Promise.all([apiGet('health'),apiGet('form.schema')]);
-    const keys=(schema.form?.fields||[]).map(f=>f.key);
-    const matches=schema.form?.id===FORM_ID && EXPECTED_FIELDS.every((k,i)=>keys[i]===k);
+    const fields=Array.isArray(schema.form?.fields)?schema.form.fields:[];
+    const keys=fields.map(f=>f.key);
+    const fieldContract=schema.form?.id===FORM_ID && keys.length===EXPECTED_FIELDS.length && EXPECTED_FIELDS.every((key,index)=>keys[index]===key);
     const edit=schema.form?.editing||{};
     const storage=edit.storageHint||{};
-    const capabilities=health.version==='2.1.0' && health.apiVersion==='2026-09-23.forms.v2.1' && health.adminEmailConfigured===true && health.rootFolderConfigured===true && health.responseEditingAllowed===true && health.adminDeleteSupported===true && schema.form?.responseEditingAllowed===true && edit.mode==='browser-memory-edit-token' && edit.responderMayUpdate===true && edit.responderMayDelete===false && edit.adminMayDelete===true && edit.loadAction==='response.loadForEdit' && edit.submitAction==='form.submit' && storage.responseId===EDIT_KEYS.responseId && storage.editToken===EDIT_KEYS.editToken && storage.response===EDIT_KEYS.response;
-    if(!matches||!capabilities)throw new Error('The form service does not match the expected response contract.');
+    const editContract=(schema.form?.responseEditingAllowed!==false) &&
+      (!edit.mode || edit.mode==='browser-memory-edit-token') &&
+      (edit.responderMayUpdate!==false) &&
+      (edit.responderMayDelete!==true) &&
+      (edit.adminMayDelete!==false) &&
+      (!edit.loadAction || edit.loadAction==='response.loadForEdit') &&
+      (!edit.submitAction || edit.submitAction==='form.submit') &&
+      (!storage.responseId || storage.responseId===EDIT_KEYS.responseId) &&
+      (!storage.editToken || storage.editToken===EDIT_KEYS.editToken) &&
+      (!storage.response || storage.response===EDIT_KEYS.response);
+    const serviceContract=health && health.adminEmailConfigured!==false && health.rootFolderConfigured!==false && health.responseEditingAllowed!==false && health.adminDeleteSupported!==false;
+    if(!fieldContract || !editContract || !serviceContract)throw new Error('The form service does not match the expected response contract.');
     backendSchema=schema.form;
     applyFormSchema(backendSchema);
     if(status){
@@ -94,7 +105,7 @@ async function checkBackend(){
     return {health,schema};
   }catch(err){
     if(status){
-      status.innerHTML='<span class="status-dot" aria-hidden="true"></span>The reference form is configured, but this browser could not complete a live connection check. If submission fails, please try again later.';
+      status.innerHTML='<span class="status-dot" aria-hidden="true"></span>The reference form could not confirm a live connection. Please try again before submitting.';
       status.dataset.state='pending';
       status.title=String(err&&err.message||err);
     }
@@ -122,6 +133,8 @@ function applyFormSchema(formSchema){
       label.append(document.createTextNode(field.label+(field.required?' ':'')));
       if(field.required){const mark=document.createElement('span');mark.className='required-mark';mark.textContent='*';label.append(mark);}
     }
+    const help=card?.querySelector('.help-text');
+    if(help&&field.help)help.textContent=field.help;
     input.required=!!field.required;
     if(field.type==='dropdown'&&Array.isArray(field.options)&&input.tagName==='SELECT'){
       const current=input.value;
@@ -419,7 +432,7 @@ function renderDocumentLoaders(){
   if(!host)return;
   host.innerHTML=packetDocuments.filter(d=>d.include!==false && String(d.sourceUrl||'').trim()).map((d,i)=>`<article class="document-loader-card" data-doc-id="${escapeHtml(d.id)}">
     <div class="document-loader-head"><div class="document-loader-title"><span class="document-type-badge">${d.kind==='image'?'IMAGE':'PDF'}</span><div><span class="mini">Attachment ${String(i+1).padStart(2,'0')}</span><h3>${escapeHtml(d.label)}</h3></div></div><div class="attachment-label">Grab from Drive: <strong>${escapeHtml(d.attachmentName)}</strong></div></div>
-    <p>${escapeHtml(d.highlights||'Supporting housing document.')}</p>
+    <p>${escapeHtml(d.highlights||'Supporting document for the housing reference packet.')}</p>
     <div class="document-loader-frame">${d.kind==='image'?`<img src="${escapeHtml(documentPreviewUrl(d))}" alt="Preview of ${escapeHtml(d.label)}" loading="lazy"/>`:`<iframe src="${escapeHtml(documentPreviewUrl(d))}" title="Preview of ${escapeHtml(d.label)}" loading="lazy"></iframe>`}</div>
     <div class="button-row"><button type="button" data-view-source-doc="${escapeHtml(d.id)}">View fullscreen</button><a class="button secondary" href="${escapeHtml(d.sourceUrl)}" target="_blank" rel="noopener">Open in Drive</a></div>
   </article>`).join('');
@@ -454,7 +467,7 @@ function autoAttachFiles(files){
     if(!target)target=packetDocuments.find(d=>!packetFiles.has(d.id) && (normalizeFileName(d.attachmentName).includes(key)||key.includes(normalizeFileName(d.attachmentName))));
     if(!target){
       const label=file.name.replace(/\.[^.]+$/,'').replace(/[_-]+/g,' ').replace(/\s+/g,' ').trim();
-      target=addPacketDocument({label,kind:inferKindFromFile(file),attachmentName:file.name,highlights:'Supporting housing document included with the final references.'});
+      target=addPacketDocument({label,kind:inferKindFromFile(file),attachmentName:file.name,highlights:'Supporting document included in the final housing reference packet.'});
       created++;
     }
     assignPacketFile(target.id,file);attached++;
@@ -637,7 +650,7 @@ async function buildFinalPacket(selectedOnly){
     const w=createPdfWriter(pdf,font,bold);
     w.page();
     w.heading('Andrew Blake-Newton (Will Saville) References',{size:23,after:6});
-    w.line('Housing references and supporting documents',{size:12,fontFace:bold,color:w.colors.teal,gap:8});
+    w.line('Character references and supporting records',{size:12,fontFace:bold,color:w.colors.teal,gap:8});
     w.paragraph(`Prepared ${new Date().toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'})}. This packet begins with ${responses.length} character reference${responses.length===1?'':'s'}. After the references, there are short summaries of the supporting records, followed by the full documents in the order selected for this packet.`,{size:10,color:w.colors.muted,after:14});
     w.rule();
     w.heading('Packet order',{size:14});
@@ -724,7 +737,8 @@ async function loadAdminSettings(){
   if(!session)return;
   try{
     const data=await apiPost({action:'admin.settings.get',sessionToken:session.sessionToken});
-    const box=$('#admin-notifications');if(box)box.checked=!!data.sendResponseNotifications;
+    const box=$('#admin-notifications');
+    if(box)box.checked=!!data.sendResponseNotifications;
     setStatus($('#admin-settings-status'),'Notification setting loaded.','success');
   }catch(err){
     if(/session|auth/i.test(String(err&&err.message||err))){clearAdminSession();adminUiState('email');}
@@ -851,10 +865,12 @@ function bindPageLinks(){
   }));
 }
 
-window.addEventListener('DOMContentLoaded',()=>{
+function initApplication(){
   initializePublicFeatures();
   if(location.hash==='#admin')initAdmin();
-});
+}
+
+window.addEventListener('DOMContentLoaded',initApplication);
 window.addEventListener('hashchange',()=>{
   if(location.hash==='#admin')initAdmin();
 });

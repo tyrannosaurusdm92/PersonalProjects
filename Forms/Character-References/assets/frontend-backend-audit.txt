@@ -1,0 +1,39 @@
+FRONTEND / BACKEND AUDIT
+
+Frontend entry file:
+index.html
+
+Backend deployment:
+https://script.google.com/macros/s/AKfycbxdSerHFZpaNKTx4__lhms9jxzMkkG5CvrRTEQB51XHObqlgoFDl7JcLNSvSQB7RqQpdw/exec
+
+Expected form ID:
+will-saville-references
+
+Expected response fields, in order:
+1. name
+2. pronouns
+3. contactInfo
+4. howIKnowWilliam
+5. howLongKnown
+6. characterDescription
+7. otherDetails
+
+Browser editing keys:
+- gf.responseId
+- gf.editToken
+- gf.responseDraft
+
+Frontend actions:
+- health
+- form.schema
+- form.submit
+- response.loadForEdit
+- admin.requestCode
+- admin.verifyCode
+- admin.listResponses
+- admin.deleteResponse
+- admin.exportPdf
+- admin.settings.get
+- admin.settings.update
+- admin.logout
+

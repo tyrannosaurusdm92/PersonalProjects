@@ -1,18 +1,12 @@
 FINAL PACKET WORKFLOW
 
-1. Open index.html with #admin at the end of the address.
-2. Sign in with the one-time code sent by the form system.
-3. Refresh the collected references and select the references you want, or use all references.
-4. Drag the supporting-document rows into the order you want.
-5. Download the matching PDFs or images from Google Drive and attach them to the organizer.
-6. Check that every included document shows as attached.
-7. Build the final packet.
+1. Open index.html#admin.
+2. Sign in with the administrator email and one-time code.
+3. Load the saved character references.
+4. Attach the PDFs or images you want included.
+5. Drag the document cards into the final order.
+6. Build the final packet from selected references or all references.
 
-FINAL PDF ORDER
+The final packet places character references first, followed by document summaries, then the full supporting documents in the organizer order.
 
-1. Cover
-2. Character references
-3. Supporting-document summaries
-4. Full supporting PDFs and images in organizer order
-
-Reference writers can update their own response from the same browser while its saved editing access is still present. The combined packet is built in the browser. Supporting files attached in the organizer are not uploaded to Apps Script.
+A reference writer can update the same response from the same browser while its saved editing access remains available. Reference writers cannot delete submissions. Administrator tools can review and delete responses, manage notification emails, create a reference-only PDF, and build the final packet.

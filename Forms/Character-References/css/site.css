@@ -799,12 +799,10 @@ body.document-viewer-open{overflow:hidden}
 #merged-luxury-editorial__website-surface .admin-setting-card h4{margin:0 0 8px}
 #merged-luxury-editorial__website-surface .settings-toggle{display:flex;align-items:flex-start;gap:8px;margin:0 0 10px}
 #merged-luxury-editorial__website-surface .settings-toggle input{width:auto;margin-top:3px}
-#merged-luxury-editorial__website-surface .copy-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px;align-items:stretch}
-#merged-luxury-editorial__website-surface .copy-row button{min-width:72px}
 #merged-luxury-editorial__website-surface .response-admin-actions{justify-content:flex-end}
 #merged-luxury-editorial__website-surface button.danger{background:#8F2D2D!important;color:#FFF!important;border-color:#5E1515!important;box-shadow:none!important}
 #merged-luxury-editorial__website-surface button.danger:hover{filter:brightness(1.05)}
-@media (max-width:760px){#merged-luxury-editorial__website-surface .admin-settings-grid{grid-template-columns:1fr}#merged-luxury-editorial__website-surface .edit-panel{grid-template-columns:1fr}#merged-luxury-editorial__website-surface .copy-row{grid-template-columns:1fr}}
+@media (max-width:760px){#merged-luxury-editorial__website-surface .admin-settings-grid{grid-template-columns:1fr}#merged-luxury-editorial__website-surface .edit-panel{grid-template-columns:1fr}}
 
 
 #merged-luxury-editorial__website-surface .backend-form-description summary{cursor:pointer;font-weight:900}

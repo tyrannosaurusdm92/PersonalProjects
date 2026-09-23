@@ -1,19 +1,26 @@
-FRONTEND SYSTEM NOTES
+CHARACTER REFERENCES FRONTEND NOTES
 
-GitHub Pages URL:
+Public entry:
 https://tyrannosaurusdm92.github.io/PersonalProjects/Forms/Character-References/
 
-Frontend entry point:
-index.html
+Frontend:
+- One HTML file: index.html
+- Static GitHub Pages deployment
+- Existing Apps Script backend URL is configured in js/reference-app.js
+- #admin opens the private administrator area
 
-Public behavior
-- The site opens directly from its ordinary GitHub Pages URL.
-- Public navigation uses the four existing site pages inside the single HTML document.
+Public backend actions used:
+- health
+- form.schema
+- form.submit
+- response.loadForEdit
 
-Private administrator behavior
-- #admin remains the private administrator route.
-- Administrator sign-in uses the backend one-time email code.
-- Admin can review responses, delete responses, control response-notification emails, export reference-only PDFs, and build combined local packets with supporting documents.
-
-Backend endpoint
-https://script.google.com/macros/s/AKfycbxdSerHFZpaNKTx4__lhms9jxzMkkG5CvrRTEQB51XHObqlgoFDl7JcLNSvSQB7RqQpdw/exec
+Private backend actions used after administrator sign-in:
+- admin.requestCode
+- admin.verifyCode
+- admin.listResponses
+- admin.deleteResponse
+- admin.exportPdf
+- admin.settings.get
+- admin.settings.update
+- admin.logout

@@ -1,14 +1,15 @@
-WILL REFERENCES - GITHUB PAGES FRONTEND
+Andrew Blake-Newton (Will Saville) References
 
-Upload the contents of this folder to:
-PersonalProjects/Forms/Character-References/
-
-Public site:
+GitHub Pages:
 https://tyrannosaurusdm92.github.io/PersonalProjects/Forms/Character-References/
 
-Entry point:
-index.html
+Files:
+- index.html
+- css/site.css
+- js/site.js
+- js/reference-app.js
+- assets/
 
-Private administration remains available only by adding #admin to the public URL.
-
-The Apps Script deployment used by the form is configured in js/reference-app.js.
+The public site uses index.html only.
+The private administrator area remains available through #admin.
+The frontend uses the existing Google Apps Script backend configured in js/reference-app.js.
