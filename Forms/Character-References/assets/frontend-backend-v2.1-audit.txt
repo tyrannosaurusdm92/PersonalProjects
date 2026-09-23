@@ -1,33 +1,25 @@
-FRONTEND / BACKEND V2.1 CONTRACT AUDIT
+FRONTEND / BACKEND CORE CONTRACT AUDIT
 
-Backend source of truth
-Version: 2.1.0
-API version: 2026-09-23.forms.v2.1
-Build revision: reference-forms-clone-github-pages-six-digit-share-link-2026-09-23
-Deployment URL: https://script.google.com/macros/s/AKfycbxdSerHFZpaNKTx4__lhms9jxzMkkG5CvrRTEQB51XHObqlgoFDl7JcLNSvSQB7RqQpdw/exec
-GitHub Pages base: https://tyrannosaurusdm92.github.io/PersonalProjects/Forms/Character-References/
+GitHub Pages URL:
+https://tyrannosaurusdm92.github.io/PersonalProjects/Forms/Character-References/
 
-Public API actions matched
+Single frontend entry point: index.html
+
+Frontend actions
 - health
 - form.schema
-- share.validate
 - form.submit
 - response.loadForEdit
-
-Admin API actions matched
 - admin.requestCode
 - admin.verifyCode
 - admin.listResponses
 - admin.deleteResponse
 - admin.exportPdf
-- admin.shareLink.get
-- admin.shareLink.create
-- admin.shareLink.rotate
 - admin.settings.get
 - admin.settings.update
 - admin.logout
 
-Form fields matched in backend order
+Response fields
 - name
 - pronouns
 - contactInfo
@@ -36,29 +28,9 @@ Form fields matched in backend order
 - characterDescription
 - otherDetails
 
-Browser edit storage matched
+Browser edit storage
 - gf.responseId
 - gf.editToken
 - gf.responseDraft
 
-Share-link behavior matched
-- 6 decimal digits
-- GitHub Pages hash routing
-- share.validate before visitor interface is shown
-- unlimited uses
-- no expiration
-- rotation invalidates the previous code
-- page navigation preserves the active six-digit share hash
-- #admin is reserved for the private administrator interface
-
-GitHub Pages behavior
-- index.html is the only HTML file and is present at the folder root because the backend generates a folder-root share URL.
-- .nojekyll is included for plain static hosting.
-
-Frontend-only tools retained
-- linked PDF and image readers
-- fullscreen document viewer
-- PDF/image organizer
-- local final-packet builder
-
-The Apps Script backend source is intentionally not included in this frontend package.
+The public site uses its ordinary GitHub Pages address. The private administrator interface remains available through #admin.

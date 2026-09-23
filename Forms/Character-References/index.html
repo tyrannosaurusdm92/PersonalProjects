@@ -6,34 +6,9 @@
 <meta name="color-scheme" content="dark light"/>
 <meta name="description" content="Character and housing reference statement portal for Andrew Blake-Newton, who goes by Will Saville."/>
 <title>Andrew Blake-Newton (Will Saville) References</title>
-<script>
-(()=>{
-  const injected=(window.__GF_SHARE_CONTEXT__&&typeof window.__GF_SHARE_CONTEXT__==='object')?String(window.__GF_SHARE_CONTEXT__.shareToken||''):'';
-  const hash=String(location.hash||'');
-  document.documentElement.dataset.shareState=hash==='#admin'?'admin':(/^#(?:share=)?\d{6}$/.test(hash)||/^\d{6}$/.test(injected)?'checking':'missing');
-})();
-</script>
-<style>
-html[data-share-state="checking"] #merged-luxury-editorial__website-surface,
-html[data-share-state="missing"] #merged-luxury-editorial__website-surface,
-html[data-share-state="invalid"] #merged-luxury-editorial__website-surface{visibility:hidden}
-</style>
 <link rel="stylesheet" href="css/site.css"/>
 </head>
 <body data-merged-surface="website">
-<div id="share-access-gate" class="share-access-gate" role="dialog" aria-modal="true" aria-labelledby="share-access-title">
-  <div class="share-access-card">
-    <span class="mini">Private reference link</span>
-    <h1 id="share-access-title">Open the reference form</h1>
-    <p>This page uses the six-digit code included in the private link I shared with you.</p>
-    <form id="share-access-form">
-      <label for="share-access-code">Six-digit access code</label>
-      <input id="share-access-code" name="shareCode" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="000000" required/>
-      <button id="share-access-submit" type="submit">Open reference form</button>
-    </form>
-    <p id="share-access-status" class="form-status" aria-live="polite">Checking the private link...</p>
-  </div>
-</div>
 <div class="merged-luxury-surface merged-luxury-surface--website" data-mode="light" data-theme="luxury" id="merged-luxury-editorial__website-surface">
 <nav aria-label="Master site navigation" class="master-nav" id="web-luxury-editorial-desktop-shell--masterNav">
   <div class="master-bar"><button aria-expanded="true" aria-label="Drag master navigation" class="master-handle" id="web-luxury-editorial-desktop-shell--masterHandle" title="Drag to move master navigation" type="button">✥</button><div class="master-current" id="web-luxury-editorial-desktop-shell--masterCurrent">01 · Start</div><button aria-label="Toggle light/dark mode" aria-pressed="false" class="master-mode-toggle" id="web-luxury-editorial-desktop-shell--masterModeToggle" title="Switch to dark mode" type="button">☾</button><button aria-expanded="true" class="master-toggle" id="web-luxury-editorial-desktop-shell--masterToggle" title="Collapse navigation" type="button">-</button></div>
@@ -102,10 +77,9 @@ html[data-share-state="invalid"] #merged-luxury-editorial__website-surface{visib
         <div class="admin-toolbar"><button id="admin-refresh" type="button">Refresh responses</button><button class="secondary" id="admin-logout" type="button">Sign out</button><label><input id="admin-select-all" type="checkbox"/> Select all references</label></div>
         <p><strong>Responses:</strong> <span id="admin-response-count">0</span></p>
         <section class="admin-v2-tools" aria-labelledby="admin-v2-title">
-          <div class="packet-builder-head"><div><span class="mini">Form settings</span><h3 id="admin-v2-title">Sharing and notifications</h3><p>Manage response notifications and the private share link used for this form.</p></div></div>
+          <div class="packet-builder-head"><div><span class="mini">Form settings</span><h3 id="admin-v2-title">Response notifications</h3><p>Choose whether a notification email is sent when a reference is submitted or updated.</p></div></div>
           <div class="admin-settings-grid">
-            <div class="admin-setting-card"><h4>Response notifications</h4><label class="settings-toggle"><input id="admin-notifications" type="checkbox"/> Email me when a response is submitted or updated</label><button id="admin-save-settings" type="button">Save notification setting</button><p id="admin-settings-status" class="form-status" aria-live="polite"></p></div>
-            <div class="admin-setting-card"><h4>Share link</h4><p class="small-print">Backend 2.1 uses one reusable six-digit code in the GitHub Pages URL. Rotating the code invalidates the previous shared link.</p><label for="admin-published-url">Published GitHub Pages URL</label><input id="admin-published-url" type="url" inputmode="url" placeholder="https://tyrannosaurusdm92.github.io/PersonalProjects/Forms/Character-References/"/><div class="button-row"><button id="admin-share-create" type="button">Create or update share link</button><button class="secondary" id="admin-share-refresh" type="button">Refresh share status</button><button class="secondary" id="admin-share-rotate" type="button">Rotate six-digit code</button></div><label for="admin-share-code">Current access code</label><input id="admin-share-code" type="text" inputmode="numeric" readonly placeholder="Not configured"/><label for="admin-share-link">Current share link</label><div class="copy-row"><input id="admin-share-link" type="text" readonly placeholder="Not configured"/><button class="secondary" id="admin-share-copy" type="button">Copy</button></div><p id="admin-share-meta" class="small-print"></p><p id="admin-share-note" class="small-print"></p><p id="admin-share-status" class="form-status" aria-live="polite"></p></div>
+            <div class="admin-setting-card"><h4>Email notifications</h4><label class="settings-toggle"><input id="admin-notifications" type="checkbox"/> Email me when a response is submitted or updated</label><button id="admin-save-settings" type="button">Save notification setting</button><p id="admin-settings-status" class="form-status" aria-live="polite"></p></div>
           </div>
         </section>
         <section class="packet-builder" aria-labelledby="packet-builder-title">

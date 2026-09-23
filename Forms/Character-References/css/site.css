@@ -807,19 +807,3 @@ body.document-viewer-open{overflow:hidden}
 @media (max-width:760px){#merged-luxury-editorial__website-surface .admin-settings-grid{grid-template-columns:1fr}#merged-luxury-editorial__website-surface .edit-panel{grid-template-columns:1fr}#merged-luxury-editorial__website-surface .copy-row{grid-template-columns:1fr}}
 
 
-/* GitHub Pages six-digit share access */
-.share-access-gate[hidden]{display:none!important}
-.share-access-gate{position:fixed;inset:0;z-index:100000;display:grid;place-items:center;padding:20px;background:linear-gradient(145deg,#0B2D38,#164B58);color:#17324D}
-.share-access-card{width:min(520px,100%);padding:28px;background:#F7FCFB;border:2px solid #79CDD0;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,.42)}
-.share-access-card h1{margin:.3rem 0 .75rem;font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.08}
-.share-access-card p{line-height:1.6}
-.share-access-card form{display:grid;gap:10px;margin-top:18px}
-.share-access-card label{font-weight:800}
-.share-access-card input{width:100%;min-height:52px;padding:10px 12px;border:1px solid #79CDD0;border-radius:5px;background:#FFF;color:#17324D;font:inherit;font-size:1.15rem;letter-spacing:.12em}
-.share-access-card button{min-height:48px}
-html[data-share-state="valid"] #merged-luxury-editorial__website-surface,html[data-share-state="admin"] #merged-luxury-editorial__website-surface{visibility:visible}
-
-html[data-share-state="admin"] .share-access-gate,html[data-share-state="valid"] .share-access-gate{display:none!important}
-#merged-luxury-editorial__website-surface .backend-form-description summary{cursor:pointer;font-weight:900}
-#merged-luxury-editorial__website-surface .schema-description{margin-top:12px}
-#merged-luxury-editorial__website-surface .schema-description p{white-space:pre-wrap}

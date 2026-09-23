@@ -1,8 +1,7 @@
 (()=>{
 'use strict';
 
-const SHARE_CONTEXT=(window.__GF_SHARE_CONTEXT__&&typeof window.__GF_SHARE_CONTEXT__==='object')?window.__GF_SHARE_CONTEXT__:{};
-const API_URL=String(SHARE_CONTEXT.backendUrl||'https://script.google.com/macros/s/AKfycbxdSerHFZpaNKTx4__lhms9jxzMkkG5CvrRTEQB51XHObqlgoFDl7JcLNSvSQB7RqQpdw/exec');
+const API_URL='https://script.google.com/macros/s/AKfycbxdSerHFZpaNKTx4__lhms9jxzMkkG5CvrRTEQB51XHObqlgoFDl7JcLNSvSQB7RqQpdw/exec';
 const FORM_ID='will-saville-references';
 const EXPECTED_FIELDS=['name','pronouns','contactInfo','howIKnowWilliam','howLongKnown','characterDescription','otherDetails'];
 const SESSION_KEY='willReferences.adminSession.v2.1';
@@ -80,11 +79,10 @@ async function checkBackend(){
   try{
     const [health,schema]=await Promise.all([apiGet('health'),apiGet('form.schema')]);
     const keys=(schema.form?.fields||[]).map(f=>f.key);
-    const matches=schema.form?.id===FORM_ID && EXPECTED_FIELDS.every((k,i)=>keys[i]===k);
+    const matches=schema.form?.id===FORM_ID && EXPECTED_FIELDS.length===keys.length && EXPECTED_FIELDS.every((k,i)=>keys[i]===k);
     const edit=schema.form?.editing||{};
     const storage=edit.storageHint||{};
-    const share=schema.form?.shareAccess||{};
-    const capabilities=health.version==='2.1.0' && health.apiVersion==='2026-09-23.forms.v2.1' && health.buildRevision==='reference-forms-clone-github-pages-six-digit-share-link-2026-09-23' && health.adminEmailConfigured===true && health.rootFolderConfigured===true && health.responseEditingAllowed===true && health.shareLinkSupported===true && health.adminDeleteSupported===true && schema.form?.responseEditingAllowed===true && edit.mode==='browser-memory-edit-token' && edit.responderMayUpdate===true && edit.responderMayDelete===false && edit.adminMayDelete===true && edit.loadAction==='response.loadForEdit' && edit.submitAction==='form.submit' && storage.responseId===EDIT_KEYS.responseId && storage.editToken===EDIT_KEYS.editToken && storage.response===EDIT_KEYS.response && share.codeLength===6 && share.urlStyle==='github-pages-hash' && share.publicBaseUrl==='https://tyrannosaurusdm92.github.io/PersonalProjects/Forms/Character-References/' && share.validateAction==='share.validate' && share.unlimitedUses===true && share.expires===false;
+    const capabilities=health.adminEmailConfigured===true && health.rootFolderConfigured===true && health.responseEditingAllowed===true && health.adminDeleteSupported===true && schema.form?.responseEditingAllowed===true && edit.mode==='browser-memory-edit-token' && edit.responderMayUpdate===true && edit.responderMayDelete===false && edit.adminMayDelete===true && edit.loadAction==='response.loadForEdit' && edit.submitAction==='form.submit' && storage.responseId===EDIT_KEYS.responseId && storage.editToken===EDIT_KEYS.editToken && storage.response===EDIT_KEYS.response;
     if(!matches||!capabilities)throw new Error('The form service does not match the expected response contract.');
     backendSchema=schema.form;
     applyFormSchema(backendSchema);
@@ -730,26 +728,8 @@ async function buildFinalPacket(selectedOnly){
   }catch(err){setStatus(status,String(err&&err.message||err),'error');}
 }
 
-function renderShareState(share){
-  share=share||{};
-  const published=$('#admin-published-url');
-  const code=$('#admin-share-code');
-  const link=$('#admin-share-link');
-  const meta=$('#admin-share-meta');
-  const note=$('#admin-share-note');
-  if(published&&share.publishedTargetUrl)published.value=share.publishedTargetUrl;
-  if(code)code.value=share.shareCode||'';
-  if(link)link.value=share.shareLink||'';
-  if(meta){
-    const host=share.shareLinkHost||'GitHub Pages';
-    const digits=Number(share.shareCodeDigits||6);
-    meta.textContent=`Host: ${host}. Access code: ${digits} digits. Uses do not expire or run out. ${share.configured?'The current code is active.':'No active code is configured yet.'}`;
-  }
-  if(note)note.textContent=share.note||'';
-  const rotate=$('#admin-share-rotate');
-  const copy=$('#admin-share-copy');
-  if(rotate)rotate.disabled=!share.configured;
-  if(copy)copy.disabled=!share.shareLink;
+function adminSettingsStatusMessage(enabled){
+  return enabled?'Response notification emails are enabled.':'Response notification emails are disabled.';
 }
 
 async function loadAdminSettings(){
@@ -758,8 +738,7 @@ async function loadAdminSettings(){
   try{
     const data=await apiPost({action:'admin.settings.get',sessionToken:session.sessionToken});
     const box=$('#admin-notifications');if(box)box.checked=!!data.sendResponseNotifications;
-    renderShareState(data.shareLink);
-    setStatus($('#admin-settings-status'),`Form settings loaded.`,'success');
+    setStatus($('#admin-settings-status'),'Notification setting loaded.','success');
   }catch(err){
     if(/session|auth/i.test(String(err&&err.message||err))){clearAdminSession();adminUiState('email');}
     setStatus($('#admin-settings-status'),String(err&&err.message||err),'error');
@@ -773,54 +752,8 @@ async function saveAdminSettings(){
   try{
     const data=await apiPost({action:'admin.settings.update',sessionToken:session.sessionToken,sendResponseNotifications:enabled});
     const box=$('#admin-notifications');if(box)box.checked=!!data.sendResponseNotifications;
-    renderShareState(data.shareLink);
-    setStatus(status,data.sendResponseNotifications?'Response notification emails are enabled.':'Response notification emails are disabled.','success');
+    setStatus(status,adminSettingsStatusMessage(!!data.sendResponseNotifications),'success');
   }catch(err){setStatus(status,String(err&&err.message||err),'error');}
-}
-
-async function loadShareLink(){
-  const session=getAdminSession();if(!session){adminUiState('email');return;}
-  const status=$('#admin-share-status');setStatus(status,'Refreshing share-link status...','pending');
-  try{
-    const data=await apiPost({action:'admin.shareLink.get',sessionToken:session.sessionToken});
-    renderShareState(data);
-    setStatus(status,data.configured?'Share-link status refreshed.':'No share link is configured yet.','success');
-  }catch(err){setStatus(status,String(err&&err.message||err),'error');}
-}
-
-function normalizePublishedUrl(value){
-  const raw=String(value||'').trim();
-  if(!raw)return '';
-  try{
-    const url=new URL(raw);
-    if(url.protocol!=='https:')return raw;
-    url.hash='';url.search='';
-    url.pathname=url.pathname.replace(/(?:index|form)\.html?$/i,'');
-    if(!url.pathname.endsWith('/'))url.pathname+='/';
-    return url.toString();
-  }catch(_){return raw;}
-}
-
-async function updateShareLink(rotate=false){
-  const session=getAdminSession();if(!session){adminUiState('email');return;}
-  const status=$('#admin-share-status');
-  const publishedUrl=normalizePublishedUrl($('#admin-published-url')?.value||'');
-  if($('#admin-published-url'))$('#admin-published-url').value=publishedUrl;
-  if(!publishedUrl){setStatus(status,'Enter the published GitHub Pages HTTPS URL first.','error');return;}
-  setStatus(status,rotate?'Rotating share link...':'Creating or updating share link...','pending');
-  try{
-    const data=await apiPost({action:rotate?'admin.shareLink.rotate':'admin.shareLink.create',sessionToken:session.sessionToken,publishedUrl});
-    renderShareState(data);
-    setStatus(status,rotate?'Share link rotated. The previous share link is no longer valid.':'Share link is configured.','success');
-  }catch(err){setStatus(status,String(err&&err.message||err),'error');}
-}
-
-async function copyShareLink(){
-  const value=String($('#admin-share-link')?.value||'').trim();
-  const status=$('#admin-share-status');
-  if(!value){setStatus(status,'No share link is available to copy.','error');return;}
-  try{await navigator.clipboard.writeText(value);setStatus(status,'Share link copied.','success');}
-  catch(_){const input=$('#admin-share-link');input?.select();document.execCommand?.('copy');setStatus(status,'Share link selected. Copy it from the field if the browser blocked automatic copying.','success');}
 }
 
 async function deleteAdminResponse(responseId,name){
@@ -894,10 +827,6 @@ function initAdmin(){
   $('#admin-back-email')?.addEventListener('click',()=>{adminUiState('email');setStatus(status,'');});
   $('#admin-refresh')?.addEventListener('click',()=>Promise.all([loadResponses(),loadAdminSettings()]));
   $('#admin-save-settings')?.addEventListener('click',saveAdminSettings);
-  $('#admin-share-create')?.addEventListener('click',()=>updateShareLink(false));
-  $('#admin-share-refresh')?.addEventListener('click',loadShareLink);
-  $('#admin-share-rotate')?.addEventListener('click',()=>updateShareLink(true));
-  $('#admin-share-copy')?.addEventListener('click',copyShareLink);
   $('#packet-export-selected')?.addEventListener('click',()=>buildFinalPacket(true));
   $('#packet-export-all')?.addEventListener('click',()=>buildFinalPacket(false));
   $('#admin-export-selected')?.addEventListener('click',()=>exportPdf(true));
@@ -916,35 +845,6 @@ function initAdmin(){
 }
 
 let publicInitialized=false;
-function shareCodeFromLocation(){
-  const injected=String(SHARE_CONTEXT.shareToken||'').trim();
-  if(/^\d{6}$/.test(injected))return injected;
-  const raw=String(location.hash||'').replace(/^#/,'').replace(/^share=/i,'').trim();
-  return /^\d{6}$/.test(raw)?raw:'';
-}
-function setShareState(state,message=''){
-  document.documentElement.dataset.shareState=state;
-  const gate=$('#share-access-gate');
-  const status=$('#share-access-status');
-  if(gate)gate.hidden=state==='valid'||state==='admin';
-  if(status&&message)setStatus(status,message,state==='invalid'?'error':'pending');
-}
-async function validateShareAccess(code){
-  code=String(code||'').trim();
-  if(!/^\d{6}$/.test(code)){setShareState('missing','Enter the six-digit code from the private share link.');return false;}
-  setShareState('checking','Checking the private link...');
-  try{
-    const data=await apiGet('share.validate',{code});
-    if(data.valid!==true){setShareState('invalid','This share link is invalid or has been replaced.');return false;}
-    setShareState('valid');
-    initializePublicFeatures();
-    return true;
-  }catch(err){
-    setShareState('invalid','The access code could not be verified right now. Please try the link again in a moment.');
-    const status=$('#share-access-status');if(status)status.title=String(err&&err.message||err);
-    return false;
-  }
-}
 function initializePublicFeatures(){
   if(publicInitialized)return;
   publicInitialized=true;
@@ -953,21 +853,6 @@ function initializePublicFeatures(){
   initReferenceForm();
   initPacketOrganizer();
   checkBackend();
-}
-function initShareAccess(){
-  const form=$('#share-access-form');
-  const input=$('#share-access-code');
-  form?.addEventListener('submit',async e=>{
-    e.preventDefault();
-    const code=String(new FormData(form).get('shareCode')||'').trim();
-    if(!/^\d{6}$/.test(code)){setShareState('missing','Enter all six digits from the private share link.');return;}
-    history.replaceState(null,'',`${location.pathname}${location.search}#${code}`);
-    await validateShareAccess(code);
-  });
-  const code=shareCodeFromLocation();
-  if(location.hash==='#admin'){setShareState('admin');initializePublicFeatures();initAdmin();return;}
-  if(code){if(input)input.value=code;validateShareAccess(code);return;}
-  setShareState('missing','Enter the six-digit code from the private share link.');
 }
 
 function bindPageLinks(){
@@ -979,11 +864,13 @@ function bindPageLinks(){
   }));
 }
 
-window.addEventListener('DOMContentLoaded',initShareAccess);
+function initApplication(){
+  initializePublicFeatures();
+  if(location.hash==='#admin')initAdmin();
+}
+
+window.addEventListener('DOMContentLoaded',initApplication);
 window.addEventListener('hashchange',()=>{
-  if(location.hash==='#admin'){setShareState('admin');initializePublicFeatures();initAdmin();return;}
-  const code=shareCodeFromLocation();
-  if(code){validateShareAccess(code);return;}
-  setShareState('missing','Enter the six-digit code from the private share link.');
+  if(location.hash==='#admin')initAdmin();
 });
 })();

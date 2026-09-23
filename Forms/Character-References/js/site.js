@@ -33,11 +33,10 @@ function activatePage(id,push=true){
   if(push){
     setAdminHashVisibility(false);
     const hash=String(location.hash||'');
-    const isShareCode=/^#(?:share=)?\d{6}$/.test(hash);
     if(hash==='#admin'){
       history.replaceState(null,'',location.pathname+location.search);
       window.dispatchEvent(new Event('hashchange'));
-    } else if(!isShareCode && !/^#(?:home|about|resources|contact)$/.test(hash)){
+    } else if(!/^#(?:home|about|resources|contact)$/.test(hash)){
       history.replaceState(null,'',location.pathname+location.search);
     }
   }
