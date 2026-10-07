@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" data-profile="william">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>William | OurSpace</title>
+<link rel="manifest" href="json/shared/manifest.json">
+<link rel="stylesheet" href="css/site/profile.css">
+<link rel="stylesheet" href="css/site/support-shell-host.css">
+<link rel="stylesheet" href="css/module/journal-module.css">
+<link rel="stylesheet" href="css/module/journal-notes-addon.css">
+<link rel="stylesheet" href="css/module/journal-accessibility-addon.css">
+<link rel="stylesheet" href="css/module/journal-suite.css">
+<link rel="stylesheet" href="css/module/media-player.css">
+<link rel="stylesheet" href="css/module/visual-player.css">
+<link rel="stylesheet" href="css/module/skills-library.css">
+<link rel="stylesheet" href="css/module/retro-layout-fixes.css">
+<link rel="stylesheet" href="css/draft18-lifecycle.css">
+<link rel="stylesheet" href="css/draft24-resilience-accessibility.css">
+<link rel="stylesheet" href="css/draft33-persistent-content.css">
+</head>
+<body data-profile="william">
+<a class="skip-link" href="#mainContent">Skip to profile content</a>
+<div class="site-shell">
+<header class="site-header">
+  <div class="header-main">
+    <a class="brand" href="#profileTop" aria-label="OurSpace"><img src="assets/images/Logo_Ourspace.png" alt="OurSpace"></a>
+    <div class="account-heading"><h1 data-live="displayName">William</h1><p><span data-live="handle">@william</span> · profile on OurSpace</p></div>
+    <div class="owner-actions private-only" hidden><button id="publicPreviewBtn" type="button">View public profile</button><button id="saveBtn" type="button" class="secondary">Save</button><button id="installProfileApp" type="button" class="secondary" hidden>Install app</button><button id="signOutBtn" type="button" class="dark">Sign out</button></div>
+  </div>
+  <nav class="private-nav private-only" hidden aria-label="Private account areas">
+    <button class="active" type="button" data-nav="home">Home</button><button type="button" data-nav="messenger">Messenger</button><button type="button" data-nav="mental">Mental Health</button><button type="button" data-nav="games">Games</button><button type="button" data-nav="store">Store</button>
+  </nav>
+</header>
+
+<main id="mainContent" class="profile-layout">
+<aside class="sidebar" id="profileTop">
+  <section class="module">
+    <div class="module-head"><h2 data-live="displayName">William</h2><span class="spark">✦</span></div>
+    <div class="module-body">
+      <div class="profile-photo-wrap">
+        <div class="profile-photo"><img id="profilePhotoImg" alt="William's profile image" hidden><div id="photoEmpty" class="empty-photo"><b>Profile image</b><br><span class="private-only">Choose one image below.</span><span class="public-only" hidden>No profile image added yet.</span></div></div>
+        <div class="upload-row private-only" hidden><label class="upload-button">📷 Choose profile image<input id="profileImageInput" type="file" accept="image/*"></label><button id="removeProfileImage" type="button">Remove</button></div>
+      </div>
+      <ul class="stats"><li><b>Handle:</b> <span data-live="handle">@william</span></li><li><b>Status:</b> <span data-live="status">Online</span></li><li><b>Pronouns:</b> <span data-live="pronouns">—</span></li><li><b>Location:</b> <span data-live="location">—</span></li></ul>
+    </div>
+  </section>
+  <section class="module private-only" hidden>
+    <div class="module-head"><h2>Account tools</h2><span class="spark">✦</span></div>
+    <div class="module-body"><div class="button-row"><button id="exportBtn" type="button">Export JSON</button><button id="resetBtn" class="danger" type="button">Reset</button></div><p class="tiny muted">Private account controls are only rendered in the owner view. Public profile loads remove them from the live page.</p></div>
+  </section>
+  <section class="module private-only" hidden>
+    <div class="module-head"><h2>Profile identity</h2><span class="spark">✦</span></div>
+    <div class="module-body field-grid"><label class="field full">Display name<input data-bind="profile.displayName"></label><label class="field full">Handle<input data-bind="profile.handle"></label><label class="field">Status<input data-bind="profile.status"></label><label class="field">Pronouns<input data-bind="profile.pronouns" placeholder="Optional"></label><label class="field full">Location<input data-bind="profile.location" placeholder="Optional"></label></div>
+  </section>
+</aside>
+
+<section class="main-column">
+  <div class="private-only" hidden>
+    <section class="page active" data-page="home">
+      <section class="module"><div class="module-head"><h2>Profile + Journal</h2><span class="spark">✦</span></div><p class="module-note">This is the private owner side of the same MySpace-style profile account.</p><div class="module-body">
+        <div class="field-grid"><label class="field full">Profile tagline<input data-bind="profile.tagline"></label><label class="field full">About me<textarea rows="6" data-bind="profile.about"></textarea></label><label class="field">Current mood<input data-bind="profile.mood"></label><label class="field">Currently<input data-bind="profile.currently"></label></div>
+      </div></section>
+      <section class="module" id="journalSuiteCard"><div class="module-head"><h2>Private Journal + Notes</h2><span class="spark">✎</span></div><p class="module-note">Full private journal suite with folders, categories, organizer-style notes and checklists, attachments/import/export, scanning/OCR, and text-to-speech.</p><div class="module-body"><div id="ourspaceJournalSuite" data-ourspace-journal-suite data-profile="william"></div></div></section>
+      <section class="module" id="musicVisualCard" data-home-media-shell><div class="module-head"><h2>Music + Visual Player</h2><span class="spark">♫</span></div><p class="module-note">Your personal audio library and picture/video library live together here. Games can pause active media without changing the libraries.</p><div class="module-body">
+        <div class="tabs" data-home-media-tabs role="tablist" aria-label="Music and visual player"><button class="active" type="button" role="tab" aria-selected="true" data-home-media-tab="audio">Music Player</button><button type="button" role="tab" aria-selected="false" data-home-media-tab="visual">Pictures + Videos</button></div>
+        <div data-home-media-pane="audio" class="active"><div id="ourspace-media-module" data-ourspace-audio-player data-profile="william"></div></div>
+        <div data-home-media-pane="visual" hidden><div id="ourspace-visual-module" data-ourspace-visual-player data-profile="william"></div></div>
+      </div></section>
+      <section class="module"><div class="module-head"><h2>Public Links Manager</h2><span class="spark">↗</span></div><p class="module-note">Make Linktree-style groups with a link name, URL, description, and custom ordering.</p><div class="module-body"><div id="linksEditor"></div><button id="addSectionBtn" type="button" class="secondary">＋ Add section</button></div></section>
+    </section>
+
+    <section class="page immersive-page" data-page="messenger">
+      <div class="iframe-toolbar"><b>Messenger</b><span class="iframe-toolbar-note">OurSpace Messenger · 97% full-page profile iframe</span><button id="fullscreenMessenger" type="button">Fullscreen Messenger</button></div>
+      <div class="iframe-stage"><iframe id="messengerFrame" class="messenger-frame" src="assets/messenger.html?profile=william" title="OurSpace Messenger for William" allow="fullscreen; autoplay; camera; microphone; display-capture" loading="eager"></iframe></div>
+    </section>
+
+    <section class="page immersive-page" data-page="mental">
+      <div class="immersive-tabs-overlay">
+        <div class="tabs" aria-label="Mental Health sections"><button class="active" data-mental-tab="onyx" type="button">Onyx</button><button data-mental-tab="diary" type="button">Diary Card</button><button data-mental-tab="skills" type="button">Skills</button></div>
+      </div>
+      <div class="tab-pane active immersive-frame-pane" data-tab-group="mental" data-pane-group="mental" data-pane="onyx">
+        <div class="iframe-toolbar"><b>Onyx</b><span class="iframe-toolbar-note">97% full-page profile iframe</span><button id="fullscreenOnyx" type="button">Fullscreen Onyx</button></div>
+        <div class="iframe-stage"><iframe id="onyxFrame" class="onyx-frame" src="assets/onyx_william.html?embedded=ourspace&profile=william" title="Onyx virtual companion for William" allow="fullscreen; autoplay" loading="eager"></iframe></div>
+      </div>
+      <div class="tab-pane immersive-frame-pane" data-tab-group="mental" data-pane-group="mental" data-pane="diary">
+        <div class="iframe-toolbar"><b>Diary Card</b><span class="iframe-toolbar-note">DBT diary card · 97% full-page profile iframe</span><button id="fullscreenDiary" type="button">Fullscreen Diary Card</button></div>
+        <div class="iframe-stage"><iframe id="diaryFrame" class="diary-frame" src="assets/william_dbt.html?profile=william" title="William's DBT diary card" allow="fullscreen" loading="eager"></iframe></div>
+      </div>
+      <div class="tab-pane standard-pane" data-tab-group="mental" data-pane-group="mental" data-pane="skills">
+        <section class="module" id="skillsLibraryCard">
+          <div class="module-head"><h2>Skills · Handouts · Worksheets</h2><span class="spark">✦</span></div>
+          <p class="module-note">Search the pinned AI-Brain resource library. HTML resources are prioritized, and converted worksheet/handout records remain readable and printable. Saved items stay specific to this profile.</p>
+          <div class="module-body skills-library" data-skills-library>
+            <div class="skills-toolbar">
+              <label class="skills-search-field">Search the directory<input id="skillsLibrarySearch" type="search" autocomplete="off" placeholder="Try DBT, time blindness, grounding, autism, planning…"></label>
+              <label>Category<select id="skillsCategory"><option value="all">All categories</option></select></label>
+              <label>Type<select id="skillsType"><option value="all">All resource types</option><option value="html">HTML</option><option value="worksheet">Worksheet</option><option value="handout">Handout</option><option value="printable">Printable</option><option value="skill">Skill</option><option value="guide">Guide</option><option value="assessment">Assessment</option><option value="resource">Other resource</option></select></label>
+            </div>
+            <div class="skills-view-row"><button id="skillsAllBtn" class="active" type="button">All resources</button><button id="skillsSavedBtn" type="button">★ Saved</button><span id="skillsCount" class="skills-count" role="status" aria-live="polite">Loading directory…</span></div>
+            <div id="skillsLibraryGrid" class="skills-library-grid" aria-live="polite"></div>
+          </div>
+        </section>
+        <dialog id="skillsReader" class="skills-reader-dialog">
+          <div class="skills-reader-shell">
+            <div class="skills-reader-head"><div><small id="skillsReaderMeta"></small><h2 id="skillsReaderTitle">Resource</h2></div><button id="skillsReaderClose" type="button" aria-label="Close resource">×</button></div>
+            <div class="skills-reader-actions"><button id="skillsReaderSave" type="button">☆ Save</button><button id="skillsReaderPrint" type="button">Print</button><button id="skillsReaderDownload" type="button">Download</button><a id="skillsReaderSource" class="button secondary" target="_blank" rel="noopener noreferrer">View source</a></div>
+            <div id="skillsReaderStatus" class="notice" role="status" aria-live="polite">Choose a resource.</div>
+            <iframe id="skillsReaderFrame" title="Skills resource reader" referrerpolicy="no-referrer"></iframe>
+          </div>
+        </dialog>
+      </div>
+    </section>
+
+    <section class="page immersive-page" data-page="games">
+      <div class="iframe-toolbar"><b>Games</b><span class="iframe-toolbar-note">LifeHelpers / Games · 97% full-page iframe</span><button id="fullscreenGame" type="button">Fullscreen Games</button></div>
+      <div class="iframe-stage"><iframe id="gameFrame" class="game-frame" src="about:blank" data-games-sibling="../Games/index.html" data-games-remote="https://tyrannosaurusdm92.github.io/LifeHelpers/Games/index.html" title="LifeHelpers Games" allow="fullscreen; autoplay; gamepad" loading="eager"></iframe></div>
+    </section>
+
+    <section class="page" data-page="store">
+      <section class="module profile-store-shell" data-profile-store>
+        <div class="module-head"><h2 id="storeTitle">Store</h2><span class="spark">🪙</span></div>
+        <p class="module-note" id="storeSubtitle">Fake OurSpace currency only. No real-money checkout.</p>
+        <div class="module-body">
+          <div class="profile-store-overview">
+            <div><h3 id="storeHeroTitle">Store</h3><p id="storeHeroText"></p></div>
+            <div class="profile-store-balance"><span>Balance</span><div id="storeWallet" class="wallet" aria-live="polite"></div><button id="storeRefreshBalance" type="button">Refresh</button></div>
+          </div>
+          <div id="storeBuyerNote" class="notice"></div>
+          <div id="storeStatus" class="notice" hidden role="status" aria-live="polite"></div>
+          <div class="profile-store-toolbar" aria-label="Store filters">
+            <label>Search<input id="storeSearch" type="search" placeholder="Search this store…" autocomplete="off"></label>
+            <label>Category<select id="storeCategory"><option value="all">All categories</option></select></label>
+            <label>Sort<select id="storeSort"><option value="featured">Featured order</option><option value="name">Name</option><option value="category">Category</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></label>
+            <label class="profile-store-check"><input id="storeAffordable" type="checkbox"> Only show affordable</label>
+          </div>
+          <div class="profile-store-summary"><span id="storeCount">0 items</span><span id="storeConnection">Catalog mode</span></div>
+          <div id="storeProducts" class="store-grid" aria-live="polite"></div>
+          <button id="storeLoadMore" type="button" class="secondary">Load more</button>
+          <hr>
+          <h3>Your cart</h3>
+          <div id="storeCartList" class="profile-store-cart-list"></div>
+          <div class="profile-store-total"><b>Total</b><strong id="storeCartTotal">0 copper</strong></div>
+          <button id="storeCheckout" type="button">Checkout with fake currency</button>
+          <hr>
+          <h3>Recent orders</h3>
+          <div id="storeOrdersList" class="profile-store-orders"></div>
+        </div>
+      </section>
+      <div id="storeCheckoutModal" class="profile-store-modal" hidden>
+        <div class="profile-store-dialog" role="dialog" aria-modal="true" aria-labelledby="storeCheckoutTitle">
+          <div class="module-head"><h2 id="storeCheckoutTitle">Confirm OurSpace order</h2><span class="spark">✦</span></div>
+          <div class="module-body">
+            <div id="storeCheckoutSummary"></div>
+            <label>Fulfillment note / link / size / preference<textarea id="storeOrderNote" rows="5" placeholder="Add anything your partner needs to fulfill this request."></textarea></label>
+            <p class="tiny muted">No real payment details belong here. This creates only an in-site fulfillment receipt.</p>
+            <div class="button-row"><button id="storeCancelCheckout" type="button" class="secondary">Cancel</button><button id="storePlaceOrder" type="button">Place fake-currency order</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="public-only" hidden>
+    <section class="module" id="publicProfile"><div class="module-head"><h2>About me</h2><span class="spark">✦</span></div><div class="module-body"><div class="owner-card"><h1 class="profile-name" data-live="displayName">William</h1><div class="handle">@<span data-live="handlePlain">william</span></div><p class="tagline" data-live="tagline"></p><div class="pill-row"><span class="pill">Mood: <span data-live="mood">—</span></span><span class="pill">Currently: <span data-live="currently">—</span></span></div><hr><div class="about" data-live="about"></div></div></div></section>
+    <section class="module" id="publicMusic"><div class="module-head"><h2>Music</h2><span class="spark">♫</span></div><div class="module-body"><div class="media-shell"><div id="musicTitlePublic" class="media-title">Featured track</div><div id="musicArtistPublic" class="media-meta"></div><div id="musicEmpty" class="media-empty">No public track has been added yet.</div><audio id="musicPlayer" controls preload="metadata" hidden></audio></div></div></section>
+    <section class="module" id="publicVisual"><div class="module-head"><h2>Visuals</h2><span class="spark">▣</span></div><div class="module-body"><div class="media-shell"><div id="visualTitlePublic" class="media-title">Featured visual</div><div id="visualEmpty" class="media-empty">No public visual has been added yet.</div><img id="visualImage" alt="Featured profile visual" hidden><video id="visualVideo" controls playsinline preload="metadata" hidden></video><p id="visualCaptionPublic" class="media-meta"></p></div></div></section>
+    <section class="module" id="publicLinks"><div class="module-head"><h2>Links</h2><span class="spark">↗</span></div><div class="module-body"><div id="publicLinksRoot" class="links-public"></div></div></section>
+  </div>
+</section>
+</main>
+<div id="statusLine" class="status-line private-only" hidden>OurSpace profile account ready.</div>
+<footer class="site-footer"><img src="assets/images/Logo_Ourspace.png" alt="OurSpace"><p>OurSpace</p></footer>
+</div>
+<script id="profileConfig" type="application/json">{"displayName": "William", "handle": "@william", "pronouns": "", "location": "", "tagline": "Welcome to my profile on OurSpace.", "about": "Writer, worldbuilder, developer, TTRPG creator, cat dad, and professional weirdo."}</script>
+<script src="script/js/site/config.js"></script>
+<script src="script/js/site/backend-client.js"></script>
+<script src="script/js/draft20-state-core.js"></script>
+<script src="script/js/draft20-currency-inventory.js"></script>
+<script src="script/js/draft20-backend-adapter.js"></script>
+<script src="script/js/draft20-save-migration.js"></script>
+<script src="script/js/draft20-drive-resolver.js"></script>
+<script src="script/js/draft21-commerce-studio-bridge.js"></script>
+<script src="script/js/site/site-runtime.js"></script>
+<script src="script/js/site/profile-backend-sync.js"></script>
+<script src="script/js/site/profile-modules.js"></script>
+<script src="script/js/module/ourspace-module-backend.js"></script>
+<script src="script/js/module/media-player.js"></script>
+<script src="script/js/module/visual-player.js"></script>
+<script src="script/js/module/journal-module.js"></script>
+<script src="script/js/module/journal-notes-addon.js"></script>
+<script src="script/js/module/journal-accessibility-addon.js"></script>
+<script src="script/js/module/journal-suite.js"></script>
+<script src="script/js/module/ourspace-media-coordinator.js"></script>
+<script src="script/js/module/ourspace-module-bridge.js"></script>
+<script src="script/js/module/ourspace-currency-core.js"></script>
+<script src="script/js/module/ourspace-game-currency-bridge.js"></script>
+<script src="script/js/site/game-bridge.js"></script>
+<script src="script/js/site/profile.js"></script>
+<script src="script/js/module/skills-library.js"></script>
+<script src="script/js/site/pwa.js"></script>
+<script src="script/js/site/admin-hash.js"></script>
+<script src="script/js/site/backend-capabilities.js"></script>
+<script src="script/js/draft18-shell-lifecycle.js"></script>
+<script src="script/js/site/support-shell-host.js"></script>
+<script src="script/js/draft19-support-shell.js"></script>
+<script src="script/js/draft20-shell-bridge.js"></script>
+<script src="script/js/draft23-whole-site-coherence.js"></script>
+<script src="script/js/draft24-runtime-resilience.js"></script>
+<script src="script/js/draft25-release-baseline.js"></script>
+<script src="script/js/draft26-release-baseline.js"></script>
+<script src="script/js/draft27-release-baseline.js"></script>
+<script src="script/js/draft28-release-baseline.js"></script>
+<script src="script/js/draft29-release-baseline.js"></script>
+<script src="script/js/draft30-release-baseline.js"></script>
+<script src="script/js/draft31-runtime-reconciliation.js"></script>
+<script src="script/js/draft33/persistent-content.js"></script>
+<script src="script/js/draft33/content-controls-ui.js"></script>
+<script src="script/js/draft33/profile-content-controls.js"></script>
+<script src="script/js/draft33/runtime-reconciliation.js"></script>
+</body>
+</html>
