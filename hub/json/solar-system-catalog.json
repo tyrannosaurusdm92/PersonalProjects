@@ -1,0 +1,496 @@
+{
+  "planets": [
+    {
+      "type": "planet",
+      "name": "Surixoch-Aresu",
+      "class": "Small rocky planet",
+      "au": 0.2814,
+      "km": "42.1 million km",
+      "periodDays": 35.76,
+      "periodYears": "0.149 years",
+      "rings": false,
+      "mag": "-1.8",
+      "ra": "02h 18m 44s",
+      "dec": "+12° 41′",
+      "colors": [
+        "Copper",
+        "rust",
+        "ochre"
+      ],
+      "features": "Dust basins, bright volcanic ridges, scarlet haze",
+      "appearance": "Copper-red body with golden dust storms",
+      "region": "Major World"
+    },
+    {
+      "type": "planet",
+      "name": "Mardukesh-Huitra",
+      "class": "Rocky greenhouse planet",
+      "au": 0.4891,
+      "km": "73.2 million km",
+      "periodDays": 82.08,
+      "periodYears": "0.342 years",
+      "rings": false,
+      "mag": "-3.2",
+      "ra": "04h 51m 03s",
+      "dec": "-04° 19′",
+      "colors": [
+        "Pearl",
+        "jade",
+        "pale gold"
+      ],
+      "features": "Dense cloud ocean, green auroral bands",
+      "appearance": "Pearl-white clouds with green polar glows",
+      "region": "Major World"
+    },
+    {
+      "type": "planet",
+      "name": "Aza'ra",
+      "class": "Flat circular life-bearing disc world sealed beneath the Veil",
+      "au": 1.0,
+      "km": "149.6 million km",
+      "periodDays": 240,
+      "periodYears": "1.00 Aza'raan year",
+      "rings": false,
+      "mag": "—",
+      "ra": "—",
+      "dec": "—",
+      "colors": [
+        "ocean blue",
+        "forest green",
+        "cloud white"
+      ],
+      "features": "Four major continents—Dakaroth, Arzuhan, Tzaphaer, and Belavadös—plus interior seas, mountain belts, floating islands fully trapped below the Veil, a heavy fractured outer rim, and a jagged conical underside tapering into a crystal spike. Nothing passes through the Veil.",
+      "appearance": "A vast flat ocean world beneath a luminous blue Veil dome, with four richly varied continents, mountain chains, cities and floating islands above the surface, a thick broken rocky rim, and a twisting obsidian-and-crystal underside split by orange-violet fractures into a long central spike.",
+      "region": "Major World",
+      "diameter": "~27,060 km",
+      "circumference": "~85,000 km",
+      "surfaceArea": "~850–900 million km²",
+      "earthDiameterScale": "~2.12× Earth"
+    },
+    {
+      "type": "planet",
+      "name": "Vishtecu-Hyperu",
+      "class": "Large rocky / mini-Neptune",
+      "au": 1.88,
+      "km": "281.2 million km",
+      "periodDays": 2846.4,
+      "periodYears": "11.86",
+      "rings": true,
+      "mag": "+1.1",
+      "ra": "09h 33m 58s",
+      "dec": "+07° 52′",
+      "colors": [
+        "Amber",
+        "rose",
+        "bronze"
+      ],
+      "features": "Smooth haze, golden storms",
+      "appearance": "Amber world with rose-gold rings",
+      "region": "Major World"
+    },
+    {
+      "type": "planet",
+      "name": "Enlimitra",
+      "class": "Gas giant",
+      "au": 2.47,
+      "km": "369.5 million km",
+      "periodDays": 7068.0,
+      "periodYears": "29.45",
+      "rings": true,
+      "mag": "+1.9",
+      "ra": "11h 42m 21s",
+      "dec": "-13° 37′",
+      "colors": [
+        "Pale green",
+        "silver",
+        "white"
+      ],
+      "features": "Soft bands, polar cloud caps",
+      "appearance": "Pale green giant with silver rings",
+      "region": "Major World"
+    },
+    {
+      "type": "planet",
+      "name": "Tlalokron-Shivae",
+      "class": "Storm giant",
+      "au": 3.92,
+      "km": "586.4 million km",
+      "periodDays": 20164.8,
+      "periodYears": "84.02",
+      "rings": false,
+      "mag": "+2.6",
+      "ra": "13h 05m 12s",
+      "dec": "-21° 14′",
+      "colors": [
+        "Indigo",
+        "white",
+        "electric blue"
+      ],
+      "features": "Lightning scars, equatorial storm chain",
+      "appearance": "Stormy indigo world with white lightning belts",
+      "region": "Major World"
+    },
+    {
+      "type": "planet",
+      "name": "Quetzal-Hermeshu",
+      "class": "Gas giant",
+      "au": 5.31,
+      "km": "794.4 million km",
+      "periodDays": 39559.2,
+      "periodYears": "164.83",
+      "rings": true,
+      "mag": "+2.2",
+      "ra": "15h 26m 40s",
+      "dec": "+03° 06′",
+      "colors": [
+        "Emerald",
+        "bronze",
+        "cream"
+      ],
+      "features": "Feather-like cloud bands",
+      "appearance": "Emerald-bronze world with tilted rings",
+      "region": "Major World"
+    },
+    {
+      "type": "planet",
+      "name": "Nannarvati-Apollatl",
+      "class": "Cold gas dwarf",
+      "au": 7.84,
+      "km": "1.17 billion km",
+      "periodDays": 1104.0,
+      "periodYears": "4.60",
+      "rings": false,
+      "mag": "+3.7",
+      "ra": "17h 49m 10s",
+      "dec": "+28° 31′",
+      "colors": [
+        "Cream",
+        "blue",
+        "gray"
+      ],
+      "features": "Braided storm lanes",
+      "appearance": "Cream-colored world with blue storm chains",
+      "region": "Marduthor Forgebelt"
+    },
+    {
+      "type": "planet",
+      "name": "Ishtarkali-Mictor",
+      "class": "Ice dwarf",
+      "au": 11.2,
+      "km": "1.68 billion km",
+      "periodDays": 59520.0,
+      "periodYears": "248.00",
+      "rings": false,
+      "mag": "+4.8",
+      "ra": "19h 13m 55s",
+      "dec": "-08° 46′",
+      "colors": [
+        "Crimson",
+        "black",
+        "wine-red"
+      ],
+      "features": "Dark polar caps, ruby haze",
+      "appearance": "Dark crimson ice giant with black polar caps",
+      "region": "Thalunesh Veil"
+    },
+    {
+      "type": "planet",
+      "name": "Varunatl-Kronu",
+      "class": "Ice dwarf",
+      "au": 17.6,
+      "km": "2.63 billion km",
+      "periodDays": 74400.0,
+      "periodYears": "310.00",
+      "rings": true,
+      "mag": "+5.3",
+      "ra": "21h 37m 02s",
+      "dec": "-26° 18′",
+      "colors": [
+        "Deep blue",
+        "white",
+        "silver"
+      ],
+      "features": "Calm cloud belts, bright storms",
+      "appearance": "Deep blue giant with broad white rings",
+      "region": "Thalunesh Veil"
+    },
+    {
+      "type": "planet",
+      "name": "Ea-Narayotl",
+      "class": "Distant ice planet",
+      "au": 25.4,
+      "km": "3.80 billion km",
+      "periodDays": 133713.6,
+      "periodYears": "557.14",
+      "rings": false,
+      "mag": "+6.4",
+      "ra": "23h 08m 49s",
+      "dec": "+15° 57′",
+      "colors": [
+        "Frost-gray",
+        "turquoise"
+      ],
+      "features": "Auroral ovals, icy storms",
+      "appearance": "Frost-gray world with turquoise auroral ovals",
+      "region": "Eirzunet Shadow Reach"
+    },
+    {
+      "type": "planet",
+      "name": "Zeushamash-Indraxi",
+      "class": "Dwarf planet",
+      "au": 38.9,
+      "km": "5.82 billion km",
+      "periodDays": 68400.0,
+      "periodYears": "285.00",
+      "rings": false,
+      "mag": "+7.1",
+      "ra": "00h 42m 31s",
+      "dec": "-31° 04′",
+      "colors": [
+        "Violet",
+        "white",
+        "charcoal"
+      ],
+      "features": "Bright icy cap, dark plains",
+      "appearance": "Remote violet dwarf world with a bright icy cap",
+      "region": "Thalunesh Veil"
+    }
+  ],
+  "moons": [
+    {
+      "type": "moon",
+      "name": "Duvaen",
+      "primary": "Aza'ra",
+      "relationship": "Sacred Morning Moon of the Triumvirate of Light; independently circles above and beneath Aza'ra",
+      "distance": "Veil-bound sacred path over and beneath the disc",
+      "orbitDistanceKm": null,
+      "orbitCharacteristics": "Continuous Veil-guided path above and below Aza'ra; rises for Ae, crosses the Belavadös path node, then descends beneath the disc",
+      "speed": "Synchronized to the 21-hour Veil day",
+      "orbitTime": "21 Aza'raan hours",
+      "appearance": "Crimson-red, Mars-like moon casting warm diffuse light powered by the Veil",
+      "notes": "Duvaen (Doo-vay-en) governs Ae, Hours 1–7. Symbolism: renewal, ambition, vitality. Its light comes from the Veil, not the dead sun.",
+      "diameter": "Not canonically specified",
+      "circumference": "Not canonically specified",
+      "volume": "Not canonically specified",
+      "mass": "Not canonically specified",
+      "relativeDiameter": "Display-scaled only",
+      "relativeCircumference": "Not canonically specified",
+      "relativeVolume": "Not canonically specified",
+      "relativeMass": "Not canonically specified",
+      "colors": [
+        "crimson",
+        "red"
+      ],
+      "rings": false
+    },
+    {
+      "type": "moon",
+      "name": "W'iosamn",
+      "primary": "Aza'ra",
+      "relationship": "Sacred Midday Moon of the Triumvirate of Light; independently circles above and beneath Aza'ra",
+      "distance": "Veil-bound sacred path over and beneath the disc",
+      "orbitDistanceKm": null,
+      "orbitCharacteristics": "Continuous Veil-guided elongated oval path above and below Aza'ra; it crosses the Belavadös path node during W’i and develops a slight localized zig-zag only near the deepest underside of its circuit.",
+      "speed": "Synchronized to the 21-hour Veil day",
+      "orbitTime": "21 Aza'raan hours",
+      "appearance": "Vast pale-silver moon, larger and brighter than Earth’s Moon, with its radiance powered by the Veil",
+      "notes": "W’iosamn (wuh-ai-ee-shahmn) governs W’i, Hours 8–14. Symbolism: clarity, balance, order. Its light comes from the Veil, not the dead sun. Its orbit is distinctly oval rather than matching Duvaen’s track.",
+      "diameter": "Larger than Earth’s Moon; exact canon diameter not specified",
+      "circumference": "Not canonically specified",
+      "volume": "Not canonically specified",
+      "mass": "Not canonically specified",
+      "relativeDiameter": "Display-scaled as a vast sacred moon",
+      "relativeCircumference": "Not canonically specified",
+      "relativeVolume": "Not canonically specified",
+      "relativeMass": "Not canonically specified",
+      "colors": [
+        "silver-white",
+        "silver"
+      ],
+      "rings": false
+    },
+    {
+      "type": "moon",
+      "name": "Arvalla",
+      "primary": "Aza'ra",
+      "relationship": "Sacred Night Moon of the Triumvirate of Light; independently circles above and beneath Aza'ra",
+      "distance": "Veil-bound sacred path over and beneath the disc",
+      "orbitDistanceKm": null,
+      "periapsisKm": null,
+      "apoapsisKm": null,
+      "eccentricity": null,
+      "inclinationDeg": 35,
+      "retrograde": true,
+      "orbitCharacteristics": "Pronounced retrograde Veil-guided path above and below Aza'ra; it crosses the Belavadös path node in reverse motion, then sweeps on a wider, more strongly tilted and warped arc distinct from the other two moons.",
+      "speed": "Synchronized to the 21-hour Veil day",
+      "orbitTime": "21 Aza'raan hours",
+      "appearance": "Massive blue-silver moon with permanent storms and multiple rings tilted 35°, glowing through power supplied by the Veil",
+      "notes": "Arvalla (Ar͡r-vah-lah) governs La, Hours 15–21. Symbolism: mystery, transformation, divine communion. Its light comes from the Veil, not the dead sun. Its sacred circuit is retrograde and intentionally does not follow the other moons’ orbital shape.",
+      "diameter": "Massive; exact canon diameter not specified",
+      "circumference": "Not canonically specified",
+      "volume": "Not canonically specified",
+      "mass": "Not canonically specified",
+      "relativeDiameter": "Display-scaled as the largest sacred moon",
+      "relativeCircumference": "Not canonically specified",
+      "relativeVolume": "Not canonically specified",
+      "relativeMass": "Not canonically specified",
+      "colors": [
+        "deep blue",
+        "silver-white"
+      ],
+      "rings": true
+    }
+  ],
+  "nebulae": [
+    {
+      "type": "nebula",
+      "name": "Âhufej — Minotaur Labyrinth of Anubaldir",
+      "ra_dec": "05h 48m / -05° 12′",
+      "distanceSpan": "1,380 ly / 38 ly",
+      "nebulaType": "Emission cradle",
+      "colors": [
+        "Rose",
+        "gold",
+        "smoke-violet"
+      ],
+      "layers": "Foreground soot lanes (900 ly), dense emission nursery (1,380 ly), red-brown rear cloud (5,800 ly)",
+      "texture": "Dense newborn stellar nursery with glowing hydrogen chambers. Rose tones arise from ionized hydrogen, gold from embedded young stars illuminating dust grains, while smoke-violet regions form where cooler molecular gas mingles with shadowed dust curtains. Texture resembles folded velvet mixed with branching smoke channels. Numerous protostars, Bok globules, and accretion knots are embedded throughout."
+    },
+    {
+      "type": "nebula",
+      "name": "Dus‘idu — Silkborn Web of Thoryn-Rahek",
+      "ra_dec": "12h 58m / +10° 44′",
+      "distanceSpan": "2,100 ly / 62 ly",
+      "nebulaType": "Supernova veil",
+      "colors": [
+        "Cyan",
+        "jade",
+        "white"
+      ],
+      "layers": "Silver strand foreground (1,100 ly), supernova shell (2,100 ly), violet mutation veil (6,200 ly)",
+      "texture": "Extremely filamentary remnant structure. Cyan and jade hues indicate oxygen-rich shock fronts while white regions mark compressed gas where multiple shock waves intersect. Texture appears as torn silk, braided tendrils, and lace-like membranes. Contains expanding ejecta sheets, ionized oxygen filaments, sulfur traces, and high-energy particle fronts."
+    },
+    {
+      "type": "nebula",
+      "name": "Ềdizfu — Dragonborn Dominion of Valkhamesh",
+      "ra_dec": "16h 18m / -31° 06′",
+      "distanceSpan": "5,600 ly / 95 ly",
+      "nebulaType": "Dark-rift flower",
+      "colors": [
+        "Magenta",
+        "blue-black",
+        "crimson"
+      ],
+      "layers": "Foreground sparks (1,800 ly), storm sheet (4,200 ly), primary rift flower (5,600 ly), violet dust rear layer (7,900 ly)",
+      "texture": "Vast petal-shaped dark nebula carved through a glowing emission field. Crimson and magenta petals surround blue-black voids where dense molecular dust blocks starlight. Texture resembles layered flower petals made of smoke and velvet. Contains cold molecular clouds, active collapse zones, dark filaments, and bright ionization ridges outlining the rift edges."
+    },
+    {
+      "type": "nebula",
+      "name": "Juçdimx — Crossroads Mask of Freyseth",
+      "ra_dec": "21h 02m / -22° 18′",
+      "distanceSpan": "3,400 ly / 74 ly",
+      "nebulaType": "Reflection and dust complex",
+      "colors": [
+        "Silver",
+        "deep blue",
+        "pearl"
+      ],
+      "layers": "Front ash layer (2,000 ly), reflective dust basin (3,400 ly), curse smoke (5,100 ly), under-road shadow (10,300 ly)",
+      "texture": "A highly reflective dust field illuminated by nearby blue stars. Silver and pearl regions arise from light scattering by fine silicate particles. Texture resembles polished frost, drifting fog banks, and layered mirror-glass sheets. Contains reflective silicate dust, carbonaceous smoke clouds, and fragmented molecular lanes."
+    },
+    {
+      "type": "nebula",
+      "name": "Jadd-Jisud — Wechselkind Crown of Setrimir",
+      "ra_dec": "00h 28m / -40° 02′",
+      "distanceSpan": "8,900 ly / 120 ly",
+      "nebulaType": "Planetary shell cluster",
+      "colors": [
+        "Red",
+        "amber",
+        "charcoal"
+      ],
+      "layers": "Metal-blue shell (2,200 ly), green shell (4,800 ly), primary red-amber shell cluster (8,900 ly), lost-key echo layer (9,600 ly)",
+      "texture": "Collection of overlapping planetary-nebula remnants. Amber and red shells arise from hydrogen and nitrogen emissions, while charcoal gaps reveal exhausted central cavities. Texture appears as stacked bubbles, fractured onion skins, and cracked glass spheres. Components include dying stellar cores, expanding gas shells, metallic ion clouds, and dusty ejecta rings."
+    },
+    {
+      "type": "nebula",
+      "name": "Horundar — Sahuagin Deep Gate of Bastveig",
+      "ra_dec": "23h 54m / +27° 36′",
+      "distanceSpan": "1,900 ly / 46 ly",
+      "nebulaType": "Reflection mist and comet reservoir",
+      "colors": [
+        "White",
+        "pale gold",
+        "ice-blue"
+      ],
+      "layers": "Tide mist (1,600 ly), reservoir core (1,900 ly), reef sheet (3,900 ly), blackwater wall (8,700 ly)",
+      "texture": "Diffuse cloud filled with icy cometary material. White and ice-blue coloration results from starlight reflecting from frozen dust and microscopic ice crystals. Texture resembles sea fog, frost plumes, and submerged currents. Rich in volatile compounds, comet embryos, crystalline ice grains, and reflective dust sheets."
+    },
+    {
+      "type": "nebula",
+      "name": "Wougen — Luma Mirror of Nephthysra",
+      "ra_dec": "13h 51m / +22° 08′",
+      "distanceSpan": "2,850 ly / 80 ly",
+      "nebulaType": "Star-forming cloud",
+      "colors": [
+        "Green-gold",
+        "cream",
+        "turquoise"
+      ],
+      "layers": "Blue foreground haze (1,200 ly), star-forming core (2,850 ly), mirror sheet (3,600 ly), rose backwash (6,300 ly)",
+      "texture": "Massive molecular cloud actively producing stellar clusters. Green-gold regions arise from mixed oxygen and dust reflection, cream tones from warm embedded stars. Texture resembles billowing cream-colored thunderheads crossed by turquoise rivers. Components include molecular hydrogen reservoirs, stellar nurseries, evaporating gas pillars, and young cluster cavities."
+    },
+    {
+      "type": "nebula",
+      "name": "Ŝiowoei — Dragonborn Dominion outer spiral",
+      "ra_dec": "09h 44m / +35° 19′",
+      "distanceSpan": "4,200 ly / 68 ly",
+      "nebulaType": "Spiral dust coil",
+      "colors": [
+        "Violet",
+        "silver",
+        "dark blue"
+      ],
+      "layers": "Silver foreground threads (2,000 ly), central spiral coil (4,200 ly), violet rear dust (7,900 ly)",
+      "texture": "A rotating spiral dust formation resembling a galactic whirlpool. Dark blue channels mark denser dust lanes while silver highlights indicate reflected starlight. Texture resembles braided ribbons, hurricane bands, and coiled smoke. Contains spiral molecular filaments, reflective silicates, and embedded star embryos tracing the coil arms."
+    }
+  ],
+  "regions": [
+    {
+      "Region": "Marduthor Forgebelt",
+      "Description": "Vast inner field of stone-rich and metal-rich celestial bodies."
+    },
+    {
+      "Region": "Thalunesh Veil",
+      "Description": "Distant realm of frozen wanderers, minor worlds, and ancient debris."
+    },
+    {
+      "Region": "Eirzunet Shadow Reach",
+      "Description": "Sparse outer frontier where isolated bodies travel immense orbital paths."
+    },
+    {
+      "Region": "Nefarokir Boundary",
+      "Description": "The furthest known limit of the star's influence."
+    },
+    {
+      "Region": "Sokhivar's Road",
+      "Description": "The great celestial plane followed by the worlds."
+    },
+    {
+      "Region": "Ishtanora Fields",
+      "Description": "Dense clusters of smaller wandering bodies."
+    },
+    {
+      "Region": "Enkirael Hosts",
+      "Description": "Swarms of companion bodies sharing larger worlds' paths."
+    },
+    {
+      "Region": "Horundar Tides",
+      "Description": "Reservoirs of long-period wanderers entering the inner system."
+    }
+  ],
+  "researchNotes": [
+    "Asteroid belts are rendered as sparse, inclined debris rings rather than dense walls; this follows NASA descriptions of most known asteroids orbiting in a main belt with many small bodies and mostly stable heliocentric paths.",
+    "Nebulae are rendered as layered gas and dust fields, with reflection/emission/supernova-remnant behavior suggested through slow drift, filaments, glow, and parallax layers."
+  ]
+}

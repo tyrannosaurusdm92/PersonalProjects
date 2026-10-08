@@ -1,0 +1,328 @@
+{
+  "name": "The Transgender T-Rex — Aza’ra integrated website",
+  "build_date": "2026-10-08",
+  "public_domain": "https://thetransgendertrex.com/",
+  "entry": "william.html",
+  "support_folder": "hub",
+  "backend": "Existing Apps Script unchanged; no backend source or endpoint packaged.",
+  "domain_configuration": "Prepared site only; actual address-bar hosting requires external host/DNS configuration.",
+  "source_files": [
+    "william(9).html",
+    "william_azara_integrated(1).zip",
+    "Azara_Solar_System_and_Constellations_Natural_Coastlines_Nebulae_v7(3).html"
+  ],
+  "original_manifest_repositories": [],
+  "assets": 29,
+  "files": [
+    {
+      "path": "hub/assets/images/azara/cloud-01-ac55fce22c.png",
+      "bytes": 26788,
+      "sha256": "ac55fce22cd0a715c0a37258bfeeae882922b28e47908e8f5600009f3fc91808"
+    },
+    {
+      "path": "hub/assets/images/azara/cloud-02-2ee20b8cd4.png",
+      "bytes": 26906,
+      "sha256": "2ee20b8cd4d1677288426601113909755f11ddf67fcb0d06791577545e312780"
+    },
+    {
+      "path": "hub/assets/images/azara/land-01-dec9ef7898.jpg",
+      "bytes": 606134,
+      "sha256": "dec9ef789874abc1976c81713fff6ddd0b7fa5b411b316eac62bab29e9618f86"
+    },
+    {
+      "path": "hub/assets/images/azara/land-02-30e4eeee6c.jpg",
+      "bytes": 566618,
+      "sha256": "30e4eeee6c549e26d18ccd9ea0735fcb88e9d656af13699c0c9b45d5a5ea2411"
+    },
+    {
+      "path": "hub/assets/images/azara/land-03-e46fbaec55.jpg",
+      "bytes": 591980,
+      "sha256": "e46fbaec550f1818c14be29dfb5ebda5b98b80751afbc1350b494ace7d1cf49c"
+    },
+    {
+      "path": "hub/assets/images/azara/meteor-01-8139927e96.jpg",
+      "bytes": 639007,
+      "sha256": "8139927e96fdd0fde98edd4e22a0700fa06934600c08f3e957c9d7ae9b1474c8"
+    },
+    {
+      "path": "hub/assets/images/azara/meteor-02-b57f85e094.jpg",
+      "bytes": 685841,
+      "sha256": "b57f85e0946b11b1c69c1071b4fe146f24df8e535fa421e726f01f2e578f5afe"
+    },
+    {
+      "path": "hub/assets/images/azara/nebula-01-5ed1699727.jpg",
+      "bytes": 1409157,
+      "sha256": "5ed16997274704bdc2733db626f0083efdd3140bc52c834de01ca672b148ba9a"
+    },
+    {
+      "path": "hub/assets/images/azara/nebula-02-f252375200.jpg",
+      "bytes": 1335213,
+      "sha256": "f2523752004f85a133714b646c2b622454cd8f662e53c45f88c67c164be5a720"
+    },
+    {
+      "path": "hub/assets/images/azara/nebula-03-525f0575f6.jpg",
+      "bytes": 1077980,
+      "sha256": "525f0575f6965edeb902a3a4f4022fe6d3d45f7ccd1a77f9d493137348038a34"
+    },
+    {
+      "path": "hub/assets/images/azara/nebula-04-4801cef4d3.jpg",
+      "bytes": 1680131,
+      "sha256": "4801cef4d3098d5146d5d755afb465f670bdee25f5617e789dc67b029dc23b59"
+    },
+    {
+      "path": "hub/assets/images/azara/nebula-05-f156ef9e93.jpg",
+      "bytes": 1227990,
+      "sha256": "f156ef9e9311e981298295bfdd5208bcbd6f6c80f4dc8d78c70a6e6e2a72204e"
+    },
+    {
+      "path": "hub/assets/images/azara/nebula-06-b12ac70b81.jpg",
+      "bytes": 1718780,
+      "sha256": "b12ac70b81c90319f2afd0482f75d888304ca17f96cd2ee17e2a528837201b02"
+    },
+    {
+      "path": "hub/assets/images/azara/nebula-07-e0191ae5df.jpg",
+      "bytes": 147228,
+      "sha256": "e0191ae5dfa30749738e30f511660a9416ad04510448f784315968590578997d"
+    },
+    {
+      "path": "hub/assets/images/azara/planet-01-603c39136e.jpg",
+      "bytes": 420493,
+      "sha256": "603c39136e969f7b3089af8997b5a5d1eeeb830b66c619845d7ed65e599c9504"
+    },
+    {
+      "path": "hub/assets/images/azara/rock-01-bb9dec59de.jpg",
+      "bytes": 371206,
+      "sha256": "bb9dec59de50aa2c199a95901805793067293263969905442752dfeae5c19fdd"
+    },
+    {
+      "path": "hub/assets/images/azara/rock-02-9566a9ab9e.jpg",
+      "bytes": 355447,
+      "sha256": "9566a9ab9e3f5111ec28620f14c32d109bd9dc6aca9698ba6fbcf336741c4799"
+    },
+    {
+      "path": "hub/assets/images/azara/rock-03-fb17647b83.jpg",
+      "bytes": 355149,
+      "sha256": "fb17647b833b2c1d299b84bb51ee3b70a384c456391bd7f7663813b8f4fd1018"
+    },
+    {
+      "path": "hub/assets/images/azara/water-01-9802a89fea.jpg",
+      "bytes": 470585,
+      "sha256": "9802a89feaffe34e78a5395bcd776dbe3fee0d5fc0015fbf9814aa24be11db52"
+    },
+    {
+      "path": "hub/assets/images/azara/water-02-028ff9a6b0.jpg",
+      "bytes": 577808,
+      "sha256": "028ff9a6b05cec4c6f538b025c4b57efbca6b48f718aa755c2e66c8e3868a4fb"
+    },
+    {
+      "path": "hub/assets/images/site/background-01-666ae3281a.svg",
+      "bytes": 1818,
+      "sha256": "666ae3281aecc8bab92c0b5b050583fb97876375ca9b5f36e67249ff0aa36f4c"
+    },
+    {
+      "path": "hub/assets/images/site/background-02-53142dbb77.svg",
+      "bytes": 1653,
+      "sha256": "53142dbb7747180ae9fa1c864c0d51c020bd78fc12b9e972ec4aa6490a8f5f2c"
+    },
+    {
+      "path": "hub/assets/images/site/background-03-17644acef8.svg",
+      "bytes": 1964,
+      "sha256": "17644acef8dc307464c72926a7861e94a65afb5b1997b25f87e9517749d3018a"
+    },
+    {
+      "path": "hub/assets/images/site/background-04-ce2526e4c7.svg",
+      "bytes": 1708,
+      "sha256": "ce2526e4c7d2a7596a4009555dc72d6f20ae628102335744c81e53a9eeaf2b30"
+    },
+    {
+      "path": "hub/assets/images/site/background-05-224dd99503.svg",
+      "bytes": 1823,
+      "sha256": "224dd995037232536af6946117402fa3cf16e65444dbf60af57edd24c1a29fb3"
+    },
+    {
+      "path": "hub/assets/images/site/background-06-9d3416c59f.svg",
+      "bytes": 1949,
+      "sha256": "9d3416c59f849daffd7b37baa332192e623cd9d57619fbce21a2c11f78828705"
+    },
+    {
+      "path": "hub/assets/images/site/background-07-bfb31c2d83.svg",
+      "bytes": 1682,
+      "sha256": "bfb31c2d831dfe51ce0cad9012b03c956a5ea66d3e4e1c7afe48972557d5c778"
+    },
+    {
+      "path": "hub/assets/images/site/background-08-018036653c.svg",
+      "bytes": 1672,
+      "sha256": "018036653c94763d04afff061b21bf46f55f408f2324b891dd15e309d4ff648d"
+    },
+    {
+      "path": "hub/assets/images/site/profile-01-e447fcdaf3.jpg",
+      "bytes": 280934,
+      "sha256": "e447fcdaf35ac4d3e8dc8bc3ce5fb670587f3cac3a37497a132313cdc401789e"
+    },
+    {
+      "path": "hub/css/constellations-01.css",
+      "bytes": 9204,
+      "sha256": "9486443d94c508b34b0a95a73b99d2d15461727b7e2e954d7cfc961398722798"
+    },
+    {
+      "path": "hub/css/constellations-02.css",
+      "bytes": 1408,
+      "sha256": "d2b94854d8d798c99768f62bd0ee86a31805176a260908be5a4bd4bf361f6da0"
+    },
+    {
+      "path": "hub/css/constellations-03.css",
+      "bytes": 1390,
+      "sha256": "3ee2a28a4d292c21e5bf224a3b457792135220900284d607ea72dcdfff3ae90a"
+    },
+    {
+      "path": "hub/css/solar-01.css",
+      "bytes": 8570,
+      "sha256": "b4b5d4174ea575d4cc45c125c4db628bcea9b2c97b529df8b38c3c2cdc929f81"
+    },
+    {
+      "path": "hub/css/solar-02.css",
+      "bytes": 7228,
+      "sha256": "debc8890d96f64742c1e32f343e0bc384f87f7090e939589a52d0ec290bf54bc"
+    },
+    {
+      "path": "hub/css/solar-03.css",
+      "bytes": 285,
+      "sha256": "cd5b68659c1da30bae7b47df896a230a87b154deaf3b681163dd042d56132eac"
+    },
+    {
+      "path": "hub/css/solar-04.css",
+      "bytes": 1408,
+      "sha256": "d2b94854d8d798c99768f62bd0ee86a31805176a260908be5a4bd4bf361f6da0"
+    },
+    {
+      "path": "hub/css/solar-05.css",
+      "bytes": 1719,
+      "sha256": "1d9e09248195a1f30cf0a63700812d3beae8c8ab2cbd84e430a892075497d1a2"
+    },
+    {
+      "path": "hub/css/solar-06.css",
+      "bytes": 103,
+      "sha256": "a58fc7b0e6e1ee61991d2c2d32f2cab16269d6096dee232efafef144a39f06b8"
+    },
+    {
+      "path": "hub/css/solar-07.css",
+      "bytes": 6505,
+      "sha256": "57d8089227e0f59ea4d263766011f9d0870d9feb1601567e3b042c45856b14be"
+    },
+    {
+      "path": "hub/css/solar-08.css",
+      "bytes": 3579,
+      "sha256": "4ea053a69ce24af0947be281d8c2378dbb9108b92b3a51113227671073cdfb41"
+    },
+    {
+      "path": "hub/css/william-01.css",
+      "bytes": 16728,
+      "sha256": "b55f82aef8131a2b6f6654651742b99e541a93ea8f597956e8b54dbc84461a4e"
+    },
+    {
+      "path": "hub/docs/asset-manifest.json",
+      "bytes": 5901,
+      "sha256": "8aab1a35edf6c9a33d9edb5b48ed725fe34a038745428e35d383890f0ba46fb6"
+    },
+    {
+      "path": "hub/docs/preservation-check.md",
+      "bytes": 1390,
+      "sha256": "11eb9ecf98cdc21b8ea659cbbe390e88eb46e43294119c777e1a7f809c3ec70b"
+    },
+    {
+      "path": "hub/docs/readme.md",
+      "bytes": 3192,
+      "sha256": "1771a45c95363119b4a810a954b002801e77e809de149e17b9183e1ac18f94f5"
+    },
+    {
+      "path": "hub/docs/repositories-used.md",
+      "bytes": 841,
+      "sha256": "3a6b826262497c0ffc964de337e820d9af0105cbd8a0edb761db234eed1d2e69"
+    },
+    {
+      "path": "hub/json/constellations-hooks.json",
+      "bytes": 12544,
+      "sha256": "6795da3c9f4c9b48d774df0fe153893ba886971a5e24cacb9a25199b0b8cd21d"
+    },
+    {
+      "path": "hub/json/constellations.json",
+      "bytes": 66298,
+      "sha256": "7dcf3dcd1a1e06b2dfeb7324b472bb88754fc729b5b8b4017b4a0a4a366a0457"
+    },
+    {
+      "path": "hub/json/solar-system-catalog.json",
+      "bytes": 19772,
+      "sha256": "4b1ea784b24d80711fb9f6d9ca186e927db5fb50cb10b09296770ff236b430f3"
+    },
+    {
+      "path": "hub/script/js/azara-textures.js",
+      "bytes": 1151,
+      "sha256": "a0a6b33b74cb3ddc11e9f2eac6f379120adee467d55dcc48b9fe0e00dd42b1ca"
+    },
+    {
+      "path": "hub/script/js/constellations-01.js",
+      "bytes": 64729,
+      "sha256": "e8ecee0acaf30c883f9f669c21ae90c8a27384836797489400793493bc269d76"
+    },
+    {
+      "path": "hub/script/js/solar-01.js",
+      "bytes": 5664,
+      "sha256": "e22601668f72a20594fb1e630f0ca968d18c408e66ec58155acb8b61f1a04277"
+    },
+    {
+      "path": "hub/script/js/solar-02.js",
+      "bytes": 90455,
+      "sha256": "b15913881552309e948ca12a4c93525ab582099b5f65cf1887cd334e62c6391f"
+    },
+    {
+      "path": "hub/script/js/solar-03.js",
+      "bytes": 1296,
+      "sha256": "4074eaebf68c380dcd2ab24e9a53a9c4f41cd8b6efe821c2e8cb3c6baacda5f8"
+    },
+    {
+      "path": "hub/script/js/solar-04.js",
+      "bytes": 8538,
+      "sha256": "088b79176f08cf832bc99e12acb0fa319962743dbbc652014b686e79f469bf03"
+    },
+    {
+      "path": "hub/script/js/solar-05.js",
+      "bytes": 1286,
+      "sha256": "16cdecee87014ead3dee5ff47ad5a1e33914095a2a0c1fe46cd6b19ea72f7b49"
+    },
+    {
+      "path": "hub/script/js/solar-06.js",
+      "bytes": 2517,
+      "sha256": "5c0f25e41be154b6aecfc89e554827afd49dbf1ecd825bbfac9ecbcc94f66afb"
+    },
+    {
+      "path": "hub/script/js/solar-07.js",
+      "bytes": 364,
+      "sha256": "9c8d1b62fb82668ec88c311aacdd49c002ba58e9cf7a84bffe0cc4cd934196f4"
+    },
+    {
+      "path": "hub/script/js/william-01.js",
+      "bytes": 15970,
+      "sha256": "c06fc4ac69d3016dc5cab98db27470d162880240e9dd898a9d4d6cc88f05124d"
+    },
+    {
+      "path": "hub/script/views/constellations.html",
+      "bytes": 189751,
+      "sha256": "26a1d56d2781ca850b978cbadedfd404d2cd02412bddd32d5cc6cb8dacdeb427"
+    },
+    {
+      "path": "hub/script/views/solar-system.html",
+      "bytes": 8791,
+      "sha256": "b126cf9ecbc1a7512ffd350e50f5c33f17d14222465078c990bfdd216334f2fa"
+    },
+    {
+      "path": "hub/script/wasm/azara-turbulence.wasm",
+      "bytes": 1112,
+      "sha256": "685ef4d85c13f7e57e65e279784bc91c253d53bee01bb61e045b20106da1ef1e"
+    },
+    {
+      "path": "william.html",
+      "bytes": 61180,
+      "sha256": "119d267f9cc7ca230c03ab6c181519916c193d3f27a6f744004da36ddfa721e0"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Aza'ra Interactive 3D Solar System</title>
+<link rel="stylesheet" href="../../css/solar-01.css">
+<link rel="stylesheet" href="../../css/solar-02.css">
+<link rel="stylesheet" href="../../css/solar-03.css">
+<link rel="stylesheet" href="../../css/solar-04.css">
+
+
+<link rel="stylesheet" href="../../css/solar-05.css">
+
+
+<link rel="stylesheet" href="../../css/solar-06.css">
+</head>
+<body>
+<!-- === Aza'ra shared global dropdown navigation / unhide patch === -->
+<link rel="stylesheet" href="../../css/solar-07.css">
+<div aria-label="Aza'ra global site navigation" id="bd-global-dropdown-nav"><div class="bdg-bar"><div class="bdg-drag-handle" title="Drag navigation">✥</div><details><summary>☰ Site Navigation</summary><div class="bdg-menu" role="menu"><button class="bdg-link" data-internal-page="solar" onclick="parent.postMessage({type:'azara-nav',page:'solar'},'*')" type="button">Solar System</button><button class="bdg-link" data-internal-page="constellations" onclick="parent.postMessage({type:'azara-nav',page:'constellations'},'*')" type="button">Constellations</button></div></details><button id="bdg-hide-nav" type="button">Hide Nav</button><div class="bdg-title"><b>Aza'ra</b><span>site navigation</span></div></div></div>
+<div aria-label="Hidden Aza'ra navigation bubble" id="bd-nav-bubble"><details><summary class="bdg-bubble-core" title="Open navigation bubble">☰</summary><div class="bdg-bubble-menu"><button id="bdg-show-nav" type="button">Show Navigation Bar</button></div></details></div>
+<div aria-live="polite" id="bd-unhide-tray"><details><summary>Hidden Panels / Windows <span id="bd-unhide-count">0</span></summary><div style="padding:8px 9px 0"><button id="bd-unhide-all" type="button">Unhide All</button></div><div id="bd-unhide-list"></div></details></div>
+<script id="bdg-shared-script" src="../../script/js/solar-01.js"></script>
+<!-- === end Aza'ra shared global dropdown navigation / unhide patch === -->
+<!-- Aza'ra shared site shell: navigation + real-time converter -->
+<div aria-label="Aza'ra shared navigation and time tools" class="bd-shell" id="belavados-site-shell">
+<details class="bd-drawer bd-time-drawer">
+<summary>⏱ Earth ↔ Aza'raan Veil Time</summary>
+<div class="bd-drawer-body bd-time-grid">
+<div><strong>Earth / Eastern</strong><span id="bd-earth-time">Loading…</span></div>
+<div><strong>Aza'raan Veil Time</strong><span id="bd-belavados-time">Loading…</span></div>
+<label>Regional moon-path alignment
+        <select id="bd-timezone-select">
+<option value="Belavadös">Belavadös — slightly north-east</option>
+<option value="Dakaroth">Dakaroth — north</option>
+<option value="Arzuhan">Arzuhan — central-east</option>
+<option value="Tzaphaer">Tzaphaer — southwest</option>
+</select>
+</label>
+<p class="bd-hint">All regions share the Veil’s resonant pulse clock. Regional time zones are expressed through moon zeniths and visibility rather than imported Earth UTC offsets.</p>
+</div>
+</details>
+</div>
+<!-- Aza'ra standardized navigation: atlas navigation -->
+<div class="app" id="app">
+<canvas id="space"></canvas>
+<div class="panel topbar">
+<div class="brand">Aza'ra Interactive 3D Solar System</div>
+<div class="aza-speed-control" id="solarSpeedControl"><div class="aza-speed-head"><b>Time speed</b><output id="timeSpeedOutput">1 Aza'raan year / 15 Earth min</output></div><input id="timeSpeed" type="range" min="0" max="1000" step="1" value="620" list="solarSpeedNotches" aria-label="Aza'raan simulation speed"><datalist id="solarSpeedNotches"><option value="0"></option><option value="70"></option><option value="150"></option><option value="240"></option><option value="330"></option><option value="420"></option><option value="500"></option><option value="620"></option><option value="720"></option><option value="820"></option><option value="900"></option><option value="960"></option><option value="1000"></option></datalist><div class="aza-speed-help" aria-label="Speed helper notches"><button type="button" data-speed-pos="0">Paused</button><button type="button" data-speed-pos="70">Synced</button><button type="button" data-speed-pos="150">1 week / Earth week</button><button type="button" data-speed-pos="240">1 year / Earth week</button><button type="button" data-speed-pos="330">3 years / Earth week</button><button type="button" data-speed-pos="420">10 years / Earth week</button><button type="button" data-speed-pos="500">30 years / Earth week</button><button type="button" data-speed-pos="620">1 year / 15 min</button><button type="button" data-speed-pos="720">1 year / 5 min</button><button type="button" data-speed-pos="820">1 year / 1 min</button><button type="button" data-speed-pos="900">1 year / 30 sec</button><button type="button" data-speed-pos="960">3 years / 30 sec</button><button type="button" data-speed-pos="1000">10 years / 30 sec</button></div><div class="aza-speed-note">Drag continuously between notches for fine tuning. Slow lore-accurate rates remain on the left; the right side restores the visibly fast 15 min, 5 min, 1 min, and 30 sec year speeds.</div></div>
+<button class="btn" data-view="standard">Standard 30°</button><button class="btn" data-view="topDown">Top down</button><button class="btn" data-view="topUp">Top up</button>
+<button class="btn" data-view="0">1Ae view</button><button class="btn" data-view="6">7Ae view</button><button class="btn" data-view="7">1W’i view</button><button class="btn" data-view="14">1La view</button>
+<button class="btn" id="recenter">Recenter</button><button class="btn" id="hidePanels">Hide boxes</button>
+</div>
+<div class="panel veilTime" id="veilTimePanel" aria-live="polite">
+  <h3>Veil Pulse Clock</h3>
+  <div class="veilClockMain" id="azaraClockMain">Synchronizing with the Veil…</div>
+  <div class="veilClockSub" id="azaraClockSub">21-hour day • 240-day year • 8 months × 30 days • 6-day week</div>
+  <div class="veilGrid">
+    <div class="veilCell"><b>Triumvirate</b><span id="azaraMoonPhase">—</span></div>
+    <div class="veilCell"><b>Calendar</b><span id="azaraCalendar">—</span></div>
+    <div class="veilCell"><b>Live Veil now</b><span id="azaraLiveReference">—</span></div>
+    <div class="veilCell"><b>Hour hum</b><span id="azaraHourHum">—</span></div>
+    <div class="veilCell"><b>Minute hum</b><span id="azaraMinuteHum">—</span></div>
+  </div>
+  <div class="veilPulse" id="azaraPathReadout">The sacred moon paths cross the Belavadös node before continuing above and beneath the disc.</div>
+</div>
+<div class="panel assetList" id="assetList"></div>
+<div class="panel side" id="info"><h2>Aza'ra System</h2><p>Aza'ra is a ~27,060 km-wide flat circular world sealed beneath the 80% transparent Veil. Its four continents—Dakaroth, Arzuhan, Tzaphaer, and Belavadös—and its floating islands remain inside the membrane. The central stellar body is nearly dead and supplies no meaningful daylight. Aza'ra exists in perpetual twilight, lit by the Veil-powered sacred moons Duvaen, W’iosamn, and Arvalla.</p><p>The Veil shields the disc from Voidstorms and entropy, filters arcane flow and planar corruption, and acts as a dimensional membrane where deities, spirits, and forgotten thoughts can drift between realms. As it digests soul-magic siphoned through rift portals connected to Earth, its resonant hums define Aza'raan hours and minutes.</p><p class="meta">Click Aza'ra in the asset list to enter a close inspection view, then drag to orbit it from any angle; drag to rotate 360°, hold <span class="kbd">Shift</span> while dragging for slower precision rotation, scroll to zoom, and click any rendered asset to fly toward it.</p></div>
+<button class="bubble" id="showPanels">Info</button>
+<div class="legend">Left-drag = rotate/orbit 360° including dome, side profile, and underside • Shift + left-drag = precision rotation • Wheel = zoom • Click asset = fly/zoom • Sacred moon paths cross Belavadös and continue beneath the disc • Moonlight is powered by the Veil • The central sun is nearly lightless</div>
+</div>
+<script src="../js/azara-textures.js"></script>
+<script src="../../script/js/solar-02.js"></script>
+<script id="belavados-shared-site-shell-js" src="../../script/js/solar-03.js"></script>
+<link rel="stylesheet" href="../../css/solar-08.css">
+<script id="bd-window-bubble-controls-script" src="../../script/js/solar-04.js"></script>
+<script id="belavados-responsive-shell-script" src="../../script/js/solar-05.js"></script>
+<script id="belavados-player-viewonly-guard" src="../../script/js/solar-06.js"></script>
+<script id="belavados-player-viewonly-map-hard-lock" src="../../script/js/solar-07.js"></script>
+</body>
+</html>

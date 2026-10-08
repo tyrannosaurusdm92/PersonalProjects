@@ -1,0 +1,3166 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Aza'ra Night Sky Viewer</title>
+<link rel="stylesheet" href="../../css/constellations-01.css">
+<link rel="stylesheet" href="../../css/constellations-02.css">
+
+<link rel="stylesheet" href="../../css/constellations-03.css">
+
+</head>
+<body class="player-export-default">
+<canvas aria-label="Interactive Aza'ra night sky with generated constellations" class="" height="868" id="sky" style="width: 1536px; height: 695px;" width="1920"></canvas>
+<div class="wash"></div>
+<section aria-label="Aza'ra night sky controls" class="panel hud">
+<h1>Aza'ra Night Sky</h1>
+<p>Explore the Aza'ra night sky. Change speed and viewpoint, toggle layers, click stars and constellations to learn about them, and navigate freely across the dome.</p>
+<p class="dm-access-note"><strong>Your sky editor is open.</strong> You can create and organize constellations, bring in a sky map, or save your work.</p>
+<div class="row four" id="hours">
+<button class="active" data-hour="live" type="button">Live</button>
+<button data-hour="0" type="button">1Ae</button>
+<button data-hour="7" type="button">1W’i</button>
+<button data-hour="14" type="button">1La</button>
+</div>
+<div class="row">
+<button class="" id="viewTopUp" type="button">Top Up</button>
+<button class="active" id="viewTopDown" type="button">Top Down</button>
+</div>
+<div class="row">
+<button id="play" type="button">Pause</button>
+<button id="recenter" type="button">Recenter</button>
+</div>
+<div class="row">
+<button id="zoomIn" type="button">Zoom In</button>
+<button id="zoomOut" type="button">Zoom Out</button>
+</div>
+<label for="speed">Time speed</label><div class="aza-speed-control" id="constellationSpeedControl"><div class="aza-speed-head"><b>Simulation</b><output id="speedOutput">1 Aza'raan year / 15 Earth min</output></div><input id="speed" type="range" min="0" max="1000" step="1" value="620" list="constellationSpeedNotches" aria-label="Aza'raan sky simulation speed"><datalist id="constellationSpeedNotches"><option value="0"></option><option value="70"></option><option value="150"></option><option value="240"></option><option value="330"></option><option value="420"></option><option value="500"></option><option value="620"></option><option value="720"></option><option value="820"></option><option value="900"></option><option value="960"></option><option value="1000"></option></datalist><div class="aza-speed-help" aria-label="Speed helper notches"><button type="button" data-speed-pos="0">Paused</button><button type="button" data-speed-pos="70">Synced</button><button type="button" data-speed-pos="150">1 week / Earth week</button><button type="button" data-speed-pos="240">1 year / Earth week</button><button type="button" data-speed-pos="330">3 years / Earth week</button><button type="button" data-speed-pos="420">10 years / Earth week</button><button type="button" data-speed-pos="500">30 years / Earth week</button><button type="button" data-speed-pos="620">1 year / 15 min</button><button type="button" data-speed-pos="720">1 year / 5 min</button><button type="button" data-speed-pos="820">1 year / 1 min</button><button type="button" data-speed-pos="900">1 year / 30 sec</button><button type="button" data-speed-pos="960">3 years / 30 sec</button><button type="button" data-speed-pos="1000">10 years / 30 sec</button></div><div class="aza-speed-note">Drag continuously between notches for fine tuning. Slow lore-accurate rates remain on the left; the right side restores the visibly fast 15 min, 5 min, 1 min, and 30 sec year speeds.</div></div>
+<label for="day">Aza'raan calendar day</label>
+<input id="day" max="239" min="0" type="range" value="0"/>
+<label for="lat">Observer latitude</label>
+<input id="lat" max="80" min="-80" type="range" value="40"/>
+<div class="readout">
+<div class="pill" id="dateReadout">Month 1 · day 1 / 240</div>
+<div class="pill" id="timeReadout">1Ae · Veil clock</div>
+<div class="pill" id="latReadout">Lat 33°</div>
+<div class="pill" id="viewReadout">Zoom 0.55×</div>
+</div>
+<section aria-label="Aza'ra Veil time converter" class="bv-time-panel bv-time-inline" id="bv-time-panel">
+<div class="bv-time-head"><div>⏱ <span>Aza'raan Veil Time</span><small class="bv-time-draghint">inline</small></div><button class="bv-time-toggle" data-bound="true" type="button">hide</button></div>
+<div class="bv-time-body">
+<div class="bv-time-card"><b>Calendar</b><strong data-bv-earth-main="">Day 1 / 240 · Thoryn-Rahek 1</strong><small data-bv-earth-sub="">Valkhaday • week 1/5 • year week 1/40</small></div><div class="bv-time-card"><b>Live Veil now</b><strong data-bv-live-main="">Synchronizing…</strong><small data-bv-live-sub="">Canonical Earth-year sync</small></div>
+<div class="bv-time-card"><b>Veil clock</b><strong data-bv-bela-main="">1Ae · Ih-aye · 00:00</strong><small data-bv-bela-sub="">Hour 1/21 • Duvaen • Veil pulse clock</small></div>
+<div class="bv-time-card"><b>Observer latitude</b><strong data-bv-month-main="">Northern sky · +33°</strong><small data-bv-month-sub="">At 33° latitude, the northern pole rises; horizon projection refreshes with this slider.</small></div>
+<div class="bv-time-card"><b>Simulation speed</b><strong data-bv-day-main="">Playing</strong><small data-bv-day-sub="">Canonical hum timing adjusts automatically for common and leap Earth years.</small></div>
+</div>
+<div class="bv-time-foot"><em>Veil time</em> uses 21 hours/day, 6 days/week, 5 weeks/month, 8 months/year, and 240 days/year. Old Belavadös calendar names are retained; removed seventh-day and extra-month names remain legacy names rather than extra calendar slots.</div>
+</section>
+<div class="dm-editor-only" id="dmEditorTools">
+<details open="">
+<summary>Constellation generator</summary>
+<label for="inpseed">Seed</label>
+<div class="row">
+<input id="inpseed" type="text" value="Aza'ra-240-The-Hungry-Gods-Await"/>
+<button id="newSeed" type="button">New Seed</button>
+</div>
+<label for="stardensity">Star density <span class="value-badge" id="stardensityValue">2^12 = 4096</span></label>
+<input id="stardensity" max="12" min="4" step="1" type="range" value="8"/>
+<label for="numconstellations">Number of constellations <span class="value-badge" id="numconstellationsValue">12</span></label>
+<input id="numconstellations" max="36" min="0" step="1" type="range" value="12"/>
+<label for="minconstellationsize">Minimum stars per constellation <span class="value-badge" id="minconstellationsizeValue">6</span></label>
+<input id="minconstellationsize" max="18" min="2" step="1" type="range" value="6"/>
+<label for="constellationsizerange">Additional stars per constellation <span class="value-badge" id="constellationsizerangeValue">+4</span></label>
+<input id="constellationsizerange" max="12" min="0" step="1" type="range" value="4"/>
+<label for="constellationdistance">Max link distance <span class="value-badge" id="constellationdistanceValue">26°</span></label>
+<input id="constellationdistance" max="60" min="6" step="1" type="range" value="26"/>
+<div class="row">
+<button class="good" id="generateSky" type="button">Generate Sky</button>
+<button class="warn" id="clearSky" type="button">Clear Sky</button>
+</div>
+<div class="row single">
+<button class="active" id="togglePrettify" type="button">Prettify On</button>
+</div>
+</details>
+<details open="">
+<summary>Import / export</summary>
+<input accept="application/json,.json" hidden="" id="jsonFileInput" type="file"/>
+<div class="row">
+<button id="importJSON" type="button">Import JSON</button>
+<button id="downloadJSON" type="button">Download JSON</button>
+</div>
+<div class="row">
+<button class="gold" id="exportHTML" type="button">Export constellations.html</button>
+<button id="copyHooks" type="button">Copy Hooks</button>
+</div>
+<label for="jsonPaste">Paste JSON</label>
+<textarea id="jsonPaste" placeholder="Paste constellations JSON here, then choose Load pasted JSON." spellcheck="false"></textarea>
+<div class="row">
+<button id="loadPastedJSON" type="button">Load pasted JSON</button>
+<button id="refreshPaste" type="button">Show current JSON</button>
+</div>
+<p class="small-note">Import accepts this viewer's schema, the older generator settings JSON, or simple arrays of constellations with inline stars.</p>
+</details>
+</div>
+<details open="">
+<summary>Layers</summary>
+<div class="row">
+<button class="active" id="toggleStars" type="button">Stars On</button>
+<button class="active" id="toggleLines" type="button">Lines On</button>
+</div>
+<div class="row">
+<button class="active" id="toggleLabels" type="button">Labels On</button>
+<button class="active" id="toggleGrid" type="button">Named Grid On</button>
+</div>
+<div class="row single">
+<button class="active" id="toggleConnections" type="button">Ambient Links On</button>
+</div>
+</details>
+</section>
+<section aria-live="polite" class="panel info" id="info"><h2>Aza'ra Constellations, Festivals, and Sky Signs</h2><div class="sub">Choose a star, constellation, or label to explore its story.</div><table><tbody><tr><td>Stars loaded</td><td>84</td></tr><tr><td>Constellations</td><td>12</td></tr><tr><td>Named coordinate lines</td><td>17</td></tr><tr><td>Selected layer</td><td>None</td></tr></tbody></table></section>
+<div class="legend" id="legend"><span class="key">84 stars</span><span class="key">12 constellations</span><span class="key">drag = pan</span><span class="key">wheel/buttons = zoom</span><span class="key">click = inspect</span><span class="key">Experience The Wonder</span></div>
+<script id="bv-embedded-constellations-json" type="application/json">{
+  "metadata": {
+    "world": "Aza'ra",
+    "title": "Aza'ra Constellations, Festivals, and Sky Signs",
+    "schema_version": "2.0.0",
+    "generated_by": "Aza'ra Constellation Viewer",
+    "notes": "Single-file player-facing sky import. Legacy sky labels are not included. Constellation names and lore were revised to Aza'raan sky-signs while preserving the underlying viewer structure and sky geometry. Restored original Belavadös calendar names to the active 8-month/6-day Aza'raan calendar and restored The Star-River and The Spirit Lights while retaining The Emberchild.",
+    "time_standard": "Veil pulse / proportional Earth-year sync",
+    "solar_year_days": 240,
+    "calendar_months": [
+      {
+        "index": 1,
+        "name": "Thoryn-Rahek",
+        "day_range": [
+          0,
+          30
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Freysethysra",
+        "day_range": [
+          30,
+          60
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Nefarokir",
+        "day_range": [
+          60,
+          90
+        ]
+      },
+      {
+        "index": 4,
+        "name": "Thalunesh",
+        "day_range": [
+          90,
+          120
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Horundar",
+        "day_range": [
+          120,
+          150
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Raeshkul",
+        "day_range": [
+          150,
+          180
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Asethrimir",
+        "day_range": [
+          180,
+          210
+        ]
+      },
+      {
+        "index": 8,
+        "name": "Sokhivar",
+        "day_range": [
+          210,
+          240
+        ]
+      }
+    ],
+    "azaraan_year_days": 240,
+    "azaraan_day_hours": 21,
+    "azaraan_week_days": 6,
+    "azaraan_month_days": 30,
+    "illumination": "No functional sun; the Veil powers Duvaen, W’iosamn, and Arvalla.",
+    "calendar_weekdays": [
+      "Valkhaday",
+      "Nebday",
+      "Sigranday",
+      "Ishtaday",
+      "Marduday",
+      "Enkirday"
+    ],
+    "legacy_calendar_names": {
+      "retired_month_slots": [
+        "Iskazunet",
+        "Bastve’enlil",
+        "Hathruna"
+      ],
+      "retired_weekday_slots": [
+        "Anubaday"
+      ]
+    }
+  },
+  "coordinate_lines": [
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": -180,
+      "line": "180° W / −180°",
+      "name": "Thalunesh's Reversed Track"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": -150,
+      "line": "150° W",
+      "name": "Freyseth's Crossroads Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": -120,
+      "line": "120° W",
+      "name": "Nefarokir's Funeral Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": -90,
+      "line": "90° W",
+      "name": "Eirzunet's Shadow Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": -60,
+      "line": "60° W",
+      "name": "Bastveig's Tidegate Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": -30,
+      "line": "30° W",
+      "name": "Horundar's Storm Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": 0,
+      "line": "0°",
+      "name": "UTC"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": 30,
+      "line": "30° E",
+      "name": "Raeshkul's Calculation Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": 60,
+      "line": "60° E",
+      "name": "Sokhivar's Sunroad Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": 90,
+      "line": "90° E",
+      "name": "Ishtanora's Hearth Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": 120,
+      "line": "120° E",
+      "name": "Marduthor's Deepforge Meridian"
+    },
+    {
+      "coordinate_type": "Longitude / Meridian",
+      "kind": "longitude",
+      "degrees": 150,
+      "line": "150° E",
+      "name": "Valkhamesh's Thunder Meridian"
+    },
+    {
+      "coordinate_type": "Latitude / Parallel",
+      "kind": "latitude",
+      "degrees": 60,
+      "line": "60° N",
+      "name": "Fleysetl's Northern Underworld Gate"
+    },
+    {
+      "coordinate_type": "Latitude / Parallel",
+      "kind": "latitude",
+      "degrees": 25,
+      "line": "25° N",
+      "name": "Raeshkul's Thoughtline"
+    },
+    {
+      "coordinate_type": "Latitude / Parallel",
+      "kind": "latitude",
+      "degrees": 0,
+      "line": "0°",
+      "name": "Equator"
+    },
+    {
+      "coordinate_type": "Latitude / Parallel",
+      "kind": "latitude",
+      "degrees": -30,
+      "line": "30° S",
+      "name": "Bastveg's Deepwater Passage"
+    },
+    {
+      "coordinate_type": "Latitude / Parallel",
+      "kind": "latitude",
+      "degrees": -65,
+      "line": "65° S",
+      "name": "Thoryn-Rahek's Southern Underworld Gate"
+    }
+  ],
+  "generator": {},
+  "stars": [
+    {
+      "id": "star_windowstone_frame",
+      "name": "Windowstone Frame",
+      "ra_deg": 2.2946000000000026,
+      "dec_deg": 59.1497,
+      "luminosity": 0.695,
+      "magnitude": 2.28,
+      "color": "#fff5ad",
+      "size": 1.866,
+      "lore": "Western lamp-window point.",
+      "tags": [
+        "fixed_ra_dec",
+        "sokhivars_lantern"
+      ]
+    },
+    {
+      "id": "star_elkskin_glow",
+      "name": "Elkskin Glow",
+      "ra_deg": 10.126700000000028,
+      "dec_deg": 56.5372,
+      "luminosity": 0.7,
+      "magnitude": 2.24,
+      "color": "#ff9b3d",
+      "size": 1.875,
+      "lore": "Orange lamp-window glow.",
+      "tags": [
+        "fixed_ra_dec",
+        "sokhivars_lantern"
+      ]
+    },
+    {
+      "id": "star_starforge_pane",
+      "name": "Starforge Pane",
+      "ra_deg": 12.276299999999992,
+      "dec_deg": 57.8153,
+      "luminosity": 0.546,
+      "magnitude": 3.44,
+      "color": "#fff0b6",
+      "size": 1.606,
+      "lore": "Color-contrast binary pane.",
+      "tags": [
+        "fixed_ra_dec",
+        "sokhivars_lantern"
+      ]
+    },
+    {
+      "id": "star_lamplight_brace",
+      "name": "Lamplight Brace",
+      "ra_deg": 14.177099999999996,
+      "dec_deg": 60.7167,
+      "luminosity": 0.712,
+      "magnitude": 2.15,
+      "color": "#cfe8ff",
+      "size": 1.896,
+      "lore": "Variable lamp brace; hot blue-white emission light.",
+      "tags": [
+        "fixed_ra_dec",
+        "sokhivars_lantern"
+      ]
+    },
+    {
+      "id": "star_windowvale_hook",
+      "name": "Windowvale Hook",
+      "ra_deg": 17.775800000000004,
+      "dec_deg": 55.1497,
+      "luminosity": 0.432,
+      "magnitude": 4.33,
+      "color": "#f8fbff",
+      "size": 1.406,
+      "lore": "Faint window hook.",
+      "tags": [
+        "fixed_ra_dec",
+        "sokhivars_lantern"
+      ]
+    },
+    {
+      "id": "star_hearthwindow_spur",
+      "name": "Hearthwindow Spur",
+      "ra_deg": 21.454200000000014,
+      "dec_deg": 60.2353,
+      "luminosity": 0.644,
+      "magnitude": 2.68,
+      "color": "#f8fbff",
+      "size": 1.777,
+      "lore": "Eastern lamp-window spur.",
+      "tags": [
+        "fixed_ra_dec",
+        "sokhivars_lantern"
+      ]
+    },
+    {
+      "id": "star_northwall_lantern",
+      "name": "Northwall Lantern",
+      "ra_deg": 28.598700000000008,
+      "dec_deg": 63.6703,
+      "luminosity": 0.558,
+      "magnitude": 3.35,
+      "color": "#cfe8ff",
+      "size": 1.627,
+      "lore": "Far northern lantern point.",
+      "tags": [
+        "fixed_ra_dec",
+        "sokhivars_lantern"
+      ]
+    },
+    {
+      "id": "star_setrimir_diadem",
+      "name": "Setrimir Diadem",
+      "ra_deg": 37.95460000000003,
+      "dec_deg": 89.2641,
+      "luminosity": 0.734,
+      "magnitude": 1.98,
+      "color": "#f8fbff",
+      "size": 1.934,
+      "lore": "Northward guiding jewel; its height mirrors the observer's northern latitude. North office star; navigation and oath witness.",
+      "tags": [
+        "fixed_ra_dec",
+        "setrimirs_diadem",
+        "the_three_watches"
+      ]
+    },
+    {
+      "id": "star_cryingchild_pearl",
+      "name": "Cryingchild Pearl",
+      "ra_deg": 56.200800000000015,
+      "dec_deg": 24.2894,
+      "luminosity": 0.289,
+      "magnitude": 5.45,
+      "color": "#cfe8ff",
+      "size": 1.156,
+      "lore": "Faint cluster-field light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_kender_beat",
+      "name": "Kender Beat",
+      "ra_deg": 56.21879999999999,
+      "dec_deg": 24.1133,
+      "luminosity": 0.513,
+      "magnitude": 3.7,
+      "color": "#ff9b3d",
+      "size": 1.548,
+      "lore": "Western beat-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_dancer_thread",
+      "name": "Dancer Thread",
+      "ra_deg": 56.302099999999996,
+      "dec_deg": 24.4672,
+      "luminosity": 0.438,
+      "magnitude": 4.29,
+      "color": "#cfe8ff",
+      "size": 1.417,
+      "lore": "Northern thread-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_qickstep_cord",
+      "name": "Qickstep Cord",
+      "ra_deg": 56.45670000000001,
+      "dec_deg": 24.3678,
+      "luminosity": 0.491,
+      "magnitude": 3.87,
+      "color": "#cfe8ff",
+      "size": 1.509,
+      "lore": "Northern thread-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_foxshare_spark",
+      "name": "Foxshare Spark",
+      "ra_deg": 56.47710000000001,
+      "dec_deg": 24.5547,
+      "luminosity": 0.249,
+      "magnitude": 5.76,
+      "color": "#cfe8ff",
+      "size": 1.086,
+      "lore": "Faint cluster-field light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_jerbeen_tail",
+      "name": "Jerbeen Tail",
+      "ra_deg": 56.58170000000001,
+      "dec_deg": 23.9483,
+      "luminosity": 0.452,
+      "magnitude": 4.18,
+      "color": "#ff6d3a",
+      "size": 1.441,
+      "lore": "Pearl light in faint surrounding haze.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_ishtanora_hearth",
+      "name": "Ishtanora Hearth",
+      "ra_deg": 56.85000000000002,
+      "dec_deg": 24.1167,
+      "luminosity": 0.782,
+      "color": "#fff0b6",
+      "size": 2.018,
+      "lore": "Compact hearth core; visible to the unaided eye in clean dark air.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_halfling_rim",
+      "name": "Halfling Rim",
+      "ra_deg": 56.87130000000002,
+      "dec_deg": 24.105,
+      "luminosity": 0.619,
+      "magnitude": 2.87,
+      "color": "#f8fbff",
+      "size": 1.733,
+      "lore": "Brightest hearthdrum light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_kithkin_rim",
+      "name": "Kithkin Rim",
+      "ra_deg": 57.29039999999998,
+      "dec_deg": 24.0533,
+      "luminosity": 0.523,
+      "magnitude": 3.62,
+      "color": "#fff5ad",
+      "size": 1.565,
+      "lore": "Eastern rim-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_boatbrother_glow",
+      "name": "Boatbrother Glow",
+      "ra_deg": 57.29669999999999,
+      "dec_deg": 24.1367,
+      "luminosity": 0.335,
+      "magnitude": 5.09,
+      "color": "#cfe8ff",
+      "size": 1.236,
+      "lore": "Paired glow near Kithkin Rim; variable blue-white light.",
+      "tags": [
+        "fixed_ra_dec",
+        "ishtanoras_hearthdrum"
+      ]
+    },
+    {
+      "id": "star_firbolg_horn",
+      "name": "Firbolg Horn",
+      "ra_deg": 64.94830000000002,
+      "dec_deg": 15.6275,
+      "luminosity": 0.52,
+      "magnitude": 3.65,
+      "color": "#fff0b6",
+      "size": 1.56,
+      "lore": "Bright western stone of the gate.",
+      "tags": [
+        "anubaldirs_labyrinth",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_cyclopian_watch",
+      "name": "Cyclopian Watch",
+      "ra_deg": 65.73379999999997,
+      "dec_deg": 17.5425,
+      "luminosity": 0.505,
+      "magnitude": 3.76,
+      "color": "#cfe8ff",
+      "size": 1.534,
+      "lore": "Gate-line marker in the winter labyrinth.",
+      "tags": [
+        "anubaldirs_labyrinth",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_anubaldir_stone",
+      "name": "Anubaldir Stone",
+      "ra_deg": 66.75,
+      "dec_deg": 15.8667,
+      "luminosity": 0.923,
+      "color": "#ff9b3d",
+      "size": 2.265,
+      "lore": "Central clustered light; heart of the winter labyrinth field.",
+      "tags": [
+        "anubaldirs_labyrinth",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_giff_burden",
+      "name": "Giff Burden",
+      "ra_deg": 67.1438,
+      "dec_deg": 15.9622,
+      "luminosity": 0.495,
+      "magnitude": 3.84,
+      "color": "#ffe279",
+      "size": 1.516,
+      "lore": "Close paired gate-light.",
+      "tags": [
+        "anubaldirs_labyrinth",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_goliath_horn",
+      "name": "Goliath Horn",
+      "ra_deg": 67.15379999999999,
+      "dec_deg": 19.1803,
+      "luminosity": 0.535,
+      "magnitude": 3.53,
+      "color": "#f8fbff",
+      "size": 1.586,
+      "lore": "Northern horn point in the visible gate.",
+      "tags": [
+        "anubaldirs_labyrinth",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_labyrinth_gate",
+      "name": "Labyrinth Gate",
+      "ra_deg": 67.16539999999998,
+      "dec_deg": 15.8708,
+      "luminosity": 0.55,
+      "magnitude": 3.41,
+      "color": "#f8fbff",
+      "size": 1.613,
+      "lore": "Lower gate-light; bright hinge of the labyrinth.",
+      "tags": [
+        "anubaldirs_labyrinth",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_minotaur_eye",
+      "name": "Minotaur Eye",
+      "ra_deg": 68.98000000000002,
+      "dec_deg": 16.5093,
+      "luminosity": 0.876,
+      "magnitude": 0.87,
+      "color": "#ff6d3a",
+      "size": 2.183,
+      "lore": "Red-orange eye marker in the stone-and-horn field.",
+      "tags": [
+        "anubaldirs_labyrinth",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_battlevale_stone",
+      "name": "Battlevale Stone",
+      "ra_deg": 74.24829999999997,
+      "dec_deg": 33.1661,
+      "luminosity": 0.643,
+      "magnitude": 2.69,
+      "color": "#ff9b3d",
+      "size": 1.775,
+      "lore": "Lower western war-stone.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_eclipse_veil",
+      "name": "Eclipse Veil",
+      "ra_deg": 75.4921,
+      "dec_deg": 43.8233,
+      "luminosity": 0.604,
+      "magnitude": 2.99,
+      "color": "#fff5ad",
+      "size": 1.707,
+      "lore": "Long-cycle eclipsing veil; old watchers record its dimming.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_kidfire_wick",
+      "name": "Kidfire Wick",
+      "ra_deg": 75.61959999999999,
+      "dec_deg": 41.0758,
+      "luminosity": 0.507,
+      "magnitude": 3.75,
+      "color": "#ff9b3d",
+      "size": 1.537,
+      "lore": "Paired kidfire marker.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_kidfire_spark",
+      "name": "Kidfire Spark",
+      "ra_deg": 76.62869999999998,
+      "dec_deg": 41.2344,
+      "luminosity": 0.58,
+      "magnitude": 3.18,
+      "color": "#cfe8ff",
+      "size": 1.665,
+      "lore": "Paired kidfire marker.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_frostmarked_shard",
+      "name": "Frostmarked Shard",
+      "ra_deg": 78.63459999999998,
+      "dec_deg": -8.2016,
+      "luminosity": 0.971,
+      "magnitude": 0.13,
+      "color": "#cfe8ff",
+      "size": 2.349,
+      "lore": "Blue-white lower frost point; a dangerous oath-star in old winter rites.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_enkirael_hearth",
+      "name": "Enkirael Hearth",
+      "ra_deg": 79.17250000000001,
+      "dec_deg": 45.998,
+      "luminosity": 0.977,
+      "magnitude": 0.08,
+      "color": "#fff0b6",
+      "size": 2.36,
+      "lore": "Brilliant yellow winter hearth.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_distaff_guard",
+      "name": "Distaff Guard",
+      "ra_deg": 81.28289999999998,
+      "dec_deg": 6.3497,
+      "luminosity": 0.777,
+      "magnitude": 1.64,
+      "color": "#cfe8ff",
+      "size": 2.01,
+      "lore": "Upper guard point.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_hornward_spear",
+      "name": "Hornward Spear",
+      "ra_deg": 81.5729,
+      "dec_deg": 28.6075,
+      "luminosity": 0.776,
+      "magnitude": 1.65,
+      "color": "#cfe8ff",
+      "size": 2.008,
+      "lore": "Spear point closing the warfire enclosure.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_fisherhook_line",
+      "name": "Fisherhook Line",
+      "ra_deg": 83.00170000000003,
+      "dec_deg": 0.2991,
+      "luminosity": 0.701,
+      "magnitude": 2.23,
+      "color": "#68a6ff",
+      "size": 1.877,
+      "lore": "Western line point; close to the sky-equator.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_lantern_brow",
+      "name": "Lantern Brow",
+      "ra_deg": 83.78460000000001,
+      "dec_deg": 9.9342,
+      "luminosity": 0.534,
+      "magnitude": 3.54,
+      "color": "#68a6ff",
+      "size": 1.585,
+      "lore": "Upper brow lantern.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_curseborn_road",
+      "name": "Curseborn Road",
+      "ra_deg": 83.82209999999998,
+      "dec_deg": -5.3911,
+      "luminosity": 0.475,
+      "magnitude": 4,
+      "color": "#b01020",
+      "size": 1.481,
+      "lore": "Cold-season river-cloud marker.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    },
+    {
+      "id": "star_threechief_ember",
+      "name": "Threechief Ember",
+      "ra_deg": 84.05329999999998,
+      "dec_deg": -1.2019,
+      "luminosity": 0.771,
+      "magnitude": 1.69,
+      "color": "#cfe8ff",
+      "size": 1.999,
+      "lore": "Central bright line ember; visible from most inhabited latitudes.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_snowbank_step",
+      "name": "Snowbank Step",
+      "ra_deg": 85.18959999999998,
+      "dec_deg": -1.9426,
+      "luminosity": 0.764,
+      "magnitude": 1.74,
+      "color": "#68a6ff",
+      "size": 1.987,
+      "lore": "Eastern line point near the dark-flame fields.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_fisherknife_edge",
+      "name": "Fisherknife Edge",
+      "ra_deg": 86.93920000000003,
+      "dec_deg": -9.6696,
+      "luminosity": 0.722,
+      "magnitude": 2.07,
+      "color": "#cfe8ff",
+      "size": 1.913,
+      "lore": "Lower eastern edge marker.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_hearthgiant_ember",
+      "name": "Hearthgiant Ember",
+      "ra_deg": 88.79290000000003,
+      "dec_deg": 7.4071,
+      "luminosity": 0.987,
+      "color": "#ff6d3a",
+      "size": 2.377,
+      "lore": "Red shoulder ember; its changing light is watched for winter omens.",
+      "tags": [
+        "bastveigs_tidehook",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_stormgoat_ember",
+      "name": "Stormgoat Ember",
+      "ra_deg": 89.88209999999998,
+      "dec_deg": 44.9474,
+      "luminosity": 0.744,
+      "magnitude": 1.9,
+      "color": "#f8fbff",
+      "size": 1.952,
+      "lore": "Bright eastern warfire marker.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_shieldmaid_knot",
+      "name": "Shieldmaid Knot",
+      "ra_deg": 89.93,
+      "dec_deg": 37.2125,
+      "luminosity": 0.648,
+      "magnitude": 2.65,
+      "color": "#f8fbff",
+      "size": 1.784,
+      "lore": "Knot in the warfire enclosure.",
+      "tags": [
+        "enkiraels_warfire",
+        "fixed_ra_dec"
+      ]
+    },
+    {
+      "id": "star_locathah_lantern",
+      "name": "Locathah Lantern",
+      "ra_deg": 161.28539999999998,
+      "dec_deg": -59.8678,
+      "luminosity": 0.859,
+      "magnitude": 1,
+      "color": "#b8fff8",
+      "size": 2.153,
+      "lore": "Far-southern luminous river-cloud.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    },
+    {
+      "id": "star_silkborn_strand",
+      "name": "Silkborn Strand",
+      "ra_deg": 165.46039999999994,
+      "dec_deg": 56.3822,
+      "luminosity": 0.684,
+      "magnitude": 2.37,
+      "color": "#f8fbff",
+      "size": 1.847,
+      "lore": "Pointer light toward Setrimir Diadem.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_thoryn_rahek_knot",
+      "name": "Thoryn-Rahek Knot",
+      "ra_deg": 165.9321,
+      "dec_deg": 61.7508,
+      "luminosity": 0.758,
+      "magnitude": 1.79,
+      "color": "#fff6ca",
+      "size": 1.977,
+      "lore": "Pointer light toward Setrimir Diadem.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_thri_kreen_fang",
+      "name": "Thri-Kreen Fang",
+      "ra_deg": 178.45749999999998,
+      "dec_deg": 53.6947,
+      "luminosity": 0.675,
+      "magnitude": 2.44,
+      "color": "#cfe8ff",
+      "size": 1.831,
+      "lore": "Lower cup-light in the high web.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_cnidarin_pulse",
+      "name": "Cnidarin Pulse",
+      "ra_deg": 183.85670000000005,
+      "dec_deg": 57.0325,
+      "luminosity": 0.562,
+      "magnitude": 3.32,
+      "color": "#ffdbe8",
+      "size": 1.634,
+      "lore": "Faint hinge of the high web.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_accursed_smile",
+      "name": "Accursed Smile",
+      "ra_deg": 193.25,
+      "dec_deg": -63,
+      "luminosity": 0.72,
+      "color": "#ece0ff",
+      "size": 1.91,
+      "lore": "Far-southern dark river-patch.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    },
+    {
+      "id": "star_oozekin_drop",
+      "name": "Oozekin Drop",
+      "ra_deg": 193.50710000000004,
+      "dec_deg": 55.9597,
+      "luminosity": 0.76,
+      "magnitude": 1.77,
+      "color": "#d8ffe0",
+      "size": 1.98,
+      "lore": "Brightest road-light in the high web.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_opteran_eye",
+      "name": "Opteran Eye",
+      "ra_deg": 200.98119999999994,
+      "dec_deg": 54.9253,
+      "luminosity": 0.701,
+      "magnitude": 2.23,
+      "color": "#ffbf52",
+      "size": 1.877,
+      "lore": "Close paired light with Needle-Eye Ember.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_needle_eye_ember",
+      "name": "Needle-Eye Ember",
+      "ra_deg": 201.30629999999996,
+      "dec_deg": 54.9881,
+      "luminosity": 0.476,
+      "magnitude": 3.99,
+      "color": "#f8fbff",
+      "size": 1.483,
+      "lore": "Companion eye-test star near Opteran Eye; used in old winter oath readings.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_beartrail_blade",
+      "name": "Beartrail Blade",
+      "ra_deg": 206.885,
+      "dec_deg": 49.3133,
+      "luminosity": 0.749,
+      "magnitude": 1.86,
+      "color": "#cfe8ff",
+      "size": 1.961,
+      "lore": "Blade at the end of the high trail.",
+      "tags": [
+        "fixed_ra_dec",
+        "thoryn_raheks_web"
+      ]
+    },
+    {
+      "id": "star_nephthysra_glass",
+      "name": "Nephthysra Glass",
+      "ra_deg": 213.91539999999998,
+      "dec_deg": 19.1824,
+      "luminosity": 0.994,
+      "magnitude": -0.05,
+      "color": "#f8fbff",
+      "size": 2.389,
+      "lore": "Dawn office star; bright spring herald.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_three_watches"
+      ]
+    },
+    {
+      "id": "star_warforged_nail",
+      "name": "Warforged Nail",
+      "ra_deg": 222.67629999999997,
+      "dec_deg": 74.1555,
+      "luminosity": 0.721,
+      "magnitude": 2.08,
+      "color": "#92b6d8",
+      "size": 1.912,
+      "lore": "Bright guard-stone of the northern diadem.",
+      "tags": [
+        "fixed_ra_dec",
+        "setrimirs_diadem"
+      ]
+    },
+    {
+      "id": "star_geppettin_thread",
+      "name": "Geppettin Thread",
+      "ra_deg": 230.1821,
+      "dec_deg": 71.834,
+      "luminosity": 0.603,
+      "magnitude": 3,
+      "color": "#fff5ad",
+      "size": 1.705,
+      "lore": "Diadem guard star.",
+      "tags": [
+        "fixed_ra_dec",
+        "setrimirs_diadem"
+      ]
+    },
+    {
+      "id": "star_hooplodge_glass",
+      "name": "Hooplodge Glass",
+      "ra_deg": 230.8012,
+      "dec_deg": 30.2881,
+      "luminosity": 0.348,
+      "magnitude": 4.99,
+      "color": "#fff0b6",
+      "size": 1.259,
+      "lore": "Western-northern glass point.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_dara_heart",
+      "name": "Dara Heart",
+      "ra_deg": 231.95709999999997,
+      "dec_deg": 29.1057,
+      "luminosity": 0.52,
+      "magnitude": 3.65,
+      "color": "#ffdbe8",
+      "size": 1.56,
+      "lore": "Western mirror arc.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_luma_glow",
+      "name": "Luma Glow",
+      "ra_deg": 233.6721,
+      "dec_deg": 26.7149,
+      "luminosity": 0.701,
+      "magnitude": 2.23,
+      "color": "#cfe8ff",
+      "size": 1.877,
+      "lore": "Bright jewel in the mirror arc.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_crownbear_paw",
+      "name": "Crownbear Paw",
+      "ra_deg": 234.8442,
+      "dec_deg": 36.6394,
+      "luminosity": 0.338,
+      "magnitude": 5.07,
+      "color": "#cfe8ff",
+      "size": 1.242,
+      "lore": "Northern extension light.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_golynn_prism",
+      "name": "Golynn Prism",
+      "ra_deg": 235.68579999999997,
+      "dec_deg": 26.2956,
+      "luminosity": 0.499,
+      "magnitude": 3.81,
+      "color": "#fff5ad",
+      "size": 1.523,
+      "lore": "Central-eastern mirror arc.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_stolen_gear",
+      "name": "Stolen Gear",
+      "ra_deg": 236.01459999999997,
+      "dec_deg": 77.7945,
+      "luminosity": 0.434,
+      "magnitude": 4.32,
+      "color": "#ffbf52",
+      "size": 1.409,
+      "lore": "Bowl-to-handle link in the northern diadem.",
+      "tags": [
+        "fixed_ra_dec",
+        "setrimirs_diadem"
+      ]
+    },
+    {
+      "id": "star_emberfade_crown",
+      "name": "Emberfade Crown",
+      "ra_deg": 237.14329999999995,
+      "dec_deg": 28.1567,
+      "luminosity": 0.257,
+      "color": "#fff5ad",
+      "size": 1.1,
+      "lore": "Fading ember; can vanish to the eye for long intervals.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_charisma_veil",
+      "name": "Charisma Veil",
+      "ra_deg": 237.39879999999994,
+      "dec_deg": 26.0683,
+      "luminosity": 0.394,
+      "magnitude": 4.63,
+      "color": "#fff1c9",
+      "size": 1.34,
+      "lore": "Eastern mirror edge.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_mirrorfire_wick",
+      "name": "Mirrorfire Wick",
+      "ra_deg": 239.39710000000002,
+      "dec_deg": 26.8778,
+      "luminosity": 0.457,
+      "magnitude": 4.14,
+      "color": "#fff0b6",
+      "size": 1.45,
+      "lore": "Eastern mirror light.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_aasimar_eye",
+      "name": "Aasimar Eye",
+      "ra_deg": 239.7129,
+      "dec_deg": -26.1139,
+      "luminosity": 0.617,
+      "magnitude": 2.89,
+      "color": "#fff1c9",
+      "size": 1.73,
+      "lore": "Forward mask light.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_novaflare_crown",
+      "name": "Novaflare Crown",
+      "ra_deg": 239.87580000000003,
+      "dec_deg": 25.92,
+      "luminosity": 0.731,
+      "color": "#cfe8ff",
+      "size": 1.929,
+      "lore": "Recurrent flare-light; temple watchers track its sudden returns.",
+      "tags": [
+        "fixed_ra_dec",
+        "nephthysras_mirror"
+      ]
+    },
+    {
+      "id": "star_bastveig_tide",
+      "name": "Bastveig Tide",
+      "ra_deg": 240.0833,
+      "dec_deg": -22.6217,
+      "luminosity": 0.694,
+      "magnitude": 2.29,
+      "color": "#cfe8ff",
+      "size": 1.865,
+      "lore": "Upper left mask light; variable.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_triton_ward",
+      "name": "Triton Ward",
+      "ra_deg": 241.3592,
+      "dec_deg": -19.8056,
+      "luminosity": 0.651,
+      "magnitude": 2.62,
+      "color": "#f8fbff",
+      "size": 1.789,
+      "lore": "Upper right ward-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_tiefling_eye",
+      "name": "Tiefling Eye",
+      "ra_deg": 242.99879999999996,
+      "dec_deg": -19.4606,
+      "luminosity": 0.475,
+      "magnitude": 4,
+      "color": "#ff6d3a",
+      "size": 1.481,
+      "lore": "Multiple eye-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_northhook_glow",
+      "name": "Northhook Glow",
+      "ra_deg": 244.37620000000004,
+      "dec_deg": 75.7548,
+      "luminosity": 0.353,
+      "magnitude": 4.95,
+      "color": "#fff5ad",
+      "size": 1.268,
+      "lore": "Faint northern companion.",
+      "tags": [
+        "fixed_ra_dec",
+        "setrimirs_diadem"
+      ]
+    },
+    {
+      "id": "star_grung_lantern",
+      "name": "Grung Lantern",
+      "ra_deg": 245.2971,
+      "dec_deg": -25.5928,
+      "luminosity": 0.617,
+      "magnitude": 2.89,
+      "color": "#b9ffba",
+      "size": 1.73,
+      "lore": "Near the mask center.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_freyseth_mask",
+      "name": "Freyseth Mask",
+      "ra_deg": 247.35210000000006,
+      "dec_deg": -26.4319,
+      "luminosity": 0.851,
+      "magnitude": 1.06,
+      "color": "#eafcff",
+      "size": 2.139,
+      "lore": "Red-orange heart of the mask field.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_wechselkind_mask",
+      "name": "Wechselkind Mask",
+      "ra_deg": 251.49250000000006,
+      "dec_deg": 82.0373,
+      "luminosity": 0.448,
+      "magnitude": 4.21,
+      "color": "#cfe8ff",
+      "size": 1.434,
+      "lore": "Faint northern handle-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "setrimirs_diadem"
+      ]
+    },
+    {
+      "id": "star_hexblood_smile",
+      "name": "Hexblood Smile",
+      "ra_deg": 252.5408,
+      "dec_deg": -34.2933,
+      "luminosity": 0.691,
+      "magnitude": 2.31,
+      "color": "#fff5ad",
+      "size": 1.859,
+      "lore": "Lower body-and-smile light.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_merfolk_pearl",
+      "name": "Merfolk Pearl",
+      "ra_deg": 262.6908000000001,
+      "dec_deg": -37.2958,
+      "luminosity": 0.641,
+      "magnitude": 2.7,
+      "color": "#f8f4ee",
+      "size": 1.772,
+      "lore": "Paired lower-hook light with Sahuagin Fang.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_relicborn_spark",
+      "name": "Relicborn Spark",
+      "ra_deg": 263.0538,
+      "dec_deg": 86.5865,
+      "luminosity": 0.429,
+      "magnitude": 4.36,
+      "color": "#fff1c9",
+      "size": 1.401,
+      "lore": "Faint high handle near the turning point of the north.",
+      "tags": [
+        "fixed_ra_dec",
+        "setrimirs_diadem"
+      ]
+    },
+    {
+      "id": "star_sahuagin_fang",
+      "name": "Sahuagin Fang",
+      "ra_deg": 263.4021,
+      "dec_deg": -37.1039,
+      "luminosity": 0.78,
+      "magnitude": 1.62,
+      "color": "#315dff",
+      "size": 2.015,
+      "lore": "Bright fang-light at the lower hook.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_locathah_well",
+      "name": "Locathah Well",
+      "ra_deg": 264.3296,
+      "dec_deg": -42.9978,
+      "luminosity": 0.748,
+      "magnitude": 1.87,
+      "color": "#d8ffe0",
+      "size": 1.959,
+      "lore": "Far-southern threshold light.",
+      "tags": [
+        "fixed_ra_dec",
+        "freyseths_mask"
+      ]
+    },
+    {
+      "id": "star_stormblood_tail",
+      "name": "Stormblood Tail",
+      "ra_deg": 266.4167,
+      "dec_deg": -29.0078,
+      "luminosity": 0.72,
+      "color": "#ff6d3a",
+      "size": 1.91,
+      "lore": "Deep bright heart of the Star-River, veiled by black dust.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    },
+    {
+      "id": "star_yuan_ti_fang",
+      "name": "Yuan-Ti Fang",
+      "ra_deg": 274.225,
+      "dec_deg": -18.4833,
+      "luminosity": 0.398,
+      "magnitude": 4.6,
+      "color": "#68a6ff",
+      "size": 1.347,
+      "lore": "Dense naked-eye Star-River cloud.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    },
+    {
+      "id": "star_valkhamesh_prime",
+      "name": "Valkhamesh Prime",
+      "ra_deg": 279.2346,
+      "dec_deg": 38.7837,
+      "luminosity": 0.983,
+      "magnitude": 0.03,
+      "color": "#cfe8ff",
+      "size": 2.37,
+      "lore": "South office star; high summer watch-light.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_three_watches"
+      ]
+    },
+    {
+      "id": "star_kobold_spark",
+      "name": "Kobold Spark",
+      "ra_deg": 305.5571,
+      "dec_deg": 40.2567,
+      "luminosity": 0.701,
+      "magnitude": 2.23,
+      "color": "#fff1c9",
+      "size": 1.877,
+      "lore": "Rich northern Star-River field.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    },
+    {
+      "id": "star_dragonborn_ember",
+      "name": "Dragonborn Ember",
+      "ra_deg": 310.3579,
+      "dec_deg": 45.2803,
+      "luminosity": 0.827,
+      "magnitude": 1.25,
+      "color": "#ffbf52",
+      "size": 2.097,
+      "lore": "Northern warm-season Star-River anchor.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    },
+    {
+      "id": "star_lizardfolk_scale",
+      "name": "Lizardfolk Scale",
+      "ra_deg": 314.70000000000005,
+      "dec_deg": 44.3333,
+      "luminosity": 0.475,
+      "magnitude": 4,
+      "color": "#d8ffe0",
+      "size": 1.481,
+      "lore": "Dark-sky northern river-cloud.",
+      "tags": [
+        "fixed_ra_dec",
+        "the_star_river"
+      ]
+    }
+  ],
+  "constellations": [
+    {
+      "id": "vulkiris_chain",
+      "name": "Vulkiris' Chain",
+      "alternate_names": [],
+      "stars": [
+        "star_anubaldir_stone",
+        "star_minotaur_eye",
+        "star_goliath_horn",
+        "star_firbolg_horn",
+        "star_cyclopian_watch",
+        "star_giff_burden",
+        "star_labyrinth_gate"
+      ],
+      "lines": [
+        [
+          "star_firbolg_horn",
+          "star_cyclopian_watch"
+        ],
+        [
+          "star_cyclopian_watch",
+          "star_goliath_horn"
+        ],
+        [
+          "star_goliath_horn",
+          "star_minotaur_eye"
+        ],
+        [
+          "star_minotaur_eye",
+          "star_giff_burden"
+        ],
+        [
+          "star_giff_burden",
+          "star_labyrinth_gate"
+        ],
+        [
+          "star_labyrinth_gate",
+          "star_anubaldir_stone"
+        ],
+        [
+          "star_anubaldir_stone",
+          "star_firbolg_horn"
+        ],
+        [
+          "star_cyclopian_watch",
+          "star_anubaldir_stone"
+        ],
+        [
+          "star_giff_burden",
+          "star_anubaldir_stone"
+        ]
+      ],
+      "center": {
+        "ra_deg": 66.8385,
+        "dec_deg": 16.6545
+      },
+      "bounds": {
+        "radius_deg": 2.544
+      },
+      "season": "Most visible in months 6 and 8, especially at Midday, and most strongly read from Tzaphaer.",
+      "domain": [
+        "rebellion",
+        "freedom",
+        "broken oaths",
+        "resistance",
+        "defiance"
+      ],
+      "summary": "A broken loop with a bright twin-star blade, remembered as the shattered chain of rebellion.",
+      "lore": "Shattered bindings of oppression immortalized in the sky. In Aza’raan sky-lore, the break in the loop is the wound where Vulkiris tore false divine rule open and left a sword-shaped light behind.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#b56cff",
+        "star_color": "#ffd7ff",
+        "glow": 1.0,
+        "label": "Vulkiris' Chain"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -75,
+        "max_latitude": 90,
+        "best_days": [
+          151.0,
+          240.0
+        ],
+        "best_hours": [
+          9.0,
+          14.0
+        ]
+      },
+      "appearance": "A broken loop of stars with a bright twin-point like a sword hilt and blade.",
+      "months_visible": [
+        6,
+        8
+      ],
+      "time_visibility": "Midday",
+      "continent_most_visible_from": "Tzaphaer"
+    },
+    {
+      "id": "ruqores_blade",
+      "name": "Ruqore's Blade",
+      "alternate_names": [],
+      "stars": [
+        "star_fisherhook_line",
+        "star_threechief_ember",
+        "star_snowbank_step",
+        "star_hearthgiant_ember",
+        "star_frostmarked_shard",
+        "star_distaff_guard",
+        "star_fisherknife_edge",
+        "star_lantern_brow"
+      ],
+      "lines": [
+        [
+          "star_frostmarked_shard",
+          "star_fisherhook_line"
+        ],
+        [
+          "star_fisherhook_line",
+          "star_threechief_ember"
+        ],
+        [
+          "star_threechief_ember",
+          "star_snowbank_step"
+        ],
+        [
+          "star_snowbank_step",
+          "star_fisherknife_edge"
+        ],
+        [
+          "star_fisherhook_line",
+          "star_distaff_guard"
+        ],
+        [
+          "star_distaff_guard",
+          "star_lantern_brow"
+        ],
+        [
+          "star_lantern_brow",
+          "star_hearthgiant_ember"
+        ],
+        [
+          "star_threechief_ember",
+          "star_hearthgiant_ember"
+        ],
+        [
+          "star_lantern_brow",
+          "star_threechief_ember"
+        ]
+      ],
+      "center": {
+        "ra_deg": 83.9588,
+        "dec_deg": 0.3737
+      },
+      "bounds": {
+        "radius_deg": 10.472
+      },
+      "season": "Most visible in months 3 and 7, especially at Midday, and visible globally across Aza’ra.",
+      "domain": [
+        "judgment",
+        "law",
+        "crowns",
+        "moon alignment",
+        "trials"
+      ],
+      "summary": "A bright blade-line cut by clustered lights, aligned with law, moonlight, and judgment.",
+      "lore": "Formed from fragments of a tyrant god’s crown, aligned with the moons. Judges, tacticians, and oath-bearers say its three clustered lights mark law, mercy, and necessary wrath.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#ffe7a6",
+        "star_color": "#fff7d6",
+        "glow": 1.08,
+        "label": "Ruqore's Blade"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -90,
+        "max_latitude": 90,
+        "best_days": [
+          61.0,
+          210.0
+        ],
+        "best_hours": [
+          9.0,
+          14.0
+        ],
+        "best_day_windows": [
+          {
+            "festival_id": "stormhook_watch",
+            "days": [
+              87.27,
+              109.09
+            ]
+          },
+          {
+            "festival_id": "deepwater_tidefast",
+            "days": [
+              196.36,
+              218.18
+            ]
+          }
+        ]
+      },
+      "appearance": "A long linear band of stars bisected by three radiant clusters.",
+      "months_visible": [
+        3,
+        7
+      ],
+      "time_visibility": "Midday",
+      "continent_most_visible_from": "Global (visible everywhere)"
+    },
+    {
+      "id": "the_screaming_crown",
+      "name": "The Screaming Crown",
+      "alternate_names": [],
+      "stars": [
+        "star_setrimir_diadem",
+        "star_warforged_nail",
+        "star_geppettin_thread",
+        "star_relicborn_spark",
+        "star_wechselkind_mask",
+        "star_stolen_gear",
+        "star_northhook_glow"
+      ],
+      "lines": [
+        [
+          "star_setrimir_diadem",
+          "star_relicborn_spark"
+        ],
+        [
+          "star_relicborn_spark",
+          "star_wechselkind_mask"
+        ],
+        [
+          "star_wechselkind_mask",
+          "star_stolen_gear"
+        ],
+        [
+          "star_stolen_gear",
+          "star_northhook_glow"
+        ],
+        [
+          "star_northhook_glow",
+          "star_warforged_nail"
+        ],
+        [
+          "star_warforged_nail",
+          "star_geppettin_thread"
+        ],
+        [
+          "star_geppettin_thread",
+          "star_stolen_gear"
+        ],
+        [
+          "star_warforged_nail",
+          "star_stolen_gear"
+        ]
+      ],
+      "center": {
+        "ra_deg": 236.4488,
+        "dec_deg": 80.0187
+      },
+      "bounds": {
+        "radius_deg": 10.682
+      },
+      "season": "Most visible in month 5, especially in the Evening, and most strongly read from Arzuhan.",
+      "domain": [
+        "wrath",
+        "crowns",
+        "authority",
+        "omens",
+        "falling power"
+      ],
+      "summary": "A northern crown of flaring spokes and cold authority.",
+      "lore": "Avinalthis’ final scream cast her wrath into the stars. Its spokes are said to be the splintered cry of a crown breaking open across the void.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#ffb37a",
+        "star_color": "#fff0c9",
+        "glow": 1.12,
+        "label": "The Screaming Crown"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": 0,
+        "max_latitude": 90,
+        "best_days": [
+          121.0,
+          150.0
+        ],
+        "best_hours": [
+          15.5,
+          20.5
+        ]
+      },
+      "appearance": "A fan-shaped crown with radiant outward spokes.",
+      "months_visible": [
+        5
+      ],
+      "time_visibility": "Evening",
+      "continent_most_visible_from": "Arzuhan"
+    },
+    {
+      "id": "selkhanis_loom",
+      "name": "Selkhanis' Loom",
+      "alternate_names": [],
+      "stars": [
+        "star_thoryn_rahek_knot",
+        "star_silkborn_strand",
+        "star_thri_kreen_fang",
+        "star_cnidarin_pulse",
+        "star_oozekin_drop",
+        "star_opteran_eye",
+        "star_needle_eye_ember",
+        "star_beartrail_blade"
+      ],
+      "lines": [
+        [
+          "star_thoryn_rahek_knot",
+          "star_silkborn_strand"
+        ],
+        [
+          "star_silkborn_strand",
+          "star_thri_kreen_fang"
+        ],
+        [
+          "star_thri_kreen_fang",
+          "star_cnidarin_pulse"
+        ],
+        [
+          "star_cnidarin_pulse",
+          "star_oozekin_drop"
+        ],
+        [
+          "star_oozekin_drop",
+          "star_opteran_eye"
+        ],
+        [
+          "star_opteran_eye",
+          "star_needle_eye_ember"
+        ],
+        [
+          "star_opteran_eye",
+          "star_beartrail_blade"
+        ],
+        [
+          "star_silkborn_strand",
+          "star_cnidarin_pulse"
+        ],
+        [
+          "star_thri_kreen_fang",
+          "star_oozekin_drop"
+        ],
+        [
+          "star_cnidarin_pulse",
+          "star_opteran_eye"
+        ]
+      ],
+      "center": {
+        "ra_deg": 187.9782,
+        "dec_deg": 56.4284
+      },
+      "bounds": {
+        "radius_deg": 13.382
+      },
+      "season": "Most visible in months 1 and 5, especially in the Morning, and most strongly read from Dakaroth.",
+      "domain": [
+        "fate",
+        "weaving",
+        "destiny",
+        "threads",
+        "prophecy"
+      ],
+      "summary": "A woven lattice of crossing threads where fate is said to be measured and tied off.",
+      "lore": "Fates of the world were woven into the sky at the beginning of time. Scribes, seers, and oath-weavers study its crossings to read knots in destiny.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#7ad7ff",
+        "star_color": "#dff8ff",
+        "glow": 1.05,
+        "label": "Selkhanis' Loom"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -35,
+        "max_latitude": 90,
+        "best_days": [
+          1.0,
+          150.0
+        ],
+        "best_hours": [
+          2.0,
+          7.0
+        ]
+      },
+      "appearance": "Intersecting lines forming a celestial loom.",
+      "months_visible": [
+        1,
+        5
+      ],
+      "time_visibility": "Morning",
+      "continent_most_visible_from": "Dakaroth"
+    },
+    {
+      "id": "the_emberchild",
+      "name": "The Emberchild",
+      "alternate_names": [],
+      "stars": [
+        "star_enkirael_hearth",
+        "star_stormgoat_ember",
+        "star_shieldmaid_knot",
+        "star_hornward_spear",
+        "star_battlevale_stone",
+        "star_eclipse_veil",
+        "star_kidfire_wick",
+        "star_kidfire_spark"
+      ],
+      "lines": [
+        [
+          "star_enkirael_hearth",
+          "star_stormgoat_ember"
+        ],
+        [
+          "star_stormgoat_ember",
+          "star_shieldmaid_knot"
+        ],
+        [
+          "star_shieldmaid_knot",
+          "star_hornward_spear"
+        ],
+        [
+          "star_hornward_spear",
+          "star_battlevale_stone"
+        ],
+        [
+          "star_battlevale_stone",
+          "star_eclipse_veil"
+        ],
+        [
+          "star_eclipse_veil",
+          "star_enkirael_hearth"
+        ],
+        [
+          "star_eclipse_veil",
+          "star_kidfire_wick"
+        ],
+        [
+          "star_kidfire_wick",
+          "star_kidfire_spark"
+        ],
+        [
+          "star_kidfire_spark",
+          "star_enkirael_hearth"
+        ],
+        [
+          "star_battlevale_stone",
+          "star_kidfire_wick"
+        ]
+      ],
+      "center": {
+        "ra_deg": 80.2858,
+        "dec_deg": 39.665
+      },
+      "bounds": {
+        "radius_deg": 11.108
+      },
+      "season": "Most visible in month 7, especially at Midday, and most strongly read from Tzaphaer.",
+      "domain": [
+        "fire",
+        "ingenuity",
+        "childhood",
+        "theft of flame",
+        "becoming"
+      ],
+      "summary": "A flameward-reaching figure of embers and child-sparks preserved in the sky.",
+      "lore": "Mortal child gifted a divine spark after stealing forge fire. In this chart the child is read not as a perfect hand, but as a reaching ember-trail lifting toward a hearth-flame, which preserves the old story while matching the sky-road seen by Aza’raan astronomers.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#ff9a4d",
+        "star_color": "#ffd7a6",
+        "glow": 1.12,
+        "label": "The Emberchild"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -40,
+        "max_latitude": 90,
+        "best_days": [
+          181.0,
+          210.0
+        ],
+        "best_hours": [
+          9.0,
+          14.0
+        ]
+      },
+      "appearance": "A reaching trail of ember-bright stars ending at a central flame, with a small paired spark beside it.",
+      "months_visible": [
+        7
+      ],
+      "time_visibility": "Midday",
+      "continent_most_visible_from": "Tzaphaer"
+    },
+    {
+      "id": "the_broken_mirror",
+      "name": "The Broken Mirror",
+      "alternate_names": [],
+      "stars": [
+        "star_luma_glow",
+        "star_dara_heart",
+        "star_golynn_prism",
+        "star_charisma_veil",
+        "star_mirrorfire_wick",
+        "star_crownbear_paw",
+        "star_hooplodge_glass",
+        "star_emberfade_crown",
+        "star_novaflare_crown"
+      ],
+      "lines": [
+        [
+          "star_hooplodge_glass",
+          "star_dara_heart"
+        ],
+        [
+          "star_dara_heart",
+          "star_luma_glow"
+        ],
+        [
+          "star_luma_glow",
+          "star_golynn_prism"
+        ],
+        [
+          "star_golynn_prism",
+          "star_charisma_veil"
+        ],
+        [
+          "star_charisma_veil",
+          "star_mirrorfire_wick"
+        ],
+        [
+          "star_mirrorfire_wick",
+          "star_novaflare_crown"
+        ],
+        [
+          "star_luma_glow",
+          "star_crownbear_paw"
+        ],
+        [
+          "star_hooplodge_glass",
+          "star_crownbear_paw"
+        ],
+        [
+          "star_golynn_prism",
+          "star_emberfade_crown"
+        ],
+        [
+          "star_emberfade_crown",
+          "star_mirrorfire_wick"
+        ]
+      ],
+      "center": {
+        "ra_deg": 235.6801,
+        "dec_deg": 28.4812
+      },
+      "bounds": {
+        "radius_deg": 8.188
+      },
+      "season": "Most visible in month 5, especially in the Evening, and most strongly read from Belavadös.",
+      "domain": [
+        "truth",
+        "identity",
+        "reflection",
+        "shards",
+        "self-knowledge"
+      ],
+      "summary": "A fractured mirror-oval with glinting shards and a truth-cut centerline.",
+      "lore": "Wielded by Ishtanora, it reveals truth and identity in reflection. The shard-stars are read as the splinters of selves seen clearly only when the whole is broken open.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#bddfff",
+        "star_color": "#f8fbff",
+        "glow": 1.08,
+        "label": "The Broken Mirror"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -45,
+        "max_latitude": 90,
+        "best_days": [
+          121.0,
+          150.0
+        ],
+        "best_hours": [
+          15.5,
+          20.5
+        ]
+      },
+      "appearance": "A sharp-edged oval with scattered shard-stars.",
+      "months_visible": [
+        5
+      ],
+      "time_visibility": "Evening",
+      "continent_most_visible_from": "Belavadös"
+    },
+    {
+      "id": "nyxarions_lantern",
+      "name": "Nyxarion's Lantern",
+      "alternate_names": [],
+      "stars": [
+        "star_windowstone_frame",
+        "star_elkskin_glow",
+        "star_lamplight_brace",
+        "star_hearthwindow_spur",
+        "star_northwall_lantern",
+        "star_starforge_pane",
+        "star_windowvale_hook"
+      ],
+      "lines": [
+        [
+          "star_windowstone_frame",
+          "star_elkskin_glow"
+        ],
+        [
+          "star_elkskin_glow",
+          "star_lamplight_brace"
+        ],
+        [
+          "star_lamplight_brace",
+          "star_hearthwindow_spur"
+        ],
+        [
+          "star_hearthwindow_spur",
+          "star_northwall_lantern"
+        ],
+        [
+          "star_elkskin_glow",
+          "star_starforge_pane"
+        ],
+        [
+          "star_starforge_pane",
+          "star_lamplight_brace"
+        ],
+        [
+          "star_starforge_pane",
+          "star_windowvale_hook"
+        ],
+        [
+          "star_windowvale_hook",
+          "star_hearthwindow_spur"
+        ],
+        [
+          "star_windowstone_frame",
+          "star_starforge_pane"
+        ]
+      ],
+      "center": {
+        "ra_deg": 14.9325,
+        "dec_deg": 59.2604
+      },
+      "bounds": {
+        "radius_deg": 7.853
+      },
+      "season": "Most visible in months 4 and 5, especially in the Morning, and most strongly read from Belavadös.",
+      "domain": [
+        "guidance",
+        "thresholds",
+        "souls",
+        "keys",
+        "lantern light"
+      ],
+      "summary": "A high lantern-road with a guiding flame and key-bright ending.",
+      "lore": "Lit to guide the first soul—ever-shifting, always present. Guides, mourners, and threshold-keepers say its final trio is the hand that lifts, the flame that reveals, and the key that opens the next road.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#ffd676",
+        "star_color": "#fff0b8",
+        "glow": 1.1,
+        "label": "Nyxarion's Lantern"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -35,
+        "max_latitude": 90,
+        "best_days": [
+          91.0,
+          150.0
+        ],
+        "best_hours": [
+          2.0,
+          7.0
+        ]
+      },
+      "appearance": "A slender trail of stars ending in a trio read as a hand, flame, and key.",
+      "months_visible": [
+        4,
+        5
+      ],
+      "time_visibility": "Morning",
+      "continent_most_visible_from": "Belavadös"
+    },
+    {
+      "id": "the_thornveil_bloom",
+      "name": "The Thornveil Bloom",
+      "alternate_names": [],
+      "stars": [
+        "star_ishtanora_hearth",
+        "star_halfling_rim",
+        "star_kithkin_rim",
+        "star_kender_beat",
+        "star_qickstep_cord",
+        "star_jerbeen_tail",
+        "star_dancer_thread",
+        "star_cryingchild_pearl",
+        "star_foxshare_spark",
+        "star_boatbrother_glow"
+      ],
+      "lines": [
+        [
+          "star_ishtanora_hearth",
+          "star_halfling_rim"
+        ],
+        [
+          "star_halfling_rim",
+          "star_kithkin_rim"
+        ],
+        [
+          "star_kithkin_rim",
+          "star_boatbrother_glow"
+        ],
+        [
+          "star_halfling_rim",
+          "star_kender_beat"
+        ],
+        [
+          "star_kender_beat",
+          "star_jerbeen_tail"
+        ],
+        [
+          "star_kender_beat",
+          "star_qickstep_cord"
+        ],
+        [
+          "star_qickstep_cord",
+          "star_dancer_thread"
+        ],
+        [
+          "star_dancer_thread",
+          "star_foxshare_spark"
+        ],
+        [
+          "star_qickstep_cord",
+          "star_cryingchild_pearl"
+        ],
+        [
+          "star_cryingchild_pearl",
+          "star_ishtanora_hearth"
+        ],
+        [
+          "star_jerbeen_tail",
+          "star_ishtanora_hearth"
+        ]
+      ],
+      "center": {
+        "ra_deg": 56.6548,
+        "dec_deg": 24.2157
+      },
+      "bounds": {
+        "radius_deg": 0.602
+      },
+      "season": "Most visible in months 5 and 6, especially at Midday, and most strongly read from Arzuhan.",
+      "domain": [
+        "transformation",
+        "blooms",
+        "grief",
+        "healing",
+        "ascension"
+      ],
+      "summary": "A compact blossom of loops and a single thorn, sacred to bittersweet transformation.",
+      "lore": "A sacred bloom from Sokhiva’s ascension, symbolizing bittersweet transformation. Healers and mourners alike read its offset thorn as the pain that guards new becoming.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#ff8cb8",
+        "star_color": "#ffe2ef",
+        "glow": 1.05,
+        "label": "The Thornveil Bloom"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -65,
+        "max_latitude": 90,
+        "best_days": [
+          121.0,
+          180.0
+        ],
+        "best_hours": [
+          9.0,
+          14.0
+        ]
+      },
+      "appearance": "Twisted loops of stars forming a bloom with an offset thorn-like spur.",
+      "months_visible": [
+        5,
+        6
+      ],
+      "time_visibility": "Midday",
+      "continent_most_visible_from": "Arzuhan"
+    },
+    {
+      "id": "the_sirens_gaze",
+      "name": "The Siren's Gaze",
+      "alternate_names": [],
+      "stars": [
+        "star_freyseth_mask",
+        "star_sahuagin_fang",
+        "star_locathah_well",
+        "star_bastveig_tide",
+        "star_triton_ward",
+        "star_merfolk_pearl",
+        "star_grung_lantern",
+        "star_aasimar_eye",
+        "star_tiefling_eye",
+        "star_hexblood_smile"
+      ],
+      "lines": [
+        [
+          "star_aasimar_eye",
+          "star_bastveig_tide"
+        ],
+        [
+          "star_bastveig_tide",
+          "star_triton_ward"
+        ],
+        [
+          "star_triton_ward",
+          "star_tiefling_eye"
+        ],
+        [
+          "star_tiefling_eye",
+          "star_grung_lantern"
+        ],
+        [
+          "star_grung_lantern",
+          "star_freyseth_mask"
+        ],
+        [
+          "star_freyseth_mask",
+          "star_hexblood_smile"
+        ],
+        [
+          "star_hexblood_smile",
+          "star_merfolk_pearl"
+        ],
+        [
+          "star_merfolk_pearl",
+          "star_sahuagin_fang"
+        ],
+        [
+          "star_sahuagin_fang",
+          "star_locathah_well"
+        ],
+        [
+          "star_bastveig_tide",
+          "star_freyseth_mask"
+        ],
+        [
+          "star_aasimar_eye",
+          "star_grung_lantern"
+        ],
+        [
+          "star_hexblood_smile",
+          "star_grung_lantern"
+        ]
+      ],
+      "center": {
+        "ra_deg": 249.2374,
+        "dec_deg": -29.4872
+      },
+      "bounds": {
+        "radius_deg": 18.127
+      },
+      "season": "Most visible in month 6, especially in the Evening, and most strongly read from Arzuhan.",
+      "domain": [
+        "sea oaths",
+        "watchfulness",
+        "betrayal",
+        "coasts",
+        "omens"
+      ],
+      "summary": "A sea-watch of paired eyes and curling lines, feared and revered by oathkeepers.",
+      "lore": "Bastveig’s ever-watching eyes shine over oathkeepers and breakers alike. Sailors swear the gaze grows sharper before betrayal, storms, or the breaking of a promise.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#74dfff",
+        "star_color": "#dff8ff",
+        "glow": 1.06,
+        "label": "The Siren's Gaze"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -90,
+        "max_latitude": 60,
+        "best_days": [
+          151.0,
+          180.0
+        ],
+        "best_hours": [
+          15.5,
+          20.5
+        ]
+      },
+      "appearance": "Two bright eye-stars with curving sea-lines around them, like spiraled eyes gazing toward the water.",
+      "months_visible": [
+        6
+      ],
+      "time_visibility": "Evening",
+      "continent_most_visible_from": "Arzuhan"
+    },
+    {
+      "id": "the_star_river",
+      "name": "The Star-River",
+      "alternate_names": [],
+      "stars": [
+        "star_stormblood_tail",
+        "star_yuan_ti_fang",
+        "star_dragonborn_ember",
+        "star_kobold_spark",
+        "star_lizardfolk_scale",
+        "star_curseborn_road",
+        "star_accursed_smile",
+        "star_locathah_lantern"
+      ],
+      "lines": [
+        [
+          "star_curseborn_road",
+          "star_locathah_lantern"
+        ],
+        [
+          "star_locathah_lantern",
+          "star_accursed_smile"
+        ],
+        [
+          "star_accursed_smile",
+          "star_stormblood_tail"
+        ],
+        [
+          "star_stormblood_tail",
+          "star_yuan_ti_fang"
+        ],
+        [
+          "star_yuan_ti_fang",
+          "star_kobold_spark"
+        ],
+        [
+          "star_kobold_spark",
+          "star_dragonborn_ember"
+        ],
+        [
+          "star_dragonborn_ember",
+          "star_lizardfolk_scale"
+        ],
+        [
+          "star_kobold_spark",
+          "star_lizardfolk_scale"
+        ]
+      ],
+      "center": {
+        "ra_deg": 283.9969,
+        "dec_deg": -13.3517
+      },
+      "bounds": {
+        "radius_deg": 152.565
+      },
+      "season": "All year in changing segments, with the brightest river roads honored during the warm sky season.",
+      "domain": [
+        "navigation",
+        "memory",
+        "pilgrimage",
+        "underworld gate watches",
+        "ancient roads",
+        "shared sky inheritance"
+      ],
+      "summary": "The mottled river of stars and dark rifts crossing the night.",
+      "lore": "Sailors, caravan leaders, moon-priests, burial clerks, and desert-edge farmers use it as a road above roads. It braids, breaks, foams, and darkens like floodwater under two moons.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#aee7ff",
+        "star_color": "#f2fbff",
+        "glow": 1.2,
+        "label": "The Star-River"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": -90,
+        "max_latitude": 90,
+        "best_days": [
+          121.0,
+          150.0
+        ],
+        "best_hours": [
+          15.5,
+          20.5
+        ]
+      },
+      "months_visible": [
+        5
+      ],
+      "time_visibility": "Evening",
+      "continent_most_visible_from": "Arzuhan",
+      "appearance": "A wispy coiling trail stretching across the sky like smoke or a serpent-road."
+    },
+    {
+      "id": "ruqores_threefold_judgment",
+      "name": "Ruqore's Threefold Judgment",
+      "alternate_names": [],
+      "stars": [
+        "star_nephthysra_glass",
+        "star_setrimir_diadem",
+        "star_valkhamesh_prime"
+      ],
+      "lines": [
+        [
+          "star_nephthysra_glass",
+          "star_setrimir_diadem"
+        ],
+        [
+          "star_setrimir_diadem",
+          "star_valkhamesh_prime"
+        ],
+        [
+          "star_valkhamesh_prime",
+          "star_nephthysra_glass"
+        ]
+      ],
+      "center": {
+        "ra_deg": 243.2817,
+        "dec_deg": 53.576
+      },
+      "bounds": {
+        "radius_deg": 41.139
+      },
+      "season": "Most visible in months 4 and 8, especially at Midday, and visible globally across Aza’ra.",
+      "domain": [
+        "judgment",
+        "law",
+        "mercy",
+        "wrath",
+        "triple omens"
+      ],
+      "summary": "Three ruling lights whose alignment marks the balance of judgment.",
+      "lore": "The three moons watch law, mercy, and wrath; their rising reminds magistrates and priests that judgment is never singular.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#f1e3ff",
+        "star_color": "#ffffff",
+        "glow": 1.15,
+        "label": "Ruqore's Threefold Judgment"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": 0,
+        "max_latitude": 90,
+        "best_days": [
+          91.0,
+          240.0
+        ],
+        "best_hours": [
+          9.0,
+          14.0
+        ]
+      },
+      "appearance": "Three sovereign luminous lights read as the triple offices of law, mercy, and wrath.",
+      "months_visible": [
+        4,
+        8
+      ],
+      "time_visibility": "Midday",
+      "continent_most_visible_from": "Global (visible everywhere)"
+    },
+    {
+      "id": "the_spirit_lights",
+      "name": "The Spirit Lights",
+      "alternate_names": [],
+      "stars": [],
+      "lines": [],
+      "center": null,
+      "bounds": null,
+      "season": "Dark months, magnetic storms, funeral seasons, and nights when the upper-air curtains move.",
+      "domain": [
+        "burial ledgers",
+        "grave audits",
+        "names of the dead",
+        "underworld gates",
+        "resurrection marks",
+        "cosmic accounting"
+      ],
+      "summary": "Moving curtains and crowns of colored upper air.",
+      "lore": "They have no fixed star-road because they answer to storm, magnetism, darkness, and the dead. Northern provinces read these lights as the breath of restless souls and as warning that Nefarokir is turning a page of the ledger.",
+      "dm_notes": "",
+      "style": {
+        "line_color": "#80ffcc",
+        "star_color": "#b8ffe8",
+        "glow": 1.4,
+        "label": "The Spirit Lights"
+      },
+      "interactions": {
+        "clickable": true,
+        "focus_zoom": 2.4,
+        "panel_open": true
+      },
+      "visibility": {
+        "min_latitude": 35,
+        "max_latitude": 90,
+        "best_days": [
+          211.0,
+          240.0
+        ],
+        "best_hours": [
+          15.5,
+          20.5
+        ]
+      },
+      "months_visible": [
+        8
+      ],
+      "time_visibility": "Evening",
+      "continent_most_visible_from": "Dakaroth",
+      "appearance": "Two arched veils of light opening like wings around a faint central glow."
+    }
+  ]
+}</script>
+<script id="bv-constellations-json-hooks" type="application/json">{
+  "schema_name": "azara_constellations_json_hooks",
+  "schema_version": "2.0.0",
+  "purpose": "Use these hooks in any constellations JSON imported into or exported from the Aza'ra Night Sky Viewer.",
+  "required_top_level_hooks": {
+    "metadata": {
+      "world": "Aza'ra",
+      "title": "Display title for this sky file",
+      "schema_version": "2.0.0",
+      "generated_by": "Aza'ra Night Sky Viewer / Constellation Generator",
+      "notes": "Optional lore or DM notes. Do not use Earth constellation names unless intentionally importing legacy placement data."
+    },
+    "coordinate_lines": [
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -180,
+        "line": "180° W / −180°",
+        "name": "Thalunesh's Reversed Track"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -150,
+        "line": "150° W",
+        "name": "Freyseth's Crossroads Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -120,
+        "line": "120° W",
+        "name": "Nefarokir's Funeral Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -90,
+        "line": "90° W",
+        "name": "Eirzunet's Shadow Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -60,
+        "line": "60° W",
+        "name": "Bastveig's Tidegate Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -30,
+        "line": "30° W",
+        "name": "Horundar's Storm Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 0,
+        "line": "0°",
+        "name": "UTC"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 30,
+        "line": "30° E",
+        "name": "Raeshkul's Calculation Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 60,
+        "line": "60° E",
+        "name": "Sokhivar's Sunroad Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 90,
+        "line": "90° E",
+        "name": "Ishtanora's Hearth Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 120,
+        "line": "120° E",
+        "name": "Marduthor's Deepforge Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 150,
+        "line": "150° E",
+        "name": "Valkhamesh's Thunder Meridian"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": 60,
+        "line": "60° N",
+        "name": "Fleysetl's Northern Underworld Gate"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": 25,
+        "line": "25° N",
+        "name": "Raeshkul's Thoughtline"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": 0,
+        "line": "0°",
+        "name": "Equator"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": -30,
+        "line": "30° S",
+        "name": "Bastveg's Deepwater Passage"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": -65,
+        "line": "65° S",
+        "name": "Thoryn-Rahek's Southern Underworld Gate"
+      }
+    ],
+    "stars": "Array of star objects. Each star must have a stable id and coordinates.",
+    "constellations": "Array of constellation objects. Each constellation references stars by id and lines by star-id pairs."
+  },
+  "star_hooks": {
+    "id": "Stable unique star id, e.g. star_0001.",
+    "name": "Optional in-world star name. Leave blank if unnamed.",
+    "ra_deg": "Right ascension / sky longitude in decimal degrees, 0 through 360.",
+    "dec_deg": "Declination / sky latitude in decimal degrees, -90 through 90.",
+    "luminosity": "0 through 1; higher draws brighter/larger.",
+    "magnitude": "Optional display magnitude. If omitted, luminosity is used.",
+    "color": "Optional CSS color string, e.g. #eafcff.",
+    "size": "Optional pixel multiplier for the star.",
+    "lore": "Optional lore for info panel.",
+    "tags": "Optional array for filtering and DM organization."
+  },
+  "constellation_hooks": {
+    "id": "Stable unique constellation id, e.g. constellation_001.",
+    "name": "Single in-world constellation name shown to players.",
+    "alternate_names": "Optional array; keep empty if every constellation must have one name only.",
+    "stars": "Array of star ids included in the constellation.",
+    "lines": "Array of two-item arrays, each [from_star_id, to_star_id].",
+    "center": "Optional {ra_deg, dec_deg}; auto-computed if omitted.",
+    "bounds": "Optional {radius_deg}; auto-computed if omitted.",
+    "season": "Optional season/month visibility note.",
+    "domain": "Optional divine, cultural, biome, or alignment association.",
+    "summary": "Short player-facing description.",
+    "lore": "Longer player-facing lore shown after clicking.",
+    "dm_notes": "Optional private notes. The viewer does not display these by default.",
+    "style": {
+      "line_color": "Optional CSS color for this constellation's connecting lines.",
+      "star_color": "Optional CSS color override for its stars.",
+      "glow": "Optional number 0 through 1.5 controlling glow strength.",
+      "label": "Optional label override. Defaults to name."
+    },
+    "interactions": {
+      "clickable": "Boolean. Defaults true.",
+      "focus_zoom": "Number. Defaults 2.4.",
+      "panel_open": "Boolean. Defaults true."
+    },
+    "visibility": {
+      "min_latitude": "Optional observer latitude lower bound.",
+      "max_latitude": "Optional observer latitude upper bound.",
+      "best_days": "Optional [start_day, end_day] Aza'ra orbital day range.",
+      "best_hours": "Optional [start_hour, end_hour] local-hour range."
+    }
+  },
+  "generator_hooks": {
+    "seed": "String/number seed used to recreate the generated star field.",
+    "star_density_power": "Number; total generated stars = 2^star_density_power.",
+    "num_constellations": "Number of constellations to build.",
+    "min_stars_per_constellation": "Minimum stars in each constellation.",
+    "additional_stars_per_constellation": "Random extra stars above the minimum.",
+    "max_link_distance_deg": "Maximum nearby-star connection distance in degrees.",
+    "prettify": "Boolean; trims cluttered graphs into a relative-neighborhood-style graph.",
+    "connection_field": "Boolean; draws Houdini-style ambient nearby-star threads across the background."
+  },
+  "example_minimal_constellation": {
+    "metadata": {
+      "world": "Aza'ra",
+      "title": "Example Sky",
+      "schema_version": "2.0.0"
+    },
+    "coordinate_lines": [
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -180,
+        "line": "180° W / −180°",
+        "name": "Thalunesh's Reversed Track"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -150,
+        "line": "150° W",
+        "name": "Freyseth's Crossroads Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -120,
+        "line": "120° W",
+        "name": "Nefarokir's Funeral Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -90,
+        "line": "90° W",
+        "name": "Eirzunet's Shadow Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -60,
+        "line": "60° W",
+        "name": "Bastveig's Tidegate Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": -30,
+        "line": "30° W",
+        "name": "Horundar's Storm Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 0,
+        "line": "0°",
+        "name": "UTC"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 30,
+        "line": "30° E",
+        "name": "Raeshkul's Calculation Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 60,
+        "line": "60° E",
+        "name": "Sokhivar's Sunroad Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 90,
+        "line": "90° E",
+        "name": "Ishtanora's Hearth Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 120,
+        "line": "120° E",
+        "name": "Marduthor's Deepforge Meridian"
+      },
+      {
+        "coordinate_type": "Longitude / Meridian",
+        "kind": "longitude",
+        "degrees": 150,
+        "line": "150° E",
+        "name": "Valkhamesh's Thunder Meridian"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": 60,
+        "line": "60° N",
+        "name": "Fleysetl's Northern Underworld Gate"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": 25,
+        "line": "25° N",
+        "name": "Raeshkul's Thoughtline"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": 0,
+        "line": "0°",
+        "name": "Equator"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": -30,
+        "line": "30° S",
+        "name": "Bastveg's Deepwater Passage"
+      },
+      {
+        "coordinate_type": "Latitude / Parallel",
+        "kind": "latitude",
+        "degrees": -65,
+        "line": "65° S",
+        "name": "Thoryn-Rahek's Southern Underworld Gate"
+      }
+    ],
+    "stars": [
+      {
+        "id": "star_0001",
+        "ra_deg": 10,
+        "dec_deg": 20,
+        "luminosity": 0.9
+      },
+      {
+        "id": "star_0002",
+        "ra_deg": 15,
+        "dec_deg": 24,
+        "luminosity": 0.7
+      }
+    ],
+    "constellations": [
+      {
+        "id": "constellation_001",
+        "name": "The First Lantern",
+        "stars": [
+          "star_0001",
+          "star_0002"
+        ],
+        "lines": [
+          [
+            "star_0001",
+            "star_0002"
+          ]
+        ],
+        "summary": "A small test pattern.",
+        "lore": "Used only as an import/export example."
+      }
+    ]
+  },
+  "viewer_hooks": {
+    "player_default_mode": "Opening constellations.html without a hash hides all generator, import, JSON download, hook copying, and HTML export controls.",
+    "dm_editor_hash": "#dm-editor",
+    "dm_editor_mode": "Append #dm-editor to the file URL/address to reveal the Constellation generator and Import / Export panels.",
+    "player_visible_controls": [
+      "speed",
+      "orbital day",
+      "observer latitude",
+      "0hr/6hr/12hr/18hr viewpoint time buttons",
+      "top up/top down",
+      "play/pause",
+      "recenter",
+      "zoom in/out",
+      "stars layer",
+      "constellation lines layer",
+      "labels layer",
+      "named coordinate grid layer",
+      "ambient links layer"
+    ],
+    "time_converter": {
+      "dom_id": "bv-time-panel",
+      "placement": "inside the main HUD directly beneath the Observer latitude readout area",
+      "updates_from": [
+        "speed",
+        "observer latitude",
+        "orbital day",
+        "selected hour",
+        "top up/top down viewpoint",
+        "play/pause state"
+      ],
+      "display_hooks": [
+        "data-bv-earth-main",
+        "data-bv-earth-sub",
+        "data-bv-bela-main",
+        "data-bv-bela-sub",
+        "data-bv-month-main",
+        "data-bv-month-sub",
+        "data-bv-day-main",
+        "data-bv-day-sub"
+      ]
+    }
+  }
+}</script>
+<script src="../../script/js/constellations-01.js"></script>
+<script type="application/json" id="azara-standalone-assets">{"styles":[{"href":"../../css/constellations-01.css","base64":"CiAgOnJvb3QgewogICAgLS1iZzojMDUwODE2OwogICAgLS1wYW5lbDpyZ2JhKDksMTgsMzgsLjc4KTsKICAgIC0tcGFuZWwtc3Ryb25nOnJnYmEoNCwxMiwyOCwuOTIpOwogICAgLS1pbms6I2VkZjdmZjsKICAgIC0tbXV0ZWQ6IzllYjhjZTsKICAgIC0tY3lhbjojNjRlOWZmOwogICAgLS1jeWFuMjojMDBmZmZmOwogICAgLS1nb2xkOiNmZmU3YTY7CiAgICAtLW9yYW5nZTojQ0E2MzA5OwogICAgLS1kYW5nZXI6I2ZmNzU4ZjsKICAgIC0tb2s6I2E2ZmZkNDsKICAgIC0tc2hhZG93OjAgMjBweCA2MHB4IHJnYmEoMCwwLDAsLjM1KSwgaW5zZXQgMCAwIDQwcHggcmdiYSgxMDAsMjMzLDI1NSwuMDUpOwogIH0KICAqIHsgYm94LXNpemluZzpib3JkZXItYm94OyB9CiAgaHRtbCwgYm9keSB7CiAgICBtYXJnaW46MDsKICAgIGhlaWdodDoxMDAlOwogICAgb3ZlcmZsb3c6aGlkZGVuOwogICAgYmFja2dyb3VuZDpyYWRpYWwtZ3JhZGllbnQoY2lyY2xlIGF0IDUwJSAzNSUsICMxNDI0NDggMCUsICMwNzEzMjYgNDglLCAjMDMwNzEyIDEwMCUpOwogICAgY29sb3I6dmFyKC0taW5rKTsKICAgIGZvbnQtZmFtaWx5Okdlb3JnaWEsICJUaW1lcyBOZXcgUm9tYW4iLCBzZXJpZjsKICB9CiAgI3NreSB7CiAgICBwb3NpdGlvbjpmaXhlZDsKICAgIGluc2V0OjA7CiAgICB3aWR0aDoxMDB2dzsKICAgIGhlaWdodDoxMDB2aDsKICAgIGN1cnNvcjpncmFiOwogICAgdG91Y2gtYWN0aW9uOm5vbmU7CiAgfQogICNza3kuZHJhZ2dpbmcgeyBjdXJzb3I6Z3JhYmJpbmc7IH0KICAud2FzaCB7CiAgICBwb3NpdGlvbjpmaXhlZDsKICAgIGluc2V0Oi0yMCU7CiAgICBwb2ludGVyLWV2ZW50czpub25lOwogICAgYmFja2dyb3VuZDoKICAgICAgcmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgMzAlIDI1JSwgcmdiYSgxMDAsMjMzLDI1NSwuMTQpLCB0cmFuc3BhcmVudCAzNSUpLAogICAgICByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCA3OCUgNjklLCByZ2JhKDE4MSwxMjgsMjU1LC4xMyksIHRyYW5zcGFyZW50IDMzJSksCiAgICAgIHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IDUwJSA4NSUsIHJnYmEoMjU1LDIwMSwxMTMsLjA4KSwgdHJhbnNwYXJlbnQgNDUlKTsKICAgIG1peC1ibGVuZC1tb2RlOnNjcmVlbjsKICAgIGZpbHRlcjpibHVyKDE4cHgpOwogICAgYW5pbWF0aW9uOmRyaWZ0IDI4cyBlYXNlLWluLW91dCBpbmZpbml0ZSBhbHRlcm5hdGU7CiAgfQogIEBrZXlmcmFtZXMgZHJpZnQgewogICAgZnJvbSB7IHRyYW5zZm9ybTp0cmFuc2xhdGUoLTIlLDElKSByb3RhdGUoLTFkZWcpIHNjYWxlKDEpOyB9CiAgICB0byB7IHRyYW5zZm9ybTp0cmFuc2xhdGUoMiUsLTIlKSByb3RhdGUoMWRlZykgc2NhbGUoMS4wNSk7IH0KICB9CiAgLnBhbmVsIHsKICAgIHBvc2l0aW9uOmZpeGVkOwogICAgYmFja2dyb3VuZDp2YXIoLS1wYW5lbCk7CiAgICBiYWNrZHJvcC1maWx0ZXI6Ymx1cigxNHB4KTsKICAgIGJvcmRlcjoxcHggc29saWQgcmdiYSgxMjQsMjI3LDI1NSwuMzIpOwogICAgYm9yZGVyLXJhZGl1czoyMnB4OwogICAgYm94LXNoYWRvdzp2YXIoLS1zaGFkb3cpOwogICAgei1pbmRleDo1OwogIH0KICAuaHVkIHsKICAgIHRvcDoxNnB4OwogICAgbGVmdDoxNnB4OwogICAgd2lkdGg6bWluKDQyMHB4LCBjYWxjKDEwMHZ3IC0gMzJweCkpOwogICAgbWF4LWhlaWdodDpjYWxjKDEwMHZoIC0gMzJweCk7CiAgICBvdmVyZmxvdzphdXRvOwogICAgcGFkZGluZzoxNnB4OwogIH0KICAuaHVkIGgxIHsKICAgIG1hcmdpbjowIDAgNHB4OwogICAgZm9udC1zaXplOjIxcHg7CiAgICBsZXR0ZXItc3BhY2luZzouMDRlbTsKICAgIGNvbG9yOiNlYWZjZmY7CiAgfQogIC5odWQgcCB7CiAgICBtYXJnaW46NHB4IDAgMTJweDsKICAgIGNvbG9yOnZhcigtLW11dGVkKTsKICAgIGZvbnQtc2l6ZToxM3B4OwogICAgbGluZS1oZWlnaHQ6MS4zNTsKICB9CiAgLmh1ZCBkZXRhaWxzIHsKICAgIG1hcmdpbi10b3A6MTBweDsKICAgIGJvcmRlci10b3A6MXB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsLjExKTsKICAgIHBhZGRpbmctdG9wOjhweDsKICB9CiAgLmh1ZCBzdW1tYXJ5IHsKICAgIGN1cnNvcjpwb2ludGVyOwogICAgY29sb3I6I2VhZmNmZjsKICAgIGZvbnQtd2VpZ2h0OjgwMDsKICAgIGxldHRlci1zcGFjaW5nOi4wMmVtOwogICAgbGlzdC1zdHlsZTpub25lOwogIH0KICAuaHVkIHN1bW1hcnk6Oi13ZWJraXQtZGV0YWlscy1tYXJrZXIgeyBkaXNwbGF5Om5vbmU7IH0KICAuaHVkIHN1bW1hcnk6OmJlZm9yZSB7IGNvbnRlbnQ6IuKWuCI7IGNvbG9yOnZhcigtLWN5YW4pOyBtYXJnaW4tcmlnaHQ6NnB4OyB9CiAgLmh1ZCBkZXRhaWxzW29wZW5dIHN1bW1hcnk6OmJlZm9yZSB7IGNvbnRlbnQ6IuKWviI7IH0KICAucm93IHsKICAgIGRpc3BsYXk6Z3JpZDsKICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczoxZnIgMWZyOwogICAgZ2FwOjhweDsKICAgIG1hcmdpbjo4cHggMDsKICB9CiAgLnJvdy50aHJlZSB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoMywxZnIpOyB9CiAgLnJvdy5mb3VyIHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOnJlcGVhdCg0LDFmcik7IH0KICAucm93LnNpbmdsZSB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczoxZnI7IH0KICBidXR0b24sIHNlbGVjdCwgaW5wdXRbdHlwZT1yYW5nZV0sIGlucHV0W3R5cGU9dGV4dF0sIGlucHV0W3R5cGU9bnVtYmVyXSwgdGV4dGFyZWEgeyB3aWR0aDoxMDAlOyB9CiAgYnV0dG9uLCBzZWxlY3QsIGlucHV0W3R5cGU9dGV4dF0sIGlucHV0W3R5cGU9bnVtYmVyXSwgdGV4dGFyZWEgewogICAgYm9yZGVyOjFweCBzb2xpZCByZ2JhKDEwMCwyMzMsMjU1LC4zNSk7CiAgICBiYWNrZ3JvdW5kOnJnYmEoMywxMCwyNCwuNzIpOwogICAgY29sb3I6dmFyKC0taW5rKTsKICAgIGJvcmRlci1yYWRpdXM6MTNweDsKICAgIHBhZGRpbmc6OXB4IDEwcHg7CiAgICBmb250LWZhbWlseTppbmhlcml0OwogICAgZm9udC1zaXplOjEzcHg7CiAgICBvdXRsaW5lOm5vbmU7CiAgfQogIHRleHRhcmVhIHsgbWluLWhlaWdodDo5MHB4OyByZXNpemU6dmVydGljYWw7IGxpbmUtaGVpZ2h0OjEuMzU7IH0KICBidXR0b24geyBjdXJzb3I6cG9pbnRlcjsgfQogIGJ1dHRvbjpob3ZlciwgYnV0dG9uLmFjdGl2ZSB7CiAgICBib3JkZXItY29sb3I6dmFyKC0tY3lhbik7CiAgICBib3gtc2hhZG93OjAgMCAwIDJweCByZ2JhKDEwMCwyMzMsMjU1LC4xMiksIGluc2V0IDAgMCAyMHB4IHJnYmEoMTAwLDIzMywyNTUsLjA4KTsKICAgIGNvbG9yOiNmZmY7CiAgfQogIGJ1dHRvbi53YXJuIHsgYm9yZGVyLWNvbG9yOnJnYmEoMjU1LDExNywxNDMsLjQ1KTsgY29sb3I6I2ZmZDhlMDsgfQogIGJ1dHRvbi5nb29kIHsgYm9yZGVyLWNvbG9yOnJnYmEoMTY2LDI1NSwyMTIsLjQ1KTsgY29sb3I6I2Q1ZmZlOTsgfQogIGJ1dHRvbi5nb2xkIHsgYm9yZGVyLWNvbG9yOnJnYmEoMjU1LDIzMSwxNjYsLjQ1KTsgY29sb3I6I2ZmZjFiZDsgfQogIGxhYmVsIHsKICAgIGRpc3BsYXk6YmxvY2s7CiAgICBmb250LXNpemU6MTJweDsKICAgIGNvbG9yOiNjMGQ4ZWE7CiAgICBtYXJnaW4tdG9wOjhweDsKICB9CiAgaW5wdXRbdHlwZT1yYW5nZV0geyBhY2NlbnQtY29sb3I6IzY0ZTlmZjsgfQogIC5zbWFsbC1ub3RlIHsgZm9udC1zaXplOjExcHg7IGNvbG9yOiNhOWM0ZDY7IGxpbmUtaGVpZ2h0OjEuMzU7IH0KICAucmVhZG91dCB7CiAgICBkaXNwbGF5OmdyaWQ7CiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyIDFmcjsKICAgIGdhcDo3cHg7CiAgICBtYXJnaW4tdG9wOjEwcHg7CiAgICBmb250LXNpemU6MTJweDsKICAgIGNvbG9yOiNjYmU3Zjk7CiAgfQogIC5waWxsIHsKICAgIGJvcmRlcjoxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwuMTIpOwogICAgYm9yZGVyLXJhZGl1czo5OTlweDsKICAgIHBhZGRpbmc6NnB4IDlweDsKICAgIGJhY2tncm91bmQ6cmdiYSgyNTUsMjU1LDI1NSwuMDUpOwogICAgd2hpdGUtc3BhY2U6bm93cmFwOwogICAgb3ZlcmZsb3c6aGlkZGVuOwogICAgdGV4dC1vdmVyZmxvdzplbGxpcHNpczsKICB9CiAgLmluZm8gewogICAgcmlnaHQ6MTZweDsKICAgIHRvcDoxNnB4OwogICAgd2lkdGg6bWluKDM5MHB4LCBjYWxjKDEwMHZ3IC0gMzJweCkpOwogICAgbWF4LWhlaWdodDpjYWxjKDEwMHZoIC0gMTY4cHgpOwogICAgb3ZlcmZsb3c6YXV0bzsKICAgIGJvcmRlci1jb2xvcjpyZ2JhKDI1NSwyMzEsMTY2LC4zNSk7CiAgICBwYWRkaW5nOjE2cHg7CiAgfQogIC5pbmZvIGgyIHsKICAgIG1hcmdpbjowOwogICAgY29sb3I6dmFyKC0tZ29sZCk7CiAgICBmb250LXNpemU6MjJweDsKICB9CiAgLmluZm8gLnN1YiB7CiAgICBjb2xvcjojYmFkNGU4OwogICAgZm9udC1zaXplOjEzcHg7CiAgICBtYXJnaW46NHB4IDAgMTJweDsKICAgIGxpbmUtaGVpZ2h0OjEuMzY7CiAgfQogIC5pbmZvIHRhYmxlIHsKICAgIHdpZHRoOjEwMCU7CiAgICBib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7CiAgICBmb250LXNpemU6MTNweDsKICB9CiAgLmluZm8gdGQgewogICAgYm9yZGVyLWJvdHRvbToxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwuMDkpOwogICAgcGFkZGluZzo3cHggM3B4OwogICAgdmVydGljYWwtYWxpZ246dG9wOwogIH0KICAuaW5mbyB0ZDpmaXJzdC1jaGlsZCB7CiAgICBjb2xvcjojOWViOGNlOwogICAgd2lkdGg6NDIlOwogIH0KICAuaW5mbyAuaW5mby1hY3Rpb25zIHsgZGlzcGxheTpncmlkOyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyIDFmcjsgZ2FwOjhweDsgbWFyZ2luLXRvcDoxMnB4OyB9CiAgLmxlZ2VuZCB7CiAgICBwb3NpdGlvbjpmaXhlZDsKICAgIGxlZnQ6MTZweDsKICAgIGJvdHRvbToxNHB4OwogICAgcmlnaHQ6MTZweDsKICAgIGRpc3BsYXk6ZmxleDsKICAgIGdhcDoxMHB4OwogICAgZmxleC13cmFwOndyYXA7CiAgICBjb2xvcjojY2NlN2Y2OwogICAgZm9udC1zaXplOjEycHg7CiAgICBwb2ludGVyLWV2ZW50czpub25lOwogICAgei1pbmRleDo0OwogIH0KICAua2V5IHsKICAgIGJhY2tncm91bmQ6cmdiYSg0LDExLDI0LC41OCk7CiAgICBib3JkZXI6MXB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsLjEyKTsKICAgIHBhZGRpbmc6N3B4IDEwcHg7CiAgICBib3JkZXItcmFkaXVzOjk5OXB4OwogICAgYmFja2Ryb3AtZmlsdGVyOmJsdXIoOHB4KTsKICB9CiAgLm1pbmktZ3JpZCB7IGRpc3BsYXk6Z3JpZDsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmciBhdXRvOyBnYXA6OHB4OyBhbGlnbi1pdGVtczpjZW50ZXI7IH0KICAudmFsdWUtYmFkZ2UgeyBmb250LXNpemU6MTFweDsgY29sb3I6dmFyKC0tZ29sZCk7IG1pbi13aWR0aDo0OHB4OyB0ZXh0LWFsaWduOnJpZ2h0OyB9CiAgYm9keTpub3QoLmRtLWVkaXRvcikgLmRtLWVkaXRvci1vbmx5IHsgZGlzcGxheTpub25lICFpbXBvcnRhbnQ7IH0KICBib2R5LmRtLWVkaXRvciAuZG0tZWRpdG9yLW9ubHkgeyBkaXNwbGF5OmJsb2NrOyB9CiAgLmRtLWFjY2Vzcy1ub3RlIHsKICAgIGRpc3BsYXk6bm9uZTsKICAgIG1hcmdpbjo4cHggMCAwOwogICAgYm9yZGVyOjFweCBzb2xpZCByZ2JhKDI1NSwyMzEsMTY2LC4yNSk7CiAgICBib3JkZXItcmFkaXVzOjEzcHg7CiAgICBwYWRkaW5nOjhweCAxMHB4OwogICAgYmFja2dyb3VuZDpyZ2JhKDI1NSwyMzEsMTY2LC4wNik7CiAgICBjb2xvcjojZmZlN2E2OwogICAgZm9udC1zaXplOjEycHg7CiAgICBsaW5lLWhlaWdodDoxLjM1OwogIH0KICBib2R5LmRtLWVkaXRvciAuZG0tYWNjZXNzLW5vdGUgeyBkaXNwbGF5OmJsb2NrOyB9CgogIC5idi10aW1lLXBhbmVsIHsKICAgIHBvc2l0aW9uOmZpeGVkOwogICAgcmlnaHQ6MTRweDsKICAgIGJvdHRvbToxNHB4OwogICAgbGVmdDphdXRvOwogICAgdG9wOmF1dG87CiAgICB6LWluZGV4Ojk5OTk5OTsKICAgIHdpZHRoOm1pbig1NjBweCxjYWxjKDEwMHZ3IC0gMjhweCkpOwogICAgbWF4LXdpZHRoOm1pbig1NjBweCxjYWxjKDEwMHZ3IC0gMjhweCkpOwogICAgYmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLHJnYmEoMywxMiwyOCwuOTQpLHJnYmEoOCwyOSw1NCwuOTApKTsKICAgIGJvcmRlcjoxcHggc29saWQgcmdiYSgxMTEsMjU1LDIzMywuNDIpOwogICAgYm94LXNoYWRvdzowIDAgMjRweCByZ2JhKDAsMCwwLC41NSksMCAwIDIycHggcmdiYSgxMTEsMjU1LDIzMywuMTYpOwogICAgYmFja2Ryb3AtZmlsdGVyOmJsdXIoMTBweCk7CiAgICBib3JkZXItcmFkaXVzOjE2cHg7CiAgICBjb2xvcjojZWFmNmZmOwogICAgZm9udC1mYW1pbHk6SW50ZXIsc3lzdGVtLXVpLFNlZ29lIFVJLEFyaWFsLHNhbnMtc2VyaWY7CiAgICBvdmVyZmxvdzpoaWRkZW47CiAgfQogIC5idi10aW1lLWhlYWQgewogICAgZGlzcGxheTpmbGV4OwogICAgYWxpZ24taXRlbXM6Y2VudGVyOwogICAganVzdGlmeS1jb250ZW50OnNwYWNlLWJldHdlZW47CiAgICBnYXA6MTBweDsKICAgIHBhZGRpbmc6OXB4IDExcHg7CiAgICBib3JkZXItYm90dG9tOjFweCBzb2xpZCByZ2JhKDExMSwyNTUsMjMzLC4xOCk7CiAgICBmb250LXdlaWdodDo5MDA7CiAgICBsZXR0ZXItc3BhY2luZzouMDJlbTsKICAgIGN1cnNvcjpncmFiOwogICAgdXNlci1zZWxlY3Q6bm9uZTsKICAgIHRvdWNoLWFjdGlvbjpub25lOwogIH0KICAuYnYtdGltZS1wYW5lbC5kcmFnZ2luZyAuYnYtdGltZS1oZWFkIHsgY3Vyc29yOmdyYWJiaW5nOyB9CiAgLmJ2LXRpbWUtaGVhZCBzcGFuIHsgY29sb3I6IzZmZmZlOTsgfQogIC5idi10aW1lLWRyYWdoaW50IHsgY29sb3I6IzhjY2ZkZDsgZm9udC1zaXplOjEwcHg7IGZvbnQtd2VpZ2h0OjgwMDsgbWFyZ2luLWxlZnQ6NnB4OyBvcGFjaXR5Oi44NTsgfQogIC5idi10aW1lLWJvZHkgewogICAgZGlzcGxheTpncmlkOwogICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmciAxZnI7CiAgICBnYXA6OHB4OwogICAgcGFkZGluZzoxMHB4OwogIH0KICAuYnYtdGltZS1jYXJkIHsKICAgIGJhY2tncm91bmQ6cmdiYSgyNTUsMjU1LDI1NSwuMDQ1KTsKICAgIGJvcmRlcjoxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwuMDkpOwogICAgYm9yZGVyLXJhZGl1czoxMnB4OwogICAgcGFkZGluZzo4cHg7CiAgfQogIC5idi10aW1lLWNhcmQgYiB7CiAgICBkaXNwbGF5OmJsb2NrOwogICAgY29sb3I6IzliZGZmMDsKICAgIHRleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTsKICAgIGZvbnQtc2l6ZToxMHB4OwogICAgbGV0dGVyLXNwYWNpbmc6LjA4ZW07CiAgICBtYXJnaW4tYm90dG9tOjRweDsKICB9CiAgLmJ2LXRpbWUtY2FyZCBzdHJvbmcgewogICAgZGlzcGxheTpibG9jazsKICAgIGNvbG9yOiNmZmY7CiAgICBmb250LXNpemU6MTNweDsKICAgIGxpbmUtaGVpZ2h0OjEuMjU7CiAgfQogIC5idi10aW1lLWNhcmQgc21hbGwgewogICAgZGlzcGxheTpibG9jazsKICAgIGNvbG9yOiNhOWM0ZDY7CiAgICBmb250LXNpemU6MTFweDsKICAgIGxpbmUtaGVpZ2h0OjEuMzsKICAgIG1hcmdpbi10b3A6M3B4OwogIH0KICAuYnYtdGltZS1mb290IHsKICAgIHBhZGRpbmc6MCAxMHB4IDEwcHg7CiAgICBjb2xvcjojYmZlZmZmOwogICAgZm9udC1zaXplOjExcHg7CiAgICBsaW5lLWhlaWdodDoxLjM1OwogIH0KICAuYnYtdGltZS1mb290IGVtIHsgY29sb3I6I2ZmZDE2NjsgZm9udC1zdHlsZTpub3JtYWw7IH0KICAuYnYtdGltZS10b2dnbGUgewogICAgYmFja2dyb3VuZDojMDgxYTMxOwogICAgYm9yZGVyOjFweCBzb2xpZCByZ2JhKDExMSwyNTUsMjMzLC40MCk7CiAgICBjb2xvcjojZWFmNmZmOwogICAgYm9yZGVyLXJhZGl1czo5OTlweDsKICAgIHBhZGRpbmc6NHB4IDhweDsKICAgIGZvbnQtc2l6ZToxMXB4OwogICAgZm9udC13ZWlnaHQ6ODAwOwogICAgY3Vyc29yOnBvaW50ZXI7CiAgICB3aWR0aDphdXRvOwogIH0KICAuYnYtdGltZS1wYW5lbC5jb2xsYXBzZWQgeyB3aWR0aDptaW4oMzkwcHgsIGNhbGMoMTAwdncgLSAyOHB4KSk7IH0KICAuYnYtdGltZS1wYW5lbC5jb2xsYXBzZWQgLmJ2LXRpbWUtYm9keSwKICAuYnYtdGltZS1wYW5lbC5jb2xsYXBzZWQgLmJ2LXRpbWUtZm9vdCB7IGRpc3BsYXk6bm9uZTsgfQogIC5idi10aW1lLXBhbmVsLmJ2LXRpbWUtaW5saW5lIHsKICAgIHBvc2l0aW9uOnJlbGF0aXZlOwogICAgbGVmdDphdXRvOwogICAgcmlnaHQ6YXV0bzsKICAgIHRvcDphdXRvOwogICAgYm90dG9tOmF1dG87CiAgICB6LWluZGV4OmF1dG87CiAgICB3aWR0aDoxMDAlOwogICAgbWF4LXdpZHRoOm5vbmU7CiAgICBtYXJnaW46MTBweCAwIDA7CiAgICBib3JkZXItcmFkaXVzOjE0cHg7CiAgfQogIC5idi10aW1lLXBhbmVsLmJ2LXRpbWUtaW5saW5lIC5idi10aW1lLWhlYWQgeyBjdXJzb3I6ZGVmYXVsdDsgfQogIC5idi10aW1lLXBhbmVsLmJ2LXRpbWUtaW5saW5lIC5idi10aW1lLWRyYWdoaW50IHsgZGlzcGxheTpub25lOyB9CiAgLmJ2LXRpbWUtcGFuZWwuYnYtdGltZS1pbmxpbmUuY29sbGFwc2VkIHsgd2lkdGg6MTAwJTsgfQogIC5idi10aW1lLXBhbmVsLmJ2LXRpbWUtaW5saW5lIC5idi10aW1lLWJvZHkgeyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyIDFmcjsgfQogIC5idi10aW1lLXBhbmVsLmJ2LXRpbWUtaW5saW5lIC5idi10aW1lLWNhcmQgc3Ryb25nIHsgZm9udC1zaXplOjEycHg7IH0KCiAgQG1lZGlhIChtYXgtd2lkdGg6MTA1MHB4KSB7CiAgICAuaW5mbyB7IHRvcDphdXRvOyBib3R0b206OTZweDsgbWF4LWhlaWdodDozOHZoOyB9CiAgICAuaHVkIHsgbWF4LWhlaWdodDo1NXZoOyB9CiAgICAubGVnZW5kIHsgZGlzcGxheTpub25lOyB9CiAgICAuYnYtdGltZS1ib2R5IHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmcjsgfQogIH0KICBAbWVkaWEgKG1heC13aWR0aDo3MjBweCkgewogICAgLmh1ZCwgLmluZm8geyBsZWZ0OjEwcHg7IHJpZ2h0OjEwcHg7IHdpZHRoOmF1dG87IH0KICAgIC5odWQgeyB0b3A6MTBweDsgbWF4LWhlaWdodDo0OHZoOyB9CiAgICAuaW5mbyB7IGJvdHRvbTo4NnB4OyBtYXgtaGVpZ2h0OjMxdmg7IH0KICAgIC5yb3cuZm91ciwgLnJvdy50aHJlZSB7IGdyaWQtdGVtcGxhdGUtY29sdW1uczoxZnIgMWZyOyB9CiAgICAuYnYtdGltZS1wYW5lbDpub3QoLmJ2LXRpbWUtaW5saW5lKSB7IHJpZ2h0OjEwcHg7IGJvdHRvbToxMHB4OyBtYXgtd2lkdGg6Y2FsYygxMDB2dyAtIDIwcHgpOyB9CiAgICAuYnYtdGltZS1wYW5lbC5idi10aW1lLWlubGluZSAuYnYtdGltZS1ib2R5IHsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmcjsgfQogIH0K"},{"href":"../../css/constellations-02.css","base64":"Ci8qID09PSBBemEncmEgY29udGludW91cyB0aW1lLXNwZWVkIGNvbnRyb2wgPT09ICovCi5hemEtc3BlZWQtY29udHJvbHtkaXNwbGF5OmdyaWQ7Z2FwOjVweDttaW4td2lkdGg6bWluKDQzMHB4LDU0dncpO3BhZGRpbmc6NnB4IDhweDtib3JkZXI6MXB4IHNvbGlkIHJnYmEoMTIwLDI1NSwyNTUsLjI1KTtib3JkZXItcmFkaXVzOjEycHg7YmFja2dyb3VuZDpyZ2JhKDIsMTQsMjUsLjUyKTtmb250LWZhbWlseTpBcmlhbCxzYW5zLXNlcmlmfQouYXphLXNwZWVkLWhlYWR7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6OHB4O21pbi13aWR0aDowO2ZvbnQtc2l6ZToxMXB4O2NvbG9yOiNiZmVmZmZ9LmF6YS1zcGVlZC1oZWFkIGJ7Y29sb3I6I2VmZn0uYXphLXNwZWVkLWhlYWQgb3V0cHV0e21hcmdpbi1sZWZ0OmF1dG87bWluLXdpZHRoOjA7bWF4LXdpZHRoOjY1JTtvdmVyZmxvdzpoaWRkZW47dGV4dC1vdmVyZmxvdzplbGxpcHNpczt3aGl0ZS1zcGFjZTpub3dyYXA7Y29sb3I6I2ZmZTdhNjtmb250LXdlaWdodDo4MDA7dGV4dC1hbGlnbjpyaWdodH0KLmF6YS1zcGVlZC1jb250cm9sIGlucHV0W3R5cGU9cmFuZ2Vde3dpZHRoOjEwMCU7bWluLXdpZHRoOjE0MHB4O2FjY2VudC1jb2xvcjojNjRlOWZmO21hcmdpbjowfS5hemEtc3BlZWQtaGVscHtkaXNwbGF5OmZsZXg7Z2FwOjRweDtvdmVyZmxvdy14OmF1dG87c2Nyb2xsYmFyLXdpZHRoOnRoaW47cGFkZGluZy1ib3R0b206MXB4fQouYXphLXNwZWVkLWhlbHAgYnV0dG9ue2ZsZXg6MCAwIGF1dG87d2lkdGg6YXV0byFpbXBvcnRhbnQ7bWluLWhlaWdodDoyNHB4IWltcG9ydGFudDtwYWRkaW5nOjNweCA2cHghaW1wb3J0YW50O2JvcmRlci1yYWRpdXM6OTk5cHghaW1wb3J0YW50O2ZvbnQ6NzAwIDlweC8xLjE1IEFyaWFsLHNhbnMtc2VyaWYhaW1wb3J0YW50O3doaXRlLXNwYWNlOm5vd3JhcCFpbXBvcnRhbnQ7YmFja2dyb3VuZDpyZ2JhKDI1NSwyNTUsMjU1LC4wNDUpIWltcG9ydGFudDtjb2xvcjojY2ZlZmZmIWltcG9ydGFudDtib3JkZXI6MXB4IHNvbGlkIHJnYmEoMTIwLDI1NSwyNTUsLjI0KSFpbXBvcnRhbnR9Ci5hemEtc3BlZWQtaGVscCBidXR0b246aG92ZXIsLmF6YS1zcGVlZC1oZWxwIGJ1dHRvbi5hY3RpdmV7Ym9yZGVyLWNvbG9yOiM4ZmYhaW1wb3J0YW50O2JhY2tncm91bmQ6cmdiYSgwLDI1NSwyNTUsLjEyKSFpbXBvcnRhbnQ7Y29sb3I6I2ZmZiFpbXBvcnRhbnR9Ci5hemEtc3BlZWQtbm90ZXtmb250LXNpemU6OXB4O2xpbmUtaGVpZ2h0OjEuMjU7Y29sb3I6IzhmYjhjOX0KQG1lZGlhKG1heC13aWR0aDo3NjBweCl7LmF6YS1zcGVlZC1jb250cm9se21pbi13aWR0aDoyNzBweDttYXgtd2lkdGg6Y2FsYygxMDB2dyAtIDI4cHgpfS5hemEtc3BlZWQtaGVhZCBvdXRwdXR7bWF4LXdpZHRoOjU1JX19Cg=="},{"href":"../../css/constellations-03.css","base64":"Ci8qIFRvb2xiYXItaW5zcGlyZWQgbW9kdWxlIHJlc3BvbnNpdmVuZXNzIHdpdGhvdXQgcmV3cml0aW5nIGFueSBleGlzdGluZyBtZW51IG9yIGRldGFpbHMgZWxlbWVudC4gKi8KLmh1ZCwuaW5mbywuYnYtdGltZS1wYW5lbHttaW4td2lkdGg6MDttYXgtd2lkdGg6Y2FsYygxMDB2dyAtIDIwcHgpO3Njcm9sbGJhci13aWR0aDp0aGluO292ZXJzY3JvbGwtYmVoYXZpb3I6Y29udGFpbn0KLmh1ZD4qLC5pbmZvPip7bWluLXdpZHRoOjA7bWF4LXdpZHRoOjEwMCV9Ci5odWQgLnJvd3tncmlkLXRlbXBsYXRlLWNvbHVtbnM6cmVwZWF0KGF1dG8tZml0LG1pbm1heCgxMThweCwxZnIpKX0KLmh1ZCAucm93LnNpbmdsZXtncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyfQouaHVkIC5yZWFkb3V0e2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoYXV0by1maXQsbWlubWF4KDEzNXB4LDFmcikpfQojY29uc3RlbGxhdGlvblNwZWVkQ29udHJvbHttaW4td2lkdGg6MDt3aWR0aDoxMDAlO21heC13aWR0aDoxMDAlfQojY29uc3RlbGxhdGlvblNwZWVkQ29udHJvbCAuYXphLXNwZWVkLWhlbHB7c2Nyb2xsLXNuYXAtdHlwZTp4IHByb3hpbWl0eX0KI2NvbnN0ZWxsYXRpb25TcGVlZENvbnRyb2wgLmF6YS1zcGVlZC1oZWxwIGJ1dHRvbntzY3JvbGwtc25hcC1hbGlnbjpzdGFydH0KQG1lZGlhIChtaW4td2lkdGg6NzIxcHgpey5odWQsLmluZm97cmVzaXplOmJvdGg7b3ZlcmZsb3c6YXV0b319CkBtZWRpYSAobWF4LXdpZHRoOjEwNTBweCl7Lmh1ZHt3aWR0aDptaW4oNDIwcHgsY2FsYygxMDB2dyAtIDI0cHgpKTttYXgtaGVpZ2h0OjU0dmh9LmluZm97d2lkdGg6bWluKDM5MHB4LGNhbGMoMTAwdncgLSAyNHB4KSk7bWF4LWhlaWdodDozNnZofX0KQG1lZGlhIChtYXgtd2lkdGg6NzIwcHgpewogIC5odWQsLmluZm97bGVmdDo4cHghaW1wb3J0YW50O3JpZ2h0OjhweCFpbXBvcnRhbnQ7d2lkdGg6YXV0byFpbXBvcnRhbnR9CiAgLmh1ZHt0b3A6OHB4IWltcG9ydGFudDttYXgtaGVpZ2h0OjUwdmh9CiAgLmluZm97Ym90dG9tOjgwcHghaW1wb3J0YW50O21heC1oZWlnaHQ6MzB2aH0KICAuaHVkIC5yb3csLmh1ZCAucm93LnRocmVlLC5odWQgLnJvdy5mb3Vye2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoYXV0by1maXQsbWlubWF4KDExMnB4LDFmcikpIWltcG9ydGFudH0KICAjY29uc3RlbGxhdGlvblNwZWVkQ29udHJvbCAuYXphLXNwZWVkLW5vdGV7ZGlzcGxheTpub25lfQp9CkBtZWRpYSAobWF4LXdpZHRoOjQzMHB4KXsKICAuaHVke3BhZGRpbmc6MTJweH0uaW5mb3twYWRkaW5nOjEycHh9CiAgLmh1ZCAucm93LC5odWQgLnJvdy50aHJlZSwuaHVkIC5yb3cuZm91ciwuaHVkIC5yZWFkb3V0e2dyaWQtdGVtcGxhdGUtY29sdW1uczoxZnIhaW1wb3J0YW50fQp9Cg=="}],"scripts":[{"src":"../../script/js/constellations-01.js","base64":"CihmdW5jdGlvbigpewogICJ1c2Ugc3RyaWN0IjsKCiAgY29uc3QgY2FudmFzID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNreSIpOwogIGNvbnN0IGN0eCA9IGNhbnZhcy5nZXRDb250ZXh0KCIyZCIpOwogIGNvbnN0IERFRyA9IE1hdGguUEkgLyAxODA7CiAgY29uc3QgUkFEID0gMTgwIC8gTWF0aC5QSTsKICBjb25zdCBTVE9SQUdFX0tFWSA9ICJiZWxhdmFkb3MtbmlnaHQtc2t5LXRpbWUtcGFuZWwtdjIiOwoKICBjb25zdCBERUZBVUxUX0NPT1JESU5BVEVfTElORVMgPSBbeyJjb29yZGluYXRlX3R5cGUiOiAiTG9uZ2l0dWRlIC8gTWVyaWRpYW4iLCAia2luZCI6ICJsb25naXR1ZGUiLCAiZGVncmVlcyI6IC0xODAsICJsaW5lIjogIjE4MMKwIFcgLyDiiJIxODDCsCIsICJuYW1lIjogIlRoYWx1bmVzaCdzIFJldmVyc2VkIFRyYWNrIn0sIHsiY29vcmRpbmF0ZV90eXBlIjogIkxvbmdpdHVkZSAvIE1lcmlkaWFuIiwgImtpbmQiOiAibG9uZ2l0dWRlIiwgImRlZ3JlZXMiOiAtMTUwLCAibGluZSI6ICIxNTDCsCBXIiwgIm5hbWUiOiAiRnJleXNldGgncyBDcm9zc3JvYWRzIE1lcmlkaWFuIn0sIHsiY29vcmRpbmF0ZV90eXBlIjogIkxvbmdpdHVkZSAvIE1lcmlkaWFuIiwgImtpbmQiOiAibG9uZ2l0dWRlIiwgImRlZ3JlZXMiOiAtMTIwLCAibGluZSI6ICIxMjDCsCBXIiwgIm5hbWUiOiAiTmVmYXJva2lyJ3MgRnVuZXJhbCBNZXJpZGlhbiJ9LCB7ImNvb3JkaW5hdGVfdHlwZSI6ICJMb25naXR1ZGUgLyBNZXJpZGlhbiIsICJraW5kIjogImxvbmdpdHVkZSIsICJkZWdyZWVzIjogLTkwLCAibGluZSI6ICI5MMKwIFciLCAibmFtZSI6ICJFaXJ6dW5ldCdzIFNoYWRvdyBNZXJpZGlhbiJ9LCB7ImNvb3JkaW5hdGVfdHlwZSI6ICJMb25naXR1ZGUgLyBNZXJpZGlhbiIsICJraW5kIjogImxvbmdpdHVkZSIsICJkZWdyZWVzIjogLTYwLCAibGluZSI6ICI2MMKwIFciLCAibmFtZSI6ICJCYXN0dmVpZydzIFRpZGVnYXRlIE1lcmlkaWFuIn0sIHsiY29vcmRpbmF0ZV90eXBlIjogIkxvbmdpdHVkZSAvIE1lcmlkaWFuIiwgImtpbmQiOiAibG9uZ2l0dWRlIiwgImRlZ3JlZXMiOiAtMzAsICJsaW5lIjogIjMwwrAgVyIsICJuYW1lIjogIkhvcnVuZGFyJ3MgU3Rvcm0gTWVyaWRpYW4ifSwgeyJjb29yZGluYXRlX3R5cGUiOiAiTG9uZ2l0dWRlIC8gTWVyaWRpYW4iLCAia2luZCI6ICJsb25naXR1ZGUiLCAiZGVncmVlcyI6IDAsICJsaW5lIjogIjDCsCIsICJuYW1lIjogIlVUQyJ9LCB7ImNvb3JkaW5hdGVfdHlwZSI6ICJMb25naXR1ZGUgLyBNZXJpZGlhbiIsICJraW5kIjogImxvbmdpdHVkZSIsICJkZWdyZWVzIjogMzAsICJsaW5lIjogIjMwwrAgRSIsICJuYW1lIjogIlJhZXNoa3VsJ3MgQ2FsY3VsYXRpb24gTWVyaWRpYW4ifSwgeyJjb29yZGluYXRlX3R5cGUiOiAiTG9uZ2l0dWRlIC8gTWVyaWRpYW4iLCAia2luZCI6ICJsb25naXR1ZGUiLCAiZGVncmVlcyI6IDYwLCAibGluZSI6ICI2MMKwIEUiLCAibmFtZSI6ICJTb2toaXZhcidzIFN1bnJvYWQgTWVyaWRpYW4ifSwgeyJjb29yZGluYXRlX3R5cGUiOiAiTG9uZ2l0dWRlIC8gTWVyaWRpYW4iLCAia2luZCI6ICJsb25naXR1ZGUiLCAiZGVncmVlcyI6IDkwLCAibGluZSI6ICI5MMKwIEUiLCAibmFtZSI6ICJJc2h0YW5vcmEncyBIZWFydGggTWVyaWRpYW4ifSwgeyJjb29yZGluYXRlX3R5cGUiOiAiTG9uZ2l0dWRlIC8gTWVyaWRpYW4iLCAia2luZCI6ICJsb25naXR1ZGUiLCAiZGVncmVlcyI6IDEyMCwgImxpbmUiOiAiMTIwwrAgRSIsICJuYW1lIjogIk1hcmR1dGhvcidzIERlZXBmb3JnZSBNZXJpZGlhbiJ9LCB7ImNvb3JkaW5hdGVfdHlwZSI6ICJMb25naXR1ZGUgLyBNZXJpZGlhbiIsICJraW5kIjogImxvbmdpdHVkZSIsICJkZWdyZWVzIjogMTUwLCAibGluZSI6ICIxNTDCsCBFIiwgIm5hbWUiOiAiVmFsa2hhbWVzaCdzIFRodW5kZXIgTWVyaWRpYW4ifSwgeyJjb29yZGluYXRlX3R5cGUiOiAiTGF0aXR1ZGUgLyBQYXJhbGxlbCIsICJraW5kIjogImxhdGl0dWRlIiwgImRlZ3JlZXMiOiA2MCwgImxpbmUiOiAiNjDCsCBOIiwgIm5hbWUiOiAiRmxleXNldGwncyBOb3J0aGVybiBVbmRlcndvcmxkIEdhdGUifSwgeyJjb29yZGluYXRlX3R5cGUiOiAiTGF0aXR1ZGUgLyBQYXJhbGxlbCIsICJraW5kIjogImxhdGl0dWRlIiwgImRlZ3JlZXMiOiAyNSwgImxpbmUiOiAiMjXCsCBOIiwgIm5hbWUiOiAiUmFlc2hrdWwncyBUaG91Z2h0bGluZSJ9LCB7ImNvb3JkaW5hdGVfdHlwZSI6ICJMYXRpdHVkZSAvIFBhcmFsbGVsIiwgImtpbmQiOiAibGF0aXR1ZGUiLCAiZGVncmVlcyI6IDAsICJsaW5lIjogIjDCsCIsICJuYW1lIjogIkVxdWF0b3IifSwgeyJjb29yZGluYXRlX3R5cGUiOiAiTGF0aXR1ZGUgLyBQYXJhbGxlbCIsICJraW5kIjogImxhdGl0dWRlIiwgImRlZ3JlZXMiOiAtMzAsICJsaW5lIjogIjMwwrAgUyIsICJuYW1lIjogIkJhc3R2ZWcncyBEZWVwd2F0ZXIgUGFzc2FnZSJ9LCB7ImNvb3JkaW5hdGVfdHlwZSI6ICJMYXRpdHVkZSAvIFBhcmFsbGVsIiwgImtpbmQiOiAibGF0aXR1ZGUiLCAiZGVncmVlcyI6IC02NSwgImxpbmUiOiAiNjXCsCBTIiwgIm5hbWUiOiAiVGhvcnluLVJhaGVrJ3MgU291dGhlcm4gVW5kZXJ3b3JsZCBHYXRlIn1dOwoKICBsZXQgcGxheWluZyA9IHRydWU7CiAgY29uc3QgQVpBUkFfU1BFRURfQU5DSE9SUz1bCiAge3A6MCxrZXk6InBhdXNlZCIsbGFiZWw6IlBhdXNlZCIscmF0ZTowfSwKICB7cDo3MCxrZXk6InN5bmMiLGxhYmVsOiJTeW5jZWQiLHN5bmM6dHJ1ZX0sCiAge3A6MTUwLGtleToid2VlayIsbGFiZWw6IjEgQXphJ3JhYW4gd2VlayAvIEVhcnRoIHdlZWsiLHJhdGU6Ni8oNyo4NjQwMCl9LAogIHtwOjI0MCxrZXk6InllYXJ3ZWVrIixsYWJlbDoiMSBBemEncmFhbiB5ZWFyIC8gRWFydGggd2VlayIscmF0ZToyNDAvKDcqODY0MDApfSwKICB7cDozMzAsa2V5OiIzeWVhcndlZWsiLGxhYmVsOiIzIEF6YSdyYWFuIHllYXJzIC8gRWFydGggd2VlayIscmF0ZTo3MjAvKDcqODY0MDApfSwKICB7cDo0MjAsa2V5OiIxMHllYXJ3ZWVrIixsYWJlbDoiMTAgQXphJ3JhYW4geWVhcnMgLyBFYXJ0aCB3ZWVrIixyYXRlOjI0MDAvKDcqODY0MDApfSwKICB7cDo1MDAsa2V5OiIzMHllYXJ3ZWVrIixsYWJlbDoiMzAgQXphJ3JhYW4geWVhcnMgLyBFYXJ0aCB3ZWVrIixyYXRlOjcyMDAvKDcqODY0MDApfSwKICB7cDo2MjAsa2V5OiJ5ZWFyMTVtIixsYWJlbDoiMSBBemEncmFhbiB5ZWFyIC8gMTUgRWFydGggbWluIixyYXRlOjI0MC8oMTUqNjApfSwKICB7cDo3MjAsa2V5OiJ5ZWFyNW0iLGxhYmVsOiIxIEF6YSdyYWFuIHllYXIgLyA1IEVhcnRoIG1pbiIscmF0ZToyNDAvKDUqNjApfSwKICB7cDo4MjAsa2V5OiJ5ZWFyMW0iLGxhYmVsOiIxIEF6YSdyYWFuIHllYXIgLyAxIEVhcnRoIG1pbiIscmF0ZToyNDAvNjB9LAogIHtwOjkwMCxrZXk6InllYXIzMHMiLGxhYmVsOiIxIEF6YSdyYWFuIHllYXIgLyAzMCBFYXJ0aCBzZWMiLHJhdGU6MjQwLzMwfSwKICB7cDo5NjAsa2V5OiIzeWVhcjMwcyIsbGFiZWw6IjMgQXphJ3JhYW4geWVhcnMgLyAzMCBFYXJ0aCBzZWMiLHJhdGU6NzIwLzMwfSwKICB7cDoxMDAwLGtleToiMTB5ZWFyMzBzIixsYWJlbDoiMTAgQXphJ3JhYW4geWVhcnMgLyAzMCBFYXJ0aCBzZWMiLHJhdGU6MjQwMC8zMH0KXTsKZnVuY3Rpb24gYXphcmFDYW5vbmljYWxSYXRlKCl7Y29uc3Qgbm93PW5ldyBEYXRlKCkseT1ub3cuZ2V0RnVsbFllYXIoKSxzdGFydD1uZXcgRGF0ZSh5LDAsMSksZW5kPW5ldyBEYXRlKHkrMSwwLDEpLGRheXM9TWF0aC5yb3VuZCgoZW5kLXN0YXJ0KS84NjQwMDAwMCk7cmV0dXJuIDI0MC8oZGF5cyo4NjQwMCl9CmZ1bmN0aW9uIGF6YXJhUmVzb2x2ZWRTcGVlZEFuY2hvcnMoKXtyZXR1cm4gQVpBUkFfU1BFRURfQU5DSE9SUy5tYXAoYT0+KHsuLi5hLHJhdGU6YS5zeW5jP2F6YXJhQ2Fub25pY2FsUmF0ZSgpOmEucmF0ZX0pKX0KZnVuY3Rpb24gYXphcmFTcGVlZFNwZWMocmF3KXtjb25zdCBwPU1hdGgubWF4KDAsTWF0aC5taW4oMTAwMCxOdW1iZXIocmF3KXx8MCkpLEE9YXphcmFSZXNvbHZlZFNwZWVkQW5jaG9ycygpO2Zvcihjb25zdCBhIG9mIEEpe2lmKE1hdGguYWJzKHAtYS5wKTwuMDAwMSlyZXR1cm57Li4uYSxwb3M6cCxleGFjdDp0cnVlLGRheXNQZXJTZWNvbmQ6YS5yYXRlfX1sZXQgbG89QVswXSxoaT1BW0EubGVuZ3RoLTFdO2ZvcihsZXQgaT0wO2k8QS5sZW5ndGgtMTtpKyspe2lmKHA+QVtpXS5wJiZwPEFbaSsxXS5wKXtsbz1BW2ldO2hpPUFbaSsxXTticmVha319Y29uc3QgdD0ocC1sby5wKS8oaGkucC1sby5wKTtsZXQgcmF0ZTtpZihsby5yYXRlPD0wKXJhdGU9aGkucmF0ZSp0O2Vsc2UgcmF0ZT1NYXRoLmV4cChNYXRoLmxvZyhsby5yYXRlKSsoTWF0aC5sb2coaGkucmF0ZSktTWF0aC5sb2cobG8ucmF0ZSkpKnQpO2NvbnN0IHNlY1BlclllYXI9cmF0ZT4wPzI0MC9yYXRlOkluZmluaXR5O2NvbnN0IGF6YVdlZWtzUGVyRWFydGhXZWVrPXJhdGUqNyo4NjQwMC82O2NvbnN0IGF6YVllYXJzUGVyRWFydGhXZWVrPXJhdGUqNyo4NjQwMC8yNDA7bGV0IGxhYmVsO2lmKHNlY1BlclllYXI8PTEyMClsYWJlbD1gQ3VzdG9tIMK3IDEgQXphJ3JhYW4geWVhciAvICR7c2VjUGVyWWVhci50b0ZpeGVkKHNlY1BlclllYXI8MTA/MTowKX0gRWFydGggc2VjYDtlbHNlIGlmKHNlY1BlclllYXI8PTcyMDApbGFiZWw9YEN1c3RvbSDCtyAxIEF6YSdyYWFuIHllYXIgLyAkeyhzZWNQZXJZZWFyLzYwKS50b0ZpeGVkKHNlY1BlclllYXI8NjAwPzE6MCl9IEVhcnRoIG1pbmA7ZWxzZSBpZihhemFZZWFyc1BlckVhcnRoV2Vlaz49Ljc1KWxhYmVsPWBDdXN0b20gwrcgJHthemFZZWFyc1BlckVhcnRoV2Vlay50b0ZpeGVkKGF6YVllYXJzUGVyRWFydGhXZWVrPDEwPzI6MSl9IEF6YSdyYWFuIHllYXJzIC8gRWFydGggd2Vla2A7ZWxzZSBpZihhemFXZWVrc1BlckVhcnRoV2Vlaz49LjYpbGFiZWw9YEN1c3RvbSDCtyAke2F6YVdlZWtzUGVyRWFydGhXZWVrLnRvRml4ZWQoMil9IEF6YSdyYWFuIHdlZWtzIC8gRWFydGggd2Vla2A7ZWxzZSBsYWJlbD1gQ3VzdG9tIMK3ICR7KHJhdGUvYXphcmFDYW5vbmljYWxSYXRlKCkpLnRvRml4ZWQoMil9w5cgc3luY2VkYDtyZXR1cm57cCxwb3M6cCxrZXk6ImN1c3RvbSIsbGFiZWwscmF0ZSxkYXlzUGVyU2Vjb25kOnJhdGUsZXhhY3Q6ZmFsc2V9fQpsZXQgc2ltRGF5ID0gMDsKICBsZXQgbGFzdEZyYW1lID0gcGVyZm9ybWFuY2Uubm93KCk7CiAgbGV0IGhvdXIgPSBudWxsOwogIGxldCBsYXQgPSA0MDsKICBsZXQgdmlld01vZGUgPSAidXAiOwogIGxldCB6b29tID0gMTsKICBsZXQgcGFuWCA9IDA7CiAgbGV0IHBhblkgPSAwOwogIGxldCBkcmFnID0gZmFsc2U7CiAgbGV0IGNsaWNrTW92ZWQgPSBmYWxzZTsKICBsZXQgbGFzdFggPSAwOwogIGxldCBsYXN0WSA9IDA7CiAgbGV0IHBvaW50ZXJEb3duQXQgPSBudWxsOwoKICBsZXQgcHJldHRpZnlFbmFibGVkID0gdHJ1ZTsKICBsZXQgY29ubmVjdGlvbkZpZWxkRW5hYmxlZCA9IHRydWU7CiAgbGV0IHNob3dTdGFycyA9IHRydWU7CiAgbGV0IHNob3dMaW5lcyA9IHRydWU7CiAgbGV0IHNob3dMYWJlbHMgPSB0cnVlOwogIGxldCBzaG93R3JpZCA9IHRydWU7CgogIGxldCBza3lEYXRhID0gewogICAgbWV0YWRhdGE6IHsgd29ybGQ6IkF6YVwncmEiLCB0aXRsZToiQXphXCdyYSBOaWdodCBTa3kiLCBzY2hlbWFfdmVyc2lvbjoiMi4wLjAiIH0sCiAgICBjb29yZGluYXRlX2xpbmVzOiBERUZBVUxUX0NPT1JESU5BVEVfTElORVMuc2xpY2UoKSwKICAgIGdlbmVyYXRvcjoge30sCiAgICBzdGFyczogW10sCiAgICBjb25zdGVsbGF0aW9uczogW10KICB9OwoKICBsZXQgc3RhckluZGV4ID0gbmV3IE1hcCgpOwogIGxldCBob3ZlclRhcmdldHMgPSBbXTsKICBsZXQgc2VsZWN0ZWRDb25zdGVsbGF0aW9uSWQgPSBudWxsOwogIGxldCBsYXN0RHJhd25Qb3NpdGlvbnMgPSBuZXcgTWFwKCk7CgogIGNvbnN0IEdFTkVSQVRFRF9OQU1FUyA9IFsKICAgICJUaGUgQXNoZW4gQ3Jvd24iLCAiVGhlIFJpdmVyIExhbnRlcm4iLCAiVGhlIFd5cm0gR2F0ZSIsICJUaGUgQnJva2VuIE9hdGgiLCAiVGhlIFNsZWVwaW5nIEZvcmdlIiwgIlRoZSBGb3hmaXJlIEN1cCIsCiAgICAiVGhlIFNhbHQgTWlycm9yIiwgIlRoZSBUaG9ybmVkIFJvYWQiLCAiVGhlIEhvbGxvdyBCZWxsIiwgIlRoZSBFbWJlciBRdWlsbCIsICJUaGUgTW91cm5pbmcgQW50bGVyIiwgIlRoZSBTdG9ybSBOZWVkbGUiLAogICAgIlRoZSBWZWlsZWQgT3JjaGFyZCIsICJUaGUgUGlsZ3JpbSBLZXkiLCAiVGhlIE1vb25sZXNzIEhhcnAiLCAiVGhlIFNhYmxlIFNoaWVsZCIsICJUaGUgSGVhcnRoIFNwZWFyIiwgIlRoZSBEZWVwd2VsbCBFeWUiLAogICAgIlRoZSBTZXZlbiBUZWV0aCIsICJUaGUgQ3lhbiBLbmlmZSIsICJUaGUgT3JhY2xlJ3MgTmV0IiwgIlRoZSBIaWRkZW4gQW52aWwiLCAiVGhlIExhc3QgQm9hdCIsICJUaGUgR2xhc3MgSmFja2FsIiwKICAgICJUaGUgQnJpYXIgQ29tcGFzcyIsICJUaGUgQnJhc3MgV2luZyIsICJUaGUgQm9uZSBPcmNoYXJkIiwgIlRoZSBRdWlldCBUb3dlciIsICJUaGUgVGlkZWJvdW5kIE1hc2siLCAiVGhlIExhbnRlcm4gTWF3IiwKICAgICJUaGUgRHJlYW1pbmcgUmFtIiwgIlRoZSBQYWxlIERvb3IiLCAiVGhlIFNpbmdpbmcgQ2hhaW4iLCAiVGhlIENyb29rZWQgQ2hhbGljZSIsICJUaGUgUmFpbiBTZXJwZW50IiwgIlRoZSBTdGFnIG9mIEVtYmVycyIKICBdOwoKICBmdW5jdGlvbiBlc2NhcGVIVE1MKHZhbHVlKXsKICAgIHJldHVybiBTdHJpbmcodmFsdWUgPz8gIiIpLnJlcGxhY2UoL1smPD4iJ10vZywgY2ggPT4gKHsiJiI6IiZhbXA7IiwiPCI6IiZsdDsiLCI+IjoiJmd0OyIsIlwiIjoiJnF1b3Q7IiwiJyI6IiYjMDM5OyJ9W2NoXSB8fCBjaCkpOwogIH0KICBmdW5jdGlvbiBjbGFtcCh2YWx1ZSwgbWluLCBtYXgpeyByZXR1cm4gTWF0aC5tYXgobWluLCBNYXRoLm1pbihtYXgsIHZhbHVlKSk7IH0KICBmdW5jdGlvbiBub3JtMzYwKHZhbHVlKXsgcmV0dXJuICgodmFsdWUgJSAzNjApICsgMzYwKSAlIDM2MDsgfQogIGZ1bmN0aW9uIHNob3J0ZXN0RGVsdGEoYSwgYil7IHJldHVybiAoKGEgLSBiICsgNTQwKSAlIDM2MCkgLSAxODA7IH0KICBmdW5jdGlvbiBwYWQobil7IHJldHVybiBTdHJpbmcobikucGFkU3RhcnQoMiwiMCIpOyB9CgogIGZ1bmN0aW9uIGhhc2hTZWVkKHNlZWQpewogICAgY29uc3QgdGV4dCA9IFN0cmluZyhzZWVkID8/ICJBemFcJ3JhIik7CiAgICBsZXQgaCA9IDIxNjYxMzYyNjEgPj4+IDA7CiAgICBmb3IobGV0IGk9MDtpPHRleHQubGVuZ3RoO2krKyl7CiAgICAgIGggXj0gdGV4dC5jaGFyQ29kZUF0KGkpOwogICAgICBoID0gTWF0aC5pbXVsKGgsIDE2Nzc3NjE5KTsKICAgIH0KICAgIHJldHVybiBoID4+PiAwOwogIH0KICBmdW5jdGlvbiBzZWVkZWRSYW5kb20oc2VlZCl7CiAgICBsZXQgYSA9IGhhc2hTZWVkKHNlZWQpIHx8IDE7CiAgICByZXR1cm4gZnVuY3Rpb24oKXsKICAgICAgYSB8PSAwOwogICAgICBhID0gKGEgKyAweDZEMkI3OUY1KSB8IDA7CiAgICAgIGxldCB0ID0gTWF0aC5pbXVsKGEgXiAoYSA+Pj4gMTUpLCAxIHwgYSk7CiAgICAgIHQgPSAodCArIE1hdGguaW11bCh0IF4gKHQgPj4+IDcpLCA2MSB8IHQpKSBeIHQ7CiAgICAgIHJldHVybiAoKHQgXiAodCA+Pj4gMTQpKSA+Pj4gMCkgLyA0Mjk0OTY3Mjk2OwogICAgfTsKICB9CgogIGZ1bmN0aW9uIGFuZ3VsYXJEaXN0YW5jZShhLCBiKXsKICAgIGNvbnN0IHJhMSA9IChhLnJhX2RlZyA/PyBhLnJhID8/IDApICogREVHOwogICAgY29uc3QgcmEyID0gKGIucmFfZGVnID8/IGIucmEgPz8gMCkgKiBERUc7CiAgICBjb25zdCBkZWMxID0gKGEuZGVjX2RlZyA/PyBhLmRlYyA/PyAwKSAqIERFRzsKICAgIGNvbnN0IGRlYzIgPSAoYi5kZWNfZGVnID8/IGIuZGVjID8/IDApICogREVHOwogICAgY29uc3Qgc2QgPSBNYXRoLnNpbigoZGVjMiAtIGRlYzEpIC8gMik7CiAgICBjb25zdCBzciA9IE1hdGguc2luKChyYTIgLSByYTEpIC8gMik7CiAgICBjb25zdCBoID0gc2QgKiBzZCArIE1hdGguY29zKGRlYzEpICogTWF0aC5jb3MoZGVjMikgKiBzciAqIHNyOwogICAgcmV0dXJuIDIgKiBNYXRoLmFzaW4oTWF0aC5taW4oMSwgTWF0aC5zcXJ0KGgpKSkgKiBSQUQ7CiAgfQoKICBmdW5jdGlvbiBwcm9qZWN0ZWREaXN0YW5jZUZvckdyYXBoKGEsIGIpewogICAgY29uc3QgeCA9IHNob3J0ZXN0RGVsdGEoYS5yYV9kZWcsIGIucmFfZGVnKSAqIE1hdGguY29zKCgoYS5kZWNfZGVnICsgYi5kZWNfZGVnKSAvIDIpICogREVHKTsKICAgIGNvbnN0IHkgPSBhLmRlY19kZWcgLSBiLmRlY19kZWc7CiAgICByZXR1cm4gTWF0aC5oeXBvdCh4LCB5KTsKICB9CgogIGZ1bmN0aW9uIGxpbmVTZWdtZW50c0ludGVyc2VjdChhLGIsYyxkKXsKICAgIGNvbnN0IGRldCA9IChiLnggLSBhLngpICogKGQueSAtIGMueSkgLSAoZC54IC0gYy54KSAqIChiLnkgLSBhLnkpOwogICAgaWYoTWF0aC5hYnMoZGV0KSA8IDFlLTkpIHJldHVybiBmYWxzZTsKICAgIGNvbnN0IGxhbWJkYSA9ICgoZC55IC0gYy55KSAqIChkLnggLSBhLngpICsgKGMueCAtIGQueCkgKiAoZC55IC0gYS55KSkgLyBkZXQ7CiAgICBjb25zdCBnYW1tYSA9ICgoYS55IC0gYi55KSAqIChkLnggLSBhLngpICsgKGIueCAtIGEueCkgKiAoZC55IC0gYS55KSkgLyBkZXQ7CiAgICByZXR1cm4gKDAgPCBsYW1iZGEgJiYgbGFtYmRhIDwgMSkgJiYgKDAgPCBnYW1tYSAmJiBnYW1tYSA8IDEpOwogIH0KCiAgZnVuY3Rpb24gbWFrZVN0YXIoaWQsIHJhLCBkZWMsIGx1bWlub3NpdHksIGV4dHJhKXsKICAgIHJldHVybiBPYmplY3QuYXNzaWduKHsKICAgICAgaWQsCiAgICAgIG5hbWU6IiIsCiAgICAgIHJhX2RlZzogbm9ybTM2MChyYSksCiAgICAgIGRlY19kZWc6IGNsYW1wKGRlYywgLTg5LjgsIDg5LjgpLAogICAgICBsdW1pbm9zaXR5OiBjbGFtcChsdW1pbm9zaXR5LCAwLjA1LCAxKSwKICAgICAgbWFnbml0dWRlOiBOdW1iZXIoKDYgLSBjbGFtcChsdW1pbm9zaXR5LCAwLjA1LCAxKSAqIDUuOCkudG9GaXhlZCgyKSksCiAgICAgIGNvbG9yOiIjZWFmY2ZmIiwKICAgICAgc2l6ZTpudWxsLAogICAgICBsb3JlOiIiLAogICAgICB0YWdzOltdCiAgICB9LCBleHRyYSB8fCB7fSk7CiAgfQoKICBmdW5jdGlvbiBnZW5lcmF0ZVN0YXJzKHNldHRpbmdzKXsKICAgIGNvbnN0IHJuZyA9IHNlZWRlZFJhbmRvbShzZXR0aW5ncy5zZWVkKTsKICAgIGNvbnN0IGNvdW50ID0gTWF0aC5wb3coMiwgTnVtYmVyKHNldHRpbmdzLnN0YXJfZGVuc2l0eV9wb3dlciB8fCA4KSk7CiAgICBjb25zdCBzdGFycyA9IFtdOwogICAgZm9yKGxldCBpPTA7IGk8Y291bnQ7IGkrKyl7CiAgICAgIGNvbnN0IHJhID0gcm5nKCkgKiAzNjA7CiAgICAgIGNvbnN0IGRlYyA9IE1hdGguYXNpbihybmcoKSAqIDIgLSAxKSAqIFJBRDsKICAgICAgY29uc3QgbHVtaW5vc2l0eSA9IE1hdGgucG93KHJuZygpLCAxLjgpICogMC45NSArIDAuMDU7CiAgICAgIGNvbnN0IHRpbnQgPSBybmcoKTsKICAgICAgY29uc3QgY29sb3IgPSB0aW50ID4gMC45NCA/ICIjZmZlN2E2IiA6IHRpbnQgPCAwLjA4ID8gIiNiZmVmZmYiIDogIiNlYWZjZmYiOwogICAgICBzdGFycy5wdXNoKG1ha2VTdGFyKCJzdGFyXyIgKyBTdHJpbmcoaSArIDEpLnBhZFN0YXJ0KDQsIjAiKSwgcmEsIGRlYywgbHVtaW5vc2l0eSwgeyBjb2xvciB9KSk7CiAgICB9CiAgICBzdGFycy5zb3J0KChhLGIpID0+IGEubHVtaW5vc2l0eSAtIGIubHVtaW5vc2l0eSk7CiAgICByZXR1cm4gc3RhcnM7CiAgfQoKICBmdW5jdGlvbiBnZW5lcmF0ZUNvbnN0ZWxsYXRpb25zRnJvbVN0YXJzKHN0YXJzLCBzZXR0aW5ncyl7CiAgICBjb25zdCBybmcgPSBzZWVkZWRSYW5kb20oU3RyaW5nKHNldHRpbmdzLnNlZWQpICsgIjo6Y29uc3RlbGxhdGlvbnMiKTsKICAgIGNvbnN0IHJlbWFpbmluZyA9IHN0YXJzLnNsaWNlKCk7CiAgICBjb25zdCByZXN1bHQgPSBbXTsKICAgIGNvbnN0IG1heENvdW50ID0gTnVtYmVyKHNldHRpbmdzLm51bV9jb25zdGVsbGF0aW9ucyB8fCAxMik7CiAgICBjb25zdCBtaW5TaXplID0gTnVtYmVyKHNldHRpbmdzLm1pbl9zdGFyc19wZXJfY29uc3RlbGxhdGlvbiB8fCA2KTsKICAgIGNvbnN0IHNpemVSYW5nZSA9IE51bWJlcihzZXR0aW5ncy5hZGRpdGlvbmFsX3N0YXJzX3Blcl9jb25zdGVsbGF0aW9uIHx8IDQpOwogICAgY29uc3QgbWF4RGlzdCA9IE51bWJlcihzZXR0aW5ncy5tYXhfbGlua19kaXN0YW5jZV9kZWcgfHwgMjYpOwoKICAgIHdoaWxlKHJlc3VsdC5sZW5ndGggPCBtYXhDb3VudCAmJiByZW1haW5pbmcubGVuZ3RoID4gMCl7CiAgICAgIGNvbnN0IHBpY2tlZCA9IFtyZW1haW5pbmcucG9wKCldOwogICAgICBjb25zdCBsaW5lcyA9IFtdOwogICAgICBjb25zdCB3YW50ZWQgPSBtaW5TaXplICsgTWF0aC5yb3VuZChybmcoKSAqIHNpemVSYW5nZSk7CiAgICAgIGxldCBndWFyZCA9IDA7CiAgICAgIHdoaWxlKHBpY2tlZC5sZW5ndGggPCB3YW50ZWQgJiYgcmVtYWluaW5nLmxlbmd0aCA+IDAgJiYgZ3VhcmQgPCAyMDAwKXsKICAgICAgICBndWFyZCsrOwogICAgICAgIGNvbnN0IHNlbGVjdGVkID0gcGlja2VkW01hdGguZmxvb3Iocm5nKCkgKiBwaWNrZWQubGVuZ3RoKV07CiAgICAgICAgbGV0IGJlc3RJZHggPSAtMTsKICAgICAgICBsZXQgYmVzdFNjb3JlID0gSW5maW5pdHk7CiAgICAgICAgZm9yKGxldCBpPXJlbWFpbmluZy5sZW5ndGggLSAxOyBpPj0wOyBpLS0pewogICAgICAgICAgY29uc3Qgc3RhciA9IHJlbWFpbmluZ1tpXTsKICAgICAgICAgIGNvbnN0IGRpc3QgPSBwcm9qZWN0ZWREaXN0YW5jZUZvckdyYXBoKHNlbGVjdGVkLCBzdGFyKTsKICAgICAgICAgIGlmKGRpc3QgPiBtYXhEaXN0KSBjb250aW51ZTsKICAgICAgICAgIGNvbnN0IGNhbmRpZGF0ZUxpbmUgPSB7CiAgICAgICAgICAgIGE6IHt4OnNlbGVjdGVkLnJhX2RlZywgeTpzZWxlY3RlZC5kZWNfZGVnfSwKICAgICAgICAgICAgYjoge3g6c2VsZWN0ZWQucmFfZGVnICsgc2hvcnRlc3REZWx0YShzdGFyLnJhX2RlZywgc2VsZWN0ZWQucmFfZGVnKSwgeTpzdGFyLmRlY19kZWd9CiAgICAgICAgICB9OwogICAgICAgICAgbGV0IGNyb3NzZXMgPSBmYWxzZTsKICAgICAgICAgIGZvcihjb25zdCBjb24gb2YgcmVzdWx0KXsKICAgICAgICAgICAgZm9yKGNvbnN0IGVkZ2Ugb2YgY29uLl9ncmFwaExpbmVzIHx8IFtdKXsKICAgICAgICAgICAgICBpZihsaW5lU2VnbWVudHNJbnRlcnNlY3QoY2FuZGlkYXRlTGluZS5hLCBjYW5kaWRhdGVMaW5lLmIsIGVkZ2UuYSwgZWRnZS5iKSkgeyBjcm9zc2VzID0gdHJ1ZTsgYnJlYWs7IH0KICAgICAgICAgICAgfQogICAgICAgICAgICBpZihjcm9zc2VzKSBicmVhazsKICAgICAgICAgIH0KICAgICAgICAgIGNvbnN0IHNjb3JlID0gZGlzdCAtIHN0YXIubHVtaW5vc2l0eSAqIDUgKyBybmcoKSAqIDI7CiAgICAgICAgICBpZighY3Jvc3NlcyAmJiBzY29yZSA8IGJlc3RTY29yZSl7IGJlc3RTY29yZSA9IHNjb3JlOyBiZXN0SWR4ID0gaTsgfQogICAgICAgIH0KICAgICAgICBpZihiZXN0SWR4IDwgMCkgYnJlYWs7CiAgICAgICAgY29uc3Qgc3RhciA9IHJlbWFpbmluZy5zcGxpY2UoYmVzdElkeCwgMSlbMF07CiAgICAgICAgcGlja2VkLnB1c2goc3Rhcik7CiAgICAgICAgbGluZXMucHVzaChbc2VsZWN0ZWQuaWQsIHN0YXIuaWRdKTsKICAgICAgfQogICAgICBpZihwaWNrZWQubGVuZ3RoID49IDIpewogICAgICAgIGxldCBmaW5hbExpbmVzID0gcHJldHRpZnlFbmFibGVkIHx8IHNldHRpbmdzLnByZXR0aWZ5ID8gcHJldHRpZnlMaW5lcyhwaWNrZWQsIGxpbmVzKSA6IGxpbmVzOwogICAgICAgIGNvbnN0IGNJZHggPSByZXN1bHQubGVuZ3RoOwogICAgICAgIGNvbnN0IGMgPSB7CiAgICAgICAgICBpZDoiY29uc3RlbGxhdGlvbl8iICsgU3RyaW5nKGNJZHggKyAxKS5wYWRTdGFydCgzLCIwIiksCiAgICAgICAgICBuYW1lOiBHRU5FUkFURURfTkFNRVNbY0lkeCAlIEdFTkVSQVRFRF9OQU1FUy5sZW5ndGhdLAogICAgICAgICAgYWx0ZXJuYXRlX25hbWVzOiBbXSwKICAgICAgICAgIHN0YXJzOnBpY2tlZC5tYXAocyA9PiBzLmlkKSwKICAgICAgICAgIGxpbmVzOiBmaW5hbExpbmVzLAogICAgICAgICAgc2Vhc29uOiIiLAogICAgICAgICAgZG9tYWluOiIiLAogICAgICAgICAgc3VtbWFyeToiR2VuZXJhdGVkIGNvbnN0ZWxsYXRpb24uIFJlcGxhY2UgdGhpcyB3aXRoIHlvdXIgcGxheWVyLWZhY2luZyBsb3JlLiIsCiAgICAgICAgICBsb3JlOiJUaGlzIGNvbnN0ZWxsYXRpb24gd2FzIGdlbmVyYXRlZCBmcm9tIHRoZSBpbXBvcnRlZCBnZW5lcmF0b3IgbG9naWMuIEVkaXQgdGhlIEpTT04gaG9va3MgdG8gZ2l2ZSBpdCBhIGZpbmlzaGVkIEF6YVwncmEgbXl0aC4iLAogICAgICAgICAgZG1fbm90ZXM6IiIsCiAgICAgICAgICBzdHlsZTp7IGxpbmVfY29sb3I6IiNmZmU3YTYiLCBzdGFyX2NvbG9yOiIiLCBnbG93OjAuOSwgbGFiZWw6IiIgfSwKICAgICAgICAgIGludGVyYWN0aW9uczp7IGNsaWNrYWJsZTp0cnVlLCBmb2N1c196b29tOjIuNCwgcGFuZWxfb3Blbjp0cnVlIH0KICAgICAgICB9OwogICAgICAgIGMuX2dyYXBoTGluZXMgPSBmaW5hbExpbmVzLm1hcChwYWlyID0+IHsKICAgICAgICAgIGNvbnN0IGEgPSBwaWNrZWQuZmluZChzID0+IHMuaWQgPT09IHBhaXJbMF0pOwogICAgICAgICAgY29uc3QgYiA9IHBpY2tlZC5maW5kKHMgPT4gcy5pZCA9PT0gcGFpclsxXSk7CiAgICAgICAgICByZXR1cm4ge2E6e3g6YS5yYV9kZWcsIHk6YS5kZWNfZGVnfSwgYjp7eDphLnJhX2RlZyArIHNob3J0ZXN0RGVsdGEoYi5yYV9kZWcsIGEucmFfZGVnKSwgeTpiLmRlY19kZWd9fTsKICAgICAgICB9KTsKICAgICAgICByZXN1bHQucHVzaChjKTsKICAgICAgfSBlbHNlIHsKICAgICAgICBicmVhazsKICAgICAgfQogICAgfQogICAgcmVzdWx0LmZvckVhY2goYyA9PiBkZWxldGUgYy5fZ3JhcGhMaW5lcyk7CiAgICByZXR1cm4gcmVzdWx0OwogIH0KCiAgZnVuY3Rpb24gcHJldHRpZnlMaW5lcyhzdGFycywgc2VlZExpbmVzKXsKICAgIGlmKHN0YXJzLmxlbmd0aCA8PSAyKSByZXR1cm4gc2VlZExpbmVzLnNsaWNlKCk7CiAgICBjb25zdCBsaW5lcyA9IFtdOwogICAgZm9yKGxldCBpPTA7IGk8c3RhcnMubGVuZ3RoOyBpKyspewogICAgICBsZXQgbmVhcmVzdCA9IFtdOwogICAgICBmb3IobGV0IGo9MDsgajxzdGFycy5sZW5ndGg7IGorKyl7CiAgICAgICAgaWYoaSA9PT0gaikgY29udGludWU7CiAgICAgICAgbmVhcmVzdC5wdXNoKHtpZDpzdGFyc1tqXS5pZCwgZDpwcm9qZWN0ZWREaXN0YW5jZUZvckdyYXBoKHN0YXJzW2ldLCBzdGFyc1tqXSl9KTsKICAgICAgfQogICAgICBuZWFyZXN0LnNvcnQoKGEsYikgPT4gYS5kIC0gYi5kKTsKICAgICAgbmVhcmVzdC5zbGljZSgwLDIpLmZvckVhY2gobiA9PiB7CiAgICAgICAgY29uc3QgcGFpciA9IFtzdGFyc1tpXS5pZCwgbi5pZF0uc29ydCgpOwogICAgICAgIGlmKCFsaW5lcy5zb21lKHggPT4geFswXSA9PT0gcGFpclswXSAmJiB4WzFdID09PSBwYWlyWzFdKSkgbGluZXMucHVzaChwYWlyKTsKICAgICAgfSk7CiAgICB9CiAgICByZXR1cm4gbGluZXMuZmlsdGVyKHBhaXIgPT4gewogICAgICBjb25zdCBhID0gc3RhcnMuZmluZChzID0+IHMuaWQgPT09IHBhaXJbMF0pOwogICAgICBjb25zdCBiID0gc3RhcnMuZmluZChzID0+IHMuaWQgPT09IHBhaXJbMV0pOwogICAgICBjb25zdCBsZW4gPSBwcm9qZWN0ZWREaXN0YW5jZUZvckdyYXBoKGEsYik7CiAgICAgIHJldHVybiAhc3RhcnMuc29tZShzID0+ICFwYWlyLmluY2x1ZGVzKHMuaWQpICYmIHByb2plY3RlZERpc3RhbmNlRm9yR3JhcGgocyxhKSA8IGxlbiAmJiBwcm9qZWN0ZWREaXN0YW5jZUZvckdyYXBoKHMsYikgPCBsZW4pOwogICAgfSk7CiAgfQoKICBmdW5jdGlvbiBub3JtYWxpemVJbXBvcnRlZERhdGEocmF3KXsKICAgIGlmKCFyYXcgfHwgdHlwZW9mIHJhdyAhPT0gIm9iamVjdCIpIHRocm93IG5ldyBFcnJvcigiVGhlIEpTT04gZmlsZSB3YXMgZW1wdHkgb3Igd2FzIG5vdCBhbiBvYmplY3QuIik7CiAgICBpZihBcnJheS5pc0FycmF5KHJhdykpIHJhdyA9IHsgY29uc3RlbGxhdGlvbnM6IHJhdyB9OwoKICAgIGNvbnN0IG9sZEdlbmVyYXRvcktleXMgPSBbInNlZWQiLCAibnVtX2NvbnN0ZWxsYXRpb25zIiwgIm1pbl9jb25zdGVsbGF0aW9uX3NpemUiLCAiY29uc3RlbGxhdGlvbl9zaXplX3JhbmdlIiwgImNvbnN0ZWxsYXRpb25fZGlzdGFuY2UiLCAic3Rhcl9kZW5zaXR5Il07CiAgICBpZihvbGRHZW5lcmF0b3JLZXlzLnNvbWUoayA9PiBPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwocmF3LCBrKSkgJiYgIXJhdy5zdGFycyAmJiAhcmF3LmNvbnN0ZWxsYXRpb25zKXsKICAgICAgY29uc3Qgc2V0dGluZ3MgPSB7CiAgICAgICAgc2VlZDogcmF3LnNlZWQgfHwgRGF0ZS5ub3coKSwKICAgICAgICBzdGFyX2RlbnNpdHlfcG93ZXI6IE51bWJlcihyYXcuc3Rhcl9kZW5zaXR5ID8/IDgpLAogICAgICAgIG51bV9jb25zdGVsbGF0aW9uczogTnVtYmVyKHJhdy5udW1fY29uc3RlbGxhdGlvbnMgPz8gMTIpLAogICAgICAgIG1pbl9zdGFyc19wZXJfY29uc3RlbGxhdGlvbjogTnVtYmVyKHJhdy5taW5fY29uc3RlbGxhdGlvbl9zaXplID8/IDYpLAogICAgICAgIGFkZGl0aW9uYWxfc3RhcnNfcGVyX2NvbnN0ZWxsYXRpb246IE51bWJlcihyYXcuY29uc3RlbGxhdGlvbl9zaXplX3JhbmdlID8/IDQpLAogICAgICAgIG1heF9saW5rX2Rpc3RhbmNlX2RlZzogTWF0aC5yb3VuZChNYXRoLnBvdygyLCBOdW1iZXIocmF3LmNvbnN0ZWxsYXRpb25fZGlzdGFuY2UgPz8gNy4yNSkpIC8gOCksCiAgICAgICAgcHJldHRpZnk6ICEhcmF3LnByZXR0aWZ5X2NvbnN0ZWxsYXRpb25zLAogICAgICAgIGNvbm5lY3Rpb25fZmllbGQ6IHRydWUKICAgICAgfTsKICAgICAgY29uc3Qgc3RhcnMgPSBnZW5lcmF0ZVN0YXJzKHNldHRpbmdzKTsKICAgICAgY29uc3QgY29uc3RlbGxhdGlvbnMgPSBnZW5lcmF0ZUNvbnN0ZWxsYXRpb25zRnJvbVN0YXJzKHN0YXJzLCBzZXR0aW5ncyk7CiAgICAgIHJldHVybiB7IG1ldGFkYXRhOiBkZWZhdWx0TWV0YWRhdGEoIkltcG9ydGVkIGxlZ2FjeSBnZW5lcmF0b3Igc2V0dGluZ3MiKSwgY29vcmRpbmF0ZV9saW5lczogREVGQVVMVF9DT09SRElOQVRFX0xJTkVTLnNsaWNlKCksIGdlbmVyYXRvcjogc2V0dGluZ3MsIHN0YXJzLCBjb25zdGVsbGF0aW9ucyB9OwogICAgfQoKICAgIGxldCBzdGFycyA9IFtdOwogICAgY29uc3QgYnlTdGFibGVLZXkgPSBuZXcgTWFwKCk7CiAgICBmdW5jdGlvbiBhZGRTdGFyKHJhd1N0YXIsIHByZWZlcnJlZElkKXsKICAgICAgaWYoIXJhd1N0YXIpIHJldHVybiBudWxsOwogICAgICBjb25zdCBpZCA9IFN0cmluZyhyYXdTdGFyLmlkIHx8IHJhd1N0YXIuc3Rhcl9pZCB8fCByYXdTdGFyLmtleSB8fCBwcmVmZXJyZWRJZCB8fCAoInN0YXJfIiArIFN0cmluZyhzdGFycy5sZW5ndGggKyAxKS5wYWRTdGFydCg0LCIwIikpKTsKICAgICAgaWYoYnlTdGFibGVLZXkuaGFzKGlkKSkgcmV0dXJuIGJ5U3RhYmxlS2V5LmdldChpZCk7CiAgICAgIGNvbnN0IHJhID0gTnVtYmVyKHJhd1N0YXIucmFfZGVnID8/IHJhd1N0YXIucmEgPz8gcmF3U3Rhci5sb25naXR1ZGUgPz8gcmF3U3Rhci5sb24gPz8gcmF3U3Rhci54ID8/IDApOwogICAgICBjb25zdCBkZWMgPSBOdW1iZXIocmF3U3Rhci5kZWNfZGVnID8/IHJhd1N0YXIuZGVjID8/IHJhd1N0YXIubGF0aXR1ZGUgPz8gcmF3U3Rhci5sYXQgPz8gcmF3U3Rhci55ID8/IDApOwogICAgICBjb25zdCBsdW0gPSBOdW1iZXIocmF3U3Rhci5sdW1pbm9zaXR5ID8/IHJhd1N0YXIuYnJpZ2h0bmVzcyA/PyByYXdTdGFyLm1hZyA/PyByYXdTdGFyLm1hZ25pdHVkZSA/PyAwLjY1KTsKICAgICAgY29uc3Qgbm9ybWFsaXplZCA9IG1ha2VTdGFyKGlkLCByYSwgZGVjLCBOdW1iZXIuaXNGaW5pdGUobHVtKSA/IChsdW0gPiAxID8gMSAvIE1hdGgubWF4KDEsIGx1bSkgOiBsdW0pIDogMC42NSwgewogICAgICAgIG5hbWU6IHJhd1N0YXIubmFtZSB8fCAiIiwKICAgICAgICBtYWduaXR1ZGU6IHJhd1N0YXIubWFnbml0dWRlID8/IHJhd1N0YXIubWFnID8/IHVuZGVmaW5lZCwKICAgICAgICBjb2xvcjogcmF3U3Rhci5jb2xvciB8fCByYXdTdGFyLmNvbG91ciB8fCAiI2VhZmNmZiIsCiAgICAgICAgc2l6ZTogcmF3U3Rhci5zaXplID8/IG51bGwsCiAgICAgICAgbG9yZTogcmF3U3Rhci5sb3JlIHx8IHJhd1N0YXIuZGVzY3JpcHRpb24gfHwgIiIsCiAgICAgICAgdGFnczogQXJyYXkuaXNBcnJheShyYXdTdGFyLnRhZ3MpID8gcmF3U3Rhci50YWdzIDogW10KICAgICAgfSk7CiAgICAgIHN0YXJzLnB1c2gobm9ybWFsaXplZCk7CiAgICAgIGJ5U3RhYmxlS2V5LnNldChpZCwgbm9ybWFsaXplZCk7CiAgICAgIHJldHVybiBub3JtYWxpemVkOwogICAgfQoKICAgIGlmKEFycmF5LmlzQXJyYXkocmF3LnN0YXJzKSl7IHJhdy5zdGFycy5mb3JFYWNoKChzLCBpKSA9PiBhZGRTdGFyKHMsICJzdGFyXyIgKyBTdHJpbmcoaSArIDEpLnBhZFN0YXJ0KDQsIjAiKSkpOyB9CgogICAgY29uc3QgY29uc3RlbGxhdGlvbnMgPSBbXTsKICAgIGlmKEFycmF5LmlzQXJyYXkocmF3LmNvbnN0ZWxsYXRpb25zKSl7CiAgICAgIHJhdy5jb25zdGVsbGF0aW9ucy5mb3JFYWNoKChjLCBpZHgpID0+IHsKICAgICAgICBjb25zdCBjaWQgPSBTdHJpbmcoYy5pZCB8fCBjLmNvbnN0ZWxsYXRpb25faWQgfHwgYy5rZXkgfHwgKCJjb25zdGVsbGF0aW9uXyIgKyBTdHJpbmcoaWR4ICsgMSkucGFkU3RhcnQoMywiMCIpKSk7CiAgICAgICAgbGV0IGNTdGFySWRzID0gW107CiAgICAgICAgaWYoQXJyYXkuaXNBcnJheShjLnN0YXJzKSl7CiAgICAgICAgICBjU3RhcklkcyA9IGMuc3RhcnMubWFwKChlbnRyeSwgc0lkeCkgPT4gewogICAgICAgICAgICBpZih0eXBlb2YgZW50cnkgPT09ICJzdHJpbmciKSB7CiAgICAgICAgICAgICAgaWYoIWJ5U3RhYmxlS2V5LmhhcyhlbnRyeSkpIGFkZFN0YXIoe2lkOmVudHJ5LCByYV9kZWc6MCwgZGVjX2RlZzowLCBsdW1pbm9zaXR5OjAuNX0sIGVudHJ5KTsKICAgICAgICAgICAgICByZXR1cm4gZW50cnk7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgY29uc3QgYWRkZWQgPSBhZGRTdGFyKGVudHJ5LCBjaWQgKyAiX3N0YXJfIiArIFN0cmluZyhzSWR4ICsgMSkucGFkU3RhcnQoMywiMCIpKTsKICAgICAgICAgICAgcmV0dXJuIGFkZGVkLmlkOwogICAgICAgICAgfSk7CiAgICAgICAgfQogICAgICAgIGxldCBsaW5lcyA9IFtdOwogICAgICAgIGNvbnN0IHJhd0xpbmVzID0gYy5saW5lcyB8fCBjLmVkZ2VzIHx8IGMuY29ubmVjdGlvbnMgfHwgYy5zZWdtZW50czsKICAgICAgICBpZihBcnJheS5pc0FycmF5KHJhd0xpbmVzKSl7CiAgICAgICAgICBsaW5lcyA9IHJhd0xpbmVzLm1hcChlZGdlID0+IHsKICAgICAgICAgICAgaWYoQXJyYXkuaXNBcnJheShlZGdlKSkgcmV0dXJuIFtTdHJpbmcoZWRnZVswXSksIFN0cmluZyhlZGdlWzFdKV07CiAgICAgICAgICAgIHJldHVybiBbU3RyaW5nKGVkZ2UuZnJvbSB8fCBlZGdlLmEgfHwgZWRnZS5zb3VyY2UpLCBTdHJpbmcoZWRnZS50byB8fCBlZGdlLmIgfHwgZWRnZS50YXJnZXQpXTsKICAgICAgICAgIH0pLmZpbHRlcihlZGdlID0+IGVkZ2VbMF0gJiYgZWRnZVsxXSk7CiAgICAgICAgfQogICAgICAgIGlmKGxpbmVzLmxlbmd0aCA9PT0gMCAmJiBjU3Rhcklkcy5sZW5ndGggPiAxKXsKICAgICAgICAgIGZvcihsZXQgaT0wOyBpPGNTdGFySWRzLmxlbmd0aCAtIDE7IGkrKykgbGluZXMucHVzaChbY1N0YXJJZHNbaV0sIGNTdGFySWRzW2krMV1dKTsKICAgICAgICB9CiAgICAgICAgY29uc3RlbGxhdGlvbnMucHVzaCh7CiAgICAgICAgICBpZDogY2lkLAogICAgICAgICAgbmFtZTogYy5uYW1lIHx8IGMudGl0bGUgfHwgKCJDb25zdGVsbGF0aW9uICIgKyAoaWR4ICsgMSkpLAogICAgICAgICAgYWx0ZXJuYXRlX25hbWVzOiBBcnJheS5pc0FycmF5KGMuYWx0ZXJuYXRlX25hbWVzKSA/IGMuYWx0ZXJuYXRlX25hbWVzIDogW10sCiAgICAgICAgICBzdGFyczogY1N0YXJJZHMsCiAgICAgICAgICBsaW5lcywKICAgICAgICAgIGNlbnRlcjogYy5jZW50ZXIgfHwgbnVsbCwKICAgICAgICAgIGJvdW5kczogYy5ib3VuZHMgfHwgbnVsbCwKICAgICAgICAgIHNlYXNvbjogYy5zZWFzb24gfHwgIiIsCiAgICAgICAgICBkb21haW46IGMuZG9tYWluIHx8IGMuZGVpdHkgfHwgYy5hbGlnbm1lbnQgfHwgIiIsCiAgICAgICAgICBzdW1tYXJ5OiBjLnN1bW1hcnkgfHwgYy5kZXNjcmlwdGlvbiB8fCAiIiwKICAgICAgICAgIGxvcmU6IGMubG9yZSB8fCBjLm15dGggfHwgYy5zdG9yeSB8fCAiIiwKICAgICAgICAgIGRtX25vdGVzOiBjLmRtX25vdGVzIHx8ICIiLAogICAgICAgICAgc3R5bGU6IE9iamVjdC5hc3NpZ24oeyBsaW5lX2NvbG9yOiIjZmZlN2E2Iiwgc3Rhcl9jb2xvcjoiIiwgZ2xvdzowLjksIGxhYmVsOiIiIH0sIGMuc3R5bGUgfHwge30pLAogICAgICAgICAgaW50ZXJhY3Rpb25zOiBPYmplY3QuYXNzaWduKHsgY2xpY2thYmxlOnRydWUsIGZvY3VzX3pvb206Mi40LCBwYW5lbF9vcGVuOnRydWUgfSwgYy5pbnRlcmFjdGlvbnMgfHwge30pLAogICAgICAgICAgdmlzaWJpbGl0eTogYy52aXNpYmlsaXR5IHx8IHt9CiAgICAgICAgfSk7CiAgICAgIH0pOwogICAgfQoKICAgIHJldHVybiB7CiAgICAgIG1ldGFkYXRhOiBPYmplY3QuYXNzaWduKGRlZmF1bHRNZXRhZGF0YShyYXc/Lm1ldGFkYXRhPy50aXRsZSB8fCAiSW1wb3J0ZWQgQXphXCdyYSBOaWdodCBTa3kiKSwgcmF3Lm1ldGFkYXRhIHx8IHt9KSwKICAgICAgY29vcmRpbmF0ZV9saW5lczogQXJyYXkuaXNBcnJheShyYXcuY29vcmRpbmF0ZV9saW5lcykgJiYgcmF3LmNvb3JkaW5hdGVfbGluZXMubGVuZ3RoID8gcmF3LmNvb3JkaW5hdGVfbGluZXMgOiBERUZBVUxUX0NPT1JESU5BVEVfTElORVMuc2xpY2UoKSwKICAgICAgZ2VuZXJhdG9yOiByYXcuZ2VuZXJhdG9yIHx8IHt9LAogICAgICBzdGFycywKICAgICAgY29uc3RlbGxhdGlvbnMKICAgIH07CiAgfQoKICBmdW5jdGlvbiBkZWZhdWx0TWV0YWRhdGEodGl0bGUpewogICAgcmV0dXJuIHsKICAgICAgd29ybGQ6IkF6YVwncmEiLAogICAgICB0aXRsZTogdGl0bGUgfHwgIkF6YVwncmEgTmlnaHQgU2t5IiwKICAgICAgc2NoZW1hX3ZlcnNpb246IjIuMC4wIiwKICAgICAgZ2VuZXJhdGVkX2J5OiJBemFcJ3JhIE5pZ2h0IFNreSBWaWV3ZXIgLyBDb25zdGVsbGF0aW9uIEdlbmVyYXRvciIsCiAgICAgIG5vdGVzOiJWZWlsLXRpbWUgc2t5IHJlY29yZDogMjEtaG91ciBkYXksIDI0MC1kYXkgeWVhciwgOCBtb250aHMgb2YgMzAgZGF5cywgYW5kIGEgNi1kYXkgd2Vlay4gVGhlIFRyaXVtdmlyYXRlIG9mIExpZ2h0IGlzIHBvd2VyZWQgYnkgdGhlIFZlaWwgcmF0aGVyIHRoYW4gdGhlIGRlYWQgc3VuLiIsCiAgICAgIHNvbGFyX3llYXJfZGF5czoyNDAsCiAgICAgIGF6YXJhYW5feWVhcl9kYXlzOjI0MCwKICAgICAgYXphcmFhbl9kYXlfaG91cnM6MjEsCiAgICAgIGF6YXJhYW5fd2Vla19kYXlzOjYsCiAgICAgIGF6YXJhYW5fbW9udGhfZGF5czozMCwKICAgICAgY2FsZW5kYXJfbW9udGhzOlsKICAgICAgICB7aW5kZXg6MSxuYW1lOiJUaG9yeW4tUmFoZWsiLGRheV9yYW5nZTpbMCwzMF19LAogICAgICAgIHtpbmRleDoyLG5hbWU6IkZyZXlzZXRoeXNyYSIsZGF5X3JhbmdlOlszMCw2MF19LAogICAgICAgIHtpbmRleDozLG5hbWU6Ik5lZmFyb2tpciIsZGF5X3JhbmdlOls2MCw5MF19LAogICAgICAgIHtpbmRleDo0LG5hbWU6IlRoYWx1bmVzaCIsZGF5X3JhbmdlOls5MCwxMjBdfSwKICAgICAgICB7aW5kZXg6NSxuYW1lOiJIb3J1bmRhciIsZGF5X3JhbmdlOlsxMjAsMTUwXX0sCiAgICAgICAge2luZGV4OjYsbmFtZToiUmFlc2hrdWwiLGRheV9yYW5nZTpbMTUwLDE4MF19LAogICAgICAgIHtpbmRleDo3LG5hbWU6IkFzZXRocmltaXIiLGRheV9yYW5nZTpbMTgwLDIxMF19LAogICAgICAgIHtpbmRleDo4LG5hbWU6IlNva2hpdmFyIixkYXlfcmFuZ2U6WzIxMCwyNDBdfQogICAgICBdCiAgICB9OwogIH0KCiAgZnVuY3Rpb24gcmVidWlsZEluZGV4KCl7CiAgICBzdGFySW5kZXggPSBuZXcgTWFwKCk7CiAgICBza3lEYXRhLnN0YXJzLmZvckVhY2goc3RhciA9PiBzdGFySW5kZXguc2V0KHN0YXIuaWQsIHN0YXIpKTsKICAgIHNreURhdGEuY29uc3RlbGxhdGlvbnMuZm9yRWFjaChjID0+IHsKICAgICAgaWYoIUFycmF5LmlzQXJyYXkoYy5zdGFycykpIGMuc3RhcnMgPSBbXTsKICAgICAgaWYoIUFycmF5LmlzQXJyYXkoYy5saW5lcykpIGMubGluZXMgPSBbXTsKICAgICAgYy5fY29tcHV0ZWQgPSBjb21wdXRlQ29uc3RlbGxhdGlvbk1ldGEoYyk7CiAgICB9KTsKICAgIHVwZGF0ZUVtYmVkZGVkSlNPTigpOwogICAgdXBkYXRlTGVnZW5kKCk7CiAgICByZXNldEluZm8oKTsKICB9CgogIGZ1bmN0aW9uIGNvbXB1dGVDb25zdGVsbGF0aW9uTWV0YShjKXsKICAgIGNvbnN0IHN0YXJzID0gYy5zdGFycy5tYXAoaWQgPT4gc3RhckluZGV4LmdldChpZCkpLmZpbHRlcihCb29sZWFuKTsKICAgIGlmKHN0YXJzLmxlbmd0aCA9PT0gMCkgcmV0dXJuIHtyYV9kZWc6MCwgZGVjX2RlZzowLCByYWRpdXNfZGVnOjB9OwogICAgbGV0IHN4PTAsIHN5PTAsIHN6PTA7CiAgICBzdGFycy5mb3JFYWNoKHMgPT4gewogICAgICBjb25zdCByYSA9IHMucmFfZGVnICogREVHOwogICAgICBjb25zdCBkZWMgPSBzLmRlY19kZWcgKiBERUc7CiAgICAgIHN4ICs9IE1hdGguY29zKGRlYykgKiBNYXRoLmNvcyhyYSk7CiAgICAgIHN5ICs9IE1hdGguY29zKGRlYykgKiBNYXRoLnNpbihyYSk7CiAgICAgIHN6ICs9IE1hdGguc2luKGRlYyk7CiAgICB9KTsKICAgIGNvbnN0IHJhID0gbm9ybTM2MChNYXRoLmF0YW4yKHN5LCBzeCkgKiBSQUQpOwogICAgY29uc3QgaHlwID0gTWF0aC5oeXBvdChzeCwgc3kpOwogICAgY29uc3QgZGVjID0gTWF0aC5hdGFuMihzeiwgaHlwKSAqIFJBRDsKICAgIGxldCByYWRpdXMgPSAwOwogICAgc3RhcnMuZm9yRWFjaChzID0+IHJhZGl1cyA9IE1hdGgubWF4KHJhZGl1cywgYW5ndWxhckRpc3RhbmNlKHtyYV9kZWc6cmEsIGRlY19kZWc6ZGVjfSwgcykpKTsKICAgIHJldHVybiB7cmFfZGVnOnJhLCBkZWNfZGVnOmRlYywgcmFkaXVzX2RlZzpOdW1iZXIocmFkaXVzLnRvRml4ZWQoMikpfTsKICB9CgogIGNvbnN0IEFaQVJBX1NLWV9ZRUFSX0RBWVM9MjQwOwogIGNvbnN0IEFaQVJBX1NLWV9EQVlfSE9VUlM9MjE7CiAgY29uc3QgQVpBUkFfU0tZX01PTlRIUz1bIlRob3J5bi1SYWhlayIsIkZyZXlzZXRoeXNyYSIsIk5lZmFyb2tpciIsIlRoYWx1bmVzaCIsIkhvcnVuZGFyIiwiUmFlc2hrdWwiLCJBc2V0aHJpbWlyIiwiU29raGl2YXIiXTsKICBjb25zdCBBWkFSQV9TS1lfV0VFS0RBWVM9WyJWYWxraGFkYXkiLCJOZWJkYXkiLCJTaWdyYW5kYXkiLCJJc2h0YWRheSIsIk1hcmR1ZGF5IiwiRW5raXJkYXkiXTsKICBjb25zdCBBWkFSQV9TS1lfTEVHQUNZX01PTlRIX05BTUVTPVsiSXNrYXp1bmV0IiwiQmFzdHZl4oCZZW5saWwiLCJIYXRocnVuYSJdOwogIGNvbnN0IEFaQVJBX1NLWV9MRUdBQ1lfV0VFS0RBWV9OQU1FUz1bIkFudWJhZGF5Il07CiAgZnVuY3Rpb24gYXphTW9kKG4sbSl7IHJldHVybiAoKG4lbSkrbSklbTsgfQogIGZ1bmN0aW9uIG1vbnRoRGF5KGRheUluZGV4KXsKICAgIGNvbnN0IGQ9YXphTW9kKE1hdGguZmxvb3IoZGF5SW5kZXgpLEFaQVJBX1NLWV9ZRUFSX0RBWVMpOwogICAgcmV0dXJuIEFaQVJBX1NLWV9NT05USFNbTWF0aC5mbG9vcihkLzMwKV0rIiAiKygoZCUzMCkrMSk7CiAgfQogIGZ1bmN0aW9uIHZlaWxIb3VyRmxvYXQoZGF5LCBsb2NhbEhvdXIpewogICAgaWYobG9jYWxIb3VyPT09bnVsbHx8bG9jYWxIb3VyPT09dW5kZWZpbmVkfHxsb2NhbEhvdXI9PT0ibGl2ZSJ8fE51bWJlci5pc05hTihOdW1iZXIobG9jYWxIb3VyKSkpIHJldHVybiBhemFNb2QoKGRheS1NYXRoLmZsb29yKGRheSkpKkFaQVJBX1NLWV9EQVlfSE9VUlMsQVpBUkFfU0tZX0RBWV9IT1VSUyk7CiAgICByZXR1cm4gYXphTW9kKE51bWJlcihsb2NhbEhvdXIpLEFaQVJBX1NLWV9EQVlfSE9VUlMpOwogIH0KICAvLyBTdGFyIHByb2plY3Rpb24gc3RpbGwgdXNlcyBhIDI0LWhvdXIgcmlnaHQtYXNjZW5zaW9uIGNpcmNsZSwgYnV0IHRoZSBkcml2ZXIgaXMgQXphJ3JhJ3MgMjEtaG91ciBWZWlsIGRheS4KICBmdW5jdGlvbiBza3lDbG9jayhkYXksIGxvY2FsSG91cil7IHJldHVybiB2ZWlsSG91ckZsb2F0KGRheSxsb2NhbEhvdXIpL0FaQVJBX1NLWV9EQVlfSE9VUlMqMjQ7IH0KICBmdW5jdGlvbiBjdXJyZW50VmVpbERheUZsb2F0KGRhdGU9bmV3IERhdGUoKSl7CiAgICBjb25zdCB5PWRhdGUuZ2V0RnVsbFllYXIoKTsKICAgIGNvbnN0IHN0YXJ0PW5ldyBEYXRlKHksMCwxLDAsMCwwLDApOwogICAgY29uc3QgZW5kPW5ldyBEYXRlKHkrMSwwLDEsMCwwLDAsMCk7CiAgICByZXR1cm4gKChkYXRlLmdldFRpbWUoKS1zdGFydC5nZXRUaW1lKCkpLyhlbmQuZ2V0VGltZSgpLXN0YXJ0LmdldFRpbWUoKSkpKkFaQVJBX1NLWV9ZRUFSX0RBWVM7CiAgfQoKICBzaW1EYXk9Y3VycmVudFZlaWxEYXlGbG9hdCgpOwoKICBmdW5jdGlvbiBwcm9qZWN0U3RhcihzdGFyKXsKICAgIGNvbnN0IGRlYyA9IHN0YXIuZGVjX2RlZyAqIERFRzsKICAgIGNvbnN0IGxhdFJhZCA9IGxhdCAqIERFRzsKICAgIGNvbnN0IGxzdERlZyA9IG5vcm0zNjAoc2t5Q2xvY2soc2ltRGF5LCBob3VyKSAqIDE1KTsKICAgIGNvbnN0IGhvdXJBbmdsZSA9IHNob3J0ZXN0RGVsdGEobHN0RGVnLCBzdGFyLnJhX2RlZykgKiBERUc7CiAgICBsZXQgc2luQWx0ID0gTWF0aC5zaW4oZGVjKSAqIE1hdGguc2luKGxhdFJhZCkgKyBNYXRoLmNvcyhkZWMpICogTWF0aC5jb3MobGF0UmFkKSAqIE1hdGguY29zKGhvdXJBbmdsZSk7CiAgICBzaW5BbHQgPSBjbGFtcChzaW5BbHQsIC0xLCAxKTsKICAgIGxldCBhbHQgPSBNYXRoLmFzaW4oc2luQWx0KTsKICAgIGNvbnN0IGNvc0FsdCA9IE1hdGgubWF4KDAuMDAwMSwgTWF0aC5jb3MoYWx0KSk7CiAgICBsZXQgY29zQXogPSAoTWF0aC5zaW4oZGVjKSAtIE1hdGguc2luKGFsdCkgKiBNYXRoLnNpbihsYXRSYWQpKSAvIChjb3NBbHQgKiBNYXRoLmNvcyhsYXRSYWQpKTsKICAgIGNvc0F6ID0gY2xhbXAoY29zQXosIC0xLCAxKTsKICAgIGNvbnN0IHNpbkF6ID0gLU1hdGguc2luKGhvdXJBbmdsZSkgKiBNYXRoLmNvcyhkZWMpIC8gY29zQWx0OwogICAgbGV0IGF6ID0gTWF0aC5hdGFuMihzaW5BeiwgY29zQXopOwoKICAgIGlmKHZpZXdNb2RlID09PSAiZG93biIpewogICAgICBhbHQgPSAtYWx0OwogICAgICBheiArPSBNYXRoLlBJOwogICAgfQogICAgY29uc3QgYWx0aXR1ZGVEZWcgPSBhbHQgKiBSQUQ7CiAgICBjb25zdCBkb21lUiA9IE1hdGgubWF4KHdpbmRvdy5pbm5lcldpZHRoLCB3aW5kb3cuaW5uZXJIZWlnaHQpICogMC40NiAqIHpvb207CiAgICBjb25zdCByID0gKCg5MCAtIGFsdGl0dWRlRGVnKSAvIDEwMCkgKiBkb21lUjsKICAgIGNvbnN0IGNlbnRlclggPSB3aW5kb3cuaW5uZXJXaWR0aCAvIDIgKyBwYW5YOwogICAgY29uc3QgY2VudGVyWSA9IHdpbmRvdy5pbm5lckhlaWdodCAvIDIgKyBwYW5ZOwogICAgY29uc3QgeCA9IGNlbnRlclggKyBNYXRoLnNpbihheikgKiByOwogICAgY29uc3QgeSA9IGNlbnRlclkgLSBNYXRoLmNvcyhheikgKiByOwogICAgY29uc3QgdmlzaWJsZSA9IGFsdGl0dWRlRGVnID4gLTEyICYmIHIgPCBkb21lUiAqIDEuMDg7CiAgICByZXR1cm4ge3gsIHksIGFsdDphbHRpdHVkZURlZywgYXo6bm9ybTM2MChheiAqIFJBRCksIHZpc2libGUsIHJ9OwogIH0KCiAgZnVuY3Rpb24gcmVzaXplKCl7CiAgICBjb25zdCByYXRpbyA9IHdpbmRvdy5kZXZpY2VQaXhlbFJhdGlvIHx8IDE7CiAgICBjYW52YXMud2lkdGggPSBNYXRoLmZsb29yKHdpbmRvdy5pbm5lcldpZHRoICogcmF0aW8pOwogICAgY2FudmFzLmhlaWdodCA9IE1hdGguZmxvb3Iod2luZG93LmlubmVySGVpZ2h0ICogcmF0aW8pOwogICAgY2FudmFzLnN0eWxlLndpZHRoID0gd2luZG93LmlubmVyV2lkdGggKyAicHgiOwogICAgY2FudmFzLnN0eWxlLmhlaWdodCA9IHdpbmRvdy5pbm5lckhlaWdodCArICJweCI7CiAgICBjdHguc2V0VHJhbnNmb3JtKHJhdGlvLDAsMCxyYXRpbywwLDApOwogICAgZHJhdyhwZXJmb3JtYW5jZS5ub3coKSk7CiAgfQoKICBmdW5jdGlvbiBza3lWZWlsUGFydHMoKXsKICAgIGNvbnN0IGhmPXZlaWxIb3VyRmxvYXQoc2ltRGF5LGhvdXIpOwogICAgY29uc3QgaD1NYXRoLmZsb29yKGhmKSsxOwogICAgY29uc3QgbWludXRlRmxvYXQ9KGhmLU1hdGguZmxvb3IoaGYpKSo2MDsKICAgIGNvbnN0IG1pbnV0ZT1NYXRoLmZsb29yKG1pbnV0ZUZsb2F0KTsKICAgIGNvbnN0IHNlY29uZD1NYXRoLmZsb29yKChtaW51dGVGbG9hdC1taW51dGUpKjYwKTsKICAgIGNvbnN0IHBlcmlvZD1oPD03PyJBZSI6aDw9MTQ/IlfigJlpIjoiTGEiOwogICAgY29uc3QgcGg9KChoLTEpJTcpKzE7CiAgICByZXR1cm4ge2hvdXJGbG9hdDpoZixob3VyOmgsbWludXRlLHNlY29uZCxwZXJpb2QscGVyaW9kSG91cjpwaCxub3RhdGlvbjpwaCtwZXJpb2R9OwogIH0KICBmdW5jdGlvbiB1cGRhdGVSZWFkb3V0cygpewogICAgY29uc3QgZD1hemFNb2QoTWF0aC5mbG9vcihzaW1EYXkpLEFaQVJBX1NLWV9ZRUFSX0RBWVMpOwogICAgY29uc3QgdD1za3lWZWlsUGFydHMoKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJkYXRlUmVhZG91dCIpLnRleHRDb250ZW50ID0gbW9udGhEYXkoc2ltRGF5KSArICIgwrcgZGF5ICIgKyAoZCArIDEpICsgIiAvIDI0MCI7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidGltZVJlYWRvdXQiKS50ZXh0Q29udGVudCA9IHQubm90YXRpb24gKyAiIMK3ICIgKyBTdHJpbmcodC5taW51dGUpLnBhZFN0YXJ0KDIsIjAiKSArICI6IiArIFN0cmluZyh0LnNlY29uZCkucGFkU3RhcnQoMiwiMCIpICsgIiBWZWlsIjsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJsYXRSZWFkb3V0IikudGV4dENvbnRlbnQgPSAiTGF0ICIgKyBsYXQgKyAiwrAiOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInZpZXdSZWFkb3V0IikudGV4dENvbnRlbnQgPSAiWm9vbSAiICsgem9vbS50b0ZpeGVkKDIpICsgIsOXIjsKICAgIGlmKHR5cGVvZiB3aW5kb3cuX19iZWxhdmFkb3NVcGRhdGVUaW1lUGFuZWwgPT09ICJmdW5jdGlvbiIpIHdpbmRvdy5fX2JlbGF2YWRvc1VwZGF0ZVRpbWVQYW5lbCgpOwogIH0KCiAgZnVuY3Rpb24gZHJhd0JhY2tncm91bmQoKXsKICAgIGN0eC5jbGVhclJlY3QoMCwwLHdpbmRvdy5pbm5lcldpZHRoLHdpbmRvdy5pbm5lckhlaWdodCk7CiAgICBjb25zdCBjeCA9IHdpbmRvdy5pbm5lcldpZHRoIC8gMiArIHBhblggKiAwLjAyNTsKICAgIGNvbnN0IGN5ID0gd2luZG93LmlubmVySGVpZ2h0IC8gMiArIHBhblkgKiAwLjAyNTsKICAgIGNvbnN0IHJhZGl1cyA9IE1hdGgubWF4KHdpbmRvdy5pbm5lcldpZHRoLCB3aW5kb3cuaW5uZXJIZWlnaHQpICogKDAuODggKyAoem9vbSAtIDEpICogMC4wNik7CiAgICBjb25zdCBiYXNlID0gY3R4LmNyZWF0ZVJhZGlhbEdyYWRpZW50KGN4LCBjeSwgMjAsIGN4LCBjeSwgcmFkaXVzKTsKICAgIGJhc2UuYWRkQ29sb3JTdG9wKDAsICIjMTIyMzRjIik7CiAgICBiYXNlLmFkZENvbG9yU3RvcCgwLjU4LCAiIzA3MTIyNiIpOwogICAgYmFzZS5hZGRDb2xvclN0b3AoMSwgIiMwMjA0MGIiKTsKICAgIGN0eC5maWxsU3R5bGUgPSBiYXNlOwogICAgY3R4LmZpbGxSZWN0KDAsMCx3aW5kb3cuaW5uZXJXaWR0aCx3aW5kb3cuaW5uZXJIZWlnaHQpOwoKICAgIGNvbnN0IGdsb3dYID0gd2luZG93LmlubmVyV2lkdGggKiAodmlld01vZGUgPT09ICJ1cCIgPyAwLjM0IDogMC42NikgKyBwYW5YICogMC4wNDsKICAgIGNvbnN0IGdsb3dZID0gd2luZG93LmlubmVySGVpZ2h0ICogKDAuMzAgKyAobGF0IC8gODApICogMC4wNikgKyBwYW5ZICogMC4wNDsKICAgIGNvbnN0IGdsb3cgPSBjdHguY3JlYXRlUmFkaWFsR3JhZGllbnQoZ2xvd1gsIGdsb3dZLCAwLCBnbG93WCwgZ2xvd1ksIE1hdGgubWF4KDEyMCwgMjgwICogem9vbSkpOwogICAgZ2xvdy5hZGRDb2xvclN0b3AoMCwgInJnYmEoMTAwLDIzMywyNTUsLjEwKSIpOwogICAgZ2xvdy5hZGRDb2xvclN0b3AoMC40NSwgInJnYmEoMTAwLDIzMywyNTUsLjAzNSkiKTsKICAgIGdsb3cuYWRkQ29sb3JTdG9wKDEsICJyZ2JhKDEwMCwyMzMsMjU1LDApIik7CiAgICBjdHguZmlsbFN0eWxlID0gZ2xvdzsKICAgIGN0eC5maWxsUmVjdCgwLDAsd2luZG93LmlubmVyV2lkdGgsd2luZG93LmlubmVySGVpZ2h0KTsKICB9CgogIGZ1bmN0aW9uIGRyYXcobm93KXsKICAgIGhvdmVyVGFyZ2V0cyA9IFtdOwogICAgbGFzdERyYXduUG9zaXRpb25zID0gbmV3IE1hcCgpOwogICAgZHJhd0JhY2tncm91bmQoKTsKICAgIGlmKHNob3dHcmlkKSBkcmF3Q29vcmRpbmF0ZUdyaWQoKTsKICAgIGlmKGNvbm5lY3Rpb25GaWVsZEVuYWJsZWQpIGRyYXdBbWJpZW50Q29ubmVjdGlvbnMoKTsKICAgIGlmKHNob3dMaW5lcykgZHJhd0NvbnN0ZWxsYXRpb25MaW5lcygpOwogICAgaWYoc2hvd1N0YXJzKSBkcmF3U3RhcnMoKTsKICAgIGlmKHNob3dMYWJlbHMpIGRyYXdMYWJlbHMoKTsKICB9CgogIGZ1bmN0aW9uIGRyYXdDb29yZGluYXRlR3JpZCgpewogICAgY29uc3QgbGluZXMgPSBza3lEYXRhLmNvb3JkaW5hdGVfbGluZXMgfHwgREVGQVVMVF9DT09SRElOQVRFX0xJTkVTOwogICAgY3R4LnNhdmUoKTsKICAgIGN0eC5saW5lV2lkdGggPSAwLjg7CiAgICBjdHguZm9udCA9ICIxMnB4IEdlb3JnaWEsIHNlcmlmIjsKICAgIGN0eC50ZXh0QWxpZ24gPSAiY2VudGVyIjsKICAgIGN0eC50ZXh0QmFzZWxpbmUgPSAibWlkZGxlIjsKICAgIGxpbmVzLmZvckVhY2gobGluZSA9PiB7CiAgICAgIGNvbnN0IGlzTG9uID0gbGluZS5raW5kID09PSAibG9uZ2l0dWRlIiB8fCBTdHJpbmcobGluZS5jb29yZGluYXRlX3R5cGUgfHwgIiIpLnRvTG93ZXJDYXNlKCkuaW5jbHVkZXMoImxvbmdpdHVkZSIpOwogICAgICBjb25zdCBzYW1wbGVzID0gW107CiAgICAgIGlmKGlzTG9uKXsKICAgICAgICBjb25zdCByYSA9IG5vcm0zNjAoTnVtYmVyKGxpbmUuZGVncmVlcykgKyAxODApOwogICAgICAgIGZvcihsZXQgZGVjPS04MDsgZGVjPD04MDsgZGVjKz00KSBzYW1wbGVzLnB1c2gocHJvamVjdFN0YXIoe3JhX2RlZzpyYSwgZGVjX2RlZzpkZWN9KSk7CiAgICAgIH0gZWxzZSB7CiAgICAgICAgY29uc3QgZGVjID0gTnVtYmVyKGxpbmUuZGVncmVlcyk7CiAgICAgICAgZm9yKGxldCByYT0wOyByYTw9MzYwOyByYSs9NSkgc2FtcGxlcy5wdXNoKHByb2plY3RTdGFyKHtyYV9kZWc6cmEsIGRlY19kZWc6ZGVjfSkpOwogICAgICB9CiAgICAgIGN0eC5iZWdpblBhdGgoKTsKICAgICAgbGV0IHN0YXJ0ZWQgPSBmYWxzZTsKICAgICAgZm9yKGxldCBpPTA7aTxzYW1wbGVzLmxlbmd0aDtpKyspewogICAgICAgIGNvbnN0IHAgPSBzYW1wbGVzW2ldOwogICAgICAgIGlmKCFwLnZpc2libGUpeyBzdGFydGVkID0gZmFsc2U7IGNvbnRpbnVlOyB9CiAgICAgICAgaWYoIXN0YXJ0ZWQpeyBjdHgubW92ZVRvKHAueCxwLnkpOyBzdGFydGVkPXRydWU7IH0gZWxzZSB7IGN0eC5saW5lVG8ocC54LHAueSk7IH0KICAgICAgfQogICAgICBjb25zdCBhbHBoYSA9IGlzTG9uID8gMC4xOCA6IDAuMjI7CiAgICAgIGN0eC5zdHJva2VTdHlsZSA9IGlzTG9uID8gYHJnYmEoMTAwLDIzMywyNTUsJHthbHBoYX0pYCA6IGByZ2JhKDI1NSwyMzEsMTY2LCR7YWxwaGF9KWA7CiAgICAgIGN0eC5zdHJva2UoKTsKCiAgICAgIGNvbnN0IGxhYmVsU3RhciA9IGlzTG9uID8ge3JhX2RlZzpub3JtMzYwKE51bWJlcihsaW5lLmRlZ3JlZXMpICsgMTgwKSwgZGVjX2RlZzowfSA6IHtyYV9kZWc6bm9ybTM2MChza3lDbG9jayhzaW1EYXksaG91cikgKiAxNSksIGRlY19kZWc6TnVtYmVyKGxpbmUuZGVncmVlcyl9OwogICAgICBjb25zdCBscCA9IHByb2plY3RTdGFyKGxhYmVsU3Rhcik7CiAgICAgIGlmKGxwLnZpc2libGUgJiYgbHAueCA+IDAgJiYgbHAueCA8IHdpbmRvdy5pbm5lcldpZHRoICYmIGxwLnkgPiAwICYmIGxwLnkgPCB3aW5kb3cuaW5uZXJIZWlnaHQpewogICAgICAgIGN0eC5maWxsU3R5bGUgPSBpc0xvbiA/ICJyZ2JhKDEwMCwyMzMsMjU1LC43MikiIDogInJnYmEoMjU1LDIzMSwxNjYsLjcyKSI7CiAgICAgICAgY3R4LnNoYWRvd0NvbG9yID0gaXNMb24gPyAicmdiYSgxMDAsMjMzLDI1NSwuNjUpIiA6ICJyZ2JhKDI1NSwyMzEsMTY2LC42NSkiOwogICAgICAgIGN0eC5zaGFkb3dCbHVyID0gODsKICAgICAgICBjdHguZmlsbFRleHQobGluZS5saW5lLCBscC54LCBscC55KTsKICAgICAgICBob3ZlclRhcmdldHMucHVzaCh7dHlwZToiY29vcmRpbmF0ZSIsIHg6bHAueCwgeTpscC55LCByYWRpdXM6MjgsIGRhdGE6bGluZX0pOwogICAgICAgIGN0eC5zaGFkb3dCbHVyID0gMDsKICAgICAgfQogICAgfSk7CiAgICBjdHgucmVzdG9yZSgpOwogIH0KCiAgZnVuY3Rpb24gZHJhd0FtYmllbnRDb25uZWN0aW9ucygpewogICAgaWYoIXNreURhdGEuc3RhcnMubGVuZ3RoKSByZXR1cm47CiAgICBjb25zdCB2aXNpYmxlID0gW107CiAgICBjb25zdCBtYXhWaXNpYmxlID0gMjYwOwogICAgZm9yKGNvbnN0IHMgb2Ygc2t5RGF0YS5zdGFycyl7CiAgICAgIGNvbnN0IHAgPSBwcm9qZWN0U3RhcihzKTsKICAgICAgaWYocC52aXNpYmxlICYmIHAueCA+IC0zMCAmJiBwLnggPCB3aW5kb3cuaW5uZXJXaWR0aCArIDMwICYmIHAueSA+IC0zMCAmJiBwLnkgPCB3aW5kb3cuaW5uZXJIZWlnaHQgKyAzMCkgdmlzaWJsZS5wdXNoKHtzLHB9KTsKICAgICAgaWYodmlzaWJsZS5sZW5ndGggPj0gbWF4VmlzaWJsZSkgYnJlYWs7CiAgICB9CiAgICBjdHguc2F2ZSgpOwogICAgY3R4LmxpbmVXaWR0aCA9IDAuNDU7CiAgICBmb3IobGV0IGk9MDsgaTx2aXNpYmxlLmxlbmd0aDsgaSsrKXsKICAgICAgY29uc3QgYSA9IHZpc2libGVbaV07CiAgICAgIGZvcihsZXQgaj1pKzE7IGo8TWF0aC5taW4odmlzaWJsZS5sZW5ndGgsIGkrMTYpOyBqKyspewogICAgICAgIGNvbnN0IGIgPSB2aXNpYmxlW2pdOwogICAgICAgIGNvbnN0IGQgPSBNYXRoLmh5cG90KGEucC54LWIucC54LCBhLnAueS1iLnAueSk7CiAgICAgICAgY29uc3QgdGhyZXNob2xkID0gOTAgKiBNYXRoLnNxcnQoem9vbSk7CiAgICAgICAgaWYoZCA8IHRocmVzaG9sZCl7CiAgICAgICAgICBjb25zdCBvcCA9ICgxIC0gZCAvIHRocmVzaG9sZCkgKiAwLjEyOwogICAgICAgICAgY3R4LnN0cm9rZVN0eWxlID0gYHJnYmEoMTAwLDIzMywyNTUsJHtvcH0pYDsKICAgICAgICAgIGN0eC5iZWdpblBhdGgoKTsgY3R4Lm1vdmVUbyhhLnAueCxhLnAueSk7IGN0eC5saW5lVG8oYi5wLngsYi5wLnkpOyBjdHguc3Ryb2tlKCk7CiAgICAgICAgfQogICAgICB9CiAgICB9CiAgICBjdHgucmVzdG9yZSgpOwogIH0KCiAgZnVuY3Rpb24gZHJhd0NvbnN0ZWxsYXRpb25MaW5lcygpewogICAgY3R4LnNhdmUoKTsKICAgIGN0eC5saW5lQ2FwID0gInJvdW5kIjsKICAgIGN0eC5saW5lSm9pbiA9ICJyb3VuZCI7CiAgICBmb3IoY29uc3QgYyBvZiBza3lEYXRhLmNvbnN0ZWxsYXRpb25zKXsKICAgICAgY29uc3QgYWN0aXZlID0gYy5pZCA9PT0gc2VsZWN0ZWRDb25zdGVsbGF0aW9uSWQ7CiAgICAgIGNvbnN0IGxpbmVDb2xvciA9IGM/LnN0eWxlPy5saW5lX2NvbG9yIHx8ICIjZmZlN2E2IjsKICAgICAgZm9yKGNvbnN0IGVkZ2Ugb2YgYy5saW5lcyB8fCBbXSl7CiAgICAgICAgY29uc3QgYSA9IHN0YXJJbmRleC5nZXQoU3RyaW5nKGVkZ2VbMF0pKTsKICAgICAgICBjb25zdCBiID0gc3RhckluZGV4LmdldChTdHJpbmcoZWRnZVsxXSkpOwogICAgICAgIGlmKCFhIHx8ICFiKSBjb250aW51ZTsKICAgICAgICBjb25zdCBwYSA9IHByb2plY3RTdGFyKGEpOwogICAgICAgIGNvbnN0IHBiID0gcHJvamVjdFN0YXIoYik7CiAgICAgICAgaWYoIXBhLnZpc2libGUgJiYgIXBiLnZpc2libGUpIGNvbnRpbnVlOwogICAgICAgIGN0eC5zaGFkb3dDb2xvciA9IGxpbmVDb2xvcjsKICAgICAgICBjdHguc2hhZG93Qmx1ciA9IGFjdGl2ZSA/IDIyIDogMTAgKiBOdW1iZXIoYz8uc3R5bGU/Lmdsb3cgPz8gMC45KTsKICAgICAgICBjdHguc3Ryb2tlU3R5bGUgPSBoZXhUb1JnYmEobGluZUNvbG9yLCBhY3RpdmUgPyAwLjkyIDogMC41Nik7CiAgICAgICAgY3R4LmxpbmVXaWR0aCA9IGFjdGl2ZSA/IDIuMSA6IDEuMDU7CiAgICAgICAgY3R4LmJlZ2luUGF0aCgpOwogICAgICAgIGN0eC5tb3ZlVG8ocGEueCwgcGEueSk7CiAgICAgICAgY3R4LmxpbmVUbyhwYi54LCBwYi55KTsKICAgICAgICBjdHguc3Ryb2tlKCk7CiAgICAgICAgY29uc3QgbXggPSAocGEueCArIHBiLngpLzI7CiAgICAgICAgY29uc3QgbXkgPSAocGEueSArIHBiLnkpLzI7CiAgICAgICAgaG92ZXJUYXJnZXRzLnB1c2goe3R5cGU6ImNvbnN0ZWxsYXRpb24iLCB4Om14LCB5Om15LCByYWRpdXM6MTQgKyAoYWN0aXZlID8gOCA6IDApLCBkYXRhOmN9KTsKICAgICAgfQogICAgfQogICAgY3R4LnJlc3RvcmUoKTsKICB9CgogIGZ1bmN0aW9uIGRyYXdTdGFycygpewogICAgY3R4LnNhdmUoKTsKICAgIGZvcihjb25zdCBzIG9mIHNreURhdGEuc3RhcnMpewogICAgICBjb25zdCBwID0gcHJvamVjdFN0YXIocyk7CiAgICAgIGxhc3REcmF3blBvc2l0aW9ucy5zZXQocy5pZCwgcCk7CiAgICAgIGlmKCFwLnZpc2libGUpIGNvbnRpbnVlOwogICAgICBjb25zdCBzaXplID0gTnVtYmVyKHMuc2l6ZSkgfHwgKDAuOCArIHMubHVtaW5vc2l0eSAqIDIuOSk7CiAgICAgIGNvbnN0IGFscGhhID0gY2xhbXAoMC4yNSArIHMubHVtaW5vc2l0eSAqIDAuODIsIDAuMjUsIDEpOwogICAgICBjdHguZmlsbFN0eWxlID0gaGV4VG9SZ2JhKHMuY29sb3IgfHwgIiNlYWZjZmYiLCBhbHBoYSk7CiAgICAgIGN0eC5zaGFkb3dDb2xvciA9IHMuY29sb3IgfHwgIiNlYWZjZmYiOwogICAgICBjdHguc2hhZG93Qmx1ciA9IDggKyBzLmx1bWlub3NpdHkgKiAxNjsKICAgICAgY3R4LmJlZ2luUGF0aCgpOwogICAgICBjdHguYXJjKHAueCwgcC55LCBzaXplICogTWF0aC5zcXJ0KHpvb20pLCAwLCBNYXRoLlBJICogMik7CiAgICAgIGN0eC5maWxsKCk7CiAgICAgIGlmKHMubHVtaW5vc2l0eSA+IDAuODYpewogICAgICAgIGN0eC5saW5lV2lkdGggPSAwLjY7CiAgICAgICAgY3R4LnN0cm9rZVN0eWxlID0gaGV4VG9SZ2JhKHMuY29sb3IgfHwgIiNlYWZjZmYiLCAwLjUpOwogICAgICAgIGN0eC5iZWdpblBhdGgoKTsKICAgICAgICBjdHgubW92ZVRvKHAueCAtIHNpemUgKiAyLjIsIHAueSk7IGN0eC5saW5lVG8ocC54ICsgc2l6ZSAqIDIuMiwgcC55KTsKICAgICAgICBjdHgubW92ZVRvKHAueCwgcC55IC0gc2l6ZSAqIDIuMik7IGN0eC5saW5lVG8ocC54LCBwLnkgKyBzaXplICogMi4yKTsKICAgICAgICBjdHguc3Ryb2tlKCk7CiAgICAgIH0KICAgICAgaG92ZXJUYXJnZXRzLnB1c2goe3R5cGU6InN0YXIiLCB4OnAueCwgeTpwLnksIHJhZGl1czpNYXRoLm1heCg3LCBzaXplICogMyksIGRhdGE6c30pOwogICAgfQogICAgY3R4LnJlc3RvcmUoKTsKICB9CgogIGZ1bmN0aW9uIGRyYXdMYWJlbHMoKXsKICAgIGN0eC5zYXZlKCk7CiAgICBjdHguZm9udCA9ICIxM3B4IEdlb3JnaWEsIHNlcmlmIjsKICAgIGN0eC50ZXh0QmFzZWxpbmUgPSAibWlkZGxlIjsKICAgIGZvcihjb25zdCBjIG9mIHNreURhdGEuY29uc3RlbGxhdGlvbnMpewogICAgICBjb25zdCBjZW50ZXIgPSBjLmNlbnRlciB8fCBjLl9jb21wdXRlZCB8fCB7cmFfZGVnOjAsIGRlY19kZWc6MH07CiAgICAgIGNvbnN0IHAgPSBwcm9qZWN0U3RhcihjZW50ZXIpOwogICAgICBpZighcC52aXNpYmxlKSBjb250aW51ZTsKICAgICAgY29uc3QgYWN0aXZlID0gYy5pZCA9PT0gc2VsZWN0ZWRDb25zdGVsbGF0aW9uSWQ7CiAgICAgIGNvbnN0IHRleHQgPSBjPy5zdHlsZT8ubGFiZWwgfHwgYy5uYW1lIHx8IGMuaWQ7CiAgICAgIGN0eC50ZXh0QWxpZ24gPSAiY2VudGVyIjsKICAgICAgY3R4LmxpbmVXaWR0aCA9IDQ7CiAgICAgIGN0eC5zdHJva2VTdHlsZSA9ICJyZ2JhKDIsNCwxMiwuNzgpIjsKICAgICAgY3R4LnN0cm9rZVRleHQodGV4dCwgcC54LCBwLnkgLSAxOCk7CiAgICAgIGN0eC5maWxsU3R5bGUgPSBhY3RpdmUgPyAiI2ZmZmZmZiIgOiAiI2ZmZTdhNiI7CiAgICAgIGN0eC5zaGFkb3dDb2xvciA9IGFjdGl2ZSA/ICIjNjRlOWZmIiA6ICIjZmZlN2E2IjsKICAgICAgY3R4LnNoYWRvd0JsdXIgPSBhY3RpdmUgPyAxNSA6IDc7CiAgICAgIGN0eC5maWxsVGV4dCh0ZXh0LCBwLngsIHAueSAtIDE4KTsKICAgICAgY29uc3Qgd2lkdGggPSBjdHgubWVhc3VyZVRleHQodGV4dCkud2lkdGg7CiAgICAgIGhvdmVyVGFyZ2V0cy5wdXNoKHt0eXBlOiJjb25zdGVsbGF0aW9uIiwgeDpwLngsIHk6cC55IC0gMTgsIHJhZGl1czpNYXRoLm1heCgxOCwgd2lkdGgvMiksIGRhdGE6Y30pOwogICAgfQogICAgY3R4LnJlc3RvcmUoKTsKICB9CgogIGZ1bmN0aW9uIGhleFRvUmdiYShjb2xvciwgYWxwaGEpewogICAgaWYoIWNvbG9yKSByZXR1cm4gYHJnYmEoMjM0LDI1MiwyNTUsJHthbHBoYX0pYDsKICAgIGlmKGNvbG9yLnN0YXJ0c1dpdGgoInJnYiIpKSByZXR1cm4gY29sb3IucmVwbGFjZSgvcmdiYT9cKChbXildKylcKS8sIChtLCBib2R5KSA9PiB7CiAgICAgIGNvbnN0IHBhcnRzID0gYm9keS5zcGxpdCgnLCcpLnNsaWNlKDAsMykubWFwKHggPT4geC50cmltKCkpOwogICAgICByZXR1cm4gYHJnYmEoJHtwYXJ0cy5qb2luKCcsJyl9LCR7YWxwaGF9KWA7CiAgICB9KTsKICAgIGNvbnN0IGhleCA9IGNvbG9yLnJlcGxhY2UoJyMnLCcnKS50cmltKCk7CiAgICBjb25zdCBmdWxsID0gaGV4Lmxlbmd0aCA9PT0gMyA/IGhleC5zcGxpdCgnJykubWFwKGMgPT4gYytjKS5qb2luKCcnKSA6IGhleC5wYWRFbmQoNiwnZicpLnNsaWNlKDAsNik7CiAgICBjb25zdCByID0gcGFyc2VJbnQoZnVsbC5zbGljZSgwLDIpLDE2KSwgZyA9IHBhcnNlSW50KGZ1bGwuc2xpY2UoMiw0KSwxNiksIGIgPSBwYXJzZUludChmdWxsLnNsaWNlKDQsNiksMTYpOwogICAgcmV0dXJuIGByZ2JhKCR7cn0sJHtnfSwke2J9LCR7YWxwaGF9KWA7CiAgfQoKICBmdW5jdGlvbiBzZXRJbmZvKHRpdGxlLCBib2R5Um93cywgc3VidGl0bGUsIGFjdGlvbnNIVE1MKXsKICAgIGNvbnN0IHJvd3MgPSBib2R5Um93cy5tYXAocm93ID0+ICI8dHI+PHRkPiIgKyBlc2NhcGVIVE1MKHJvd1swXSkgKyAiPC90ZD48dGQ+IiArIHJvd1sxXSArICI8L3RkPjwvdHI+Iikuam9pbigiIik7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiaW5mbyIpLmlubmVySFRNTCA9CiAgICAgICI8aDI+IiArIGVzY2FwZUhUTUwodGl0bGUpICsgIjwvaDI+IiArCiAgICAgICc8ZGl2IGNsYXNzPSJzdWIiPicgKyBzdWJ0aXRsZSArICc8L2Rpdj4nICsKICAgICAgIjx0YWJsZT4iICsgcm93cyArICI8L3RhYmxlPiIgKyAoYWN0aW9uc0hUTUwgfHwgIiIpOwogIH0KCiAgZnVuY3Rpb24gcmVzZXRJbmZvKCl7CiAgICBzZXRJbmZvKAogICAgICBza3lEYXRhPy5tZXRhZGF0YT8udGl0bGUgfHwgIkF6YVwncmEgTmlnaHQgU2t5IiwKICAgICAgWwogICAgICAgIFsiU3RhcnMgbG9hZGVkIiwgU3RyaW5nKHNreURhdGEuc3RhcnMubGVuZ3RoKV0sCiAgICAgICAgWyJDb25zdGVsbGF0aW9ucyIsIFN0cmluZyhza3lEYXRhLmNvbnN0ZWxsYXRpb25zLmxlbmd0aCldLAogICAgICAgIFsiTmFtZWQgY29vcmRpbmF0ZSBsaW5lcyIsIFN0cmluZygoc2t5RGF0YS5jb29yZGluYXRlX2xpbmVzIHx8IFtdKS5sZW5ndGgpXSwKICAgICAgICBbIlNlbGVjdGVkIGxheWVyIiwgc2VsZWN0ZWRDb25zdGVsbGF0aW9uSWQgPyBlc2NhcGVIVE1MKHNlbGVjdGVkQ29uc3RlbGxhdGlvbklkKSA6ICJOb25lIl0KICAgICAgXSwKICAgICAgIkNsaWNrIGEgc3RhciwgY29uc3RlbGxhdGlvbiwgbGFiZWwsIG9yIG5hbWVkIGdyaWQgbGluZSB0byBpbnNwZWN0IGl0LiBVc2UgI2RtLWVkaXRvciBvbmx5IHdoZW4geW91IG5lZWQgdGhlIGhpZGRlbiBnZW5lcmF0b3IsIGltcG9ydCwgYW5kIGV4cG9ydCB0b29scy4iCiAgICApOwogIH0KCiAgZnVuY3Rpb24gcmVwb3J0Q2xpY2soZXZlbnQpewogICAgaWYoY2xpY2tNb3ZlZCkgcmV0dXJuOwogICAgY29uc3QgdGFyZ2V0ID0gZmluZFRhcmdldChldmVudC5jbGllbnRYLCBldmVudC5jbGllbnRZKTsKICAgIGlmKHRhcmdldCl7CiAgICAgIGlmKHRhcmdldC50eXBlID09PSAic3RhciIpIHNob3dTdGFySW5mbyh0YXJnZXQuZGF0YSk7CiAgICAgIGlmKHRhcmdldC50eXBlID09PSAiY29uc3RlbGxhdGlvbiIpIHNob3dDb25zdGVsbGF0aW9uSW5mbyh0YXJnZXQuZGF0YSk7CiAgICAgIGlmKHRhcmdldC50eXBlID09PSAiY29vcmRpbmF0ZSIpIHNob3dDb29yZGluYXRlSW5mbyh0YXJnZXQuZGF0YSk7CiAgICAgIGRyYXcocGVyZm9ybWFuY2Uubm93KCkpOwogICAgICByZXR1cm47CiAgICB9CiAgICBzZWxlY3RlZENvbnN0ZWxsYXRpb25JZCA9IG51bGw7CiAgICBjb25zdCBkeCA9IGV2ZW50LmNsaWVudFggLSB3aW5kb3cuaW5uZXJXaWR0aCAvIDIgLSBwYW5YOwogICAgY29uc3QgZHkgPSBldmVudC5jbGllbnRZIC0gd2luZG93LmlubmVySGVpZ2h0IC8gMiAtIHBhblk7CiAgICBjb25zdCBkaXN0YW5jZSA9IE1hdGguaHlwb3QoZHgsIGR5KTsKICAgIGNvbnN0IGRpcmVjdGlvbiA9IE1hdGgucm91bmQoKE1hdGguYXRhbjIoZHgsIC1keSkgKiAxODAgLyBNYXRoLlBJICsgMzYwKSAlIDM2MCk7CiAgICBzZXRJbmZvKAogICAgICAiT3BlbiBza3kgY2xpY2siLAogICAgICBbCiAgICAgICAgWyJTY3JlZW4gcG9zaXRpb24iLCBNYXRoLnJvdW5kKGV2ZW50LmNsaWVudFgpICsgIiwgIiArIE1hdGgucm91bmQoZXZlbnQuY2xpZW50WSldLAogICAgICAgIFsiT2Zmc2V0IGZyb20gdmlldyBjZW50ZXIiLCBNYXRoLnJvdW5kKGR4KSArICIsICIgKyBNYXRoLnJvdW5kKGR5KV0sCiAgICAgICAgWyJEaXJlY3Rpb24gLyBkaXN0YW5jZSIsIGRpcmVjdGlvbiArICLCsCAvICIgKyBNYXRoLnJvdW5kKGRpc3RhbmNlKSArICIgcHgiXSwKICAgICAgICBbIlZpZXciLCB2aWV3TW9kZSA9PT0gInVwIiA/ICJUb3AgVXAiIDogIlRvcCBEb3duIl0sCiAgICAgICAgWyJDdXJyZW50IHpvb20iLCB6b29tLnRvRml4ZWQoMikgKyAiw5ciXQogICAgICBdLAogICAgICAiTm8gc3RhciBvciBjb25zdGVsbGF0aW9uIHdhcyBzZWxlY3RlZCBhdCB0aGlzIHBvaW50LiIKICAgICk7CiAgfQoKICBmdW5jdGlvbiBmaW5kVGFyZ2V0KHgseSl7CiAgICBsZXQgYmVzdCA9IG51bGw7CiAgICBsZXQgYmVzdEQgPSBJbmZpbml0eTsKICAgIGZvcihjb25zdCB0YXJnZXQgb2YgaG92ZXJUYXJnZXRzKXsKICAgICAgY29uc3QgZCA9IE1hdGguaHlwb3QodGFyZ2V0LnggLSB4LCB0YXJnZXQueSAtIHkpOwogICAgICBpZihkIDw9IHRhcmdldC5yYWRpdXMgJiYgZCA8IGJlc3REKXsgYmVzdCA9IHRhcmdldDsgYmVzdEQgPSBkOyB9CiAgICB9CiAgICByZXR1cm4gYmVzdDsKICB9CgogIGZ1bmN0aW9uIHNob3dTdGFySW5mbyhzdGFyKXsKICAgIHNlbGVjdGVkQ29uc3RlbGxhdGlvbklkID0gbnVsbDsKICAgIGNvbnN0IHAgPSBwcm9qZWN0U3RhcihzdGFyKTsKICAgIHNldEluZm8oCiAgICAgIHN0YXIubmFtZSB8fCBzdGFyLmlkLAogICAgICBbCiAgICAgICAgWyJUeXBlIiwgIlN0YXIiXSwKICAgICAgICBbIlJBIC8gc2t5IGxvbmdpdHVkZSIsIE51bWJlcihzdGFyLnJhX2RlZykudG9GaXhlZCgyKSArICLCsCJdLAogICAgICAgIFsiRGVjIC8gc2t5IGxhdGl0dWRlIiwgTnVtYmVyKHN0YXIuZGVjX2RlZykudG9GaXhlZCgyKSArICLCsCJdLAogICAgICAgIFsiQ3VycmVudCBhbHRpdHVkZSIsIHAuYWx0LnRvRml4ZWQoMikgKyAiwrAiXSwKICAgICAgICBbIkN1cnJlbnQgYXppbXV0aCIsIHAuYXoudG9GaXhlZCgyKSArICLCsCJdLAogICAgICAgIFsiTHVtaW5vc2l0eSIsIE51bWJlcihzdGFyLmx1bWlub3NpdHkpLnRvRml4ZWQoMyldLAogICAgICAgIFsiTG9yZSIsIGVzY2FwZUhUTUwoc3Rhci5sb3JlIHx8ICJObyBzdGFyIGxvcmUgaGFzIGJlZW4gYWRkZWQgeWV0LiIpXQogICAgICBdLAogICAgICAiVGhpcyBzdGFyIGlzIGNsaWNrYWJsZSBiZWNhdXNlIGl0cyBpZCBpcyBwcmVzZW50IGluIHRoZSBpbXBvcnRlZC9nZW5lcmF0ZWQgc3RhciBob29rIGxpc3QuIiwKICAgICAgJzxkaXYgY2xhc3M9ImluZm8tYWN0aW9ucyI+PGJ1dHRvbiBvbmNsaWNrPSJ3aW5kb3cuQXphcmFOaWdodFNreS5mb2N1c1N0YXIoXCcnICsgZXNjYXBlSFRNTChzdGFyLmlkKSArICdcJykiIHR5cGU9ImJ1dHRvbiI+Rm9jdXMgU3RhcjwvYnV0dG9uPjxidXR0b24gb25jbGljaz0id2luZG93LkF6YXJhTmlnaHRTa3kucmVzZXRWaWV3KCkiIHR5cGU9ImJ1dHRvbiI+UmVzZXQgVmlldzwvYnV0dG9uPjwvZGl2PicKICAgICk7CiAgfQoKICBmdW5jdGlvbiBzaG93Q29uc3RlbGxhdGlvbkluZm8oYyl7CiAgICBzZWxlY3RlZENvbnN0ZWxsYXRpb25JZCA9IGMuaWQ7CiAgICBjb25zdCBtZXRhID0gYy5fY29tcHV0ZWQgfHwgY29tcHV0ZUNvbnN0ZWxsYXRpb25NZXRhKGMpOwogICAgc2V0SW5mbygKICAgICAgYy5uYW1lIHx8IGMuaWQsCiAgICAgIFsKICAgICAgICBbIlR5cGUiLCAiQ29uc3RlbGxhdGlvbiJdLAogICAgICAgIFsiRG9tYWluIiwgZXNjYXBlSFRNTChjLmRvbWFpbiB8fCAiVW5hc3NpZ25lZCIpXSwKICAgICAgICBbIlNlYXNvbiIsIGVzY2FwZUhUTUwoYy5zZWFzb24gfHwgIkFsbCAvIG5vdCBhc3NpZ25lZCIpXSwKICAgICAgICBbIlN0YXJzIiwgU3RyaW5nKChjLnN0YXJzIHx8IFtdKS5sZW5ndGgpXSwKICAgICAgICBbIkxpbmVzIiwgU3RyaW5nKChjLmxpbmVzIHx8IFtdKS5sZW5ndGgpXSwKICAgICAgICBbIkNlbnRlciIsIG1ldGEucmFfZGVnLnRvRml4ZWQoMikgKyAiwrAgUkEsICIgKyBtZXRhLmRlY19kZWcudG9GaXhlZCgyKSArICLCsCBEZWMiXSwKICAgICAgICBbIlJhZGl1cyIsIG1ldGEucmFkaXVzX2RlZy50b0ZpeGVkKDIpICsgIsKwIl0sCiAgICAgICAgWyJTdW1tYXJ5IiwgZXNjYXBlSFRNTChjLnN1bW1hcnkgfHwgIk5vIHN1bW1hcnkgaGFzIGJlZW4gYWRkZWQgeWV0LiIpXSwKICAgICAgICBbIkxvcmUiLCBlc2NhcGVIVE1MKGMubG9yZSB8fCAiTm8gbG9yZSBoYXMgYmVlbiBhZGRlZCB5ZXQuIildCiAgICAgIF0sCiAgICAgICJUaGlzIGNvbnN0ZWxsYXRpb24gY2FuIGJlIHdhdGNoZWQgYWNyb3NzIHRoZSB0aW1lIGFuZCBsYXRpdHVkZSBzbGlkZXJzIGJlY2F1c2UgaXQgaXMgc3RvcmVkIGJ5IHNreSBjb29yZGluYXRlcywgbm90IGZpeGVkIHNjcmVlbiBwaXhlbHMuIiwKICAgICAgJzxkaXYgY2xhc3M9ImluZm8tYWN0aW9ucyI+PGJ1dHRvbiBvbmNsaWNrPSJ3aW5kb3cuQXphcmFOaWdodFNreS5mb2N1c0NvbnN0ZWxsYXRpb24oXCcnICsgZXNjYXBlSFRNTChjLmlkKSArICdcJykiIHR5cGU9ImJ1dHRvbiI+Wm9vbSBJbnRvIEl0PC9idXR0b24+PGJ1dHRvbiBvbmNsaWNrPSJ3aW5kb3cuQXphcmFOaWdodFNreS5yZXNldFZpZXcoKSIgdHlwZT0iYnV0dG9uIj5SZXNldCBWaWV3PC9idXR0b24+PC9kaXY+JwogICAgKTsKICB9CgogIGZ1bmN0aW9uIHNob3dDb29yZGluYXRlSW5mbyhsaW5lKXsKICAgIHNldEluZm8oCiAgICAgIGxpbmUubmFtZSB8fCBsaW5lLmxpbmUsCiAgICAgIFsKICAgICAgICBbIkNvb3JkaW5hdGUgdHlwZSIsIGVzY2FwZUhUTUwobGluZS5jb29yZGluYXRlX3R5cGUgfHwgbGluZS5raW5kIHx8ICJDb29yZGluYXRlIGxpbmUiKV0sCiAgICAgICAgWyJMaW5lIiwgZXNjYXBlSFRNTChsaW5lLmxpbmUpXSwKICAgICAgICBbIkRlZ3JlZXMiLCBTdHJpbmcobGluZS5kZWdyZWVzKSArICLCsCJdLAogICAgICAgIFsiSlNPTiBob29rIiwgImNvb3JkaW5hdGVfbGluZXNbXSJdLAogICAgICAgIFsiVmlzaWJsZSBsYXllciIsIHNob3dHcmlkID8gIk5hbWVkIGdyaWQgb24iIDogIk5hbWVkIGdyaWQgb2ZmIl0KICAgICAgXSwKICAgICAgIlRoaXMgbmFtZWQgY29vcmRpbmF0ZSBsaW5lIGlzIGluY2x1ZGVkIGluIHRoZSBleHBvcnRlZCBjb25zdGVsbGF0aW9ucyBKU09OIGFuZCBpbiB0aGUgZXhwb3J0ZWQgY29uc3RlbGxhdGlvbnMuaHRtbC4iCiAgICApOwogIH0KCiAgZnVuY3Rpb24gZm9jdXNDb25zdGVsbGF0aW9uKGlkKXsKICAgIGNvbnN0IGMgPSBza3lEYXRhLmNvbnN0ZWxsYXRpb25zLmZpbmQoeCA9PiB4LmlkID09PSBpZCk7CiAgICBpZighYykgcmV0dXJuOwogICAgc2VsZWN0ZWRDb25zdGVsbGF0aW9uSWQgPSBpZDsKICAgIGNvbnN0IGNlbnRlciA9IGMuY2VudGVyIHx8IGMuX2NvbXB1dGVkIHx8IGNvbXB1dGVDb25zdGVsbGF0aW9uTWV0YShjKTsKICAgIGNvbnN0IHAgPSBwcm9qZWN0U3RhcihjZW50ZXIpOwogICAgcGFuWCArPSB3aW5kb3cuaW5uZXJXaWR0aCAvIDIgLSBwLng7CiAgICBwYW5ZICs9IHdpbmRvdy5pbm5lckhlaWdodCAvIDIgLSBwLnk7CiAgICB6b29tID0gY2xhbXAoTnVtYmVyKGM/LmludGVyYWN0aW9ucz8uZm9jdXNfem9vbSB8fCAyLjQpLCAxLjIsIDYpOwogICAgc2hvd0NvbnN0ZWxsYXRpb25JbmZvKGMpOwogICAgdXBkYXRlUmVhZG91dHMoKTsKICAgIGRyYXcocGVyZm9ybWFuY2Uubm93KCkpOwogIH0KCiAgZnVuY3Rpb24gZm9jdXNTdGFyKGlkKXsKICAgIGNvbnN0IHN0YXIgPSBzdGFySW5kZXguZ2V0KGlkKTsKICAgIGlmKCFzdGFyKSByZXR1cm47CiAgICBjb25zdCBwID0gcHJvamVjdFN0YXIoc3Rhcik7CiAgICBwYW5YICs9IHdpbmRvdy5pbm5lcldpZHRoIC8gMiAtIHAueDsKICAgIHBhblkgKz0gd2luZG93LmlubmVySGVpZ2h0IC8gMiAtIHAueTsKICAgIHpvb20gPSBjbGFtcChNYXRoLm1heCh6b29tLCAyLjgpLCAxLjIsIDYpOwogICAgc2hvd1N0YXJJbmZvKHN0YXIpOwogICAgdXBkYXRlUmVhZG91dHMoKTsKICAgIGRyYXcocGVyZm9ybWFuY2Uubm93KCkpOwogIH0KCiAgZnVuY3Rpb24gYXBwbHlab29tKG11bHRpcGxpZXIsIGFuY2hvclgsIGFuY2hvclkpewogICAgY29uc3Qgb2xkWm9vbSA9IHpvb207CiAgICB6b29tID0gY2xhbXAoem9vbSAqIG11bHRpcGxpZXIsIDAuNTUsIDcuNSk7CiAgICBjb25zdCBteCA9IGFuY2hvclggLSB3aW5kb3cuaW5uZXJXaWR0aCAvIDIgLSBwYW5YOwogICAgY29uc3QgbXkgPSBhbmNob3JZIC0gd2luZG93LmlubmVySGVpZ2h0IC8gMiAtIHBhblk7CiAgICBwYW5YIC09IG14ICogKHpvb20gLyBvbGRab29tIC0gMSk7CiAgICBwYW5ZIC09IG15ICogKHpvb20gLyBvbGRab29tIC0gMSk7CiAgICB1cGRhdGVSZWFkb3V0cygpOwogICAgZHJhdyhwZXJmb3JtYW5jZS5ub3coKSk7CiAgfQoKICBmdW5jdGlvbiB0aWNrKG5vdyl7CiAgICBjb25zdCBkdCA9IChub3cgLSBsYXN0RnJhbWUpIC8gMTAwMDsKICAgIGxhc3RGcmFtZSA9IG5vdzsKICAgIGlmKHBsYXlpbmcpewogICAgICBjb25zdCBzcGVjPWF6YXJhU3BlZWRTcGVjKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzcGVlZCIpLnZhbHVlKTsKICAgICAgaWYoc3BlYy5rZXk9PT0ic3luYyIpIHNpbURheT1jdXJyZW50VmVpbERheUZsb2F0KCk7CiAgICAgIGVsc2UgaWYoc3BlYy5rZXkhPT0icGF1c2VkIikgc2ltRGF5PShzaW1EYXkrc3BlYy5kYXlzUGVyU2Vjb25kKmR0KSVBWkFSQV9TS1lfWUVBUl9EQVlTOwogICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZGF5IikudmFsdWU9TWF0aC5mbG9vcihzaW1EYXkpOwogICAgfQogICAgdXBkYXRlUmVhZG91dHMoKTsKICAgIGRyYXcobm93KTsKICAgIHJlcXVlc3RBbmltYXRpb25GcmFtZSh0aWNrKTsKICB9CgogIGZ1bmN0aW9uIGdldEdlbmVyYXRvclNldHRpbmdzRnJvbVVJKCl7CiAgICByZXR1cm4gewogICAgICBzZWVkOiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiaW5wc2VlZCIpLnZhbHVlIHx8IERhdGUubm93KCksCiAgICAgIHN0YXJfZGVuc2l0eV9wb3dlcjogTnVtYmVyKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdGFyZGVuc2l0eSIpLnZhbHVlKSwKICAgICAgbnVtX2NvbnN0ZWxsYXRpb25zOiBOdW1iZXIoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm51bWNvbnN0ZWxsYXRpb25zIikudmFsdWUpLAogICAgICBtaW5fc3RhcnNfcGVyX2NvbnN0ZWxsYXRpb246IE51bWJlcihkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibWluY29uc3RlbGxhdGlvbnNpemUiKS52YWx1ZSksCiAgICAgIGFkZGl0aW9uYWxfc3RhcnNfcGVyX2NvbnN0ZWxsYXRpb246IE51bWJlcihkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY29uc3RlbGxhdGlvbnNpemVyYW5nZSIpLnZhbHVlKSwKICAgICAgbWF4X2xpbmtfZGlzdGFuY2VfZGVnOiBOdW1iZXIoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImNvbnN0ZWxsYXRpb25kaXN0YW5jZSIpLnZhbHVlKSwKICAgICAgcHJldHRpZnk6IHByZXR0aWZ5RW5hYmxlZCwKICAgICAgY29ubmVjdGlvbl9maWVsZDogY29ubmVjdGlvbkZpZWxkRW5hYmxlZAogICAgfTsKICB9CgogIGZ1bmN0aW9uIGFwcGx5R2VuZXJhdG9yU2V0dGluZ3NUb1VJKHNldHRpbmdzKXsKICAgIGlmKCFzZXR0aW5ncykgcmV0dXJuOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImlucHNlZWQiKS52YWx1ZSA9IHNldHRpbmdzLnNlZWQgPz8gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImlucHNlZWQiKS52YWx1ZTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdGFyZGVuc2l0eSIpLnZhbHVlID0gc2V0dGluZ3Muc3Rhcl9kZW5zaXR5X3Bvd2VyID8/IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdGFyZGVuc2l0eSIpLnZhbHVlOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm51bWNvbnN0ZWxsYXRpb25zIikudmFsdWUgPSBzZXR0aW5ncy5udW1fY29uc3RlbGxhdGlvbnMgPz8gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm51bWNvbnN0ZWxsYXRpb25zIikudmFsdWU7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibWluY29uc3RlbGxhdGlvbnNpemUiKS52YWx1ZSA9IHNldHRpbmdzLm1pbl9zdGFyc19wZXJfY29uc3RlbGxhdGlvbiA/PyBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibWluY29uc3RlbGxhdGlvbnNpemUiKS52YWx1ZTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjb25zdGVsbGF0aW9uc2l6ZXJhbmdlIikudmFsdWUgPSBzZXR0aW5ncy5hZGRpdGlvbmFsX3N0YXJzX3Blcl9jb25zdGVsbGF0aW9uID8/IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjb25zdGVsbGF0aW9uc2l6ZXJhbmdlIikudmFsdWU7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY29uc3RlbGxhdGlvbmRpc3RhbmNlIikudmFsdWUgPSBzZXR0aW5ncy5tYXhfbGlua19kaXN0YW5jZV9kZWcgPz8gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImNvbnN0ZWxsYXRpb25kaXN0YW5jZSIpLnZhbHVlOwogICAgcHJldHRpZnlFbmFibGVkID0gQm9vbGVhbihzZXR0aW5ncy5wcmV0dGlmeSA/PyBwcmV0dGlmeUVuYWJsZWQpOwogICAgY29ubmVjdGlvbkZpZWxkRW5hYmxlZCA9IEJvb2xlYW4oc2V0dGluZ3MuY29ubmVjdGlvbl9maWVsZCA/PyBjb25uZWN0aW9uRmllbGRFbmFibGVkKTsKICAgIHN5bmNUb2dnbGVCdXR0b25zKCk7CiAgICB1cGRhdGVTbGlkZXJMYWJlbHMoKTsKICB9CgogIGZ1bmN0aW9uIGdlbmVyYXRlU2t5KCl7CiAgICBjb25zdCBzZXR0aW5ncyA9IGdldEdlbmVyYXRvclNldHRpbmdzRnJvbVVJKCk7CiAgICBjb25zdCBzdGFycyA9IGdlbmVyYXRlU3RhcnMoc2V0dGluZ3MpOwogICAgY29uc3QgY29uc3RlbGxhdGlvbnMgPSBnZW5lcmF0ZUNvbnN0ZWxsYXRpb25zRnJvbVN0YXJzKHN0YXJzLCBzZXR0aW5ncyk7CiAgICBza3lEYXRhID0gewogICAgICBtZXRhZGF0YTogZGVmYXVsdE1ldGFkYXRhKCJBemFcJ3JhIEdlbmVyYXRlZCBOaWdodCBTa3kiKSwKICAgICAgY29vcmRpbmF0ZV9saW5lczogREVGQVVMVF9DT09SRElOQVRFX0xJTkVTLnNsaWNlKCksCiAgICAgIGdlbmVyYXRvcjogc2V0dGluZ3MsCiAgICAgIHN0YXJzLAogICAgICBjb25zdGVsbGF0aW9ucwogICAgfTsKICAgIHNlbGVjdGVkQ29uc3RlbGxhdGlvbklkID0gbnVsbDsKICAgIHJlYnVpbGRJbmRleCgpOwogICAgc2V0SW5mbygKICAgICAgIkdlbmVyYXRlZCBza3kgY29tcGxldGUiLAogICAgICBbWyJTdGFycyIsIFN0cmluZyhzdGFycy5sZW5ndGgpXSwgWyJDb25zdGVsbGF0aW9ucyIsIFN0cmluZyhjb25zdGVsbGF0aW9ucy5sZW5ndGgpXSwgWyJTZWVkIiwgZXNjYXBlSFRNTChTdHJpbmcoc2V0dGluZ3Muc2VlZCkpXV0sCiAgICAgICJVc2UgRG93bmxvYWQgSlNPTiB0byBzYXZlIHRoZSBlZGl0YWJsZSBza3kgZGF0YSwgb3IgRXhwb3J0IGNvbnN0ZWxsYXRpb25zLmh0bWwgdG8gc2F2ZSBhIGZ1bGwgc3RhbmRhbG9uZSBzaXRlIHdpdGggdGhpcyBleGFjdCBnZW5lcmF0ZWQgc2t5IGVtYmVkZGVkLiIKICAgICk7CiAgfQoKICBmdW5jdGlvbiBjbGVhclNreSgpewogICAgc2t5RGF0YSA9IHsgbWV0YWRhdGE6IGRlZmF1bHRNZXRhZGF0YSgiQmxhbmsgQXphXCdyYSBOaWdodCBTa3kiKSwgY29vcmRpbmF0ZV9saW5lczogREVGQVVMVF9DT09SRElOQVRFX0xJTkVTLnNsaWNlKCksIGdlbmVyYXRvcjoge30sIHN0YXJzOiBbXSwgY29uc3RlbGxhdGlvbnM6IFtdIH07CiAgICBzZWxlY3RlZENvbnN0ZWxsYXRpb25JZCA9IG51bGw7CiAgICByZWJ1aWxkSW5kZXgoKTsKICB9CgogIGZ1bmN0aW9uIGV4cG9ydERhdGEoKXsKICAgIHJldHVybiB7CiAgICAgIG1ldGFkYXRhOiBPYmplY3QuYXNzaWduKGRlZmF1bHRNZXRhZGF0YSgpLCBza3lEYXRhLm1ldGFkYXRhIHx8IHt9KSwKICAgICAgY29vcmRpbmF0ZV9saW5lczogc2t5RGF0YS5jb29yZGluYXRlX2xpbmVzIHx8IERFRkFVTFRfQ09PUkRJTkFURV9MSU5FUy5zbGljZSgpLAogICAgICBnZW5lcmF0b3I6IHNreURhdGEuZ2VuZXJhdG9yIHx8IGdldEdlbmVyYXRvclNldHRpbmdzRnJvbVVJKCksCiAgICAgIHN0YXJzOiBza3lEYXRhLnN0YXJzLm1hcChzID0+IHsKICAgICAgICBjb25zdCBvdXQgPSB7Li4uc307CiAgICAgICAgZGVsZXRlIG91dC5fc2NyZWVuOwogICAgICAgIHJldHVybiBvdXQ7CiAgICAgIH0pLAogICAgICBjb25zdGVsbGF0aW9uczogc2t5RGF0YS5jb25zdGVsbGF0aW9ucy5tYXAoYyA9PiB7CiAgICAgICAgY29uc3Qgb3V0ID0gey4uLmN9OwogICAgICAgIGRlbGV0ZSBvdXQuX2NvbXB1dGVkOwogICAgICAgIHJldHVybiBvdXQ7CiAgICAgIH0pCiAgICB9OwogIH0KCiAgZnVuY3Rpb24gdXBkYXRlRW1iZWRkZWRKU09OKCl7CiAgICBjb25zdCB0YWcgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiYnYtZW1iZWRkZWQtY29uc3RlbGxhdGlvbnMtanNvbiIpOwogICAgaWYodGFnKSB0YWcudGV4dENvbnRlbnQgPSBKU09OLnN0cmluZ2lmeShleHBvcnREYXRhKCksIG51bGwsIDIpOwogIH0KCiAgZnVuY3Rpb24gZG93bmxvYWRUZXh0KGZpbGVuYW1lLCB0ZXh0LCBtaW1lKXsKICAgIGNvbnN0IGJsb2IgPSBuZXcgQmxvYihbdGV4dF0sIHt0eXBlOiBtaW1lIHx8ICJ0ZXh0L3BsYWluO2NoYXJzZXQ9dXRmLTgifSk7CiAgICBjb25zdCBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgiYSIpOwogICAgYS5ocmVmID0gVVJMLmNyZWF0ZU9iamVjdFVSTChibG9iKTsKICAgIGEuZG93bmxvYWQgPSBmaWxlbmFtZTsKICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7CiAgICBhLmNsaWNrKCk7CiAgICBzZXRUaW1lb3V0KCgpID0+IHsgVVJMLnJldm9rZU9iamVjdFVSTChhLmhyZWYpOyBhLnJlbW92ZSgpOyB9LCAwKTsKICB9CgogIGZ1bmN0aW9uIGRvd25sb2FkSlNPTigpewogICAgdXBkYXRlRW1iZWRkZWRKU09OKCk7CiAgICBkb3dubG9hZFRleHQoImF6YXJhX2NvbnN0ZWxsYXRpb25zLmpzb24iLCBKU09OLnN0cmluZ2lmeShleHBvcnREYXRhKCksIG51bGwsIDIpLCAiYXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04Iik7CiAgfQoKICBmdW5jdGlvbiBleHBvcnRIVE1MKCl7CiAgICB1cGRhdGVFbWJlZGRlZEpTT04oKTsKICAgIGNvbnN0IGNsb25lID0gZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmNsb25lTm9kZSh0cnVlKTsKICAgIGNvbnN0IGNsb25lQm9keSA9IGNsb25lLnF1ZXJ5U2VsZWN0b3IoImJvZHkiKTsKICAgIGlmKGNsb25lQm9keSkgewogICAgICBjbG9uZUJvZHkuY2xhc3NMaXN0LnJlbW92ZSgiZG0tZWRpdG9yIik7CiAgICAgIGNsb25lQm9keS5jbGFzc0xpc3QuYWRkKCJwbGF5ZXItZXhwb3J0LWRlZmF1bHQiKTsKICAgIH0KICAgIGNvbnN0IHBhc3RlZCA9IGNsb25lLnF1ZXJ5U2VsZWN0b3IoIiNqc29uUGFzdGUiKTsKICAgIGlmKHBhc3RlZCkgcGFzdGVkLnRleHRDb250ZW50ID0gIiI7CiAgICBjb25zdCBodG1sID0gIjwhRE9DVFlQRSBodG1sPlxuIiArIGNsb25lLm91dGVySFRNTDsKICAgIGRvd25sb2FkVGV4dCgiY29uc3RlbGxhdGlvbnMuaHRtbCIsIGh0bWwsICJ0ZXh0L2h0bWw7Y2hhcnNldD11dGYtOCIpOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gaW1wb3J0SlNPTkZpbGUoZmlsZSl7CiAgICBjb25zdCB0ZXh0ID0gYXdhaXQgZmlsZS50ZXh0KCk7CiAgICBsb2FkSlNPTlRleHQodGV4dCwgIkltcG9ydGVkICIgKyBmaWxlLm5hbWUpOwogIH0KCiAgZnVuY3Rpb24gbG9hZEpTT05UZXh0KHRleHQsIHRpdGxlKXsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHBhcnNlZCA9IEpTT04ucGFyc2UodGV4dCk7CiAgICAgIGNvbnN0IG5vcm1hbGl6ZWQgPSBub3JtYWxpemVJbXBvcnRlZERhdGEocGFyc2VkKTsKICAgICAgaWYodGl0bGUgJiYgIW5vcm1hbGl6ZWQubWV0YWRhdGEudGl0bGUpIG5vcm1hbGl6ZWQubWV0YWRhdGEudGl0bGUgPSB0aXRsZTsKICAgICAgc2t5RGF0YSA9IG5vcm1hbGl6ZWQ7CiAgICAgIGFwcGx5R2VuZXJhdG9yU2V0dGluZ3NUb1VJKHNreURhdGEuZ2VuZXJhdG9yKTsKICAgICAgc2VsZWN0ZWRDb25zdGVsbGF0aW9uSWQgPSBudWxsOwogICAgICByZWJ1aWxkSW5kZXgoKTsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImpzb25QYXN0ZSIpLnZhbHVlID0gSlNPTi5zdHJpbmdpZnkoZXhwb3J0RGF0YSgpLCBudWxsLCAyKTsKICAgICAgc2V0SW5mbygiSlNPTiBpbXBvcnRlZCIsIFtbIlN0YXJzIiwgU3RyaW5nKHNreURhdGEuc3RhcnMubGVuZ3RoKV0sIFsiQ29uc3RlbGxhdGlvbnMiLCBTdHJpbmcoc2t5RGF0YS5jb25zdGVsbGF0aW9ucy5sZW5ndGgpXSwgWyJDb29yZGluYXRlIGxpbmVzIiwgU3RyaW5nKChza3lEYXRhLmNvb3JkaW5hdGVfbGluZXN8fFtdKS5sZW5ndGgpXV0sICJUaGUgaW1wb3J0ZWQgc2t5IGlzIG5vdyBhY3RpdmUuIEV4cG9ydCBjb25zdGVsbGF0aW9ucy5odG1sIHRvIHByZXNlcnZlIGl0IGluc2lkZSB0aGUgZnVsbCBzaXRlLiIpOwogICAgfSBjYXRjaChlcnIpIHsKICAgICAgc2V0SW5mbygiSlNPTiBpbXBvcnQgZmFpbGVkIiwgW1siRXJyb3IiLCBlc2NhcGVIVE1MKGVyci5tZXNzYWdlKV1dLCAiQ2hlY2sgdGhhdCB0aGUgZmlsZSBpcyB2YWxpZCBKU09OIGFuZCB0aGF0IHN0YXJzL2NvbnN0ZWxsYXRpb25zIHVzZSB0aGUgaG9va3MgbGlzdGVkIGluIHRoZSBzY2hlbWEuIik7CiAgICB9CiAgfQoKICBmdW5jdGlvbiBjb3B5SG9va3MoKXsKICAgIGNvbnN0IGhvb2tzVGFnID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImJ2LWNvbnN0ZWxsYXRpb25zLWpzb24taG9va3MiKTsKICAgIGNvbnN0IHRleHQgPSBob29rc1RhZyA/IGhvb2tzVGFnLnRleHRDb250ZW50IDogSlNPTi5zdHJpbmdpZnkoe30sIG51bGwsIDIpOwogICAgaWYobmF2aWdhdG9yLmNsaXBib2FyZCAmJiBuYXZpZ2F0b3IuY2xpcGJvYXJkLndyaXRlVGV4dCl7CiAgICAgIG5hdmlnYXRvci5jbGlwYm9hcmQud3JpdGVUZXh0KHRleHQpLnRoZW4oKCkgPT4gc2V0SW5mbygiSlNPTiBob29rcyBjb3BpZWQiLCBbWyJTY2hlbWEiLCAiYXphcmFfY29uc3RlbGxhdGlvbnNfanNvbl9ob29rcyJdLCBbIkNvb3JkaW5hdGUgbGluZXMiLCBTdHJpbmcoREVGQVVMVF9DT09SRElOQVRFX0xJTkVTLmxlbmd0aCldXSwgIlRoZSByZXF1aXJlZCBKU09OIGhvb2tzIGFyZSBub3cgb24geW91ciBjbGlwYm9hcmQuIikpOwogICAgfSBlbHNlIHsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImpzb25QYXN0ZSIpLnZhbHVlID0gdGV4dDsKICAgICAgc2V0SW5mbygiSlNPTiBob29rcyBzaG93biIsIFtbIlNjaGVtYSIsICJhemFyYV9jb25zdGVsbGF0aW9uc19qc29uX2hvb2tzIl1dLCAiQ2xpcGJvYXJkIGFjY2VzcyB3YXMgdW5hdmFpbGFibGUsIHNvIHRoZSBob29rcyB3ZXJlIHBsYWNlZCBpbiB0aGUgcGFzdGUgYm94LiIpOwogICAgfQogIH0KCiAgZnVuY3Rpb24gdXBkYXRlU2xpZGVyTGFiZWxzKCl7CiAgICBjb25zdCBzZCA9IE51bWJlcihkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3RhcmRlbnNpdHkiKS52YWx1ZSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3RhcmRlbnNpdHlWYWx1ZSIpLnRleHRDb250ZW50ID0gIjJeIiArIHNkICsgIiA9ICIgKyBNYXRoLnBvdygyLHNkKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJudW1jb25zdGVsbGF0aW9uc1ZhbHVlIikudGV4dENvbnRlbnQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibnVtY29uc3RlbGxhdGlvbnMiKS52YWx1ZTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJtaW5jb25zdGVsbGF0aW9uc2l6ZVZhbHVlIikudGV4dENvbnRlbnQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibWluY29uc3RlbGxhdGlvbnNpemUiKS52YWx1ZTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjb25zdGVsbGF0aW9uc2l6ZXJhbmdlVmFsdWUiKS50ZXh0Q29udGVudCA9ICIrIiArIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjb25zdGVsbGF0aW9uc2l6ZXJhbmdlIikudmFsdWU7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY29uc3RlbGxhdGlvbmRpc3RhbmNlVmFsdWUiKS50ZXh0Q29udGVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjb25zdGVsbGF0aW9uZGlzdGFuY2UiKS52YWx1ZSArICLCsCI7CiAgfQoKICBmdW5jdGlvbiBzeW5jVG9nZ2xlQnV0dG9ucygpewogICAgY29uc3QgdG9nZ2xlcyA9IFsKICAgICAgWyJ0b2dnbGVQcmV0dGlmeSIsIHByZXR0aWZ5RW5hYmxlZCwgIlByZXR0aWZ5IE9uIiwgIlByZXR0aWZ5IE9mZiJdLAogICAgICBbInRvZ2dsZUNvbm5lY3Rpb25zIiwgY29ubmVjdGlvbkZpZWxkRW5hYmxlZCwgIkFtYmllbnQgTGlua3MgT24iLCAiQW1iaWVudCBMaW5rcyBPZmYiXSwKICAgICAgWyJ0b2dnbGVTdGFycyIsIHNob3dTdGFycywgIlN0YXJzIE9uIiwgIlN0YXJzIE9mZiJdLAogICAgICBbInRvZ2dsZUxpbmVzIiwgc2hvd0xpbmVzLCAiTGluZXMgT24iLCAiTGluZXMgT2ZmIl0sCiAgICAgIFsidG9nZ2xlTGFiZWxzIiwgc2hvd0xhYmVscywgIkxhYmVscyBPbiIsICJMYWJlbHMgT2ZmIl0sCiAgICAgIFsidG9nZ2xlR3JpZCIsIHNob3dHcmlkLCAiTmFtZWQgR3JpZCBPbiIsICJOYW1lZCBHcmlkIE9mZiJdCiAgICBdOwogICAgdG9nZ2xlcy5mb3JFYWNoKChbaWQsc3RhdGUsb24sb2ZmXSkgPT4gewogICAgICBjb25zdCBlbCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGlkKTsKICAgICAgaWYoIWVsKSByZXR1cm47CiAgICAgIGVsLmNsYXNzTGlzdC50b2dnbGUoImFjdGl2ZSIsICEhc3RhdGUpOwogICAgICBlbC50ZXh0Q29udGVudCA9IHN0YXRlID8gb24gOiBvZmY7CiAgICB9KTsKICB9CgogIGZ1bmN0aW9uIHVwZGF0ZUxlZ2VuZCgpewogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImxlZ2VuZCIpLmlubmVySFRNTCA9CiAgICAgICc8c3BhbiBjbGFzcz0ia2V5Ij4nICsgc2t5RGF0YS5zdGFycy5sZW5ndGggKyAnIHN0YXJzPC9zcGFuPicgKwogICAgICAnPHNwYW4gY2xhc3M9ImtleSI+JyArIHNreURhdGEuY29uc3RlbGxhdGlvbnMubGVuZ3RoICsgJyBjb25zdGVsbGF0aW9uczwvc3Bhbj4nICsKICAgICAgJzxzcGFuIGNsYXNzPSJrZXkiPmRyYWcgPSBwYW48L3NwYW4+JyArCiAgICAgICc8c3BhbiBjbGFzcz0ia2V5Ij53aGVlbC9idXR0b25zID0gem9vbTwvc3Bhbj4nICsKICAgICAgJzxzcGFuIGNsYXNzPSJrZXkiPmNsaWNrID0gaW5zcGVjdDwvc3Bhbj4nICsKICAgICAgJzxzcGFuIGNsYXNzPSJrZXkiPkV4cGVyaWVuY2UgVGhlIFdvbmRlcjwvc3Bhbj4nOwogIH0KCiAgZnVuY3Rpb24gc3luY0FjY2Vzc01vZGUoKXsKICAgIGxldCBtZXJnZWRIYXNoID0gU3RyaW5nKHdpbmRvdy5sb2NhdGlvbi5oYXNoIHx8ICIiKTsKICAgIHRyeSB7IGlmKHBhcmVudCAmJiBwYXJlbnQgIT09IHdpbmRvdykgbWVyZ2VkSGFzaCArPSAiICIgKyBTdHJpbmcocGFyZW50LmxvY2F0aW9uLmhhc2ggfHwgIiIpOyB9IGNhdGNoKGVycikge30KICAgIGNvbnN0IGVuYWJsZWQgPSBtZXJnZWRIYXNoLnRvTG93ZXJDYXNlKCkuaW5jbHVkZXMoImRtLWVkaXRvciIpOwogICAgZG9jdW1lbnQuYm9keS5jbGFzc0xpc3QudG9nZ2xlKCJkbS1lZGl0b3IiLCBlbmFibGVkKTsKICAgIHJldHVybiBlbmFibGVkOwogIH0KCiAgZnVuY3Rpb24gaW5zdGFsbEV2ZW50cygpewogICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoInJlc2l6ZSIsIHJlc2l6ZSk7CiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigiaGFzaGNoYW5nZSIsIHN5bmNBY2Nlc3NNb2RlKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJob3VycyIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZXZlbnQgPT4gewogICAgICBpZihldmVudC50YXJnZXQuZGF0YXNldC5ob3VyPT1udWxsKSByZXR1cm47CiAgICAgIGhvdXIgPSBldmVudC50YXJnZXQuZGF0YXNldC5ob3VyPT09ImxpdmUiID8gbnVsbCA6IE51bWJlcihldmVudC50YXJnZXQuZGF0YXNldC5ob3VyKTsKICAgICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiI2hvdXJzIGJ1dHRvbiIpLmZvckVhY2goYnV0dG9uID0+IGJ1dHRvbi5jbGFzc0xpc3QudG9nZ2xlKCJhY3RpdmUiLCBidXR0b24gPT09IGV2ZW50LnRhcmdldCkpOwogICAgICB1cGRhdGVSZWFkb3V0cygpOwogICAgfSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidmlld1RvcFVwIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCAoKSA9PiB7CiAgICAgIHZpZXdNb2RlID0gInVwIjsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInZpZXdUb3BVcCIpLmNsYXNzTGlzdC5hZGQoImFjdGl2ZSIpOwogICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidmlld1RvcERvd24iKS5jbGFzc0xpc3QucmVtb3ZlKCJhY3RpdmUiKTsKICAgICAgZHJhdyhwZXJmb3JtYW5jZS5ub3coKSk7CiAgICB9KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ2aWV3VG9wRG93biIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgKCkgPT4gewogICAgICB2aWV3TW9kZSA9ICJkb3duIjsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInZpZXdUb3BEb3duIikuY2xhc3NMaXN0LmFkZCgiYWN0aXZlIik7CiAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ2aWV3VG9wVXAiKS5jbGFzc0xpc3QucmVtb3ZlKCJhY3RpdmUiKTsKICAgICAgZHJhdyhwZXJmb3JtYW5jZS5ub3coKSk7CiAgICB9KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwbGF5IikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCAoKSA9PiB7CiAgICAgIHBsYXlpbmcgPSAhcGxheWluZzsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInBsYXkiKS50ZXh0Q29udGVudCA9IHBsYXlpbmcgPyAiUGF1c2UiIDogIlBsYXkiOwogICAgICB1cGRhdGVSZWFkb3V0cygpOwogICAgfSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicmVjZW50ZXIiKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIHJlc2V0Vmlldyk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiem9vbUluIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCAoKSA9PiBhcHBseVpvb20oMS4xOCwgd2luZG93LmlubmVyV2lkdGggLyAyLCB3aW5kb3cuaW5uZXJIZWlnaHQgLyAyKSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiem9vbU91dCIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgKCkgPT4gYXBwbHlab29tKDAuODUsIHdpbmRvdy5pbm5lcldpZHRoIC8gMiwgd2luZG93LmlubmVySGVpZ2h0IC8gMikpOwogICAgY29uc3Qgc3BlZWRTbGlkZXI9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNwZWVkIiksc3BlZWRPdXRwdXQ9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNwZWVkT3V0cHV0Iiksc3BlZWRIZWxwZXJzPWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIiNjb25zdGVsbGF0aW9uU3BlZWRDb250cm9sIC5hemEtc3BlZWQtaGVscCIpOwogICAgZnVuY3Rpb24gYXphcmFTeW5jU3BlZWRVSShzbGlkZXIsb3V0cHV0LGhlbHBlcnMpe2NvbnN0IHNwZWM9YXphcmFTcGVlZFNwZWMoc2xpZGVyLnZhbHVlKTtpZihvdXRwdXQpb3V0cHV0LnRleHRDb250ZW50PXNwZWMubGFiZWw7aWYoaGVscGVycyloZWxwZXJzLnF1ZXJ5U2VsZWN0b3JBbGwoIltkYXRhLXNwZWVkLXBvc10iKS5mb3JFYWNoKGI9PmIuY2xhc3NMaXN0LnRvZ2dsZSgiYWN0aXZlIixNYXRoLmFicyhOdW1iZXIoYi5kYXRhc2V0LnNwZWVkUG9zKS1OdW1iZXIoc2xpZGVyLnZhbHVlKSk8LjUpKTtyZXR1cm4gc3BlY30KICAgIGZ1bmN0aW9uIGFwcGx5U2t5U3BlZWQoKXtjb25zdCBzcGVjPWF6YXJhU3luY1NwZWVkVUkoc3BlZWRTbGlkZXIsc3BlZWRPdXRwdXQsc3BlZWRIZWxwZXJzKTtpZihzcGVjLmtleT09PSJwYXVzZWQiKXtwbGF5aW5nPWZhbHNlO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJwbGF5IikudGV4dENvbnRlbnQ9IlBsYXkiO31lbHNle3BsYXlpbmc9dHJ1ZTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicGxheSIpLnRleHRDb250ZW50PSJQYXVzZSI7fWlmKHNwZWMua2V5PT09InN5bmMiKXNpbURheT1jdXJyZW50VmVpbERheUZsb2F0KCk7dXBkYXRlUmVhZG91dHMoKTt9CiAgICBzcGVlZFNsaWRlci5hZGRFdmVudExpc3RlbmVyKCJpbnB1dCIsYXBwbHlTa3lTcGVlZCk7c3BlZWRIZWxwZXJzPy5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsZXZlbnQ9Pntjb25zdCBiPWV2ZW50LnRhcmdldC5jbG9zZXN0KCJbZGF0YS1zcGVlZC1wb3NdIik7aWYoIWIpcmV0dXJuO3NwZWVkU2xpZGVyLnZhbHVlPWIuZGF0YXNldC5zcGVlZFBvcztzcGVlZFNsaWRlci5kaXNwYXRjaEV2ZW50KG5ldyBFdmVudCgiaW5wdXQiLHtidWJibGVzOnRydWV9KSk7fSk7YXBwbHlTa3lTcGVlZCgpOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRheSIpLmFkZEV2ZW50TGlzdGVuZXIoImlucHV0IiwgZXZlbnQgPT4geyBzaW1EYXkgPSBOdW1iZXIoZXZlbnQudGFyZ2V0LnZhbHVlKTsgaWYoYXphcmFTcGVlZFNwZWMoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNwZWVkIikudmFsdWUpLmtleT09PSJzeW5jIil7cGxheWluZz1mYWxzZTtkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicGxheSIpLnRleHRDb250ZW50PSJQbGF5Ijt9IHVwZGF0ZVJlYWRvdXRzKCk7IGRyYXcocGVyZm9ybWFuY2Uubm93KCkpOyB9KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJsYXQiKS5hZGRFdmVudExpc3RlbmVyKCJpbnB1dCIsIGV2ZW50ID0+IHsgbGF0ID0gTnVtYmVyKGV2ZW50LnRhcmdldC52YWx1ZSk7IHVwZGF0ZVJlYWRvdXRzKCk7IGRyYXcocGVyZm9ybWFuY2Uubm93KCkpOyB9KTsKCiAgICBbInN0YXJkZW5zaXR5IiwibnVtY29uc3RlbGxhdGlvbnMiLCJtaW5jb25zdGVsbGF0aW9uc2l6ZSIsImNvbnN0ZWxsYXRpb25zaXplcmFuZ2UiLCJjb25zdGVsbGF0aW9uZGlzdGFuY2UiXS5mb3JFYWNoKGlkID0+IHsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoaWQpLmFkZEV2ZW50TGlzdGVuZXIoImlucHV0IiwgdXBkYXRlU2xpZGVyTGFiZWxzKTsKICAgIH0pOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImdlbmVyYXRlU2t5IikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCBnZW5lcmF0ZVNreSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY2xlYXJTa3kiKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGNsZWFyU2t5KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJuZXdTZWVkIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCAoKSA9PiB7IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJpbnBzZWVkIikudmFsdWUgPSAiQXphXCdyYS0iICsgTWF0aC5mbG9vcihNYXRoLnJhbmRvbSgpKjFlMTIpLnRvU3RyaW5nKDM2KTsgZ2VuZXJhdGVTa3koKTsgfSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidG9nZ2xlUHJldHRpZnkiKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsICgpID0+IHsgcHJldHRpZnlFbmFibGVkID0gIXByZXR0aWZ5RW5hYmxlZDsgc3luY1RvZ2dsZUJ1dHRvbnMoKTsgfSk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidG9nZ2xlQ29ubmVjdGlvbnMiKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsICgpID0+IHsgY29ubmVjdGlvbkZpZWxkRW5hYmxlZCA9ICFjb25uZWN0aW9uRmllbGRFbmFibGVkOyBzeW5jVG9nZ2xlQnV0dG9ucygpOyB9KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ0b2dnbGVTdGFycyIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgKCkgPT4geyBzaG93U3RhcnMgPSAhc2hvd1N0YXJzOyBzeW5jVG9nZ2xlQnV0dG9ucygpOyB9KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ0b2dnbGVMaW5lcyIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgKCkgPT4geyBzaG93TGluZXMgPSAhc2hvd0xpbmVzOyBzeW5jVG9nZ2xlQnV0dG9ucygpOyB9KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ0b2dnbGVMYWJlbHMiKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsICgpID0+IHsgc2hvd0xhYmVscyA9ICFzaG93TGFiZWxzOyBzeW5jVG9nZ2xlQnV0dG9ucygpOyB9KTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ0b2dnbGVHcmlkIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCAoKSA9PiB7IHNob3dHcmlkID0gIXNob3dHcmlkOyBzeW5jVG9nZ2xlQnV0dG9ucygpOyB9KTsKCiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiaW1wb3J0SlNPTiIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgKCkgPT4gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImpzb25GaWxlSW5wdXQiKS5jbGljaygpKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJqc29uRmlsZUlucHV0IikuYWRkRXZlbnRMaXN0ZW5lcigiY2hhbmdlIiwgZXZlbnQgPT4geyBjb25zdCBmaWxlID0gZXZlbnQudGFyZ2V0LmZpbGVzWzBdOyBpZihmaWxlKSBpbXBvcnRKU09ORmlsZShmaWxlKTsgZXZlbnQudGFyZ2V0LnZhbHVlID0gIiI7IH0pOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRvd25sb2FkSlNPTiIpLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIiwgZG93bmxvYWRKU09OKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJleHBvcnRIVE1MIikuYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCBleHBvcnRIVE1MKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjb3B5SG9va3MiKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGNvcHlIb29rcyk7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgibG9hZFBhc3RlZEpTT04iKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsICgpID0+IGxvYWRKU09OVGV4dChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgianNvblBhc3RlIikudmFsdWUsICJQYXN0ZWQgSlNPTiIpKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJyZWZyZXNoUGFzdGUiKS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsICgpID0+IHsgdXBkYXRlRW1iZWRkZWRKU09OKCk7IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJqc29uUGFzdGUiKS52YWx1ZSA9IEpTT04uc3RyaW5naWZ5KGV4cG9ydERhdGEoKSwgbnVsbCwgMik7IH0pOwoKICAgIGNhbnZhcy5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIHJlcG9ydENsaWNrKTsKICAgIGNhbnZhcy5hZGRFdmVudExpc3RlbmVyKCJwb2ludGVyZG93biIsIGV2ZW50ID0+IHsKICAgICAgZHJhZyA9IHRydWU7CiAgICAgIGNsaWNrTW92ZWQgPSBmYWxzZTsKICAgICAgcG9pbnRlckRvd25BdCA9IHt4OmV2ZW50LmNsaWVudFgsIHk6ZXZlbnQuY2xpZW50WX07CiAgICAgIGxhc3RYID0gZXZlbnQuY2xpZW50WDsKICAgICAgbGFzdFkgPSBldmVudC5jbGllbnRZOwogICAgICBjYW52YXMuY2xhc3NMaXN0LmFkZCgiZHJhZ2dpbmciKTsKICAgIH0pOwogICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoInBvaW50ZXJ1cCIsICgpID0+IHsgZHJhZyA9IGZhbHNlOyBjYW52YXMuY2xhc3NMaXN0LnJlbW92ZSgiZHJhZ2dpbmciKTsgcG9pbnRlckRvd25BdCA9IG51bGw7IH0pOwogICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoInBvaW50ZXJtb3ZlIiwgZXZlbnQgPT4gewogICAgICBpZighZHJhZykgcmV0dXJuOwogICAgICBjb25zdCBkeCA9IGV2ZW50LmNsaWVudFggLSBsYXN0WDsKICAgICAgY29uc3QgZHkgPSBldmVudC5jbGllbnRZIC0gbGFzdFk7CiAgICAgIGlmKHBvaW50ZXJEb3duQXQgJiYgTWF0aC5oeXBvdChldmVudC5jbGllbnRYIC0gcG9pbnRlckRvd25BdC54LCBldmVudC5jbGllbnRZIC0gcG9pbnRlckRvd25BdC55KSA+IDQpIGNsaWNrTW92ZWQgPSB0cnVlOwogICAgICBwYW5YICs9IGR4OwogICAgICBwYW5ZICs9IGR5OwogICAgICBsYXN0WCA9IGV2ZW50LmNsaWVudFg7CiAgICAgIGxhc3RZID0gZXZlbnQuY2xpZW50WTsKICAgICAgZHJhdyhwZXJmb3JtYW5jZS5ub3coKSk7CiAgICB9KTsKICAgIGNhbnZhcy5hZGRFdmVudExpc3RlbmVyKCJ3aGVlbCIsIGV2ZW50ID0+IHsgZXZlbnQucHJldmVudERlZmF1bHQoKTsgYXBwbHlab29tKGV2ZW50LmRlbHRhWSA8IDAgPyAxLjEyIDogMC44OSwgZXZlbnQuY2xpZW50WCwgZXZlbnQuY2xpZW50WSk7IH0sIHsgcGFzc2l2ZTpmYWxzZSB9KTsKICB9CgogIGZ1bmN0aW9uIHJlc2V0VmlldygpewogICAgem9vbSA9IDE7CiAgICBwYW5YID0gMDsKICAgIHBhblkgPSAwOwogICAgc2VsZWN0ZWRDb25zdGVsbGF0aW9uSWQgPSBudWxsOwogICAgcmVzZXRJbmZvKCk7CiAgICB1cGRhdGVSZWFkb3V0cygpOwogICAgZHJhdyhwZXJmb3JtYW5jZS5ub3coKSk7CiAgfQoKICBmdW5jdGlvbiBsb2FkRW1iZWRkZWREYXRhKCl7CiAgICBjb25zdCB0YWcgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiYnYtZW1iZWRkZWQtY29uc3RlbGxhdGlvbnMtanNvbiIpOwogICAgaWYoIXRhZykgcmV0dXJuIGZhbHNlOwogICAgdHJ5IHsKICAgICAgY29uc3QgcGFyc2VkID0gSlNPTi5wYXJzZSh0YWcudGV4dENvbnRlbnQgfHwgInt9Iik7CiAgICAgIHNreURhdGEgPSBub3JtYWxpemVJbXBvcnRlZERhdGEocGFyc2VkKTsKICAgICAgYXBwbHlHZW5lcmF0b3JTZXR0aW5nc1RvVUkoc2t5RGF0YS5nZW5lcmF0b3IpOwogICAgICBpZighc2t5RGF0YS5zdGFycy5sZW5ndGggJiYgc2t5RGF0YS5nZW5lcmF0b3IgJiYgT2JqZWN0LmtleXMoc2t5RGF0YS5nZW5lcmF0b3IpLmxlbmd0aCkgewogICAgICAgIGNvbnN0IHN0YXJzID0gZ2VuZXJhdGVTdGFycyhza3lEYXRhLmdlbmVyYXRvcik7CiAgICAgICAgc2t5RGF0YS5zdGFycyA9IHN0YXJzOwogICAgICAgIHNreURhdGEuY29uc3RlbGxhdGlvbnMgPSBnZW5lcmF0ZUNvbnN0ZWxsYXRpb25zRnJvbVN0YXJzKHN0YXJzLCBza3lEYXRhLmdlbmVyYXRvcik7CiAgICAgIH0KICAgICAgcmVidWlsZEluZGV4KCk7CiAgICAgIHJldHVybiB0cnVlOwogICAgfSBjYXRjaChlcnIpIHsKICAgICAgY29uc29sZS53YXJuKCJFbWJlZGRlZCBjb25zdGVsbGF0aW9uIEpTT04gY291bGQgbm90IGJlIHJlYWQ6IiwgZXJyKTsKICAgICAgcmV0dXJuIGZhbHNlOwogICAgfQogIH0KCiAgd2luZG93LkF6YXJhTmlnaHRTa3kgPSB7CiAgICBnZW5lcmF0ZVNreSwKICAgIGNsZWFyU2t5LAogICAgZXhwb3J0RGF0YSwKICAgIGltcG9ydERhdGEoZGF0YSl7IHNreURhdGEgPSBub3JtYWxpemVJbXBvcnRlZERhdGEoZGF0YSk7IHJlYnVpbGRJbmRleCgpOyB9LAogICAgZm9jdXNDb25zdGVsbGF0aW9uLAogICAgZm9jdXNTdGFyLAogICAgcmVzZXRWaWV3LAogICAgZG93bmxvYWRKU09OLAogICAgZXhwb3J0SFRNTCwKICAgIGhvb2tzKCl7IHJldHVybiBKU09OLnBhcnNlKGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJidi1jb25zdGVsbGF0aW9ucy1qc29uLWhvb2tzIikudGV4dENvbnRlbnQpOyB9CiAgfTsKCiAgc3luY0FjY2Vzc01vZGUoKTsKICBpbnN0YWxsRXZlbnRzKCk7CiAgc3luY1RvZ2dsZUJ1dHRvbnMoKTsKICB1cGRhdGVTbGlkZXJMYWJlbHMoKTsKICBsb2FkRW1iZWRkZWREYXRhKCk7CiAgaWYoIXNreURhdGEuc3RhcnMubGVuZ3RoKSBnZW5lcmF0ZVNreSgpOwogIHJlc2l6ZSgpOwogIHJlcXVlc3RBbmltYXRpb25GcmFtZSh0aWNrKTsKCiAgZnVuY3Rpb24gaW5zdGFsbFRpbWVQYW5lbCgpewogICAgaWYod2luZG93Ll9fYmVsYXZhZG9zRHVhbFRpbWVJbnN0YWxsZWQpIHJldHVybjsKICAgIHdpbmRvdy5fX2JlbGF2YWRvc0R1YWxUaW1lSW5zdGFsbGVkID0gdHJ1ZTsKICAgIGNvbnN0IFlFQVJfREFZUz0yNDA7CiAgICBjb25zdCBNT05USFM9QVpBUkFfU0tZX01PTlRIUzsKICAgIGNvbnN0IFdFRUtEQVlTPUFaQVJBX1NLWV9XRUVLREFZUzsKICAgIGNvbnN0IE5VTV9QUk9OPVsiSWgiLCJOZWgiLCJEdWgiLCJNZWgiLCJHb2giLCJPaG0iLCJyzaFyZWgiXTsKICAgIGZ1bmN0aW9uIHNlbGVjdGVkU3BlZWRUZXh0KCl7CiAgICAgIGNvbnN0IHNwZWM9YXphcmFTcGVlZFNwZWMoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNwZWVkIik/LnZhbHVlfHwxMDApOwogICAgICBjb25zdCBzZWNQZXJZZWFyPXNwZWMuZGF5c1BlclNlY29uZD4wP1lFQVJfREFZUy9zcGVjLmRheXNQZXJTZWNvbmQ6SW5maW5pdHk7CiAgICAgIHJldHVybntzZWNQZXJZZWFyLGxhYmVsOnNwZWMubGFiZWwsZGF5c1BlclNlY29uZDpzcGVjLmRheXNQZXJTZWNvbmQsc2Vjb25kc1BlckRheTpzcGVjLmRheXNQZXJTZWNvbmQ+MD8xL3NwZWMuZGF5c1BlclNlY29uZDpJbmZpbml0eSxsaXZlOnNwZWMua2V5PT09InN5bmMiLHBhdXNlZDpzcGVjLmtleT09PSJwYXVzZWQifTsKICAgIH0KICAgIGZ1bmN0aW9uIGRvbWluYW50TW9vbihoKXsKICAgICAgaWYoaD09PTIxKXJldHVybiJBcnZhbGxhICsgRHV2YWVuIjsKICAgICAgaWYoaD49MTImJmg8PTE0KXJldHVybiJX4oCZaW9zYW1uICsgQXJ2YWxsYSI7CiAgICAgIGlmKGg+PTYmJmg8PTcpcmV0dXJuIkR1dmFlbiArIFfigJlpb3NhbW4iOwogICAgICBpZihoPD03KXJldHVybiJEdXZhZW4iOwogICAgICBpZihoPD0xNClyZXR1cm4iV+KAmWlvc2FtbiI7CiAgICAgIHJldHVybiJBcnZhbGxhIjsKICAgIH0KICAgIGZ1bmN0aW9uIHNpbXVsYXRpb25QYXJ0cygpewogICAgICBjb25zdCBkYXlJbmRleD1hemFNb2QoTWF0aC5mbG9vcihzaW1EYXkpLFlFQVJfREFZUyk7CiAgICAgIGNvbnN0IHQ9c2t5VmVpbFBhcnRzKCk7CiAgICAgIGNvbnN0IG1vbnRoSW5kZXg9TWF0aC5mbG9vcihkYXlJbmRleC8zMCk7CiAgICAgIGNvbnN0IHByb251bmNpYXRpb249TlVNX1BST05bdC5wZXJpb2RIb3VyLTFdKyItIisodC5wZXJpb2Q9PT0iQWUiPyJheWUiOnQucGVyaW9kPT09IlfigJlpIj8id3VoLWFpLWVlIjoibGFoIik7CiAgICAgIGNvbnN0IGRheU9mTW9udGg9KGRheUluZGV4JTMwKSsxLHdlZWtPZk1vbnRoPU1hdGguZmxvb3IoKGRheU9mTW9udGgtMSkvNikrMSx3ZWVrT2ZZZWFyPU1hdGguZmxvb3IoZGF5SW5kZXgvNikrMTtyZXR1cm57ZGF5SW5kZXgsZGF5OmRheUluZGV4KzEsbW9udGg6TU9OVEhTW21vbnRoSW5kZXhdLGRheU9mTW9udGgsd2Vla2RheTpXRUVLREFZU1tkYXlJbmRleCU2XSx3ZWVrT2ZNb250aCx3ZWVrT2ZZZWFyLHQscHJvbnVuY2lhdGlvbixtb29uOmRvbWluYW50TW9vbih0LmhvdXIpfTsKICAgIH0KICAgIGZ1bmN0aW9uIGxhdGl0dWRlU3VtbWFyeSgpewogICAgICBjb25zdCBhYnNMYXQ9TWF0aC5hYnMobGF0KTsKICAgICAgY29uc3QgaGVtaT1sYXQ9PT0wPyJFcXVhdG9yIjoobGF0PjA/Ik5vcnRoZXJuIHNreSI6IlNvdXRoZXJuIHNreSIpOwogICAgICBjb25zdCBwb2xlPWxhdD09PTA/ImJvdGggcG9sZXMgc2l0IG9uIHRoZSBob3Jpem9uIjoobGF0PjA/Im5vcnRoZXJuIHBvbGUgcmlzZXMiOiJzb3V0aGVybiBwb2xlIHJpc2VzIik7CiAgICAgIHJldHVybnthYnNMYXQsaGVtaSxwb2xlfTsKICAgIH0KICAgIGZ1bmN0aW9uIGVhcnRoUHVsc2VSYXRlcygpewogICAgICBjb25zdCBub3c9bmV3IERhdGUoKSx5PW5vdy5nZXRGdWxsWWVhcigpLHN0YXJ0PW5ldyBEYXRlKHksMCwxKSxlbmQ9bmV3IERhdGUoeSsxLDAsMSksZGF5cz1NYXRoLnJvdW5kKChlbmQtc3RhcnQpLzg2NDAwMDAwKTsKICAgICAgY29uc3QgbGVhcD1kYXlzPT09MzY2OwogICAgICBjb25zdCBkYXlIb3Vycz1kYXlzKjI0LzI0MDsKICAgICAgY29uc3QgaG91ck1pbnV0ZXM9ZGF5cyoyNCo2MC8oMjQwKjIxKTsKICAgICAgcmV0dXJue3llYXI6eSxsZWFwLGRheUhvdXJzLGhvdXJNaW51dGVzLG1pbnV0ZVNlY29uZHM6aG91ck1pbnV0ZXN9OwogICAgfQogICAgZnVuY3Rpb24gbWFrZVBhbmVsKCl7CiAgICAgIGxldCBkaXY9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImJ2LXRpbWUtcGFuZWwiKTsKICAgICAgaWYoIWRpdil7CiAgICAgICAgZGl2PWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNlY3Rpb24iKTsKICAgICAgICBkaXYuaWQ9ImJ2LXRpbWUtcGFuZWwiO2Rpdi5jbGFzc05hbWU9ImJ2LXRpbWUtcGFuZWwgYnYtdGltZS1pbmxpbmUiOwogICAgICAgIGRpdi5zZXRBdHRyaWJ1dGUoImFyaWEtbGFiZWwiLCJBemEncmEgVmVpbCB0aW1lIGNvbnZlcnRlciIpOwogICAgICAgIGRpdi5pbm5lckhUTUw9JzxkaXYgY2xhc3M9ImJ2LXRpbWUtaGVhZCI+PGRpdj7ij7EgPHNwYW4+QXphXCdyYWFuIFZlaWwgVGltZTwvc3Bhbj48c21hbGwgY2xhc3M9ImJ2LXRpbWUtZHJhZ2hpbnQiPmlubGluZTwvc21hbGw+PC9kaXY+PGJ1dHRvbiBjbGFzcz0iYnYtdGltZS10b2dnbGUiIHR5cGU9ImJ1dHRvbiI+aGlkZTwvYnV0dG9uPjwvZGl2PicrCiAgICAgICAgJzxkaXYgY2xhc3M9ImJ2LXRpbWUtYm9keSI+JysKICAgICAgICAnPGRpdiBjbGFzcz0iYnYtdGltZS1jYXJkIj48Yj5DYWxlbmRhcjwvYj48c3Ryb25nIGRhdGEtYnYtZWFydGgtbWFpbj48L3N0cm9uZz48c21hbGwgZGF0YS1idi1lYXJ0aC1zdWI+PC9zbWFsbD48L2Rpdj4nKwogICAgICAgICc8ZGl2IGNsYXNzPSJidi10aW1lLWNhcmQiPjxiPkxpdmUgVmVpbCBub3c8L2I+PHN0cm9uZyBkYXRhLWJ2LWxpdmUtbWFpbj48L3N0cm9uZz48c21hbGwgZGF0YS1idi1saXZlLXN1Yj48L3NtYWxsPjwvZGl2PicrCiAgICAgICAgJzxkaXYgY2xhc3M9ImJ2LXRpbWUtY2FyZCI+PGI+VmVpbCBjbG9jazwvYj48c3Ryb25nIGRhdGEtYnYtYmVsYS1tYWluPjwvc3Ryb25nPjxzbWFsbCBkYXRhLWJ2LWJlbGEtc3ViPjwvc21hbGw+PC9kaXY+JysKICAgICAgICAnPGRpdiBjbGFzcz0iYnYtdGltZS1jYXJkIj48Yj5PYnNlcnZlciBsYXRpdHVkZTwvYj48c3Ryb25nIGRhdGEtYnYtbW9udGgtbWFpbj48L3N0cm9uZz48c21hbGwgZGF0YS1idi1tb250aC1zdWI+PC9zbWFsbD48L2Rpdj4nKwogICAgICAgICc8ZGl2IGNsYXNzPSJidi10aW1lLWNhcmQiPjxiPlNpbXVsYXRpb24gc3BlZWQ8L2I+PHN0cm9uZyBkYXRhLWJ2LWRheS1tYWluPjwvc3Ryb25nPjxzbWFsbCBkYXRhLWJ2LWRheS1zdWI+PC9zbWFsbD48L2Rpdj4nKwogICAgICAgICc8L2Rpdj48ZGl2IGNsYXNzPSJidi10aW1lLWZvb3QiPjxlbT5WZWlsIHRpbWU8L2VtPiB1c2VzIDIxIGhvdXJzL2RheSwgNiBkYXlzL3dlZWssIDUgd2Vla3MvbW9udGgsIDggbW9udGhzL3llYXIsIGFuZCAyNDAgZGF5cy95ZWFyLiBPbGQgQmVsYXZhZMO2cyBjYWxlbmRhciBuYW1lcyBhcmUgcmV0YWluZWQ7IHJlbW92ZWQgc2V2ZW50aC1kYXkgYW5kIGV4dHJhLW1vbnRoIG5hbWVzIHJlbWFpbiBsZWdhY3kgbmFtZXMgcmF0aGVyIHRoYW4gZXh0cmEgY2FsZW5kYXIgc2xvdHMuPC9kaXY+JzsKICAgICAgICBjb25zdCBodWQ9ZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiLmh1ZCIpO2NvbnN0IGFuY2hvcj1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZG1FZGl0b3JUb29scyIpfHxkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCIuaHVkIGRldGFpbHMiKTsKICAgICAgICBpZihodWQmJmFuY2hvcilodWQuaW5zZXJ0QmVmb3JlKGRpdixhbmNob3IpO2Vsc2UgZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChkaXYpOwogICAgICB9CiAgICAgIGNvbnN0IHRvZ2dsZT1kaXYucXVlcnlTZWxlY3RvcigiLmJ2LXRpbWUtdG9nZ2xlIik7CiAgICAgIGlmKHRvZ2dsZSYmIXRvZ2dsZS5kYXRhc2V0LmJvdW5kKXt0b2dnbGUuZGF0YXNldC5ib3VuZD0idHJ1ZSI7dG9nZ2xlLmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIixldmVudD0+e2V2ZW50LnN0b3BQcm9wYWdhdGlvbigpO2Rpdi5jbGFzc0xpc3QudG9nZ2xlKCJjb2xsYXBzZWQiKTt0b2dnbGUudGV4dENvbnRlbnQ9ZGl2LmNsYXNzTGlzdC5jb250YWlucygiY29sbGFwc2VkIik/InNob3ciOiJoaWRlIjtzYXZlVGltZVBhbmVsKGRpdik7fSk7fQogICAgICByZXN0b3JlVGltZVBhbmVsKGRpdik7cmV0dXJuIGRpdjsKICAgIH0KICAgIGZ1bmN0aW9uIHNhdmVUaW1lUGFuZWwocGFuZWwpe3RyeXtsb2NhbFN0b3JhZ2Uuc2V0SXRlbShTVE9SQUdFX0tFWSxKU09OLnN0cmluZ2lmeSh7Y29sbGFwc2VkOnBhbmVsLmNsYXNzTGlzdC5jb250YWlucygiY29sbGFwc2VkIil9KSk7fWNhdGNoKGUpe319CiAgICBmdW5jdGlvbiByZXN0b3JlVGltZVBhbmVsKHBhbmVsKXt0cnl7Y29uc3Qgc2F2ZWQ9SlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbShTVE9SQUdFX0tFWSl8fCJudWxsIik7aWYoIXNhdmVkKXJldHVybjtpZihzYXZlZC5jb2xsYXBzZWQpe3BhbmVsLmNsYXNzTGlzdC5hZGQoImNvbGxhcHNlZCIpO3BhbmVsLnF1ZXJ5U2VsZWN0b3IoIi5idi10aW1lLXRvZ2dsZSIpLnRleHRDb250ZW50PSJzaG93Ijt9fWNhdGNoKGUpe319CiAgICBjb25zdCBwYW5lbD1tYWtlUGFuZWwoKTsKICAgIGZ1bmN0aW9uIHVwZGF0ZVRpbWVQYW5lbCgpewogICAgICBpZighcGFuZWx8fCFwYW5lbC5pc0Nvbm5lY3RlZClyZXR1cm47CiAgICAgIGNvbnN0IGI9c2ltdWxhdGlvblBhcnRzKCksc3A9c2VsZWN0ZWRTcGVlZFRleHQoKSxsYT1sYXRpdHVkZVN1bW1hcnkoKSxwdWxzZT1lYXJ0aFB1bHNlUmF0ZXMoKTsKICAgICAgY29uc3Qgdmlld1RleHQ9dmlld01vZGU9PT0idXAiPyJUb3AgVXAiOiJUb3AgRG93biI7CiAgICAgIHBhbmVsLnF1ZXJ5U2VsZWN0b3IoIltkYXRhLWJ2LWVhcnRoLW1haW5dIikudGV4dENvbnRlbnQ9YERheSAke2IuZGF5fSAvIDI0MCDCtyAke2IubW9udGh9ICR7Yi5kYXlPZk1vbnRofWA7CiAgICAgIHBhbmVsLnF1ZXJ5U2VsZWN0b3IoIltkYXRhLWJ2LWVhcnRoLXN1Yl0iKS50ZXh0Q29udGVudD1gJHtiLndlZWtkYXl9IOKAoiB3ZWVrICR7Yi53ZWVrT2ZNb250aH0vNSDigKIgeWVhciB3ZWVrICR7Yi53ZWVrT2ZZZWFyfS80MGA7CiAgICAgIGNvbnN0IGxpdmVEYXk9Y3VycmVudFZlaWxEYXlGbG9hdCgpLGxpdmVJbmRleD1hemFNb2QoTWF0aC5mbG9vcihsaXZlRGF5KSwyNDApLGxpdmVNb250aD1NT05USFNbTWF0aC5mbG9vcihsaXZlSW5kZXgvMzApXSxsaXZlRE9NPShsaXZlSW5kZXglMzApKzEsbGl2ZVdlZWtkYXk9V0VFS0RBWVNbbGl2ZUluZGV4JTZdOwogICAgICBjb25zdCBvbGRTaW09c2ltRGF5O3NpbURheT1saXZlRGF5O2NvbnN0IGxpdmVUPXNreVZlaWxQYXJ0cygpO3NpbURheT1vbGRTaW07CiAgICAgIHBhbmVsLnF1ZXJ5U2VsZWN0b3IoIltkYXRhLWJ2LWxpdmUtbWFpbl0iKS50ZXh0Q29udGVudD1gJHtsaXZlTW9udGh9ICR7bGl2ZURPTX0gwrcgJHtsaXZlV2Vla2RheX0gwrcgJHtsaXZlVC5ub3RhdGlvbn0gJHtwYWQobGl2ZVQubWludXRlKX06JHtwYWQobGl2ZVQuc2Vjb25kKX1gOwogICAgICBwYW5lbC5xdWVyeVNlbGVjdG9yKCJbZGF0YS1idi1saXZlLXN1Yl0iKS50ZXh0Q29udGVudD1gQ2Fub25pY2FsIEVhcnRoLXllYXIgc3luYyDigKIgMjQwIGRheXMveWVhciDigKIgJHtwdWxzZS5kYXlIb3Vycy50b0ZpeGVkKDMpfSBFYXJ0aCBob3Vycy9BemEncmFhbiBkYXlgOwogICAgICBwYW5lbC5xdWVyeVNlbGVjdG9yKCJbZGF0YS1idi1iZWxhLW1haW5dIikudGV4dENvbnRlbnQ9YCR7Yi50Lm5vdGF0aW9ufSDCtyAke2IucHJvbnVuY2lhdGlvbn0gwrcgJHtwYWQoYi50Lm1pbnV0ZSl9OiR7cGFkKGIudC5zZWNvbmQpfWA7CiAgICAgIHBhbmVsLnF1ZXJ5U2VsZWN0b3IoIltkYXRhLWJ2LWJlbGEtc3ViXSIpLnRleHRDb250ZW50PWAke2hvdXI9PT1udWxsPyJMaXZlL2FuaW1hdGVkIGNsb2NrIjoiQ2xvY2sgbG9ja2VkIHRvIHNlbGVjdGVkIHNreSBob3VyIn0g4oCiIEhvdXIgJHtiLnQuaG91cn0vMjEg4oCiICR7Yi5tb29ufSDigKIgJHt2aWV3VGV4dH1gOwogICAgICBwYW5lbC5xdWVyeVNlbGVjdG9yKCJbZGF0YS1idi1tb250aC1tYWluXSIpLnRleHRDb250ZW50PWxhLmhlbWkrIiDCtyAiKyhsYXQ+PTA/IisiOiIiKStsYXQrIsKwIjsKICAgICAgcGFuZWwucXVlcnlTZWxlY3RvcigiW2RhdGEtYnYtbW9udGgtc3ViXSIpLnRleHRDb250ZW50PWBBdCAke2xhLmFic0xhdH3CsCBsYXRpdHVkZSwgdGhlICR7bGEucG9sZX07IGhvcml6b24gcHJvamVjdGlvbiByZWZyZXNoZXMgd2l0aCB0aGlzIHNsaWRlci5gOwogICAgICBwYW5lbC5xdWVyeVNlbGVjdG9yKCJbZGF0YS1idi1kYXktbWFpbl0iKS50ZXh0Q29udGVudD1zcC5saXZlPyhwbGF5aW5nPyJMaXZlIFZlaWwgc3luYyI6IkxpdmUgc3luYyBwYXVzZWQiKTooc3AucGF1c2VkPyJQYXVzZWQiOigocGxheWluZz8iUGxheWluZyI6IlBhdXNlZCIpKyIgwrcgIitzcC5kYXlzUGVyU2Vjb25kLnRvRml4ZWQoNikrIiBBemEncmFhbiBkYXlzL3NlYyIpKTsKICAgICAgcGFuZWwucXVlcnlTZWxlY3RvcigiW2RhdGEtYnYtZGF5LXN1Yl0iKS50ZXh0Q29udGVudD1gJHtzcC5sYWJlbH0g4oCiIGNhbm9uaWNhbCAke3B1bHNlLmxlYXA/ImxlYXAiOiJjb21tb24ifS15ZWFyIGh1bTogJHtwdWxzZS5kYXlIb3Vycy50b0ZpeGVkKDMpfSBFYXJ0aCBoci9kYXksICR7cHVsc2UuaG91ck1pbnV0ZXMudG9GaXhlZCgyKX0gRWFydGggbWluL2hvdXIsICR7cHVsc2UubWludXRlU2Vjb25kcy50b0ZpeGVkKDIpfSBFYXJ0aCBzZWMvbWludXRlLCAkeyhwdWxzZS5taW51dGVTZWNvbmRzLzYwKS50b0ZpeGVkKDMpfSBFYXJ0aCBzZWMgcGVyIG1hZ2l0ZWNoIHNlY29uZC5gOwogICAgfQogICAgd2luZG93Ll9fYmVsYXZhZG9zVXBkYXRlVGltZVBhbmVsPXVwZGF0ZVRpbWVQYW5lbDsKICAgIHVwZGF0ZVRpbWVQYW5lbCgpOwogIH0KICBpbnN0YWxsVGltZVBhbmVsKCk7Cn0pKCk7Cg=="}]}</script>
+</body></html>

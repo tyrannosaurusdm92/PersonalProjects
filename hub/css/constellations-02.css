@@ -1,0 +1,9 @@
+
+/* === Aza'ra continuous time-speed control === */
+.aza-speed-control{display:grid;gap:5px;min-width:min(430px,54vw);padding:6px 8px;border:1px solid rgba(120,255,255,.25);border-radius:12px;background:rgba(2,14,25,.52);font-family:Arial,sans-serif}
+.aza-speed-head{display:flex;align-items:center;gap:8px;min-width:0;font-size:11px;color:#bfefff}.aza-speed-head b{color:#eff}.aza-speed-head output{margin-left:auto;min-width:0;max-width:65%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#ffe7a6;font-weight:800;text-align:right}
+.aza-speed-control input[type=range]{width:100%;min-width:140px;accent-color:#64e9ff;margin:0}.aza-speed-help{display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin;padding-bottom:1px}
+.aza-speed-help button{flex:0 0 auto;width:auto!important;min-height:24px!important;padding:3px 6px!important;border-radius:999px!important;font:700 9px/1.15 Arial,sans-serif!important;white-space:nowrap!important;background:rgba(255,255,255,.045)!important;color:#cfefff!important;border:1px solid rgba(120,255,255,.24)!important}
+.aza-speed-help button:hover,.aza-speed-help button.active{border-color:#8ff!important;background:rgba(0,255,255,.12)!important;color:#fff!important}
+.aza-speed-note{font-size:9px;line-height:1.25;color:#8fb8c9}
+@media(max-width:760px){.aza-speed-control{min-width:270px;max-width:calc(100vw - 28px)}.aza-speed-head output{max-width:55%}}

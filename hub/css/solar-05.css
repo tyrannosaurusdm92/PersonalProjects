@@ -1,0 +1,27 @@
+
+/* Toolbar-inspired responsive pass. Site Navigation and drawer menu DOM/CSS/JS are intentionally untouched. */
+#app > .topbar{
+  min-width:0;max-width:calc(100vw - 28px);
+  flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important;
+  align-items:center!important;align-content:center;scrollbar-width:thin;overscroll-behavior:contain;
+  z-index:8;
+}
+#app > .topbar > *{min-width:0}
+#app > .topbar .brand{flex:0 0 auto!important;width:auto!important;white-space:nowrap}
+#app > .topbar .aza-speed-control{flex:0 0 min(520px,46vw);max-width:min(520px,46vw)}
+#app > .topbar .btn{flex:0 0 auto;white-space:nowrap}
+#app > .assetList,#app > .side,#app > .veilTime{min-width:0;max-width:calc(100vw - 28px);scrollbar-width:thin;overscroll-behavior:contain}
+#app > .side p,#app > .veilTime,#app > .assetList{overflow-wrap:anywhere}
+#solarSpeedControl{min-width:280px;gap:3px;padding:4px 6px}
+#solarSpeedControl .aza-speed-help{scroll-snap-type:x proximity;gap:3px}
+#solarSpeedControl .aza-speed-help button{scroll-snap-align:start;min-height:18px!important;padding:1px 4px!important;font-size:8px!important}
+#solarSpeedControl .aza-speed-note{display:none}
+@media (min-width:921px){#app > .side,#app > .veilTime,#app > .assetList{resize:both;overflow:auto}}
+@media (max-width:920px){
+  #app > .topbar{left:8px!important;right:8px!important;max-width:none;padding:8px!important;gap:8px!important}
+  #app > .topbar .aza-speed-control{flex-basis:min(470px,calc(100vw - 100px));max-width:min(470px,calc(100vw - 100px))}
+}
+@media (max-width:620px){
+  #app > .topbar .btn{min-height:40px;padding:8px 10px}
+  #solarSpeedControl{flex-basis:min(430px,calc(100vw - 86px));min-width:min(430px,calc(100vw - 86px))}
+}
