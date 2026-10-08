@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded',function(){
   const PROJECT_KEY='williamProjectLinksV1';
   const AZARA_KEY='williamAzaraDraftsV1';
   const AZARA_SUBPAGES=['azara-solar-system','azara-constellations','azara-language-building'];
+  // These two completed interactive atlas pages are always public, including
+  // when older browser storage still has them marked unpublished.
+  const AZARA_PUBLIC_PAGES=['azara-solar-system','azara-constellations'];
   const azaraMenuToggle=$('#azaraMenuToggle');
   const azaraSubmenu=$('#azaraSubmenu');
   function readPublishedAzara(){
@@ -32,11 +35,12 @@ document.addEventListener('DOMContentLoaded',function(){
     try{local=JSON.parse(localStorage.getItem(AZARA_KEY)||'{}')||{};}catch(e){}
     const state={};
     AZARA_SUBPAGES.forEach(id=>{
-      const published=embedded[id] && embedded[id].published===true;
+      const alwaysPublic=AZARA_PUBLIC_PAGES.includes(id);
+      const published=alwaysPublic || (embedded[id] && embedded[id].published===true);
       const publicHTML=published && typeof embedded[id].html==='string' ? embedded[id].html : '';
       const saved=local[id] && typeof local[id]==='object' ? local[id] : null;
       state[id]={
-        published: saved ? saved.published===true : !!published,
+        published: alwaysPublic || (saved ? saved.published===true : !!published),
         publishedHtml: saved && typeof saved.publishedHtml==='string' ? saved.publishedHtml : publicHTML,
         draftHtml: saved && typeof saved.draftHtml==='string' ? saved.draftHtml : publicHTML
       };
@@ -53,7 +57,7 @@ document.addEventListener('DOMContentLoaded',function(){
     }
   }
   function isPageVisible(page){
-    return !AZARA_SUBPAGES.includes(page) || !!azaraWork[page]?.published;
+    return !AZARA_SUBPAGES.includes(page) || AZARA_PUBLIC_PAGES.includes(page) || !!azaraWork[page]?.published;
   }
   function setAzaraMenu(open){
     azaraSubmenu.hidden=!open;
@@ -62,22 +66,23 @@ document.addEventListener('DOMContentLoaded',function(){
   function renderAzaraPages(){
     AZARA_SUBPAGES.forEach(id=>{
       const state=azaraWork[id];
+      const visible=AZARA_PUBLIC_PAGES.includes(id) || state.published;
       const view=$(`[data-page-view="${id}"]`);
       const link=$(`[data-azara-nav-page="${id}"]`);
       if(view){
         const module=view.classList.contains('azara-fixed-page');
         const content=module?view.querySelector('[data-azara-draft-content]'):view;
-        if(content) content.innerHTML=state.published?state.publishedHtml:'';
-        view.classList.toggle('is-published',state.published);
+        if(content) content.innerHTML=visible?state.publishedHtml:'';
+        view.classList.toggle('is-published',visible);
         if(module){
           const frame=view.querySelector('iframe[data-viewer-src]');
           if(frame){
-            if(state.published && view.classList.contains('active') && !frame.getAttribute('src')) frame.src=frame.dataset.viewerSrc;
-            if(!state.published && frame.hasAttribute('src')) frame.removeAttribute('src');
+            if(visible && view.classList.contains('active') && !frame.getAttribute('src')) frame.src=frame.dataset.viewerSrc;
+            if(!visible && frame.hasAttribute('src')) frame.removeAttribute('src');
           }
         }
       }
-      if(link)link.hidden=!state.published;
+      if(link)link.hidden=!visible;
     });
     const active=$('.page.active')?.dataset.pageView;
     if(active && !isPageVisible(active))showPage('azara',{updateHash:!document.body.classList.contains('admin-mode'),scroll:false});
@@ -87,11 +92,12 @@ document.addEventListener('DOMContentLoaded',function(){
       const editor=$(`[data-azara-editor="${id}"]`);
       const status=$(`[data-azara-status="${id}"]`);
       if(editor)editor.value=azaraWork[id].draftHtml;
-      if(status)status.textContent=azaraWork[id].published?'Published • visible to visitors':'Private • hidden from visitors';
+      if(status)status.textContent=AZARA_PUBLIC_PAGES.includes(id)?'Public • always visible to visitors':azaraWork[id].published?'Published • visible to visitors':'Private • hidden from visitors';
     });
   }
   function doAzaraAction(page,action){
     if(!AZARA_SUBPAGES.includes(page))return;
+    if(action==='unpublish' && AZARA_PUBLIC_PAGES.includes(page))return;
     const editor=$(`[data-azara-editor="${page}"]`);
     if(!editor)return;
     const item=azaraWork[page];
@@ -287,7 +293,7 @@ document.addEventListener('DOMContentLoaded',function(){
     if(existing)existing.remove();
     const published={};
     AZARA_SUBPAGES.forEach(id=>{
-      if(azaraWork[id].published)published[id]={published:true,html:azaraWork[id].publishedHtml};
+      if(AZARA_PUBLIC_PAGES.includes(id) || azaraWork[id].published)published[id]={published:true,html:azaraWork[id].publishedHtml};
     });
     const azaraData=clone.ownerDocument.createElement('script');
     azaraData.id='savedAzaraPages';azaraData.type='application/json';

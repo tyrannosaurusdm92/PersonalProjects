@@ -231,8 +231,8 @@
     },
     {
       "path": "hub/docs/readme.md",
-      "bytes": 3192,
-      "sha256": "1771a45c95363119b4a810a954b002801e77e809de149e17b9183e1ac18f94f5"
+      "bytes": 3523,
+      "sha256": "46acbafb049c20809c9f4160b3e629343afa6f63b78e2759a598650d097fed55"
     },
     {
       "path": "hub/docs/repositories-used.md",
@@ -301,8 +301,8 @@
     },
     {
       "path": "hub/script/js/william-01.js",
-      "bytes": 15970,
-      "sha256": "c06fc4ac69d3016dc5cab98db27470d162880240e9dd898a9d4d6cc88f05124d"
+      "bytes": 16532,
+      "sha256": "59c2c08144751ac8d67a1dbb07882a66957a8df30f143c7b04c741fd2ea29cd8"
     },
     {
       "path": "hub/script/views/constellations.html",
@@ -321,8 +321,8 @@
     },
     {
       "path": "william.html",
-      "bytes": 61180,
-      "sha256": "119d267f9cc7ca230c03ab6c181519916c193d3f27a6f744004da36ddfa721e0"
+      "bytes": 60960,
+      "sha256": "ebf2faa104eecaf45cf5f6a2197a6495de38a6799981c8a78600956e442cc10a"
     }
   ]
 }

@@ -36,7 +36,9 @@ The domain's DNS, HTTPS, and any GitHub Pages custom-domain setting must point t
 
 ## Aza’ra navigation and publishing
 
-Open `william.html#admin` in a browser to preview and publish Solar System or Constellations independently. Language Building is intentionally blank and hidden until you publish it. Use **Save Updated HTML**, then replace the deployed `william.html` (and the deployed `index.html` copy, if applicable). Keep the `hub` directory with it.
+Solar System and Constellations are public by default in Aza’ra’s navigation, and their interactive viewers work directly at `william.html#azara-solar-system` and `william.html#azara-constellations`. Visitors do not need `#admin` or a publication step, even if their browser remembers an older unpublished flag. Language Building remains blank and hidden until separately published.
+
+The optional `william.html#admin` editor still supports supplemental page text, draft saving and exporting the updated HTML. Use **Save Updated HTML**, then replace the deployed `william.html` (and the deployed `index.html` copy, if applicable). Keep the `hub` directory with it.
 
 Saving a draft in this static page is local to the browser/device; it is not synced to a backend. The `#admin` editor is not an authenticated management system. Unpublished standalone viewer files remain accessible to people who know their URLs; hiding navigation does not protect private material. Do not put private drafts or secrets in files on a public host.
 
