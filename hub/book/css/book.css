@@ -29,3 +29,70 @@ button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-o
 @media(max-width:980px){body{overflow:auto}.app-shell{height:auto;min-height:100vh;overflow:visible}.topbar{align-items:flex-start;flex-direction:column}.toolbar{justify-content:flex-start;width:100%}.book-stage,.app-shell.is-open .book-stage{grid-template-columns:1fr}.side-panel{max-height:190px}.book{width:min(96vw,980px);max-height:none}.book-outer{overflow:visible}}
 @media(max-width:700px){.app-shell{padding:7px}.search-wrap input{min-width:min(72vw,260px)}.brand-block{min-width:0}.book{width:min(92vw,620px);aspect-ratio:668/1047;grid-template-columns:1fr!important}.left-page{display:none}.right-page{grid-column:1;border-radius:var(--page-radius)}.binding-shadow,.page-stack-left{display:none}.turn-sheet{width:100%}.turn-sheet.next{right:0}.turn-sheet.prev{left:0}.page-inner{padding:30px 24px 34px}.story-body{font-size:clamp(.83rem,2.9vw,.97rem)}.poem-body{font-size:clamp(.84rem,2.9vw,.98rem)}.front-note .stats{grid-template-columns:1fr 1fr}.page-footer span{min-width:0;flex:1}.side-panel{max-height:150px}}
 @media(prefers-reduced-motion:reduce){.closed-cover{animation:none}.cover-open-hitbox{transition:none}}
+
+/* Responsive reader. The book's real dimensions are updated before content is
+   measured, instead of clipping fixed-length text inside rigid pages. */
+.book { zoom: 1 !important; container-type: inline-size; }
+.book-outer { justify-items: safe center; align-items: safe center; min-width: 0; }
+.book-stage { min-width: 0; }
+.app-shell.reader-single .book { aspect-ratio: 668 / 1047; grid-template-columns: minmax(0,1fr) !important; }
+.app-shell.reader-single .left-page { display: none !important; }
+.app-shell.reader-single .right-page { grid-column: 1; border-radius: var(--page-radius); }
+.app-shell.reader-single .binding-shadow,
+.app-shell.reader-single .page-stack-left { display:none; }
+.app-shell.reader-single .turn-sheet { width:100%; }
+.page-inner { padding: var(--reader-pad-y,30px) var(--reader-pad-x,30px) var(--reader-pad-bottom,37px); }
+.page-scroll { overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:#ad8b5a transparent; }
+.story-body { font-size:var(--reader-story-font,15px); line-height:1.47; white-space:pre-wrap; overflow-wrap:anywhere; }
+.poem-body { font-size:var(--reader-poem-font,15px); line-height:1.51; max-width:100%; overflow-wrap:anywhere; }
+.work-title { font-size:var(--reader-title-font,26px); overflow-wrap:anywhere; }
+.work-meta,.continued { overflow-wrap:anywhere; }
+.running-head { font-size:var(--reader-head-font,11px); }
+.running-head span { min-width:0; overflow-wrap:anywhere; }
+.contents-page,.front-note { font-size:var(--reader-meta-font,14px); }
+.toc-row { grid-template-columns:minmax(0,auto) minmax(8px,1fr) auto; }
+.toc-row button { min-width:0; overflow-wrap:anywhere; }
+.page-number { font-size:var(--reader-number-font,11px); }
+.title-page h2 { font-size:var(--reader-cover-title,36px); overflow-wrap:anywhere; }
+.title-page h3 { font-size:var(--reader-cover-subtitle,24px); overflow-wrap:anywhere; }
+.title-page .byline { margin-top:clamp(.65rem,2cqw,2rem); }
+.front-note .stats { gap:clamp(3px,1cqw,8px); }
+.front-note .stats div { padding:clamp(.28rem,.8cqw,.7rem) .2rem; overflow-wrap:anywhere; }
+.page.book-measure-probe { position:absolute !important; inset:0 auto 0 0; display:block !important; width:50%; height:100%; visibility:hidden !important; pointer-events:none !important; z-index:-100 !important; contain:layout style paint; }
+.app-shell.reader-single .page.book-measure-probe { width:100%; }
+.page.book-measure-probe .page-scroll { scrollbar-width:none; }
+.resize-edges { position:absolute; inset:0; z-index:85; pointer-events:none; }
+.resize-edges button { position:absolute; display:block; min-width:0; min-height:0; padding:0; border:0; background:transparent; touch-action:none; pointer-events:auto; opacity:0; transition:opacity .15s; }
+.book:hover .resize-edges button,.resize-edges button:focus-visible { opacity:.9; }
+.resize-edges button[data-resize-edge="n"] { top:-7px;left:22px;right:22px;height:12px;cursor:ns-resize; }
+.resize-edges button[data-resize-edge="s"] { bottom:-7px;left:22px;right:22px;height:12px;cursor:ns-resize; }
+.resize-edges button[data-resize-edge="e"] { top:22px;right:-7px;bottom:22px;width:12px;cursor:ew-resize; }
+.resize-edges button[data-resize-edge="w"] { top:22px;left:-7px;bottom:22px;width:12px;cursor:ew-resize; }
+.resize-edges button[data-resize-edge="ne"] { top:-12px;right:-12px;width:23px;height:23px;cursor:nesw-resize; }
+.resize-edges button[data-resize-edge="nw"] { top:-12px;left:-12px;width:23px;height:23px;cursor:nwse-resize; }
+.resize-edges button[data-resize-edge="se"] { bottom:-12px;right:-12px;width:23px;height:23px;cursor:nwse-resize; }
+.resize-edges button[data-resize-edge="sw"] { bottom:-12px;left:-12px;width:23px;height:23px;cursor:nesw-resize; }
+.resize-edges button[data-resize-edge="se"]::after,.resize-edges button[data-resize-edge="sw"]::after,
+.resize-edges button[data-resize-edge="ne"]::after,.resize-edges button[data-resize-edge="nw"]::after {
+  content:"";position:absolute;inset:5px;border:2px solid #d6b887;border-radius:3px;
+  box-shadow:0 1px 3px #21150d,0 0 0 1px #3a2415;background:rgba(43,26,12,.28);
+}
+.resize-edges button[data-resize-edge="n"]::after,.resize-edges button[data-resize-edge="s"]::after { content:"";position:absolute;width:min(60px,24%);height:3px;left:50%;top:50%;transform:translate(-50%,-50%);background:#d6b887;border-radius:5px;box-shadow:0 1px 3px #21150d; }
+.resize-edges button[data-resize-edge="e"]::after,.resize-edges button[data-resize-edge="w"]::after { content:"";position:absolute;width:3px;height:min(60px,24%);left:50%;top:50%;transform:translate(-50%,-50%);background:#d6b887;border-radius:5px;box-shadow:0 1px 3px #21150d; }
+.book.reader-resizing,.book.reader-resizing * { user-select:none !important; -webkit-user-select:none !important; }
+@media(max-width:980px) {
+  .book-stage { min-height:min(850px,95svh); }
+  .book-outer { overflow:auto; min-height:460px; }
+}
+@media(max-width:700px) {
+  .book-outer { padding:16px; }
+  .page-inner { padding: var(--reader-pad-y,22px) var(--reader-pad-x,18px) var(--reader-pad-bottom,27px); }
+  .story-body { font-size:var(--reader-story-font,13px); }
+  .poem-body { font-size:var(--reader-poem-font,13px); }
+}
+/* Keep the available reading area stable while its pages change size.
+   Otherwise a smaller page can shrink the parent, triggering a resize loop. */
+@media(max-width:980px) {
+  .book-stage { min-height:0; align-content:start; }
+  .book-outer { height:clamp(470px,80svh,850px); min-height:0; }
+}

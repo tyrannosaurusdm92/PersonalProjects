@@ -21,7 +21,7 @@
         <label class="search-wrap"><span>Search</span><input id="searchInput" type="search" placeholder="title, date, phrase..." autocomplete="off"></label>
         <button id="soundBtn" type="button" aria-pressed="true" title="Toggle page-turn sound">Sound: On</button>
         <div class="zoom-controls" role="group" aria-label="Book zoom">
-          <button id="zoomOutBtn" type="button" aria-label="Zoom out">−</button><span id="zoomLabel">100%</span><button id="zoomInBtn" type="button" aria-label="Zoom in">+</button><button id="zoomFitBtn" type="button">Fit</button>
+          <button id="zoomOutBtn" type="button" aria-label="Zoom out">−</button><span id="zoomLabel">100%</span><button id="zoomInBtn" type="button" aria-label="Zoom in">+</button><button id="zoomFitBtn" type="button" title="Fit the book to the available space">Fit</button>
         </div>
         <button id="coverBtn" type="button">Cover</button>
         <button id="contentsBtn" type="button">Contents</button>
@@ -45,7 +45,7 @@
           </button>
         </article>
 
-        <article class="book" id="book" aria-live="polite" aria-label="Open book">
+        <article class="book" id="book" aria-live="polite" aria-label="Open book, resizable from every edge and corner">
           <div class="page-stack page-stack-left" aria-hidden="true"></div>
           <div class="page-stack page-stack-right" aria-hidden="true"></div>
           <div class="binding-shadow" aria-hidden="true"></div>
@@ -57,6 +57,16 @@
             <div class="fold-ridge ridge-a"></div>
             <div class="fold-ridge ridge-b"></div>
             <div class="curl-edge"></div>
+          </div>
+          <div class="resize-edges" id="resizeEdges" aria-label="Resize the book">
+            <button type="button" data-resize-edge="n" aria-label="Resize book from top" title="Drag to resize · double-click to fit"></button>
+            <button type="button" data-resize-edge="s" aria-label="Resize book from bottom" title="Drag to resize · double-click to fit"></button>
+            <button type="button" data-resize-edge="e" aria-label="Resize book from right" title="Drag to resize · double-click to fit"></button>
+            <button type="button" data-resize-edge="w" aria-label="Resize book from left" title="Drag to resize · double-click to fit"></button>
+            <button type="button" data-resize-edge="ne" aria-label="Resize book from top-right corner" title="Drag to resize · double-click to fit"></button>
+            <button type="button" data-resize-edge="nw" aria-label="Resize book from top-left corner" title="Drag to resize · double-click to fit"></button>
+            <button type="button" data-resize-edge="se" aria-label="Resize book from bottom-right corner" title="Drag to resize · double-click to fit"></button>
+            <button type="button" data-resize-edge="sw" aria-label="Resize book from bottom-left corner" title="Drag to resize · double-click to fit"></button>
           </div>
         </article>
 

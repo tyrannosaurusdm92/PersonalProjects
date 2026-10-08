@@ -3,16 +3,16 @@
 const library = window.WRITING_LIBRARY || {works:[], counts:{poems:0,short_stories:0,works:0,characters:0}};
 const $ = id => document.getElementById(id);
 const els = {
-  shell:$('appShell'), book:$('book'), cover:$('closedCover'), open:$('openBookBtn'), left:$('leftPage'), right:$('rightPage'), sheet:$('turnSheet'), status:$('pageStatus'),
+  shell:$('appShell'), book:$('book'), outer:$('bookOuter'), cover:$('closedCover'), open:$('openBookBtn'), left:$('leftPage'), right:$('rightPage'), sheet:$('turnSheet'), status:$('pageStatus'),
   mini:$('miniIndex'), count:$('indexCount'), search:$('searchInput'), audio:$('pageFlipAudio'), sound:$('soundBtn'), zoomLabel:$('zoomLabel'),
   coverBtn:$('coverBtn'), contentsBtn:$('contentsBtn'), prev:$('prevBtn'), next:$('nextBtn'), prevB:$('prevBottomBtn'), nextB:$('nextBottomBtn'), zoomOut:$('zoomOutBtn'), zoomIn:$('zoomInBtn'), zoomFit:$('zoomFitBtn')
 };
 const mqSingle = window.matchMedia('(max-width: 700px)');
 const state = {
   pages:[], cursor:0, open:false, turning:false, drag:null, search:'',
-  zoom:clamp(Number(readSetting('writing-book-zoom','1')) || 1,.72,1.55),
+  zoom:clamp(Number(readSetting('writing-book-zoom','1')) || 1,.55,1.9),
   sound:readSetting('writing-book-sound','on') !== 'off',
-  single:mqSingle.matches, workStarts:new Map(), workRanges:new Map(), focusWorkId:null
+  single:mqSingle.matches, workStarts:new Map(), workRanges:new Map(), focusWorkId:null, fitWidth:0, resizeRaf:0
 };
 
 function readSetting(k,f){try{return localStorage.getItem(k) || f}catch{return f}}
@@ -21,44 +21,170 @@ function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
 function escapeHtml(v=''){return String(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
 function metaDate(w){const bits=[]; if(w.date_written) bits.push(`Written ${w.date_written}`); if(w.date_revised) bits.push(`Revised ${w.date_revised}`); return bits.join(' • ')}
 function titleOf(w){return w.display_title || w.title || 'Untitled'}
-function splitStory(text, firstLimit=(state.single?820:1400), nextLimit=(state.single?930:1850)){
-  const paras=String(text).replace(/\r/g,'').split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean); const pages=[]; let bucket=[]; let size=0; let limit=firstLimit;
-  const flush=()=>{if(bucket.length){pages.push(bucket.join('\n\n'));bucket=[];size=0;limit=nextLimit}};
-  for(const p0 of paras){
-    let p=p0;
-    while(p.length>limit){
-      const words=p.split(/\s+/); let chunk=''; let cut=0;
-      for(let i=0;i<words.length;i++){const candidate=(chunk?chunk+' ':'')+words[i]; if(candidate.length>Math.max(650,limit-size) && chunk){cut=i;break} chunk=candidate}
-      if(!cut) cut=Math.max(1,Math.floor(words.length*.55));
-      const head=words.slice(0,cut).join(' '), tail=words.slice(cut).join(' ');
-      if(size && size+head.length>limit) flush();
-      bucket.push(head); size+=head.length+2; flush(); p=tail;
-    }
-    if(size && size+p.length>limit) flush(); bucket.push(p); size+=p.length+2;
-  }
-  flush(); return pages.length?pages:[''];
+/* Every page is tested against the actual rendered text area, not against a
+   character quota. Word boundaries remain exact source substrings. */
+function tokenEnds(source) {
+  const ends=[0]; const re=/\S+\s*|\s+/g; let hit;
+  while((hit=re.exec(source))) ends.push(re.lastIndex);
+  if(ends[ends.length-1]!==source.length) ends.push(source.length);
+  return ends;
 }
-function splitPoem(text){
-  const lines=String(text).replace(/\r/g,'').split('\n'); const pages=[]; let i=0; let cap=state.single?15:25;
-  while(i<lines.length){let end=Math.min(lines.length,i+cap); pages.push(lines.slice(i,end).join('\n')); i=end; cap=state.single?19:29}
-  return pages.length?pages:[''];
+let measurePageNode=null;
+function ensurePageProbe() {
+  if(measurePageNode && measurePageNode.parentNode===els.book) return measurePageNode;
+  const probe=document.createElement('section');
+  probe.className='page book-measure-probe';
+  probe.setAttribute('aria-hidden','true');
+  els.book.appendChild(probe); measurePageNode=probe; return probe;
+}
+function pageFits(page,index=0) {
+  const probe=ensurePageProbe(); probe.innerHTML=pageMarkup(page,index);
+  const scroll=probe.querySelector('.page-scroll');
+  if(!scroll) return true;
+  // Allow a one-pixel browser rounding difference, never discard overflow.
+  return scroll.clientHeight>0 && scroll.scrollHeight<=scroll.clientHeight+1
+    && scroll.scrollWidth<=scroll.clientWidth+1;
+}
+function paginateWork(work) {
+  const source=String(work.content??''); const ends=tokenEnds(source);
+  if(source.length===0) return [{kind:'work',work,chunk:'',startOffset:0,endOffset:0,part:1,parts:1,label:titleOf(work)}];
+  const pages=[];
+  let pos=0, startToken=0;
+  while(pos<source.length) {
+    const part=pages.length+1;
+    const make=(end)=>({kind:'work',work,chunk:source.slice(pos,end),startOffset:pos,endOffset:end,part,parts:0,label:titleOf(work)});
+    // Estimate a comfortable amount of text from the current page geometry.
+    // Usually one browser measurement is sufficient; exact overflow checks
+    // then tighten only pages that need it (especially long poem lines).
+    const pageWidth=els.book.clientWidth/(state.single?1:2);
+    const pageHeight=els.book.clientHeight;
+    const font=clamp(pageWidth*.032,12.5,17);
+    const margin=clamp(pageWidth*.064,14,40);
+    const usableWidth=Math.max(60,pageWidth-2*margin);
+    const usableHeight=Math.max(95,pageHeight-clamp(pageWidth*.061,20,40)-clamp(pageWidth*.071,27,47)-
+      (part===1?Math.max(105, font*6):Math.max(42,font*2.7)));
+    const density=work.work_type==='poem'?.78:.94;
+    const wanted=Math.max(50,Math.floor((usableWidth/(font*.52))*(usableHeight/(font*1.5))*density));
+    let low=startToken+1,high=ends.length-1;
+    while(low<high){const mid=(low+high)>>1;if(ends[mid]<pos+wanted)low=mid+1;else high=mid;}
+    const guess=Math.max(startToken+1,Math.min(ends.length-1,low));
+    let best=guess;
+    if(!pageFits(make(ends[guess]))){
+      best=startToken;let from=startToken+1,to=guess-1;
+      while(from<=to){const mid=(from+to)>>1;
+        if(pageFits(make(ends[mid]))){best=mid;from=mid+1;}else to=mid-1;}
+    }
+    // At very small sizes, a single unusually tall token still remains
+    // available via the page's own scrollable reading surface.
+    if(best===startToken) best=Math.min(startToken+1,ends.length-1);
+    let end=ends[best];
+    if(end<=pos) end=Math.min(source.length,pos+1);
+    pages.push(make(end)); pos=end;startToken=best;
+  }
+  pages.forEach((page,i)=>{page.part=i+1;page.parts=pages.length;});
+  return pages;
+}
+function paginateContents(group,label) {
+  const items=library.works.filter(w=>w.work_type===group);
+  if(!items.length)return [];
+  const pages=[]; let start=0;
+  while(start<items.length) {
+    let end=start+1;
+    for(;end<=items.length;end++) {
+      const trial={kind:'toc',group,label,items:items.slice(start,end),tocPart:1,tocParts:1};
+      if(!pageFits(trial)) break;
+    }
+    end=Math.max(start+1,end-1);
+    pages.push({kind:'toc',group,label,items:items.slice(start,end)}); start=end;
+  }
+  pages.forEach((page,i)=>{page.tocPart=i+1;page.tocParts=pages.length;});
+  return pages;
 }
 function buildPages(){
+  if(!state.open)return;
   const pages=[{kind:'title',label:'Title Page'},{kind:'about',label:'About This Collection'}];
-  const addTocPages=(group,label)=>{
-    const items=library.works.filter(w=>w.work_type===group); const perPage=state.single?(group==='poem'?8:7):items.length;
-    for(let i=0;i<items.length;i+=perPage) pages.push({kind:'toc',group,label,items:items.slice(i,i+perPage),tocPart:Math.floor(i/perPage)+1,tocParts:Math.ceil(items.length/perPage)});
-  };
-  addTocPages('poem','Poetry Contents'); addTocPages('short_story','Short Stories Contents');
-  state.workStarts.clear(); state.workRanges.clear();
+  pages.push(...paginateContents('poem','Poetry Contents'));
+  pages.push(...paginateContents('short_story','Short Stories Contents'));
+  const starts=new Map(),ranges=new Map();
   for(const work of library.works){
-    const chunks=work.work_type==='poem'?splitPoem(work.content):splitStory(work.content);
-    const start=pages.length; state.workStarts.set(work.id,start);
-    chunks.forEach((chunk,i)=>pages.push({kind:'work',work,chunk,part:i+1,parts:chunks.length,label:titleOf(work)}));
-    state.workRanges.set(work.id,{start,end:pages.length-1});
+    const start=pages.length; starts.set(work.id,start);
+    const workPages=paginateWork(work);
+    pages.push(...workPages);
+    ranges.set(work.id,{start,end:pages.length-1});
   }
   if(pages.length%2) pages.push({kind:'blank',label:'Endpaper'});
-  state.pages=pages;
+  state.workStarts=starts;state.workRanges=ranges;state.pages=pages;
+  // The final numbers are now populated; the index may be redrawn normally.
+}
+function readingAnchor(){
+  if(!state.pages.length)return {index:0};
+  const indices=state.single?[state.cursor]:[state.cursor,state.cursor+1];
+  const shown=indices.map(i=>state.pages[i]).filter(Boolean);
+  const page=shown.find(p=>p.kind==='work' && p.work.id===state.focusWorkId)
+    || shown.find(p=>p.kind==='work') || shown[0];
+  if(page?.kind==='work')return {workId:page.work.id,offset:page.startOffset||0};
+  return {kind:page?.kind,index:state.cursor,group:page?.group};
+}
+function restoreReadingAnchor(anchor){
+  if(anchor.workId){
+    const range=state.workRanges.get(anchor.workId);
+    if(range){
+      let index=range.start;
+      while(index<range.end && state.pages[index].endOffset<=anchor.offset)index++;
+      state.cursor=normalizedCursor(index);state.focusWorkId=anchor.workId;return;
+    }
+  }
+  if(anchor.kind==='toc'){
+    const index=state.pages.findIndex(p=>p.kind==='toc' && p.group===anchor.group);
+    state.cursor=normalizedCursor(index>=0?index:2);return;
+  }
+  state.cursor=normalizedCursor(anchor.index||0);
+}
+function updateBookGeometry(){
+  if(!state.open)return false;
+  const outerWidth=els.outer.clientWidth || window.innerWidth;
+  const outerHeight=els.outer.clientHeight || Math.max(480,window.innerHeight-150);
+  const single=window.innerWidth<=900 || outerWidth<820;
+  const changed=single!==state.single;
+  state.single=single;els.shell.classList.toggle('reader-single',single);
+  const ratio=single?668/1047:1336/1047;
+  const availableWidth=Math.max(180,outerWidth-34);
+  const availableHeight=Math.max(360,outerHeight-80);
+  const baseline=Math.max(195,Math.min(1120,availableWidth,availableHeight*ratio));
+  state.fitWidth=baseline;
+  const width=Math.round(baseline*state.zoom*100)/100;
+  els.book.style.width=`${width}px`;
+  const pageWidth=width/(single?1:2);
+  const variable=(key,value)=>els.book.style.setProperty(key,`${Math.round(value*100)/100}px`);
+  const margin=clamp(pageWidth*.064,14,40);
+  variable('--reader-pad-x',margin);
+  variable('--reader-pad-y',clamp(pageWidth*.061,20,40));
+  variable('--reader-pad-bottom',clamp(pageWidth*.071,27,47));
+  variable('--reader-story-font',clamp(pageWidth*.032,12.5,17));
+  variable('--reader-poem-font',clamp(pageWidth*.032,12.5,17));
+  variable('--reader-title-font',clamp(pageWidth*.054,17.5,31));
+  variable('--reader-head-font',clamp(pageWidth*.024,9.5,12));
+  variable('--reader-meta-font',clamp(pageWidth*.03,12,16));
+  variable('--reader-number-font',clamp(pageWidth*.025,10,13));
+  variable('--reader-cover-title',clamp(pageWidth*.079,25,52));
+  variable('--reader-cover-subtitle',clamp(pageWidth*.043,16,32));
+  return changed;
+}
+function reflowBook(){
+  state.resizeRaf=0;
+  if(!state.open||state.turning)return;
+  const anchor=readingAnchor();
+  updateBookGeometry();buildPages();restoreReadingAnchor(anchor);
+  renderIndex();renderCurrent();
+}
+function queueReflow(){
+  if(!state.open || state.turning || state.resizeRaf)return;
+  state.resizeRaf=requestAnimationFrame(reflowBook);
+}
+function enterBook(){
+  if(!state.open){state.open=true;els.shell.classList.add('is-open');}
+  updateBookGeometry();buildPages();
+  renderIndex();
 }
 function currentStep(){return state.single?1:2}
 function normalizedCursor(i){i=clamp(i,0,Math.max(0,state.pages.length-1)); return state.single?i:i-(i%2)}
@@ -108,13 +234,13 @@ function renderIndex(){
   els.mini.querySelectorAll('[data-index-work]').forEach(b=>b.addEventListener('click',()=>goToWork(b.dataset.indexWork))); updateIndexCurrent();
 }
 function updateIndexCurrent(){const w=visibleWork(); els.mini.querySelectorAll('[data-index-work]').forEach(b=>b.classList.toggle('is-current',!!w&&b.dataset.indexWork===w.id))}
-function goToWork(id){const p=state.workStarts.get(id); if(Number.isInteger(p)){state.focusWorkId=id;state.open=true;els.shell.classList.add('is-open');state.cursor=normalizedCursor(p);renderCurrent()}}
-function openBook(){state.focusWorkId=null;state.open=true;els.shell.classList.add('is-open');state.cursor=0;renderCurrent()}
+function goToWork(id){if(!state.open)enterBook();const p=state.workStarts.get(id); if(Number.isInteger(p)){state.focusWorkId=id;state.cursor=normalizedCursor(p);renderCurrent()}}
+function openBook(){state.focusWorkId=null;enterBook();state.cursor=0;renderCurrent()}
 function closeBook(){if(state.turning)return;state.open=false;els.shell.classList.remove('is-open');els.status.textContent='Closed cover';updateButtons()}
 function goContents(){if(!state.open)openBook(); state.focusWorkId=null; const first=state.pages.findIndex(p=>p.kind==='toc'); state.cursor=normalizedCursor(first>=0?first:0); renderCurrent()}
 function playFlipSound(progress=0){if(!state.sound)return; try{els.audio.pause();els.audio.currentTime=Math.min(.16,Math.max(0,progress*.10));els.audio.volume=.48;const p=els.audio.play();if(p&&p.catch)p.catch(()=>{})}catch{}}
 function setSound(on){state.sound=!!on;writeSetting('writing-book-sound',state.sound?'on':'off');els.sound.textContent=`Sound: ${state.sound?'On':'Off'}`;els.sound.setAttribute('aria-pressed',state.sound?'true':'false')}
-function setZoom(v){state.zoom=clamp(Math.round(v*100)/100,.72,1.55);writeSetting('writing-book-zoom',state.zoom);document.documentElement.style.setProperty('--book-zoom',state.zoom);els.zoomLabel.textContent=`${Math.round(state.zoom*100)}%`}
+function setZoom(v){state.zoom=clamp(Math.round(v*100)/100,.55,1.9);writeSetting('writing-book-zoom',state.zoom);document.documentElement.style.setProperty('--book-zoom',state.zoom);els.zoomLabel.textContent=`${Math.round(state.zoom*100)}%`;queueReflow()}
 function getTargetCursor(dir){return normalizedCursor(state.cursor+(dir==='next'?currentStep():-currentStep()))}
 function canTurn(dir){return dir==='next'?state.cursor+currentStep()<state.pages.length:state.cursor>0}
 function prepareTurn(dir){
@@ -149,24 +275,57 @@ function animateFrom(ctx,from,to,duration,commit){
 }
 function turn(dir){const ctx=prepareTurn(dir);if(!ctx)return;playFlipSound(0);animateFrom(ctx,0,1,1420,true)}
 function dragStart(ev){
-  if(state.turning||!state.open||ev.button!==0||ev.target.closest('button,input,a,select,textarea'))return;
+  if(state.turning||!state.open||ev.button!==0||ev.target.closest('button,input,a,select,textarea,[data-resize-edge]'))return;
   const rect=(state.single?els.right:(ev.currentTarget)).getBoundingClientRect(); let dir=null;
   if(state.single){const local=ev.clientX-rect.left;if(local>rect.width*.57)dir='next';else if(local<rect.width*.43)dir='prev'}else dir=ev.currentTarget===els.right?'next':'prev';
   if(!dir||!canTurn(dir))return; const ctx=prepareTurn(dir); if(!ctx)return; const source=state.single?els.right:ev.currentTarget; source.setPointerCapture(ev.pointerId);state.drag={ctx,startX:ev.clientX,lastX:ev.clientX,lastT:performance.now(),progress:0,velocity:0,source,pointerId:ev.pointerId,sounded:false};ev.preventDefault()
 }
 function dragMove(ev){const d=state.drag;if(!d||ev.pointerId!==d.pointerId)return;const rect=d.source.getBoundingClientRect();const delta=d.ctx.dir==='next'?d.startX-ev.clientX:ev.clientX-d.startX;const p=clamp(delta/Math.max(1,rect.width),0,1);const now=performance.now();d.velocity=(p-d.progress)/Math.max(1,now-d.lastT);d.progress=p;d.lastT=now;d.lastX=ev.clientX;if(p>.045&&!d.sounded){playFlipSound(p);d.sounded=true}applyTurnProgress(d.ctx.dir,p);ev.preventDefault()}
 function dragEnd(ev){const d=state.drag;if(!d||ev.pointerId!==d.pointerId)return;const commit=d.progress>.27||d.velocity>.0016;const remaining=Math.abs((commit?1:0)-d.progress);animateFrom(d.ctx,d.progress,commit?1:0,Math.max(260,920*remaining),commit)}
+/* Savanski-inspired eight-edge resizing, kept proportional so the two book
+   pages never become stretched paper. New space always triggers reflow. */
+function wireBookResize(){
+  const edges=document.querySelectorAll('[data-resize-edge]');
+  for(const handle of edges){
+    handle.addEventListener('pointerdown',ev=>{
+      if(ev.button!==0 || !state.open || state.turning)return;
+      ev.preventDefault();ev.stopPropagation();
+      const edge=handle.dataset.resizeEdge;
+      const initial={x:ev.clientX,y:ev.clientY,width:els.book.getBoundingClientRect().width,
+        height:els.book.getBoundingClientRect().height,fit:state.fitWidth};
+      handle.setPointerCapture(ev.pointerId);
+      els.book.classList.add('reader-resizing');
+      const move=e=>{
+        const dx=e.clientX-initial.x,dy=e.clientY-initial.y;
+        const x=edge.includes('e')?dx:edge.includes('w')?-dx:0;
+        const y=edge.includes('s')?dy:edge.includes('n')?-dy:0;
+        const aspect=initial.width/Math.max(1,initial.height);
+        const change=edge.length===2?(x+y*aspect)/2:edge==='e'||edge==='w'?x:y*aspect;
+        setZoom((initial.width+change)/Math.max(1,initial.fit));
+      };
+      const stop=()=>{els.book.classList.remove('reader-resizing');handle.removeEventListener('pointermove',move);handle.removeEventListener('pointerup',stop);handle.removeEventListener('pointercancel',stop);};
+      handle.addEventListener('pointermove',move);
+      handle.addEventListener('pointerup',stop);
+      handle.addEventListener('pointercancel',stop);
+    });
+    handle.addEventListener('dblclick',ev=>{ev.preventDefault();ev.stopPropagation();setZoom(1);});
+    handle.addEventListener('keydown',ev=>{if(ev.key==='ArrowRight'||ev.key==='ArrowUp'){ev.preventDefault();setZoom(state.zoom+.05)}else if(ev.key==='ArrowLeft'||ev.key==='ArrowDown'){ev.preventDefault();setZoom(state.zoom-.05)}});
+  }
+}
 function bind(){
   els.open.addEventListener('click',openBook);els.coverBtn.addEventListener('click',closeBook);els.contentsBtn.addEventListener('click',goContents);els.prev.addEventListener('click',()=>turn('prev'));els.next.addEventListener('click',()=>turn('next'));els.prevB.addEventListener('click',()=>turn('prev'));els.nextB.addEventListener('click',()=>turn('next'));
   els.sound.addEventListener('click',()=>setSound(!state.sound));els.zoomOut.addEventListener('click',()=>setZoom(state.zoom-.1));els.zoomIn.addEventListener('click',()=>setZoom(state.zoom+.1));els.zoomFit.addEventListener('click',()=>setZoom(1));
   els.search.addEventListener('input',e=>{state.search=e.target.value.trim().toLowerCase();renderIndex()});
   [els.left,els.right].forEach(p=>{p.addEventListener('pointerdown',dragStart);p.addEventListener('pointermove',dragMove);p.addEventListener('pointerup',dragEnd);p.addEventListener('pointercancel',dragEnd)});
   document.addEventListener('keydown',e=>{if(e.target.closest&&e.target.closest('input,textarea,select'))return;if(e.key==='ArrowRight')turn('next');if(e.key==='ArrowLeft')turn('prev');if(e.key==='Home')goContents();if(e.key==='Escape')closeBook();if((e.ctrlKey||e.metaKey)&&['+','=','-','0'].includes(e.key)){e.preventDefault();if(e.key==='-')setZoom(state.zoom-.1);else if(e.key==='0')setZoom(1);else setZoom(state.zoom+.1)}});
-  const changeMode=()=>{const old=state.single; if(old===mqSingle.matches)return; const current=pageWork(state.cursor)||pageWork(state.cursor+1); state.single=mqSingle.matches; buildPages(); state.cursor=current&&state.workStarts.has(current.id)?normalizedCursor(state.workStarts.get(current.id)):normalizedCursor(0); renderIndex(); renderCurrent()}; mqSingle.addEventListener?mqSingle.addEventListener('change',changeMode):mqSingle.addListener(changeMode)
+  const onWindowChange=()=>queueReflow();window.addEventListener('resize',onWindowChange);
+  if('ResizeObserver' in window){const observer=new ResizeObserver(()=>queueReflow());observer.observe(els.outer);}
+  if(document.fonts?.ready)document.fonts.ready.then(queueReflow).catch(()=>{});
+  wireBookResize();
 }
 function debugAudit(){
   const seen=new Map(); for(const p of state.pages){if(p.kind==='work'){seen.set(p.work.id,(seen.get(p.work.id)||'')+p.chunk.replace(/\n\n/g,'\n\n'))}} return {pageCount:state.pages.length,workCount:library.works.length,workStarts:Object.fromEntries(state.workStarts),single:state.single}
 }
-buildPages();bind();renderIndex();setZoom(state.zoom);setSound(state.sound);updateButtons();
-window.__WRITING_BOOK__={state,library,goToWork,openBook,renderCurrent,debugAudit,pageMarkup};
+bind();renderIndex();setZoom(state.zoom);setSound(state.sound);updateButtons();
+window.__WRITING_BOOK__={state,library,goToWork,openBook,renderCurrent,debugAudit,pageMarkup,reflowBook,pageFits,setZoom};
 })();
