@@ -7,8 +7,31 @@
   "noExternalRequests": true,
   "photoCount": 177,
   "soundtrack": {
-    "src": "assets/audio/For_Mom_Classical_Tribute.mp3",
+    "segments": [
+      {
+        "src": "assets/audio/Pachelbel - Canon.mp3",
+        "start": 0,
+        "end": 369.5371,
+        "duration": 369.5371,
+        "title": "Canon in D"
+      },
+      {
+        "src": "assets/audio/Beethoven - Für Elise.mp3",
+        "start": 367.3371,
+        "end": 535.0859,
+        "duration": 167.7488,
+        "title": "Für Elise"
+      },
+      {
+        "src": "assets/audio/clair-de-lune-debussy.mp3",
+        "start": 532.8859,
+        "end": 816.718367,
+        "duration": 283.832467,
+        "title": "Clair de Lune"
+      }
+    ],
     "duration": 816.718367,
+    "joinOverlapSeconds": 2.2,
     "crossfades": [
       {
         "between": [
@@ -255,7 +278,10 @@
       "assets/images/p176.jpg"
     ],
     "assets/audio": [
-      "assets/audio/For_Mom_Classical_Tribute.mp3"
+      "assets/audio/Pachelbel - Canon.mp3",
+      "assets/audio/Beethoven - Für Elise.mp3",
+      "assets/audio/clair-de-lune-debussy.mp3"
     ]
-  }
+  },
+  "soundtrackSplitForGitHub": true
 }
