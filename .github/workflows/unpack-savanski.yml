@@ -1,0 +1,92 @@
+name: Unpack Savanski Keyboard upload
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'keyboard/Savanski_Keyboard_unified*.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: savanski-unpack-main
+  cancel-in-progress: false
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Verify archive and extract into keyboard
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import shutil, stat, zipfile
+
+          folder = Path('keyboard')
+          archives = sorted(folder.glob('Savanski_Keyboard_unified*.zip'))
+          if not archives:
+              print('No Savanski ZIP found. No change necessary.')
+              raise SystemExit(0)
+          if len(archives) != 1:
+              raise SystemExit('Multiple Savanski ZIP files found; keep only the latest.')
+          archive = archives[0]
+          print('Checking', archive)
+          allowed_roots = {'assets', 'docs', 'json', 'script', 'style',
+                           'keyboard.html', 'service-worker.js', 'manifest.webmanifest'}
+          required = {'keyboard.html', 'service-worker.js', 'manifest.webmanifest'}
+          with zipfile.ZipFile(archive) as z:
+              entries = [v for v in z.infolist() if not v.is_dir()]
+              names = [v.filename for v in entries]
+              if len(entries) < 30 or len(entries) > 2500:
+                  raise SystemExit('Unexpected file count')
+              if len(set(names)) != len(names):
+                  raise SystemExit('Duplicate archive paths')
+              if not required.issubset(names):
+                  raise SystemExit('Missing required web app files')
+              if sum(n.startswith('assets/audio/') and n.endswith('.wav') for n in names) < 700:
+                  raise SystemExit('Expected Savanski sound clips are missing')
+              if sum(n.lower().endswith('.html') for n in names) != 1:
+                  raise SystemExit('Exactly one HTML file required')
+              if sum(v.file_size for v in entries) > 120_000_000:
+                  raise SystemExit('Archive too large')
+              for info in entries:
+                  name = info.filename
+                  p = PurePosixPath(name)
+                  mode = (info.external_attr >> 16) & 0o170000
+                  if (not name or '\\' in name or p.is_absolute() or
+                      '..' in p.parts or p.parts[0] not in allowed_roots or
+                      mode == stat.S_IFLNK or name.lower().endswith(('.gs', '.bat', '.cmd'))):
+                      raise SystemExit('Disallowed archive entry: ' + name)
+              # Only write after checking all entries.
+              for info in entries:
+                  p = PurePosixPath(info.filename)
+                  dst = folder.joinpath(*p.parts)
+                  dst.parent.mkdir(parents=True, exist_ok=True)
+                  with z.open(info) as source, dst.open('wb') as target:
+                      shutil.copyfileobj(source, target)
+          (folder / 'hello').unlink(missing_ok=True)
+          archive.unlink()
+          print('Extracted', len(entries), 'files, removed placeholder and ZIP')
+          PY
+
+      - name: Commit unpacked files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A keyboard/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Unpack Savanski Keyboard frontend and assets; remove hello placeholder"
+            git push origin HEAD:main
+          fi
