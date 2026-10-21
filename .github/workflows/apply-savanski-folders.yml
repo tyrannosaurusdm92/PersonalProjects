@@ -1,0 +1,76 @@
+name: Apply Savanski folder uploads
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'keyboard/.savanski-stage/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: savanski-folder-uploads
+  cancel-in-progress: false
+
+jobs:
+  apply-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Expand one staged folder
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, io, pathlib, tarfile, stat
+          root=pathlib.Path('keyboard')
+          stage=root/'.savanski-stage'
+          packages=sorted(stage.glob('*.tgz.b64')) if stage.exists() else []
+          if not packages:
+              print('No staged folders')
+              raise SystemExit(0)
+          if len(packages)!=1:
+              raise SystemExit('Expected exactly one staged folder at a time')
+          pkg=packages[0]
+          kind=pkg.name[:-len('.tgz.b64')]
+          approved={'docs','style','script','json','assets-images','assets-audio','root'}
+          if kind not in approved:
+              raise SystemExit('Unknown bundle name')
+          payload=base64.b64decode(pkg.read_text(encoding='ascii').strip(),validate=True)
+          with tarfile.open(fileobj=io.BytesIO(payload),mode='r:gz') as tf:
+              members=tf.getmembers()
+              if not members or len(members)>1200:
+                  raise SystemExit('Invalid file count')
+              for member in members:
+                  if not member.isfile() or member.size>20_000_000:
+                      raise SystemExit('Unsupported tar file entry')
+                  parts=pathlib.PurePosixPath(member.name).parts
+                  if (not parts or '..' in parts or member.name.startswith('/') or
+                      member.name.startswith('\\') or '\\' in member.name):
+                      raise SystemExit('Invalid path')
+                  prefix=parts[0] if kind=='root' else {
+                      'assets-images':'assets/images', 'assets-audio':'assets/audio'
+                  }.get(kind,kind)
+                  if not (member.name.startswith(prefix+'/') if kind!='root' else member.name in {'keyboard.html','service-worker.js','manifest.webmanifest'}):
+                      raise SystemExit('Unexpected folder: '+member.name)
+              for member in members:
+                  dest=root.joinpath(*pathlib.PurePosixPath(member.name).parts)
+                  dest.parent.mkdir(parents=True,exist_ok=True)
+                  with tf.extractfile(member) as src, dest.open('wb') as out:
+                      import shutil; shutil.copyfileobj(src,out)
+          pkg.unlink()
+          print('Installed',len(members),'files from',kind)
+          PY
+      - name: Commit unpacked folder
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A keyboard/
+          if ! git diff --cached --quiet; then
+            git commit -m "Unpack Savanski Keyboard folder"
+            git push origin HEAD:main
+          fi
