@@ -1,0 +1,76 @@
+name: Install Savanski Audio Themes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'keyboard/.savanski-stage/audio-*.ready'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: savanski-audio-theme
+  cancel-in-progress: false
+
+jobs:
+  unpack-audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Validate and install one audio theme
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, io, json, pathlib, shutil, tarfile
+          root = pathlib.Path('keyboard')
+          stage = root / '.savanski-stage'
+          ready_files = sorted(stage.glob('audio-*.ready'))
+          if len(ready_files) != 1:
+              raise SystemExit('Expected exactly one ready audio theme')
+          ready = ready_files[0]
+          theme = ready.name[len('audio-'):-len('.ready')]
+          if theme not in {'asmr','classic','computer','iphone','laptop','studio','typing'}:
+              raise SystemExit('Unsupported theme')
+          expected = json.loads(ready.read_text('utf-8'))
+          part_dir = root / '.savanski-parts' / ('audio-' + theme)
+          parts = sorted(part_dir.glob('part*.txt'))
+          if len(parts) != expected['parts']:
+              raise SystemExit('Missing transfer parts')
+          data = ''.join(p.read_text('ascii').strip() for p in parts)
+          payload = base64.b64decode(data, validate=True)
+          if hashlib.sha256(payload).hexdigest() != expected['sha256']:
+              raise SystemExit('Audio SHA-256 mismatch')
+          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:xz') as tar:
+              members = tar.getmembers()
+              if len(members) != expected['files'] or len(members) > 250:
+                  raise SystemExit('Unexpected audio file count')
+              for member in members:
+                  path = pathlib.PurePosixPath(member.name)
+                  if (not member.isfile() or '..' in path.parts or path.is_absolute()
+                          or len(path.parts) != 4 or path.parts[:3] != ('assets','audio',theme)
+                          or path.suffix.lower() not in {'.wav','.mp3','.ogg'}
+                          or member.size > 10_000_000):
+                      raise SystemExit('Unsafe or unexpected audio path')
+              for member in members:
+                  dest = root.joinpath(*pathlib.PurePosixPath(member.name).parts)
+                  dest.parent.mkdir(parents=True, exist_ok=True)
+                  with tar.extractfile(member) as src, dest.open('wb') as out:
+                      shutil.copyfileobj(src,out)
+          for part in parts:
+              part.unlink()
+          part_dir.rmdir()
+          ready.unlink()
+          print(f'Installed {len(members)} audio files for {theme}')
+          PY
+      - name: Commit extracted audio files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A keyboard/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add Savanski preset audio theme"
+            git push origin HEAD:main
+          fi
