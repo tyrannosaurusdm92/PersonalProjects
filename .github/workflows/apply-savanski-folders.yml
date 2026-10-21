@@ -29,6 +29,19 @@ jobs:
           import base64, io, pathlib, tarfile, stat
           root=pathlib.Path('keyboard')
           stage=root/'.savanski-stage'
+          staged_parts=[]
+          ready=stage/'script.ready'
+          if ready.exists():
+              import hashlib
+              staged_parts=sorted((root/'.savanski-parts/script').glob('part*.txt'))
+              if len(staged_parts)!=6:
+                  raise SystemExit('Missing script transfer chunks')
+              transfer=''.join(p.read_text(encoding='ascii').strip() for p in staged_parts)
+              binary=base64.b64decode(transfer,validate=True)
+              if hashlib.sha256(binary).hexdigest()!=ready.read_text().strip():
+                  raise SystemExit('Script payload checksum mismatch')
+              staged_pkg=stage/'script.tgz.b64'
+              staged_pkg.write_text(transfer,encoding='ascii')
           packages=sorted(stage.glob('*.tgz.b64')) if stage.exists() else []
           if not packages:
               print('No staged folders')
@@ -63,6 +76,10 @@ jobs:
                   with tf.extractfile(member) as src, dest.open('wb') as out:
                       import shutil; shutil.copyfileobj(src,out)
           pkg.unlink()
+          if staged_parts:
+              ready.unlink()
+              for part in staged_parts:
+                  part.unlink()
           print('Installed',len(members),'files from',kind)
           PY
       - name: Commit unpacked folder
