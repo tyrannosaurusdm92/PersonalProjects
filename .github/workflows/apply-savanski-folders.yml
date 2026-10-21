@@ -41,7 +41,7 @@ jobs:
           if kind not in approved:
               raise SystemExit('Unknown bundle name')
           payload=base64.b64decode(pkg.read_text(encoding='ascii').strip(),validate=True)
-          with tarfile.open(fileobj=io.BytesIO(payload),mode='r:gz') as tf:
+          with tarfile.open(fileobj=io.BytesIO(payload),mode='r:*') as tf:
               members=tf.getmembers()
               if not members or len(members)>1200:
                   raise SystemExit('Invalid file count')
