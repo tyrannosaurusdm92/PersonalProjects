@@ -6,13 +6,13 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 54,770 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 67,531 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 60,171 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 74,156 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 74,133 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 62,347 |
-| **Total** | **Six connected novels** | **300 / 300** | **393,108** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 55,858 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 67,844 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 62,119 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 74,498 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 74,460 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 64,447 |
+| **Total** | **Six connected novels** | **300 / 300** | **399,226** |
 
 *Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is achieved; prose-depth parity still warrants editorial revision of older, shorter chapters, especially Maui chapters 1–10.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
@@ -32,7 +32,13 @@ Previous passes added 6 + 12 + 12 + 18 + 23 = 71 prose chapters, bringing the ea
 
 **13 additional existing chapters revised directly on `main`, without a new branch or pull request.** The revised chapters are Maui **2, 7, 9, 10**; Severus **34**; Iroh **31, 35, 40**; Love & Duty **48**; Danse **48**; Greg **25, 31, 40**. Each has deeper dialogue, practical consequences, and stronger lived-world / homeworld boundaries. The source JSON, all six manifests, catalog and offline reader are synchronized. Every novel still has 50 chapters; no endings or earlier ethical non-monogamy disclosures were erased.
 
-**Current manuscript metadata:** **393,108 words** across **300 written chapters**, with **10 chapters below 700 words** and **99 below the 1,200-word editorial guideline**. Chapter-count parity is complete. Scene-density parity remains a separate goal, not something solved by a few word-count increases. Read `docs/LANTERNWEALD_PASS8_CONTINUITY.md` and `docs/PROSE_DEPTH_PARITY_AUDIT.md` for the new canon notes and next editing priorities.
+**Historical eighth-pass metadata:** **393,108 words** across 300 written chapters, with 10 below 700 words and 99 below the 1,200-word editorial guideline. The ninth-pass status below supersedes these counts. Chapter-count parity is complete. Scene-density parity remains a separate goal, not something solved by a few word-count increases. Read `docs/LANTERNWEALD_PASS8_CONTINUITY.md` and `docs/PROSE_DEPTH_PARITY_AUDIT.md` for the new canon notes and next editing priorities.
+
+## Ninth editorial revision pass
+
+**12 existing chapters revised and published directly on `main` without a new branch or pull request.** Maui **43, 48**; Severus **48**; Iroh **32, 36, 38**; Love & Duty **47**; Danse **47**; Greg **24, 28, 34, 35**. The ninth pass replaces repetitive Iroh and Greg narration with genuine, differentiated scenes; expands community accountability, accessible festivals and civic records; and preserves chosen polyamory, consent and non-explicit intimate fade-to-black. The canonical JSON files, six manifests, catalog, and offline reader all include the updated text.
+
+**Current manuscript metadata:** **399,226 words**, 300 complete chapters, **7 below 700 words** and **87 below 1,200 words**. This is progress, not a claim that every chapter has identical depth. See `docs/LANTERNWEALD_PASS9_CONTINUITY.md` for seasonal district life, homeworld distinctions and interdependent resident systems, and `docs/PROSE_DEPTH_PARITY_AUDIT.md` for current editorial priorities.
 
 ## How to read
 
@@ -55,8 +61,10 @@ Script load order is important because each successive JavaScript file adds real
 13. `js/lanternweald-revisions-pass7-b.js` — revised Severus, Love & Duty, Danse and Greg prose overrides
 14. `js/lanternweald-revisions-pass8-a.js` — Maui and Iroh eighth-pass prose revisions
 15. `js/lanternweald-revisions-pass8-b.js` — Severus, Love & Duty, Danse and Greg eighth-pass prose revisions
-16. `js/app.js` — chapter renderer and progress
-17. `js/floating-book.js` — animated cover interactions
+16. `js/lanternweald-revisions-pass9-a.js` — ninth-pass Maui and Iroh text overrides
+17. `js/lanternweald-revisions-pass9-b.js` — ninth-pass Severus, Love & Duty, Danse and Greg text overrides
+18. `js/app.js` — chapter renderer and progress
+19. `js/floating-book.js` — animated cover interactions
 
 Each novel also contains `json/<fandom>/<series>/<number>.json` source chapters and a `series.json` manifest recording all 50 IDs, next links, titles, and word counts. `json/fandoms.json` records the six-series catalog. The reader works locally using embedded chapter content, rather than relying on `fetch()` for file:// chapter loading.
 
@@ -72,6 +80,7 @@ The Lanternweald's seven original districts share finite resources, schedules, l
 - `docs/LANTERNWEALD_PASS6_CONTINUITY.md` — sixth novel completion, civic atlas, open mysteries and future scene anchors
 - `docs/LANTERNWEALD_PASS7_CONTINUITY.md` — strengthened scene logic and new resident details across all six novels
 - `docs/LANTERNWEALD_PASS8_CONTINUITY.md` — eighth-pass shared-world consequences, chronology and relationship continuity
+- `docs/LANTERNWEALD_PASS9_CONTINUITY.md` — ninth-pass seven-district daily life, seasonal rhythms, evidence corrections and mutual romance consent
 - `json/lanternweald-living-world-registry.json` — structured seven-district and resident continuity registry
 - `docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md` — 300 marked-written beat summaries for editorial navigation
 
