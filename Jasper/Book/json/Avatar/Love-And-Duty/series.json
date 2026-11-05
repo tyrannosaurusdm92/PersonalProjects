@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "In a postwar Cranefish Town becoming something new, an adult nonbender reader finds themself drawn into Aang, Katara, and Toph’s complicated orbit. Love grows through reconstruction work, public scrutiny, cultural preservation, arguments, chosen boundaries, and the daily work of building a home where nobody has to disappear to belong.",
   "canon_window": "Adult postwar timeline only: Jasper, Aang, Katara, and Toph are explicitly adults before romance/private-interlude content. Their original minor-era canon versions are never used for adult intimacy.",
-  "chapter_count": 47,
-  "total_word_count": 69917,
+  "chapter_count": 50,
+  "total_word_count": 72956,
   "story_bible": [
     "This postwar polycule story is built through reconstruction work, public responsibility, cultural difference, arguments, chosen boundaries, and ordinary domestic labor.",
     "Aang, Katara, and Toph must remain three distinct people with separate needs, humor, histories, responsibilities, and relationships with Jasper; never collapse them into one collective partner voice.",
@@ -450,6 +450,33 @@
       "id": "love-and-duty-47",
       "word_count": 1127,
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "love-and-duty-48"
+    },
+    {
+      "number": 48,
+      "file": "48.json",
+      "title": "Water for the Other Side",
+      "id": "love-and-duty-48",
+      "word_count": 1040,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "love-and-duty-49"
+    },
+    {
+      "number": 49,
+      "file": "49.json",
+      "title": "Four People, Four Answers",
+      "id": "love-and-duty-49",
+      "word_count": 1025,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "love-and-duty-50"
+    },
+    {
+      "number": 50,
+      "file": "50.json",
+      "title": "A Home with Doors",
+      "id": "love-and-duty-50",
+      "word_count": 974,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -460,8 +487,8 @@
   },
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 47,
-    "planned_not_yet_written": 3,
+    "completed_chapters": 50,
+    "planned_not_yet_written": 0,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {

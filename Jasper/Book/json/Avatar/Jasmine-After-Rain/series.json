@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
-  "chapter_count": 47,
-  "total_word_count": 53106,
+  "chapter_count": 50,
+  "total_word_count": 56103,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -448,6 +448,33 @@
       "id": "avatar-47",
       "word_count": 1124,
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "avatar-48"
+    },
+    {
+      "number": 48,
+      "file": "48.json",
+      "title": "The Dragon and the Demigod",
+      "id": "avatar-48",
+      "word_count": 963,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "avatar-49"
+    },
+    {
+      "number": 49,
+      "file": "49.json",
+      "title": "The Bell at Daybreak",
+      "id": "avatar-49",
+      "word_count": 1004,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "avatar-50"
+    },
+    {
+      "number": 50,
+      "file": "50.json",
+      "title": "Tea for Whoever Returns",
+      "id": "avatar-50",
+      "word_count": 1030,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -458,8 +485,8 @@
   },
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 47,
-    "planned_not_yet_written": 3,
+    "completed_chapters": 50,
+    "planned_not_yet_written": 0,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {
