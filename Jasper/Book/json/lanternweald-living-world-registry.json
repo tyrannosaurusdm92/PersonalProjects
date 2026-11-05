@@ -450,6 +450,21 @@
       "name": "Ellis",
       "role": "Beach City community reporter",
       "agency": "Can revise a piece to cover cleanup work while respecting private romantic lives"
+    },
+    {
+      "name": "Alva",
+      "role": "Beach City car-wash pump technician",
+      "agency": "May set realistic repair times, charge for safe seal replacement and refuse unsafe shortcuts"
+    },
+    {
+      "name": "Lian",
+      "role": "Ba Sing Se courtyard neighbor",
+      "agency": "Has a right to keep her delivery path clear and decline spreading garden cuttings"
+    },
+    {
+      "name": "Beren",
+      "role": "Lanternweald cart driver and route tester",
+      "agency": "Can report unsafe narrow turns and participate in revising delivery routes"
     }
   ],
   "recurring_events": [
@@ -504,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 7,
+  "editorial_revision_pass": 8,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -574,6 +589,108 @@
     {
       "district": "starwake-pier",
       "premise": "A performer stops when their chosen shift ends"
+    }
+  ],
+  "revised_chapter_count_this_pass": 13,
+  "revised_chapter_slots_by_series_pass8": {
+    "the-shore-i-choose": [
+      2,
+      7,
+      9,
+      10
+    ],
+    "after-always": [
+      34
+    ],
+    "jasmine-after-rain": [
+      31,
+      35,
+      40
+    ],
+    "love-and-duty": [
+      48
+    ],
+    "what-the-armor-leaves-behind": [
+      48
+    ],
+    "stars-between-the-strings": [
+      25,
+      31,
+      40
+    ]
+  },
+  "manifest_word_count": 393108,
+  "community_dependency_graph": [
+    {
+      "from": "tideglass-cove",
+      "to": "lanternwell-square",
+      "type": "sheltered evacuation and market food",
+      "limit": "Tide markers and lanterns must be tested before access can be announced"
+    },
+    {
+      "from": "brasswatch-yard",
+      "to": "lanternwell-square",
+      "type": "backup power and safe lighting",
+      "limit": "Written load limits, trained teams, wet-junction restrictions"
+    },
+    {
+      "from": "riverstone-terrace",
+      "to": "lanternwell-square",
+      "type": "bridge transport and water distribution",
+      "limit": "Residents' actual reach, handling and route information supersede convenient totals"
+    },
+    {
+      "from": "moonroot-archive",
+      "to": "tideglass-cove",
+      "type": "historical maintenance evidence",
+      "limit": "Upper inspection permissions do not reopen old lower flood barrier"
+    },
+    {
+      "from": "starwake-pier",
+      "to": "brasswatch-yard",
+      "type": "instruments and repair contracts",
+      "limit": "Artist permission and paid labor required"
+    }
+  ],
+  "homeworld_boundaries": [
+    {
+      "world": "Ba Sing Se / Fire Nation",
+      "local_people": [
+        "Iroh",
+        "Zuko",
+        "Mina",
+        "Lian"
+      ],
+      "rules": [
+        "Iroh advises without governing Zuko's citizens",
+        "Shop staff retain paid schedules",
+        "Weather and time do not automatically follow the vale"
+      ]
+    },
+    {
+      "world": "Beach City",
+      "local_people": [
+        "Greg Universe",
+        "Steven",
+        "Alva"
+      ],
+      "rules": [
+        "Car-wash customers may ask for refunds",
+        "Gems' emergencies can affect plans without giving them authority over relationships",
+        "Local stargazing sky differs from Lanternweald"
+      ]
+    },
+    {
+      "world": "Hogwarts / St Mungo's",
+      "local_people": [
+        "Severus Snape",
+        "Madam Pomfrey"
+      ],
+      "rules": [
+        "Medical incident statements are private",
+        "Experimental potion research requires independent review",
+        "Moonroot public archives do not inherit private medical records"
+      ]
     }
   ]
 }
