@@ -290,3 +290,78 @@ body.azara-viewer-active .main{width:100%}
 .admin-viewer-preview{display:inline-block;color:#dff!important;border:1px solid var(--cyan);background:#103b42;padding:7px 10px;text-decoration:none;margin-bottom:7px}
 .admin-viewer-preview:hover,.admin-viewer-preview:focus{color:#ccffac!important;border-color:var(--lime)}
 @media(max-width:900px){body.azara-viewer-active .shell{max-width:100%}body.azara-viewer-active .layout{padding:4px}.azara-fixed-page iframe{height:max(650px,calc(100vh - 155px))}}
+
+/* Linktree-style Connect/Donate cards and payment QR dialog */
+.linktree-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));
+  gap:10px
+}
+.linktree-card{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:12px;
+  min-height:150px;
+  background:var(--paper-2);
+  border:3px double var(--teal);
+  color:#08251e
+}
+.linktree-card h3{margin:0 0 6px;color:#005a72;font-size:15px}
+.linktree-card p{margin:0 0 8px}
+.linktree-card .button{margin-top:auto}
+.payment-card{border-color:#08745b}
+.payment-card h3{font-size:18px}
+.payment-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.payment-actions .button{margin-top:0}
+.donation-story{
+  padding:12px 14px;
+  border:3px double var(--teal);
+  background:var(--paper-2);
+  color:#08251e
+}
+.donation-story p:last-child{margin-bottom:0}
+.donation-goal{
+  padding:10px;
+  border-left:5px solid #08745b;
+  background:#e7fff2;
+  font-size:18px
+}
+.donation-goal strong{color:#075a43;font-size:24px}
+.qr-desktop-only{font:inherit}
+.donation-qr-dialog{
+  width:min(440px,calc(100vw - 28px));
+  max-width:440px;
+  max-height:calc(100dvh - 28px);
+  overflow:auto;
+  padding:0;
+  border:3px double var(--cyan);
+  background:#071419;
+  color:#efffff;
+  box-shadow:0 18px 50px rgba(0,0,0,.7)
+}
+.donation-qr-dialog::backdrop{background:rgba(0,8,12,.82)}
+.donation-qr-content .module-head{margin:-1px -1px 0}
+.donation-qr-content .module-body{text-align:center}
+.qr-code-frame{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:264px;
+  min-height:264px;
+  max-width:100%;
+  margin:12px auto;
+  padding:12px;
+  background:white;
+  border:2px solid #001e24
+}
+.qr-code-frame img,.qr-code-frame canvas{
+  display:block;
+  width:240px;
+  height:240px;
+  max-width:100%;
+  object-fit:contain
+}
+@media(max-width:760px),(hover:none) and (pointer:coarse){
+  .qr-desktop-only{display:none}
+}

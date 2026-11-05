@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){
   'use strict';
   const $=(s,r=document)=>r.querySelector(s);
   const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
-  const pageTitles={"home":"Home","about":"About Me","love":"Jasper & Home","writing":"Writing & Music","projects":"Projects","azara":"Aza'ra Project","azara-solar-system":"Solar System","azara-constellations":"Constellations","azara-language-building":"Language Building","interests":"Things I Love","links":"Connect"};
+  const pageTitles={"home":"Home","links":"Connect/Donate","about":"About Me","love":"Jasper & Home","writing":"Writing & Music","projects":"Projects","azara":"Aza'ra Project","azara-solar-system":"Solar System","azara-constellations":"Constellations","azara-language-building":"Language Building","interests":"Things I Love"};
   const validPages=Object.keys(pageTitles);
   const masterNav=$('#masterNav');
   const masterToggle=$('#masterToggle');
@@ -180,7 +180,44 @@ document.addEventListener('DOMContentLoaded',function(){
     showPage(a.dataset.page,{focusMain:true});
     if(innerWidth<1250)setCollapsed(masterNav,masterToggle,true);
   }));
-  $$('.page-link').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.pageTarget,{focusMain:true})));
+  $('.page-link').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.pageTarget,{focusMain:true})));
+
+  const donationQrDialog=$('#donationQrDialog');
+  const donationQrCode=$('#donationQrCode');
+  const donationQrTitle=$('#donationQrTitle');
+  const donationQrLink=$('#donationQrLink');
+  function closeDonationQr(){
+    if(typeof donationQrDialog.close==='function') donationQrDialog.close();
+    else donationQrDialog.removeAttribute('open');
+  }
+  $('[data-donation-qr]').forEach(button=>button.addEventListener('click',()=>{
+    const method=button.dataset.method;
+    const url=button.dataset.qrUrl;
+    donationQrCode.replaceChildren();
+    donationQrTitle.textContent=method+' donation QR code';
+    donationQrLink.href=url;
+    donationQrLink.textContent='Open '+method;
+    try{
+      if(typeof QRCode==='undefined') throw new Error('QRCode library unavailable');
+      new QRCode(donationQrCode,{
+        text:url,
+        width:240,
+        height:240,
+        colorDark:'#001e24',
+        colorLight:'#ffffff',
+        correctLevel:QRCode.CorrectLevel.M
+      });
+    }catch(error){
+      donationQrCode.textContent='The QR code could not be loaded. Use the direct payment link below.';
+    }
+    if(typeof donationQrDialog.showModal==='function') donationQrDialog.showModal();
+    else donationQrDialog.setAttribute('open','');
+  }));
+  $('#closeDonationQr')?.addEventListener('click',closeDonationQr);
+  donationQrDialog?.addEventListener('click',event=>{
+    if(event.target===donationQrDialog) closeDonationQr();
+  });
+
 
   function collectSearchMatches(q){
     const needle=q.trim().toLowerCase();
