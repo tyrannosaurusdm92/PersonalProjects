@@ -10,8 +10,8 @@
   "reader_character": "Jasper, adult first-person reader protagonist",
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
-  "chapter_count": 15,
-  "total_word_count": 12614,
+  "chapter_count": 23,
+  "total_word_count": 22427,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -149,13 +149,85 @@
       "word_count": 1275,
       "id": "maui-15",
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-16"
+    },
+    {
+      "number": 16,
+      "file": "16.json",
+      "title": "The Sea Glass Orchard",
+      "id": "maui-16",
+      "word_count": 1293,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-17"
+    },
+    {
+      "number": 17,
+      "file": "17.json",
+      "title": "A Lantern for the Absent",
+      "id": "maui-17",
+      "word_count": 1285,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-18"
+    },
+    {
+      "number": 18,
+      "file": "18.json",
+      "title": "One Door Closed by Choice",
+      "id": "maui-18",
+      "word_count": 1147,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-19"
+    },
+    {
+      "number": 19,
+      "file": "19.json",
+      "title": "The Apprenticeship of Asking",
+      "id": "maui-19",
+      "word_count": 1262,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-20"
+    },
+    {
+      "number": 20,
+      "file": "20.json",
+      "title": "The Second Bell",
+      "id": "maui-20",
+      "word_count": 1221,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-21"
+    },
+    {
+      "number": 21,
+      "file": "21.json",
+      "title": "The Guest Who Stayed",
+      "id": "maui-21",
+      "word_count": 1228,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-22"
+    },
+    {
+      "number": 22,
+      "file": "22.json",
+      "title": "Tea, Salt and Smoke",
+      "id": "maui-22",
+      "word_count": 1160,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-23"
+    },
+    {
+      "number": 23,
+      "file": "23.json",
+      "title": "The Wrong Kind of Hero",
+      "id": "maui-23",
+      "word_count": 1217,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 15,
-    "planned_not_yet_written": 35,
+    "completed_chapters": 23,
+    "planned_not_yet_written": 27,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {

@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
-  "chapter_count": 45,
-  "total_word_count": 61128,
+  "chapter_count": 47,
+  "total_word_count": 63421,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -430,6 +430,24 @@
       "word_count": 1180,
       "id": "after-always-45",
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "after-always-46"
+    },
+    {
+      "number": 46,
+      "file": "46.json",
+      "title": "A Book That Would Not Burn",
+      "id": "after-always-46",
+      "word_count": 1201,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "after-always-47"
+    },
+    {
+      "number": 47,
+      "file": "47.json",
+      "title": "A Teacher, Not a Verdict",
+      "id": "after-always-47",
+      "word_count": 1092,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -440,8 +458,8 @@
   },
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 45,
-    "planned_not_yet_written": 5,
+    "completed_chapters": 47,
+    "planned_not_yet_written": 3,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {
