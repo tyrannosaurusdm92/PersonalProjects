@@ -3,7 +3,7 @@
   "work_type": "fanfiction_chapter",
   "author": "William Saville",
   "fandom": "Harry Potter",
-  "pairing": "after-always",
+  "pairing": "Severus Snape / Jasper",
   "reader_character": "Jasper — adult named first-person reader protagonist; they/them in external reference",
   "rating": "Teen",
   "series_slug": "after-always",
@@ -21,5 +21,13 @@
     "threadway": "The Moonroot Door"
   },
   "publication_status": "complete_prose",
-  "next_chapter_id": null
+  "next_chapter_id": null,
+  "series_title": "After Always",
+  "series_path": "HP/After-Always",
+  "date_written": "2026-11-04",
+  "date_revised": "2026-11-04",
+  "content_notes": [
+    "Non-graphic romance, character-specific relationship consent, cross-world civic conflicts"
+  ],
+  "writer_style_profile": "json/william-writing-style.json"
 }
