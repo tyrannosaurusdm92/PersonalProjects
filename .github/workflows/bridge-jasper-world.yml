@@ -1,0 +1,40 @@
+name: Integrate Jasper fanfictions into the Lanternweald
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Jasper/Book/tools/bridge_world.py'
+      - '.github/workflows/bridge-jasper-world.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jasper-lanternweald-bridge
+  cancel-in-progress: false
+
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Apply authored world bridges and rebuild reader
+        run: python3 Jasper/Book/tools/bridge_world.py
+      - name: Commit Step 3 shared world
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A Jasper/Book/
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Step 3: integrate five fanfictions in original shared Lanternweald setting"
+            git push origin HEAD:main
+          fi
