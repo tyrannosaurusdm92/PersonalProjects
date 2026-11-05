@@ -6,13 +6,13 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 49,293 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 66,199 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 56,103 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 72,956 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 73,063 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 59,746 |
-| **Total** | **Six connected novels** | **300 / 300** | **377,360** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 52,186 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 67,176 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 58,628 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 73,812 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 73,815 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 61,212 |
+| **Total** | **Six connected novels** | **300 / 300** | **386,829** |
 
 *Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is achieved; prose-depth parity still warrants editorial revision of older, shorter chapters, especially Maui chapters 1–10.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
@@ -21,6 +21,12 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 **19 full Maui chapters, 32–50, committed directly to `main` without a new branch or pull request.** This completed the sixth novel. They develop a revisable relationship agreement; Greg and Danse crossovers; public boundaries around private polyamory; archive testimony; a joint bridge maintenance funding agreement; a carefully inspected seventh-scratch maintenance chamber; flood and emergency decisions; a non-heroic community celebration; Jasper's chosen memory exploration; a storm-tested temporary surface water channel; a public archive ledger retaining unresolved evidence; Tomas's voluntary return; and a non-exclusive, tender ending with Maui.
 
 Previous passes added 6 + 12 + 12 + 18 + 23 = 71 prose chapters, bringing the earlier 210-chapter library to 281. Pass six added the final 19, for **300 complete prose chapter files**. All other five novels had already received chapter-50 conclusions in pass five; pass six does not rewrite or erase them.
+
+## Seventh editorial revision pass
+
+**19 chapters revised directly on `main`; the six 50-chapter sequences and their endings remain intact.** This is a prose-depth pass, not a seventh chapter-creation expansion. Five early Maui chapters, four Iroh chapters, four Greg chapters and two each from Severus, Love & Duty and Danse received deeper scenes, actual conversations and more distinct environmental/relationship consequences. The canonical JSON chapters, `series.json` metadata, `json/fandoms.json` totals, and the offline reader now reflect these revisions.
+
+**Current manuscript metadata:** 386,829 words across 300 prose chapters. This improves overall depth but does not yet equalize the entire library; `106` chapters remain below the 1,200-word editorial target. See `docs/PROSE_DEPTH_PARITY_AUDIT.md` for the refreshed breakdown and `docs/LANTERNWEALD_PASS7_CONTINUITY.md` for strengthened seven-district and homeworld continuity.
 
 ## How to read
 
@@ -39,8 +45,10 @@ Script load order is important because each successive JavaScript file adds real
 9. `js/lanternweald-continuations-pass5-others.js` — five novels 48–50
 10. `js/lanternweald-continuations-pass6-maui-32-40.js` — Maui 32–40
 11. `js/lanternweald-continuations-pass6-maui-41-50.js` — Maui 41–50
-12. `js/app.js` — chapter renderer and progress
-13. `js/floating-book.js` — animated cover interactions
+12. `js/lanternweald-revisions-pass7-a.js` — revised Maui and Iroh prose overrides
+13. `js/lanternweald-revisions-pass7-b.js` — revised Severus, Love & Duty, Danse and Greg prose overrides
+14. `js/app.js` — chapter renderer and progress
+15. `js/floating-book.js` — animated cover interactions
 
 Each novel also contains `json/<fandom>/<series>/<number>.json` source chapters and a `series.json` manifest recording all 50 IDs, next links, titles, and word counts. `json/fandoms.json` records the six-series catalog. The reader works locally using embedded chapter content, rather than relying on `fetch()` for file:// chapter loading.
 
@@ -54,6 +62,7 @@ The Lanternweald's seven original districts share finite resources, schedules, l
 - `docs/LANTERNWEALD_PASS4_CONTINUITY.md` — seasonal customs, skills, bells and garden stewardship
 - `docs/LANTERNWEALD_PASS5_CONTINUITY.md` — five novel endings and interdependent infrastructure
 - `docs/LANTERNWEALD_PASS6_CONTINUITY.md` — sixth novel completion, civic atlas, open mysteries and future scene anchors
+- `docs/LANTERNWEALD_PASS7_CONTINUITY.md` — strengthened scene logic and new resident details across all six novels
 - `json/lanternweald-living-world-registry.json` — structured seven-district and resident continuity registry
 - `docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md` — 300 marked-written beat summaries for editorial navigation
 
