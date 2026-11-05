@@ -28,5 +28,12 @@
     "Cranefish Town reconstruction, cultural preservation, public duty, and chosen-home pressures",
     "Jasper remains the named first-person adult protagonist rather than a generic reader insert"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Riverstone Terrace",
+    "threadway": "The Riverstone Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "A storm struck the Lanternweald while the four of us were carrying repairs home. Wind drove branches across Riverstone Terrace, and the Lanternwell's old lamps swung dangerously. Toph planted her feet and held the stone walkway steady; Katara diverted water away from the houses; Aang carried stranded neighbors over the flooded channel. I fetched blankets, opened the workshop, and made sure nobody was left behind. When the sky finally cleared, Danse arrived with a ladder and Iroh with steaming tea. No one had to be the single hero. That night we sat in the square, wet and exhausted, sharing a home that had become bigger than any one of our maps."
 }

@@ -28,5 +28,12 @@
     "Commonwealth survival pressures, missions, civilians, equipment, and institutional conflict",
     "Jasper remains the named first-person adult protagonist with agency outside Danse’s command structure"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Brasswatch Yard",
+    "threadway": "The Brasswatch Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "The public workshop's rules began with a debate about doors. Danse wanted secure storage; Katara wanted emergency access; I wanted a way for people to ask before being touched or treated as a problem. We argued until midnight, then built a set of shelves that could actually be reached by the people using them. When Danse caught me smiling, he narrowed his eyes. 'What?' 'You just asked three civilians what they thought before issuing an instruction.' He considered that. 'It was a consultation.' 'Of course it was.' He held my hand as we walked back toward the Brasswatch Door, and neither of us made it into a ceremony."
 }

@@ -28,5 +28,12 @@
     "Post-series Beach City with adult Jasper and existing Steven Universe continuity treated as background rather than reset material",
     "Jasper remains the named first-person adult protagonist with their own work, humor, needs, and memories"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Starwake Pier",
+    "threadway": "The Starwake Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "The lanterns along Starwake Pier needed rewiring, which meant Greg and Danse spent an entire afternoon disagreeing about the best way to route a cable. I helped carry supplies. Toph announced that the supports were strong but the men's opinions were exhausting. Greg answered with a short improvisation about a heroic inspector of wooden posts; even Danse smiled before he could stop himself. Afterward, Greg asked whether I still liked the music when it came with mess and bad jokes. I told him the music was never the whole reason I came. He put his guitar aside and listened as though that answer mattered."
 }

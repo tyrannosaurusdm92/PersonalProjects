@@ -28,5 +28,12 @@
     "Commonwealth survival pressures, missions, civilians, equipment, and institutional conflict",
     "Jasper remains the named first-person adult protagonist with agency outside Danse’s command structure"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Brasswatch Yard",
+    "threadway": "The Brasswatch Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_intro": "Brasswatch Yard stood on the Lanternweald's northern edge, where abandoned metal could become useful again. A round door built into the old pump house opened onto a world of ruined roads and stubborn survivors. The first time I looked through it, a cold wind carried dust and the faint rattle of machinery. I understood that the valley's gentle lamps would not protect me from mistakes on the other side. Still, something about the people working beyond that threshold drew me. I checked my pack, took my bearings, and crossed into the Commonwealth without expecting to meet a man who wore his armor as though it were the only thing holding him together."
 }

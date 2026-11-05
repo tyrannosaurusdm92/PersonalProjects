@@ -28,5 +28,12 @@
     "Commonwealth survival pressures, missions, civilians, equipment, and institutional conflict",
     "Jasper remains the named first-person adult protagonist with agency outside Danse’s command structure"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Brasswatch Yard",
+    "threadway": "The Brasswatch Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "In the Lanternweald, Danse built a little sign above the Brasswatch workshop. It named no rank, no order, and no former allegiance. Just REPAIRS, in letters he had measured twice. Greg helped hang it. Toph tested the support posts and declared them 'not embarrassing.' Iroh brought food. Danse watched our ridiculous collection of neighbors and finally took off his work gloves. 'This is a strange assignment,' he said. 'It's not an assignment,' I reminded him. He glanced at the door to the Commonwealth, then back at the square. 'I know.' His hand found mine, and he stayed to eat."
 }

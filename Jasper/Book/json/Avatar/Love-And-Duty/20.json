@@ -28,5 +28,12 @@
     "Cranefish Town reconstruction, cultural preservation, public duty, and chosen-home pressures",
     "Jasper remains the named first-person adult protagonist rather than a generic reader insert"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Riverstone Terrace",
+    "threadway": "The Riverstone Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "At Riverstone Terrace the next afternoon, Katara found the Lanternweald's public workshop crowded with people trying to decide how to distribute building supplies. Danse wanted a record of every piece of scrap; Greg wanted nobody turned away without a conversation. Katara listened to both and then asked the residents what they needed. Aang helped carry water. Toph inspected the footings and called three proposals 'beautifully stupid.' I watched Katara turn anger into organized care without surrendering either one. She caught my eye across the room and smiled, small and fierce. Our home could stretch across worlds, but it still had to be made in ordinary acts."
 }

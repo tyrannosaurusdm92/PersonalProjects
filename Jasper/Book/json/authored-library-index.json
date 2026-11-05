@@ -346,7 +346,12 @@
           "closing_anchor": "It was after always.",
           "next_chapter_id": null
         }
-      ]
+      ],
+      "shared_world": {
+        "name": "The Lanternweald",
+        "district": "Moonroot Archive",
+        "threadway": "The Moonroot Door"
+      }
     },
     {
       "key": "jasmine-after-rain",
@@ -690,7 +695,12 @@
           "closing_anchor": "When the shop was quiet, we shared a good-night kiss and went upstairs together. We let the rest of the evening remain ours. In the morning, the city shone as if it had been given another chance.",
           "next_chapter_id": null
         }
-      ]
+      ],
+      "shared_world": {
+        "name": "The Lanternweald",
+        "district": "Jasmine Steps",
+        "threadway": "The Jasmine Door"
+      }
     },
     {
       "key": "love-and-duty",
@@ -1036,7 +1046,12 @@
           "closing_anchor": "So would we.\n",
           "next_chapter_id": null
         }
-      ]
+      ],
+      "shared_world": {
+        "name": "The Lanternweald",
+        "district": "Riverstone Terrace",
+        "threadway": "The Riverstone Door"
+      }
     },
     {
       "key": "stars-between-the-strings",
@@ -1380,7 +1395,12 @@
           "closing_anchor": "The stars looked like notes waiting for us. I took his hand, and we watched the sky until dawn. The song could keep changing, and so could we.",
           "next_chapter_id": null
         }
-      ]
+      ],
+      "shared_world": {
+        "name": "The Lanternweald",
+        "district": "Starwake Pier",
+        "threadway": "The Starwake Door"
+      }
     },
     {
       "key": "what-the-armor-leaves-behind",
@@ -1725,7 +1745,13 @@
           "closing_anchor": "We went home.\n",
           "next_chapter_id": null
         }
-      ]
+      ],
+      "shared_world": {
+        "name": "The Lanternweald",
+        "district": "Brasswatch Yard",
+        "threadway": "The Brasswatch Door"
+      }
     }
-  ]
+  ],
+  "shared_world": "The Lanternweald"
 }

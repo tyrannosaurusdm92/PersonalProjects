@@ -28,5 +28,12 @@
     "Post-series Beach City with adult Jasper and existing Steven Universe continuity treated as background rather than reset material",
     "Jasper remains the named first-person adult protagonist with their own work, humor, needs, and memories"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Starwake Pier",
+    "threadway": "The Starwake Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "At the Lanternwell's winter gathering, Greg played a song nobody had asked him to make perfect. Katara helped the children hang paper stars; Iroh kept the tea hot; Severus stood near the edge of the crowd and pretended not to recognize the melody by its second refrain. Greg caught me looking at him and waggled his eyebrows until I laughed. Later, when the square emptied, he admitted that being heard without needing to impress anyone still frightened him. We walked to Starwake Pier together. He did not fill the silence with another song. I was grateful he knew I could love the person who remained when the music stopped."
 }

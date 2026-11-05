@@ -28,5 +28,12 @@
     "Commonwealth survival pressures, missions, civilians, equipment, and institutional conflict",
     "Jasper remains the named first-person adult protagonist with agency outside Danse’s command structure"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Brasswatch Yard",
+    "threadway": "The Brasswatch Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "I crossed into the Lanternweald with the taste of dust still in my mouth and found the Lanternwell shining after repairs. Iroh was serving tea to the volunteers; Severus had sent a bottle of something that removed rust without damaging old engravings. Danse inspected it, read the label twice, and asked who had certified the ingredients. I told him the author would welcome the question less than the precision. He went to the archive anyway. They disagreed for an hour and emerged with a safer procedure than either had started with. For the first time I saw him belong to a conversation that was not an order or a threat."
 }

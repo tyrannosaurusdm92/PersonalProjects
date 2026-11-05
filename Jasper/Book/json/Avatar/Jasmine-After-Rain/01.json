@@ -28,5 +28,12 @@
     "Post-war Ba Sing Se and original-series Iroh",
     "Jasper remains the named first-person adult protagonist"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Jasmine Steps",
+    "threadway": "The Jasmine Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_intro": "At the eastern edge of the Lanternweald, a narrow lane smelled of rain and jasmine even under a clear sky. Lanterns hung above its windows; one door bore the carved shape of a dragon curled around a teacup. The path beyond would lead to a real city with real histories, not a painted storybook imitation. I had only recently learned that the Lanternweald's thresholds opened onto places whose people could refuse to come back with me. I stepped through the Jasmine Door carrying my map, my stubbornness, and the mistaken belief that I knew where I was going."
 }

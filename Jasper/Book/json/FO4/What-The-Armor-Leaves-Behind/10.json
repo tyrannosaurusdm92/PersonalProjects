@@ -28,5 +28,12 @@
     "Commonwealth survival pressures, missions, civilians, equipment, and institutional conflict",
     "Jasper remains the named first-person adult protagonist with agency outside Danse’s command structure"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Brasswatch Yard",
+    "threadway": "The Brasswatch Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "At Brasswatch Yard, I found the repair bench covered in pieces of a lantern mechanism. Greg had donated a coil of wire from an old amplifier; Toph had rejected a faulty bracket with the confidence of someone who could hear its lie in the metal. Danse studied the assembly for a long time before quietly showing us how to keep the current from overheating the housing. Nobody saluted him. Nobody demanded that he justify his usefulness by naming a rank. When the lantern lit, he seemed almost startled. I made no speeches about it. I handed him the next bracket and let him decide whether he wanted to stay."
 }

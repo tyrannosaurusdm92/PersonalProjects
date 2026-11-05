@@ -28,5 +28,12 @@
     "Post-war Ba Sing Se and original-series Iroh",
     "Jasper remains the named first-person adult protagonist"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Jasmine Steps",
+    "threadway": "The Jasmine Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "The shop kettle had hardly stopped steaming when a small brass bell rang from Jasmine Steps. Iroh and I crossed into the Lanternweald to find Severus standing beside the community garden, frowning at a plant label. 'This is not mountain mint,' he informed Iroh. 'It has been mislabeled.' I waited for offense. Instead Iroh looked closely at the leaves and asked for a lesson. By sunset, the two had produced a precise growing chart, an excellent pot of tea, and only one argument about whether measurements were a substitute for good judgment. Seeing Iroh learn without pretending to know everything made me love him in another, quieter way."
 }

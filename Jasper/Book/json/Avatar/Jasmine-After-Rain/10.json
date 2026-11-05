@@ -28,5 +28,12 @@
     "Post-war Ba Sing Se and original-series Iroh",
     "Jasper remains the named first-person adult protagonist"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Jasmine Steps",
+    "threadway": "The Jasmine Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "The night market in Ba Sing Se left its colors in my thoughts long after the lanterns were put away. Back at Jasmine Steps, I found Greg tuning a guitar beneath the little street's trellises. He asked about the city, but he asked more carefully about Iroh. 'Does he have anyone who checks on him?' he said. I started to give the obvious answer, that everyone loved Iroh, and stopped. Being loved by a city was not the same as being cared for by one person. I carried a paper-wrapped sweet back through the Jasmine Door, and this time I remembered to ask the tea seller whether he had eaten."
 }

@@ -1,41 +1,17 @@
-# Story Bible
+# Jasper Reader and Story Bible
 
-## Reader-proxy
+Jasper is an adult, named, first-person reader-insert protagonist. Narration uses I/me/my/mine/myself. Jasper is observant, tender, witty, stubborn, and has a right to their own boundaries. Never replace them with a blank choice menu.
 
-Adult, unnamed, first person. Use I, me, my, mine, and myself. Do not assign a
-legal name, exact appearance, body size, race, gender, disability status, or
-other fixed identity detail unless Jasper chooses one in the private editor.
-The reader has agency, humor, boundaries, desire, flaws, and the ability to
-initiate, refuse, ask, tease, apologize, challenge, touch, and leave.
+## Connected stories
+- After Always: Severus Snape retains his difficult postwar history, precision, privacy, accountability, and dry humor.
+- Jasmine After Rain: original-series Uncle Iroh retains his tea, Pai Sho, grief for Lu Ten, strategic intelligence, compassion, and joy.
+- Love & Duty: the adult Aang, Katara, Toph and Jasper relationship preserves its consensual dynamics, public obligations, political conflict, and lived repair.
+- What the Armor Leaves Behind: Danse's rank, Brotherhood past and moral struggle remain consequential; a magical door cannot erase them.
+- Stars Between the Strings: Greg's music, grief, Beach City ties, family, and ability to choose love remain his own.
 
-## Greg route
+The Lanternweald connects their settings via voluntary Threadways, not parallel branching romances. Relationship boundaries and consent remain particular to each story; no crossover presumes access to another character.
 
-Greg is warm, goofy, musical, sincere, and easy to underestimate. He uses
-humor to lower the emotional temperature, but he is not an idiot or a passive
-generic dad. His life includes Rose, Steven, music, the van, Beach City,
-community, money, unconventional choices, grief, and learning to receive care
-without turning it into a debt. The reader notices and desires Greg without
-fixing him.
+## Rating and craft
+Teen-rated, non-graphic intimacy, consent and natural privacy transitions. No adult content generator, branching story outcome, private scene stub, or choose-your-own-adventure mechanics. The reader offers fixed chapters with ordinary Next/Previous navigation.
 
-## Iroh route
-
-This is original-series Uncle Iroh, not Iroh II. Iroh is patient, playful,
-observant, fond of tea, food, plants, Pai Sho, music, and ordinary pleasure.
-His gentleness is earned through grief, especially Lu Ten's death, and does not
-erase that he was a powerful general, strategist, firebender, and White Lotus
-leader. He can be wrong, evasive, flirtatious, or fierce when innocents are
-threatened. The reader surprises, disagrees with, and cares for him as a man.
-
-## Other bundled routes
-
-The same unnamed first-person reader and continuity system support the Aang /
-Katara / Toph polycule route, Paladin Danse route, and Severus Snape route.
-Their route-specific character bibles remain in their `series.json` files and
-their choices are written to fit each route's central tensions.
-
-## Intimacy
-
-Adult-only branching. Consent, checking in, sensual tension, praise, cuddling,
-aftercare, and emotional consequences are included. Explicit sexual content is
-not supplied; Jasper's local continuation slot is the deliberate extension
-point.
+See LANTERNWEALD_WORLD_BIBLE.md for geography, magic limits, and cross-fandom continuity.

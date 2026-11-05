@@ -387,5 +387,10 @@
       "relationship_stage": "integrated_trust",
       "next_chapter_id": null
     }
-  ]
+  ],
+  "shared_world": {
+    "name": "The Lanternweald",
+    "district": "Brasswatch Yard",
+    "threadway": "The Brasswatch Door"
+  }
 }

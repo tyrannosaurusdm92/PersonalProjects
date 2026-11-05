@@ -28,5 +28,11 @@
     "Spinner’s End/Hogwarts/postwar consequences as applicable to the existing authored arc",
     "Jasper remains the named first-person adult protagonist rather than a student/reader proxy"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Moonroot Archive",
+    "threadway": "The Moonroot Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  }
 }

@@ -28,5 +28,12 @@
     "Spinner’s End/Hogwarts/postwar consequences as applicable to the existing authored arc",
     "Jasper remains the named first-person adult protagonist rather than a student/reader proxy"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Moonroot Archive",
+    "threadway": "The Moonroot Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "I took the day's frustration back to Moonroot Archive rather than carry it straight into another fight. A note lay beside the door in handwriting too elegant to belong to Greg: Iroh had left an invitation to the market's evening meal. Severus arrived an hour later, announced that a magical valley did not excuse imprecise labeling, and reorganized three shelves while pretending he had come only for a missing reference. I watched the archive's lamplight catch on his sleeve. Nobody asked him to become pleasant, redeemed, or easy. There was a chair waiting for him nevertheless. He stayed long enough for the soup to cool."
 }

@@ -28,5 +28,12 @@
     "Spinner’s End/Hogwarts/postwar consequences as applicable to the existing authored arc",
     "Jasper remains the named first-person adult protagonist rather than a student/reader proxy"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Moonroot Archive",
+    "threadway": "The Moonroot Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "A door left open mattered differently after I had seen the Lanternweald. At Moonroot Archive, a little door opened onto a reading room of books volunteered by people from worlds that disagreed about nearly everything. I found Toph testing the walls with one bare foot while Greg tried to decide whether a record player counted as a scholarly instrument. I laughed, unexpectedly, and thought of Severus making room in ways that would never look generous to anyone who had not learned his language. I did not mistake the archive's openness for permission to demand it of him. Trust was not the absence of doors. It was the right to close them, and the choice to open them again."
 }

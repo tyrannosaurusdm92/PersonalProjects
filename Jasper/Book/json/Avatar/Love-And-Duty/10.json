@@ -28,5 +28,12 @@
     "Cranefish Town reconstruction, cultural preservation, public duty, and chosen-home pressures",
     "Jasper remains the named first-person adult protagonist rather than a generic reader insert"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Riverstone Terrace",
+    "threadway": "The Riverstone Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "The Lanternweald's community notice board had become a source of entertainment. Greg proposed a free music night. Danse wrote three separate safety objections. Toph came by and rearranged the nails with her foot until the board stood straight. 'You know what the problem with rules is?' she asked. I offered several guesses. 'People writing them without checking the ground.' Aang laughed; Katara quietly asked who was responsible for keeping the walkway accessible. Nobody solved the town in one afternoon. Together we made a list of actual repairs, and I loved how each person took a different part of the same problem seriously."
 }

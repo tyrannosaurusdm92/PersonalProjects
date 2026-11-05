@@ -386,5 +386,10 @@
       "relationship_stage": "integrated_trust",
       "next_chapter_id": null
     }
-  ]
+  ],
+  "shared_world": {
+    "name": "The Lanternweald",
+    "district": "Moonroot Archive",
+    "threadway": "The Moonroot Door"
+  }
 }

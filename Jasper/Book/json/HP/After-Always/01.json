@@ -28,5 +28,12 @@
     "Spinner’s End/Hogwarts/postwar consequences as applicable to the existing authored arc",
     "Jasper remains the named first-person adult protagonist rather than a student/reader proxy"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Moonroot Archive",
+    "threadway": "The Moonroot Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_intro": "The west end of Lanternwell Square held a dark door set into a wall of living roots. It had no handle, only the shape of a keyhole under a pale moonflower. I had spent the morning helping Iroh carry seed trays across the square; he had called the door a reminder that some people need a place to return to before they can decide where they belong. When I touched the moonflower, the rootwork folded aside. Beyond it lay a stone corridor and the scent of old books, bitter herbs, and rain. Somewhere in that other world a man was still being punished for surviving. I took one step through, with no idea how thoroughly my own life was about to change."
 }

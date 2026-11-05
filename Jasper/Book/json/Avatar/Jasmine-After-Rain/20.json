@@ -28,5 +28,12 @@
     "Post-war Ba Sing Se and original-series Iroh",
     "Jasper remains the named first-person adult protagonist"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Jasmine Steps",
+    "threadway": "The Jasmine Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "I carried a cup of jasmine tea to the Lanternwell before sunrise and found the square occupied by a strange argument. Toph wanted the fountain's stonework rebuilt with fewer decorative cracks. Danse insisted every repair needed a structural inspection. Iroh listened with a delighted expression that made both of them suspicious. When he noticed me he held out a second cup, as if he had known exactly when I would arrive. 'There is more than one way to protect a home,' he told them. Toph snorted. Danse began taking notes. I sat with him while the square turned disagreement into something that might actually last."
 }

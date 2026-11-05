@@ -40,11 +40,27 @@
     chapterSubtitle.textContent = chapter.subtitle || "";
     chapterSubtitle.hidden = !chapter.subtitle;
     chapterCopy.replaceChildren();
+    function appendWorldBridge(kind, body) {
+      if (!body) return;
+      const section = document.createElement("section");
+      section.className = "world-bridge";
+      const heading = document.createElement("h3");
+      heading.textContent = kind;
+      section.appendChild(heading);
+      String(body).split(/\n\s*\n/).filter(Boolean).forEach(function (piece) {
+        const p = document.createElement("p");
+        p.textContent = piece.trim();
+        section.appendChild(p);
+      });
+      chapterCopy.appendChild(section);
+    }
+    appendWorldBridge("Lanternweald · Before", chapter.bridge_intro);
     String(chapter.content || "").split(/\n\s*\n/).filter(Boolean).forEach(function (text) {
       const paragraph = document.createElement("p");
       paragraph.textContent = text.trim();
       chapterCopy.appendChild(paragraph);
     });
+    appendWorldBridge("Lanternweald · After", chapter.bridge_outro);
     const count = series.chapters.length;
     progressText.textContent = "Chapter " + (chapterIndex + 1) + " of " + count;
     progressBar.value = Math.round(((chapterIndex + 1) / count) * 100);

@@ -28,5 +28,11 @@
     "Cranefish Town reconstruction, cultural preservation, public duty, and chosen-home pressures",
     "Jasper remains the named first-person adult protagonist rather than a generic reader insert"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Riverstone Terrace",
+    "threadway": "The Riverstone Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  }
 }

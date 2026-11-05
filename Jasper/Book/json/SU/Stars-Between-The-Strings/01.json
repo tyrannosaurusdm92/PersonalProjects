@@ -28,5 +28,12 @@
     "Post-series Beach City with adult Jasper and existing Steven Universe continuity treated as background rather than reset material",
     "Jasper remains the named first-person adult protagonist with their own work, humor, needs, and memories"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Starwake Pier",
+    "threadway": "The Starwake Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_intro": "The western footpath of the Lanternweald reached a pier that smelled of salt even when no sea was visible beyond it. At Starwake Pier, seashell wind chimes hung beside a doorway painted with little stars. Music drifted through the threshold in snatches, as if the air were rehearsing a song it had not finished yet. I followed it toward a boardwalk in another world. The people there were living lives, not acting out a story for me, and I had learned not to assume any door opened for my benefit alone. Still, I was curious enough to step through and find out who was playing."
 }

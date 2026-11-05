@@ -28,5 +28,12 @@
     "Spinner’s End/Hogwarts/postwar consequences as applicable to the existing authored arc",
     "Jasper remains the named first-person adult protagonist rather than a student/reader proxy"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Moonroot Archive",
+    "threadway": "The Moonroot Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "That night I returned briefly through the Moonroot Door with an unfinished list of potion ingredients and an argument I could not stop replaying. At Lanternwell Square, Iroh sat beside a warm kettle while Greg adjusted a string on his guitar. Neither insisted on being useful. Iroh only poured tea. Greg asked whether I wanted music or quiet, then accepted quiet without disappointment. The kindness did not resolve the argument waiting beyond the door. It did, however, remind me that the argument was not the whole of my life. I went back to the castle with steadier hands and a better question to ask."
 }

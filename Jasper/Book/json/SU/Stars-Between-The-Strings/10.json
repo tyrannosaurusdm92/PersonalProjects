@@ -28,5 +28,12 @@
     "Post-series Beach City with adult Jasper and existing Steven Universe continuity treated as background rather than reset material",
     "Jasper remains the named first-person adult protagonist with their own work, humor, needs, and memories"
   ],
-  "narrative_tense": "first_person_past"
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Starwake Pier",
+    "threadway": "The Starwake Door",
+    "continuity": "Linear story, real homeworld, optional voluntary crossings"
+  },
+  "bridge_outro": "Greg brought his guitar into the Lanternweald for the first time on an ordinary evening when nothing needed saving. Iroh offered tea, and Aang asked whether the song could be learned on a flute. Danse examined the instrument's wiring as if it might be a security problem. Greg laughed, settled on the edge of the Lanternwell, and played softly enough that conversation could continue around him. I realized how rare it was for Greg to perform without feeling he had to prove anything. When the song ended, nobody demanded another. I sat beside him in the comfortable silence that followed."
 }

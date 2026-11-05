@@ -53,3 +53,11 @@ progress { width:min(210px,45vw); height:8px; accent-color:var(--accent); }
   .story-page { padding:24px 20px; }
 }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; } }
+
+/* The Lanternweald connects completed prose without turning reading into a game. */
+.lanternweald-intro { padding: 1.25rem 1.5rem; margin: 1.5rem 0; border: 1px solid rgba(199,161,104,.48); border-radius: 1rem; background: rgba(80,65,57,.17); }
+.lanternweald-intro h2 { margin-top: .3rem; }
+.lanternweald-intro p { max-width: 75ch; }
+.world-bridge { margin: 1.6rem 0; padding: 1.25rem 1.45rem; border-left: 3px solid #b18e60; background: rgba(114,83,63,.12); border-radius: .4rem; }
+.world-bridge h3 { font-size: .94rem; letter-spacing: .065em; text-transform: uppercase; margin: 0 0 .9rem; }
+.world-bridge p { margin: .7rem 0; line-height: 1.7; }

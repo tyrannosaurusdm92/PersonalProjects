@@ -1,0 +1,39 @@
+{
+  "name": "The Lanternweald",
+  "hub": "Lanternwell Square",
+  "threadways": [
+    {
+      "district": "Moonroot Archive",
+      "door": "The Moonroot Door",
+      "series_path": "HP/After-Always"
+    },
+    {
+      "district": "Jasmine Steps",
+      "door": "The Jasmine Door",
+      "series_path": "Avatar/Jasmine-After-Rain"
+    },
+    {
+      "district": "Riverstone Terrace",
+      "door": "The Riverstone Door",
+      "series_path": "Avatar/Love-And-Duty"
+    },
+    {
+      "district": "Brasswatch Yard",
+      "door": "The Brasswatch Door",
+      "series_path": "FO4/What-The-Armor-Leaves-Behind"
+    },
+    {
+      "district": "Starwake Pier",
+      "door": "The Starwake Door",
+      "series_path": "SU/Stars-Between-The-Strings"
+    },
+    {
+      "district": "Tideglass Cove",
+      "door": "The Tideglass Door",
+      "series_path": "Disney/Maui-And-Jasper"
+    }
+  ],
+  "access": "voluntary",
+  "causality": "no resetting events or history",
+  "memory_rule": "Jasper initially experiences amnesia; others retain their memories"
+}
