@@ -1,5 +1,5 @@
 {
-  "schema_version": "7.0",
+  "schema_version": "8.1",
   "work_type": "fanfiction_series",
   "fandom": "Harry Potter",
   "series_title": "After Always",
@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
-  "chapter_count": 40,
-  "total_word_count": 54274,
+  "chapter_count": 41,
+  "total_word_count": 55693,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -66,7 +66,7 @@
       "number": 5,
       "file": "05.json",
       "title": "Instructions in the Margin",
-      "word_count": 1482,
+      "word_count": 1775,
       "id": "after-always-05",
       "relationship_stage": "chemistry",
       "next_chapter_id": "after-always-06"
@@ -384,6 +384,15 @@
       "word_count": 1858,
       "id": "after-always-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "after-always-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "The Moonroot Inventory",
+      "word_count": 1126,
+      "id": "after-always-41",
+      "relationship_stage": "integrated_trust",
       "next_chapter_id": null
     }
   ],
@@ -391,5 +400,7 @@
     "name": "The Lanternweald",
     "district": "Moonroot Archive",
     "threadway": "The Moonroot Door"
-  }
+  },
+  "expansion_target_chapters": 50,
+  "expansion_status": "In progress; prose only published for completed chapters"
 }
