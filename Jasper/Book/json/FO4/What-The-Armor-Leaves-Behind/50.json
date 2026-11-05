@@ -1,0 +1,34 @@
+{
+  "schema_version": "8.2",
+  "work_type": "fanfiction_chapter",
+  "author": "William Saville",
+  "date_written": "2026-11-05",
+  "date_revised": "2026-11-05",
+  "fandom": "Fallout 4",
+  "pairing": "Paladin Danse / Jasper",
+  "reader_character": "Jasper — adult first-person protagonist, externally they/them",
+  "rating": "Teen",
+  "content_notes": [
+    "Emergency safety, consent and independent departure",
+    "Romance and non-graphic fade to black",
+    "Military history, accountability, trauma"
+  ],
+  "series_slug": "what-the-armor-leaves-behind",
+  "series_title": "What the Armor Leaves Behind",
+  "chapter_number": 50,
+  "id": "what-the-armor-leaves-behind-50",
+  "title": "A Name Above the Door",
+  "subtitle": "The Lanternweald — fifth expansion pass",
+  "word_count": 909,
+  "content": "The old sign came down in two pieces.\n\nOne half still said RESTRICTED ACCESS. The other had been painted over so many times that the original letters showed through in the rain.\n\nDanse stood beneath the empty brackets with a screwdriver in his hand.\n\n\"I should have changed it months ago,\" he said.\n\n\"You changed the door first,\" I answered.\n\nHe looked toward the entrance.\n\nThe workshop was open. Not unguarded, not careless, but designed for the people who used it. Edda could reach the bell. Ash could close the private workroom from inside. Renn and Aster had signed the repair schedule with their actual hours. The emergency exit opened without waiting for a former soldier to approve it.\n\nThe sign was the last thing that still spoke in the old voice.\n\nTamsin arrived carrying a fresh board.\n\n\"What are we calling it?\" she asked.\n\nDanse looked at me.\n\nI raised an eyebrow.\n\n\"It's your workshop.\"\n\nHe looked surprised.\n\nIt had taken him a long time to understand that choosing a name did not require someone else to grant him a title.\n\nHe looked at the board.\n\n\"Brasswatch Open Workshop,\" he said.\n\nTamsin smiled.\n\n\"Good. I can fit that.\"\n\nShe painted the letters in a deep blue that matched the safe-route signs. Beneath them she added smaller words, approved by the people who worked there:\n\nREPAIRS • TRAINING • SHELTER BY CHOICE.\n\nDanse read the line.\n\n\"Should it say no rank required?\"\n\nRenn, standing nearby, laughed.\n\n\"Only if you promise not to invent a new one.\"\n\nDanse smiled.\n\n\"No ranks.\"\n\nWe raised the sign together.\n\nIt wasn't a ceremony. Tamsin held the ladder, Renn guided the brackets, and I passed up the screws. Danse did the final tightening, then climbed down and stepped back.\n\nThe board was level.\n\nThe door was open.\n\nFor a moment none of us spoke.\n\nThen Ash came out of the private room and looked at the sign.\n\n\"Better,\" they said.\n\nDanse nodded.\n\n\"Thank you.\"\n\nAsh did not hug him, forgive him, or tell him he'd become a different person. They went back inside to finish their work.\n\nHe let them.\n\nThat mattered.\n\nThe opening day drew a few people who had avoided the workshop before. One brought a broken kettle. Another asked whether there was a safe place to repair a wheeled cart. A young traveler wanted to learn how to read a pressure gauge.\n\nRenn ran the beginner's lesson. Danse watched for a while, then stepped away when it became clear they didn't need him hovering.\n\nI caught his expression.\n\n\"Hard?\" I asked.\n\n\"Very.\"\n\n\"You're doing well.\"\n\n\"An alarming statement.\"\n\nI laughed.\n\nAt noon, Toph arrived to inspect the new support beam. She tapped the stone, listened for the familiar movement, and declared the repair satisfactory under the conditions of the test.\n\nDanse checked the written measurement.\n\nIt matched.\n\n\"Almost competent,\" Toph said.\n\nHe smiled.\n\n\"High praise.\"\n\nShe grinned and left before he could thank her.\n\nThe afternoon moved on. A lantern flickered at the edge of the yard, and someone asked Pip to replace the wick. Mara delivered bread for the volunteers. The generator ran within its safe load.\n\nNothing dramatic happened.\n\nI thought Danse might be disappointed.\n\nInstead he looked almost peaceful.\n\nAfter closing, we sat on the back steps with two cups of tea.\n\nHe stared at the new sign.\n\n\"I spent years believing I knew who I was because I wore armor,\" he said.\n\n\"And now?\"\n\n\"Now I know what I want to do when I take it off.\"\n\nI looked at him.\n\n\"Repair things?\"\n\n\"Yes. Teach what I know. Learn what I don't. Make room for people who need shelter without demanding their names as payment.\"\n\nI felt warmth move through my chest.\n\n\"That sounds like a life.\"\n\nHe looked toward me.\n\n\"Would you like to be part of it?\"\n\n\"I already am.\"\n\nHe smiled.\n\n\"And you have other lives, other people you love. I know we agreed to that. I know you're ethically non-monogamous and prefer polyamory. I don't want to ask you to abandon any of it.\"\n\n\"Then what are you asking?\"\n\n\"For the chance to keep choosing this with you. The ordinary days. The difficult talks. The mistakes we correct.\"\n\nI took his hand.\n\n\"Yes.\"\n\nHe looked almost relieved enough to laugh.\n\n\"That's a lot of responsibility.\"\n\n\"Good thing you're capable of writing a checklist.\"\n\nHe laughed.\n\nI kissed him, slow and warm. His hand rested against the back of my neck, gentle and sure. We stayed close until the light above the workshop door came on and the yard grew quiet.\n\nLater, inside, the rest of the evening belonged to us. No rank, no audience, no need to make the tenderness visible to anyone else.\n\nIn the morning, Danse opened the workshop at the posted hour.\n\nRenn was already there with a student who wanted to learn how to replace a worn hinge. The kettle from yesterday had been repaired and was ready to collect. The emergency exit was clear.\n\nDanse put on his work gloves.\n\n\"Morning,\" he said.\n\n\"Morning,\" Renn answered.\n\nThey handed him the inspection sheet.\n\nHe read it, made one correction, and gave it back.\n\nThen he stepped aside so the student could begin.\n\nOutside, the sign caught the early light.\n\nBrasswatch Open Workshop.\n\nA name he'd chosen.\n\nA door anyone could ask to enter.\n\nA place he could leave at the end of the day and still choose to return.",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "past",
+  "shared_world": {
+    "name": "The Lanternweald",
+    "district": "Brasswatch Yard",
+    "threadway": "The Brasswatch Door"
+  },
+  "publication_status": "complete_prose",
+  "next_chapter_id": null,
+  "writer_style_profile": "json/william-writing-style.json"
+}
