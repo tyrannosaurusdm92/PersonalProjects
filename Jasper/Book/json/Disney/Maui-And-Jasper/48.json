@@ -1,0 +1,34 @@
+{
+  "schema_version": "8.2",
+  "work_type": "fanfiction_chapter",
+  "author": "William Saville",
+  "date_written": "2026-11-05",
+  "date_revised": "2026-11-05",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper — adult first-person protagonist, externally they/them",
+  "rating": "Teen",
+  "content_notes": [
+    "Tender, non-explicit fade-to-black romance",
+    "Waterworks and historical accountability",
+    "Consent, privacy, community"
+  ],
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "chapter_number": 48,
+  "id": "maui-48",
+  "title": "The Lantern Ledger",
+  "subtitle": "Lanternweald — sixth expansion pass",
+  "word_count": 799,
+  "content": "The new ledger had no columns for loyalty.\n\nThat was Neri's first rule.\n\nWe sat at a long table in Moonroot Archive, comparing the surviving pages of the old arrival book with a clean blank volume. The old book had been designed for people who believed that crossing into Lanternweald created a debt. It recorded names, expected return dates, assigned keepers, and—in several places—marks that might have indicated whether someone had been permitted to leave.\n\nSome of those marks made my skin crawl.\n\n\"Are we keeping any of this?\" I asked.\n\nNeri touched the cover.\n\n\"We need to preserve the original as evidence. We do not need to make a new version of its authority.\"\n\nSeverus, working at the next desk, looked up.\n\n\"An excellent distinction.\"\n\nOrin had prepared a proposed format for the public record. It listed structural events, maintenance decisions, funding approvals, and testimony categories. Personal travel details would be kept only when someone requested help and only for as long as the service required. Romantic relationships were not part of the civic record.\n\nI wanted to hug the person who'd written that sentence.\n\nInstead I told Orin it was good work.\n\nThey looked delighted.\n\nThe hardest part was the blank line.\n\nIt belonged to the erased signature from the Closed Bells ledger. The investigation had documented the order, the materials, the closure, and Neri's witness account of a person denied departure. But the name on the original page was gone, and none of the surviving evidence established it with sufficient confidence.\n\nAvel, the councilor who had demanded a name before, came to review the draft.\n\n\"You're leaving the blank?\" he asked.\n\n\"Yes,\" Neri said.\n\n\"People will think you're protecting someone.\"\n\n\"Then the note beside it should explain exactly why it's blank,\" Severus answered.\n\nI turned the page around so Avel could read it.\n\n*Signature removed from the surviving document. Identity unverified. The harm caused by the closure is documented independently. Additional evidence may be submitted without mandatory public disclosure.*\n\nAvel read it twice.\n\nHe looked tired.\n\n\"I want someone to answer for what happened.\"\n\n\"So do I,\" I said. \"That doesn't give us permission to choose a person because the empty space makes us angry.\"\n\nHe sat down.\n\nFor a moment I thought he might begin another argument. Instead he asked to see the evidence list.\n\nWe showed him the invoices, tide charts, witness summary, and the notes explaining what each could and could not prove. We also showed him the emergency policy changes already enacted because of the investigation: voluntary departure routes, clear access to the upper hall, no public lists of destinations, and reviewable decisions during closures.\n\nHe studied them.\n\n\"This is more than a blank,\" he said finally.\n\n\"Yes,\" Neri answered. \"It is the work around it.\"\n\nThe ledger was opened to public review the following week.\n\nPeople came with questions, corrections, and memories. Some brought documents; others asked whether they could give testimony privately. One person declined to leave a name and was told that was their choice. Another requested a copy of the revised emergency rules for a homeworld council dealing with flood evacuations.\n\nNeri gave them the public version.\n\nNobody received keys to private files merely because they were curious.\n\nMaui came in during the second afternoon, carrying a parcel of paper from the printer. He set it on the table and looked at the ledger.\n\n\"That's the famous blank line?\"\n\n\"Yes,\" I said.\n\nHe leaned closer.\n\n\"Looks smaller than I imagined.\"\n\n\"Most important things do.\"\n\nHe grinned.\n\nSeverus made a disapproving noise.\n\n\"Please do not encourage him.\"\n\nI laughed.\n\nLater, when the visitors had gone, I found Neri standing alone by the display case.\n\n\"How are you?\" I asked.\n\nThey considered.\n\n\"Less certain than I once was. More responsible, perhaps.\"\n\n\"That sounds exhausting.\"\n\n\"It is.\"\n\nThey smiled faintly.\n\n\"I thought telling the truth would finally let me stop carrying it.\"\n\n\"Did it?\"\n\n\"No. But now other people can help carry the work.\"\n\nI looked at the new ledger.\n\nThe old book would remain in the archive, preserved with its flaws. The new one would be revised when evidence changed or policies failed. Its pages were numbered, its handling rules public, and its blank lines explained instead of quietly filled by whoever held the pen.\n\nMaui waited for me at the arch.\n\n\"Ready to go home?\" he asked.\n\n\"In a minute.\"\n\nI wrote one final note in the green notebook.\n\n*Accountability is not a perfect story. It is a record that lets other people ask questions tomorrow.*\n\nI closed it.\n\nThen I took Maui's hand and went through the open passage toward the square, where the lanterns were coming on one by one.\n\nThe ledger stayed where it belonged.\n\nNot beneath a crown.\n\nOn a table that could be reached.",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "past",
+  "shared_world": {
+    "name": "The Lanternweald",
+    "district": "Moonroot Archive",
+    "threadway": "The Tideglass Door"
+  },
+  "publication_status": "complete_prose",
+  "next_chapter_id": null,
+  "writer_style_profile": "json/william-writing-style.json"
+}
