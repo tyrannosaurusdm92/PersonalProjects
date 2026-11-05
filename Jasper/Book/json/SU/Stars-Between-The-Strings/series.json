@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 62347,
+  "total_word_count": 64447,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -238,7 +238,7 @@
       "number": 24,
       "file": "24.json",
       "title": "A Little More Honest",
-      "word_count": 790,
+      "word_count": 1350,
       "id": "su-24",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-25"
@@ -274,7 +274,7 @@
       "number": 28,
       "file": "28.json",
       "title": "A Song for Nobody Else",
-      "word_count": 791,
+      "word_count": 1334,
       "id": "su-28",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-29"
@@ -328,7 +328,7 @@
       "number": 34,
       "file": "34.json",
       "title": "Everyday Magic",
-      "word_count": 787,
+      "word_count": 1310,
       "id": "su-34",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-35"
@@ -337,7 +337,7 @@
       "number": 35,
       "file": "35.json",
       "title": "The Note in the Glovebox",
-      "word_count": 783,
+      "word_count": 1257,
       "id": "su-35",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-36"

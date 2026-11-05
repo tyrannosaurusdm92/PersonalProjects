@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 60171,
+  "total_word_count": 62119,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -310,7 +310,7 @@
       "number": 32,
       "file": "32.json",
       "title": "The Things Iroh Cannot Carry",
-      "word_count": 672,
+      "word_count": 1233,
       "id": "avatar-32",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-33"
@@ -346,7 +346,7 @@
       "number": 36,
       "file": "36.json",
       "title": "A Promise with No Audience",
-      "word_count": 667,
+      "word_count": 1376,
       "id": "avatar-36",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-37"
@@ -364,7 +364,7 @@
       "number": 38,
       "file": "38.json",
       "title": "Jasmine in Winter",
-      "word_count": 667,
+      "word_count": 1345,
       "id": "avatar-38",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-39"
