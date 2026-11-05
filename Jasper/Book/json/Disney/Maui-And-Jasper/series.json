@@ -10,8 +10,8 @@
   "reader_character": "Jasper, adult first-person reader protagonist",
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
-  "chapter_count": 10,
-  "total_word_count": 5754,
+  "chapter_count": 11,
+  "total_word_count": 6945,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -22,7 +22,8 @@
     "Maui is proudly theatrical, funny, impulsive, clever and capable of compassion. His hero identity is a source of pressure and growth, not a license to control Jasper.",
     "Jasper's lost memories return as feelings, skills, and fragments. Their agency never depends on fully reconstructing their past.",
     "The romance is mutual, negotiated, emotionally honest and teen-rated. Consent is explicit when meaningful.",
-    "Māori waiata, poi, whare tapere and haka are culturally distinct. No invented universal Māori courtship ritual is claimed."
+    "Māori waiata, poi, whare tapere and haka are culturally distinct. No invented universal Māori courtship ritual is claimed.",
+    "Jasper openly prefers ethical non-monogamy and polyamory; every partner retains the right to set or change their own boundaries."
   ],
   "chapters": [
     {
@@ -103,7 +104,29 @@
       "title": "The Person I Choose",
       "id": "maui-10",
       "word_count": 717,
+      "next_chapter_id": "maui-11"
+    },
+    {
+      "number": 11,
+      "file": "11.json",
+      "title": "The Tide Takes Inventory",
+      "id": "maui-11",
+      "word_count": 1191,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
-  ]
+  ],
+  "expansion_status": {
+    "target_chapter_count": 50,
+    "completed_chapters": 11,
+    "planned_not_yet_written": 39,
+    "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
+  },
+  "relationship_structure": {
+    "protagonist": "Jasper",
+    "ethical_non_monogamy": true,
+    "preference": "polyamory",
+    "consent": "informed, specific and revisable",
+    "disclosure_before_initial_romance": true
+  }
 }

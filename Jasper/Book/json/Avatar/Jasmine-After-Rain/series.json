@@ -11,13 +11,14 @@
   "rating": "Teen",
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
-  "chapter_count": 40,
-  "total_word_count": 44428,
+  "chapter_count": 41,
+  "total_word_count": 45838,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
     "Jasper is funny, observant, affectionate, stubborn, detail-oriented about loved ones, and capable of direct vulnerability once trust is earned.",
-    "Slow burn means repeated choices, routines, conflict repair, remembered preferences, and changed behavior matter more than chapter count."
+    "Slow burn means repeated choices, routines, conflict repair, remembered preferences, and changed behavior matter more than chapter count.",
+    "Jasper openly prefers ethical non-monogamy and polyamory; every partner retains the right to set or change their own boundaries."
   ],
   "character_bible": [
     "Jasper — adult named first-person protagonist; narration uses I/me/my/mine/myself; other characters may use they/she. Goofy and chaotic surface energy coexists with empathy, intelligence, loyalty, careful observation, and hidden fears of being a burden.",
@@ -384,6 +385,15 @@
       "word_count": 663,
       "id": "avatar-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "avatar-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "The Cost of a Free Cup",
+      "id": "avatar-41",
+      "word_count": 1410,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -391,5 +401,18 @@
     "name": "The Lanternweald",
     "district": "Jasmine Steps",
     "threadway": "The Jasmine Door"
+  },
+  "expansion_status": {
+    "target_chapter_count": 50,
+    "completed_chapters": 41,
+    "planned_not_yet_written": 9,
+    "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
+  },
+  "relationship_structure": {
+    "protagonist": "Jasper",
+    "ethical_non_monogamy": true,
+    "preference": "polyamory",
+    "consent": "informed, specific and revisable",
+    "disclosure_before_initial_romance": true
   }
 }

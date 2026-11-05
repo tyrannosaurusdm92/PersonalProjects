@@ -11,13 +11,14 @@
   "rating": "Teen",
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
-  "chapter_count": 40,
-  "total_word_count": 54274,
+  "chapter_count": 41,
+  "total_word_count": 55640,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
     "Jasper does not exist to redeem Snape. They can challenge him, leave a room, demand accountability, laugh at him, care for him, and choose him without excusing harm.",
-    "Lily, the war, the Dark Mark, teaching, Spinner’s End, and Snape’s history are continuity pressures rather than buttons to press for instant vulnerability."
+    "Lily, the war, the Dark Mark, teaching, Spinner’s End, and Snape’s history are continuity pressures rather than buttons to press for instant vulnerability.",
+    "Jasper openly prefers ethical non-monogamy and polyamory; every partner retains the right to set or change their own boundaries."
   ],
   "character_bible": [
     "Jasper — adult named first-person protagonist; witty, compassionate, observant, articulate, stubborn, and unwilling to confuse understanding someone with surrendering boundaries.",
@@ -384,6 +385,15 @@
       "word_count": 1858,
       "id": "after-always-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "after-always-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "The Margins We Leave Open",
+      "id": "after-always-41",
+      "word_count": 1366,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -391,5 +401,18 @@
     "name": "The Lanternweald",
     "district": "Moonroot Archive",
     "threadway": "The Moonroot Door"
+  },
+  "expansion_status": {
+    "target_chapter_count": 50,
+    "completed_chapters": 41,
+    "planned_not_yet_written": 9,
+    "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
+  },
+  "relationship_structure": {
+    "protagonist": "Jasper",
+    "ethical_non_monogamy": true,
+    "preference": "polyamory",
+    "consent": "informed, specific and revisable",
+    "disclosure_before_initial_romance": true
   }
 }
