@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 56734,
+  "total_word_count": 57945,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -309,7 +309,7 @@
       "file": "33.json",
       "title": "The Unfinished Song",
       "id": "maui-33",
-      "word_count": 937,
+      "word_count": 1226,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-34"
     },
@@ -318,7 +318,7 @@
       "file": "34.json",
       "title": "A Nail from the Commonwealth",
       "id": "maui-34",
-      "word_count": 940,
+      "word_count": 1238,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-35"
     },
@@ -345,7 +345,7 @@
       "file": "37.json",
       "title": "The Tide Between Us",
       "id": "maui-37",
-      "word_count": 936,
+      "word_count": 1230,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-38"
     },
@@ -417,7 +417,7 @@
       "file": "45.json",
       "title": "The Last Big Performance",
       "id": "maui-45",
-      "word_count": 929,
+      "word_count": 1259,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-46"
     },
