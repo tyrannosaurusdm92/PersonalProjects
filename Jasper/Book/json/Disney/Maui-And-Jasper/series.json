@@ -10,8 +10,8 @@
   "reader_character": "Jasper, adult first-person reader protagonist",
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
-  "chapter_count": 23,
-  "total_word_count": 22427,
+  "chapter_count": 31,
+  "total_word_count": 31054,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -221,13 +221,85 @@
       "id": "maui-23",
       "word_count": 1217,
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-24"
+    },
+    {
+      "number": 24,
+      "file": "24.json",
+      "title": "A Place to Put Jealousy",
+      "id": "maui-24",
+      "word_count": 1076,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-25"
+    },
+    {
+      "number": 25,
+      "file": "25.json",
+      "title": "Mereana Returns",
+      "id": "maui-25",
+      "word_count": 1114,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-26"
+    },
+    {
+      "number": 26,
+      "file": "26.json",
+      "title": "The Price of Welcome",
+      "id": "maui-26",
+      "word_count": 1046,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-27"
+    },
+    {
+      "number": 27,
+      "file": "27.json",
+      "title": "The Visitor's Right to Leave",
+      "id": "maui-27",
+      "word_count": 1034,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-28"
+    },
+    {
+      "number": 28,
+      "file": "28.json",
+      "title": "The Spare Key",
+      "id": "maui-28",
+      "word_count": 1043,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-29"
+    },
+    {
+      "number": 29,
+      "file": "29.json",
+      "title": "A Festival Without a Hero",
+      "id": "maui-29",
+      "word_count": 1050,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-30"
+    },
+    {
+      "number": 30,
+      "file": "30.json",
+      "title": "The Edge of the Storm",
+      "id": "maui-30",
+      "word_count": 1096,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-31"
+    },
+    {
+      "number": 31,
+      "file": "31.json",
+      "title": "Six Different Roads",
+      "id": "maui-31",
+      "word_count": 1168,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 23,
-    "planned_not_yet_written": 27,
+    "completed_chapters": 31,
+    "planned_not_yet_written": 19,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {
