@@ -1,5 +1,5 @@
 {
-  "schema_version": "7.0",
+  "schema_version": "8.1",
   "work_type": "fanfiction_series",
   "fandom": "Avatar: The Last Airbender",
   "series_title": "Jasmine After Rain",
@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
-  "chapter_count": 40,
-  "total_word_count": 44428,
+  "chapter_count": 41,
+  "total_word_count": 45837,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -48,7 +48,7 @@
       "number": 3,
       "file": "03.json",
       "title": "A Guest with No Destination",
-      "word_count": 1507,
+      "word_count": 1758,
       "id": "avatar-03",
       "relationship_stage": "chemistry",
       "next_chapter_id": "avatar-04"
@@ -384,6 +384,15 @@
       "word_count": 663,
       "id": "avatar-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "avatar-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "Tea for the Other Side",
+      "word_count": 1158,
+      "id": "avatar-41",
+      "relationship_stage": "integrated_trust",
       "next_chapter_id": null
     }
   ],
@@ -391,5 +400,7 @@
     "name": "The Lanternweald",
     "district": "Jasmine Steps",
     "threadway": "The Jasmine Door"
-  }
+  },
+  "expansion_target_chapters": 50,
+  "expansion_status": "In progress; prose only published for completed chapters"
 }
