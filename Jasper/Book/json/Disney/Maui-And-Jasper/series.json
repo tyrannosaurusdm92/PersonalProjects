@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 11,
-  "total_word_count": 7248,
+  "total_word_count": 8411,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -94,7 +94,7 @@
       "file": "09.json",
       "title": "Stormlight",
       "id": "maui-09",
-      "word_count": 506,
+      "word_count": 1667,
       "next_chapter_id": "maui-10"
     },
     {
@@ -109,7 +109,7 @@
       "number": 11,
       "file": "11.json",
       "title": "The Bell That Rang Twice",
-      "word_count": 1241,
+      "word_count": 1243,
       "id": "maui-11",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": null
