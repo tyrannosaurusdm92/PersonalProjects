@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
-  "chapter_count": 47,
-  "total_word_count": 70233,
+  "chapter_count": 50,
+  "total_word_count": 73063,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -449,6 +449,33 @@
       "id": "what-the-armor-leaves-behind-47",
       "word_count": 1075,
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "what-the-armor-leaves-behind-48"
+    },
+    {
+      "number": 48,
+      "file": "48.json",
+      "title": "The Night the Lights Went Out",
+      "id": "what-the-armor-leaves-behind-48",
+      "word_count": 978,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "what-the-armor-leaves-behind-49"
+    },
+    {
+      "number": 49,
+      "file": "49.json",
+      "title": "The Good Parts of an Order",
+      "id": "what-the-armor-leaves-behind-49",
+      "word_count": 943,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "what-the-armor-leaves-behind-50"
+    },
+    {
+      "number": 50,
+      "file": "50.json",
+      "title": "A Name Above the Door",
+      "id": "what-the-armor-leaves-behind-50",
+      "word_count": 909,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -459,8 +486,8 @@
   },
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 47,
-    "planned_not_yet_written": 3,
+    "completed_chapters": 50,
+    "planned_not_yet_written": 0,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {
