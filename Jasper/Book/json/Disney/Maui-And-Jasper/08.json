@@ -1,0 +1,32 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfic_chapter",
+  "author": "William Saville",
+  "dedication": "Written for Jasper",
+  "date_written": "November 4, 2026",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "content_notes": "Memory loss, non-graphic danger, emotional recovery, gradual non-explicit romance",
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "title": "What the Door Kept",
+  "subtitle": "The Shore I Choose · Chapter 8 of 10",
+  "chapter_number": 8,
+  "word_count": 548,
+  "content": "The Threadway beneath Lanternwell opened for my key on the first cold morning of the season.\n\nNeri found me standing before it, watching a pale rectangle of light reveal the shape of an ordinary room. Inside was a desk, a chair, a stack of letters, and the faded pattern of a curtain I suddenly recognized.\n\nMy hands went numb.\n\n“That's where I came from,” I said.\n\nNeri nodded. “It is one place you've been.”\n\nNot the place I belonged. Not the place I had to return to. One place.\n\nI asked for time alone.\n\nBeyond the doorway, memory returned with a kind of terrible precision. I saw myself keeping lists for other people, making promises too quickly, laughing when I wanted to say no because laughing was easier than disappointing anyone. I remembered warmth too: a favorite book, rain on the windows, the thrill of building something that worked. My old life had not been entirely misery. That made the choice harder.\n\nThere were people I had loved, even if I couldn't yet recall their faces. There were obligations that belonged to me and others I had accepted because nobody asked whether I wanted them.\n\nThe door did not tell me which was which.\n\nI sat on the floor and cried. Not because the room was terrible, but because it was familiar enough to hurt.\n\nWhen I returned to the Lanternwell, Maui was waiting at a respectful distance. He had brought food and set it where I could reach it without having to explain myself.\n\n“Did you remember?” he asked.\n\n“Some of it.”\n\n“Are you going back?”\n\n“Maybe, someday. There are things I need to understand. People I may want to find. But I don't want to go back just because I know the way.”\n\nHe didn't try to tell me what to do.\n\n“I was afraid you'd think I'd become somebody else,” I admitted.\n\nHis laugh was gentle. “Jasper, I'm a shapeshifter. I would be a spectacular hypocrite.”\n\n“I'm serious.”\n\n“So am I.” He crouched beside me. “I liked you when you couldn't tell me your name. I like you now that you can tell me when I'm being an idiot. I'm not measuring you against a stranger in a room I've never seen.”\n\nI leaned against him.\n\n“What if I find out I wasn't very brave?”\n\n“Then we start with the brave thing you did today.”\n\n“What was that?”\n\n“You came back because you wanted to, not because I asked.”\n\nThe door behind us closed quietly. My key did not vanish. The choice would remain available.\n\nThat night I opened the notebook I'd begun in the bakery room. On one page I wrote the things I wanted to remember: the taste of bread, the sound of rain, the satisfaction of repairing a lantern, the way the sea changed color at dusk.\n\nOn the next page I wrote the things I wanted to learn: how to sail better, how to say no without an apology, how to return to an old place without becoming an old fear.\n\nMaui looked over the list and pointed at the final blank line.\n\n“Forgot one.”\n\n“What?”\n\n“How to win an argument with a demigod.”\n\nI picked up my pencil.\n\n“I thought I'd already mastered that.”\n\n“Outrageous.”\n\nI wrote it down anyway.",
+  "fandom_folder": "Disney",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "id": "maui-08",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door",
+    "continuity": "Origin story, precedes five existing stories"
+  },
+  "cultural_research_note": "See docs/MAUI_CULTURAL_NOTES.md; historical Māori forms distinguished from original fictional dance."
+}

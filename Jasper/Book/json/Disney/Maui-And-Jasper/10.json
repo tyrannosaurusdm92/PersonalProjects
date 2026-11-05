@@ -1,0 +1,32 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfic_chapter",
+  "author": "William Saville",
+  "dedication": "Written for Jasper",
+  "date_written": "November 4, 2026",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "content_notes": "Memory loss, non-graphic danger, emotional recovery, gradual non-explicit romance",
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "title": "The Person I Choose",
+  "subtitle": "The Shore I Choose · Chapter 10 of 10",
+  "chapter_number": 10,
+  "word_count": 717,
+  "content": "The first festival of the repaired Lanternweald began with a disagreement over how many lanterns a single square could safely hold.\n\nMaui proposed a thousand.\n\nNeri said fifty.\n\nI negotiated seventy-five and the right to add more once Danse—some future traveler with a reputation for very serious inspections, according to one of Neri's prophetic jokes—came along to inspect the supports.\n\nMaui pouted for nearly seven minutes.\n\nThen he helped me hang the first string.\n\nThe square smelled of bread, rosemary, salt, and warm metal. Neighbors brought things they had made: bowls, painted signs, repaired stools, small books of remembered stories. I brought a lantern with a little brass key worked into its frame.\n\nIt was not the same key that had been tied to my wrist on the beach. That one still hung around my neck on blue thread.\n\nThis one I had made myself.\n\nMaui examined the lantern as if it were a treasure.\n\n“What's it for?”\n\n“People who need a little time before deciding which door to open.”\n\nHe looked at me, expression uncharacteristically quiet.\n\n“You made a light that doesn't tell anybody where to go.”\n\n“Exactly.”\n\nThe bell beneath the Lanternwell rang at dusk. It sounded less like a summons than a greeting.\n\nFive new Threadways glimmered at the edges of the vale. Through one came the smell of jasmine and rain. Through another, the rhythm of tools striking stone. A third held cold books and mountain air; a fourth carried the distant hum of machinery; a fifth offered the laughter of a boardwalk and a guitar somewhere beyond.\n\nI didn't know the people waiting in those places. I didn't know which of them I would love, which would become friends, or which would ask me to think harder about who I wanted to be. The doors were invitations, not instructions.\n\nMaui offered me his arm.\n\n“Ready for the next great adventure?”\n\n“In a minute.”\n\nI took him to the repaired dock at Tideglass Cove. The sea was calm. The old canoe moved gently against the rope I'd tied, the same knot I'd struggled to learn on my first day.\n\n“There's something I want to tell you,” I said.\n\nMaui's shoulders went rigid in the manner of someone pretending not to be nervous.\n\n“I remember enough of my old life to know it shaped me,” I said. “Some of it I want to keep. Some of it I need to understand. And some of it I want to leave behind. But I don't have to settle all of that before I'm allowed to be happy.”\n\nHe nodded, waiting.\n\n“I love you,” I said.\n\nHis eyes widened.\n\nThen, to my surprise, he laughed once and looked down at his hands.\n\n“I've had crowds cheering my name,” he said. “I never knew what to do with someone saying that when nobody else is listening.”\n\n“You could start by telling me what you feel.”\n\nHe drew a slow breath.\n\n“I love you, Jasper. Not because you need saving. Not because I get to be the answer. Because you see me when I'm noisy, and when I'm scared, and when the hook isn't enough. And you stay when you want to.”\n\nI took his hand. “We keep telling each other the truth if what we need changes?”\n\n“Yes.”\n\n“Even if it's difficult?”\n\nHe smiled. “Especially then.”\n\nI kissed him beneath the lanterns and felt the quiet satisfaction of having asked my heart a question it was free to answer.\n\nLater we returned to Lanternwell Square. Maui helped me put the new lantern above the common notice board. Beneath it I wrote a single line: YOU MAY BEGIN AGAIN WITHOUT ERASING WHAT CAME BEFORE.\n\nI knew my name.\n\nI knew I liked repairing things, making people laugh, drawing maps, asking difficult questions, and hearing the sea before sunrise. I knew I loved a loud, ridiculous demigod who was learning to let other people help him.\n\nThere would be more memories, more mistakes, more doors.\n\nI wasn't finished becoming myself. I didn't want to be.\n\nMaui reached for my hand as the festival music began.\n\n“Dance?”\n\n“With you?”\n\n“Who else could survive my magnificence?”\n\n“Probably nobody.”\n\nWe laughed and stepped into the warm, imperfect circle of light.\n\nThis time I wasn't following somebody else's map.\n\nI was making my own.",
+  "fandom_folder": "Disney",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "id": "maui-10",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door",
+    "continuity": "Origin story, precedes five existing stories"
+  },
+  "cultural_research_note": "See docs/MAUI_CULTURAL_NOTES.md; historical Māori forms distinguished from original fictional dance."
+}

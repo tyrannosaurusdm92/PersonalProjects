@@ -31,3 +31,6 @@ Residents maintain a shared garden, cook communal meals, mend lamps and roofs, r
 - Avoid reusing franchise worldbuilding terminology as the vale's own foundational lore.
 - The five original chapter contents are preserved verbatim in Step 3; new scenes live in bridge fields and appear in the live reader.
 - No branching decisions or interactive romance routes are introduced.
+
+## First Lantern — origin chronology
+The Shore I Choose (10 chapters) is the first personal arc in Jasper's chronology: the tide, memory fragments, Maui, the Lanternwell, and the first five opening Threadways. Its final scene deliberately opens doors toward the established stories. The other stories remain separate but connected complete romances with their own boundaries; no future relationship silently rewrites a past one. The shared vale supports ongoing conversations about change, autonomy, and consent.

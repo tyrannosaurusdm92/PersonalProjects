@@ -1,0 +1,32 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfic_chapter",
+  "author": "William Saville",
+  "dedication": "Written for Jasper",
+  "date_written": "November 4, 2026",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "content_notes": "Memory loss, non-graphic danger, emotional recovery, gradual non-explicit romance",
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "title": "Stormlight",
+  "subtitle": "The Shore I Choose · Chapter 9 of 10",
+  "chapter_number": 9,
+  "word_count": 506,
+  "content": "The storm came from two directions.\n\nOne was the ordinary sea, grey and furious beyond Tideglass Cove. The other blew through an unfinished Threadway, carrying rain that tasted of iron and sending sparks down the old lantern chain.\n\nBy the time the first bell rang, three houses near the shore had flooded.\n\nMaui ran toward the water with his hook raised. I ran toward the square with the plans we'd drawn for the cove's drains.\n\nWe met halfway, both breathless, both angry.\n\n“I can hold the waves,” he said.\n\n“For how long?”\n\n“As long as I have to.”\n\n“And then what?”\n\nHe looked at the houses, and I saw the calculation behind his bravado. He could lift stones and alter the current for a while, but the opening would keep pulling more water through.\n\n“I need help,” he said.\n\nIt was not loud. The storm nearly swallowed it.\n\n“I have a plan,” I answered.\n\nWe worked side by side. Neri organized neighbors into teams to move people to higher ground. Maui shifted the largest fallen timbers out of the paths without leaving me alone at the breach. I climbed the stable side of the old bridge and called measurements back to him. Together we set the brass ring into its proper groove and secured it with a brace made from the very dock he had rebuilt for us.\n\nThe Threadway shuddered. The wind reversed. Water poured back toward the sea.\n\nFor one terrifying moment the brace began to bend.\n\nMaui braced it with his hook. I locked the final catch.\n\nThe storm on the other side went silent.\n\nWe stood in the sudden ordinary rain, shaking.\n\n“Did we do it?” I asked.\n\nMaui looked down at the ring, then at me.\n\n“We did.”\n\nPeople emerged from the workshop shelter, counting one another and checking for injuries. There was damage everywhere: mud in the gardens, broken steps, a smashed boat. Nothing had been magically made whole by saving the village.\n\nI helped Neri make a list of repairs. Maui carried the heavy pieces where they were needed. When someone began calling him the greatest hero in the valley, he shook his head.\n\n“Don't forget the people who built the plan.”\n\nHe pointed to me, then to the others who had helped.\n\nI almost protested out of habit.\n\nInstead I said, “And don't forget who moved the beams.”\n\nHe grinned, relieved.\n\nThat evening, exhausted, we sat on the dry steps of the bakery. I rested my head against his shoulder and watched the lanterns come on one by one.\n\n“I remembered something in the storm,” I said.\n\nHe waited.\n\n“I used to think the only reason anyone needed me was that I could solve things.”\n\n“That's not true.”\n\n“I know.” I swallowed. “I know it now.”\n\nHe slipped an arm around me only after I leaned closer.\n\nThe storm had left work for tomorrow. We did not have to do all of it tonight.\n\nAnd the people who would help us were already setting chairs around the square.",
+  "fandom_folder": "Disney",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "id": "maui-09",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door",
+    "continuity": "Origin story, precedes five existing stories"
+  },
+  "cultural_research_note": "See docs/MAUI_CULTURAL_NOTES.md; historical Māori forms distinguished from original fictional dance."
+}

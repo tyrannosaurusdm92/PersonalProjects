@@ -1,0 +1,32 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfic_chapter",
+  "author": "William Saville",
+  "dedication": "Written for Jasper",
+  "date_written": "November 4, 2026",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "content_notes": "Memory loss, non-graphic danger, emotional recovery, gradual non-explicit romance",
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "title": "The Hook and the Horizon",
+  "subtitle": "The Shore I Choose · Chapter 2 of 10",
+  "chapter_number": 2,
+  "word_count": 606,
+  "content": "The Lanternweald was apparently a place that had been built by people who couldn't agree on which century they lived in.\n\nIts paths wound through old stone houses, tiled roofs, little gardens, and bridges that crossed streams too shallow to justify the engineering. A spring beneath a ring of lanterns occupied the center of the settlement. Someone had left bread on a bench and written a note asking whoever took the last piece to make more.\n\nMaui called the square Lanternwell.\n\n“Who lives here?” I asked.\n\n“People who found it. People who needed it. People who haven't decided. I haven't taken a census.”\n\n“You could.”\n\n“I could do a lot of things. Most of them involve a hook.”\n\nHe took me to Tideglass Cove, where he had left the canoe. The water there was calmer than on the outer beach, sheltered by two headlands shaped like open hands. A half-finished dock leaned into the tide.\n\n“You know boats?” he asked.\n\n“I don't know.”\n\n“Great. You can discover whether you hate them before I let you near the sail.”\n\nBy noon I had learned that knots obeyed rules, my fingers remembered more than my head did, and Maui believed every mistake was improved by an audience. He demonstrated a bowline with extravagant confidence. I repeated it incorrectly. He made a speech about the importance of watching legends carefully.\n\nThen he inspected my second attempt and went quiet.\n\n“That's good,” he admitted.\n\nI looked down. The knot lay neat and sturdy in my palms.\n\n“I didn't remember learning.”\n\n“You still learned.”\n\nIt was such a simple distinction that I nearly missed it.\n\nLater we pushed off from the cove. Maui kept the canoe close to shore and explained how the wind moved across the sail. He spoke of stars as navigational companions, but admitted the sky above the Lanternweald did not always obey the ones he knew. I asked him whether that frightened him.\n\n“Frightened? Me?”\n\nThe little tattoo of Maui on his chest covered its eyes.\n\n“Okay, challenged,” he amended. “There's a difference.”\n\nThe wind rose. I pulled the wrong line and the sail snapped, making the whole craft lean.\n\n“Release it,” Maui said.\n\nI froze.\n\n“Hey. Look at me. Not the water. The line.”\n\nMy hands loosened. The sail settled. We righted ourselves.\n\nOn shore I expected a lecture. Instead Maui gave me a cup of fresh water and sat beside the overturned canoe, watching the light.\n\n“Why didn't you just fix it?” I asked.\n\n“Because you wanted to learn.”\n\n“You could have been hurt.”\n\nHe shrugged, then saw my expression and corrected himself. “I knew where the safe shore was. I wouldn't have made you carry the risk alone.”\n\nThe thought sat somewhere deep inside me: somebody had once confused teaching me with leaving me responsible for everything. I could feel the shape of the memory without seeing its face.\n\nMaui watched me with an unusual stillness.\n\n“Did something come back?”\n\n“Only a feeling.”\n\n“Good one?”\n\n“No.”\n\nHe didn't demand the story. He tossed a small piece of driftwood between his hands.\n\n“I've had whole islands call me a hero and still not believe I belonged there,” he said. “A feeling can stick around longer than a fact. Doesn't mean it gets to captain the boat.”\n\nI laughed, despite myself. “You turn everything into a boat lesson?”\n\n“Only the important stuff.”\n\nWhen we returned to Lanternwell, I tied the canoe with the knot I had learned. Maui tested it once, then left it alone.\n\nThe rope held.\n\nFor the first time since waking on the shore, I allowed myself to believe that I might, too.",
+  "fandom_folder": "Disney",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "id": "maui-02",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door",
+    "continuity": "Origin story, precedes five existing stories"
+  },
+  "cultural_research_note": "See docs/MAUI_CULTURAL_NOTES.md; historical Māori forms distinguished from original fictional dance."
+}

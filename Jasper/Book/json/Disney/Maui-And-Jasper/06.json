@@ -1,0 +1,32 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfic_chapter",
+  "author": "William Saville",
+  "dedication": "Written for Jasper",
+  "date_written": "November 4, 2026",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "content_notes": "Memory loss, non-graphic danger, emotional recovery, gradual non-explicit romance",
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "title": "A Song for the Unfinished",
+  "subtitle": "The Shore I Choose · Chapter 6 of 10",
+  "chapter_number": 6,
+  "word_count": 556,
+  "content": "The first visitors from Aotearoa reached the Lanternweald on an evening of mist.\n\nThey came through a Threadway carrying instruments, wrapped food, and stories they had chosen to share. Their organizer, Mereana, introduced herself as a Māori performer and teacher. She spoke carefully about her community, her own teachers, and the fact that no single person could speak for every iwi or every tradition.\n\nMaui tried to greet her with the sort of theatrical flourish he usually reserved for a crowd.\n\nMereana smiled. “I have met impressive storytellers before.”\n\n“Impossible. Nobody this impressive.”\n\n“Then perhaps you'll enjoy listening for a change.”\n\nI had to turn away to hide my grin.\n\nThe gathering took place beneath a roof of woven branches beside Lanternwell Square. Mereana spoke of the whare tapere, places associated with storytelling, recreation, music, movement, and meetings between people, including lovers in some traditions. Her group offered a contemporary presentation: a poi performance shaped around a story of separation and reunion, paired with a waiata aroha they had chosen for the evening.\n\nShe explained that waiata aroha could carry longing, grief, or love; poi had its own histories and purposes; and haka was not a generic courtship routine. This evening's piece was their artistic interpretation, not a claim to perform an ancient universal wedding ritual.\n\nI listened to the rhythm of the poi and the steadiness of the performers. The motions were practiced, the story held in a community, not borrowed for someone else's decoration.\n\nBeside me Maui went quiet.\n\nAfterward, Mereana invited questions. Maui asked about the history of the performance with a seriousness that surprised me. He did not pretend that all Polynesian islands shared one identical custom. He listened when she spoke of Aotearoa and of the traditions particular to her people.\n\nWhen the visitors began serving food, Maui drew me aside toward the edge of the square.\n\n“I had a big speech planned,” he admitted.\n\n“That's shocking.”\n\n“I know. But then I realized it was their night to tell a story.”\n\n“That's almost growth.”\n\nHe put a hand over his heart. “You wound me.”\n\nWe walked between the lanterns while distant voices carried from the gathering. Maui looked at his tattoos.\n\n“Every mark says what I did,” he said. “People think that means they know everything about me.”\n\nI thought of the name I'd found in the spring, and all the rest still hidden.\n\n“Maybe it only means they know where some stories begin.”\n\nHe considered that.\n\nThen he held out his hand.\n\n“Dance?”\n\n“Did you learn that from Mereana?”\n\n“No. I'm asking you to dance with me. Our own steps. No pretending it's somebody else's tradition.”\n\nI took his hand.\n\nHe tried an exaggerated turn that would have looked heroic if he hadn't nearly stepped into a flower bed. I laughed, pulled him back, and found a gentler rhythm on the lanternlit stones.\n\nThere was nothing ceremonial about it. It was clumsy, private in the middle of a public square, and entirely ours.\n\nMaui watched my face as though waiting for me to decide whether I wanted to keep going.\n\nI did.\n\nThe voices from the gathering rose warmly behind us. The people who had shared their art remained its owners. I carried away an understanding, not a souvenir.\n\nAnd in the soft circle of lanternlight, I chose another dance.",
+  "fandom_folder": "Disney",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "id": "maui-06",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door",
+    "continuity": "Origin story, precedes five existing stories"
+  },
+  "cultural_research_note": "See docs/MAUI_CULTURAL_NOTES.md; historical Māori forms distinguished from original fictional dance."
+}

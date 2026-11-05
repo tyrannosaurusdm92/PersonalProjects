@@ -1,0 +1,32 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfic_chapter",
+  "author": "William Saville",
+  "dedication": "Written for Jasper",
+  "date_written": "November 4, 2026",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "content_notes": "Memory loss, non-graphic danger, emotional recovery, gradual non-explicit romance",
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "title": "A Dance That Asked",
+  "subtitle": "The Shore I Choose · Chapter 7 of 10",
+  "chapter_number": 7,
+  "word_count": 569,
+  "content": "Maui had learned to ask before making plans for me.\n\nHe was worse at asking about himself.\n\nFor three days he had been rebuilding a small landing at Tideglass Cove without admitting it was meant for our canoe. He'd set the planks square, straightened the posts, and then pretended he had happened to wander by whenever I visited.\n\nOn the fourth morning I caught him carving a little pattern along the railing.\n\n“That's a lot of work for a dock nobody asked for.”\n\n“I'm excellent at unrequested excellence.”\n\n“Are you making it for me?”\n\nHe looked at the wood.\n\n“I thought you might like somewhere to come back to.”\n\nMy chest tightened. Not from fear this time.\n\n“I do.”\n\nHe set the knife aside. His tattoos had gone still.\n\n“Can I ask you something?” I said.\n\nHe made a show of squaring his shoulders. “The answer is probably yes.”\n\n“Do you ever get tired of being the hero?”\n\nThe smile disappeared.\n\n“I don't know what I am if I'm not useful.”\n\nI knew how much courage the words cost him. I sat on the edge of the dock, leaving room for him to decide whether to sit too.\n\n“I'm starting to remember things,” I said. “Not names. Expectations. People needing answers before I had time to think. I think I learned to make myself useful because I was afraid nobody would keep me otherwise.”\n\nMaui lowered himself beside me.\n\n“That's a terrible bargain,” he said.\n\n“It's the one I knew.”\n\nHe watched the waves for a long moment.\n\n“Sometimes I think the tattoos are all anyone really wants.”\n\nI reached toward his hand and stopped. “May I?”\n\nHe turned his palm upward.\n\nHis hand was warm and enormous around mine. He didn't look like a legend then. He looked like someone who had carried a heavy thing so long he no longer knew where to put it down.\n\n“You can be here without fixing anything,” I told him.\n\n“So can you.”\n\nI smiled. “We'll probably both need reminding.”\n\nThat evening we returned to the place beside the Lanternwell where we had danced after Mereana's performance. There was no audience and no music beyond the wind in the trees.\n\nMaui bowed with theatrical extravagance. “May I have this dance?”\n\n“You've been practicing.”\n\n“I am a natural.”\n\n“You nearly stepped into a flower bed last time.”\n\n“A strategic maneuver.”\n\nI took his hand. Our steps were better, or at least less dangerous to the plants. He let me lead for a little while; I let him spin me when I wanted to be spun. We stopped whenever one of us needed to adjust.\n\nWhen we came close enough that our foreheads nearly touched, he looked suddenly uncertain.\n\n“I want to kiss you,” he said. “But I don't want it to be another thing you feel you owe someone.”\n\n“You don't have to earn it,” I told him. “And neither do I.”\n\n“Is that a yes?”\n\nI answered him with one.\n\nThe kiss was gentle and imperfect. Maui laughed softly against my forehead afterward, surprised by his own happiness.\n\n“I could get used to this,” he said.\n\n“To dancing?”\n\n“To asking and getting an answer I can trust.”\n\nWe stayed beneath the lanterns until they dimmed. There were no grand vows and no declarations carved into stone.\n\nOnly two people who had learned that an invitation was more meaningful than a demand.",
+  "fandom_folder": "Disney",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "id": "maui-07",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door",
+    "continuity": "Origin story, precedes five existing stories"
+  },
+  "cultural_research_note": "See docs/MAUI_CULTURAL_NOTES.md; historical Māori forms distinguished from original fictional dance."
+}

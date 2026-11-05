@@ -1,0 +1,11 @@
+# Maui and Jasper — cultural research notes
+
+This is fiction inspired by a film character whose mythological namesake appears in **multiple distinct Polynesian traditions**. It does not claim to retell a single iwi's Māui narrative or to represent the whole Pacific as interchangeable. In Māori traditions, Māui is associated with stories such as fishing up Te Ika-a-Māui, among other exploits. See Te Ara: https://teara.govt.nz/en/first-peoples-in-maori-tradition and Te Papa: https://collections.tepapa.govt.nz/topic/3196.
+
+**Māori song and performance are not a single courtship ritual.** Te Ara describes waiata aroha (love songs, often expressing longing or separation), ruri (amorous songs), haka in multiple ceremonial/social forms, and poi as a distinct performance tradition: https://teara.govt.nz/en/traditional-maori-songs-waiata-tawhito and https://teara.govt.nz/en/traditional-maori-songs-waiata-tawhito/page-3. Te Papa explains poi across music, health, storytelling, entertainment and other contexts: https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/poi.
+
+The whare tapere is described as a traditional social performance/recreation setting associated with arts, music and dance, including traditions of ancestors meeting and falling in love. See Te Ara: https://teara.govt.nz/en/traditional-maori-songs-waiata-tawhito/print and https://teara.govt.nz/en/leisure-in-traditional-maori-society-nga-mahi-a-te-rehia/page-4. Love and romance are also represented through narratives such as Hinemoa and Tūtānekai: https://teara.govt.nz/en/love-and-romance/page-1.
+
+**Fictional adaptation in chapter 6:** Mereana is an invented Māori visiting artist who offers her group's own contemporary poi performance associated with a love-themed song. She explicitly distinguishes the performance from a claimed universal historical 'Māori courtship dance'. Maui and Jasper then have a personal dance of their own. No invented sacred words, chants, or restricted choreography are attributed to Māori culture. A culture-specific final edition would benefit from a Māori sensitivity reader.
+
+Cultural research informs the context rather than functioning as proof that the fictional visiting artist or performance actually existed.

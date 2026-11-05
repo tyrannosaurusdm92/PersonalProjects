@@ -1,0 +1,109 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfiction_series",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "series_title": "The Shore I Choose",
+  "series_slug": "the-shore-i-choose",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
+  "chapter_count": 10,
+  "total_word_count": 5754,
+  "reading_order": "linear",
+  "shared_world": {
+    "name": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door"
+  },
+  "story_bible": [
+    "Maui is proudly theatrical, funny, impulsive, clever and capable of compassion. His hero identity is a source of pressure and growth, not a license to control Jasper.",
+    "Jasper's lost memories return as feelings, skills, and fragments. Their agency never depends on fully reconstructing their past.",
+    "The romance is mutual, negotiated, emotionally honest and teen-rated. Consent is explicit when meaningful.",
+    "Māori waiata, poi, whare tapere and haka are culturally distinct. No invented universal Māori courtship ritual is claimed."
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "file": "01.json",
+      "title": "A Stranger in the Tide",
+      "id": "maui-01",
+      "word_count": 670,
+      "next_chapter_id": "maui-02"
+    },
+    {
+      "number": 2,
+      "file": "02.json",
+      "title": "The Hook and the Horizon",
+      "id": "maui-02",
+      "word_count": 606,
+      "next_chapter_id": "maui-03"
+    },
+    {
+      "number": 3,
+      "file": "03.json",
+      "title": "The Name Beneath the Bell",
+      "id": "maui-03",
+      "word_count": 577,
+      "next_chapter_id": "maui-04"
+    },
+    {
+      "number": 4,
+      "file": "04.json",
+      "title": "The Things Hands Remember",
+      "id": "maui-04",
+      "word_count": 482,
+      "next_chapter_id": "maui-05"
+    },
+    {
+      "number": 5,
+      "file": "05.json",
+      "title": "Where the Water Goes",
+      "id": "maui-05",
+      "word_count": 523,
+      "next_chapter_id": "maui-06"
+    },
+    {
+      "number": 6,
+      "file": "06.json",
+      "title": "A Song for the Unfinished",
+      "id": "maui-06",
+      "word_count": 556,
+      "next_chapter_id": "maui-07"
+    },
+    {
+      "number": 7,
+      "file": "07.json",
+      "title": "A Dance That Asked",
+      "id": "maui-07",
+      "word_count": 569,
+      "next_chapter_id": "maui-08"
+    },
+    {
+      "number": 8,
+      "file": "08.json",
+      "title": "What the Door Kept",
+      "id": "maui-08",
+      "word_count": 548,
+      "next_chapter_id": "maui-09"
+    },
+    {
+      "number": 9,
+      "file": "09.json",
+      "title": "Stormlight",
+      "id": "maui-09",
+      "word_count": 506,
+      "next_chapter_id": "maui-10"
+    },
+    {
+      "number": 10,
+      "file": "10.json",
+      "title": "The Person I Choose",
+      "id": "maui-10",
+      "word_count": 717,
+      "next_chapter_id": null
+    }
+  ]
+}

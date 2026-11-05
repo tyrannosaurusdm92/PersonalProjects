@@ -5,6 +5,82 @@
   "rating": "Teen",
   "series": [
     {
+      "key": "the-shore-i-choose",
+      "title": "The Shore I Choose",
+      "fandom": "Moana-inspired fanfiction (Maui)",
+      "pairing": "Maui / Jasper",
+      "rating": "Teen",
+      "chapter_count": 10,
+      "total_word_count": 5754,
+      "shared_world": {
+        "name": "The Lanternweald",
+        "district": "Tideglass Cove",
+        "threadway": "The Tideglass Door"
+      },
+      "chapters": [
+        {
+          "id": "maui-01",
+          "chapter_number": 1,
+          "title": "A Stranger in the Tide",
+          "next_chapter_id": "maui-02"
+        },
+        {
+          "id": "maui-02",
+          "chapter_number": 2,
+          "title": "The Hook and the Horizon",
+          "next_chapter_id": "maui-03"
+        },
+        {
+          "id": "maui-03",
+          "chapter_number": 3,
+          "title": "The Name Beneath the Bell",
+          "next_chapter_id": "maui-04"
+        },
+        {
+          "id": "maui-04",
+          "chapter_number": 4,
+          "title": "The Things Hands Remember",
+          "next_chapter_id": "maui-05"
+        },
+        {
+          "id": "maui-05",
+          "chapter_number": 5,
+          "title": "Where the Water Goes",
+          "next_chapter_id": "maui-06"
+        },
+        {
+          "id": "maui-06",
+          "chapter_number": 6,
+          "title": "A Song for the Unfinished",
+          "next_chapter_id": "maui-07"
+        },
+        {
+          "id": "maui-07",
+          "chapter_number": 7,
+          "title": "A Dance That Asked",
+          "next_chapter_id": "maui-08"
+        },
+        {
+          "id": "maui-08",
+          "chapter_number": 8,
+          "title": "What the Door Kept",
+          "next_chapter_id": "maui-09"
+        },
+        {
+          "id": "maui-09",
+          "chapter_number": 9,
+          "title": "Stormlight",
+          "next_chapter_id": "maui-10"
+        },
+        {
+          "id": "maui-10",
+          "chapter_number": 10,
+          "title": "The Person I Choose",
+          "next_chapter_id": null
+        }
+      ]
+    },
+    {
       "key": "after-always",
       "title": "After Always",
       "fandom": "Harry Potter",

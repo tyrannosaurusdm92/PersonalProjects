@@ -1,0 +1,32 @@
+{
+  "schema_version": "8.0",
+  "work_type": "fanfic_chapter",
+  "author": "William Saville",
+  "dedication": "Written for Jasper",
+  "date_written": "November 4, 2026",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper, adult first-person reader protagonist",
+  "rating": "Teen",
+  "content_notes": "Memory loss, non-graphic danger, emotional recovery, gradual non-explicit romance",
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "title": "The Name Beneath the Bell",
+  "subtitle": "The Shore I Choose · Chapter 3 of 10",
+  "chapter_number": 3,
+  "word_count": 577,
+  "content": "The bell under Lanternwell Square was not supposed to ring.\n\nThat was what Neri, the valley's oldest resident, told us as we knelt beside the spring. Neri had grey curls, a walking stick cut from dark wood, and the unsettling habit of noticing questions before people asked them.\n\n“It hasn't sounded since the last lost traveler found their way,” they said.\n\n“Lost traveler?” I repeated.\n\nNeri looked at Maui. Maui suddenly became interested in examining a crack in the stone.\n\n“The valley does not take people,” Neri explained. “Doors open. Travelers choose. Sometimes someone arrives before they remember the road behind them.”\n\n“Can the spring tell me who I was?”\n\n“It can show what is attached to the key. Whether you wish to look is yours.”\n\nI unwound the blue thread at my wrist. The brass key slid into my palm. There was a tiny notch near its teeth, shaped like a half-moon.\n\nMaui held the lantern while I approached the water. He did not reach for my hand. I was beginning to understand that his restraint was deliberate.\n\nThe moment the key touched the spring, a bell rang beneath the stones.\n\nI saw a kitchen with a window full of rain. A table covered in papers. Someone telling me I would always be the dependable one. The memory flashed away before I could decide whether the voice had been loving or demanding.\n\nThen came a word, clear as a pebble hitting the bottom of a well.\n\nJasper.\n\nI stumbled. Maui caught my elbow only after I reached for him.\n\n“That's my name,” I whispered.\n\nNeri waited.\n\nI said it again, testing the sound against the shape of myself. “Jasper.”\n\nMaui tried it with exaggerated solemnity. “Jasper. Excellent name. Strong. Dramatic. Goes with heroic companions.”\n\n“I'm standing right here.”\n\n“Which proves my point.”\n\nI laughed, and the sound broke something open that fear had kept shut.\n\nThe spring held no more pictures. I expected disappointment, but I felt a strange tenderness toward the one small thing it had given me.\n\n“Does knowing your name help?” Maui asked as we crossed the square.\n\n“Yes. No. Maybe.” I looked at the houses. “I don't know if I liked who I was.”\n\nHe stopped near a row of lanterns.\n\n“Then don't decide that today.”\n\n“What if I never remember?”\n\n“Then you'll still be Jasper, if you want to be.”\n\nI stared at him. People who called themselves heroes were supposed to tell you what came next. Maui, who clearly adored the sound of his own voice, had somehow left the important space empty.\n\n“Is that all?” I asked.\n\n“Nope. Now I'm going to brag about how I helped the most fascinating person on this coast discover a name. It'll take at least twenty minutes.”\n\n“You didn't discover it. I did.”\n\nHe smiled, sharp and delighted.\n\n“Exactly.”\n\nThat evening I took the brass key to the little room Neri had offered above the Lanternwell bakery. I wrote my name on a scrap of paper and pinned it beside the bed, not because I feared forgetting it again but because I liked being able to choose where it belonged.\n\nDown below, Maui was telling someone a very inaccurate version of our morning.\n\nI opened the window.\n\n“You left out the part where you nearly fell in the spring!”\n\nHe looked up, grinning.\n\n“Artistic license!”\n\nFor the first time, the name Jasper felt less like a missing label and more like an introduction.",
+  "fandom_folder": "Disney",
+  "series_folder": "Maui-And-Jasper",
+  "series_path": "Disney/Maui-And-Jasper",
+  "id": "maui-03",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "first_person_past",
+  "shared_world": {
+    "setting": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door",
+    "continuity": "Origin story, precedes five existing stories"
+  },
+  "cultural_research_note": "See docs/MAUI_CULTURAL_NOTES.md; historical Māori forms distinguished from original fictional dance."
+}
