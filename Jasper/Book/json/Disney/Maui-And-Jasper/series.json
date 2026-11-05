@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 11,
-  "total_word_count": 7165,
+  "total_word_count": 7552,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -62,7 +62,7 @@
       "file": "05.json",
       "title": "Where the Water Goes",
       "id": "maui-05",
-      "word_count": 523,
+      "word_count": 910,
       "next_chapter_id": "maui-06"
     },
     {
