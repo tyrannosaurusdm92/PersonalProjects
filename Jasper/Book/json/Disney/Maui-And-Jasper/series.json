@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 13,
-  "total_word_count": 9475,
+  "total_word_count": 9987,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -71,7 +71,7 @@
       "file": "06.json",
       "title": "A Song for the Unfinished",
       "id": "maui-06",
-      "word_count": 556,
+      "word_count": 1068,
       "next_chapter_id": "maui-07"
     },
     {
