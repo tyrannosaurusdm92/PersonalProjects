@@ -10,8 +10,8 @@
   "reader_character": "Jasper, adult first-person reader protagonist",
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
-  "chapter_count": 13,
-  "total_word_count": 9987,
+  "chapter_count": 15,
+  "total_word_count": 12614,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -131,13 +131,31 @@
       "word_count": 1294,
       "id": "maui-13",
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-14"
+    },
+    {
+      "number": 14,
+      "file": "14.json",
+      "title": "The Quiet Work of Rope",
+      "word_count": 1352,
+      "id": "maui-14",
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-15"
+    },
+    {
+      "number": 15,
+      "file": "15.json",
+      "title": "No One Is a Prize",
+      "word_count": 1275,
+      "id": "maui-15",
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 13,
-    "planned_not_yet_written": 37,
+    "completed_chapters": 15,
+    "planned_not_yet_written": 35,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {
