@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 58628,
+  "total_word_count": 60171,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -301,7 +301,7 @@
       "number": 31,
       "file": "31.json",
       "title": "A Letter from the Palace",
-      "word_count": 674,
+      "word_count": 1193,
       "id": "avatar-31",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-32"
@@ -337,7 +337,7 @@
       "number": 35,
       "file": "35.json",
       "title": "The General and the Gardener",
-      "word_count": 671,
+      "word_count": 1156,
       "id": "avatar-35",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-36"
@@ -382,7 +382,7 @@
       "number": 40,
       "file": "40.json",
       "title": "Jasmine After Rain",
-      "word_count": 663,
+      "word_count": 1202,
       "id": "avatar-40",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-41"

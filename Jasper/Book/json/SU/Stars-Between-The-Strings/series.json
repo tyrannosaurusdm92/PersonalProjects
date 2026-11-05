@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 61212,
+  "total_word_count": 62347,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -247,7 +247,7 @@
       "number": 25,
       "file": "25.json",
       "title": "The Car Wash in Winter",
-      "word_count": 787,
+      "word_count": 1170,
       "id": "su-25",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-26"
@@ -301,7 +301,7 @@
       "number": 31,
       "file": "31.json",
       "title": "Bad Timing",
-      "word_count": 783,
+      "word_count": 1143,
       "id": "su-31",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-32"
@@ -382,7 +382,7 @@
       "number": 40,
       "file": "40.json",
       "title": "Stars Between the Strings",
-      "word_count": 778,
+      "word_count": 1170,
       "id": "su-40",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-41"

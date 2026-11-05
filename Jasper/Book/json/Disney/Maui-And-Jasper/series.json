@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 52186,
+  "total_word_count": 54770,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -39,7 +39,7 @@
       "file": "02.json",
       "title": "The Hook and the Horizon",
       "id": "maui-02",
-      "word_count": 606,
+      "word_count": 1276,
       "next_chapter_id": "maui-03"
     },
     {
@@ -79,7 +79,7 @@
       "file": "07.json",
       "title": "A Dance That Asked",
       "id": "maui-07",
-      "word_count": 569,
+      "word_count": 1161,
       "next_chapter_id": "maui-08"
     },
     {
@@ -95,7 +95,7 @@
       "file": "09.json",
       "title": "Stormlight",
       "id": "maui-09",
-      "word_count": 506,
+      "word_count": 1249,
       "next_chapter_id": "maui-10"
     },
     {
@@ -103,7 +103,7 @@
       "file": "10.json",
       "title": "The Person I Choose",
       "id": "maui-10",
-      "word_count": 717,
+      "word_count": 1296,
       "next_chapter_id": "maui-11"
     },
     {
