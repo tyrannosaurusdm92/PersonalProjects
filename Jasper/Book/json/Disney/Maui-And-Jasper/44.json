@@ -1,0 +1,34 @@
+{
+  "schema_version": "8.2",
+  "work_type": "fanfiction_chapter",
+  "author": "William Saville",
+  "date_written": "2026-11-05",
+  "date_revised": "2026-11-05",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper — adult first-person protagonist, externally they/them",
+  "rating": "Teen",
+  "content_notes": [
+    "Romance and non-graphic fade-to-black",
+    "Community safety and public festivals",
+    "Self-directed memory and consent"
+  ],
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "chapter_number": 44,
+  "id": "maui-44",
+  "title": "Three Safe Ways Home",
+  "subtitle": "Lanternweald — sixth expansion pass",
+  "word_count": 961,
+  "content": "The emergency map had four different colors, and none of them meant what I thought.\n\n\"Blue is the accessible ridge path,\" Pip explained. \"Green is the upper canal route when the water is low. Gold is the sheltered walk from the square. Red means closed.\"\n\n\"Then why is the red line drawn all the way to the Threadway?\" I asked.\n\n\"Because we have to show where people must stop.\"\n\nI nodded. That made sense, which was precisely why I was suspicious. Too many things had made sense on a map before a person tried to use them.\n\nThe working group was meeting in Lanternwell Square. Fen brought tide markers, Tamsin brought inspection sheets, and Neri brought the archive's revised departure rules. Katara was reviewing the clinic's needs; Aang was checking which routes children could use with their caregivers. Toph sat near the stone base of the arch, listening to every cart that crossed the square.\n\nDanse had written the first draft of the emergency checklist.\n\nIt was impressively short.\n\nIt was also missing a question.\n\n\"What if someone doesn't want to leave?\" I asked.\n\nHe looked at the paper. \"If the building is unsafe—\"\n\n\"What if the building is safe and they prefer to wait there?\"\n\nHe paused. \"Then we tell them their options and respect the choice.\"\n\n\"Can we write that down?\"\n\nHe added a line.\n\nEdda raised a hand.\n\n\"What if I want to leave but can't use the route you've marked?\"\n\nPip turned the map around.\n\n\"We have the level ridge path.\"\n\n\"Except last storm that path flooded at the lowest bend.\"\n\nTamsin made a note.\n\n\"Then we need a third option.\"\n\nWe spent the morning walking the routes rather than arguing about them from the table. The blue path climbed toward the upper ridge and reached the Tideglass Door by a series of level turns. The green path followed the canal, shorter but dependent on tide conditions. The gold route led to the hall, where people could wait safely without crossing into another world.\n\nThree choices did not mean three promises of equal safety.\n\nEach needed conditions and a clear announcement.\n\nAt the first junction, Greg joined us carrying a small handbell.\n\n\"Thought this might help people hear the route changes,\" he said.\n\nToph raised an eyebrow.\n\n\"You're going to sing the emergency instructions?\"\n\n\"Only if everyone agrees the song is catchy.\"\n\n\"Don't.\"\n\nGreg laughed.\n\nHe played a single note and listened to it echo between the buildings. The sound carried well, but Neri pointed out that not everyone could hear it. Pip added a visual signal beside the bell and a written notice at each route entrance.\n\nMaui took the signs from the cart.\n\n\"I can hang them.\"\n\nPip looked at the map.\n\n\"After we check the height.\"\n\nHe held them lower.\n\n\"Right.\"\n\nIroh arrived with tea and asked whether the waiting hall had enough chairs and hot water. Mara explained the pantry could supply meals for the first day, but not indefinitely. The emergency plan needed a handoff to paid suppliers if the closure lasted longer.\n\nSeverus, who had come only to check whether the archive's key procedure was represented correctly, corrected the wording on the private departure form.\n\n\"Do not write *may be required to disclose destination*,\" he said. \"That invites unnecessary collection of information.\"\n\nNeri crossed it out.\n\nPeople could leave voluntarily. Guides could help. Nobody would be forced through an arch or required to announce which person they were going to see on the other side.\n\nWe tested the plan that afternoon.\n\nEdda took the blue route and reported where the gravel had become loose. A parent with two children tried the gold route to the hall and discovered the lantern sign could not be seen around a market stall. A visitor named Beren asked whether they could decline the offered guide without explaining why.\n\n\"Yes,\" Neri said.\n\nBeren declined, then returned to ask for help after realizing the signs weren't yet clear enough.\n\nNobody treated either choice as a failure.\n\nThe test was a mess.\n\nIt was a useful mess.\n\nAfter the debrief, Maui found me beside the notice board. He had spent hours carrying supports, not one of which would make a good tale about catching the sun.\n\n\"You looked happy,\" he said.\n\n\"I'm exhausted.\"\n\n\"Both can be true.\"\n\nI smiled.\n\nHe pointed toward the map.\n\n\"Why three ways? Why not make one perfect route?\"\n\n\"Because people need different things. And because no route stays perfect in every storm.\"\n\nHe considered that.\n\n\"I spent a long time thinking being a hero meant getting everyone to follow me.\"\n\n\"And now?\"\n\n\"Now I think I should probably ask where they're trying to go.\"\n\nI kissed his cheek.\n\nHe grinned.\n\nA few days later the route signs were installed at their tested heights. The bell signal was paired with lantern markings and written notices. The public instructions listed shelter, voluntary departure, privacy, assistance on request, and the conditions under which each route closed.\n\nAt the bottom was a line that had taken the whole committee a ridiculous amount of time to agree upon:\n\n*The safest available option is the one explained clearly enough for the traveler to choose.*\n\nAt dusk, I stood beneath the arches and watched people pass.\n\nSome went home to families. Some went to visit friends. Some entered the hall because the wind was cold and they wanted tea.\n\nNobody had to justify the direction they chose.\n\nMaui stood beside me, holding the final inspection sheet.\n\n\"All this work,\" he said, \"and nobody will remember who hung the signs.\"\n\n\"Maybe.\"\n\nHe looked at me.\n\n\"That's all right.\"\n\nThen he took my hand, and we walked toward Tideglass by the gold-lit path, simply because that was where we wanted to go.",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "past",
+  "shared_world": {
+    "name": "The Lanternweald",
+    "district": "Lanternwell Square",
+    "threadway": "The Tideglass Door"
+  },
+  "publication_status": "complete_prose",
+  "next_chapter_id": null,
+  "writer_style_profile": "json/william-writing-style.json"
+}
