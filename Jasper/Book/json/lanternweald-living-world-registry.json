@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 8,
+  "editorial_revision_pass": 9,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -591,7 +591,7 @@
       "premise": "A performer stops when their chosen shift ends"
     }
   ],
-  "revised_chapter_count_this_pass": 13,
+  "revised_chapter_count_this_pass": 12,
   "revised_chapter_slots_by_series_pass8": {
     "the-shore-i-choose": [
       2,
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 393108,
+  "manifest_word_count": 399226,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -692,5 +692,83 @@
         "Moonroot public archives do not inherit private medical records"
       ]
     }
+  ],
+  "revised_chapter_slots_by_series_pass9": {
+    "the-shore-i-choose": [
+      43,
+      48
+    ],
+    "after-always": [
+      48
+    ],
+    "jasmine-after-rain": [
+      32,
+      36,
+      38
+    ],
+    "love-and-duty": [
+      47
+    ],
+    "what-the-armor-leaves-behind": [
+      47
+    ],
+    "stars-between-the-strings": [
+      24,
+      28,
+      34,
+      35
+    ]
+  },
+  "civic_correction_protocol": {
+    "public": [
+      "Record original evidence and dated correction",
+      "Cite current publicly available source",
+      "Do not publish contributors' private data by default"
+    ],
+    "confidential": [
+      "Consult original contributor for routine changes",
+      "Keep testimony restricted, publish consent-limited summaries",
+      "Use necessary safety information without publishing destinations"
+    ],
+    "illustrative_case": "Maui 48: old departure request time corrected against actual ferry and tide log; traveler chooses anonymity"
+  },
+  "ninth_pass_district_loops": [
+    {
+      "from": "tideglass-cove",
+      "to": "moonroot-archive",
+      "trigger": "silt changes in the inspected surface overflow route",
+      "practice": "dated public tide evidence without false conclusions about the sealed underground passage"
+    },
+    {
+      "from": "moonroot-archive",
+      "to": "riverstone-terrace",
+      "trigger": "archive's safe crossing time corrected",
+      "practice": "review public ferry and delivery schedule while preserving traveler anonymity"
+    },
+    {
+      "from": "brasswatch-yard",
+      "to": "lanternwell-square",
+      "trigger": "unsafe old security wording and public lantern exits",
+      "practice": "test access and independent complaints; never profile visitors"
+    },
+    {
+      "from": "riverstone-terrace",
+      "to": "lanternwell-square",
+      "trigger": "stronger Longlight ridge winds",
+      "practice": "end kite launches on Fen's posted safety schedule despite a famous guest"
+    },
+    {
+      "from": "starwake-pier",
+      "to": "beach-city",
+      "trigger": "Greg books a forty-minute voluntary performance",
+      "practice": "check safe Threadway timing and preserve Beach City's independent calendar"
+    }
+  ],
+  "story_tone_constraints": [
+    "Original first-person adult Jasper, hewing to json/william-writing-style.json at corpus level",
+    "Each partner has distinctly voiced ordinary speech, not repeated abstract advice",
+    "Ethical non-monogamy and preference for polyamory disclosed to all partners",
+    "Sensual non-explicit intimacy, chosen touch and private fade-to-black",
+    "Diverse resident labor and consent without converting people into quest dispensers"
   ]
 }
