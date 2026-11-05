@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 62119,
+  "total_word_count": 63026,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -229,7 +229,7 @@
       "number": 23,
       "file": "23.json",
       "title": "The White Lotus Does Not Whisper",
-      "word_count": 690,
+      "word_count": 961,
       "id": "avatar-23",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-24"
@@ -247,7 +247,7 @@
       "number": 25,
       "file": "25.json",
       "title": "The Garden Behind the Shop",
-      "word_count": 678,
+      "word_count": 900,
       "id": "avatar-25",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-26"
@@ -265,7 +265,7 @@
       "number": 27,
       "file": "27.json",
       "title": "The Shape of Forgiveness",
-      "word_count": 678,
+      "word_count": 882,
       "id": "avatar-27",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-28"
@@ -355,7 +355,7 @@
       "number": 37,
       "file": "37.json",
       "title": "The Day We Return",
-      "word_count": 673,
+      "word_count": 883,
       "id": "avatar-37",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-38"
