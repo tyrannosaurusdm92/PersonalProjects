@@ -387,7 +387,7 @@
 
 ## Cross-book sequencing
 
-The first ten Maui chapters precede the five other romances in Jasper's personal chronology. The additional chapters depict a later shared season, with letter references, scheduled visits and crossovers that do not require Jasper to be in two places at once. The order of publication does not imply that all six added chapters numbered 41 take place simultaneously. Each series ends by protecting homeworld commitments and Jasper's right to keep choosing, not by forcing a collective romance.
+The first ten Maui chapters precede the five other romances in Jasper's personal chronology. Maui's chapters 11–50 span later exploratory visits and the shared season that follows. The other books' chapters 41–50 continue after their original endings. Letter references, scheduled visits and crossovers never require Jasper to be in two places at once. The order of publication does not imply that all six added chapters numbered 41 take place simultaneously. Each series ends by protecting homeworld commitments and Jasper's right to keep choosing, not by forcing a collective romance.
 
 ## Editorial verification checklist
 
