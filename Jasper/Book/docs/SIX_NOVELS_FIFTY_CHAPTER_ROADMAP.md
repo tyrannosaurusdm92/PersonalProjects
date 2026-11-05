@@ -1,6 +1,6 @@
 # The Lanternweald: Six Connected 50-Chapter Novels — Editorial Roadmap
 
-**Status, November 5, 2026: 281 written prose chapters are live, and 19 chapters are still outlines.**
+**Status, November 5, 2026: 300 written prose chapters are published, with zero outline-only chapter slots.**
 
 **This document distinguishes published prose from unwritten plans.** Existing published chapters remain in the repository. A roadmap entry is not a finished chapter, and this file must not be counted by the reader as prose.
 
@@ -12,11 +12,11 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 1. **The Shore I Choose 01–10**: Jasper arrives, names themself and helps establish the Lanternweald; the other Threadways open.
 2. **The five other stories 01–40**: individual relationship arcs in their *real* homeworlds; voluntary short bridge scenes show connections.
-3. **The five books 41–50 and Maui 11–50**: linked season-two threads that may overlap. Maui 11–20 establishes the civic conflict; 21–30 introduces visitors, 31–40 investigates the Closed Bells, and 41–50 resolves the drainage/exit crisis. The order is not identical to an implied single calendar; no chapter rewinds cause and effect.
+3. **The five books 41–50 and Maui 11–50**: linked season-two threads that may overlap. Maui 11–20 establishes the civic conflict; 21–30 introduces visitors, 31–40 investigates the Closed Bells, and 41–50 establishes safer surface drainage and voluntary exits while leaving the old underground service passage sealed pending evidence. The order is not identical to an implied single calendar; no chapter rewinds cause and effect.
 
 ## The Shore I Choose — Maui
 
-**Existing prose:** Chapters 1–10. **Planned expansion:** Chapters 11–50 (40 distinct beats). Each planned chapter has a homeworld consequence and a relationship consequence; later crossover appearances must respect each visitor's consent and schedule.
+**Published prose:** Chapters 1–50. The outline below is the completed narrative beat map of the original chapters plus 40 fully written expansion chapters (11–50). Every crossover respects visitors' agency and independent schedules. Older chapters 1–10 remain candidates for depth-parity line editing.
 
 **11. [WRITTEN] — The Tide Takes Inventory** — Jasper and Maui audit storm damage at the first landing and discover that the welcome sign promises a safe crossing that the dock cannot yet provide; fixing a fact becomes the first test of leadership.
 
@@ -60,43 +60,43 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **31. [WRITTEN] — Six Different Roads** — Jasper returns from visits with Iroh, Aang, Katara, Toph, Severus, Danse and Greg carrying joy and difficult responsibilities; Maui asks what he should know, not what he may own.
 
-**32. The Shape of an Agreement** — A living relationship agreement is revised after a missed visit. No one is put on trial; Jasper and Maui discuss scheduling, privacy, honesty and the right to say no.
+**32. [WRITTEN] — The Shape of an Agreement** — A living relationship agreement is revised after a missed visit. No one is put on trial; Jasper and Maui discuss scheduling, privacy, honesty and the right to say no.
 
-**33. The Unfinished Song** — Greg asks Maui to help with a chorus and receives a speech. He asks again, this time for quiet company. Maui learns that presence is sometimes the correct kind of contribution.
+**33. [WRITTEN] — The Unfinished Song** — Greg asks Maui to help with a chorus and receives a speech. He asks again, this time for quiet company. Maui learns that presence is sometimes the correct kind of contribution.
 
-**34. A Nail from the Commonwealth** — Danse's salvaged fastener corrodes in sea air. Brasswatch and Tideglass must test materials together; the failed part has an ordinary explanation with extraordinary consequences.
+**34. [WRITTEN] — A Nail from the Commonwealth** — Danse's salvaged fastener corrodes in sea air. Brasswatch and Tideglass must test materials together; the failed part has an ordinary explanation with extraordinary consequences.
 
-**35. The Archive's Empty Line** — Severus finds an erased archival name and refuses to fill it with a guess. Jasper meets Neri's shame with questions that require answers, not comforting platitudes.
+**35. [WRITTEN] — The Archive's Empty Line** — Severus finds an erased archival name and refuses to fill it with a guess. Jasper meets Neri's shame with questions that require answers, not comforting platitudes.
 
-**36. Permission for Privacy** — A rumor about Jasper's partners reaches Lanternwell Square. Jasper publicly defends everyone's right not to disclose private relationship details to curious neighbors.
+**36. [WRITTEN] — Permission for Privacy** — A rumor about Jasper's partners reaches Lanternwell Square. Jasper publicly defends everyone's right not to disclose private relationship details to curious neighbors.
 
-**37. The Tide Between Us** — Jasper and Maui disagree about an unannounced visitor. The argument follows them home; the repair begins with each naming a concrete mistake and ends behind a gently closed door.
+**37. [WRITTEN] — The Tide Between Us** — Jasper and Maui disagree about an unannounced visitor. The argument follows them home; the repair begins with each naming a concrete mistake and ends behind a gently closed door.
 
-**38. A Bridge with Too Many Owners** — Aang, Katara, Toph, Jasper and the local committee confront a bridge project funded by one neighborhood and used by two. The real conflict is ongoing maintenance.
+**38. [WRITTEN] — A Bridge with Too Many Owners** — Aang, Katara, Toph, Jasper and the local committee confront a bridge project funded by one neighborhood and used by two. The real conflict is ongoing maintenance.
 
-**39. The Keeper's Refusal** — Neri finally says they watched an earlier keeper prevent exits under the name of protection. Jasper refuses the neat fiction that a well-intentioned wrong did no harm.
+**39. [WRITTEN] — The Keeper's Refusal** — Neri finally says they watched an earlier keeper prevent exits under the name of protection. Jasper refuses the neat fiction that a well-intentioned wrong did no harm.
 
-**40. A Day of Ordinary Things** — Maui does laundry badly, Jasper makes two wrong measurements, and everyone eats a late dinner. Small mistakes become evidence that a home can survive imperfection.
+**40. [WRITTEN] — A Day of Ordinary Things** — Maui does laundry badly, Jasper makes two wrong measurements, and everyone eats a late dinner. Small mistakes become evidence that a home can survive imperfection.
 
-**41. Under the Seventh Scratch** — The old drainage channel appears under the arches; its door opens onto maintenance stone, not a new lover or another world. Jasper and Maui descend only after safety checks.
+**41. [WRITTEN] — Under the Seventh Scratch** — The old drainage channel appears under the arches; its door opens onto maintenance stone, not a new lover or another world. Jasper and Maui descend only after safety checks.
 
-**42. Where the Water Cannot Go** — Fen explains how the sealed service path worsened flooding for decades. Neri provides records; the neighborhood chooses a temporary closure despite the disappointment.
+**42. [WRITTEN] — Where the Water Cannot Go** — Fen explains how the sealed service path worsened flooding for decades. Neri provides records; the neighborhood chooses a temporary closure despite the disappointment.
 
-**43. The Right to Disagree** — A public meeting splits over opening the route. Jasper loses a vote and accepts it; Maui stops treating dissent as an insult to their work.
+**43. [WRITTEN] — The Right to Disagree** — A public meeting splits over opening the route. Jasper loses a vote and accepts it; Maui stops treating dissent as an insult to their work.
 
-**44. Three Safe Ways Home** — A working group designs emergency exits with clear announcements, private refusal and safe waiting spaces. Each visiting character contributes without becoming an appointed savior.
+**44. [WRITTEN] — Three Safe Ways Home** — A working group designs emergency exits with clear announcements, private refusal and safe waiting spaces. Each visiting character contributes without becoming an appointed savior.
 
-**45. The Last Big Performance** — Maui is offered a stage during the repair celebration and chooses a smaller role, helping Pip set lantern hooks. Jasper sees him without needing the crowd to see him.
+**45. [WRITTEN] — The Last Big Performance** — Maui is offered a stage during the repair celebration and chooses a smaller role, helping Pip set lantern hooks. Jasper sees him without needing the crowd to see him.
 
-**46. What I Remember Now** — An old memory returns: Jasper used to avoid saying what they wanted. They write down an honest wish for each connection without asking anyone else to fulfill it.
+**46. [WRITTEN] — What I Remember Now** — An old memory returns: Jasper used to avoid saying what they wanted. They write down an honest wish for each connection without asking anyone else to fulfill it.
 
-**47. Night at the Reopened Channel** — Rain tests the drainage path. In the quiet hours, Maui and Jasper celebrate surviving a difficult year with tenderness and a private fade-to-black.
+**47. [WRITTEN] — Night at the Reopened Channel** — Rain tests the drainage path. In the quiet hours, Maui and Jasper celebrate surviving a difficult year with tenderness and a private fade-to-black.
 
-**48. The Lantern Ledger** — Jasper and Neri rebuild the old record, retaining a blank line where permission to name someone has not been given. Accountability requires legibility, not forced revelation.
+**48. [WRITTEN] — The Lantern Ledger** — Jasper and Neri rebuild the old record, retaining a blank line where permission to name someone has not been given. Accountability requires legibility, not forced revelation.
 
-**49. The Boats That Return** — A visitor returns by choice months after leaving. Maui watches the reunion without claiming credit; Jasper learns the beauty of an invitation that can be refused.
+**49. [WRITTEN] — The Boats That Return** — A visitor returns by choice months after leaving. Maui watches the reunion without claiming credit; Jasper learns the beauty of an invitation that can be refused.
 
-**50. The Shore I Keep Choosing** — The final celebration does not end the other romances or declare a single forever. Jasper and Maui repair a small loose board, speak their current promises, and walk toward a door that remains freely open.
+**50. [WRITTEN] — The Shore I Keep Choosing** — The final celebration does not end the other romances or declare a single forever. Jasper and Maui repair a small loose board, speak their current promises, and walk toward a door that remains freely open.
 
 ## After Always — Severus Snape
 

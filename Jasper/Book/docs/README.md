@@ -1,54 +1,60 @@
-# Jasper's Fanfiction Spot — the Lanternweald
+# Jasper's Fanfiction Spot — Six Novels, 300 Written Chapters
 
-Six interconnected, **linear** fanfiction novels. Jasper is the same adult, first-person reader-insert (referred to as they/them by others) across all six, with informed, honest ethical non-monogamy and a stated preference for polyamory. Their relationships are independently chosen, regularly negotiated, and never mechanically forced by the Threadways. Romance is playful and sensual, with non-graphic fade-to-black and individual agency. The prose cadence is guided by `json/william-writing-style.json` while preserving character-specific voices.
+The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
-## Written chapter status — 2026-11-05 (fifth expansion)
+## Final chapter count: November 5, 2026
 
-| Novel | Relationship focus | Written chapters | Still outlined |
+| Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **31 / 50** | 19 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 0 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 0 |
-| Love & Duty | Adult Aang / Katara / Toph / Jasper polycule | **50 / 50** | 0 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 0 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 0 |
-| **Total** | **Six linked novels** | **281 / 300** | **19** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 49,293 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 66,199 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 56,103 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 72,956 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 73,063 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 59,746 |
+| **Total** | **Six connected novels** | **300 / 300** | **377,360** |
 
-**New in the fifth pass:** 23 **fully written** prose chapters: Maui **24–31**, and the final **48–50** for each of the other five novels. This brings the five other novels to their planned 50-chapter endpoints, while their shared world remains open for future stories. Maui's remaining **32–50** are still **unwritten outlines**, not chapters available in the reader. The historical baseline included shorter chapters, especially Maui 1–10; depth-parity line editing of older prose remains an editorial task even for books with 50 chapter files.
+*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is achieved; prose-depth parity still warrants editorial revision of older, shorter chapters, especially Maui chapters 1–10.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
-**Previous expansions:** 210 original chapters; pass 1 added 6; pass 2 added 12; pass 3 added 12; pass 4 added 18; pass 5 added 23. All source changes in the last four passes were committed directly to GitHub's existing `main` branch (no new branch/PR). Earlier disclosed ENM/polyamory conversations exist within the source prose and reader patch, not only in documentation.
+## Sixth expansion pass
 
-## Interactive floating book and offline reader
+**19 full Maui chapters, 32–50, committed directly to `main` without a new branch or pull request.** This completed the sixth novel. They develop a revisable relationship agreement; Greg and Danse crossovers; public boundaries around private polyamory; archive testimony; a joint bridge maintenance funding agreement; a carefully inspected seventh-scratch maintenance chamber; flood and emergency decisions; a non-heroic community celebration; Jasper's chosen memory exploration; a storm-tested temporary surface water channel; a public archive ledger retaining unresolved evidence; Tomas's voluntary return; and a non-exclusive, tender ending with Maui.
 
-Open `Jasper/Book/index.html` directly in a browser. The opening floating 3D cover uses the existing `assets/book-cover.png`. Activate the book to enter a **linear** reader with story/chapter dropdowns, Previous/Next buttons and local saved progress; use Back to book cover to return. This is not a page-flipping reader or a choose-your-own-adventure game. It requires no local server, and the fallback allows access to the reader if the floating-book enhancement cannot run.
+Previous passes added 6 + 12 + 12 + 18 + 23 = 71 prose chapters, bringing the earlier 210-chapter library to 281. Pass six added the final 19, for **300 complete prose chapter files**. All other five novels had already received chapter-50 conclusions in pass five; pass six does not rewrite or erase them.
 
-Reader script order, with all chapter content embedded for local `file://` use:
+## How to read
 
-1. `js/fanfic-data.js` — original 210-chapter offline base
-2. `js/lanternweald-relationship-scenes.js` — informed ENM/polyamory conversations, existing narrative bridges
-3. `js/lanternweald-new-chapters.js` — pass 1, six prose chapters
-4. `js/lanternweald-continuations-pass2.js` — pass 2, twelve chapters
-5. `js/lanternweald-continuations-pass3.js` — pass 3, twelve chapters
+Open **`Jasper/Book/index.html`** directly in a browser. The existing **floating 3D book cover** is the visual entrance. Activate it to reach a **linear** reading interface with story and chapter selectors, Previous/Next controls, a progress meter, and locally saved reading position. Use the Back to book cover control to return. No page-flipping romance mechanics, CYOA branches, game decisions, or internet fetches are required. The floating cover still uses `assets/book-cover.png`.
+
+Script load order is important because each successive JavaScript file adds real complete prose to the in-memory offline library before `js/app.js` renders it:
+
+1. `js/fanfic-data.js` — original 210 chapters
+2. `js/lanternweald-relationship-scenes.js` — early ENM/polyamory disclosures and bridges
+3. `js/lanternweald-new-chapters.js` — first six added chapters
+4. `js/lanternweald-continuations-pass2.js` — second pass
+5. `js/lanternweald-continuations-pass3.js` — third pass
 6. `js/lanternweald-continuations-pass4-maui.js` — Maui 16–23
-7. `js/lanternweald-continuations-pass4-others.js` — five novels' 46–47
+7. `js/lanternweald-continuations-pass4-others.js` — five novels 46–47
 8. `js/lanternweald-continuations-pass5-maui.js` — Maui 24–31
-9. `js/lanternweald-continuations-pass5-others.js` — five novels' 48–50
-10. `js/app.js` — renderer and saved progress
-11. `js/floating-book.js` — floating gateway interactions
+9. `js/lanternweald-continuations-pass5-others.js` — five novels 48–50
+10. `js/lanternweald-continuations-pass6-maui-32-40.js` — Maui 32–40
+11. `js/lanternweald-continuations-pass6-maui-41-50.js` — Maui 41–50
+12. `js/app.js` — chapter renderer and progress
+13. `js/floating-book.js` — animated cover interactions
 
-The JSON source of each real chapter is at `json/<fandom>/<series>/<chapter-number>.json`. Each `series.json` contains exact chapter count, word counts, IDs, next-chapter links and outlines remaining. `json/fandoms.json` provides the reconciled catalog. The offline reader contains the same complete written chapters as source JSON; it is not necessary to fetch the JSON over a network.
+Each novel also contains `json/<fandom>/<series>/<number>.json` source chapters and a `series.json` manifest recording all 50 IDs, next links, titles, and word counts. `json/fandoms.json` records the six-series catalog. The reader works locally using embedded chapter content, rather than relying on `fetch()` for file:// chapter loading.
 
-## Connected world and source-of-truth docs
+## Living world and future editorial work
 
-The Lanternweald is a lived-in seven-district world, comparable to a life-simulation setting in its daily variety, but original in geography, Threadway ethics, residents, economy, memory and public responsibilities. Crossovers have concrete consequences: Tideglass storm conditions affect Jasmine Steps drainage and Starwake resonance; Moonroot's damaged records inform safe infrastructure repairs; Brasswatch's generator serves Lanternwell; Riverstone's bridge reopening changes access to homes and deliveries. Residents can disagree, decline invitations, keep secrets, own property, charge fairly and leave.
+The Lanternweald's seven original districts share finite resources, schedules, local politics, public services, voluntary Threadway travel, seasonal celebrations, work, culture, and evolving relationships. It is **not** a clone of Dreamlight Valley; the comparison is about an equally rich sense of place, routine, neighbors and discoveries.
 
-- `docs/LANTERNWEALD_LIVING_WORLD_BIBLE.md` — immutable Threadway constraints, primary civic and district lore
-- `docs/LANTERNWEALD_PASS2_CONTINUITY.md` — departures, early crossover consequences
-- `docs/LANTERNWEALD_PASS3_CONTINUITY.md` — accessibility, historical accuracy, shared scarce resources, the Lantern Walk
-- `docs/LANTERNWEALD_PASS4_CONTINUITY.md` — Frostturn, orchard trial, second bell, Longlight, apprenticeship, Listening Fair
-- `docs/LANTERNWEALD_PASS5_CONTINUITY.md` — closure outcomes in five books, additional community systems, cross-novel chronology, ongoing lower passage inquiry and Maui's remaining arc
-- `docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md` — all 300 original chapter slots, each marked written versus still outlined
+- `docs/LANTERNWEALD_LIVING_WORLD_BIBLE.md` — foundational Threadway and district rules
+- `docs/LANTERNWEALD_PASS2_CONTINUITY.md` — early linked continuity
+- `docs/LANTERNWEALD_PASS3_CONTINUITY.md` — accessibility, costs, grief, consent and privacy
+- `docs/LANTERNWEALD_PASS4_CONTINUITY.md` — seasonal customs, skills, bells and garden stewardship
+- `docs/LANTERNWEALD_PASS5_CONTINUITY.md` — five novel endings and interdependent infrastructure
+- `docs/LANTERNWEALD_PASS6_CONTINUITY.md` — sixth novel completion, civic atlas, open mysteries and future scene anchors
+- `json/lanternweald-living-world-registry.json` — structured seven-district and resident continuity registry
+- `docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md` — 300 marked-written beat summaries for editorial navigation
 
-Remaining work: **19 full Maui chapters** (32–50), plus an eventual revision for depth parity in older stories. Five novels have a written ending, but **none of the other relationships are erased or converted to exclusivity** to obtain closure.
-
-**Validation scope:** chapter counts, chapter numbering, unique IDs, next links, script load order and source/reader consistency can be checked structurally. This does not assert a full visual browser usability test or professional editorial certification.
+**Remaining work is editorial, not missing chapters:** deepening shorter older prose, preserving each character's distinct speech and pace, refining intimate fade-to-black variation, reconciling chronological overlaps, and running a true visual browser usability test. The lower Tideglass **historic underground service passage remains sealed** at these endings; the **temporary surface channel** is what passes storm tests and reopens. Do not flatten that distinction in future revisions.

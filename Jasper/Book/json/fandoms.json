@@ -194,9 +194,9 @@
       "pairing": "Maui / Jasper",
       "description": "Jasper, memory and the chosen shore that begins the Lanternweald.",
       "story_type": "linear_fanfiction",
-      "chapter_count": 31,
+      "chapter_count": 50,
       "choice_count": 0,
-      "total_word_count": 31054,
+      "total_word_count": 49293,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -208,13 +208,13 @@
       "relationship_structure": "Jasper is ethically non-monogamous and prefers polyamory; partners informed and consenting.",
       "expansion_status": {
         "target_chapters": 50,
-        "written_chapters": 31,
-        "remaining_chapters": 19,
+        "written_chapters": 50,
+        "remaining_chapters": 0,
         "story_plan": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
       }
     }
   ],
-  "total_word_count": 300007,
+  "total_word_count": 377360,
   "audience": {
     "private_project": true,
     "sole_reader": "Jasper",
@@ -276,7 +276,7 @@
     "private_handoff_via_explicit_bridge": true,
     "private_handoff_returns_to_story": true
   },
-  "total_written_chapters": 281,
+  "total_written_chapters": 300,
   "target_chapters": 300,
-  "next_unwritten_chapter_count": 19
+  "next_unwritten_chapter_count": 0
 }
