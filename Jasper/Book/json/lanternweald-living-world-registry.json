@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 11,
+  "editorial_revision_pass": 12,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -591,7 +591,7 @@
       "premise": "A performer stops when their chosen shift ends"
     }
   ],
-  "revised_chapter_count_this_pass": 19,
+  "revised_chapter_count_this_pass": 31,
   "revised_chapter_slots_by_series_pass8": {
     "the-shore-i-choose": [
       2,
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 406532,
+  "manifest_word_count": 419087,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -847,5 +847,65 @@
     "safety": "Coastal fasteners require verified material ratings; surface channel tests do not open the historic underground barrier.",
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
+  },
+  "latest_audit": "docs/PROSE_DEPTH_PASS12_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS12_CONTINUITY.md",
+  "community_atlas": "json/lanternweald-community-atlas.json",
+  "depth_review_below_1200": 46,
+  "revised_chapter_slots_by_series_pass12": {
+    "the-shore-i-choose": [
+      35,
+      38,
+      39,
+      41,
+      44,
+      46,
+      47,
+      49
+    ],
+    "after-always": [
+      20,
+      22,
+      25,
+      27,
+      45
+    ],
+    "jasmine-after-rain": [
+      25,
+      27,
+      37,
+      48,
+      49
+    ],
+    "love-and-duty": [
+      42,
+      45
+    ],
+    "what-the-armor-leaves-behind": [
+      41,
+      45
+    ],
+    "stars-between-the-strings": [
+      23,
+      26,
+      30,
+      32,
+      37,
+      45,
+      48,
+      49,
+      50
+    ]
+  },
+  "twelfth_pass_civic_and_continuity_rules": {
+    "archival_confidence": "Neri may amend restricted testimony; scraped keeper signature remains unknown; Moonroot verifies provenance before publishing conclusions.",
+    "bridge_and_paths": "Street approaches, resident voices, accessible alternatives and actual budgets are part of a bridge safety decision.",
+    "flood_and_sound": "Starwake's low note may correlate with changing pressure but is not proof of an open historic tunnel; only safe surface system carries controlled water.",
+    "water_supply": "When Brasswatch purifier is offline, affected households receive workable alternate water access and full public notice.",
+    "labor_and_housing": "Workers choose paid shifts; housing is not earned through labor, private home space requires each resident's consent.",
+    "performances": "Greg, Maui, Iroh and children decide whether and how their voluntary performances and lantern art are displayed.",
+    "homeworld_integrity": "Ba Sing Se's Jasmine Dragon is not Jasmine Steps; Greg remains tied to Beach City; Spinner's End, the South and Commonwealth retain their own independent histories.",
+    "romance": "Jasper states ethical non-monogamy and preferred polyamory to each partner; privacy, scheduling, changes and tender non-explicit intimacy are continuously consent-based.",
+    "canon_vs_unwritten": "Community atlas proposals are future writing seeds, not enacted chapters; each novel remains 50 linear chapters with original endings"
   }
 }
