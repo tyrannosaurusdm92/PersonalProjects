@@ -1,5 +1,7 @@
 # The Lanternweald: Six Connected 50-Chapter Novels — Editorial Roadmap
 
+**Status, November 5, 2026: 240 written prose chapters are live, and 60 chapters are still outlines.**
+
 **This document distinguishes published prose from unwritten plans.** Existing published chapters remain in the repository. A roadmap entry is not a finished chapter, and this file must not be counted by the reader as prose.
 
 ## Shared craft requirements
@@ -22,9 +24,9 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **13. Ink on the Water** — A current carries a scrap of Neri's oldest ledger ashore. Jasper recognizes the key notch in its drawing, then chooses not to turn a personal memory into the entire village's mystery.
 
-**14. The Quiet Work of Rope** — Maui's hand is hurt when a mooring snaps; Jasper learns a more reliable knot from Fen, and Maui must accept help that does not make him indebted.
+**14. [WRITTEN Nov 5] — The Quiet Work of Rope** — Maui's hand is hurt when a mooring snaps; Jasper learns a more reliable knot from Fen, and Maui must accept help that does not make him indebted.
 
-**15. No One Is a Prize** — A feast includes a boastful visitor who calls Jasper Maui's reward. Jasper challenges the language publicly; Maui must decide whether his laughter helped the insult.
+**15. [WRITTEN Nov 5] — No One Is a Prize** — A feast includes a boastful visitor who calls Jasper Maui's reward. Jasper challenges the language publicly; Maui must decide whether his laughter helped the insult.
 
 **16. The Sea Glass Orchard** — Tamsin proposes a sheltered garden of salt-resistant plants. Jasper wants everyone invited; the garden steward explains why not every patch of land can hold every crop.
 
@@ -82,9 +84,9 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **43. The Right to Disagree** — A public meeting splits over opening the route. Jasper loses a vote and accepts it; Maui stops treating dissent as an insult to their work.
 
-**44. Three Safe Ways Home** — A working group designs emergency exits with clear announcements, private refusal and safe waiting spaces. Each visiting character contributes without becoming an appointed savior.
+**44. [WRITTEN Nov 5] — Three Safe Ways Home** — A working group designs emergency exits with clear announcements, private refusal and safe waiting spaces. Each visiting character contributes without becoming an appointed savior.
 
-**45. The Last Big Performance** — Maui is offered a stage during the repair celebration and chooses a smaller role, helping Pip set lantern hooks. Jasper sees him without needing the crowd to see him.
+**45. [WRITTEN Nov 5] — The Last Big Performance** — Maui is offered a stage during the repair celebration and chooses a smaller role, helping Pip set lantern hooks. Jasper sees him without needing the crowd to see him.
 
 **46. What I Remember Now** — An old memory returns: Jasper used to avoid saying what they wanted. They write down an honest wish for each connection without asking anyone else to fulfill it.
 
@@ -106,9 +108,9 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **43. A Field Test for Trust** — Danse and Severus test a Brasswatch purifier with different kinds of evidence; neither thinks the other's method proves enough until an ordinary measurement catches the flaw.
 
-**44. Three Unsigned Letters** — Old letters from the war arrive at the archive. Severus chooses which to answer himself; Jasper refuses to make his past available to the committee.
+**44. [WRITTEN Nov 5] — Three Unsigned Letters** — Old letters from the war arrive at the archive. Severus chooses which to answer himself; Jasper refuses to make his past available to the committee.
 
-**45. The Terms of Us** — After an awkward scheduling conflict, Jasper and Severus revisit ENM, discretion, time and what support is actually requested. Sparse tenderness follows a difficult conversation.
+**45. [WRITTEN Nov 5] — The Terms of Us** — After an awkward scheduling conflict, Jasper and Severus revisit ENM, discretion, time and what support is actually requested. Sparse tenderness follows a difficult conversation.
 
 **46. A Book That Would Not Burn** — The archival ledger holds a blank line for the Closed Bells. Severus insists the record cannot be restored by inventing testimony, and helps Neri find the surviving evidence.
 
@@ -130,9 +132,9 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **43. The General's Old Map** — A shipping map revives Iroh's memories of war. He chooses to discuss one decision without asking Jasper to absolve him, and the map becomes an archive item with warnings.
 
-**44. Rain in the Second Kitchen** — A roof leak forces everyone into the small back kitchen. The close quarters invite flirtation and frustration, followed by a deliberate, private night after closing.
+**44. [WRITTEN Nov 5] — Rain in the Second Kitchen** — A roof leak forces everyone into the small back kitchen. The close quarters invite flirtation and frustration, followed by a deliberate, private night after closing.
 
-**45. The Price of the Mountain Mint** — A supplier's bad harvest raises prices. Rather than conjure tea, Iroh experiments with a simpler blend and asks what the workers can actually afford.
+**45. [WRITTEN Nov 5] — The Price of the Mountain Mint** — A supplier's bad harvest raises prices. Rather than conjure tea, Iroh experiments with a simpler blend and asks what the workers can actually afford.
 
 **46. A Game Neither of Us Wins** — Iroh loses a Pai Sho game because he was distracted by fear of being left. Jasper names the fear without offering exclusivity as a cure; they revisit their agreements.
 
@@ -154,9 +156,9 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **43. A Letter to the South** — Katara receives difficult news from home and chooses to go. Jasper supports the trip without treating absence as abandonment; Aang and Toph must also manage their own fears.
 
-**44. The City from Above** — Aang and Jasper fly a new survey route that reveals the floodplain's changes. The environmental problem cannot be solved with bending alone.
+**44. [WRITTEN Nov 5] — The City from Above** — Aang and Jasper fly a new survey route that reveals the floodplain's changes. The environmental problem cannot be solved with bending alone.
 
-**45. Stone Does Not Vote** — Toph confronts a councilor who assumes her earth sense makes her the sole authority on safety. She chooses collaboration over proving she is strongest.
+**45. [WRITTEN Nov 5] — Stone Does Not Vote** — Toph confronts a councilor who assumes her earth sense makes her the sole authority on safety. She chooses collaboration over proving she is strongest.
 
 **46. Dinner for People Who Disagree** — Iroh visits a crowded four-person household. Toph cracks jokes, Katara checks Jasper's comfort and Aang learns to leave disagreement unresolved for one night.
 
@@ -178,9 +180,9 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **43. A Refugee at the Yard** — A visitor threatened because of their origin needs tools and temporary shelter. Danse confronts his former rhetoric without making the vulnerable person his redemption lesson.
 
-**44. A Door Without a Lock** — The repair workshop must be accessible and secure. Danse has to build both instead of treating every open threshold as a tactical error.
+**44. [WRITTEN Nov 5] — A Door Without a Lock** — The repair workshop must be accessible and secure. Danse has to build both instead of treating every open threshold as a tactical error.
 
-**45. When the Plan Changes** — Jasper's other commitments create a scheduling conflict. Danse asks plainly about reassurance, privacy and ENM without pretending he feels nothing.
+**45. [WRITTEN Nov 5] — When the Plan Changes** — Jasper's other commitments create a scheduling conflict. Danse asks plainly about reassurance, privacy and ENM without pretending he feels nothing.
 
 **46. The Things Steel Cannot Say** — Toph and Danse argue over a support beam; one listens for stress, the other measures tolerances. Jasper notices the unpaid workers holding the problem together.
 
@@ -202,9 +204,9 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **43. Steven Comes Home for Dinner** — Steven visits and brings his own life and questions. Greg and Jasper make room for a family conversation without expecting Steven to approve their every choice.
 
-**44. The Trouble with Requests** — A guest demands Greg sing a song tied to his grief. Greg says no; Jasper backs him without telling him how he is supposed to feel.
+**44. [WRITTEN Nov 5] — The Trouble with Requests** — A guest demands Greg sing a song tied to his grief. Greg says no; Jasper backs him without telling him how he is supposed to feel.
 
-**45. A Better Kind of Jealousy** — A clumsy rumor about Jasper's relationships triggers an insecure evening. Greg speaks rather than hiding inside a joke; Jasper explains what is and isn't changing.
+**45. [WRITTEN Nov 5] — A Better Kind of Jealousy** — A clumsy rumor about Jasper's relationships triggers an insecure evening. Greg speaks rather than hiding inside a joke; Jasper explains what is and isn't changing.
 
 **46. The Listening Fair** — Toph taps a rhythm through the pier while Iroh listens to a quieter melody. Greg discovers a collaboration can mean leaving space.
 
