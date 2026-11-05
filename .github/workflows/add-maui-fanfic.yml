@@ -1,0 +1,40 @@
+name: Add Maui and Jasper Lanternweald origin novel
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/add-maui-fanfic.yml'
+      - 'Jasper/Book/tools/author_maui.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jasper-maui-story
+  cancel-in-progress: false
+
+jobs:
+  author:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Write new canonical chapters and rebuild reader
+        run: python3 Jasper/Book/tools/author_maui.py
+      - name: Commit Maui story and updated book
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A Jasper/Book/
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Step 4: add Maui and Jasper memory-loss romance and six-story reader"
+            git push origin HEAD:main
+          fi
