@@ -198,3 +198,10 @@ The ninth pass deepens **12 existing chapters** while retaining all six 50-chapt
 **Homeworld distinction remains binding:** Iroh's Jasmine Dragon and upper room are in Ba Sing Se; Greg's clinic, van and beach porch are in Beach City; Lanternweald's Jasmine Steps and Starwake Pier are different places reachable by voluntary Threadways. The old tide-arch traveler repair is distinct from the **still-sealed historic underground flood barrier**, and the Closed Bells signature remains unverified. No public festival overrides accessible routes, paid work or privacy.
 
 The community-dependency guide in `LANTERNWEALD_PASS9_CONTINUITY.md` offers continuity-safe story seeds and seven-district daily rhythms. Current manuscript metadata: **399,226 words** across 300 chapters, **87** still below 1,200 words. Chapter-count parity is complete; complete scene-depth parity is not yet claimed.
+
+
+## 16. Tenth-pass living-world routines and privacy (November 5, 2026)
+
+This revision deepens existing civic structures without changing earlier canon. Lanternwell's public arrival board displays services, not personal itineraries. Its registrar holds only restricted emergency details; reports can be corrected. Tideglass's surface overflow has posted safe test conditions and seasonal reinspection, not unlimited permission to enter the still-sealed historic tunnel. Brasswatch pays its workers and permits independent safety complaints; Moonroot respects confidential testimony. Tideglass households keep track of borrowed tools, laundry, skilled repairs and food. Ba Sing Se and Beach City remain separate homeworlds with their own employees, supplies and histories.
+
+More detailed day-to-day rhythms, seven district loops, character-specific continuity and possible future story seeds are recorded in `LANTERNWEALD_PASS10_CONTINUITY.md`. No speculative seed should be presented as an event already committed to the novels. The 14 revised chapters keep six independent, non-exclusive, consent-based 50-chapter love stories; exact current manuscript counts are in `PROSE_DEPTH_PASS10_AUDIT.md`.

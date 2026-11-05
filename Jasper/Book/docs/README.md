@@ -2,19 +2,19 @@
 
 The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
-## Final chapter count: November 5, 2026
+## Current manuscripts: November 5, 2026
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 55,858 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 67,844 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 62,119 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 74,498 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 74,460 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 64,447 |
-| **Total** | **Six connected novels** | **300 / 300** | **399,226** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 56,734 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 68,083 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 63,026 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 74,818 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 74,711 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 64,484 |
+| **Total** | **Six connected novels** | **300 / 300** | **401,856** |
 
-*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is achieved; prose-depth parity still warrants editorial revision of older, shorter chapters, especially Maui chapters 1–10.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
+*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is complete. Tenth-pass revisions improve 14 existing chapters, but 84 remain under the 1,200-word review guideline; prose-depth parity is not yet complete.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
 ## Sixth expansion pass
 
@@ -87,3 +87,8 @@ The Lanternweald's seven original districts share finite resources, schedules, l
 **Depth-parity audit:** `docs/PROSE_DEPTH_PARITY_AUDIT.md` compares all six 50-chapter manifests and identifies shorter passages for targeted scene-level expansion without adding chapter numbers.
 
 **Remaining work is editorial, not missing chapters:** deepening shorter older prose, preserving each character's distinct speech and pace, refining intimate fade-to-black variation, reconciling chronological overlaps, and running a true visual browser usability test. The lower Tideglass **historic underground service passage remains sealed** at these endings; the **temporary surface channel** is what passes storm tests and reopens. Do not flatten that distinction in future revisions.
+
+
+## Tenth editorial pass — November 5, 2026
+
+Fourteen existing chapters revised directly on `main` without a branch or pull request: Maui 36/40/42, Severus 47, Iroh 23/25/27/37, Love & Duty 46, Danse 46, Greg 23/26/30/32. Eight template-heavy chapters received distinct replacement scenes; six others gained practical consequences. Both offline reading overlays are loaded before `js/app.js`, and all 300 chapter IDs and endings remain intact. Canon addendum: `LANTERNWEALD_PASS10_CONTINUITY.md`. Latest source counts and limitations: `PROSE_DEPTH_PASS10_AUDIT.md`.

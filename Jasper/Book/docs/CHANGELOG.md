@@ -122,3 +122,12 @@
 - Corrected Create/Settings adult-era initialization order and the local composer undefined-variable defect.
 - Encapsulated converted writer modules to prevent classic-script lexical collisions on GitHub Pages.
 - Removed only non-runtime regression fixture catalogs from the Solidified Writer modules.
+
+
+## November 5, 2026 — Tenth editorial pass (direct on main)
+
+- Rewrote Iroh 23/25/27/37 and Greg 23/26/30/32, replacing repetitive narrative templates with distinct conflict, character voices, labor, history and relationship development.
+- Expanded Maui 36/40/42, Severus 47, Love & Duty 46 and Danse 46 with witnessed civic rules, lived-in intimacy, homeworld logistics and accountable public work.
+- Synchronized all six series manifests, 14 revised chapter JSON files and two new offline-reader chapter override scripts.
+- Extended the world bible and current registry, with a tenth-pass continuity addendum and explicit remaining parity gap.
+- Current six-manifest count: 401,856 words; 300 written chapters; 84 chapters under 1,200 words. No alternate ending or new branch.

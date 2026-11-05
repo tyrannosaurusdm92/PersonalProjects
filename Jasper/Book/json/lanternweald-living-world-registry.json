@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 9,
+  "editorial_revision_pass": 10,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -591,7 +591,7 @@
       "premise": "A performer stops when their chosen shift ends"
     }
   ],
-  "revised_chapter_count_this_pass": 12,
+  "revised_chapter_count_this_pass": 14,
   "revised_chapter_slots_by_series_pass8": {
     "the-shore-i-choose": [
       2,
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 399226,
+  "manifest_word_count": 401856,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -770,5 +770,41 @@
     "Ethical non-monogamy and preference for polyamory disclosed to all partners",
     "Sensual non-explicit intimacy, chosen touch and private fade-to-black",
     "Diverse resident labor and consent without converting people into quest dispensers"
-  ]
+  ],
+  "revised_chapter_slots_by_series_pass10": {
+    "the-shore-i-choose": [
+      36,
+      40,
+      42
+    ],
+    "after-always": [
+      47
+    ],
+    "jasmine-after-rain": [
+      23,
+      25,
+      27,
+      37
+    ],
+    "love-and-duty": [
+      46
+    ],
+    "what-the-armor-leaves-behind": [
+      46
+    ],
+    "stars-between-the-strings": [
+      23,
+      26,
+      30,
+      32
+    ]
+  },
+  "tenth_pass_civic_loops": {
+    "public_board": "Safe travel times, maintenance closures and prices, never a romance index or private destination list",
+    "registered_privacy": "Restricted, correctable emergency contact records without public itineraries",
+    "surface_water": "Control test only for posted conditions; winter inspection needed; underground sealed barrier not reopened",
+    "labor": "Paid skilled work, voluntary rosters and independent complaints",
+    "separate_homeworlds": "Iroh in Ba Sing Se and Greg in Beach City; no teleporting their businesses to valley districts",
+    "romance": "Informed ethical non-monogamy, preferred polyamory, consent and non-explicit privacy"
+  }
 }
