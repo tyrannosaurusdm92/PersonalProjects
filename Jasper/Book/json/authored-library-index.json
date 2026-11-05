@@ -10,8 +10,8 @@
       "fandom": "Moana-inspired fanfiction (Maui)",
       "pairing": "Maui / Jasper",
       "rating": "Teen",
-      "chapter_count": 10,
-      "total_word_count": 5754,
+      "chapter_count": 11,
+      "total_word_count": 7248,
       "shared_world": {
         "name": "The Lanternweald",
         "district": "Tideglass Cove",
@@ -76,9 +76,18 @@
           "id": "maui-10",
           "chapter_number": 10,
           "title": "The Person I Choose",
+          "next_chapter_id": "maui-11"
+        },
+        {
+          "id": "maui-11",
+          "chapter_number": 11,
+          "title": "The Bell That Rang Twice",
+          "relationship_stage": "integrated_trust",
           "next_chapter_id": null
         }
-      ]
+      ],
+      "expansion_target_chapters": 50,
+      "expansion_status": "In progress"
     },
     {
       "key": "after-always",
@@ -88,8 +97,8 @@
       "reader_character": "Jasper — adult named first-person reader-protagonist; narration uses I/me/my/mine/myself; external references may use they/she.",
       "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
       "rating": "Teen",
-      "chapter_count": 40,
-      "total_word_count": 54274,
+      "chapter_count": 41,
+      "total_word_count": 55693,
       "story_bible": [
         "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
         "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -420,6 +429,13 @@
           "title": "After Always",
           "relationship_stage": "integrated_trust",
           "closing_anchor": "It was after always.",
+          "next_chapter_id": "after-always-41"
+        },
+        {
+          "id": "after-always-41",
+          "chapter_number": 41,
+          "title": "The Moonroot Inventory",
+          "relationship_stage": "integrated_trust",
           "next_chapter_id": null
         }
       ],
@@ -427,7 +443,9 @@
         "name": "The Lanternweald",
         "district": "Moonroot Archive",
         "threadway": "The Moonroot Door"
-      }
+      },
+      "expansion_target_chapters": 50,
+      "expansion_status": "In progress"
     },
     {
       "key": "jasmine-after-rain",
@@ -437,8 +455,8 @@
       "reader_character": "Jasper — adult named first-person reader-protagonist; narration uses I/me/my/mine/myself; external references may use they/she.",
       "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
       "rating": "Teen",
-      "chapter_count": 40,
-      "total_word_count": 44428,
+      "chapter_count": 41,
+      "total_word_count": 45837,
       "story_bible": [
         "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
         "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -769,6 +787,13 @@
           "title": "Jasmine After Rain",
           "relationship_stage": "integrated_trust",
           "closing_anchor": "When the shop was quiet, we shared a good-night kiss and went upstairs together. We let the rest of the evening remain ours. In the morning, the city shone as if it had been given another chance.",
+          "next_chapter_id": "avatar-41"
+        },
+        {
+          "id": "avatar-41",
+          "chapter_number": 41,
+          "title": "Tea for the Other Side",
+          "relationship_stage": "integrated_trust",
           "next_chapter_id": null
         }
       ],
@@ -776,7 +801,9 @@
         "name": "The Lanternweald",
         "district": "Jasmine Steps",
         "threadway": "The Jasmine Door"
-      }
+      },
+      "expansion_target_chapters": 50,
+      "expansion_status": "In progress"
     },
     {
       "key": "love-and-duty",
@@ -786,8 +813,8 @@
       "reader_character": "Jasper — adult named first-person reader-protagonist; narration uses I/me/my/mine/myself; external references may use they/she.",
       "canon_window": "Adult postwar timeline only: Jasper, Aang, Katara, and Toph are explicitly adults before romance/private-interlude content. Their original minor-era canon versions are never used for adult intimacy.",
       "rating": "Teen",
-      "chapter_count": 40,
-      "total_word_count": 60906,
+      "chapter_count": 41,
+      "total_word_count": 62578,
       "story_bible": [
         "This postwar polycule story is built through reconstruction work, public responsibility, cultural difference, arguments, chosen boundaries, and ordinary domestic labor.",
         "Aang, Katara, and Toph must remain three distinct people with separate needs, humor, histories, responsibilities, and relationships with Jasper; never collapse them into one collective partner voice.",
@@ -1120,6 +1147,13 @@
           "title": "Four Bowls, Still",
           "relationship_stage": "integrated_trust",
           "closing_anchor": "So would we.\n",
+          "next_chapter_id": "Love-And-Duty-41"
+        },
+        {
+          "id": "Love-And-Duty-41",
+          "chapter_number": 41,
+          "title": "The Unanimous Vote",
+          "relationship_stage": "integrated_trust",
           "next_chapter_id": null
         }
       ],
@@ -1127,7 +1161,9 @@
         "name": "The Lanternweald",
         "district": "Riverstone Terrace",
         "threadway": "The Riverstone Door"
-      }
+      },
+      "expansion_target_chapters": 50,
+      "expansion_status": "In progress"
     },
     {
       "key": "stars-between-the-strings",
@@ -1137,8 +1173,8 @@
       "reader_character": "Jasper — adult named first-person reader-protagonist; narration uses I/me/my/mine/myself; external references may use they/she.",
       "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
       "rating": "Teen",
-      "chapter_count": 40,
-      "total_word_count": 48148,
+      "chapter_count": 41,
+      "total_word_count": 49643,
       "story_bible": [
         "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
         "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -1469,6 +1505,13 @@
           "title": "Stars Between the Strings",
           "relationship_stage": "integrated_trust",
           "closing_anchor": "The stars looked like notes waiting for us. I took his hand, and we watched the sky until dawn. The song could keep changing, and so could we.",
+          "next_chapter_id": "su-41"
+        },
+        {
+          "id": "su-41",
+          "chapter_number": 41,
+          "title": "The Song in the Missing Crate",
+          "relationship_stage": "integrated_trust",
           "next_chapter_id": null
         }
       ],
@@ -1476,7 +1519,9 @@
         "name": "The Lanternweald",
         "district": "Starwake Pier",
         "threadway": "The Starwake Door"
-      }
+      },
+      "expansion_target_chapters": 50,
+      "expansion_status": "In progress"
     },
     {
       "key": "what-the-armor-leaves-behind",
@@ -1486,8 +1531,8 @@
       "reader_character": "Jasper — adult named first-person reader-protagonist; narration uses I/me/my/mine/myself; external references may use they/she.",
       "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
       "rating": "Teen",
-      "chapter_count": 40,
-      "total_word_count": 61792,
+      "chapter_count": 41,
+      "total_word_count": 63198,
       "story_bible": [
         "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
         "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -1819,6 +1864,13 @@
           "title": "What the Armor Leaves Behind",
           "relationship_stage": "integrated_trust",
           "closing_anchor": "We went home.\n",
+          "next_chapter_id": "what-the-armor-leaves-behind-41"
+        },
+        {
+          "id": "what-the-armor-leaves-behind-41",
+          "chapter_number": 41,
+          "title": "A Repair Is Not an Order",
+          "relationship_stage": "integrated_trust",
           "next_chapter_id": null
         }
       ],
@@ -1826,8 +1878,12 @@
         "name": "The Lanternweald",
         "district": "Brasswatch Yard",
         "threadway": "The Brasswatch Door"
-      }
+      },
+      "expansion_target_chapters": 50,
+      "expansion_status": "In progress"
     }
   ],
-  "shared_world": "The Lanternweald"
+  "shared_world": "The Lanternweald",
+  "expansion_target_chapters_per_series": 50,
+  "completion_note": "Only authored chapters are enumerated; planned chapters live in docs/50_CHAPTER_EXPANSION_ROADMAP.md."
 }
