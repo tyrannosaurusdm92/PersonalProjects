@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
-  "chapter_count": 45,
-  "total_word_count": 68060,
+  "chapter_count": 47,
+  "total_word_count": 70233,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -431,6 +431,24 @@
       "word_count": 1164,
       "id": "what-the-armor-leaves-behind-45",
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "what-the-armor-leaves-behind-46"
+    },
+    {
+      "number": 46,
+      "file": "46.json",
+      "title": "The Things Steel Cannot Say",
+      "id": "what-the-armor-leaves-behind-46",
+      "word_count": 1098,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "what-the-armor-leaves-behind-47"
+    },
+    {
+      "number": 47,
+      "file": "47.json",
+      "title": "A Practical Kind of Courage",
+      "id": "what-the-armor-leaves-behind-47",
+      "word_count": 1075,
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -441,8 +459,8 @@
   },
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 45,
-    "planned_not_yet_written": 5,
+    "completed_chapters": 47,
+    "planned_not_yet_written": 3,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {
