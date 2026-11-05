@@ -1,6 +1,6 @@
 # The Lanternweald: Six Connected 50-Chapter Novels — Editorial Roadmap
 
-**Status, November 5, 2026: 258 written prose chapters are live, and 42 chapters are still outlines.**
+**Status, November 5, 2026: 281 written prose chapters are live, and 19 chapters are still outlines.**
 
 **This document distinguishes published prose from unwritten plans.** Existing published chapters remain in the repository. A roadmap entry is not a finished chapter, and this file must not be counted by the reader as prose.
 
@@ -44,21 +44,21 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **23. [WRITTEN] — The Wrong Kind of Hero** — Aang invites Maui to build festival decorations; their cheerful competition strains the arch until Katara ends it. Jasper refuses to reward spectacle with an apology nobody acts on.
 
-**24. A Place to Put Jealousy** — A new invitation to Jasper sparks a difficult conversation; Maui names his fear without claiming veto power and Jasper states what reassurance can and cannot promise.
+**24. [WRITTEN] — A Place to Put Jealousy** — A new invitation to Jasper sparks a difficult conversation; Maui names his fear without claiming veto power and Jasper states what reassurance can and cannot promise.
 
-**25. Mereana Returns** — Mereana's visiting group returns on its own terms. She corrects a visitor's mistaken claim that the group's performance is a universal courtship rite; Jasper supports her without taking over.
+**25. [WRITTEN] — Mereana Returns** — Mereana's visiting group returns on its own terms. She corrects a visitor's mistaken claim that the group's performance is a universal courtship rite; Jasper supports her without taking over.
 
-**26. The Price of Welcome** — The pantry's stores run low after a flood. Maui proposes fishing all night; Katara asks who will salt, store and distribute the catch, and Jasper has to ask neighbors instead of deciding for them.
+**26. [WRITTEN] — The Price of Welcome** — The pantry's stores run low after a flood. Maui proposes fishing all night; Katara asks who will salt, store and distribute the catch, and Jasper has to ask neighbors instead of deciding for them.
 
-**27. The Visitor's Right to Leave** — A frightened newcomer is accused of disloyalty for returning home. Jasper helps them leave safely; Maui's public support costs him the adoration of an admirer.
+**27. [WRITTEN] — The Visitor's Right to Leave** — A frightened newcomer is accused of disloyalty for returning home. Jasper helps them leave safely; Maui's public support costs him the adoration of an admirer.
 
-**28. The Spare Key** — Neri asks Jasper to hold an archive key. Jasper refuses to accept authority without accountability and insists the council see a record of what it opens.
+**28. [WRITTEN] — The Spare Key** — Neri asks Jasper to hold an archive key. Jasper refuses to accept authority without accountability and insists the council see a record of what it opens.
 
-**29. A Festival Without a Hero** — Children build the Tidewake stage with adults offering guidance. Maui tries not to perform; a quiet joke shared with Jasper becomes more meaningful than applause.
+**29. [WRITTEN] — A Festival Without a Hero** — Children build the Tidewake stage with adults offering guidance. Maui tries not to perform; a quiet joke shared with Jasper becomes more meaningful than applause.
 
-**30. The Edge of the Storm** — The repaired shore gate fails an inspection. Danse and Toph disagree about repair tolerances; Jasper learns that listening to specialists does not exempt them from a final choice.
+**30. [WRITTEN] — The Edge of the Storm** — The repaired shore gate fails an inspection. Danse and Toph disagree about repair tolerances; Jasper learns that listening to specialists does not exempt them from a final choice.
 
-**31. Six Different Roads** — Jasper returns from visits with Iroh, Aang, Katara, Toph, Severus, Danse and Greg carrying joy and difficult responsibilities; Maui asks what he should know, not what he may own.
+**31. [WRITTEN] — Six Different Roads** — Jasper returns from visits with Iroh, Aang, Katara, Toph, Severus, Danse and Greg carrying joy and difficult responsibilities; Maui asks what he should know, not what he may own.
 
 **32. The Shape of an Agreement** — A living relationship agreement is revised after a missed visit. No one is put on trial; Jasper and Maui discuss scheduling, privacy, honesty and the right to say no.
 
@@ -116,11 +116,11 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **47. [WRITTEN] — A Teacher, Not a Verdict** — A student repeats the heroic version of Severus's history. He corrects it without inviting punishment; Jasper admires his decision to tell an uncomfortable truth.
 
-**48. The Lantern Vigil** — At Frostturn, Greg plays a soft instrumental piece while Severus stands apart. Jasper joins him only after asking and lets his silence remain his.
+**48. [WRITTEN] — The Lantern Vigil** — At Frostturn, Greg plays a soft instrumental piece while Severus stands apart. Jasper joins him only after asking and lets his silence remain his.
 
-**49. A Night Without Explanations** — Severus and Jasper have a rare unhurried evening of books, unglamorous dinner and delicate touch. The door closes; the morning asks them to keep an appointment.
+**49. [WRITTEN] — A Night Without Explanations** — Severus and Jasper have a rare unhurried evening of books, unglamorous dinner and delicate touch. The door closes; the morning asks them to keep an appointment.
 
-**50. After the Door Opens** — Severus volunteers a new cataloging hour on his own terms. Jasper makes tea badly, they argue about punctuation, and the archive light remains on for whoever comes back.
+**50. [WRITTEN] — After the Door Opens** — Severus volunteers a new cataloging hour on his own terms. Jasper makes tea badly, they argue about punctuation, and the archive light remains on for whoever comes back.
 
 ## Jasmine After Rain — Iroh
 
@@ -140,11 +140,11 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **47. [WRITTEN] — The Empty Chair Is Not a Threat** — A regular customer stops attending. Jasper and Iroh help without presuming a reason; grief enters the room as a person rather than a lesson.
 
-**48. The Dragon and the Demigod** — Maui proposes a dramatic lantern lighting that violates the fire plan. Iroh helps him make something quieter that still feels joyful.
+**48. [WRITTEN] — The Dragon and the Demigod** — Maui proposes a dramatic lantern lighting that violates the fire plan. Iroh helps him make something quieter that still feels joyful.
 
-**49. The Bell at Daybreak** — Jasmine Steps' terrace drains begin flowing backward during a storm. Iroh takes the kitchen crew seriously while Jasper helps track the blocked service route.
+**49. [WRITTEN] — The Bell at Daybreak** — Jasmine Steps' terrace drains begin flowing backward during a storm. Iroh takes the kitchen crew seriously while Jasper helps track the blocked service route.
 
-**50. Tea for Whoever Returns** — After the repairs, Iroh and Jasper leave one table unreserved. Their private happiness and public duties coexist without being merged, and a cold morning ends with two warm cups.
+**50. [WRITTEN] — Tea for Whoever Returns** — After the repairs, Iroh and Jasper leave one table unreserved. Their private happiness and public duties coexist without being merged, and a cold morning ends with two warm cups.
 
 ## Love & Duty — Aang, Katara, Toph
 
@@ -164,11 +164,11 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **47. [WRITTEN] — The Longlight Kites** — Festival preparations stir questions about Air Nomad heritage and public performance. Aang sets boundaries around what he is willing to teach.
 
-**48. Water for the Other Side** — Katara organizes temporary care for neighbors across a closed bridge. Jasper's spreadsheet exposes an unfair distribution; they face the cost of correcting it.
+**48. [WRITTEN] — Water for the Other Side** — Katara organizes temporary care for neighbors across a closed bridge. Jasper's spreadsheet exposes an unfair distribution; they face the cost of correcting it.
 
-**49. Four People, Four Answers** — The polycule revisits individual consent and privacy after a public rumor. Sensual reconnection follows private conversations, not a group vote.
+**49. [WRITTEN] — Four People, Four Answers** — The polycule revisits individual consent and privacy after a public rumor. Sensual reconnection follows private conversations, not a group vote.
 
-**50. A Home with Doors** — The bridge opens only after proper inspection. The house is full of guests; Jasper keeps a room, a key, and the freedom to leave and return without proving loyalty.
+**50. [WRITTEN] — A Home with Doors** — The bridge opens only after proper inspection. The house is full of guests; Jasper keeps a room, a key, and the freedom to leave and return without proving loyalty.
 
 ## What the Armor Leaves Behind — Danse
 
@@ -188,11 +188,11 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **47. [WRITTEN] — A Practical Kind of Courage** — A civilian trainee challenges Danse's old assumptions. He apologizes without excuses and changes the lesson he gives the next apprentice.
 
-**48. The Night the Lights Went Out** — A generator fault traps half the square in darkness. Danse stays to repair it with help, then returns to Jasper for quiet, non-explicit intimacy.
+**48. [WRITTEN] — The Night the Lights Went Out** — A generator fault traps half the square in darkness. Danse stays to repair it with help, then returns to Jasper for quiet, non-explicit intimacy.
 
-**49. The Good Parts of an Order** — Danse helps design an emergency crossing checklist that requires consent and forbids forcing travelers through. His skills survive without the hierarchy that once owned them.
+**49. [WRITTEN] — The Good Parts of an Order** — Danse helps design an emergency crossing checklist that requires consent and forbids forcing travelers through. His skills survive without the hierarchy that once owned them.
 
-**50. A Name Above the Door** — The workshop's sign is rehung after the storm. Danse chooses its name himself, kisses Jasper before dinner, and returns to work with no rank attached.
+**50. [WRITTEN] — A Name Above the Door** — The workshop's sign is rehung after the storm. Danse chooses its name himself, kisses Jasper before dinner, and returns to work with no rank attached.
 
 ## Stars Between the Strings — Greg
 
@@ -212,11 +212,11 @@ Every new chapter should aim for **1,200–1,800 meaningful words** (Maui's exis
 
 **47. [WRITTEN] — The Night After the Show** — Greg and Jasper put away equipment, laugh over tangled cords and share a sensual but non-explicit private night. The next morning brings real responsibilities.
 
-**48. An Instrument Returned** — A borrowed guitar comes back damaged. Greg asks for repair, not blame; he and Danse learn how to share a workspace without taking over.
+**48. [WRITTEN] — An Instrument Returned** — A borrowed guitar comes back damaged. Greg asks for repair, not blame; he and Danse learn how to share a workspace without taking over.
 
-**49. The Note Below the Water** — A strange note sounds from an empty stage during a flood warning. Greg traces the vibration to the old drainage path instead of mystifying the danger.
+**49. [WRITTEN] — The Note Below the Water** — A strange note sounds from an empty stage during a flood warning. Greg traces the vibration to the old drainage path instead of mystifying the danger.
 
-**50. The Space Between Songs** — The pier reopens with a set Greg wrote himself. Jasper has a seat and a key, not a script; they leave the last chair open for whoever chooses to come.
+**50. [WRITTEN] — The Space Between Songs** — The pier reopens with a set Greg wrote himself. Jasper has a seat and a key, not a script; they leave the last chair open for whoever chooses to come.
 
 ## Editorial checks before publishing each new chapter
 

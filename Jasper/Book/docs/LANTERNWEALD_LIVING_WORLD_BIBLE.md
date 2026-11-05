@@ -155,3 +155,10 @@ The second bell at Tideglass is **observed**, not mystically explained. A locked
 New continuing residents: **Lio**, Fen's apprentice boatbuilder; **Ilya**, a garden helper whose seating requirements guide public design; **Halen**, an older tea customer with a right to private grief; **Orin**, a historical research apprentice; and **Renn** and **Aster**, paid Brasswatch workers. The garden's commissioner **Sela** and existing residents maintain independent agency. No one is a summoned vendor, an obligatory confidant, a romance trophy, or a quest dispenser.
 
 **Published prose status:** 258 actual chapters, with 42 remaining outlines (Maui 23/50, five other novels 47/50). Older manuscript chapters, especially Maui 1–10, still need a dedicated expansion for depth parity.
+
+
+## 11. Fifth-pass story endings and ongoing shared-world consequences (Nov 5, 2026)
+
+Five novels now have written, consistent chapter-50 endings (Severus, Iroh, adult Aang/Katara/Toph, Danse, Greg), while Maui's novel has **31** written chapters and **19** outstanding outlines. No partner becomes exclusive as a condition of concluding an arc. Jasper's first-person, ethically non-monogamous life is the same across every Threadway.
+
+Major shared civic outcome: the Riverstone Bridge and western Starwake Pier reopen only after structural, access and drainage tests, while the **lower Tideglass service passage remains sealed**. The second bell and Starwake low resonance are plausible water-pressure signs, not proof of a ghost or prophecy. Moonroot Archive protects private material and logs emergency access, rather than treating a secret key as a crown. The Brasswatch generator outage and Jasmine Steps backflow are interrelated infrastructure consequences, not magical instant repairs. Tideglass's children's festival and Mereana's lending restrictions reinforce independent creative choice. See `LANTERNWEALD_PASS5_CONTINUITY.md` for further mechanics, the roster of recurring residents, scheduling and the unwritten Maui arc.
