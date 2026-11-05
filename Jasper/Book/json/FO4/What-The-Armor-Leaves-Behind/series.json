@@ -11,14 +11,15 @@
   "rating": "Teen",
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
-  "chapter_count": 40,
-  "total_word_count": 61792,
+  "chapter_count": 43,
+  "total_word_count": 65678,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
     "Jasper can respect Danse without treating military authority as relationship authority. Orders and consent are separate systems.",
     "External Fallout plot matters: civilians, supplies, faction consequences, radiation, travel, equipment, settlements, and Brotherhood politics should continue to create pressure on the relationship.",
-    "After chapter 40, do not reset Danse to early-game emotional distance or restore lost institutional certainty without narrative cause."
+    "After chapter 40, do not reset Danse to early-game emotional distance or restore lost institutional certainty without narrative cause.",
+    "Jasper openly prefers ethical non-monogamy and polyamory; every partner retains the right to set or change their own boundaries."
   ],
   "character_bible": [
     "Jasper — adult named first-person protagonist; capable, compassionate, sarcastic when nervous, morally engaged, and unwilling to surrender civilian ethics just because a superior gives an order.",
@@ -175,7 +176,7 @@
       "number": 17,
       "file": "17.json",
       "title": "Benchwork",
-      "word_count": 1509,
+      "word_count": 1992,
       "id": "what-the-armor-leaves-behind-17",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "what-the-armor-leaves-behind-18"
@@ -385,6 +386,33 @@
       "word_count": 1678,
       "id": "what-the-armor-leaves-behind-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "what-the-armor-leaves-behind-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "The Part That Does Not Fit",
+      "id": "what-the-armor-leaves-behind-41",
+      "word_count": 1157,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "what-the-armor-leaves-behind-42"
+    },
+    {
+      "number": 42,
+      "file": "42.json",
+      "title": "Letter from the Old World",
+      "word_count": 1142,
+      "id": "what-the-armor-leaves-behind-42",
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "what-the-armor-leaves-behind-43"
+    },
+    {
+      "number": 43,
+      "file": "43.json",
+      "title": "A Refugee at the Yard",
+      "word_count": 1104,
+      "id": "what-the-armor-leaves-behind-43",
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -392,5 +420,18 @@
     "name": "The Lanternweald",
     "district": "Brasswatch Yard",
     "threadway": "The Brasswatch Door"
+  },
+  "expansion_status": {
+    "target_chapter_count": 50,
+    "completed_chapters": 43,
+    "planned_not_yet_written": 7,
+    "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
+  },
+  "relationship_structure": {
+    "protagonist": "Jasper",
+    "ethical_non_monogamy": true,
+    "preference": "polyamory",
+    "consent": "informed, specific and revisable",
+    "disclosure_before_initial_romance": true
   }
 }

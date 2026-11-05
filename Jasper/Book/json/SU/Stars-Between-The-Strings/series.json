@@ -11,13 +11,14 @@
   "rating": "Teen",
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
-  "chapter_count": 40,
-  "total_word_count": 48148,
+  "chapter_count": 43,
+  "total_word_count": 52385,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
     "Jasper remembers small details and turns them into later care or surprises; Greg’s response to being remembered should matter because he is used to improvising around loss and instability.",
-    "Steven and the larger family/history can matter without making every chapter about Gem crises. Ordinary adult life is part of the emotional fantasy."
+    "Steven and the larger family/history can matter without making every chapter about Gem crises. Ordinary adult life is part of the emotional fantasy.",
+    "Jasper openly prefers ethical non-monogamy and polyamory; every partner retains the right to set or change their own boundaries."
   ],
   "character_bible": [
     "Jasper — adult named first-person protagonist; goofy, compassionate, intelligent, observant, teasing, loyal, and prone to hiding vulnerability behind humor until the relationship feels safe enough for directness.",
@@ -57,7 +58,7 @@
       "number": 4,
       "file": "04.json",
       "title": "The Things You Do Not Say",
-      "word_count": 1593,
+      "word_count": 2008,
       "id": "su-04",
       "relationship_stage": "chemistry",
       "next_chapter_id": "su-05"
@@ -384,6 +385,33 @@
       "word_count": 778,
       "id": "su-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "su-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "A Song That Isn't a Promise",
+      "id": "su-41",
+      "word_count": 1204,
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "su-42"
+    },
+    {
+      "number": 42,
+      "file": "42.json",
+      "title": "Folding Chairs and Honest Labor",
+      "word_count": 1295,
+      "id": "su-42",
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "su-43"
+    },
+    {
+      "number": 43,
+      "file": "43.json",
+      "title": "Steven Comes Home for Dinner",
+      "word_count": 1323,
+      "id": "su-43",
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -391,5 +419,18 @@
     "name": "The Lanternweald",
     "district": "Starwake Pier",
     "threadway": "The Starwake Door"
+  },
+  "expansion_status": {
+    "target_chapter_count": 50,
+    "completed_chapters": 43,
+    "planned_not_yet_written": 7,
+    "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
+  },
+  "relationship_structure": {
+    "protagonist": "Jasper",
+    "ethical_non_monogamy": true,
+    "preference": "polyamory",
+    "consent": "informed, specific and revisable",
+    "disclosure_before_initial_romance": true
   }
 }
