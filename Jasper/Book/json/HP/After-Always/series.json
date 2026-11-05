@@ -12,7 +12,7 @@
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
   "chapter_count": 50,
-  "total_word_count": 68724,
+  "total_word_count": 70489,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -202,7 +202,7 @@
       "number": 20,
       "file": "20.json",
       "title": "A Door Left Open",
-      "word_count": 1196,
+      "word_count": 1547,
       "id": "after-always-20",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "after-always-21"
@@ -220,7 +220,7 @@
       "number": 22,
       "file": "22.json",
       "title": "The Mark",
-      "word_count": 1116,
+      "word_count": 1474,
       "id": "after-always-22",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "after-always-23"
@@ -247,7 +247,7 @@
       "number": 25,
       "file": "25.json",
       "title": "The One I Refuse to Pity",
-      "word_count": 1117,
+      "word_count": 1483,
       "id": "after-always-25",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "after-always-26"
@@ -265,7 +265,7 @@
       "number": 27,
       "file": "27.json",
       "title": "The Kiss in the Storeroom",
-      "word_count": 1106,
+      "word_count": 1444,
       "id": "after-always-27",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "after-always-28"
@@ -427,7 +427,7 @@
       "number": 45,
       "file": "45.json",
       "title": "The Terms of Us",
-      "word_count": 1180,
+      "word_count": 1532,
       "id": "after-always-45",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "after-always-46"
