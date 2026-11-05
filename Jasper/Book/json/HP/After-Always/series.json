@@ -12,7 +12,7 @@
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
   "chapter_count": 50,
-  "total_word_count": 66199,
+  "total_word_count": 67176,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -464,7 +464,7 @@
       "file": "49.json",
       "title": "A Night Without Explanations",
       "id": "after-always-49",
-      "word_count": 855,
+      "word_count": 1432,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "after-always-50"
     },
@@ -473,7 +473,7 @@
       "file": "50.json",
       "title": "After the Door Opens",
       "id": "after-always-50",
-      "word_count": 892,
+      "word_count": 1292,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }

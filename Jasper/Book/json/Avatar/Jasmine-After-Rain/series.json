@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 56103,
+  "total_word_count": 58628,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -283,7 +283,7 @@
       "number": 29,
       "file": "29.json",
       "title": "A Road of Our Own",
-      "word_count": 651,
+      "word_count": 1416,
       "id": "avatar-29",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-30"
@@ -292,7 +292,7 @@
       "number": 30,
       "file": "30.json",
       "title": "The Fire Beneath the Kettle",
-      "word_count": 662,
+      "word_count": 1175,
       "id": "avatar-30",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-31"
@@ -319,7 +319,7 @@
       "number": 33,
       "file": "33.json",
       "title": "A Small Rebellion",
-      "word_count": 663,
+      "word_count": 1234,
       "id": "avatar-33",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-34"
@@ -373,7 +373,7 @@
       "number": 39,
       "file": "39.json",
       "title": "The Tea We Make",
-      "word_count": 660,
+      "word_count": 1336,
       "id": "avatar-39",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-40"

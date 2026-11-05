@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 49293,
+  "total_word_count": 52186,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -31,7 +31,7 @@
       "file": "01.json",
       "title": "A Stranger in the Tide",
       "id": "maui-01",
-      "word_count": 670,
+      "word_count": 1238,
       "next_chapter_id": "maui-02"
     },
     {
@@ -47,7 +47,7 @@
       "file": "03.json",
       "title": "The Name Beneath the Bell",
       "id": "maui-03",
-      "word_count": 577,
+      "word_count": 1193,
       "next_chapter_id": "maui-04"
     },
     {
@@ -55,7 +55,7 @@
       "file": "04.json",
       "title": "The Things Hands Remember",
       "id": "maui-04",
-      "word_count": 482,
+      "word_count": 1007,
       "next_chapter_id": "maui-05"
     },
     {
@@ -63,7 +63,7 @@
       "file": "05.json",
       "title": "Where the Water Goes",
       "id": "maui-05",
-      "word_count": 523,
+      "word_count": 1187,
       "next_chapter_id": "maui-06"
     },
     {
@@ -87,7 +87,7 @@
       "file": "08.json",
       "title": "What the Door Kept",
       "id": "maui-08",
-      "word_count": 548,
+      "word_count": 1068,
       "next_chapter_id": "maui-09"
     },
     {

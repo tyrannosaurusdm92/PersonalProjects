@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 59746,
+  "total_word_count": 61212,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -346,7 +346,7 @@
       "number": 36,
       "file": "36.json",
       "title": "When We Choose Each Other",
-      "word_count": 778,
+      "word_count": 1202,
       "id": "su-36",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-37"
@@ -355,7 +355,7 @@
       "number": 37,
       "file": "37.json",
       "title": "The Quiet Encore",
-      "word_count": 773,
+      "word_count": 1045,
       "id": "su-37",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-38"
@@ -364,7 +364,7 @@
       "number": 38,
       "file": "38.json",
       "title": "A Future with Windows",
-      "word_count": 778,
+      "word_count": 1084,
       "id": "su-38",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-39"
@@ -373,7 +373,7 @@
       "number": 39,
       "file": "39.json",
       "title": "The Song We Keep",
-      "word_count": 765,
+      "word_count": 1229,
       "id": "su-39",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-40"

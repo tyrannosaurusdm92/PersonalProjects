@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 73063,
+  "total_word_count": 73815,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -465,7 +465,7 @@
       "file": "49.json",
       "title": "The Good Parts of an Order",
       "id": "what-the-armor-leaves-behind-49",
-      "word_count": 943,
+      "word_count": 1323,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "what-the-armor-leaves-behind-50"
     },
@@ -474,7 +474,7 @@
       "file": "50.json",
       "title": "A Name Above the Door",
       "id": "what-the-armor-leaves-behind-50",
-      "word_count": 909,
+      "word_count": 1281,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
