@@ -1,0 +1,477 @@
+{
+  "schema_version": "lanternweald.living_world.v1",
+  "updated": "2026-11-05",
+  "status": "canon reference for six completed 50-chapter prose sequences",
+  "total_written_chapters": 300,
+  "distinct_series": 6,
+  "chapter_target": 300,
+  "governing_rules": [
+    "Threadway crossings are voluntary; no one may be transported or retained through them as punishment or compelled safety",
+    "Material consequences persist: storms, injuries, repairs, supply deficits and debts require work and resources",
+    "Travel gives no ownership of land, people, culture, memories, records, or romance",
+    "Private stories and destinations are shared only with informed consent, with narrow documented safety exceptions",
+    "Historic underground drainage access is not a seventh traveler Threadway; the closed lower flood barrier remains sealed"
+  ],
+  "districts": [
+    {
+      "id": "lanternwell-square",
+      "name": "Lanternwell Square",
+      "vibe": "old arches, spring, bread, community lanterns",
+      "landmarks": [
+        "three stone arches",
+        "public fountain",
+        "Mara's bakery",
+        "notice board",
+        "sheltered hall",
+        "market tables"
+      ],
+      "daily": [
+        "market supplies",
+        "public notices",
+        "departure support",
+        "safety route checks"
+      ],
+      "primary_people": [
+        "Neri",
+        "Mara",
+        "Pip"
+      ],
+      "resources": [
+        "bread",
+        "public ledgers",
+        "safe routes",
+        "lamp supplies"
+      ],
+      "connected_to": [
+        "tideglass-cove",
+        "jasmine-steps",
+        "riverstone-terrace",
+        "brasswatch-yard",
+        "moonroot-archive",
+        "starwake-pier"
+      ],
+      "safety": "Threadway travel remains voluntary; protect private departure data"
+    },
+    {
+      "id": "tideglass-cove",
+      "name": "Tideglass Cove",
+      "vibe": "salt wind and tidal rock, tiny stubborn gardens",
+      "landmarks": [
+        "upper safe landing",
+        "lower tidal landing",
+        "old signal post",
+        "sea-glass orchard",
+        "public bench",
+        "temporary surface channel",
+        "Jasper and Maui's home"
+      ],
+      "daily": [
+        "tide measurements",
+        "mooring work",
+        "salt-safe planting",
+        "skiff inspections",
+        "fish handling"
+      ],
+      "primary_people": [
+        "Fen",
+        "Tamsin",
+        "Lio",
+        "Ilya",
+        "Maui",
+        "Jasper"
+      ],
+      "resources": [
+        "sea kale",
+        "beach peas",
+        "hardy lavender",
+        "rosemary",
+        "modest seasonal fish catch"
+      ],
+      "connected_to": [
+        "lanternwell-square",
+        "riverstone-terrace",
+        "starwake-pier"
+      ],
+      "safety": "Old lower underground service channel sealed; storm-tested temporary surface overflow separately operable"
+    },
+    {
+      "id": "jasmine-steps",
+      "name": "Jasmine Steps",
+      "vibe": "rain on brick, flowers, steaming teacups",
+      "landmarks": [
+        "Jasmine Dragon",
+        "second kitchen",
+        "herb terraces",
+        "tile shop",
+        "drains and repaired gutters"
+      ],
+      "daily": [
+        "tea service",
+        "staff cooking",
+        "tilework",
+        "grower deliveries",
+        "drainage checks"
+      ],
+      "primary_people": [
+        "Iroh",
+        "Mina",
+        "Bo",
+        "Halen"
+      ],
+      "resources": [
+        "affordable house tea",
+        "limited mountain mint",
+        "grower herbs",
+        "prepared food"
+      ],
+      "connected_to": [
+        "lanternwell-square",
+        "riverstone-terrace",
+        "moonroot-archive"
+      ],
+      "safety": "Backflow drains must be tested and staff warning observations recorded"
+    },
+    {
+      "id": "riverstone-terrace",
+      "name": "Riverstone Terrace",
+      "vibe": "floodplain gardens, bridges and lively argument",
+      "landmarks": [
+        "reopened shared bridge",
+        "floodplain gardens",
+        "clinic support center",
+        "upper approach"
+      ],
+      "daily": [
+        "garden tending",
+        "clinic distribution",
+        "cart transport",
+        "bridge inspections"
+      ],
+      "primary_people": [
+        "Sela",
+        "Edda",
+        "Aang",
+        "Katara",
+        "Toph"
+      ],
+      "resources": [
+        "garden produce",
+        "clinic supplies",
+        "water allotments",
+        "public access routes"
+      ],
+      "connected_to": [
+        "lanternwell-square",
+        "tideglass-cove",
+        "brasswatch-yard",
+        "jasmine-steps"
+      ],
+      "safety": "Bridge has multi-district maintenance responsibilities and tested weight/access limits"
+    },
+    {
+      "id": "brasswatch-yard",
+      "name": "Brasswatch Yard",
+      "vibe": "warm workshop lamps, clean metalwork and pumps",
+      "landmarks": [
+        "Brasswatch Open Workshop",
+        "generator shed",
+        "private workroom",
+        "accessible exit",
+        "training benches"
+      ],
+      "daily": [
+        "repair intake",
+        "safety tests",
+        "training shifts",
+        "worker payments",
+        "generator load readings"
+      ],
+      "primary_people": [
+        "Danse",
+        "Renn",
+        "Aster",
+        "Ash"
+      ],
+      "resources": [
+        "rated fasteners",
+        "repair tools",
+        "technical training",
+        "temporary lamps"
+      ],
+      "connected_to": [
+        "lanternwell-square",
+        "riverstone-terrace",
+        "tideglass-cove",
+        "starwake-pier"
+      ],
+      "safety": "No rank controls a departure; visitors retain privacy and consent"
+    },
+    {
+      "id": "moonroot-archive",
+      "name": "Moonroot Archive",
+      "vibe": "cool stone, burned pages and careful ink",
+      "landmarks": [
+        "preservation case",
+        "public reading shelf",
+        "restricted correspondence room",
+        "logged emergency key"
+      ],
+      "daily": [
+        "research",
+        "cataloging",
+        "evidence review",
+        "voluntary student teaching"
+      ],
+      "primary_people": [
+        "Severus Snape",
+        "Neri",
+        "Orin"
+      ],
+      "resources": [
+        "tide charts",
+        "historical plans",
+        "witness testimony",
+        "catalog records"
+      ],
+      "connected_to": [
+        "lanternwell-square",
+        "tideglass-cove",
+        "jasmine-steps"
+      ],
+      "safety": "Public interest does not override privacy; erased signature stays unverified"
+    },
+    {
+      "id": "starwake-pier",
+      "name": "Starwake Pier",
+      "vibe": "salt air, guitars, repaired wooden boards",
+      "landmarks": [
+        "reopened western boardwalk",
+        "safe stage",
+        "accessible seating",
+        "storage shed"
+      ],
+      "daily": [
+        "voluntary music",
+        "pier inspections",
+        "equipment loans",
+        "donation accounting"
+      ],
+      "primary_people": [
+        "Greg Universe",
+        "Steven",
+        "Pip"
+      ],
+      "resources": [
+        "repaired instruments",
+        "public performance space",
+        "fundraising supplies",
+        "lanterns"
+      ],
+      "connected_to": [
+        "lanternwell-square",
+        "tideglass-cove",
+        "brasswatch-yard"
+      ],
+      "safety": "West pier reopened only after structural checks; low resonance has testable water-pressure hypotheses"
+    }
+  ],
+  "people": [
+    {
+      "name": "Jasper",
+      "role": "adult first-person protagonist",
+      "agency": "Keeps one continuing life and informed ethically non-monogamous relationships with preference for polyamory"
+    },
+    {
+      "name": "Maui",
+      "role": "Tideglass partner and volunteer",
+      "agency": "May offer help, not dominate decisions; relationship promises are revisable"
+    },
+    {
+      "name": "Fen",
+      "role": "tidekeeper and mooring steward",
+      "agency": "Can stop unsafe coastal work and set sustainable catch limits"
+    },
+    {
+      "name": "Tamsin",
+      "role": "engineer and fabricator",
+      "agency": "Defines tests and real material/worker budgets"
+    },
+    {
+      "name": "Neri",
+      "role": "arrival steward and archive witness",
+      "agency": "Maintains privacy, records evidence, acknowledges Closed Bells without fabricating a signature"
+    },
+    {
+      "name": "Mara",
+      "role": "baker and pantry organizer",
+      "agency": "Tracks finite meals, delivery limits and supply costs"
+    },
+    {
+      "name": "Sela",
+      "role": "gardener and skiff commissioner",
+      "agency": "Controls impact of floodplain interventions on home and crops"
+    },
+    {
+      "name": "Edda",
+      "role": "access tester and resident",
+      "agency": "Defines usability based on lived route experience; no compulsory help"
+    },
+    {
+      "name": "Pip",
+      "role": "public route and festival volunteer",
+      "agency": "Signs and labor are planned, requested and accessible"
+    },
+    {
+      "name": "Lio",
+      "role": "boatbuilder apprentice",
+      "agency": "Learns through supervised mistakes instead of heroic takeover"
+    },
+    {
+      "name": "Ilya",
+      "role": "sea-glass garden helper",
+      "agency": "Defines seating needs and chooses whether to join events"
+    },
+    {
+      "name": "Vel",
+      "role": "basket vendor and returning visitor",
+      "agency": "May be angry or delay reconciliation; shelter is never owed by private housemates"
+    },
+    {
+      "name": "Tomas",
+      "role": "young adult voluntary traveler",
+      "agency": "May leave, return temporarily and leave again without gratitude debt"
+    },
+    {
+      "name": "Mereana",
+      "role": "visiting artist and owner of lent works",
+      "agency": "Chooses cultural sharing, display, repair and return terms"
+    },
+    {
+      "name": "Halen",
+      "role": "tea customer",
+      "agency": "May grieve privately, change seats or decline company"
+    },
+    {
+      "name": "Orin",
+      "role": "historical apprentice",
+      "agency": "Can challenge heroic biography with evidence and revision"
+    },
+    {
+      "name": "Renn",
+      "role": "adult workshop apprentice and worker",
+      "agency": "Can correct manuals, request wages and train newcomers"
+    },
+    {
+      "name": "Aster",
+      "role": "Brasswatch paid worker",
+      "agency": "May insist on documented shifts and fair pay"
+    },
+    {
+      "name": "Mina",
+      "role": "Jasmine Dragon kitchen worker",
+      "agency": "Warns of drainage behavior; expertise is taken seriously"
+    },
+    {
+      "name": "Bo",
+      "role": "kitchen cleanup and service staff",
+      "agency": "Remembers earlier water warnings and helps develop safe procedures"
+    },
+    {
+      "name": "Ash",
+      "role": "Commonwealth visitor and private room user",
+      "agency": "Is never required to reveal identity or forgive Danse"
+    },
+    {
+      "name": "Iroh",
+      "role": "Jasmine Steps partner and tea proprietor",
+      "agency": "Has separate business, grief and freely chosen intimacy"
+    },
+    {
+      "name": "Severus Snape",
+      "role": "Moonroot partner and historian",
+      "agency": "Controls personal wartime correspondence and volunteers chosen teaching hours"
+    },
+    {
+      "name": "Aang",
+      "role": "adult partner and cultural steward",
+      "agency": "Keeps Air Nomad practices distinct from local festivals; shares governance rather than sole authority"
+    },
+    {
+      "name": "Katara",
+      "role": "adult partner and healer",
+      "agency": "Balances real homeworld clinic duties with freely chosen relationships"
+    },
+    {
+      "name": "Toph",
+      "role": "adult partner and structural adviser",
+      "agency": "Can refuse both public spectacle and sole safety responsibility"
+    },
+    {
+      "name": "Danse",
+      "role": "Brasswatch partner and repair specialist",
+      "agency": "Practices protection without rank-based coercion"
+    },
+    {
+      "name": "Greg Universe",
+      "role": "Starwake partner and musician",
+      "agency": "Chooses songs, keeps grief private and negotiates damage to his property"
+    },
+    {
+      "name": "Steven",
+      "role": "Greg's son and visiting family member",
+      "agency": "Visits because he wants to; is not a compulsory audience"
+    }
+  ],
+  "recurring_events": [
+    {
+      "name": "Frostturn Lantern Walk",
+      "time": "short cold days",
+      "purpose": "navigation and optional remembrance without forced naming"
+    },
+    {
+      "name": "Longlight Kite Festival",
+      "time": "seasonal wind-marker celebration",
+      "purpose": "safe original local craft; no borrowing sacred Air Nomad rites"
+    },
+    {
+      "name": "Tidewake",
+      "time": "first safe spring tide",
+      "purpose": "children-led performances and inspected coastal access"
+    },
+    {
+      "name": "Listening Fair",
+      "time": "occasional Starwake community fundraiser",
+      "purpose": "music and vibration awareness with safe access"
+    },
+    {
+      "name": "Lantern Walk",
+      "time": "after notable seasonal storms",
+      "purpose": "safe detour lighting and voluntary community remembrance"
+    }
+  ],
+  "travel_modes": [
+    {
+      "id": "ridge",
+      "label": "accessible upper ridge",
+      "conditions": "graded, marked and inspected; may close in severe weather"
+    },
+    {
+      "id": "canal",
+      "label": "conditional upper canal",
+      "conditions": "requires safe tide and engineering approval"
+    },
+    {
+      "id": "hall",
+      "label": "sheltered waiting hall",
+      "conditions": "voluntary waiting, available water and private onward travel planning"
+    }
+  ],
+  "long_arcs": {
+    "closed_bells": "Historic denial of voluntary departures is documented; the erased authorizing signature remains unverified",
+    "seventh_scratch": "Maintenance marking, not a new world portal",
+    "lower_passage": "Closed; structural survey may access dry upper hatch only with controls",
+    "surface_channel": "Separated temporary overflow, passed storm tests within posted limits",
+    "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
+  },
+  "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth."
+}

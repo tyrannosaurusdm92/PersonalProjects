@@ -154,11 +154,22 @@ The second bell at Tideglass is **observed**, not mystically explained. A locked
 
 New continuing residents: **Lio**, Fen's apprentice boatbuilder; **Ilya**, a garden helper whose seating requirements guide public design; **Halen**, an older tea customer with a right to private grief; **Orin**, a historical research apprentice; and **Renn** and **Aster**, paid Brasswatch workers. The garden's commissioner **Sela** and existing residents maintain independent agency. No one is a summoned vendor, an obligatory confidant, a romance trophy, or a quest dispenser.
 
-**Published prose status:** 258 actual chapters, with 42 remaining outlines (Maui 23/50, five other novels 47/50). Older manuscript chapters, especially Maui 1–10, still need a dedicated expansion for depth parity.
+**Historical fourth-pass status:** 258 actual chapters at that time; **current sixth-pass canon: 300/300 written**. Older manuscript chapters, especially Maui 1–10, still warrant depth-parity line editing.
 
 
 ## 11. Fifth-pass story endings and ongoing shared-world consequences (Nov 5, 2026)
 
-Five novels now have written, consistent chapter-50 endings (Severus, Iroh, adult Aang/Katara/Toph, Danse, Greg), while Maui's novel has **31** written chapters and **19** outstanding outlines. No partner becomes exclusive as a condition of concluding an arc. Jasper's first-person, ethically non-monogamous life is the same across every Threadway.
+**Historical fifth-pass status:** five novels had chapter-50 endings while Maui had 31 written chapters. **Current sixth-pass canon: all six now have 50 complete written chapters, 300 total.** No partner becomes exclusive as a condition of concluding an arc. Jasper's first-person, ethically non-monogamous life is the same across every Threadway.
 
 Major shared civic outcome: the Riverstone Bridge and western Starwake Pier reopen only after structural, access and drainage tests, while the **lower Tideglass service passage remains sealed**. The second bell and Starwake low resonance are plausible water-pressure signs, not proof of a ghost or prophecy. Moonroot Archive protects private material and logs emergency access, rather than treating a secret key as a crown. The Brasswatch generator outage and Jasmine Steps backflow are interrelated infrastructure consequences, not magical instant repairs. Tideglass's children's festival and Mereana's lending restrictions reinforce independent creative choice. See `LANTERNWEALD_PASS5_CONTINUITY.md` for further mechanics, the roster of recurring residents, scheduling and the unwritten Maui arc.
+
+
+## 12. Sixth-pass final chapter-count parity and living continuity (November 5, 2026)
+
+All **six novels now have exactly 50 full prose chapter files**, totaling **300 written chapters**. The source manifests and offline reader include Maui chapters 32–50 as well as the previously finished novels. Zero chapter slots remain outline-only. This is **chapter-count parity**, not a claim that shorter early prose now matches the longest books in dialogue and depth; line-editing especially the early Maui chapters remains useful.
+
+The historical lower service passage beneath Tideglass remains sealed behind a flood barrier. The seventh scratch identifies access to a supervised, dry upper maintenance chamber, **not a seventh traveler Threadway**. The separate temporary **surface overflow channel** is what was reopened and storm-tested in Maui 47. The erased Closed Bells signature remains unverified in Maui 48's Lantern Ledger; public witnesses and the documented system of enforced travel restrictions give enough reason to reform policy without fabricating a culprit.
+
+Maui 32–50 documents consent-aware housing, voluntary departures, privacy around Jasper's polyamory, shared district maintenance budgets, safe routes, public disagreements and a non-exclusive finale. **Tomas can return and leave again**, Vel need not reconcile, Mereana decides cultural sharing, and every other partner retains their own independent life. The daily/seasonal responsibilities of all seven neighborhoods, trade links, support conditions and continuing cast are documented in `LANTERNWEALD_PASS6_CONTINUITY.md` and the structured `../json/lanternweald-living-world-registry.json`.
+
+**Canon after the six endings:** the shared world remains inhabited and imperfect; structures need maintenance; residents may change their minds; private memories remain private; no relationship is a quest reward or an exclusive answer to Jasper's identity.
