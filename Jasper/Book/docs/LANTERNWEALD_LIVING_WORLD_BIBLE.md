@@ -144,3 +144,14 @@ The first private moment in each narrative may be especially *sensual* (breath, 
 5. Do not claim a specific Māori haka, poi, waiata, or courtship ritual without proper context and cultural consultation. Existing cultural notes govern the Maui story.
 6. Keep each crossing voluntary, keep all visitors' agency, and give every crossover a practical purpose beyond name-checking.
 7. A chapter is complete only when it has distinct action, dialogue, changed understanding and a consequence. An outline, bridge note or stub is **not** a finished chapter.
+
+
+## 10. Fourth-pass verified living-world additions (November 5, 2026)
+
+The fourth editorial pass establishes **Frostturn** (short cold days with frost in the reeds), the **Longlight Kite Festival** (original vale wind-marker craft, not an appropriated Air Nomad ceremony), the **Listening Fair** (inclusive music and structural-awareness gathering at Starwake Pier), and the **sea-glass orchard trial** (salinity-tested coastal planting with an accessible resting bench, not a free limitless food source).
+
+The second bell at Tideglass is **observed**, not mystically explained. A locked, old drainage/service route is confirmed beneath the spring and low landing; its role in the Closed Bells remains under investigation using a burned ledger, material invoices and witnesses who may choose whether to speak. The seventh scratch is a maintenance mark, not a seventh coercive Threadway. Visitors have the right to depart without public explanation. See `LANTERNWEALD_PASS4_CONTINUITY.md` for exact evidence, new residents, culture/consent rules and crossover order.
+
+New continuing residents: **Lio**, Fen's apprentice boatbuilder; **Ilya**, a garden helper whose seating requirements guide public design; **Halen**, an older tea customer with a right to private grief; **Orin**, a historical research apprentice; and **Renn** and **Aster**, paid Brasswatch workers. The garden's commissioner **Sela** and existing residents maintain independent agency. No one is a summoned vendor, an obligatory confidant, a romance trophy, or a quest dispenser.
+
+**Published prose status:** 258 actual chapters, with 42 remaining outlines (Maui 23/50, five other novels 47/50). Older manuscript chapters, especially Maui 1–10, still need a dedicated expansion for depth parity.

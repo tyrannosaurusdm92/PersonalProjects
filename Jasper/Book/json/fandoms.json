@@ -19,9 +19,9 @@
       "pairing": "Iroh / Jasper",
       "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
       "story_type": "linear_fanfiction",
-      "chapter_count": 45,
+      "chapter_count": 47,
       "choice_count": 0,
-      "total_word_count": 50967,
+      "total_word_count": 53106,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -34,8 +34,8 @@
       "relationship_structure": "Jasper is ethically non-monogamous and prefers polyamory; partners informed and consenting.",
       "expansion_status": {
         "target_chapters": 50,
-        "written_chapters": 45,
-        "remaining_chapters": 5,
+        "written_chapters": 47,
+        "remaining_chapters": 3,
         "story_plan": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
       }
     },
@@ -54,9 +54,9 @@
       "pairing": "Aang / Katara / Toph Beifong / Jasper (consensual adult polycule)",
       "description": "In a postwar Cranefish Town becoming something new, an adult nonbender reader finds themself drawn into Aang, Katara, and Toph’s complicated orbit. Love grows through reconstruction work, public scrutiny, cultural preservation, arguments, chosen boundaries, and the daily work of building a home where nobody has to disappear to belong.",
       "story_type": "linear_fanfiction",
-      "chapter_count": 45,
+      "chapter_count": 47,
       "choice_count": 0,
-      "total_word_count": 67657,
+      "total_word_count": 69917,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -69,8 +69,8 @@
       "relationship_structure": "Jasper is ethically non-monogamous and prefers polyamory; partners informed and consenting.",
       "expansion_status": {
         "target_chapters": 50,
-        "written_chapters": 45,
-        "remaining_chapters": 5,
+        "written_chapters": 47,
+        "remaining_chapters": 3,
         "story_plan": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
       }
     },
@@ -89,9 +89,9 @@
       "pairing": "Paladin Danse / Jasper",
       "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
       "story_type": "linear_fanfiction",
-      "chapter_count": 45,
+      "chapter_count": 47,
       "choice_count": 0,
-      "total_word_count": 68060,
+      "total_word_count": 70233,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -104,8 +104,8 @@
       "relationship_structure": "Jasper is ethically non-monogamous and prefers polyamory; partners informed and consenting.",
       "expansion_status": {
         "target_chapters": 50,
-        "written_chapters": 45,
-        "remaining_chapters": 5,
+        "written_chapters": 47,
+        "remaining_chapters": 3,
         "story_plan": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
       }
     },
@@ -124,9 +124,9 @@
       "pairing": "Severus Snape / Jasper",
       "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
       "story_type": "linear_fanfiction",
-      "chapter_count": 45,
+      "chapter_count": 47,
       "choice_count": 0,
-      "total_word_count": 61128,
+      "total_word_count": 63421,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -139,8 +139,8 @@
       "relationship_structure": "Jasper is ethically non-monogamous and prefers polyamory; partners informed and consenting.",
       "expansion_status": {
         "target_chapters": 50,
-        "written_chapters": 45,
-        "remaining_chapters": 5,
+        "written_chapters": 47,
+        "remaining_chapters": 3,
         "story_plan": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
       }
     },
@@ -159,9 +159,9 @@
       "pairing": "Greg Universe / Jasper",
       "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
       "story_type": "linear_fanfiction",
-      "chapter_count": 45,
+      "chapter_count": 47,
       "choice_count": 0,
-      "total_word_count": 54577,
+      "total_word_count": 56895,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -174,8 +174,8 @@
       "relationship_structure": "Jasper is ethically non-monogamous and prefers polyamory; partners informed and consenting.",
       "expansion_status": {
         "target_chapters": 50,
-        "written_chapters": 45,
-        "remaining_chapters": 5,
+        "written_chapters": 47,
+        "remaining_chapters": 3,
         "story_plan": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
       }
     },
@@ -194,9 +194,9 @@
       "pairing": "Maui / Jasper",
       "description": "Jasper, memory and the chosen shore that begins the Lanternweald.",
       "story_type": "linear_fanfiction",
-      "chapter_count": 15,
+      "chapter_count": 23,
       "choice_count": 0,
-      "total_word_count": 12614,
+      "total_word_count": 22427,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -208,8 +208,8 @@
       "relationship_structure": "Jasper is ethically non-monogamous and prefers polyamory; partners informed and consenting.",
       "expansion_status": {
         "target_chapters": 50,
-        "written_chapters": 15,
-        "remaining_chapters": 35,
+        "written_chapters": 23,
+        "remaining_chapters": 27,
         "story_plan": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
       }
     }
@@ -276,6 +276,7 @@
     "private_handoff_via_explicit_bridge": true,
     "private_handoff_returns_to_story": true
   },
-  "total_written_chapters": 240,
-  "target_chapters": 300
+  "total_written_chapters": 258,
+  "target_chapters": 300,
+  "next_unwritten_chapter_count": 42
 }
