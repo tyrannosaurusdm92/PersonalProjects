@@ -15,6 +15,30 @@
       <p class="rating-badge">Teen rating</p>
     </header>
 
+    <section class="book-gateway" id="bookGateway" aria-labelledby="gatewayTitle" hidden>
+      <p class="gateway-eyebrow">Six stories, one Lanternweald</p>
+      <h1 id="gatewayTitle">Jasper's Fanfiction Spot</h1>
+      <p class="gateway-description">A magical meeting place, familiar faces, and love that leaves room for honesty. Open the floating book to begin reading.</p>
+      <div class="book-stage">
+        <span class="book-spark book-spark-a" aria-hidden="true"></span>
+        <span class="book-spark book-spark-b" aria-hidden="true"></span>
+        <span class="book-spark book-spark-c" aria-hidden="true"></span>
+        <button class="book-cover-button" id="openFloatingBook" type="button" aria-controls="readerLibrary" aria-expanded="false" aria-label="Open Jasper's fanfiction book">
+          <span class="book-float">
+            <span class="book-object">
+              <span class="book-back" aria-hidden="true"></span>
+              <span class="book-pages" aria-hidden="true"></span>
+              <span class="book-front"><img src="assets/book-cover.png" alt="Jasper's fanfiction book cover" loading="eager"></span>
+              <span class="book-spine" aria-hidden="true"></span>
+            </span>
+          </span>
+          <span class="book-open-prompt"><span class="book-open-icon" aria-hidden="true">✧</span> Open the book <span class="book-open-icon" aria-hidden="true">✧</span></span>
+        </button>
+      </div>
+      <p class="gateway-note">Your chapter progress stays saved on this device. The story reader uses ordinary chapter navigation, not page-turning.</p>
+    </section>
+    <div id="readerLibrary" class="reader-library">
+      <button class="reader-return" id="returnToBook" type="button" hidden aria-label="Return to the floating book cover">← Back to book cover</button>
     <section class="intro" aria-labelledby="page-title">
       <p class="eyebrow">A fanfiction library</p>
       <h1 id="page-title">Stories to settle into</h1>
@@ -56,12 +80,15 @@
     </article>
 
     <footer class="site-footer">
-      <p>Six interconnected stories · 216 written chapters · linear reading order</p>
+      <p>Six interconnected stories · 228 written chapters · linear reading order</p>
     </footer>
+    </div>
   </main>
   <script defer src="js/fanfic-data.js"></script>
   <script defer src="js/lanternweald-relationship-scenes.js"></script>
   <script defer src="js/lanternweald-new-chapters.js"></script>
+  <script defer src="js/lanternweald-continuations-pass2.js"></script>
   <script defer src="js/app.js"></script>
+  <script defer src="js/floating-book.js"></script>
 </body>
 </html>
