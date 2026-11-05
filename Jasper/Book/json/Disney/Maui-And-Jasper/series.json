@@ -10,8 +10,8 @@
   "reader_character": "Jasper, adult first-person reader protagonist",
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
-  "chapter_count": 10,
-  "total_word_count": 5754,
+  "chapter_count": 11,
+  "total_word_count": 7165,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -103,7 +103,22 @@
       "title": "The Person I Choose",
       "id": "maui-10",
       "word_count": 717,
+      "next_chapter_id": "maui-11"
+    },
+    {
+      "number": 11,
+      "file": "11.json",
+      "title": "The Tide Returns a Letter",
+      "word_count": 1411,
+      "id": "maui-11",
+      "relationship_stage": "negotiated_continuity",
       "next_chapter_id": null
     }
-  ]
+  ],
+  "expansion_status": {
+    "target_chapters": 50,
+    "authored_chapters": 11,
+    "outline": "docs/FIFTY_CHAPTER_EXPANSION_ROADMAP.md",
+    "second_season": "The Uncounted Lanterns"
+  }
 }
