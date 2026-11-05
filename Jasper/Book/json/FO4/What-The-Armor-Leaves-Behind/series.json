@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 75252,
+  "total_word_count": 76044,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -393,7 +393,7 @@
       "file": "41.json",
       "title": "The Part That Does Not Fit",
       "id": "what-the-armor-leaves-behind-41",
-      "word_count": 1157,
+      "word_count": 1572,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "what-the-armor-leaves-behind-42"
     },
@@ -428,7 +428,7 @@
       "number": 45,
       "file": "45.json",
       "title": "When the Plan Changes",
-      "word_count": 1164,
+      "word_count": 1541,
       "id": "what-the-armor-leaves-behind-45",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "what-the-armor-leaves-behind-46"
