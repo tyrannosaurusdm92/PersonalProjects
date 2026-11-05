@@ -420,6 +420,36 @@
       "name": "Steven",
       "role": "Greg's son and visiting family member",
       "agency": "Visits because he wants to; is not a compulsory audience"
+    },
+    {
+      "name": "Mei",
+      "role": "Ba Sing Se roadside stall proprietor",
+      "agency": "Can negotiate charcoal and bun costs; isn't required to recognize Iroh by a preferred title"
+    },
+    {
+      "name": "Inspector Han",
+      "role": "Ba Sing Se sanitation official",
+      "agency": "Has real inspection duties but no entitlement to jump queues or receive free food"
+    },
+    {
+      "name": "Clerk Ren",
+      "role": "Ba Sing Se inspection clerk",
+      "agency": "Can correct an inspector's procedural error and return proper receipts"
+    },
+    {
+      "name": "Nola",
+      "role": "Starwake Listening Fair shift lead",
+      "agency": "Can hold volunteers and performers to agreed hours and control stage storage"
+    },
+    {
+      "name": "Niko",
+      "role": "young Brasswatch trainee connected to Ilya",
+      "agency": "Can learn by identifying a worn fitting without being shamed for an equipment defect"
+    },
+    {
+      "name": "Ellis",
+      "role": "Beach City community reporter",
+      "agency": "Can revise a piece to cover cleanup work while respecting private romantic lives"
     }
   ],
   "recurring_events": [
@@ -473,5 +503,77 @@
     "surface_channel": "Separated temporary overflow, passed storm tests within posted limits",
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
-  "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth."
+  "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
+  "editorial_revision_pass": 7,
+  "revised_chapter_count": 19,
+  "revised_chapter_slots_by_series": {
+    "the-shore-i-choose": [
+      1,
+      3,
+      4,
+      5,
+      8
+    ],
+    "after-always": [
+      49,
+      50
+    ],
+    "jasmine-after-rain": [
+      29,
+      30,
+      33,
+      39
+    ],
+    "love-and-duty": [
+      49,
+      50
+    ],
+    "what-the-armor-leaves-behind": [
+      49,
+      50
+    ],
+    "stars-between-the-strings": [
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "distinct_worlds": [
+    "The Lanternweald",
+    "Ba Sing Se (Avatar homeworld)",
+    "Beach City (Steven Universe homeworld)",
+    "Spinner's End (Harry Potter homeworld)",
+    "Commonwealth (Fallout homeworld)"
+  ],
+  "future_small_stakes_scene_seeds": [
+    {
+      "district": "lanternwell-square",
+      "premise": "A traveler can elect a public name without supplying a private destination"
+    },
+    {
+      "district": "tideglass-cove",
+      "premise": "A lantern housing fails a ventilation test before an evening festival"
+    },
+    {
+      "district": "jasmine-steps",
+      "premise": "A cheaper tea recipe raises an unpaid labor concern"
+    },
+    {
+      "district": "riverstone-terrace",
+      "premise": "Silt blocks a newly improved accessible bridge ramp after a storm"
+    },
+    {
+      "district": "brasswatch-yard",
+      "premise": "A beginner spots a defective training fitting"
+    },
+    {
+      "district": "moonroot-archive",
+      "premise": "A donor consents to a transcription but retains the historic original"
+    },
+    {
+      "district": "starwake-pier",
+      "premise": "A performer stops when their chosen shift ends"
+    }
+  ]
 }

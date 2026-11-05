@@ -173,3 +173,10 @@ The historical lower service passage beneath Tideglass remains sealed behind a f
 Maui 32–50 documents consent-aware housing, voluntary departures, privacy around Jasper's polyamory, shared district maintenance budgets, safe routes, public disagreements and a non-exclusive finale. **Tomas can return and leave again**, Vel need not reconcile, Mereana decides cultural sharing, and every other partner retains their own independent life. The daily/seasonal responsibilities of all seven neighborhoods, trade links, support conditions and continuing cast are documented in `LANTERNWEALD_PASS6_CONTINUITY.md` and the structured `../json/lanternweald-living-world-registry.json`.
 
 **Canon after the six endings:** the shared world remains inhabited and imperfect; structures need maintenance; residents may change their minds; private memories remain private; no relationship is a quest reward or an exclusive answer to Jasper's identity.
+
+
+## 13. Seventh-pass scene-density and inter-world distinction (November 5, 2026)
+
+The seventh editing pass rewrites or expands **19 existing chapters across all six 50-chapter novels**, preserving 300 total chapter slots. Early Tideglass chapters 1, 3–5 and 8 now have more complete scenes of voluntarily accepted help, name choice, safe repairs and uncertain memory. The **misaligned lower Tideglass traveler arch** in Maui 5 is distinct from the **sealed historic underground drainage barrier** discovered later. Ba Sing Se road travel and the Jasmine Dragon's business routines are Iroh's homeworld scenes, while Beach City and Starwake have separate Greg story scenes. See `LANTERNWEALD_PASS7_CONTINUITY.md` for environmental, labor, historical and relationship consequences.
+
+The local economy and resident life continue between Jasper's visits: cleaning shifts can end, clerks can question officials, trainees can report worn fittings, tea service requires wages and supplier costs, and privacy applies to romantically partnered adults as much as to arriving travelers. **Equal chapter counts do not establish prose-depth parity;** earlier short scenes remain subject to editing.
