@@ -9,7 +9,7 @@ The repo contains **216 real chapters** across six linked fanfiction stories. Th
 - Six new fully authored chapters: *The Shore I Choose* 11, *After Always* 41, *Jasmine After Rain* 41, *Love & Duty* 41, *What the Armor Leaves Behind* 41, and *Stars Between the Strings* 41.
 - Six early source chapters revised to show Jasper directly explaining ethical non-monogamy and preference for polyamory to the individual romantic interests. *Love & Duty* contains three separate conversations.
 - Three existing short chapters substantially rewritten with complete scenes, sensory setting, real dialogue, and emotionally appropriate transitions: Maui 09, Iroh 39 and Greg 39.
-- A shared Sixth-Threadway/Seventh-Ring mystery developed through all six new chapter perspectives, with expanded rules, history and communal conflicts in `LANTERNWEALD_WORLD_BIBLE.md`. **There are six Threadways, and the seventh ring is a mechanical warning mechanism, not an extra door.**
+- A shared Seventh Ring mystery developed through all six new chapter perspectives, with expanded rules, history and communal conflicts in `LANTERNWEALD_WORLD_BIBLE.md`. **There are six Threadways, and the seventh ring is a mechanical warning mechanism, not an extra door.**
 
 ### Offline reader behavior
 
