@@ -1,0 +1,416 @@
+{
+  "schema_version": "lanternweald.community_atlas.v1",
+  "updated": "2026-11-05",
+  "status": "editorial reference; established-on-page details distinguished from optional unwritten story seeds",
+  "purpose": "Increase original cozy-village depth while preserving independent fictional homeworlds, six linear novels, community agency and existing endings",
+  "districts": [
+    {
+      "id": "lanternwell-square",
+      "name": "Lanternwell Square",
+      "feel": "Bread crust, warm stone, public chalk, late bells and the intersection of independent lives",
+      "residents": [
+        "Mara — bakery owner; protects posted prices and work hours",
+        "Neri — registrar; holds restricted emergency records",
+        "Pip — event volunteer; asks before assigning performers or lantern-hook labor"
+      ],
+      "daily": [
+        "Bakery counts paid orders and donated loaves separately",
+        "Registrar updates open roads and voluntary crossing guidance",
+        "Visitors can dispute incorrect public signs without exposing their destinations"
+      ],
+      "spring": "Thaw-route notices and ramp rechecks",
+      "summer": "Market shade, drinking water and posted event schedules",
+      "autumn": "Lantern-hook test, consent-based contributor credits and seasonal food inventory",
+      "winter": "Written shelter instructions and accessible warm routes, never compelled departures",
+      "conflict": "The public wants a heroic simple answer, while accurate notices require distinctions and sometimes uncertainty",
+      "connections": [
+        "Maui ch44 — tested signs and shelter entry",
+        "Maui ch45 — voluntary repair festival",
+        "Maui ch49 — Tomas's uncoerced return"
+      ],
+      "future": [
+        "A mislabeled lost-and-found crate creates a consent-based search for its owner",
+        "A frost storm forces temporary changes to a market route; affected vendors vote on alternatives"
+      ]
+    },
+    {
+      "id": "tideglass-cove",
+      "name": "Tideglass Cove",
+      "feel": "Salt on rope, gull calls, warm skiff timbers and hard-working tidal gauges",
+      "residents": [
+        "Fen — tide and safe-flow records",
+        "Lio — skiff maintainer, owns repair estimates and crew schedules",
+        "Tamsin — inspector, issues limited rather than absolute clearance"
+      ],
+      "daily": [
+        "Crew checks tide and posted loading limits before opening a landing",
+        "Skiff repairs and fish deliveries are logged with paid time",
+        "Sea-glass beds are observed, but no outsider unilaterally relocates them"
+      ],
+      "spring": "Debris screen and surface-runoff tests during thaw",
+      "summer": "Coastal hardware corrosion checks and marked safe boating windows",
+      "autumn": "Storm inventory, rope inspection, public detour rehearsal",
+      "winter": "Iced-route closure review; historic lower passage remains sealed",
+      "conflict": "Heroes want a permanent victory; working residents need a recorded range of safe operation",
+      "connections": [
+        "Maui ch34 — salvaged fastener failure",
+        "Maui ch47 — first real storm trial",
+        "Greg ch49 — stage note follows pressure changes",
+        "Maui ch49 — Tomas visits without promising to stay"
+      ],
+      "future": [
+        "Lio tests a repair made from a known compatible batch of materials",
+        "An optional seed trial is stopped before an invasive plant reaches the dunes"
+      ]
+    },
+    {
+      "id": "jasmine-steps",
+      "name": "Jasmine Steps",
+      "feel": "Misted stone stairways, tea steam, awning cloth and the smell of fresh herbs",
+      "residents": [
+        "Bo — posted closures and staff supplies",
+        "Temporary stall workers — paid hours and actual inventories",
+        "Visiting Iroh — chooses to help rather than command"
+      ],
+      "daily": [
+        "Temporary tea service checks sanitation and stock before opening",
+        "Garden deliveries list what was bought, borrowed or damaged",
+        "Safe alternate routes remain available when a kitchen closes"
+      ],
+      "spring": "Leaf inspection and drainage cleaning before busy trade",
+      "summer": "Shade and safe drinking-water supply",
+      "autumn": "Covered terrace menu and lantern test under fire-safe controls",
+      "winter": "Warm counter shifts, anti-slip routes and firewood inventories",
+      "conflict": "The shop owner fears losing a beloved space, but keeping it safe sometimes means closing it",
+      "connections": [
+        "Iroh ch49 — kitchen backflow, paid staff, surface test",
+        "Iroh ch48 — safe paper-lantern projection"
+      ],
+      "future": [
+        "An herb delivery is mislabeled; the stall refuses to serve it until a knowledgeable gardener identifies it",
+        "Bo corrects a menu after a closure raises the cost of supplies"
+      ]
+    },
+    {
+      "id": "riverstone-terrace",
+      "name": "Riverstone Terrace",
+      "feel": "Damp garden soil, low cart wheels, bridge shadows and a view that conceals ground-level details",
+      "residents": [
+        "Sela — keeps her own dated flood and crop records",
+        "Edda — verifies accessible routes and usable doorways",
+        "Visiting Aang, Katara and Toph — consult and leave local authority intact"
+      ],
+      "daily": [
+        "Neighbors observe watermarks and greenhouse beds",
+        "Approach, bridge and adjacent street budgets are treated together",
+        "Local growers approve work affecting their soil and seed trays"
+      ],
+      "spring": "Mark thaw runoff and plan seedlings without moving other people's gardens",
+      "summer": "Water planning, shade and market-carts on tested surfaces",
+      "autumn": "Bridge shared-reserve accounting and damaged crop records",
+      "winter": "Frozen approach inspections and safe temporary transport",
+      "conflict": "A perfect survey from above cannot certify what a resident experiences at ground level",
+      "connections": [
+        "Maui ch38 — bridge includes street approach",
+        "Love & Duty ch44 — Sela's evidence (previous pass)",
+        "Love & Duty ch45 — Toph rejects sole authority"
+      ],
+      "future": [
+        "Sela and Toph compare rainfall notes after a disagreement rather than letting talent override a witness",
+        "A bridge reserve receives competing requests for maintenance and public space"
+      ]
+    },
+    {
+      "id": "moonroot-archive",
+      "name": "Moonroot Archive",
+      "feel": "Linen-lined drawers, amber reading lamps, dust that must not be disturbed and carefully chosen silence",
+      "residents": [
+        "Orin — documents amendments and testimony choice",
+        "Neri — records authority and witnesses limits",
+        "Visiting Severus — conserves documents without inventing conclusions"
+      ],
+      "daily": [
+        "Readers request materials by provenance, not rumor",
+        "Public, restricted and private records have distinct permissions",
+        "Testimony corrections preserve the earlier version and the reason for change"
+      ],
+      "spring": "Check damp control and document supports",
+      "summer": "Ventilation reviews and reader appointments",
+      "autumn": "Compare repair records with before-storm evidence",
+      "winter": "Conservation of damp-damaged pages and restricted witness intake",
+      "conflict": "Residents want one villain's name from the scraped keeper line; evidence cannot support it",
+      "connections": [
+        "Maui ch35 — scraped signature with recorded uncertainty",
+        "Maui ch39 — Neri's amendable testimony",
+        "Maui ch41 — authorized upper-hatch inspection",
+        "Greg ch49 — sound/gauge observations archived without overclaiming"
+      ],
+      "future": [
+        "A witness asks to correct the date of a remembered gate closure",
+        "An archive tool loan cannot be traced until its receipt is reconciled"
+      ]
+    },
+    {
+      "id": "brasswatch-yard",
+      "name": "Brasswatch Yard",
+      "feel": "Warm iron, measured tools, separate parts bins and an insistence that reports mean what they say",
+      "residents": [
+        "Danse — workshop engineer; responsible but not sole authority",
+        "Renn — staff member and accountable shift leader",
+        "Tamsin — independent safety and paid-labor practices",
+        "Ash — person who can accept paid work without surrendering housing"
+      ],
+      "daily": [
+        "Tools and parts are signed out with suitability and inspection status",
+        "Civilian reviews stay available without chain-of-command permission",
+        "Water and equipment failures list alternative services before repairs finish"
+      ],
+      "spring": "Temperature-change seals and flood-supply audits",
+      "summer": "Overheat and coastal-corrosion specification checks",
+      "autumn": "Emergency equipment inventory and fair paid rosters",
+      "winter": "Cold-service seals and heating checks",
+      "conflict": "Danse must distinguish command habits from legitimate consent and independent criticism",
+      "connections": [
+        "Maui ch34 — batch provenance",
+        "Danse ch41 — purifier flange and alternative water delivery",
+        "Danse ch43 — Ash's voluntary employment (previous pass)",
+        "Greg ch48 — instrument repair and repayment"
+      ],
+      "future": [
+        "Renn develops a signed troubleshooting card that survives a change in supervisor",
+        "A supplier disputes a rejected batch and the evidence goes to an independent reviewer"
+      ]
+    },
+    {
+      "id": "starwake-pier",
+      "name": "Starwake Pier",
+      "feel": "A humming board, sea spray on instrument cases, coiled cables and lanterns tested against weather",
+      "residents": [
+        "Nola — custodian; owns visitor key and equipment rules",
+        "Greg — visiting musician, free to decline an encore",
+        "Pip and youth makers — voluntary contributors with credit and consent"
+      ],
+      "daily": [
+        "Weather and load limits checked before rehearsal",
+        "Equipment inventory and volunteer shift sign-off",
+        "Public quiet room requires visitor key; instrument cupboard stays controlled"
+      ],
+      "spring": "Boardwalk inspection after high water",
+      "summer": "Small consent-based sets with safe cable routing",
+      "autumn": "Lantern projection with tested heat distance",
+      "winter": "Weather-limited acoustic gatherings and off-season repair",
+      "conflict": "A concert is not worth risking a public walkway; a borrowed instrument remains another person's responsibility",
+      "connections": [
+        "Greg ch37 — unforced quiet encore",
+        "Greg ch48 — damaged guitar, consent to repair",
+        "Greg ch49 — vibrating stage logged as sound and engineering data separately",
+        "Greg ch50 — visitor key is not private ownership",
+        "Maui ch33 — Greg and Maui learn to listen together"
+      ],
+      "future": [
+        "Nola invites listeners to share a memory of a sound without granting rights to anyone's private story",
+        "A late delivery requires a performer to choose whether the smaller safe set still feels worthwhile"
+      ]
+    }
+  ],
+  "homeworld_boundaries": [
+    {
+      "world": "Ba Sing Se",
+      "anchor": "The Jasmine Dragon",
+      "key_people": [
+        "Iroh",
+        "Mina",
+        "Lian",
+        "Ren"
+      ],
+      "rules": [
+        "Paid local labor and actual shop accounts stay in Ba Sing Se",
+        "Lu Ten's memorial and history of the siege are not solved through Threadways",
+        "The valley's Jasmine Steps is a different place"
+      ]
+    },
+    {
+      "world": "Beach City",
+      "anchor": "Greg's garage, car wash and community center",
+      "key_people": [
+        "Greg",
+        "Steven",
+        "Pilar"
+      ],
+      "rules": [
+        "The car wash remains Greg's local business",
+        "Rose's memory belongs to Greg and Steven and is not a romance obstacle to erase",
+        "Donors cannot purchase editorial control over community-center performances"
+      ]
+    },
+    {
+      "world": "Spinner's End and wizarding Britain",
+      "anchor": "Severus's house and professional hearings",
+      "key_people": [
+        "Severus"
+      ],
+      "rules": [
+        "Wizarding testimony does not make the Moonroot signature recoverable by magic",
+        "Personal wartime history and private letters require consent for disclosure",
+        "Domestic repairs do not equal automatic rehabilitation"
+      ]
+    },
+    {
+      "world": "Commonwealth",
+      "anchor": "Danse's origins and protected correspondence",
+      "key_people": [
+        "Danse",
+        "Haylen",
+        "Ash"
+      ],
+      "rules": [
+        "Haylen's letter is not an open invitation to use unsafe communication",
+        "Former military authority grants no entitlement to another person's housing or identity"
+      ]
+    }
+  ],
+  "shared_narrative_connections": [
+    {
+      "id": "the-corrected-record",
+      "stories": [
+        "Maui 35/39/41",
+        "Greg 49",
+        "Severus 22/25",
+        "Danse 41"
+      ],
+      "motifs": [
+        "Evidence can be corrected",
+        "Provenance precedes certainty",
+        "Confidentiality is not a cover-up"
+      ],
+      "limit": "The unidentified Closed Bells keeper remains unnamed"
+    },
+    {
+      "id": "the-safe-performance",
+      "stories": [
+        "Maui 33/45",
+        "Iroh 48",
+        "Greg 22/30/37/50"
+      ],
+      "motifs": [
+        "Art needs volunteer choice",
+        "Technical safety informs creative work",
+        "A smaller audience does not mean failure"
+      ],
+      "limit": "Public performances cannot reveal relationship rosters"
+    },
+    {
+      "id": "the-water-accounts",
+      "stories": [
+        "Maui 34/38/44/47",
+        "Love & Duty 44/45",
+        "Danse 41",
+        "Iroh 49"
+      ],
+      "motifs": [
+        "Every repair has an inspection limit",
+        "Local residents hold evidence",
+        "Accessibility is part of the cost, not an afterthought"
+      ],
+      "limit": "Surface overflow operation never reopens the historic lower underground passage"
+    },
+    {
+      "id": "the-unforced-homecoming",
+      "stories": [
+        "Maui 46/49",
+        "Greg 32/45/50",
+        "Iroh 24/27/37",
+        "Love & Duty 42/43",
+        "Danse 45",
+        "Severus 45"
+      ],
+      "motifs": [
+        "Returning is meaningful when leaving is permitted",
+        "Romantic intimacy is consensual, non-exclusive and private",
+        "Scheduling matters without becoming surveillance"
+      ],
+      "limit": "No partner is forced to share a household or love somebody else's partner"
+    }
+  ],
+  "storytime": {
+    "model": "Each homeworld and the valley have continuing local time; books are not synchronized chapter-for-chapter",
+    "rules": [
+      "Do not assume chapter 45 of every novel happens on the same day",
+      "When crossover scenes do overlap, identify weather, event, volunteer schedule and who is actually present",
+      "Future writing should keep a cross-reference table for entrances/exits and closed facilities"
+    ]
+  },
+  "civic_institutions": [
+    {
+      "name": "Public service board",
+      "public": "Road closures, fees, volunteer opt-in, event time and accessible route",
+      "restricted": "None of Jasper's private romantic itinerary",
+      "accountability": "Correctable by independent residents"
+    },
+    {
+      "name": "Registrar",
+      "public": "Availability of emergency services",
+      "restricted": "Emergency contact details and personally identifying travel records",
+      "accountability": "Neri keeps limited, documented access"
+    },
+    {
+      "name": "Water and bridge working group",
+      "public": "Tests, load limits, budgets and published maintenance closures",
+      "restricted": "Private household circumstances and confidential complaints",
+      "accountability": "Fen, Tamsin, Edda, Sela and paid crews retain distinct authority"
+    },
+    {
+      "name": "Community events",
+      "public": "Performer-consented names and posted duration",
+      "restricted": "Private participants and minors not approved for public credit",
+      "accountability": "Pip and Nola cannot volunteer somebody else's labor"
+    }
+  ],
+  "seasonal_arc": [
+    {
+      "season": "spring",
+      "atmosphere": "mud, wet paths, seed trays and softened stone",
+      "story_pressure": "Thaw water tests earlier repairs and forces growers to protect what was planted",
+      "optional_seed": "Gardeners discover the proposed detour would kill the seedlings they have been tending"
+    },
+    {
+      "season": "summer",
+      "atmosphere": "salt light, packed markets, teahouse awnings and evening songs",
+      "story_pressure": "Heat and high visitor traffic require fair work shifts, shade and water",
+      "optional_seed": "A musician declines the longest summer set to attend an ordinary dinner"
+    },
+    {
+      "season": "autumn",
+      "atmosphere": "lantern reflection, bread, longer shadows and storm ledgers",
+      "story_pressure": "The harvest festival cannot skip infrastructure or volunteer consent",
+      "optional_seed": "Residents vote on lantern shapes after a child requests to display theirs only for one song"
+    },
+    {
+      "season": "winter",
+      "atmosphere": "small warm halls, icy approaches, tea and frostbitten rope",
+      "story_pressure": "The valley needs tested safe routes, not a heroic reopening of closed gates",
+      "optional_seed": "The shelter sign is moved after visitors report the warm entrance is difficult to identify"
+    }
+  ],
+  "relationship_ethic": {
+    "reader_insert": "Adult Jasper, first person, externally they/them",
+    "communication": "Jasper directly discloses being ethically non-monogamous and preferring polyamory; revisable agreements with every partner",
+    "consent": "A kiss or a visit is never a claim of future access; partners and NPCs may decline",
+    "style": "Sensual but non-explicit, cumulative slow burn, awkward banter, vulnerable dialogue, natural fade-to-black",
+    "avoid": [
+      "Partner ranking as a competition",
+      "Public romance registries",
+      "Conflict solved by a grand speech without changed behavior",
+      "Every partner speaking with the same polished wisdom",
+      "A magical fix that erases grief or civic costs"
+    ]
+  },
+  "historical_invariants": [
+    "The Closed Bells denied some people voluntary departure; public records were damaged",
+    "The erased keeper signature is not identified by the surviving evidence",
+    "The seventh scratch corresponds to inspected maintenance infrastructure, not a new Threadway",
+    "The upper inspection chamber may be entered under authorization; the historic lower flood barrier remains sealed",
+    "The temporary surface channel passed limited real-weather tests, subject to renewed inspection"
+  ],
+  "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters"
+}
