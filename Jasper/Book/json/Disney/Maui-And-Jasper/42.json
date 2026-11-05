@@ -1,0 +1,34 @@
+{
+  "schema_version": "8.2",
+  "work_type": "fanfiction_chapter",
+  "author": "William Saville",
+  "date_written": "2026-11-05",
+  "date_revised": "2026-11-05",
+  "fandom": "Moana-inspired fanfiction (Maui)",
+  "pairing": "Maui / Jasper",
+  "reader_character": "Jasper — adult first-person protagonist, externally they/them",
+  "rating": "Teen",
+  "content_notes": [
+    "Non-graphic romantic intimacy",
+    "Infrastructure and the Closed Bells",
+    "Consent and democratic disagreement"
+  ],
+  "series_slug": "the-shore-i-choose",
+  "series_title": "The Shore I Choose",
+  "chapter_number": 42,
+  "id": "maui-42",
+  "title": "Where the Water Cannot Go",
+  "subtitle": "Lanternweald — sixth expansion pass",
+  "word_count": 910,
+  "content": "Fen spread three maps on the table and weighted them down with stones.\n\nThe oldest showed a blue line running beneath the square toward Tideglass. The second, drawn after the Closed Bells, ended that line in thick black ink. The third was ours, covered in flood marks, inspection dates, and the small angry circles Tamsin drew wherever a repair still needed money.\n\n\"Water doesn't disappear because somebody closes a door,\" Fen said.\n\nToph tapped the table.\n\n\"Neither do the consequences.\"\n\nI stood beside Maui, watching Fen trace the old route.\n\nBefore the sealing, the passage had carried excess rainwater away from the terraces and floodplain into a controlled coastal outlet during certain tide conditions. It wasn't a miracle. It had gates, inspections, and periods when it couldn't be used safely. After the lower barrier was sealed, the valley had relied on smaller surface drains and a series of improvised diversions.\n\nThe diversions worked in ordinary weather.\n\nIn storms, they pushed water toward the same homes and gardens again and again.\n\nSela pointed to the map.\n\n\"Mine.\"\n\nThen another point.\n\n\"Mine too. I thought the floods were just getting worse.\"\n\n\"They may be,\" Fen said. \"But the blocked route has made the pattern less forgiving.\"\n\nNeri sat at the far end of the table with a stack of copied maintenance receipts. Their face was pale.\n\n\"The council kept repairing the surface channels,\" they said. \"We told ourselves we were improving the valley.\"\n\n\"You were repairing symptoms,\" Tamsin answered. \"Sometimes repairs were necessary. They weren't the whole plan.\"\n\nI felt a cold ache beneath my ribs.\n\nThe old decision had not ended when the keepers died or the records burned. It had become a pattern in the landscape, the kind people accepted because they had lived with it long enough.\n\nMaui stared at the map.\n\n\"Then open the barrier.\"\n\nFen shook their head.\n\n\"Not yet.\"\n\n\"People are getting wet.\"\n\n\"And they'd get much wetter if an unstable tunnel failed under the spring.\"\n\nThe silence was uncomfortable.\n\nDanse laid out the inspection results from the upper chamber. The mortar was different in two sections. One support showed long-term movement. We could test the surface outlet and keep the temporary channels open, but the lower route required engineering work before any attempt at full reopening.\n\nI wanted to argue.\n\nInstead I asked what the current closure actually meant.\n\n\"The upper maintenance hatch can be opened under supervision for inspection,\" Tamsin said. \"The lower flood barrier remains closed. Surface drains need additional capacity before the next storm.\"\n\nEdda raised her hand.\n\n\"And the detour must be usable by people who can't take the steps to the upper ridge.\"\n\nWe rewrote the work list.\n\nThe council would fund an accessible temporary path and a monitored surface overflow. Tideglass would provide tide data, Riverstone would oversee drainage effects on gardens, Brasswatch would test the portable pump and new fittings, and Moonroot would preserve the old plans without claiming they gave anyone permission to enter unsafe spaces.\n\nThe work needed money and patience.\n\nNeither was popular.\n\nAfter the meeting, I found Neri by the fountain.\n\nThey were staring at the old stone arch.\n\n\"I used to think the sealed route was part of our history,\" they said. \"Something unfortunate and finished.\"\n\n\"It wasn't finished.\"\n\n\"No.\"\n\nThey looked at me.\n\n\"Do you hate me for not asking sooner?\"\n\nI had to think before answering.\n\n\"I'm angry that people kept suffering. I'm glad you're asking now. Both are true.\"\n\nThey nodded slowly.\n\n\"That is more than I expected.\"\n\nThe temporary channel was built over the following week. It ran along the safe upper path, using removable sections that could be cleaned without entering the old tunnel. Sela helped place the runoff markers near the garden. Edda tested the detour in wet weather. Toph checked the supports while Tamsin logged the movement.\n\nMaui carried materials when asked and learned the names of three workers who had previously been invisible to him. He brought hot food from the pantry after the late shift, then stayed to wash the pots.\n\nThe work did not make him smaller.\n\nI was beginning to think it made him more himself.\n\nOn the final test day, a controlled flow of water ran through the temporary channel and out toward the coast. Fen watched the gauges. Danse checked the pump. Sela stood beside the garden, waiting to see whether her soil would flood again.\n\nThe first test passed.\n\nThe second revealed a small leak near the lower joint.\n\nWe stopped and repaired it.\n\nThe third passed within the limits the team had written down.\n\nNobody cheered until Fen said the words.\n\n\"Safe for the posted conditions.\"\n\nThen we cheered.\n\nThe lower passage remained closed.\n\nThat evening, Maui found me sitting on the bench above Tideglass. I was tired enough that the sea seemed to move in slow pieces.\n\n\"Disappointed?\" he asked.\n\n\"A little.\"\n\n\"Because we didn't open the old route?\"\n\n\"Yes.\"\n\nHe sat beside me.\n\n\"Me too.\"\n\nI leaned against him.\n\n\"But the gardens are safer,\" I said.\n\n\"And people can use the path.\"\n\n\"And the inspection records are public.\"\n\nHe smiled.\n\n\"Not exactly a great legend.\"\n\n\"Perhaps we should stop measuring our lives by whether they make good legends.\"\n\nHe pretended to consider.\n\n\"That sounds like more work.\"\n\n\"It is.\"\n\nHe kissed me softly.\n\nBelow us, the water moved through the new surface channel, doing what water had always tried to do.\n\nFinding somewhere safe to go.",
+  "format": "linear_first_person_reader_insert",
+  "narrative_tense": "past",
+  "shared_world": {
+    "name": "The Lanternweald",
+    "district": "Tideglass Cove",
+    "threadway": "The Tideglass Door"
+  },
+  "publication_status": "complete_prose",
+  "next_chapter_id": null,
+  "writer_style_profile": "json/william-writing-style.json"
+}
