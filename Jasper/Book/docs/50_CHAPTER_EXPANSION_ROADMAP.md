@@ -136,7 +136,7 @@ The first ten chapters remain the completed origin arc; Chapter 11 is already wr
 
 ## Depth parity audit and revision order
 
-A source metadata audit on November 4 found chapters under 1,100 words: The Shore I Choose **10/11**; Jasmine After Rain **19/41**; Stars Between the Strings **19/41**; After Always **3/41**; Love & Duty **0/41**; What the Armor Leaves Behind **0/41**. Some short chapters work as intentional pauses, but sustained sequences of short summaries should become dramatized scenes.
+A source metadata audit on November 4 found chapters under 1,100 words: The Shore I Choose **9/11**; Jasmine After Rain **18/41**; Stars Between the Strings **18/41**; After Always **3/41**; Love & Duty **0/41**; What the Armor Leaves Behind **0/41**. These counts reflect the first depth revisions to Maui 09, Iroh 39, and Greg 39. Some short chapters work as intentional pauses, but sustained sequences of short summaries should become dramatized scenes.
 
 Revise the weakest passages first, especially Maui 1–10, Iroh 22–40, and Greg 22–40. Add purposeful conflict, a dialogue exchange with a changed answer, a concrete setting, a new interaction with the wider world, and a consequence that carries into the next chapter. Do not pad, simply repeat the chapter's theme, or sacrifice an existing ending.
 
