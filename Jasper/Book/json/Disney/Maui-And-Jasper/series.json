@@ -10,8 +10,8 @@
   "reader_character": "Jasper, adult first-person reader protagonist",
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
-  "chapter_count": 11,
-  "total_word_count": 6945,
+  "chapter_count": 13,
+  "total_word_count": 9475,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -113,13 +113,31 @@
       "id": "maui-11",
       "word_count": 1191,
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-12"
+    },
+    {
+      "number": 12,
+      "file": "12.json",
+      "title": "A Place for the Departing",
+      "word_count": 1236,
+      "id": "maui-12",
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "maui-13"
+    },
+    {
+      "number": 13,
+      "file": "13.json",
+      "title": "Ink on the Water",
+      "word_count": 1294,
+      "id": "maui-13",
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 11,
-    "planned_not_yet_written": 39,
+    "completed_chapters": 13,
+    "planned_not_yet_written": 37,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {

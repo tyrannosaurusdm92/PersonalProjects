@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
-  "chapter_count": 41,
-  "total_word_count": 45838,
+  "chapter_count": 43,
+  "total_word_count": 48302,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -394,6 +394,24 @@
       "id": "avatar-41",
       "word_count": 1410,
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "avatar-42"
+    },
+    {
+      "number": 42,
+      "file": "42.json",
+      "title": "Six Tables and One Teapot",
+      "word_count": 1247,
+      "id": "avatar-42",
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "avatar-43"
+    },
+    {
+      "number": 43,
+      "file": "43.json",
+      "title": "The General's Old Map",
+      "word_count": 1217,
+      "id": "avatar-43",
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -404,8 +422,8 @@
   },
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 41,
-    "planned_not_yet_written": 9,
+    "completed_chapters": 43,
+    "planned_not_yet_written": 7,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {

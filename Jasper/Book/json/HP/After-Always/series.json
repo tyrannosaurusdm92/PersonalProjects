@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
-  "chapter_count": 41,
-  "total_word_count": 55640,
+  "chapter_count": 43,
+  "total_word_count": 58267,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -394,6 +394,24 @@
       "id": "after-always-41",
       "word_count": 1366,
       "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "after-always-42"
+    },
+    {
+      "number": 42,
+      "file": "42.json",
+      "title": "Not an Appointment",
+      "word_count": 1260,
+      "id": "after-always-42",
+      "relationship_stage": "established-and-revisable",
+      "next_chapter_id": "after-always-43"
+    },
+    {
+      "number": 43,
+      "file": "43.json",
+      "title": "A Field Test for Trust",
+      "word_count": 1367,
+      "id": "after-always-43",
+      "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
   ],
@@ -404,8 +422,8 @@
   },
   "expansion_status": {
     "target_chapter_count": 50,
-    "completed_chapters": 41,
-    "planned_not_yet_written": 9,
+    "completed_chapters": 43,
+    "planned_not_yet_written": 7,
     "outline": "docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md"
   },
   "relationship_structure": {
