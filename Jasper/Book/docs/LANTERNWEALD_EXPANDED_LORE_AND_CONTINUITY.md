@@ -73,7 +73,7 @@ Existing established endings remain valid. If a newly drafted scene would contra
 ## Chronology and continuity checking
 1. The Shore I Choose, chapters 1–10: arrival, first chosen identity, Maui, earliest repaired doors.
 2. The other five novels develop in their existing published order internally. Their Lanternweald visits are interleaved according to Jasper's personal calendar; they do not all take place on the same day.
-3. The Uncounted Lanterns storyline is a *later shared season* following the established book endings, suitable for chapters 41–50 of those five books and chapters 11–50 of The Shore I Choose.
+3. The Uncounted Lanterns storyline begins in the additional Maui chapters 11–50, overlapping Jasper's later journeys, and continues after the five other published endings in their chapters 41–50. A Maui chapter may therefore happen earlier than a chapter with a smaller number in another book.
 4. Do not depict Jasper simultaneously in incompatible places. A planned visit, a letter, or a song delivered by a friend can carry continuity when Jasper is elsewhere.
 5. If a scene occurs in a homeworld, honor its geography, laws, travel times, and existing characters. The Lanternweald grants access, not immunity.
 6. The shared final festival is a convergence of distinct stories, not an automatic multi-partner wedding, group romance, or final decision about who Jasper must love.
