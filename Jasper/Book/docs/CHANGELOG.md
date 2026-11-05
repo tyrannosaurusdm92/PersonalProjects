@@ -140,3 +140,13 @@
 - Updated the affected `series.json` chapter records, synchronized two complete offline-reader overlays and kept the original linear 300-chapter structure.
 - Extended the living-world bible and registry with `LANTERNWEALD_PASS11_CONTINUITY.md` and a new source-of-truth depth audit.
 - Manifest summary: **406,532 words**, **300 completed chapters**, **74 chapters under 1,200 words**, **0 chapters under 700 words**. Scene-depth parity is still an editorial goal, not a completed certification.
+
+
+## November 5, 2026 — Twelfth editorial pass (direct on `main`)
+
+- Revised 31 existing chapters across all six fanfiction novels; added 12,555 counted words of differentiated dialogue, interpersonal trust, real-world logistics and connected original-world history.
+- Expanded eight Maui chapters, nine Greg chapters, five Iroh chapters, five Severus chapters, two Danse chapters and two Love & Duty chapters. Preserved all existing 300 chapter slots and each book's ending.
+- Recorded seven-district daily and seasonal life, original civic history, consent-based ceremonies, independent resident jobs and an explicit divide between canonical events and future seeds.
+- Created `docs/LANTERNWEALD_PASS12_CONTINUITY.md` and `json/lanternweald-community-atlas.json`; prepared twelfth-pass manuscript audit.
+- Updated all six affected manifests and shipped six sequential offline-reader chapter overlays before `js/app.js`; all 31 chapter-to-overlay contents were read back and compared successfully.
+- Current six-manifest total: 419,087 words, 300 chapters, 46 below the 1,200-word review line; full prose-depth parity and visual browser testing are still outstanding.

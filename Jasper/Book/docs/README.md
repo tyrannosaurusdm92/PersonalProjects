@@ -6,15 +6,15 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 57,945 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 68,724 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 64,295 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 75,450 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 75,252 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 64,866 |
-| **Total** | **Six connected novels** | **300 / 300** | **406,532** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 61,235 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 70,489 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 66,491 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 76,256 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 76,044 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 68,572 |
+| **Total** | **Six connected novels** | **300 / 300** | **419,087** |
 
-*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is complete. The eleventh pass rewrites/expands 19 existing chapters. 74 chapters remain under the 1,200-word editorial review guideline; scene-depth parity is not yet complete.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
+*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is complete. The twelfth pass expands 31 existing chapters. 46 chapters remain under the 1,200-word editorial review guideline; scene-depth parity is not yet complete.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
 ## Sixth expansion pass
 
@@ -99,3 +99,10 @@ Fourteen existing chapters revised directly on `main` without a branch or pull r
 Nineteen chapters revised directly on `main` (no branch or PR): Maui 33/34/37/45; Severus 31/32; Iroh 22/24/26/28/34; Love & Duty 43/44; Danse 42/43; Greg 22/27/29/33. Nine shorter chapters were rewritten with distinct dialogue and structure; ten received consequential scenes. The revised JSON and full offline-reader chapter overlays are synchronized. All six linear novels retain 50 chapters each, Teen-rated non-explicit romantic intimacy, and openly negotiated ethical non-monogamy and preferred polyamory.
 
 Current reference: `PROSE_DEPTH_PASS11_AUDIT.md`. Extended living world: `LANTERNWEALD_PASS11_CONTINUITY.md`. These do not supersede the historical audits of earlier passes, and `file://` reading should still be tested in a real browser before a release.
+
+
+## Twelfth editorial pass — November 5, 2026
+
+**31 existing chapters were expanded directly on `main` without a branch or pull request**, adding 12,555 recorded words of scenes, dialogue and interconnected living-world consequences. Maui 35/38/39/41/44/46/47/49; Severus 20/22/25/27/45; Iroh 25/27/37/48/49; Love & Duty 42/45; Danse 41/45; Greg 23/26/30/32/37/45/48/49/50. Six offline-reader overlays (`pass12-a` through `pass12-f`) are loaded in `index.html`. The six novels remain 50 chapters each; there is no new ending or forced partner arrangement.
+
+**Latest manuscript audit:** `PROSE_DEPTH_PASS12_AUDIT.md`. **Cross-novel canon:** `LANTERNWEALD_PASS12_CONTINUITY.md`. **Structured seasonal and district reference:** `../json/lanternweald-community-atlas.json` (relative from this README location use `json/lanternweald-community-atlas.json` from `Jasper/Book`). Older audits remain historical snapshots, not current totals. Real-browser/offline usability testing remains outstanding.
