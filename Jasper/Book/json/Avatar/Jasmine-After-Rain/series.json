@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 63026,
+  "total_word_count": 64295,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -220,7 +220,7 @@
       "number": 22,
       "file": "22.json",
       "title": "A Place at the Table",
-      "word_count": 716,
+      "word_count": 993,
       "id": "avatar-22",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-23"
@@ -238,7 +238,7 @@
       "number": 24,
       "file": "24.json",
       "title": "A Question Worth Asking",
-      "word_count": 685,
+      "word_count": 941,
       "id": "avatar-24",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-25"
@@ -256,7 +256,7 @@
       "number": 26,
       "file": "26.json",
       "title": "When Tea Goes Cold",
-      "word_count": 700,
+      "word_count": 939,
       "id": "avatar-26",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-27"
@@ -274,7 +274,7 @@
       "number": 28,
       "file": "28.json",
       "title": "The Game We Change",
-      "word_count": 687,
+      "word_count": 915,
       "id": "avatar-28",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-29"
@@ -328,7 +328,7 @@
       "number": 34,
       "file": "34.json",
       "title": "Under the Same Lantern",
-      "word_count": 691,
+      "word_count": 960,
       "id": "avatar-34",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-35"
