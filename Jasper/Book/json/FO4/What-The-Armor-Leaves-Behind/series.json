@@ -1,5 +1,5 @@
 {
-  "schema_version": "7.0",
+  "schema_version": "8.1",
   "work_type": "fanfiction_series",
   "fandom": "Fallout 4",
   "series_title": "What the Armor Leaves Behind",
@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
-  "chapter_count": 40,
-  "total_word_count": 61792,
+  "chapter_count": 41,
+  "total_word_count": 63198,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -58,7 +58,7 @@
       "number": 4,
       "file": "04.json",
       "title": "The Deep Range",
-      "word_count": 1650,
+      "word_count": 1891,
       "id": "what-the-armor-leaves-behind-04",
       "relationship_stage": "chemistry",
       "next_chapter_id": "what-the-armor-leaves-behind-05"
@@ -385,6 +385,15 @@
       "word_count": 1678,
       "id": "what-the-armor-leaves-behind-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "what-the-armor-leaves-behind-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "A Repair Is Not an Order",
+      "word_count": 1165,
+      "id": "what-the-armor-leaves-behind-41",
+      "relationship_stage": "integrated_trust",
       "next_chapter_id": null
     }
   ],
@@ -392,5 +401,7 @@
     "name": "The Lanternweald",
     "district": "Brasswatch Yard",
     "threadway": "The Brasswatch Door"
-  }
+  },
+  "expansion_target_chapters": 50,
+  "expansion_status": "In progress; prose only published for completed chapters"
 }
