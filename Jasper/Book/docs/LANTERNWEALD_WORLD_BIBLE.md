@@ -34,3 +34,7 @@ Residents maintain a shared garden, cook communal meals, mend lamps and roofs, r
 
 ## First Lantern — origin chronology
 The Shore I Choose (10 chapters) is the first personal arc in Jasper's chronology: the tide, memory fragments, Maui, the Lanternwell, and the first five opening Threadways. Its final scene deliberately opens doors toward the established stories. The other stories remain separate but connected complete romances with their own boundaries; no future relationship silently rewrites a past one. The shared vale supports ongoing conversations about change, autonomy, and consent.
+
+
+## November 2026 continuation references
+The expanded operational geography, Threadrain, shared mystery, cross-character meetings, ethical non-monogamy continuity, and privacy rules are developed in [LANTERNWEALD_EXPANDED_LORE_AND_CONTINUITY.md](LANTERNWEALD_EXPANDED_LORE_AND_CONTINUITY.md). The status-aware fifty-chapter roadmap (authored chapters clearly separated from planned chapters) is in [FIFTY_CHAPTER_EXPANSION_ROADMAP.md](FIFTY_CHAPTER_EXPANSION_ROADMAP.md). These extend the original premise rather than overriding its consent or canon constraints.
