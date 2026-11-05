@@ -57,4 +57,6 @@ The Lanternweald's seven original districts share finite resources, schedules, l
 - `json/lanternweald-living-world-registry.json` — structured seven-district and resident continuity registry
 - `docs/SIX_NOVELS_FIFTY_CHAPTER_ROADMAP.md` — 300 marked-written beat summaries for editorial navigation
 
+**Depth-parity audit:** `docs/PROSE_DEPTH_PARITY_AUDIT.md` compares all six 50-chapter manifests and identifies shorter passages for targeted scene-level expansion without adding chapter numbers.
+
 **Remaining work is editorial, not missing chapters:** deepening shorter older prose, preserving each character's distinct speech and pace, refining intimate fade-to-black variation, reconciling chronological overlaps, and running a true visual browser usability test. The lower Tideglass **historic underground service passage remains sealed** at these endings; the **temporary surface channel** is what passes storm tests and reopens. Do not flatten that distinction in future revisions.
