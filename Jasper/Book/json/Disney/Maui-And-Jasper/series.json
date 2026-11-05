@@ -1,5 +1,5 @@
 {
-  "schema_version": "8.0",
+  "schema_version": "8.1",
   "work_type": "fanfiction_series",
   "fandom": "Moana-inspired fanfiction (Maui)",
   "series_title": "The Shore I Choose",
@@ -10,8 +10,8 @@
   "reader_character": "Jasper, adult first-person reader protagonist",
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
-  "chapter_count": 10,
-  "total_word_count": 5754,
+  "chapter_count": 11,
+  "total_word_count": 7248,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -54,7 +54,7 @@
       "file": "04.json",
       "title": "The Things Hands Remember",
       "id": "maui-04",
-      "word_count": 482,
+      "word_count": 735,
       "next_chapter_id": "maui-05"
     },
     {
@@ -103,7 +103,18 @@
       "title": "The Person I Choose",
       "id": "maui-10",
       "word_count": 717,
+      "next_chapter_id": "maui-11"
+    },
+    {
+      "number": 11,
+      "file": "11.json",
+      "title": "The Bell That Rang Twice",
+      "word_count": 1241,
+      "id": "maui-11",
+      "relationship_stage": "integrated_trust",
       "next_chapter_id": null
     }
-  ]
+  ],
+  "expansion_target_chapters": 50,
+  "expansion_status": "In progress; prose only published for completed chapters"
 }
