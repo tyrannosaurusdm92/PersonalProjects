@@ -131,3 +131,12 @@
 - Synchronized all six series manifests, 14 revised chapter JSON files and two new offline-reader chapter override scripts.
 - Extended the world bible and current registry, with a tenth-pass continuity addendum and explicit remaining parity gap.
 - Current six-manifest count: 401,856 words; 300 written chapters; 84 chapters under 1,200 words. No alternate ending or new branch.
+
+
+## November 5, 2026 — Eleventh editorial pass on `main`
+
+- Fully rewrote Iroh 22/24/26/28/34 and Greg 22/27/29/33, replacing boilerplate with nine differentiated scenes, humor, practical relationship negotiation and more recognizable character dialogue.
+- Expanded Maui 33/34/37/45, Severus 31/32, Love & Duty 43/44 and Danse 42/43 with named residents, consent, repairs, work, archives, shelter and community logistics.
+- Updated the affected `series.json` chapter records, synchronized two complete offline-reader overlays and kept the original linear 300-chapter structure.
+- Extended the living-world bible and registry with `LANTERNWEALD_PASS11_CONTINUITY.md` and a new source-of-truth depth audit.
+- Manifest summary: **406,532 words**, **300 completed chapters**, **74 chapters under 1,200 words**, **0 chapters under 700 words**. Scene-depth parity is still an editorial goal, not a completed certification.

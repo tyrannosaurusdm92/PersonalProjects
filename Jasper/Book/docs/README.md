@@ -6,15 +6,15 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 56,734 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 68,083 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 63,026 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 74,818 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 74,711 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 64,484 |
-| **Total** | **Six connected novels** | **300 / 300** | **401,856** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 57,945 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 68,724 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 64,295 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 75,450 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 75,252 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 64,866 |
+| **Total** | **Six connected novels** | **300 / 300** | **406,532** |
 
-*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is complete. Tenth-pass revisions improve 14 existing chapters, but 84 remain under the 1,200-word review guideline; prose-depth parity is not yet complete.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
+*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is complete. The eleventh pass rewrites/expands 19 existing chapters. 74 chapters remain under the 1,200-word editorial review guideline; scene-depth parity is not yet complete.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
 ## Sixth expansion pass
 
@@ -92,3 +92,10 @@ The Lanternweald's seven original districts share finite resources, schedules, l
 ## Tenth editorial pass — November 5, 2026
 
 Fourteen existing chapters revised directly on `main` without a branch or pull request: Maui 36/40/42, Severus 47, Iroh 23/25/27/37, Love & Duty 46, Danse 46, Greg 23/26/30/32. Eight template-heavy chapters received distinct replacement scenes; six others gained practical consequences. Both offline reading overlays are loaded before `js/app.js`, and all 300 chapter IDs and endings remain intact. Canon addendum: `LANTERNWEALD_PASS10_CONTINUITY.md`. Latest source counts and limitations: `PROSE_DEPTH_PASS10_AUDIT.md`.
+
+
+## Eleventh editorial pass — November 5, 2026
+
+Nineteen chapters revised directly on `main` (no branch or PR): Maui 33/34/37/45; Severus 31/32; Iroh 22/24/26/28/34; Love & Duty 43/44; Danse 42/43; Greg 22/27/29/33. Nine shorter chapters were rewritten with distinct dialogue and structure; ten received consequential scenes. The revised JSON and full offline-reader chapter overlays are synchronized. All six linear novels retain 50 chapters each, Teen-rated non-explicit romantic intimacy, and openly negotiated ethical non-monogamy and preferred polyamory.
+
+Current reference: `PROSE_DEPTH_PASS11_AUDIT.md`. Extended living world: `LANTERNWEALD_PASS11_CONTINUITY.md`. These do not supersede the historical audits of earlier passes, and `file://` reading should still be tested in a real browser before a release.

@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 10,
+  "editorial_revision_pass": 11,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -591,7 +591,7 @@
       "premise": "A performer stops when their chosen shift ends"
     }
   ],
-  "revised_chapter_count_this_pass": 14,
+  "revised_chapter_count_this_pass": 19,
   "revised_chapter_slots_by_series_pass8": {
     "the-shore-i-choose": [
       2,
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 401856,
+  "manifest_word_count": 406532,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -806,5 +806,46 @@
     "labor": "Paid skilled work, voluntary rosters and independent complaints",
     "separate_homeworlds": "Iroh in Ba Sing Se and Greg in Beach City; no teleporting their businesses to valley districts",
     "romance": "Informed ethical non-monogamy, preferred polyamory, consent and non-explicit privacy"
+  },
+  "revised_chapter_slots_by_series_pass11": {
+    "the-shore-i-choose": [
+      33,
+      34,
+      37,
+      45
+    ],
+    "after-always": [
+      31,
+      32
+    ],
+    "jasmine-after-rain": [
+      22,
+      24,
+      26,
+      28,
+      34
+    ],
+    "love-and-duty": [
+      43,
+      44
+    ],
+    "what-the-armor-leaves-behind": [
+      42,
+      43
+    ],
+    "stars-between-the-strings": [
+      22,
+      27,
+      29,
+      33
+    ]
+  },
+  "eleventh_pass_world_rules": {
+    "separate_worlds": "Jasmine Dragon and its labor are in Ba Sing Se; Greg's fundraiser, family letter and van are in Beach City; Spinner's End remains in Snape's homeworld.",
+    "seven_districts": "Seven distinct civic routines with paid work, public service notices, restricted records, storage and weather conditions.",
+    "events": "No performer or volunteer can be required to perform an additional set, disclose a private identity or waive rest.",
+    "safety": "Coastal fasteners require verified material ratings; surface channel tests do not open the historic underground barrier.",
+    "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
+    "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   }
 }
