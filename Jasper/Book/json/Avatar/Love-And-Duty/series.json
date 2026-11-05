@@ -11,8 +11,8 @@
   "rating": "Teen",
   "description": "In a postwar Cranefish Town becoming something new, an adult nonbender reader finds themself drawn into Aang, Katara, and Toph’s complicated orbit. Love grows through reconstruction work, public scrutiny, cultural preservation, arguments, chosen boundaries, and the daily work of building a home where nobody has to disappear to belong.",
   "canon_window": "Adult postwar timeline only: Jasper, Aang, Katara, and Toph are explicitly adults before romance/private-interlude content. Their original minor-era canon versions are never used for adult intimacy.",
-  "chapter_count": 40,
-  "total_word_count": 60906,
+  "chapter_count": 41,
+  "total_word_count": 62343,
   "story_bible": [
     "This postwar polycule story is built through reconstruction work, public responsibility, cultural difference, arguments, chosen boundaries, and ordinary domestic labor.",
     "Aang, Katara, and Toph must remain three distinct people with separate needs, humor, histories, responsibilities, and relationships with Jasper; never collapse them into one collective partner voice.",
@@ -386,6 +386,15 @@
       "word_count": 1588,
       "id": "Love-And-Duty-40",
       "relationship_stage": "integrated_trust",
+      "next_chapter_id": "Love-And-Duty-41"
+    },
+    {
+      "number": 41,
+      "file": "41.json",
+      "title": "The Bridge Is Not a Metaphor",
+      "word_count": 1437,
+      "id": "Love-And-Duty-41",
+      "relationship_stage": "negotiated_continuity",
       "next_chapter_id": null
     }
   ],
@@ -393,5 +402,11 @@
     "name": "The Lanternweald",
     "district": "Riverstone Terrace",
     "threadway": "The Riverstone Door"
+  },
+  "expansion_status": {
+    "target_chapters": 50,
+    "authored_chapters": 41,
+    "outline": "docs/FIFTY_CHAPTER_EXPANSION_ROADMAP.md",
+    "second_season": "The Uncounted Lanterns"
   }
 }
