@@ -79,3 +79,14 @@ Indexed chapter word counts still vary. At this checkpoint, **21 chapters have f
 Suggested next scenes for a future in-place prose pass: Iroh 24/32/34/40/42; Greg 26/27/29/30/33/36/39/41; Snape 16/17/28/29/37/38/50; Danse 50. Inspect the actual chapter before revising. Keep all existing story content, chapter numbering and main-branch integration intact.
 
 **Validation:** Six existing series retain 50 indexed chapters each, 300 total. No new branch, no new series and no fake chapters were created in this pass.
+
+## Reader integration and verification
+
+The interactive book reader uses `window.JASPER_FANFIC_DATA` created by `js/fanfic-data.js`, followed by chronological JavaScript revision overlays. Editing canonical JSON alone is **not** enough to change what the web reader displays. This pass therefore also adds:
+
+- `js/lanternweald-revisions-pass18-a.js`: seven exact full-chapter mirrors from Avatar and Disney;
+- `js/lanternweald-revisions-pass18-b.js`: seven exact full-chapter mirrors from Fallout, Harry Potter, and Steven Universe.
+
+The existing `index.html` loads these after `lanternweald-revisions-pass17-c.js` and before `app.js`. Each of the 14 full runtime entries was checked against its canonical chapter JSON for matching ID, number, title, content and word count. Both batches passed 7/7 exact matches; the loading order was checked in `index.html`. This is a structural/source check, **not** a claim of comprehensive browser or user-interface testing.
+
+The existing `json/lanternweald-community-atlas.json` and `json/lanternweald-living-world-registry.json` were updated with the verified scene consequences and Pass 18 chapter slots; this preserves the lore's continuity without redefining earlier canon.
