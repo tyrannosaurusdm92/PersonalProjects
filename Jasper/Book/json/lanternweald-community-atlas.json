@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS19_CONTINUITY.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS19_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS20_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS20_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -727,6 +727,92 @@
         "Ellis"
       ],
       "consequence": "Music equipment is borrowed, returned and safely inspected; volunteers choose their hours; Greg does not volunteer Jasper's time or silently accept an exclusive-romance publicity framing."
+    }
+  ],
+  "pass20_scene_links": [
+    {
+      "anchor": "Jasmine Steps / Ba Sing Se",
+      "chapters": [
+        "Jasmine After Rain 8",
+        "Jasmine After Rain 18",
+        "Jasmine After Rain 45"
+      ],
+      "changes": [
+        "Iroh relies on the surveyors' wall measurements rather than treating a siege general's memory as structural evidence.",
+        "Mina is paid for early closing and the tea-shop notice matches real hours.",
+        "Mountain mint carriage charges are verified with growers before the purchase is completed."
+      ],
+      "homeworld_boundary": "Ba Sing Se's civic inspection and wholesale trade remain Fire Nation/Earth Kingdom-era governance, not a Lanternweald magic shortcut."
+    },
+    {
+      "anchor": "Riverstone district / Cranefish Town",
+      "chapters": [
+        "Love & Duty 8",
+        "Love & Duty 18",
+        "Love & Duty 42"
+      ],
+      "changes": [
+        "The eastern footbridge ribbon ceremony stops for an unverified railing; Katara, Toph and Aang disagree productively.",
+        "The Air Nomad temple donation is refused because its bloodline conditions undermine the culture; a smaller temporary classroom gets a budget.",
+        "Jasper, Katara, Aang and Toph preserve separate rest and nonexclusive relationship schedules."
+      ],
+      "homeworld_boundary": "Air Nomad cultural continuity cannot be bought by a hereditary council and cannot substitute an Avatar speech for a safety test."
+    },
+    {
+      "anchor": "Brasswatch Yard / Commonwealth",
+      "chapters": [
+        "What the Armor Leaves Behind 8",
+        "What the Armor Leaves Behind 18",
+        "What the Armor Leaves Behind 42"
+      ],
+      "changes": [
+        "Danse and Jasper's field agreement survives a concrete unsafe relay mission.",
+        "Haylen chooses her medically restricted work shifts; Danse cannot dictate her recovery schedule.",
+        "Renn makes explicit the security risks of the old courier seal; messages and repair ledgers remain separate."
+      ],
+      "homeworld_boundary": "A Brotherhood courier signifier is not a safe Lanternweald pass; technical safety belongs to people authorized and qualified for the repair."
+    },
+    {
+      "anchor": "Moonroot Archive / Spinner's End",
+      "chapters": [
+        "After Always 8",
+        "After Always 18",
+        "After Always 42"
+      ],
+      "changes": [
+        "Jasper and Severus record the accidental destruction of potential vandalism evidence rather than presenting it as a neat repair.",
+        "A Hogsmeade boot-and-umbrella date remains an adult negotiation, not a romantic contractual consent.",
+        "Iroh and Severus bring different kinds of expertise to Neri's disputed Closed Bells map; neither guesses the missing keeper's identity."
+      ],
+      "homeworld_boundary": "Archive evidence is not converted into legal truth by charisma, magic or an unverified line on a copied map."
+    },
+    {
+      "anchor": "Starwake Pier / Beach City",
+      "chapters": [
+        "Stars Between the Strings 8",
+        "Stars Between the Strings 18",
+        "Stars Between the Strings 42"
+      ],
+      "changes": [
+        "Greg and Jasper respect the community center's instrument checkout and Pilar's inventory.",
+        "Greg sends Steven a safe check-in and admits that van ownership and Jasper's polyamory do not settle one another.",
+        "Greg, Danse and Maui coordinate separate stage, electrical and structural responsibilities during a fundraiser."
+      ],
+      "homeworld_boundary": "Beach City stage equipment and Lanternweald event wiring require qualified electrical checks; showmanship is not a substitute."
+    },
+    {
+      "anchor": "Lanternwell / Tideglass",
+      "chapters": [
+        "The Shore I Choose 8",
+        "The Shore I Choose 18",
+        "The Shore I Choose 42"
+      ],
+      "changes": [
+        "Neri's Threadway permission log records a crossing without recording Jasper's private room contents.",
+        "Maui respects Jasper's notebook privacy instead of turning care into an audience performance.",
+        "During a high-tide test Maui supports one beam under Edda's plan while Toph, Fen and Tamsin revise the permitted water conditions."
+      ],
+      "homeworld_boundary": "The lower Closed Bells maintenance passage is still sealed; a safe upper-channel test never opens the old barrier."
     }
   ]
 }
