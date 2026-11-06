@@ -1,0 +1,57 @@
+{
+  "schema_version": "jasper.character-profile.v2-researched",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Steven Universe",
+    "franchise": "Steven Universe and Steven Universe Future",
+    "continuity_scope": "This fanfiction extrapolates adult post-Future Steven; original Future depicts him leaving Beach City",
+    "role": "Greg's son; independent adult traveler and musician"
+  },
+  "biography": {
+    "canon": "Human-Gem son of Greg Universe and Rose Quartz/Pink Diamond, raised with the Crystal Gems; has his own journey and difficult responsibilities.",
+    "fanfiction": "Steven visits his father after traveling; he can take an interest in Lanternweald without serving as Greg's permanent emotional counselor."
+  },
+  "personality": {
+    "strengths": [
+      "generous",
+      "curious",
+      "musical",
+      "loyal to family"
+    ],
+    "flaws": [
+      "can try to fix every hurt",
+      "sometimes hides his own needs"
+    ],
+    "dialogue": [
+      "playful and open with Greg but willing to question him",
+      "can ask blunt practical questions when worried",
+      "refuses to turn every family dinner into a healing speech"
+    ],
+    "agency": [
+      "May decline a visit or a family errand",
+      "Can disagree with Dad while loving him",
+      "Has chosen personal plans that do not revolve around Greg's partner"
+    ]
+  },
+  "relationships": {
+    "Greg": "Father-son affection and complicated separate histories",
+    "Jasper": "Trust develops, not automatic approval or interrogation"
+  },
+  "continuity_constraints": [
+    "Fanfiction ages Steven to an adult",
+    "Do not treat Steven as a romantic partner in Greg's relationship",
+    "Never claim Rose is alive or has returned",
+    "Greg's car wash, van, and music are distinct from Steven's choices"
+  ],
+  "sources": [
+    {
+      "url": "https://steven-universe.fandom.com/wiki/Greg_Universe",
+      "type": "secondary episode and character reference"
+    },
+    {
+      "url": "https://steven-universe.fandom.com/wiki/Greg_Universe/History",
+      "type": "secondary episode chronology"
+    }
+  ],
+  "research_boundary": "Post-Future adult career and travel decisions are fanfiction extrapolation, not official future canon."
+}
