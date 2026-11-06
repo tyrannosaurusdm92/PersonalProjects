@@ -1,0 +1,278 @@
+{
+  "schema_version": "lanternweald.pass13.socialweb.v1",
+  "updated": "2026-11-05",
+  "status": "worldbuilding and editorial reference; future proposals distinguished from on-page events",
+  "principles": [
+    "Living village has jobs, prices, accidents, memories, refusals and safety limits that persist across stories",
+    "Partners are independent people; Jasper directly discloses ethical non-monogamy and preference for polyamory",
+    "Dreamlike coziness comes from genuine routines and consequences, not copied Disney game mechanics",
+    "One public document is never a license to publish a private identity or travel itinerary",
+    "Historic lower flood barrier remains sealed and keeper signature remains unknown"
+  ],
+  "seasonal_rhythms": {
+    "spring": {
+      "label": "First Water",
+      "public_events": [
+        "Garden inventory and accessible path checks",
+        "Limited tide and runoff monitoring"
+      ],
+      "homeworld_echoes": [
+        "Ba Sing Se herbal beds require identification before serving",
+        "Beach City car wash maintenance is weather-dependent"
+      ],
+      "unwritten_suggestions": [
+        "Resident co-authored water-measurement day",
+        "Sela decides which seedlings need moving after actual soil checks"
+      ]
+    },
+    "summer": {
+      "label": "Long Tables",
+      "public_events": [
+        "Paid markets and evening performances under weather limits",
+        "Shared shade and water inventories"
+      ],
+      "homeworld_echoes": [
+        "Greg gets to decline an encore",
+        "Iroh may decline extra service after his promised shop hours"
+      ],
+      "unwritten_suggestions": [
+        "Publicly posted music program featuring only agreed performers",
+        "A rainless but salt-heavy week tests a replacement fastener"
+      ]
+    },
+    "autumn": {
+      "label": "Borrowed Light",
+      "public_events": [
+        "Known Tidewake/Lantern Walk/Listening Fair traditions remain separate",
+        "Children approve use of lantern art and credited names"
+      ],
+      "homeworld_echoes": [
+        "Iroh may remember Lu Ten without turning it into a public event",
+        "Maui can attend an event as a listener"
+      ],
+      "unwritten_suggestions": [
+        "After-hours staff lantern walk with optional participation",
+        "Repaired lanterns return from the coast with records of who checked them"
+      ]
+    },
+    "winter": {
+      "label": "Warm Routes",
+      "public_events": [
+        "Public shelter access signs rechecked in actual weather",
+        "Boat and pier closures with alternatives"
+      ],
+      "homeworld_echoes": [
+        "Greg's Beach City pump can fail in winter rain",
+        "Severus's house may require inspected heating/egress"
+      ],
+      "unwritten_suggestions": [
+        "A smaller safe indoor concert after a pier closure",
+        "Public notice clarifying that shelter never requires unpaid work"
+      ]
+    }
+  },
+  "civic_relationship_web": [
+    {
+      "from": "Neri",
+      "to": "Orin",
+      "binding": "Witness statement protocol and archive correction",
+      "tension": "Want a public answer but must protect uncertain identity",
+      "crossover": [
+        "Maui 35",
+        "Maui 39",
+        "Maui 41"
+      ]
+    },
+    {
+      "from": "Sela",
+      "to": "Toph",
+      "binding": "Waterlogged garden and bridge construction evidence",
+      "tension": "Stone expertise and resident measurements are both needed",
+      "crossover": [
+        "Love & Duty 44–45",
+        "Maui 38",
+        "Maui 42"
+      ]
+    },
+    {
+      "from": "Edda",
+      "to": "Tamsin",
+      "binding": "Usable route audits and verified safety notices",
+      "tension": "An engineer's plan may miss an actual approach or door",
+      "crossover": [
+        "Maui 38",
+        "Maui 44",
+        "Danse 41"
+      ]
+    },
+    {
+      "from": "Fen",
+      "to": "Lio",
+      "binding": "Tide levels, skiff work, sustainable fish catch",
+      "tension": "Urgent trade must sometimes wait for safe weather",
+      "crossover": [
+        "Maui 5",
+        "Maui 26",
+        "Maui 49"
+      ]
+    },
+    {
+      "from": "Renn",
+      "to": "Danse",
+      "binding": "Verified parts, paid shifts and equipment sign-off",
+      "tension": "Civilian review supersedes command habits",
+      "crossover": [
+        "Danse 41–43",
+        "Maui 34",
+        "Greg 48"
+      ]
+    },
+    {
+      "from": "Nola",
+      "to": "Greg",
+      "binding": "Shared stage, visitor key and instrument rules",
+      "tension": "A public venue cannot be owned by a famous performer",
+      "crossover": [
+        "Greg 38",
+        "Greg 44",
+        "Greg 46",
+        "Greg 50"
+      ]
+    },
+    {
+      "from": "Mina",
+      "to": "Iroh",
+      "binding": "Ba Sing Se shop staffing, stock and repair accounts",
+      "tension": "Generosity can become somebody else's unpaid labor",
+      "crossover": [
+        "Iroh 22–28",
+        "Iroh 44–50"
+      ]
+    },
+    {
+      "from": "Mara",
+      "to": "Pip",
+      "binding": "Bakery services, festival material and public signs",
+      "tension": "Celebration cannot erase a pantry deficit or volunteer choice",
+      "crossover": [
+        "Maui 26",
+        "Maui 29",
+        "Maui 36"
+      ]
+    },
+    {
+      "from": "Maui",
+      "to": "Greg",
+      "binding": "Starwake listening, stage setup and the right to decline an encore",
+      "tension": "Help is valuable without requiring recognition",
+      "crossover": [
+        "Maui 33",
+        "Maui 45",
+        "Greg 44",
+        "Greg 46"
+      ]
+    }
+  ],
+  "story_bridge_checks": [
+    {
+      "id": "a_public_record_is_not_a_person",
+      "stories": [
+        "Maui 28/35/36/39",
+        "Severus 20/22",
+        "Greg 23",
+        "Danse 42/45"
+      ],
+      "canonical": "Protect private evidence, letters and relationship details while keeping necessary public service notices accessible",
+      "future": "Consent-based archive exhibit that shows corrected records without guessing the keeper"
+    },
+    {
+      "id": "flood_has_no_romantic_solution",
+      "stories": [
+        "Maui 5/11/30/38/42",
+        "Iroh 49",
+        "Love & Duty 44–45",
+        "Danse 41",
+        "Greg 49"
+      ],
+      "canonical": "Water follows measured conditions; residents verify access and engineers set narrow safe limits",
+      "future": "Winter runoff analysis tests whether a previously rated approach remains usable"
+    },
+    {
+      "id": "a_song_is_a_choice",
+      "stories": [
+        "Maui 6/29/33",
+        "Iroh 48",
+        "Greg 22/29/44/46/50"
+      ],
+      "canonical": "The artist, child or volunteer chooses whether, what and when to show; technical safety is independently reviewed",
+      "future": "Small acoustic benefit scheduled around Nola's and Tamsin's closures"
+    },
+    {
+      "id": "home_is_not_a_claim",
+      "stories": [
+        "Maui 8/18/27/32",
+        "Iroh 24/27/37",
+        "Severus 31/45",
+        "Love & Duty 42–43",
+        "Greg 31–33/38/40",
+        "Danse 45"
+      ],
+      "canonical": "A person may leave a home, return to a place and sustain several chosen loves without a test of loyalty",
+      "future": "A visitor returns for a practical workshop and leaves again without a ceremonial ending"
+    }
+  ],
+  "resident_goals": {
+    "Mara": "Keep bakery and pantry solvent without exposing customers receiving aid",
+    "Neri": "Offer optional Threadway help without coercive registry habits",
+    "Orin": "Preserve the source and amendment history of uncertain testimony",
+    "Fen": "Keep water, tides and catch limits viable beyond one season",
+    "Lio": "Maintain skiff and crew schedules without unpaid emergency work",
+    "Sela": "Protect garden soil and records from unconsulted public works",
+    "Edda": "Make access a property of the route, not of a passing hero",
+    "Renn": "Sign only verified work and retain appeal rights to independent reviewers",
+    "Nola": "Maintain public art space and equipment access on a safe and fair basis",
+    "Mina": "Run a paid, competent Ba Sing Se teahouse while having a life beyond it",
+    "Iroh": "Honor grief, family, ordinary work and chosen romance without claiming absolution",
+    "Greg": "Compose new work without denying Rose, Steven or the past",
+    "Maui": "Learn to care without controlling others' choices",
+    "Danse": "Practice accountable technical work and personal intimacy without military command"
+  },
+  "historical_cases": {
+    "closed_bells": {
+      "observed": [
+        "Departure was denied to at least some travelers",
+        "Keeper's name was erased in a damaged ledger",
+        "Lower historic flood barrier remains sealed",
+        "Authorized upper inspection and recorded sound have not proved a keeper identity"
+      ],
+      "witness_protocol": [
+        "A witness may amend dates or recollection with version history",
+        "Public conclusions distinguish direct measurement, testimony and interpretation",
+        "Do not expose names or private destinations without consent"
+      ],
+      "folklore_only": [
+        "The bell that wants a name — proposed local saying, not magical fact"
+      ]
+    },
+    "first_tide_tidewake": {
+      "observed": [
+        "Children can tell stories on a safe inspected temporary stage",
+        "Tide and gate conditions remain enforceable after the celebration"
+      ],
+      "future": [
+        "Preserve a child-made decoration only if its artist approves later display"
+      ]
+    }
+  },
+  "continuity_invariants": [
+    "Six existing 50-chapter novels stay linear and Teen-rated",
+    "No unapproved sexual or romantic pairing and no forced polyamorous group arrangement",
+    "No magical or historical retcon that undoes Lu Ten, Lily, Rose or Brotherhood harms",
+    "Ba Sing Se/Jasmine Dragon separate from Lanternweald/Jasmine Steps",
+    "Beach City car wash remains a Beach City business",
+    "No guarantee that a musician will play a requested song",
+    "No guarantee a visitor will choose to stay",
+    "No opening of the historic lower underground passage in the current stories"
+  ],
+  "future_status": "All properties named 'unwritten_suggestions' and all future fields are proposals only; not prose canon until written"
+}
