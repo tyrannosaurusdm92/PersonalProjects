@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 82511,
+  "total_word_count": 82943,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -87,7 +87,7 @@
       "file": "08.json",
       "title": "What the Door Kept",
       "id": "maui-08",
-      "word_count": 1429,
+      "word_count": 1637,
       "next_chapter_id": "maui-09"
     },
     {
@@ -318,7 +318,7 @@
       "file": "34.json",
       "title": "A Nail from the Commonwealth",
       "id": "maui-34",
-      "word_count": 1450,
+      "word_count": 1674,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-35"
     },
@@ -479,5 +479,14 @@
     "preference": "polyamory",
     "consent": "informed, specific and revisable",
     "disclosure_before_initial_romance": true
+  },
+  "editorial_pass18": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      8,
+      34
+    ],
+    "delta_words_from_index": 432,
+    "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
   }
 }
