@@ -6,24 +6,24 @@
 
 | Novel | Ch. | Existing chapter | Before | After | Added |
 |---|---:|---|---:|---:|---:|
-| The Shore I Choose | 15 | No One Is a Prize | 1507 | 1817 | 310 |
-| The Shore I Choose | 22 | Tea, Salt and Smoke | 1729 | 2038 | 309 |
+| The Shore I Choose | 15 | No One Is a Prize | 1507 | 1781 | 274 |
+| The Shore I Choose | 22 | Tea, Salt and Smoke | 1729 | 1952 | 223 |
 | The Shore I Choose | 43 | The Right to Disagree | 1550 | 1830 | 280 |
 | The Shore I Choose | 49 | The Boats That Return | 1677 | 1952 | 275 |
-| Jasmine After Rain | 26 | When Tea Goes Cold | 1287 | 1565 | 278 |
-| Jasmine After Rain | 46 | A Game Neither of Us Wins | 1363 | 1619 | 256 |
-| Love & Duty | 28 | The Things Toph Will Not Say | 1501 | 1792 | 291 |
-| Love & Duty | 41 | A Bridge Is a Promise | 1379 | 1687 | 308 |
-| Stars Between the Strings | 22 | Soundcheck | 1296 | 1599 | 303 |
-| Stars Between the Strings | 43 | Steven Comes Home for Dinner | 1323 | 1660 | 337 |
-| What the Armor Leaves Behind | 22 | A Machine with a Name | 1509 | 1800 | 291 |
-| What the Armor Leaves Behind | 43 | A Refugee at the Yard | 1394 | 1685 | 291 |
-| After Always | 15 | The Half-Blood Prince | 1233 | 1538 | 305 |
-| After Always | 42 | Not an Appointment | 1260 | 1537 | 277 |
+| Jasmine After Rain | 26 | When Tea Goes Cold | 1287 | 1514 | 227 |
+| Jasmine After Rain | 46 | A Game Neither of Us Wins | 1363 | 1587 | 224 |
+| Love & Duty | 28 | The Things Toph Will Not Say | 1501 | 1740 | 239 |
+| Love & Duty | 41 | A Bridge Is a Promise | 1379 | 1692 | 313 |
+| Stars Between the Strings | 22 | Soundcheck | 1296 | 1560 | 264 |
+| Stars Between the Strings | 43 | Steven Comes Home for Dinner | 1323 | 1483 | 160 |
+| What the Armor Leaves Behind | 22 | A Machine with a Name | 1509 | 1704 | 195 |
+| What the Armor Leaves Behind | 43 | A Refugee at the Yard | 1394 | 1609 | 215 |
+| After Always | 15 | The Half-Blood Prince | 1233 | 1427 | 194 |
+| After Always | 42 | Not an Appointment | 1260 | 1444 | 184 |
 
-**Added: 4,111 words.** All are in the preexisting chapter JSON. Recorded total after this pass: **458,922 words in 300 chapters**.
+**Added: 3,267 words.** All are in the preexisting chapter JSON. Recorded total after this pass: **458,078 words in 300 chapters**.
 
-**Series totals:** The Shore I Choose 82,633; Jasmine After Rain 73,504; Love & Duty 78,218; Stars Between the Strings 74,385; What the Armor Leaves Behind 77,887; After Always 72,295.
+**Series totals:** The Shore I Choose 82,511; Jasmine After Rain 73,421; Love & Duty 78,171; Stars Between the Strings 74,169; What the Armor Leaves Behind 77,715; After Always 72,091.
 
 ## 2. What changed in character, not just in word count
 
@@ -41,7 +41,7 @@ Three missing franchise profiles were researched and added as individual JSON fi
 - `docs/character-library-source-full/characters/steven-universe/steven-universe.json` — Greg's son, family autonomy, explicitly adult **fanfiction extrapolation**.
 - `docs/character-library-source-full/characters/harry-potter/poppy-pomfrey.json` — Hogwarts matron/healer; any postwar consulting role is **AU**.
 
-Sixteen original supporting-character files were added, grounded in **existing manuscript** behavior rather than invented external canon: Neri, Mara, Pip, Fen, Edda, Orin, Tamsin, Lio, Nola, Renn, Ash, Tomas, Vel, Mina, Jun, and Beren. Thirteen are under `characters/lanternweald/` and two are under `characters/avatar/`, plus Beren in Lanternweald. These document independent work, speech patterns, rights and recurring story locations. The original character profiles are story-bible evidence, **not factual claims about existing media**.
+Sixteen original supporting-character files were added, grounded in **existing manuscript** behavior rather than invented external canon: Neri, Mara, Pip, Fen, Edda, Orin, Tamsin, Lio, Nola, Renn, Ash, Tomas, Vel, Mina, Jun, and Beren. Fourteen are under `characters/lanternweald/`; Mina and Jun are under `characters/avatar/`. These document independent work, speech patterns, rights and recurring story locations. The original character profiles are story-bible evidence, **not factual claims about existing media**.
 
 The original eight major protagonist profiles (Maui, Iroh, Greg, Danse, Severus, Aang, Katara, Toph) already existed and were preserved. **This does not certify that all named people in 300 chapters have bios.** Additional rare cameo / single-scene gaps require a later complete roster reconciliation.
 
