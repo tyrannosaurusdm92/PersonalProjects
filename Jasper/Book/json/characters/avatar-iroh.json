@@ -532,5 +532,22 @@
       "Jasmine After Rain ch33: Mina pushes back on a proposed kitchen redesign",
       "Jasmine After Rain ch48: Maui challenges an uninvited command during a lantern rehearsal"
     ]
+  },
+  "character_voice_pass20": {
+    "date": "2026-11-06",
+    "canon_and_story_context": "Former Fire Nation general, White Lotus mentor and tea-shop owner. Strategic awareness derives from a real siege and grief, rather than stock proverbs.",
+    "voice_rules": [
+      "Reads the room and notices cost of plans; may overreach before deciding not to command.",
+      "Uses warm, deliberate wit and tactically economical speech; confessions should not sound like Greg's improvised musical jokes.",
+      "Can be wrong about wage slips, advertised hours, damaged stonework and supplier invoices; Mina and skilled workers retain their own authority."
+    ],
+    "scenes": [
+      "Jasmine After Rain 08 - civil survey and city wall",
+      "Jasmine After Rain 18 - wages and closing notice",
+      "Jasmine After Rain 45 - mountain mint invoice",
+      "After Always 42 - Iroh and Snape evidence disagreement"
+    ],
+    "distinct_from_greg": "Greg fumbles jokes and notices gig equipment. Iroh spots strategic mistakes and has to learn when not to decide for other people.",
+    "boundary": "These scenes are original fanfiction continuity, not new official Avatar canon."
   }
 }
