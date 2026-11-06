@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 18,
+  "editorial_revision_pass": 19,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 461463,
+  "manifest_word_count": 468983,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,8 +848,8 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS18_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS19_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS19_CONTINUITY.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
@@ -1057,5 +1057,50 @@
     "Legitimate staff hours, safety inspection costs, stage bookings and repair liabilities persist regardless of heroic participants.",
     "Independent characters can reject visitors' solutions without becoming enemies or romantic obstacles.",
     "The sealed historic Closed Bells lower passage remains closed; this pass does not resolve the keeper's identity."
+  ],
+  "revised_chapter_slots_by_series_pass19": {
+    "jasmine-after-rain": [
+      24,
+      32,
+      34,
+      40,
+      42
+    ],
+    "love-and-duty": [
+      44
+    ],
+    "the-shore-i-choose": [
+      39
+    ],
+    "what-the-armor-leaves-behind": [
+      50
+    ],
+    "after-always": [
+      16,
+      17,
+      28,
+      29,
+      37,
+      38,
+      50
+    ],
+    "stars-between-the-strings": [
+      26,
+      27,
+      29,
+      30,
+      33,
+      36,
+      39,
+      41
+    ]
+  },
+  "nineteenth_pass_world_rules": [
+    "No person may use official rank, a celebrity name, generosity or private affection to assign another person's time, shelter, labor or publicity.",
+    "Different worlds preserve different risks: Ministry witness records, Ba Sing Se shop inspections, Commonwealth maintenance tools, Beach City electronics and Lanternweald Threadway crossings cannot be collapsed into interchangeable magic.",
+    "Aerial maps require on-the-ground validation by affected people; local floodplain and clinic access must be considered before construction.",
+    "Closed Bells lower maintenance passage remains sealed, and the erased historic keeper name remains unidentified. Newly offered testimonies stay unverified leads until validated.",
+    "Materials rejected for structural use can become training exhibits only when tagged and secured. Paid shifts, equipment returns and local contributions must be represented accurately.",
+    "Consent to a polyamorous relationship does not imply consent to public photographs, captions, biographies, performance invitations or compulsory access to private memories."
   ]
 }
