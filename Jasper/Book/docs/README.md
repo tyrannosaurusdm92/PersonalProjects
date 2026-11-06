@@ -1,23 +1,25 @@
 # Jasper's Fanfiction Spot — Six Novels, 300 Written Chapters
 
-> **Latest editorial update — November 6, 2026, Pass 19:** Revised **23 existing chapters across all six novels** on `main`, adding **7,520 words** without creating a branch. The canon remains **6 × 50 = 300 prose chapters**, totaling **468,983 indexed words**. The reader now loads three new Pass 19 overlays, and all **23/23** entries match the canonical chapter JSON; six manifests and the fandom catalog reconcile. Three original-character profiles (Pilar, Ellis, Niko) were added. See [PROSE_DEPTH_PASS19_AUDIT.md](PROSE_DEPTH_PASS19_AUDIT.md) and [LANTERNWEALD_PASS19_CONTINUITY.md](LANTERNWEALD_PASS19_CONTINUITY.md). This is a targeted prose pass, **not** a claim that all 300 chapters have received full line editing.
+> **Latest editorial update — November 6, 2026, Pass 20:** Revised **18 existing prose chapters, three in each of six novels**, adding **5,687 indexed words** on `main` without a new branch. The six connected books remain **300 / 300 chapters**, totaling **474,670 indexed words**. All **18/18** new full-chapter reader overlays match their source JSON; six `series.json` manifests and `json/fandoms.json` reconcile. Four researched *Steven Universe* character profiles (Marty, Sour Cream, Vidalia, Yellowtail) are now in both character libraries; the unified index has **163 profiles**. See [PROSE_DEPTH_PASS20_AUDIT.md](PROSE_DEPTH_PASS20_AUDIT.md) and [LANTERNWEALD_PASS20_CONTINUITY.md](LANTERNWEALD_PASS20_CONTINUITY.md). This was a substantive targeted revision, not a full 300-chapter line edit.
+
+> **Prior editorial update — November 6, 2026, Pass 19:** Revised **23 existing chapters across all six novels** on `main`, adding **7,520 words** without creating a branch. The canon remains **6 × 50 = 300 prose chapters**, totaling **468,983 indexed words**. The reader now loads three new Pass 19 overlays, and all **23/23** entries match the canonical chapter JSON; six manifests and the fandom catalog reconcile. Three original-character profiles (Pilar, Ellis, Niko) were added. See [PROSE_DEPTH_PASS19_AUDIT.md](PROSE_DEPTH_PASS19_AUDIT.md) and [LANTERNWEALD_PASS19_CONTINUITY.md](LANTERNWEALD_PASS19_CONTINUITY.md). This is a targeted prose pass, **not** a claim that all 300 chapters have received full line editing.
 
 > **Prior editorial update — November 6, 2026, Pass 18:** All six novels remain 50 chapters each (300 total). Fourteen canonical chapters across the six series received targeted, in-place prose revisions (+3,385 words), including distinct Iroh/Greg dialogue, direct ethical-non-monogamy conversations, and concrete Lanternweald consequences. Two runtime overlay files were wired into `index.html` so the reader displays the revisions; five original supporting-character reference files were added. The updated six-series indexed total is **461,463 words**. This is not a complete 300-chapter line edit. See [PROSE_DEPTH_PASS18_AUDIT.md](PROSE_DEPTH_PASS18_AUDIT.md) for edited chapter numbers, verification, limitations, and remaining work.
 
 
 The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
-## Current manuscripts: November 6, 2026 (Pass 19)
+## Current manuscripts: November 6, 2026 (Pass 20)
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 83,289 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 74,825 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 75,921 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 78,944 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 78,569 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 77,435 |
-| **Total** | **Six connected novels** | **300 / 300** | **468,983** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 84,234 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 75,779 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 76,850 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 79,965 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 79,485 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 78,357 |
+| **Total** | **Six connected novels** | **300 / 300** | **474,670** |
 
 *Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters now have at least 1,300 indexed words after Pass 19. The historical fourteenth editorial pass improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
