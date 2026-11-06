@@ -12,7 +12,7 @@
   "description": "In a postwar Cranefish Town becoming something new, an adult nonbender reader finds themself drawn into Aang, Katara, and Toph’s complicated orbit. Love grows through reconstruction work, public scrutiny, cultural preservation, arguments, chosen boundaries, and the daily work of building a home where nobody has to disappear to belong.",
   "canon_window": "Adult postwar timeline only: Jasper, Aang, Katara, and Toph are explicitly adults before romance/private-interlude content. Their original minor-era canon versions are never used for adult intimacy.",
   "chapter_count": 50,
-  "total_word_count": 78944,
+  "total_word_count": 79965,
   "story_bible": [
     "This postwar polycule story is built through reconstruction work, public responsibility, cultural difference, arguments, chosen boundaries, and ordinary domestic labor.",
     "Aang, Katara, and Toph must remain three distinct people with separate needs, humor, histories, responsibilities, and relationships with Jasper; never collapse them into one collective partner voice.",
@@ -96,7 +96,7 @@
       "number": 8,
       "file": "08.json",
       "title": "The Kiss That Lifted Me",
-      "word_count": 1531,
+      "word_count": 1921,
       "id": "Love-And-Duty-08",
       "relationship_stage": "flirting",
       "next_chapter_id": "Love-And-Duty-09"
@@ -186,7 +186,7 @@
       "number": 18,
       "file": "18.json",
       "title": "Roots and Wings",
-      "word_count": 1512,
+      "word_count": 1839,
       "id": "Love-And-Duty-18",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "Love-And-Duty-19"
@@ -402,7 +402,7 @@
       "number": 42,
       "file": "42.json",
       "title": "The Shape of Fair Time",
-      "word_count": 1652,
+      "word_count": 1956,
       "id": "love-and-duty-42",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "love-and-duty-43"
@@ -514,5 +514,15 @@
     ],
     "added_words_to_index": 324,
     "scope": "Targeted in-place prose pass, preserving all 50 chapters."
+  },
+  "editorial_pass20": {
+    "date": "2026-11-06",
+    "chapter_numbers": [
+      8,
+      18,
+      42
+    ],
+    "added_indexed_words": 1021,
+    "scope": "Substantive scene revisions and targeted structural cleanup; original chapters preserved."
   }
 }
