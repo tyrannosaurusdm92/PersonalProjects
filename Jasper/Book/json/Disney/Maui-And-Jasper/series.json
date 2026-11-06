@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 78604,
+  "total_word_count": 78808,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -291,7 +291,7 @@
       "file": "31.json",
       "title": "Six Different Roads",
       "id": "maui-31",
-      "word_count": 1698,
+      "word_count": 1719,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-32"
     },
@@ -300,7 +300,7 @@
       "file": "32.json",
       "title": "The Shape of an Agreement",
       "id": "maui-32",
-      "word_count": 1523,
+      "word_count": 1535,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-33"
     },
@@ -309,7 +309,7 @@
       "file": "33.json",
       "title": "The Unfinished Song",
       "id": "maui-33",
-      "word_count": 1745,
+      "word_count": 1764,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-34"
     },
@@ -318,7 +318,7 @@
       "file": "34.json",
       "title": "A Nail from the Commonwealth",
       "id": "maui-34",
-      "word_count": 1429,
+      "word_count": 1450,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-35"
     },
@@ -327,7 +327,7 @@
       "file": "35.json",
       "title": "The Archive's Empty Line",
       "id": "maui-35",
-      "word_count": 1585,
+      "word_count": 1607,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-36"
     },
@@ -336,7 +336,7 @@
       "file": "36.json",
       "title": "Permission for Privacy",
       "id": "maui-36",
-      "word_count": 1707,
+      "word_count": 1733,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-37"
     },
@@ -345,7 +345,7 @@
       "file": "37.json",
       "title": "The Tide Between Us",
       "id": "maui-37",
-      "word_count": 1428,
+      "word_count": 1455,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-38"
     },
@@ -354,7 +354,7 @@
       "file": "38.json",
       "title": "A Bridge with Too Many Owners",
       "id": "maui-38",
-      "word_count": 1599,
+      "word_count": 1627,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-39"
     },
@@ -363,7 +363,7 @@
       "file": "39.json",
       "title": "The Keeper's Refusal",
       "id": "maui-39",
-      "word_count": 1545,
+      "word_count": 1553,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-40"
     },
@@ -372,7 +372,7 @@
       "file": "40.json",
       "title": "A Day of Ordinary Things",
       "id": "maui-40",
-      "word_count": 1554,
+      "word_count": 1574,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-41"
     },
