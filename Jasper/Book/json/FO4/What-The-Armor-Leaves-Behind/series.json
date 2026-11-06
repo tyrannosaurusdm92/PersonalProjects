@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 77715,
+  "total_word_count": 78208,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -176,7 +176,7 @@
       "number": 17,
       "file": "17.json",
       "title": "Benchwork",
-      "word_count": 1992,
+      "word_count": 2229,
       "id": "what-the-armor-leaves-behind-17",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "what-the-armor-leaves-behind-18"
@@ -347,7 +347,7 @@
       "number": 36,
       "file": "36.json",
       "title": "Three Chords",
-      "word_count": 1516,
+      "word_count": 1772,
       "id": "what-the-armor-leaves-behind-36",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "what-the-armor-leaves-behind-37"
@@ -496,5 +496,14 @@
     "preference": "polyamory",
     "consent": "informed, specific and revisable",
     "disclosure_before_initial_romance": true
+  },
+  "editorial_pass18": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      17,
+      36
+    ],
+    "delta_words_from_index": 493,
+    "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
   }
 }
