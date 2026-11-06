@@ -1,0 +1,71 @@
+{
+  "schema": "jasper.maui-research.v1",
+  "created": "2026-11-05",
+  "scope": "Maui/Jasper story reference; non-destructive",
+  "continuity": {
+    "novel": "The Shore I Choose",
+    "published_chapters": 50,
+    "relative_story_manifest": "../json/Disney/Maui-And-Jasper/series.json",
+    "relative_character_profile": "../json/characters/disney-maui.json",
+    "existing_cultural_notes": "../docs/MAUI_CULTURAL_NOTES.md"
+  },
+  "strata": [
+    {
+      "id": "film",
+      "name": "Disney Moana adaptation",
+      "documentation": "01_DISNEY_CANON.md",
+      "warning": "Screen fiction is not a verbatim Māori or pan-Polynesian myth"
+    },
+    {
+      "id": "regional_variants",
+      "name": "Polynesian traditions compared",
+      "documentation": "02_POLYNESIAN_VARIANTS.md",
+      "warning": "Use named culture and version"
+    },
+    {
+      "id": "maori_traditions",
+      "name": "Māori accounts and tikanga",
+      "documentation": "03_MAUI_LEGEND_CYCLE.md",
+      "warning": "Respect iwi-specific living knowledge"
+    },
+    {
+      "id": "original",
+      "name": "Lanternweald speculative applications",
+      "documentation": "09_LANTERNWEALD_INTEGRATION.md",
+      "warning": "Proposals are not retroactive manuscript canon"
+    }
+  ],
+  "documents": [
+    "README.md",
+    "01_DISNEY_CANON.md",
+    "02_POLYNESIAN_VARIANTS.md",
+    "03_MAUI_LEGEND_CYCLE.md",
+    "04_ATUA_AND_COSMOLOGY.md",
+    "05_HAKA_WAIATA_POI.md",
+    "06_TIKANGA_AND_RITUAL.md",
+    "07_CREATURES_GUARDIANS.md",
+    "08_VOYAGING_ART_AND_LAND.md",
+    "09_LANTERNWEALD_INTEGRATION.md",
+    "10_CHARACTER_AND_SCENE_TOOLKIT.md",
+    "11_GLOSSARY.md",
+    "12_ANNOTATED_SOURCES.md"
+  ],
+  "research_institutions": [
+    "Te Ara Encyclopedia of New Zealand",
+    "Museum of New Zealand Te Papa Tongarewa",
+    "Waitangi Tribunal",
+    "New Zealand Ministry for the Environment",
+    "University of Hawaiʻi",
+    "Disney D23",
+    "National Geographic"
+  ],
+  "editorial_restrictions": [
+    "Do not invent sacred karakia",
+    "Do not universalize tikanga",
+    "Do not substitute Disney canon for Māori traditions",
+    "Do not overwrite existing 50 chapters",
+    "Avoid unconsulted tribal tattoo designs, ritual choreography, sacred genealogy and place-bound taniwha",
+    "Attribute culture-specific and version-specific claims"
+  ],
+  "release_status": "sourcebook created; manuscript unchanged; cultural sensitivity review recommended"
+}
