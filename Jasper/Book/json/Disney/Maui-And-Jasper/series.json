@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 82633,
+  "total_word_count": 82511,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -146,7 +146,7 @@
       "number": 15,
       "file": "15.json",
       "title": "No One Is a Prize",
-      "word_count": 1817,
+      "word_count": 1781,
       "id": "maui-15",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-16"
@@ -210,7 +210,7 @@
       "file": "22.json",
       "title": "Tea, Salt and Smoke",
       "id": "maui-22",
-      "word_count": 2038,
+      "word_count": 1952,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-23"
     },
