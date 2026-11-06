@@ -1,0 +1,315 @@
+{
+  "schema_version": "lanternweald.pass14.causal-ledger.v1",
+  "updated": "2026-11-05",
+  "classification": "editorial continuity index; on-page facts and future writing proposals are explicitly separated",
+  "coherence_rules": [
+    "All six novels contain 50 linear chapters. Chapter numbers and endings are retained.",
+    "The first-person adult Jasper practices disclosed ethical non-monogamy and prefers polyamory; each relationship remains distinct.",
+    "Ba Sing Se's Jasmine Dragon is not Jasmine Steps; Beach City venues are not physically located in the Lanternweald.",
+    "Closed Bells keeper remains unknown. Authorized upper inspection space is not a license to open the sealed historic lower flood route.",
+    "The separate temporary surface runoff channel is only safe within its posted tested limits.",
+    "Real wages, materials, safety, privacy and consent persist across novel boundaries."
+  ],
+  "pass14_chapter_patches": {
+    "the-shore-i-choose": [
+      33,
+      45
+    ],
+    "after-always": [
+      46,
+      48
+    ],
+    "jasmine-after-rain": [
+      20,
+      21,
+      43,
+      48
+    ],
+    "love-and-duty": [
+      46,
+      48
+    ],
+    "what-the-armor-leaves-behind": [
+      44,
+      48
+    ],
+    "stars-between-the-strings": [
+      19,
+      47,
+      49
+    ]
+  },
+  "world_loops": [
+    {
+      "id": "two-bells-not-one-conclusion",
+      "worlds": [
+        "Tideglass Cove",
+        "Moonroot Archive",
+        "Starwake Pier",
+        "Brasswatch Yard"
+      ],
+      "source_chapters": [
+        "Maui 20",
+        "Maui 33",
+        "Severus 46",
+        "Greg 49",
+        "Danse 48"
+      ],
+      "on_page_fact": "Public bell, lower coastal note and differing observations exist without sufficient evidence to name keeper or open lower passage.",
+      "reusable_detail": "Engineering log keeps gauge reading separate from Greg's chord transcription.",
+      "future_unwritten": "Record a second season's low-note survey before revisiting claims."
+    },
+    {
+      "id": "key-is-not-contract",
+      "worlds": [
+        "Ba Sing Se",
+        "Brasswatch Yard",
+        "Lanternwell Square",
+        "Beach City"
+      ],
+      "source_chapters": [
+        "Iroh 21",
+        "Danse 44",
+        "Maui 28",
+        "Greg 19"
+      ],
+      "on_page_fact": "Access depends on chosen use; Jasper's key is not free labor, Ash's private lock requires user control, visitors are not trapped by a public registry.",
+      "reusable_detail": "An offered key can be declined or returned without terminating affection.",
+      "future_unwritten": "A district-wide public key-policy workshop."
+    },
+    {
+      "id": "festival-labor-and-audience",
+      "worlds": [
+        "Starwake Pier",
+        "Lanternwell Square",
+        "Jasmine Steps",
+        "Ba Sing Se"
+      ],
+      "source_chapters": [
+        "Maui 45",
+        "Iroh 48",
+        "Severus 48",
+        "Greg 47"
+      ],
+      "on_page_fact": "Pip revises hero poster and owns artwork display choices; Nola manages bookings and cleanup; a child's lantern repair requires an actual check; Maui and Iroh disagree and apologize.",
+      "reusable_detail": "The hand-painted sign has named setup volunteers; one lantern's bent handle goes to a repair worker.",
+      "future_unwritten": "A voluntary lantern repair table after the autumn fair."
+    },
+    {
+      "id": "water-before-equations",
+      "worlds": [
+        "Riverstone Terrace",
+        "Brasswatch Yard",
+        "Tideglass Cove"
+      ],
+      "source_chapters": [
+        "Love & Duty 46",
+        "Love & Duty 48",
+        "Danse 48",
+        "Maui 42"
+      ],
+      "on_page_fact": "Amel's shift conflicts with a delivery time, Beren knows cart geometry, Edda and Toph test approaches, Renn reserves power for critical refrigeration.",
+      "reusable_detail": "Proposed water receipts are not completed delivery receipts.",
+      "future_unwritten": "Winter re-audit of an east shelter's alternate route."
+    },
+    {
+      "id": "homeworld-work-persists",
+      "worlds": [
+        "Ba Sing Se",
+        "Beach City",
+        "Commonwealth",
+        "Southern Water Tribe"
+      ],
+      "source_chapters": [
+        "Iroh 20/21/43",
+        "Greg 19/47",
+        "Danse 44",
+        "Love & Duty 46"
+      ],
+      "on_page_fact": "Mina's teahouse has its own rota; Greg's apartment has its own keys and a real bed; Danse respects a civilian use test; Katara may come home tired from independent work.",
+      "reusable_detail": "A partner may miss Jasper while Jasper's other relationships and duties continue.",
+      "future_unwritten": "A visit to another homeworld with a specific return agreement, not a magical compulsion."
+    }
+  ],
+  "social_network": {
+    "Neri": [
+      "Orin",
+      "Mara",
+      "Pip",
+      "Severus"
+    ],
+    "Pip": [
+      "Mara",
+      "Nola",
+      "Maui",
+      "Severus"
+    ],
+    "Fen": [
+      "Lio",
+      "Tamsin",
+      "Sela",
+      "Greg"
+    ],
+    "Sela": [
+      "Edda",
+      "Katara",
+      "Toph",
+      "Aang"
+    ],
+    "Mina": [
+      "Iroh",
+      "Lian",
+      "Jasper"
+    ],
+    "Renn": [
+      "Danse",
+      "Ash",
+      "Aster"
+    ],
+    "Nola": [
+      "Greg",
+      "Pip",
+      "Tamsin",
+      "Maui"
+    ],
+    "Jasper": [
+      "Maui",
+      "Severus",
+      "Iroh",
+      "Aang",
+      "Katara",
+      "Toph",
+      "Danse",
+      "Greg"
+    ]
+  },
+  "district_life": {
+    "Lanternwell Square": {
+      "recurring_work": [
+        "Bakery and public signs",
+        "Private traveler register",
+        "Lantern repairs"
+      ],
+      "not_decorative": [
+        "Arrival privacy",
+        "Poster credits and fair labor"
+      ]
+    },
+    "Tideglass Cove": {
+      "recurring_work": [
+        "Tide readings",
+        "Fishing limits",
+        "Skiff maintenance"
+      ],
+      "not_decorative": [
+        "Boat closure remains effective",
+        "Lower flood passage remains sealed"
+      ]
+    },
+    "Jasmine Steps": {
+      "recurring_work": [
+        "Kitchen shifts",
+        "Market displays",
+        "Rain management"
+      ],
+      "not_decorative": [
+        "Not the Jasmine Dragon",
+        "Food supplies have costs"
+      ]
+    },
+    "Riverstone Terrace": {
+      "recurring_work": [
+        "Garden soil observations",
+        "Cart route tests",
+        "Water deliveries"
+      ],
+      "not_decorative": [
+        "Residents validate safety and access",
+        "No aesthetic bridge fix without route approval"
+      ]
+    },
+    "Moonroot Archive": {
+      "recurring_work": [
+        "Restricted cataloguing",
+        "Statement versioning",
+        "Damaged document preservation"
+      ],
+      "not_decorative": [
+        "Witness may revise",
+        "Keeper identity remains unknown"
+      ]
+    },
+    "Brasswatch Yard": {
+      "recurring_work": [
+        "Verified technical inspections",
+        "Paid shifts",
+        "Emergency supply routes"
+      ],
+      "not_decorative": [
+        "Worker-controlled locks",
+        "Critical load priority"
+      ]
+    },
+    "Starwake Pier": {
+      "recurring_work": [
+        "Equipment bookings",
+        "Sound checks",
+        "Western-board inspections"
+      ],
+      "not_decorative": [
+        "Songs optional",
+        "Clubs and crews retain safe-use authority"
+      ]
+    }
+  },
+  "seasonal_reference_names": [
+    {
+      "label": "First Water",
+      "season": "spring",
+      "canon_status": "planning label only",
+      "motifs": [
+        "Thaw mud",
+        "Fresh herb shoots",
+        "Drain access"
+      ]
+    },
+    {
+      "label": "Long Tables",
+      "season": "summer",
+      "canon_status": "planning label only",
+      "motifs": [
+        "Canvas shade",
+        "Market hours",
+        "Voluntary music"
+      ]
+    },
+    {
+      "label": "Borrowed Light",
+      "season": "autumn",
+      "canon_status": "planning label only",
+      "motifs": [
+        "Paper lanterns",
+        "Returned supplies",
+        "Wet paint"
+      ]
+    },
+    {
+      "label": "Warm Routes",
+      "season": "winter",
+      "canon_status": "planning label only",
+      "motifs": [
+        "Power tests",
+        "Safe shelter",
+        "Frost closures"
+      ]
+    }
+  ],
+  "qa_pass14": {
+    "canonical_chapters_expected": 300,
+    "novels": 6,
+    "edited_chapters": 15,
+    "source_overlay_matches_verified": 15,
+    "visual_browser_tested": false,
+    "meaning": "Source parity and manifest counts do not certify literary-depth equality."
+  }
+}
