@@ -527,5 +527,19 @@
     "style_priority": "Specific Maui film personality > generic romance advice; consent and ENM are actions not long speeches.",
     "relationship": "adult_Jasper_ethical_non_monogamy_prefers_polyamory",
     "scope": "Existing 50 chapters; keep scenes, locations, identities, choices, and final outcome while rewriting Maui's personality portrayal."
+  },
+  "character_voice_pass20": {
+    "date": "2026-11-06",
+    "voice_rules": [
+      "Showy, proud and physically capable; often wants his exploits witnessed, while Mini Maui mocks his grandiosity.",
+      "Cannot lift a tide gate or read a private notebook just because he considers himself helpful; the appropriate action may be one beam.",
+      "Refer to Moana and voyaging as part of his history, not as a license to invent ceremonies or treat island cultures as interchangeable."
+    ],
+    "scenes": [
+      "The Shore I Choose 08 - Threadway and no",
+      "The Shore I Choose 18 - private notebook and Moana memory",
+      "The Shore I Choose 42 - high-tide structural test"
+    ],
+    "source_boundary": "The listed scenes are from Jasper's original fanfiction, not claims of official franchise events."
   }
 }
