@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 70197,
+  "total_word_count": 72113,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -111,7 +111,7 @@
       "file": "11.json",
       "title": "The Tide Takes Inventory",
       "id": "maui-11",
-      "word_count": 1558,
+      "word_count": 1739,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-12"
     },
@@ -119,7 +119,7 @@
       "number": 12,
       "file": "12.json",
       "title": "A Place for the Departing",
-      "word_count": 1236,
+      "word_count": 1437,
       "id": "maui-12",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-13"
@@ -128,7 +128,7 @@
       "number": 13,
       "file": "13.json",
       "title": "Ink on the Water",
-      "word_count": 1294,
+      "word_count": 1479,
       "id": "maui-13",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-14"
@@ -137,7 +137,7 @@
       "number": 14,
       "file": "14.json",
       "title": "The Quiet Work of Rope",
-      "word_count": 1352,
+      "word_count": 1541,
       "id": "maui-14",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-15"
@@ -146,7 +146,7 @@
       "number": 15,
       "file": "15.json",
       "title": "No One Is a Prize",
-      "word_count": 1275,
+      "word_count": 1471,
       "id": "maui-15",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-16"
@@ -156,7 +156,7 @@
       "file": "16.json",
       "title": "The Sea Glass Orchard",
       "id": "maui-16",
-      "word_count": 1293,
+      "word_count": 1480,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-17"
     },
@@ -165,7 +165,7 @@
       "file": "17.json",
       "title": "A Lantern for the Absent",
       "id": "maui-17",
-      "word_count": 1285,
+      "word_count": 1474,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-18"
     },
@@ -174,7 +174,7 @@
       "file": "18.json",
       "title": "One Door Closed by Choice",
       "id": "maui-18",
-      "word_count": 1494,
+      "word_count": 1690,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-19"
     },
@@ -183,7 +183,7 @@
       "file": "19.json",
       "title": "The Apprenticeship of Asking",
       "id": "maui-19",
-      "word_count": 1262,
+      "word_count": 1466,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-20"
     },
@@ -192,7 +192,7 @@
       "file": "20.json",
       "title": "The Second Bell",
       "id": "maui-20",
-      "word_count": 1221,
+      "word_count": 1409,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-21"
     },
