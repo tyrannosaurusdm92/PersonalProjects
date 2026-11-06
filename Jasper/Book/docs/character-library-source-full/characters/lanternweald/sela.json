@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Sela",
+    "origin": "Original Lanternweald supporting character",
+    "location": "Riverstone Terrace"
+  },
+  "biography": {
+    "established": "Maintains date-stamped flood and crop records, participates in floodplain garden and bridge concerns, and retains local authority over conditions affecting the gardens.",
+    "unwritten": "Family history and outside-Lanternweald past are not established."
+  },
+  "personality": {
+    "voice": "Evidence-first, locally grounded; points to dates, watermarks and crop beds rather than broad claims",
+    "writer_guidance": "Distinct from Katara's protective urgency, Toph's physical certainty, and Aang's diplomatic perspective."
+  },
+  "agency": "Can object to rerouting water or volunteers on behalf of a famous visitor without losing narrative legitimacy.",
+  "manuscript_sources": [
+    "Jasper/Book/json/lanternweald-community-atlas.json",
+    "Jasper/Book/json/lanternweald-living-world-registry.json"
+  ],
+  "boundary": "Original profile; distinctions are based on source material, not external franchise research."
+}
