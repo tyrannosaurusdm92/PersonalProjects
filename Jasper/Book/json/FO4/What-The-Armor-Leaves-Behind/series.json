@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 78569,
+  "total_word_count": 79485,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -95,7 +95,7 @@
       "number": 8,
       "file": "08.json",
       "title": "Off the Record",
-      "word_count": 1517,
+      "word_count": 1838,
       "id": "what-the-armor-leaves-behind-08",
       "relationship_stage": "flirting",
       "next_chapter_id": "what-the-armor-leaves-behind-09"
@@ -185,7 +185,7 @@
       "number": 18,
       "file": "18.json",
       "title": "The Weight of Command",
-      "word_count": 1527,
+      "word_count": 1858,
       "id": "what-the-armor-leaves-behind-18",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "what-the-armor-leaves-behind-19"
@@ -401,7 +401,7 @@
       "number": 42,
       "file": "42.json",
       "title": "Letter from the Old World",
-      "word_count": 1393,
+      "word_count": 1657,
       "id": "what-the-armor-leaves-behind-42",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "what-the-armor-leaves-behind-43"
@@ -513,5 +513,15 @@
     ],
     "added_words_to_index": 361,
     "scope": "Targeted prose improvements to existing canon; no new chapters or branch."
+  },
+  "editorial_pass20": {
+    "date": "2026-11-06",
+    "chapter_numbers": [
+      8,
+      18,
+      42
+    ],
+    "added_indexed_words": 916,
+    "scope": "In-place narrative corrections; all 50 original chapters preserved."
   }
 }
