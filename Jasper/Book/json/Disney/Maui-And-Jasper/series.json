@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 75821,
+  "total_word_count": 77768,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -381,7 +381,7 @@
       "file": "41.json",
       "title": "Under the Seventh Scratch",
       "id": "maui-41",
-      "word_count": 1378,
+      "word_count": 1577,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-42"
     },
@@ -390,7 +390,7 @@
       "file": "42.json",
       "title": "Where the Water Cannot Go",
       "id": "maui-42",
-      "word_count": 1519,
+      "word_count": 1714,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-43"
     },
@@ -399,7 +399,7 @@
       "file": "43.json",
       "title": "The Right to Disagree",
       "id": "maui-43",
-      "word_count": 1340,
+      "word_count": 1530,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-44"
     },
@@ -408,7 +408,7 @@
       "file": "44.json",
       "title": "Three Safe Ways Home",
       "id": "maui-44",
-      "word_count": 1329,
+      "word_count": 1504,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-45"
     },
@@ -417,7 +417,7 @@
       "file": "45.json",
       "title": "The Last Big Performance",
       "id": "maui-45",
-      "word_count": 1634,
+      "word_count": 1827,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-46"
     },
@@ -426,7 +426,7 @@
       "file": "46.json",
       "title": "What I Remember Now",
       "id": "maui-46",
-      "word_count": 1366,
+      "word_count": 1562,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-47"
     },
@@ -435,7 +435,7 @@
       "file": "47.json",
       "title": "Night at the Reopened Channel",
       "id": "maui-47",
-      "word_count": 1427,
+      "word_count": 1612,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-48"
     },
@@ -444,7 +444,7 @@
       "file": "48.json",
       "title": "The Lantern Ledger",
       "id": "maui-48",
-      "word_count": 1403,
+      "word_count": 1588,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-49"
     },
@@ -453,7 +453,7 @@
       "file": "49.json",
       "title": "The Boats That Return",
       "id": "maui-49",
-      "word_count": 1461,
+      "word_count": 1662,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-50"
     },
@@ -462,7 +462,7 @@
       "file": "50.json",
       "title": "The Shore I Keep Choosing",
       "id": "maui-50",
-      "word_count": 1306,
+      "word_count": 1534,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
