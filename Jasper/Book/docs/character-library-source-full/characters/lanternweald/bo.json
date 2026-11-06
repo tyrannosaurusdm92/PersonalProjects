@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Bo",
+    "origin": "Original Lanternweald supporting character",
+    "location": "Jasmine Steps"
+  },
+  "biography": {
+    "established": "Named in the Lanternweald registry and community atlas as involved with posted closures and staff supplies.",
+    "unwritten": "Family, age, pronouns, origins and precise job title are not yet established."
+  },
+  "personality": {
+    "established_voice": "Not established in a verified dialogue excerpt",
+    "writer_guidance": "When writing Bo, distinguish a stock/closure coordinator's precise work vocabulary from Iroh's strategic courtesy and Greg's stage humor. This is a future writing constraint, not an already-established trait."
+  },
+  "agency": "Staff supply reports and safe closures can contradict a visitor's preferred timeline.",
+  "manuscript_sources": [
+    "Jasper/Book/json/lanternweald-community-atlas.json",
+    "Jasper/Book/json/lanternweald-living-world-registry.json"
+  ],
+  "boundary": "Original profile; unknown biographical details intentionally remain open."
+}
