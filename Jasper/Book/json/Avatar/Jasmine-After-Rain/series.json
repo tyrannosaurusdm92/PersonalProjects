@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 72378,
+  "total_word_count": 72970,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -130,7 +130,7 @@
       "number": 12,
       "file": "12.json",
       "title": "The Dragon's Breath",
-      "word_count": 1561,
+      "word_count": 1866,
       "id": "avatar-12",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "avatar-13"
@@ -355,7 +355,7 @@
       "number": 37,
       "file": "37.json",
       "title": "The Day We Return",
-      "word_count": 1316,
+      "word_count": 1603,
       "id": "avatar-37",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-38"
