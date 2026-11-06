@@ -53,3 +53,12 @@ See:
 - `index.json`
 - `continuation_context_template.json`
 - `VALIDATION_EXPANDED.json`
+
+
+# PASS 17 SUPPLEMENT — NOVEMBER 6, 2026
+
+The original **134-matchable-profile** collection remains intact. To avoid treating ordinary supporting residents and possible minors or unverified-age characters as adult romance candidates, **19 additional scene-research profiles** are indexed separately in [SUPPORTING_CHARACTERS_PASS17.json](SUPPORTING_CHARACTERS_PASS17.json).
+
+These include new researched film/series continuity files for **Moana**, **Steven Universe** (specifically an adult *fanfiction* continuation, not an official adult-era biography), and **Poppy Pomfrey**. Sixteen individual original-character bios (Neri, Mara, Pip, Fen, Edda, Orin, Tamsin, Lio, Nola, Renn, Ash, Tomas, Vel, Mina, Jun, Beren) are grounded in the existing six novels. Original characters are not represented as licensed-canon facts.
+
+**Novel editing rule:** load the protagonist's existing detailed JSON, then any relevant Pass 17 supporting dossier, then the local chapter and the Lanternweald continuity notes. The non-romance supplemental profiles do not expand the adult-romance matchmaking pool, and this pass does not constitute a complete census of all characters appearing in 300 chapters.
