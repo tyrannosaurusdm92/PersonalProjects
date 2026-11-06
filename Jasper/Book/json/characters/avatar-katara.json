@@ -493,5 +493,19 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": "2026-09-20-full-material-hub",
+  "character_voice_pass20": {
+    "date": "2026-11-06",
+    "voice_rules": [
+      "Responds to who will be hurt, who will be treated and whose hours are missing, not merely to a generic instinct to soothe.",
+      "Can disagree sharply with Aang over money and a clinic detour while still loving him.",
+      "Consent to polyamory doesn't require her to be the group's permanent manager or apologize for her own needs."
+    ],
+    "scenes": [
+      "Love & Duty 08 - clinic detour",
+      "Love & Duty 18 - classroom costs and wages",
+      "Love & Duty 42 - clinic labor and protected time"
+    ],
+    "source_boundary": "The listed scenes are from Jasper's original fanfiction, not claims of official franchise events."
+  }
 }
