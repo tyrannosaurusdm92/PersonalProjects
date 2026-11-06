@@ -1,0 +1,22 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Halen",
+    "origin": "Original Lanternweald supporting character",
+    "location": "Jasmine Steps"
+  },
+  "biography": {
+    "established": "Listed among Jasmine Steps' primary community people in the living-world registry.",
+    "unwritten": "No reliable role, physical description, age, personal history or relationship facts identified from the registry; do not invent these as existing canon."
+  },
+  "personality": {
+    "established_voice": "Not confirmed",
+    "writer_guidance": "Before granting Halen a decisive scene, establish a distinct motive and speech cadence on-page, then update this profile with chapter citations."
+  },
+  "agency": "Do not use this name as a generic interchangeable helper or romantic cheering section.",
+  "manuscript_sources": [
+    "Jasper/Book/json/lanternweald-living-world-registry.json"
+  ],
+  "boundary": "Partial story-grounded research record, not a fabricated biography."
+}
