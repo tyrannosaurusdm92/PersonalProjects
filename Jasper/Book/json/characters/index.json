@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 159,
+  "profile_count": 163,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1274,6 +1274,38 @@
       "provenance": "story_original",
       "file": "su-mara.json",
       "canonical_key": "stevenuniversestarsbetweenthestrings::mara"
+    },
+    {
+      "id": "su-marty",
+      "name": "Marty",
+      "fandom": "Steven Universe",
+      "provenance": "canon_researched_from_episodes_and_character_guides",
+      "file": "su-marty.json",
+      "canonical_key": "stevenuniverse::marty"
+    },
+    {
+      "id": "su-sour-cream",
+      "name": "Sour Cream",
+      "fandom": "Steven Universe",
+      "provenance": "canon_researched_from_episodes_and_character_guides",
+      "file": "su-sour-cream.json",
+      "canonical_key": "stevenuniverse::sour cream"
+    },
+    {
+      "id": "su-vidalia",
+      "name": "Vidalia",
+      "fandom": "Steven Universe",
+      "provenance": "canon_researched_from_episodes_and_character_guides",
+      "file": "su-vidalia.json",
+      "canonical_key": "stevenuniverse::vidalia"
+    },
+    {
+      "id": "su-yellowtail",
+      "name": "Yellowtail",
+      "fandom": "Steven Universe",
+      "provenance": "canon_researched_from_episodes_and_character_guides",
+      "file": "su-yellowtail.json",
+      "canonical_key": "stevenuniverse::yellowtail"
     }
   ],
   "aliases": {
@@ -1512,7 +1544,14 @@
     "rose quartz pink diamond": "su-rose",
     "steven universe": "su-steven",
     "steven": "su-steven",
-    "yellow diamond": "su-yellow-diamond"
+    "yellow diamond": "su-yellow-diamond",
+    "marty": "su-marty",
+    "marty (greg manager)": "su-marty",
+    "sour cream": "su-sour-cream",
+    "s.c. (steven universe)": "su-sour-cream",
+    "vidalia": "su-vidalia",
+    "yellowtail": "su-yellowtail",
+    "yellow dad": "su-yellowtail"
   },
   "alias_records": [
     {
@@ -3201,6 +3240,55 @@
       "id": "su-yellow-diamond",
       "fandom_key": "stevenuniverse",
       "fandom": "Steven Universe"
+    },
+    {
+      "alias": "Marty",
+      "normalized": "marty",
+      "id": "su-marty",
+      "fandom_key": "stevenuniverse",
+      "fandom": "Steven Universe"
+    },
+    {
+      "alias": "Marty (Greg manager)",
+      "normalized": "marty (greg manager)",
+      "id": "su-marty",
+      "fandom_key": "stevenuniverse",
+      "fandom": "Steven Universe"
+    },
+    {
+      "alias": "Sour Cream",
+      "normalized": "sour cream",
+      "id": "su-sour-cream",
+      "fandom_key": "stevenuniverse",
+      "fandom": "Steven Universe"
+    },
+    {
+      "alias": "S.C. (Steven Universe)",
+      "normalized": "s.c. (steven universe)",
+      "id": "su-sour-cream",
+      "fandom_key": "stevenuniverse",
+      "fandom": "Steven Universe"
+    },
+    {
+      "alias": "Vidalia",
+      "normalized": "vidalia",
+      "id": "su-vidalia",
+      "fandom_key": "stevenuniverse",
+      "fandom": "Steven Universe"
+    },
+    {
+      "alias": "Yellowtail",
+      "normalized": "yellowtail",
+      "id": "su-yellowtail",
+      "fandom_key": "stevenuniverse",
+      "fandom": "Steven Universe"
+    },
+    {
+      "alias": "Yellow Dad",
+      "normalized": "yellow dad",
+      "id": "su-yellowtail",
+      "fandom_key": "stevenuniverse",
+      "fandom": "Steven Universe"
     }
   ],
   "fandom_profiles": {
@@ -3382,10 +3470,14 @@
       "su-garnet",
       "su-greg",
       "su-lion",
+      "su-marty",
       "su-pearl",
       "su-rose",
+      "su-sour-cream",
       "su-steven",
-      "su-yellow-diamond"
+      "su-vidalia",
+      "su-yellow-diamond",
+      "su-yellowtail"
     ],
     "stevenuniversestarsbetweenthestrings": [
       "su-lila",
@@ -3452,7 +3544,7 @@
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 159
+    "final_canonical_profiles": 163
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -3461,5 +3553,12 @@
     "Story-original characters remain scoped to their authored continuity.",
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
+  ],
+  "latest_research_update": "2026-11-06-Pass20",
+  "research_additions_pass20": [
+    "su-marty",
+    "su-sour-cream",
+    "su-vidalia",
+    "su-yellowtail"
   ]
 }
