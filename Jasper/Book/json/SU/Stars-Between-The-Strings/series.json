@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 72269,
+  "total_word_count": 73010,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -446,7 +446,7 @@
       "file": "47.json",
       "title": "The Night After the Show",
       "id": "su-47",
-      "word_count": 1204,
+      "word_count": 1573,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-48"
     },
@@ -464,7 +464,7 @@
       "file": "49.json",
       "title": "The Note Below the Water",
       "id": "su-49",
-      "word_count": 1245,
+      "word_count": 1617,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-50"
     },

@@ -12,7 +12,7 @@
   "description": "In a postwar Cranefish Town becoming something new, an adult nonbender reader finds themself drawn into Aang, Katara, and Toph’s complicated orbit. Love grows through reconstruction work, public scrutiny, cultural preservation, arguments, chosen boundaries, and the daily work of building a home where nobody has to disappear to belong.",
   "canon_window": "Adult postwar timeline only: Jasper, Aang, Katara, and Toph are explicitly adults before romance/private-interlude content. Their original minor-era canon versions are never used for adult intimacy.",
   "chapter_count": 50,
-  "total_word_count": 76256,
+  "total_word_count": 76974,
   "story_bible": [
     "This postwar polycule story is built through reconstruction work, public responsibility, cultural difference, arguments, chosen boundaries, and ordinary domestic labor.",
     "Aang, Katara, and Toph must remain three distinct people with separate needs, humor, histories, responsibilities, and relationships with Jasper; never collapse them into one collective partner voice.",
@@ -439,7 +439,7 @@
       "file": "46.json",
       "title": "Dinner for People Who Disagree",
       "id": "love-and-duty-46",
-      "word_count": 1453,
+      "word_count": 1828,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "love-and-duty-47"
     },
@@ -457,7 +457,7 @@
       "file": "48.json",
       "title": "Water for the Other Side",
       "id": "love-and-duty-48",
-      "word_count": 1384,
+      "word_count": 1727,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "love-and-duty-49"
     },
