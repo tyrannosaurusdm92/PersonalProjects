@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 73504,
+  "total_word_count": 73421,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -256,7 +256,7 @@
       "number": 26,
       "file": "26.json",
       "title": "When Tea Goes Cold",
-      "word_count": 1565,
+      "word_count": 1514,
       "id": "avatar-26",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-27"
@@ -437,7 +437,7 @@
       "file": "46.json",
       "title": "A Game Neither of Us Wins",
       "id": "avatar-46",
-      "word_count": 1619,
+      "word_count": 1587,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-47"
     },
