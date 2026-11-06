@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 83289,
+  "total_word_count": 84234,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -87,7 +87,7 @@
       "file": "08.json",
       "title": "What the Door Kept",
       "id": "maui-08",
-      "word_count": 1637,
+      "word_count": 1916,
       "next_chapter_id": "maui-09"
     },
     {
@@ -174,7 +174,7 @@
       "file": "18.json",
       "title": "One Door Closed by Choice",
       "id": "maui-18",
-      "word_count": 1963,
+      "word_count": 2273,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-19"
     },
@@ -390,7 +390,7 @@
       "file": "42.json",
       "title": "Where the Water Cannot Go",
       "id": "maui-42",
-      "word_count": 1741,
+      "word_count": 2097,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-43"
     },
@@ -496,5 +496,15 @@
     ],
     "added_words_to_index": 346,
     "scope": "Targeted in-place prose pass, preserving all 50 chapters."
+  },
+  "editorial_pass20": {
+    "date": "2026-11-06",
+    "chapter_numbers": [
+      8,
+      18,
+      42
+    ],
+    "added_indexed_words": 945,
+    "scope": "Substantive narrative edits, still 50 original chapters."
   }
 }
