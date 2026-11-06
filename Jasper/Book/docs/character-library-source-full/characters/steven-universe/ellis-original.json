@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Ellis",
+    "provenance": "Original supporting character in Jasper's Steven Universe fanfiction, not an official Steven Universe character",
+    "setting": "Beach City community event reporting"
+  },
+  "biography": {
+    "on_page": "Young local reporter carrying camera and interview notes to cover a community cleanup celebration; article is eventually revised to focus on storm drains and the people who repaired them.",
+    "unknown": "Employment outlet, personal history, specific pronouns beyond on-page she/her, family, appearance and education are not reliably established."
+  },
+  "personality": {
+    "voice": "Inquisitive, brisk question-asker whose framing can become overly personal without deliberate malice.",
+    "motivations": "Gather a compelling local story while learning consent and privacy boundaries.",
+    "conflict": "A romantic headline can unfairly simplify Jasper and Greg's chosen nonexclusive relationship."
+  },
+  "agency": "Can ask whether a person wishes to be photographed or quoted, change an article when informed, and report on volunteer labor instead of private romance.",
+  "manuscript_sources": [
+    "Jasper/Book/json/SU/Stars-Between-The-Strings/36.json"
+  ],
+  "boundary": "Source-grounded original character. Do not manufacture unverified external franchise biography."
+}
