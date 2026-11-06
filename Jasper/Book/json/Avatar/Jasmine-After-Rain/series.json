@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 68893,
+  "total_word_count": 71169,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -328,7 +328,7 @@
       "number": 34,
       "file": "34.json",
       "title": "Under the Same Lantern",
-      "word_count": 960,
+      "word_count": 1285,
       "id": "avatar-34",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-35"
@@ -337,7 +337,7 @@
       "number": 35,
       "file": "35.json",
       "title": "The General and the Gardener",
-      "word_count": 1156,
+      "word_count": 1492,
       "id": "avatar-35",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-36"
@@ -418,7 +418,7 @@
       "number": 44,
       "file": "44.json",
       "title": "Rain in the Second Kitchen",
-      "word_count": 1118,
+      "word_count": 1428,
       "id": "avatar-44",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-45"
@@ -427,7 +427,7 @@
       "number": 45,
       "file": "45.json",
       "title": "The Price of the Mountain Mint",
-      "word_count": 1057,
+      "word_count": 1358,
       "id": "avatar-45",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-46"
@@ -437,7 +437,7 @@
       "file": "46.json",
       "title": "A Game Neither of Us Wins",
       "id": "avatar-46",
-      "word_count": 1015,
+      "word_count": 1363,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-47"
     },
@@ -446,7 +446,7 @@
       "file": "47.json",
       "title": "The Empty Chair Is Not a Threat",
       "id": "avatar-47",
-      "word_count": 1124,
+      "word_count": 1433,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-48"
     },
@@ -473,7 +473,7 @@
       "file": "50.json",
       "title": "Tea for Whoever Returns",
       "id": "avatar-50",
-      "word_count": 1030,
+      "word_count": 1377,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
