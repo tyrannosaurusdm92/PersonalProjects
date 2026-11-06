@@ -12,7 +12,7 @@
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
   "chapter_count": 50,
-  "total_word_count": 72579,
+  "total_word_count": 74825,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -166,7 +166,7 @@
       "number": 16,
       "file": "16.json",
       "title": "For Enemies",
-      "word_count": 1283,
+      "word_count": 1581,
       "id": "after-always-16",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "after-always-17"
@@ -175,7 +175,7 @@
       "number": 17,
       "file": "17.json",
       "title": "The Language of Hands",
-      "word_count": 1206,
+      "word_count": 1533,
       "id": "after-always-17",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "after-always-18"
@@ -274,7 +274,7 @@
       "number": 28,
       "file": "28.json",
       "title": "After",
-      "word_count": 1290,
+      "word_count": 1601,
       "id": "after-always-28",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "after-always-29"
@@ -283,7 +283,7 @@
       "number": 29,
       "file": "29.json",
       "title": "The Hearing",
-      "word_count": 1202,
+      "word_count": 1515,
       "id": "after-always-29",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "after-always-30"
@@ -355,7 +355,7 @@
       "number": 37,
       "file": "37.json",
       "title": "The Laboratory at Spinner's End",
-      "word_count": 1270,
+      "word_count": 1585,
       "id": "after-always-37",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "after-always-38"
@@ -364,7 +364,7 @@
       "number": 38,
       "file": "38.json",
       "title": "The Shape of Light",
-      "word_count": 1225,
+      "word_count": 1550,
       "id": "after-always-38",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "after-always-39"
@@ -473,7 +473,7 @@
       "file": "50.json",
       "title": "After the Door Opens",
       "id": "after-always-50",
-      "word_count": 1292,
+      "word_count": 1649,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": null
     }
@@ -504,5 +504,19 @@
     ],
     "delta_words_from_index": 488,
     "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
+  },
+  "editorial_pass19": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      16,
+      17,
+      28,
+      29,
+      37,
+      38,
+      50
+    ],
+    "added_words_to_index": 2246,
+    "scope": "Targeted prose improvements to existing canon; no new chapters or branch."
   }
 }
