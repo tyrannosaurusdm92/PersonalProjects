@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 80021,
+  "total_word_count": 81459,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -47,7 +47,7 @@
       "file": "03.json",
       "title": "The Name Beneath the Bell",
       "id": "maui-03",
-      "word_count": 1581,
+      "word_count": 1822,
       "next_chapter_id": "maui-04"
     },
     {
@@ -119,7 +119,7 @@
       "number": 12,
       "file": "12.json",
       "title": "A Place for the Departing",
-      "word_count": 1460,
+      "word_count": 1688,
       "id": "maui-12",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-13"
@@ -174,7 +174,7 @@
       "file": "18.json",
       "title": "One Door Closed by Choice",
       "id": "maui-18",
-      "word_count": 1734,
+      "word_count": 1963,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-19"
     },
@@ -255,7 +255,7 @@
       "file": "27.json",
       "title": "The Visitor's Right to Leave",
       "id": "maui-27",
-      "word_count": 1644,
+      "word_count": 1862,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-28"
     },
@@ -336,7 +336,7 @@
       "file": "36.json",
       "title": "Permission for Privacy",
       "id": "maui-36",
-      "word_count": 1733,
+      "word_count": 2000,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-37"
     },
@@ -444,7 +444,7 @@
       "file": "48.json",
       "title": "The Lantern Ledger",
       "id": "maui-48",
-      "word_count": 1603,
+      "word_count": 1858,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-49"
     },
