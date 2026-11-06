@@ -161,3 +161,14 @@
 - Synchronized seven full offline-reader overlays with revised chapter JSON; **all 46 source chapters were re-fetched and verified against the corresponding offline copy.**
 - Corrected four chronological/duplicated-scene beats and the mistaken reference to Jasmine Steps instead of Ba Sing Se at the end of Iroh's novel.
 - The 1,200-word editorial **length** floor is met; exact author voice, equal literary depth, prose quality and browser accessibility still require human review and real-browser testing.
+
+
+## November 5, 2026 — Fourteenth editorial pass, committed directly to main
+
+- Deepened 12 cross-novel scene chapters, two each in the six completed 50-chapter romances. The work prioritizes distinct speaking voices, awkward attraction, independent resident decisions, visible personal mistakes and consequences that survive an event.
+- Rewrote Iroh 21 as a concrete Ba Sing Se shop chapter about a spare key, Mina's work roster and wages, damaged stock, war memory, ethical non-monogamy and a chosen intimate evening.
+- Trimmed the repetitive ending in Iroh 20 and fixed Greg 19's double goodnight/next-day chronology, rather than padding scenes to preserve a headline word count.
+- Added `docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md`, `docs/VOICE_AND_DIALOGUE_PASS14.md`, and `json/lanternweald-pass14-continuity-ledger.json`, with five inter-book causal threads, persistent district routines, resident agency, homeworld distinctions and proposed future hooks clearly marked as unwritten.
+- Recalculated affected series manifests and added three source-matching offline-reader overlays, all loaded before `js/app.js` in the original `index.html`. **15/15 revised chapter copies verified exact.**
+- New recorded total: **438,674** words across **300** existing chapters; all six 50-chapter manifests reconcile and no recorded chapter is below 1,200 words.
+- Prose-depth parity, perfect voice fidelity, browser accessibility and local `file://` execution are **not certified** by this source-level pass.

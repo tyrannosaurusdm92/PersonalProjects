@@ -6,15 +6,15 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 68,010 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 70,489 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 71,169 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 76,256 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 76,044 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 72,269 |
-| **Total** | **Six connected novels** | **300 / 300** | **434,237** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 68,720 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 71,160 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 72,105 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 76,974 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 76,795 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 72,920 |
+| **Total** | **Six connected novels** | **300 / 300** | **438,674** |
 
-*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapter slots are complete, and the thirteenth pass has expanded the remaining 46 shorter chapters above the 1,200-word review guideline. Chapter-length parity at that floor is achieved; literary-depth, line-edit and voice parity still require editorial judgment.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
+*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters remain above the 1,200-word review line. The fourteenth editorial pass has improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
 ## Sixth expansion pass
 
@@ -117,3 +117,12 @@ The source chapter files, series manifests and seven full `js/lanternweald-revis
 Current references: `docs/PROSE_DEPTH_PASS13_AUDIT.md`, `docs/LANTERNWEALD_PASS13_CONTINUITY.md`, and `json/lanternweald-pass13-social-web.json`. These extend rather than replace the earlier living world bible and community atlas. Seasonal "future suggestions" are not retroactively canon events.
 
 **Editorial limitation:** All chapters crossing a numeric length guideline does not mean all six novels have identical literary depth, perfect voice matching or fully polished dialogue. Readers and editors should still review the prose on its merits.
+
+
+## Fourteenth editorial pass — November 5, 2026
+
+**15 existing chapters revised, directly on `main`:** Maui 33/45; Severus 46/48; Iroh 20/21/43/48; Love & Duty 46/48; Danse 44/48; Greg 19/47/49. Net **4,437** recorded words added after targeted repetition cleanup, bringing the six complete manuscripts to **438,674 recorded words** across **300 chapters**. The source chapter bodies and three new complete offline-reader overlays match **15/15** by text, ID, number, title and word count. No branch, PR, alternate endings, new reading route or extra HTML entry point.
+
+Qualitative changes: more scene-specific, character-authentic dialogue; Iroh's chapter 21 rewritten into an actual Ba Sing Se work-and-romance scene; chapter 20's repeated end removed; Greg's chapter 19 apartment timeline repaired. The existing endings and chosen non-exclusive adult relationships remain intact, with sensual but non-explicit romance and natural fade-to-black moments.
+
+New references: `docs/PROSE_DEPTH_PASS14_AUDIT.md`, `docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md`, `docs/VOICE_AND_DIALOGUE_PASS14.md` and `json/lanternweald-pass14-continuity-ledger.json`. Existing earlier audits remain historical snapshots. **Remaining work** includes manuscript-wide literary line editing and an actual browser accessibility/reader test; source validation alone does not certify either.
