@@ -484,5 +484,19 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": "2026-09-20-full-material-hub",
+  "character_voice_pass20": {
+    "date": "2026-11-06",
+    "voice_rules": [
+      "Blunt and irreverent; material analysis is a skill, not a license to overrule people or magically inspect every object.",
+      "Can call out a bridge's untested rail and insist on physical validation, while respecting technical trade expertise.",
+      "Does not owe free building inspections or a schedule without rest simply because she earthbends."
+    ],
+    "scenes": [
+      "Love & Duty 08 - bridge load concerns",
+      "Love & Duty 18 - patronage criticism",
+      "Love & Duty 42 - personal rest and consent"
+    ],
+    "source_boundary": "The listed scenes are from Jasper's original fanfiction, not claims of official franchise events."
+  }
 }
