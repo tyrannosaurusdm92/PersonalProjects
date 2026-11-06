@@ -1,23 +1,25 @@
 # Jasper's Fanfiction Spot — Six Novels, 300 Written Chapters
 
-> **Latest editorial update — November 6, 2026, Pass 18:** All six novels remain 50 chapters each (300 total). Fourteen canonical chapters across the six series received targeted, in-place prose revisions (+3,385 words), including distinct Iroh/Greg dialogue, direct ethical-non-monogamy conversations, and concrete Lanternweald consequences. Two runtime overlay files were wired into `index.html` so the reader displays the revisions; five original supporting-character reference files were added. The updated six-series indexed total is **461,463 words**. This is not a complete 300-chapter line edit. See [PROSE_DEPTH_PASS18_AUDIT.md](PROSE_DEPTH_PASS18_AUDIT.md) for edited chapter numbers, verification, limitations, and remaining work.
+> **Latest editorial update — November 6, 2026, Pass 19:** Revised **23 existing chapters across all six novels** on `main`, adding **7,520 words** without creating a branch. The canon remains **6 × 50 = 300 prose chapters**, totaling **468,983 indexed words**. The reader now loads three new Pass 19 overlays, and all **23/23** entries match the canonical chapter JSON; six manifests and the fandom catalog reconcile. Three original-character profiles (Pilar, Ellis, Niko) were added. See [PROSE_DEPTH_PASS19_AUDIT.md](PROSE_DEPTH_PASS19_AUDIT.md) and [LANTERNWEALD_PASS19_CONTINUITY.md](LANTERNWEALD_PASS19_CONTINUITY.md). This is a targeted prose pass, **not** a claim that all 300 chapters have received full line editing.
+
+> **Prior editorial update — November 6, 2026, Pass 18:** All six novels remain 50 chapters each (300 total). Fourteen canonical chapters across the six series received targeted, in-place prose revisions (+3,385 words), including distinct Iroh/Greg dialogue, direct ethical-non-monogamy conversations, and concrete Lanternweald consequences. Two runtime overlay files were wired into `index.html` so the reader displays the revisions; five original supporting-character reference files were added. The updated six-series indexed total is **461,463 words**. This is not a complete 300-chapter line edit. See [PROSE_DEPTH_PASS18_AUDIT.md](PROSE_DEPTH_PASS18_AUDIT.md) for edited chapter numbers, verification, limitations, and remaining work.
 
 
 The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
-## Current manuscripts: November 5, 2026
+## Current manuscripts: November 6, 2026 (Pass 19)
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 79,060 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 71,186 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 72,143 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 76,974 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 76,795 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 72,947 |
-| **Total** | **Six connected novels** | **300 / 300** | **449,105** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 83,289 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 74,825 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 75,921 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 78,944 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 78,569 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 77,435 |
+| **Total** | **Six connected novels** | **300 / 300** | **468,983** |
 
-*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters remain above the 1,200-word review line. The fourteenth editorial pass has improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
+*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters now have at least 1,300 indexed words after Pass 19. The historical fourteenth editorial pass improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
 ## Sixth expansion pass
 
@@ -135,4 +137,4 @@ New references: `docs/PROSE_DEPTH_PASS14_AUDIT.md`, `docs/LANTERNWEALD_PASS14_CA
 
 The original `Maui/` sourcebook distinguishes Disney's Maui from Māori and wider Polynesian traditions. The previous initial characterization pass already adjusted all 50 chapters; this **additional refinement** rewrites targeted dialogue and reactions in **all 50 chapters** to retain Maui's showmanship, physical comedy, fishhook/animal-shifting logic, competitive jealousy, Moana friendship, competence at sea, and abandonment vulnerability—even after he learns to respect other people's choices. The book's 50-chapter plot and ending remain, as do Jasper's explicit ethical non-monogamy, preference for polyamory, and non-explicit sensual romance.
 
-Three scenes in the Iroh, Greg and Severus novels now share the revised Maui voice. The canonical JSON files and five preexisting Maui offline-reader overlays were synchronized **50/50**, plus **3/3** in the new crossover overlay. Current totals from all six manifests: **449,105 recorded words / 300 chapters**. No actual website/browser or formal cultural consultation has been performed. The full audit is `docs/MAUI_FILM_VOICE_REFINEMENT_AUDIT.md` and the active characterization standard is `Maui/13_PERSONALITY_REWRITE_CANON.md`.
+Three scenes in the Iroh, Greg and Severus novels now share the revised Maui voice. The canonical JSON files and five preexisting Maui offline-reader overlays were synchronized **50/50**, plus **3/3** in the new crossover overlay. Historical totals at that earlier Maui pass: **449,105 recorded words / 300 chapters**, superseded by Pass 19. No actual website/browser or formal cultural consultation has been performed. The full audit is `docs/MAUI_FILM_VOICE_REFINEMENT_AUDIT.md` and the active characterization standard is `Maui/13_PERSONALITY_REWRITE_CANON.md`.
