@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 66491,
+  "total_word_count": 68893,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -220,7 +220,7 @@
       "number": 22,
       "file": "22.json",
       "title": "A Place at the Table",
-      "word_count": 993,
+      "word_count": 1358,
       "id": "avatar-22",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-23"
@@ -229,7 +229,7 @@
       "number": 23,
       "file": "23.json",
       "title": "The White Lotus Does Not Whisper",
-      "word_count": 961,
+      "word_count": 1304,
       "id": "avatar-23",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-24"
@@ -238,7 +238,7 @@
       "number": 24,
       "file": "24.json",
       "title": "A Question Worth Asking",
-      "word_count": 941,
+      "word_count": 1298,
       "id": "avatar-24",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-25"
@@ -256,7 +256,7 @@
       "number": 26,
       "file": "26.json",
       "title": "When Tea Goes Cold",
-      "word_count": 939,
+      "word_count": 1287,
       "id": "avatar-26",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-27"
@@ -274,7 +274,7 @@
       "number": 28,
       "file": "28.json",
       "title": "The Game We Change",
-      "word_count": 915,
+      "word_count": 1276,
       "id": "avatar-28",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-29"
@@ -292,7 +292,7 @@
       "number": 30,
       "file": "30.json",
       "title": "The Fire Beneath the Kettle",
-      "word_count": 1175,
+      "word_count": 1470,
       "id": "avatar-30",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-31"
@@ -301,7 +301,7 @@
       "number": 31,
       "file": "31.json",
       "title": "A Letter from the Palace",
-      "word_count": 1193,
+      "word_count": 1526,
       "id": "avatar-31",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-32"
