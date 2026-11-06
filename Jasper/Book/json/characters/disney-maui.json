@@ -79,8 +79,11 @@
       "Not every scene needs Mini Maui; alternate comic scale, quick transformations, sea skills, tall tales, appetite, flirtation and silence.",
       "Respect real consent, chosen non-monogamy, privacy, and the independent choices of Jasper and other residents.",
       "Keep Jasper's novel at its existing non-explicit romance/fade-to-black rating, with first-person Jasper narration.",
-      "Keep all 50 chapters and established endings; the character voice remains recognizable even in late domestic and civic scenes."
-    ]
+      "Keep all 50 chapters and established endings; the character voice remains recognizable even in late domestic and civic scenes.",
+      "Second pass on 2026-11-05 revised every Maui Book chapter and three crossovers: keep jealousy, quick wit, Moana history, hook-fueled animal shifts and craving for applause visible through chapter 50."
+    ],
+    "canonical_characterization_priority": "Disney Maui from Moana and Moana 2 > generic good-boyfriend advice; the sourcebook's 13_PERSONALITY_REWRITE_CANON.md is controlling guidance for the Book.",
+    "characterization_line_edit_rule": "Keep a physical showman, daring ocean voyager, compulsive boaster and playful improviser even when he asks before acting. Let humor crack before showing fear; no five-paragraph therapeutic monologues."
   },
   "capabilities": [
     "Disney enchanted fishhook enables intentional animal transformations; absent or impaired hook limits transformations",
@@ -127,7 +130,16 @@
       "inventing sacred Māori chants or treating regional legends as universal Disney film canon",
       "using the hook to erase a technical safety limit",
       "mechanically repeating Mini Maui in every exchange"
-    ]
+    ],
+    "maui_film_voice_second_pass": {
+      "applied_date": "2026-11-05",
+      "book_chapters": 50,
+      "crossover_chapters": 3,
+      "canonical_source": "Maui/13_PERSONALITY_REWRITE_CANON.md",
+      "verified_source_reader_matches": "50/50 Maui and 3/3 crossovers",
+      "never_replace_with": "gentle therapist, polite nameless volunteer, or boastless caretaker",
+      "scope": "All six connected linear Book novels; primary novel The Shore I Choose remains Teen-rated and non-explicit."
+    }
   },
   "jasper_interaction": {
     "reader": "Jasper",

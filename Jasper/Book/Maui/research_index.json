@@ -69,7 +69,7 @@
     "Avoid unconsulted tribal tattoo designs, ritual choreography, sacred genealogy and place-bound taniwha",
     "Attribute culture-specific and version-specific claims"
   ],
-  "release_status": "Sourcebook retained; film-voice characterization corrections applied to existing 50-chapter Maui novel; cultural sensitivity review still recommended for specific living tikanga.",
+  "release_status": "Initial 50-chapter characterization correction plus second 50-chapter film-voice dialogue pass applied; all revised reader copies verified. Cultural review still recommended.",
   "applied_personality_rewrite": {
     "date": "2026-11-05",
     "film_source": "01_DISNEY_CANON.md",
@@ -83,6 +83,24 @@
       "maui-personality-rewrite-31-40.js",
       "maui-personality-rewrite-41-50.js"
     ],
-    "cultural_layer": "Separate film adaptations from Māori traditions and modern Māori performance; no unconsulted sacred content."
+    "cultural_layer": "Separate film adaptations from Māori traditions and modern Māori performance; no unconsulted sacred content.",
+    "latest_status": "Second film-voice refinement applied directly to all 50 canonical Maui chapters, with original reader overlays synchronized",
+    "additional_crossover_overlay": "maui-crossover-personality-corrections.js",
+    "additional_crossover_chapters": [
+      "jasmine-after-rain-48",
+      "stars-between-the-strings-44",
+      "after-always-48"
+    ],
+    "second_pass": {
+      "updated": "2026-11-05",
+      "canonical_chapters_refined": 50,
+      "source_reader_matches": 50,
+      "crossover_chapters_refined": 3,
+      "crossover_source_reader_matches": 3,
+      "main_branch_only": true,
+      "focus": "Original Disney-film Maui core—swagger, skill, joke-first fear, Moana continuity, shameless flirtation, imperfect pride and voluntary restraint",
+      "script_strategy": "Update existing five full-chapter Maui reader overlays in place; append one later crossover overlay",
+      "rating": "Non-explicit, consensual, Jasper openly ENM and prefers polyamory"
+    }
   }
 }

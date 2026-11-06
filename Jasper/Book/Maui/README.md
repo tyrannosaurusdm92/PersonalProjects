@@ -56,3 +56,12 @@ Te Ara's kapa haka overview: https://teara.govt.nz/en/kapa-haka
 Te Papa's poi research: https://www.tepapa.govt.nz/digital-museum/explore-digital-museum/poi
 Disney's official character summaries: https://d23.com/meet-the-characters-of-moana-2/
 Full sources: 12_ANNOTATED_SOURCES.md
+
+
+## Second film-voice editing pass — applied in place
+
+An additional **50/50** targeted chapter-voice pass was committed to the original `main` branch after the initial personality rebuild. Maui's Disney-film core remains audacious, vain, funny, flirtatious, deeply capable at sea, insecure about being unwanted, and reluctant to admit when he needs reassurance. Chosen responsibility does not erase his bragging, magical hook, Mini Maui or relationship with Moana. Three shared-book scenes now reflect that same character.
+
+The original five Maui offline-reader overrides were overwritten in place to match the 50 canonical chapter JSON bodies; the three crossover changes use `../js/maui-crossover-personality-corrections.js`. Every affected chapter read-back passed exact source/reader comparisons (**53/53**). The book remains a complete 50-chapter non-explicit romance with Jasper's ethical non-monogamy and preference for polyamory intact.
+
+See `13_PERSONALITY_REWRITE_CANON.md` for the dialogue rules and `../docs/MAUI_FILM_VOICE_REFINEMENT_AUDIT.md` for the exact scope and test limitations.

@@ -6,13 +6,13 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 68,720 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 71,160 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 72,105 |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 79,060 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 71,186 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 72,143 |
 | Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 76,974 |
 | What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 76,795 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 72,920 |
-| **Total** | **Six connected novels** | **300 / 300** | **438,674** |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 72,947 |
+| **Total** | **Six connected novels** | **300 / 300** | **449,105** |
 
 *Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters remain above the 1,200-word review line. The fourteenth editorial pass has improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
@@ -126,3 +126,10 @@ Current references: `docs/PROSE_DEPTH_PASS13_AUDIT.md`, `docs/LANTERNWEALD_PASS1
 Qualitative changes: more scene-specific, character-authentic dialogue; Iroh's chapter 21 rewritten into an actual Ba Sing Se work-and-romance scene; chapter 20's repeated end removed; Greg's chapter 19 apartment timeline repaired. The existing endings and chosen non-exclusive adult relationships remain intact, with sensual but non-explicit romance and natural fade-to-black moments.
 
 New references: `docs/PROSE_DEPTH_PASS14_AUDIT.md`, `docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md`, `docs/VOICE_AND_DIALOGUE_PASS14.md` and `json/lanternweald-pass14-continuity-ledger.json`. Existing earlier audits remain historical snapshots. **Remaining work** includes manuscript-wide literary line editing and an actual browser accessibility/reader test; source validation alone does not certify either.
+
+
+## Disney Maui personality — full-book screen-voice refinement (November 5, 2026)
+
+The original `Maui/` sourcebook distinguishes Disney's Maui from Māori and wider Polynesian traditions. The previous initial characterization pass already adjusted all 50 chapters; this **additional refinement** rewrites targeted dialogue and reactions in **all 50 chapters** to retain Maui's showmanship, physical comedy, fishhook/animal-shifting logic, competitive jealousy, Moana friendship, competence at sea, and abandonment vulnerability—even after he learns to respect other people's choices. The book's 50-chapter plot and ending remain, as do Jasper's explicit ethical non-monogamy, preference for polyamory, and non-explicit sensual romance.
+
+Three scenes in the Iroh, Greg and Severus novels now share the revised Maui voice. The canonical JSON files and five preexisting Maui offline-reader overlays were synchronized **50/50**, plus **3/3** in the new crossover overlay. Current totals from all six manifests: **449,105 recorded words / 300 chapters**. No actual website/browser or formal cultural consultation has been performed. The full audit is `docs/MAUI_FILM_VOICE_REFINEMENT_AUDIT.md` and the active characterization standard is `Maui/13_PERSONALITY_REWRITE_CANON.md`.

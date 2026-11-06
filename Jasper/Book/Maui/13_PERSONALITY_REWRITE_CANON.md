@@ -72,3 +72,27 @@ At the Jasmine Dragon Maui should irritate and charm Iroh, not obediently wait f
 When editing Maui again, ask: *Did he boast or joke in his own style? Is he intelligent and physically capable? Does he want recognition? Did his fear briefly slip out? Did the moment change a choice, not erase his identity? Did I overuse Mini Maui? Did the hook operate within film continuity? Did Jasper make their own choice? Did a real resident retain authority? Are Disney myths and Māori traditions separate?*
 
 **Research links:** `01_DISNEY_CANON.md`, `09_LANTERNWEALD_INTEGRATION.md`, `10_CHARACTER_AND_SCENE_TOOLKIT.md`, `12_ANNOTATED_SOURCES.md`. This file is a characterization and writing guide, not an official Disney script or cultural authority.
+
+
+## Second full-book film-voice refinement — November 5, 2026
+
+After the initial sourcebook-based 50-chapter characterization rebuild, a further **50/50 chapter-specific prose and dialogue refinement** was applied to `json/Disney/Maui-And-Jasper/01.json` through `50.json`. These are edits to the canonical book, **not** a separate Maui novel. The five already-loaded full-chapter reader overrides `js/maui-personality-rewrite-01-10.js` through `41-50.js` were updated in place, so the website reads the same revised text as the chapter JSON.
+
+### Specific differences visible across the arc
+
+- **Ch. 1–10:** rescues come with ridiculous poses; he has real seamanship and notices how the tide damages a dock, rather than becoming a generic technical adviser. He boasts about his hook, strange animal forms, the sun and his magnificent presence, while still allowing Jasper a chosen name and chosen room.
+- **Ch. 11–20:** he is genuinely offended when the sea steals a sign and when a traveler does not want to meet him; he initially laughs at a possessive "prize" comment before realizing why it hurt Jasper. He can be afraid of rejection without saying a therapist's perfect sentence.
+- **Ch. 21–30:** Greg, Iroh and Aang get a stubborn, funny rival and ally. Maui wants the large stage, a crowd, an impressive performance and some credit. He also remembers the boat crew, visiting Māori artist and departing traveler have their own rights and expertise.
+- **Ch. 31–40:** calendar conflict, jealousy and civic anger still make him petulant. He jokes first, trips over his own pride, admits the fear in a single plain sentence, then chooses a better action. **Ch. 39 now directly remembers Moana** as a person who challenged his inflated stories, without replacing her with Jasper.
+- **Ch. 41–50:** he still wants applause after he has learned to stop stealing it. A ledger, marked flood channel, lamp, public vote and even a loose kitchen board can trigger his heroic imagination. The ending retains his swagger and vulnerability; it does **not** retire him into the village's quiet all-purpose therapist.
+- **Crossover consistency:** direct voice corrections were made in *Jasmine After Rain* 48, *Stars Between the Strings* 44, and *After Always* 48. Their same-voice changes are loaded from `js/maui-crossover-personality-corrections.js` after the five Maui reader overlays and before `js/app.js`.
+
+### Avoid regressions
+
+Don't undo this by mechanically replacing pride with humility, transforming every misstep into a public apology, or forcing Maui to supply relationship language more fluent than Jasper, Iroh or a real therapist. **His underlying needs never vanish.** He is still restless, physical, smart about voyaging, shameless at flirting, very pleased by his own legend and easily wounded when a favorite person seems to prefer another route. His maturation should make his choices more respectful, not his presence less entertaining.
+
+The enchanted hook and Mini Maui remain Disney-film devices. Mini Maui is used sparingly, not as a substitute for the real character's agency. Moana remains a valued independent hero and friend with her own history. The Māori and other Polynesian source files remain separate from Disney narrative mechanics; no sacred chants, genealogies or ritual choreography have been invented in this revision.
+
+**Verification:** all **50/50** canonical Maui chapter ID/title/number/body/word-count entries were re-fetched and matched to the corresponding five offline-reader override groups; the three additional crossover source/reader pairs also matched. All six novels retain their existing 50-chapter structures. Real browser navigation and a publication-level literary/cultural review are not claimed as tested.
+
+**Detailed audit:** `../docs/MAUI_FILM_VOICE_REFINEMENT_AUDIT.md`.

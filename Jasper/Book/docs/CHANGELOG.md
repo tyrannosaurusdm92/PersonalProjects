@@ -172,3 +172,14 @@
 - Recalculated affected series manifests and added three source-matching offline-reader overlays, all loaded before `js/app.js` in the original `index.html`. **15/15 revised chapter copies verified exact.**
 - New recorded total: **438,674** words across **300** existing chapters; all six 50-chapter manifests reconcile and no recorded chapter is below 1,200 words.
 - Prose-depth parity, perfect voice fidelity, browser accessibility and local `file://` execution are **not certified** by this source-level pass.
+
+
+## November 5, 2026 — Disney Maui second film-voice refinement
+
+- Followed the canonical `Maui/01_DISNEY_CANON.md`, `Maui/10_CHARACTER_AND_SCENE_TOOLKIT.md` and `Maui/13_PERSONALITY_REWRITE_CANON.md` rather than blending the Disney character with unqualified regional myths.
+- Further revised Maui's speaking voice and scene reactions in **50/50** original `The Shore I Choose` chapter JSON files; retained all original IDs, chapter numbers, plot arc, relationship agreements and ending.
+- Restored ambitious jokes, teasing, vanity, physical heroism, hook/animal-shifting context, Moana continuity and imperfect jealousy throughout the novel. Maui still respects a real no; growth is a changed decision rather than a bland replacement personality.
+- Updated the five existing source-complete `js/maui-personality-rewrite-*.js` reader overlays in place. Re-fetched and validated all **50/50** source/reader pairs with exact chapter text/metadata matches.
+- Aligned Maui's cameo dialogue in Iroh 48, Greg 44 and Severus 48 through `js/maui-crossover-personality-corrections.js`; re-fetched and verified **3/3**.
+- Wrote `docs/MAUI_FILM_VOICE_REFINEMENT_AUDIT.md` and updated the Maui sourcebook, character profile and reference index. Current six-novel total: **449,105** recorded words across **300** chapters.
+- Web reader's JavaScript load order was preserved, but an actual browser and accessibility test remain outstanding; no new branch or PR was made.
