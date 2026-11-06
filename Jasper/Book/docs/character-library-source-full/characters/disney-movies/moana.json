@@ -1,0 +1,62 @@
+{
+  "schema_version": "jasper.character-profile.v2-researched",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Moana",
+    "franchise": "Disney Moana / Moana 2",
+    "continuity_scope": "Adult after Moana 2; Lanternweald is fanfiction",
+    "role": "Independent wayfinder and Motunui community leader"
+  },
+  "biography": {
+    "canon": "Daughter of Motunui's chief; travels to save her people and learns wayfinding. In Moana 2 she reunites with Maui three years later to navigate distant waters with her own crew.",
+    "fanfiction": "Any visit to Tideglass must be her choice. She continues to have family, community, crew and responsibilities outside Jasper's romance."
+  },
+  "personality": {
+    "traits": [
+      "stubbornly resourceful",
+      "independent",
+      "determined",
+      "curious",
+      "quick to challenge Maui's ego"
+    ],
+    "voice": [
+      "direct questions about current, crew, timing and risk",
+      "teases Maui as an equal, not a worshipper",
+      "chooses plans and takes responsibility for them"
+    ],
+    "flaws": [
+      "sometimes carries too much alone",
+      "can act before she has every answer"
+    ],
+    "narrative_rules": [
+      "She does not need Maui to give her a purpose",
+      "She never becomes a prize, rival or arbitrary exposition device",
+      "Distinguish Disney screen fantasy from Māori traditions"
+    ]
+  },
+  "relationships": {
+    "Maui": "Mutual teasing and earned teamwork; important friend and equal.",
+    "Jasper": "New friend only by mutual voluntary introduction; not inherently invested in Jasper and Maui's romance."
+  },
+  "continuity_constraints": [
+    "Moana 2 adulthood context",
+    "Simea and Motunui matter",
+    "Her crew and travel needs remain independent",
+    "No invented sacred Māori rites or ancestral authority attributed to Moana"
+  ],
+  "sources": [
+    {
+      "url": "https://movies.disney.com/Moana",
+      "type": "official film synopsis"
+    },
+    {
+      "url": "https://movies.disney.com/moana-2",
+      "type": "official film synopsis"
+    },
+    {
+      "url": "https://princess.disney.com/moana",
+      "type": "official Disney character description"
+    }
+  ],
+  "research_boundary": "Character mannerisms and Lanternweald actions are interpretive fanfiction choices, not documentary canon."
+}
