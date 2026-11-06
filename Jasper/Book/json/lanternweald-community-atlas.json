@@ -412,5 +412,94 @@
     "The upper inspection chamber may be entered under authorization; the historic lower flood barrier remains sealed",
     "The temporary surface channel passed limited real-weather tests, subject to renewed inspection"
   ],
-  "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters"
+  "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
+  "latest_social_web": "json/lanternweald-pass13-social-web.json",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS13_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS13_AUDIT.md",
+  "thirteenth_pass_verified_scene_connections": [
+    {
+      "book": "The Shore I Choose",
+      "chapters": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        18,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        36,
+        40,
+        42
+      ],
+      "links": [
+        "Lanternwell chosen name and accurate noticeboard",
+        "Tideglass independent tide, fish, skiff and repair limits",
+        "Mereana controls her group's own art and loan agreement",
+        "Moonroot deputy and restricted records",
+        "Maui's chosen presence without monitoring Jasper's partner calendar"
+      ]
+    },
+    {
+      "book": "Jasmine After Rain",
+      "chapters": [
+        22,
+        23,
+        24,
+        26,
+        28,
+        30,
+        31,
+        34,
+        35,
+        44,
+        45,
+        46,
+        47,
+        50
+      ],
+      "links": [
+        "Ba Sing Se paid shop work",
+        "Lu Ten's memory persists",
+        "Ren asks rather than commands",
+        "Scarce mint has an equitable price",
+        "Final chapter explicitly names the streets of Ba Sing Se"
+      ]
+    },
+    {
+      "book": "Stars Between the Strings",
+      "chapters": [
+        22,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        38,
+        40,
+        44,
+        46
+      ],
+      "links": [
+        "Beach City instrument fundraiser and accurate publicity",
+        "Greg's car wash winter repair",
+        "Steven remains independent family member",
+        "Rose remains part of Greg's past",
+        "Starwake fair coordinates music and structural evidence without opening historic lower tunnel"
+      ]
+    }
+  ],
+  "length_review_status": "300/300 chapter slots each >=1200 recorded words, but literary-depth parity remains a qualitative editorial review rather than a passed test.",
+  "future_content_status": "Seasonal labels, future story seeds and possible civic links are not events already depicted in prose."
 }

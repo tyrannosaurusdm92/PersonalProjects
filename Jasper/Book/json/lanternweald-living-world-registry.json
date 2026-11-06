@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 12,
+  "editorial_revision_pass": 13,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -591,7 +591,7 @@
       "premise": "A performer stops when their chosen shift ends"
     }
   ],
-  "revised_chapter_count_this_pass": 31,
+  "revised_chapter_count_this_pass": 46,
   "revised_chapter_slots_by_series_pass8": {
     "the-shore-i-choose": [
       2,
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 419087,
+  "manifest_word_count": 434237,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,10 +848,10 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS12_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS12_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS13_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS13_CONTINUITY.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
-  "depth_review_below_1200": 46,
+  "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
     "the-shore-i-choose": [
       35,
@@ -907,5 +907,79 @@
     "homeworld_integrity": "Ba Sing Se's Jasmine Dragon is not Jasmine Steps; Greg remains tied to Beach City; Spinner's End, the South and Commonwealth retain their own independent histories.",
     "romance": "Jasper states ethical non-monogamy and preferred polyamory to each partner; privacy, scheduling, changes and tender non-explicit intimacy are continuously consent-based.",
     "canon_vs_unwritten": "Community atlas proposals are future writing seeds, not enacted chapters; each novel remains 50 linear chapters with original endings"
+  },
+  "community_social_web": "json/lanternweald-pass13-social-web.json",
+  "revised_chapter_slots_by_series_pass13": {
+    "the-shore-i-choose": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      18,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      36,
+      40,
+      42
+    ],
+    "jasmine-after-rain": [
+      22,
+      23,
+      24,
+      26,
+      28,
+      30,
+      31,
+      34,
+      35,
+      44,
+      45,
+      46,
+      47,
+      50
+    ],
+    "stars-between-the-strings": [
+      22,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      38,
+      40,
+      44,
+      46
+    ]
+  },
+  "manuscript_chapter_counts_by_series": {
+    "the-shore-i-choose": 50,
+    "after-always": 50,
+    "jasmine-after-rain": 50,
+    "love-and-duty": 50,
+    "what-the-armor-leaves-behind": 50,
+    "stars-between-the-strings": 50
+  },
+  "thirteenth_pass_lore_rules": {
+    "unchanged_endings": "All six completed 50-chapter romance arcs keep original conclusions; no forced partner group or branch.",
+    "qa": "46 revised source chapter bodies matched their pass13 embedded offline reader overrides; chronological and duplicate transitions were corrected in four slots.",
+    "length": "All 300 manifest chapter counts >=1200; literary quality, pacing and voice fidelity are distinct and remain editable.",
+    "threadways": "Travel is always voluntary; private destinations and personal relationships are not made into a public registry.",
+    "history": "Closed Bells keeper remains unknown; sealed lower flood barrier is NOT the authorized upper inspection space.",
+    "homeworlds": "Ba Sing Se and Jasmine Dragon remain separate from Jasmine Steps; Beach City remains Greg's home business and family context.",
+    "labor": "Mina, Renn, Nola, Ressa, Lio, Edda, Sela, Fen, Neri and other workers have independent roles, payment and authority.",
+    "sensuality": "Affection and fade-to-black are consensual, shy or awkward as fits each character, but never explicit or used as recompense.",
+    "seasons": "First Water, Long Tables, Borrowed Light, Warm Routes are optional narrative season-label conventions; planned scenes are not canonical events."
   }
 }

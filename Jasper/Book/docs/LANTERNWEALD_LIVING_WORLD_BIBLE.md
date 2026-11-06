@@ -231,3 +231,32 @@ The shared setting now has additional *on-page* consequences in all six novels, 
 The complete district guide and civic/institutional relationship atlas are in `json/lanternweald-community-atlas.json`. Twelfth-pass on-page cross-references, timelines and strict boundary rules are in `docs/LANTERNWEALD_PASS12_CONTINUITY.md`; current source counts and remaining shortcomings are in `docs/PROSE_DEPTH_PASS12_AUDIT.md`.
 
 This expansion updates reference canon without adding new chapter slots, changing existing endings, forcing travel, revealing an unproven identity, relocating homeworld businesses into the vale, or representing optional future story seeds as scenes that have already occurred.
+
+
+## 19. Thirteenth editorial pass — living stories, not a length target alone (November 5, 2026)
+
+This pass revised **46 earlier short chapters** across Maui (21), Iroh (14) and Greg (11). The six novels remain **300 chapters / 50 apiece**. All chapter manifest entries now clear the **1,200-word editorial review line**, with **434,237 total recorded manuscript words**. That is **length parity at a chosen floor**, not a claim of equal literary quality, a perfect reproduction of the author's voice, or a completed line edit.
+
+### The original valley remembers useful work
+
+In **Lanternwell Square**, Jasper choosing their name does not require exposing an arrival destination; Neri can record a chosen name while withholding an unrelated personal message. The first lantern repairs are verified by the smith Ressa and later by actual workers, so one person's skilled hands do not become the only source of safety. A public noticeboard can state bread prices and shelter access without listing Jasper's dates or travelers' private routes. A festival stage can belong to children who decide what to perform.
+
+At **Tideglass Cove**, Fen's tide measurements and Lio's skiff access place limits on Maui's strength. The current is measured before a boulder or hook moves anything; rope, rest and a verified knot count as useful contributions. Mereana and her visiting Aotearoa colleagues control whether their songs, panels and artwork are displayed; their contemporary performance is not available as a generic borrowed courtship ritual. Fish catch, pantry inventory, damaged supplies, repairs and storm watches remain real obligations with staff and costs. A person like Tomas may arrive, choose to leave and later visit again without becoming a lesson or prize.
+
+At **Moonroot Archive**, private statements and public maps have different permissions. A spare key is not an honor that Jasper must accept. Orin and Neri preserve versioned testimony, and the unidentified Closed Bells keeper stays unidentified. The seventh scratch points to maintenance infrastructure, not to an unearned new travel portal. **Only the authorized upper inspection space is available under controlled conditions; the historic lower flood barrier remains sealed.**
+
+At **Riverstone Terrace**, work must include Sela's garden and Edda's access needs. A bridge that engineers have repaired cannot be considered open if its connecting curb is unusable. **Brasswatch** can test water, equipment and instruments, but its reports don't excuse withholding safe alternatives when a service is down. **Starwake** offers creative freedom under Nola's actual equipment and event rules, including a right not to play a requested grief-song and the obligation to close unsafe boards.
+
+**Jasmine Steps** is Lanternweald hospitality and local service. The **Jasmine Dragon** remains a separate, living business in **Ba Sing Se**, with Mina's paid shifts, Lian's wall and seedlings, Ren's requested rather than imposed White Lotus work, and suppliers who deserve agreed prices. This pass corrected Iroh's final chapter to name Ba Sing Se correctly. **Beach City** likewise keeps its own boardwalk, car wash, community center and Greg's ordinary family history; it does not become a renamed ward of the vale.
+
+### Season, economy and non-compulsory celebration
+
+Spring's "First Water" emphasizes thaw measurements, mud and access. Summer's "Long Tables" needs shade, water, paid stalls, public music schedules and the right to decline. Autumn's "Borrowed Light" can carry Tidewake, Lantern Walk and Listening Fair traditions without making those different events interchangeable. Winter's "Warm Routes" values actual shelter capacity and closure signs over a romantic feat of reopening a dangerous path. These labels organize **future scene continuity**, and new activities are only canon once written in real chapters.
+
+The vale's economy is deliberately ordinary: a donation does not buy artistic permission, a favor does not cancel a wage, a safe repair requires the right part and a professional check, and nobody must give up housing or personal privacy in exchange for community belonging. Coins and supplies can move between districts while labor, habitat and transport limits remain relevant.
+
+### Six relationships, six real voices
+
+Jasper narrates as an adult first-person reader-insert and explicitly states **ethical non-monogamy** and a preference for **polyamory**. The dialogue does not reduce Maui, Iroh, Greg, Severus, Aang/Katara/Toph and Danse to the same all-wise partner. Romance is allowed to be funny, sensual, shy, awkward, conflicted and chosen; it stays **non-explicit**, and a private fade-to-black is a natural choice, not a task reward. Partner jealousy does not create a right to surveillance, partner history is not discarded to make room, and a person returning home is still free to leave.
+
+**Current references:** `docs/LANTERNWEALD_PASS13_CONTINUITY.md` (what happened on-page and what remains folklore), `json/lanternweald-pass13-social-web.json` (district-to-district responsibilities and cross-novel character relationships), and `docs/PROSE_DEPTH_PASS13_AUDIT.md` (validated 46 chapter text/reader copies and the remaining quality limits). Earlier audits and bibles remain historical records; future story seeds are not retroactive events.
