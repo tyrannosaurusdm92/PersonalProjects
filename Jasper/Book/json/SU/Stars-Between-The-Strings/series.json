@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 74923,
+  "total_word_count": 77435,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -256,7 +256,7 @@
       "number": 26,
       "file": "26.json",
       "title": "Second Verse",
-      "word_count": 1283,
+      "word_count": 1614,
       "id": "su-26",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-27"
@@ -265,7 +265,7 @@
       "number": 27,
       "file": "27.json",
       "title": "The Shape of Sorry",
-      "word_count": 1232,
+      "word_count": 1485,
       "id": "su-27",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-28"
@@ -283,7 +283,7 @@
       "number": 29,
       "file": "29.json",
       "title": "No Map for This",
-      "word_count": 1234,
+      "word_count": 1524,
       "id": "su-29",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-30"
@@ -292,7 +292,7 @@
       "number": 30,
       "file": "30.json",
       "title": "The Brightest Room",
-      "word_count": 1204,
+      "word_count": 1491,
       "id": "su-30",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-31"
@@ -319,7 +319,7 @@
       "number": 33,
       "file": "33.json",
       "title": "A Door in the Wall",
-      "word_count": 1288,
+      "word_count": 1666,
       "id": "su-33",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-34"
@@ -346,7 +346,7 @@
       "number": 36,
       "file": "36.json",
       "title": "When We Choose Each Other",
-      "word_count": 1202,
+      "word_count": 1521,
       "id": "su-36",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-37"
@@ -373,7 +373,7 @@
       "number": 39,
       "file": "39.json",
       "title": "The Song We Keep",
-      "word_count": 1229,
+      "word_count": 1559,
       "id": "su-39",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-40"
@@ -392,7 +392,7 @@
       "file": "41.json",
       "title": "A Song That Isn't a Promise",
       "id": "su-41",
-      "word_count": 1204,
+      "word_count": 1528,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-42"
     },
@@ -505,5 +505,20 @@
     ],
     "delta_words_from_index": 754,
     "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
+  },
+  "editorial_pass19": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      26,
+      27,
+      29,
+      30,
+      33,
+      36,
+      39,
+      41
+    ],
+    "added_words_to_index": 2512,
+    "scope": "Targeted in-place prose changes; 50 canon chapters preserved."
   }
 }
