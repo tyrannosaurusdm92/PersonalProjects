@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 65915,
+  "total_word_count": 68322,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -273,7 +273,7 @@
       "file": "29.json",
       "title": "A Festival Without a Hero",
       "id": "maui-29",
-      "word_count": 1050,
+      "word_count": 1402,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-30"
     },
@@ -282,7 +282,7 @@
       "file": "30.json",
       "title": "The Edge of the Storm",
       "id": "maui-30",
-      "word_count": 1096,
+      "word_count": 1465,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-31"
     },
@@ -291,7 +291,7 @@
       "file": "31.json",
       "title": "Six Different Roads",
       "id": "maui-31",
-      "word_count": 1168,
+      "word_count": 1518,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-32"
     },
@@ -300,7 +300,7 @@
       "file": "32.json",
       "title": "The Shape of an Agreement",
       "id": "maui-32",
-      "word_count": 1009,
+      "word_count": 1354,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-33"
     },
@@ -336,7 +336,7 @@
       "file": "36.json",
       "title": "Permission for Privacy",
       "id": "maui-36",
-      "word_count": 1190,
+      "word_count": 1525,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-37"
     },
@@ -372,7 +372,7 @@
       "file": "40.json",
       "title": "A Day of Ordinary Things",
       "id": "maui-40",
-      "word_count": 1149,
+      "word_count": 1477,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-41"
     },
@@ -390,7 +390,7 @@
       "file": "42.json",
       "title": "Where the Water Cannot Go",
       "id": "maui-42",
-      "word_count": 1191,
+      "word_count": 1519,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-43"
     },
