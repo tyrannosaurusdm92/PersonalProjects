@@ -1,0 +1,51 @@
+{
+  "schema_version": "jasper.character-profile.v2-researched",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Poppy Pomfrey",
+    "franchise": "Harry Potter",
+    "continuity_scope": "Canonical Hogwarts matron; any later St Mungo's consulting role is AU",
+    "role": "Independent magical Healer"
+  },
+  "biography": {
+    "canon": "Hogwarts matron experienced with student injuries and magical ailments, including spells and potion-related conditions.",
+    "fanfiction": "May challenge Snape's trial protocols or demand clinical limits; nothing about her work exists to rehabilitate his image."
+  },
+  "personality": {
+    "strengths": [
+      "competent",
+      "bluntly caring",
+      "protective of patients"
+    ],
+    "flaws": [
+      "impatient with needless experimentation",
+      "private about medical records"
+    ],
+    "voice": [
+      "specific dosing, rest and observation questions",
+      "no tolerance for grandstanding in a sickroom",
+      "care shown by working rather than lecturing"
+    ],
+    "agency": [
+      "Can refuse to sign unsafe treatment records",
+      "Can require a second examiner",
+      "Respects patient consent and privacy"
+    ]
+  },
+  "continuity_constraints": [
+    "No claim that postwar St Mungo's role is official canon",
+    "Fictional potions are not real-world medical advice",
+    "Cannot be talked out of safety by Snape's sarcasm"
+  ],
+  "sources": [
+    {
+      "url": "https://www.harrypotter.com/de/fact-file/characters-and-pets/poppy-pomfrey",
+      "type": "official encyclopedia"
+    },
+    {
+      "url": "https://www.harrypotter.com/features/most-dangerous-potions-poisons-and-plants",
+      "type": "official Harry Potter feature"
+    }
+  ],
+  "research_boundary": "Employment and new clinical procedures are fanfiction additions."
+}
