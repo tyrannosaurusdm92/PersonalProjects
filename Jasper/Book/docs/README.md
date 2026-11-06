@@ -6,15 +6,15 @@ The **Lanternweald** is one connected, original, lived-in setting for six linear
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 61,235 |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 68,010 |
 | After Always | Severus Snape / Jasper | **50 / 50** | 70,489 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 66,491 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 71,169 |
 | Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 76,256 |
 | What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 76,044 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 68,572 |
-| **Total** | **Six connected novels** | **300 / 300** | **419,087** |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 72,269 |
+| **Total** | **Six connected novels** | **300 / 300** | **434,237** |
 
-*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **Chapter-count parity is complete. The twelfth pass expands 31 existing chapters. 46 chapters remain under the 1,200-word editorial review guideline; scene-depth parity is not yet complete.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
+*Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapter slots are complete, and the thirteenth pass has expanded the remaining 46 shorter chapters above the 1,200-word review guideline. Chapter-length parity at that floor is achieved; literary-depth, line-edit and voice parity still require editorial judgment.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
 ## Sixth expansion pass
 
@@ -106,3 +106,14 @@ Current reference: `PROSE_DEPTH_PASS11_AUDIT.md`. Extended living world: `LANTER
 **31 existing chapters were expanded directly on `main` without a branch or pull request**, adding 12,555 recorded words of scenes, dialogue and interconnected living-world consequences. Maui 35/38/39/41/44/46/47/49; Severus 20/22/25/27/45; Iroh 25/27/37/48/49; Love & Duty 42/45; Danse 41/45; Greg 23/26/30/32/37/45/48/49/50. Six offline-reader overlays (`pass12-a` through `pass12-f`) are loaded in `index.html`. The six novels remain 50 chapters each; there is no new ending or forced partner arrangement.
 
 **Latest manuscript audit:** `PROSE_DEPTH_PASS12_AUDIT.md`. **Cross-novel canon:** `LANTERNWEALD_PASS12_CONTINUITY.md`. **Structured seasonal and district reference:** `../json/lanternweald-community-atlas.json` (relative from this README location use `json/lanternweald-community-atlas.json` from `Jasper/Book`). Older audits remain historical snapshots, not current totals. Real-browser/offline usability testing remains outstanding.
+
+
+## Thirteenth editorial pass — November 5, 2026
+
+Expanded **46 existing chapter slots** directly on `main` without a new branch or PR: **Maui 21, Iroh 14, Greg 11**. The other three books already exceeded the 1,200-word review guideline and retain their earlier depth work. All six novels continue to contain **50 chapters each**. This pass adds **15,150 net manifest words** and brings **all 300 chapters to at least 1,200 recorded words**. It improves dialogue, chapter-specific interpersonal conflict, slow-burn intimacy, local resident agency, homeworld distinctness and cross-book continuity. A focused QA correction also removed four timeline/repetition slips.
+
+The source chapter files, series manifests and seven full `js/lanternweald-revisions-pass13-*.js` offline-reader overrides were checked for **46/46 exact source matches**. Browser visuals, progress storage and accessibility are **not** yet end-to-end tested.
+
+Current references: `docs/PROSE_DEPTH_PASS13_AUDIT.md`, `docs/LANTERNWEALD_PASS13_CONTINUITY.md`, and `json/lanternweald-pass13-social-web.json`. These extend rather than replace the earlier living world bible and community atlas. Seasonal "future suggestions" are not retroactively canon events.
+
+**Editorial limitation:** All chapters crossing a numeric length guideline does not mean all six novels have identical literary depth, perfect voice matching or fully polished dialogue. Readers and editors should still review the prose on its merits.

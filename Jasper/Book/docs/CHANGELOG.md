@@ -150,3 +150,14 @@
 - Created `docs/LANTERNWEALD_PASS12_CONTINUITY.md` and `json/lanternweald-community-atlas.json`; prepared twelfth-pass manuscript audit.
 - Updated all six affected manifests and shipped six sequential offline-reader chapter overlays before `js/app.js`; all 31 chapter-to-overlay contents were read back and compared successfully.
 - Current six-manifest total: 419,087 words, 300 chapters, 46 below the 1,200-word review line; full prose-depth parity and visual browser testing are still outstanding.
+
+
+## November 5, 2026 — Thirteenth pass, direct to `main`
+
+- Expanded the remaining **46 chapters** below the 1,200-word editorial review line: Maui **21**, Iroh **14**, Greg **11**, preserving their chapter numbers, existing romance arcs and endings.
+- Added **15,150 net recorded words** across the six-manifest collection, now **434,237 words / 300 chapters**. All six manifests reconcile; none of the 300 chapters remains below the review line.
+- Improved early Maui slow-burn dialogue and voluntary Threadway visits, Ba Sing Se's Jasmine Dragon work and Iroh's grief, and Greg's Beach City music, family, recording, repair and consent scenes.
+- Added `docs/LANTERNWEALD_PASS13_CONTINUITY.md` and `json/lanternweald-pass13-social-web.json` describing original district routines, seasonal change, civic dependencies, emotional arcs, and a clear separation between established events and future story ideas.
+- Synchronized seven full offline-reader overlays with revised chapter JSON; **all 46 source chapters were re-fetched and verified against the corresponding offline copy.**
+- Corrected four chronological/duplicated-scene beats and the mistaken reference to Jasmine Steps instead of Ba Sing Se at the end of Iroh's novel.
+- The 1,200-word editorial **length** floor is met; exact author voice, equal literary depth, prose quality and browser accessibility still require human review and real-browser testing.
