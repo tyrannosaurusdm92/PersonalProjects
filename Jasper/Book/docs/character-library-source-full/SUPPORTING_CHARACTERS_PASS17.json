@@ -1,0 +1,136 @@
+{
+  "schema_version": "jasper.character-library.supporting-index.v1",
+  "date": "2026-11-06",
+  "role": "Non-romance supplemental retrieval for the six connected novels",
+  "compatibility_note": "The existing 134-profile romance/genre generator manifest and index remain unchanged. These 19 scene-supporting dossiers are indexed separately to avoid treating original residents, or characters of unknown age, as romance targets.",
+  "canonical_media_profiles": [
+    {
+      "name": "Moana",
+      "path": "characters/disney-movies/moana.json",
+      "franchise": "Disney movies",
+      "provenance": "official Disney / interpretive voice",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Steven Universe",
+      "path": "characters/steven-universe/steven-universe.json",
+      "franchise": "Steven Universe",
+      "provenance": "episode-reference / adult AU extrapolation",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Poppy Pomfrey",
+      "path": "characters/harry-potter/poppy-pomfrey.json",
+      "franchise": "Harry Potter",
+      "provenance": "official Harry Potter character guide / AU workplace",
+      "romance_match_eligible": false
+    }
+  ],
+  "original_story_profiles": [
+    {
+      "name": "Neri",
+      "path": "characters/lanternweald/neri.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Mara",
+      "path": "characters/lanternweald/mara.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Pip",
+      "path": "characters/lanternweald/pip.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Fen",
+      "path": "characters/lanternweald/fen.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Edda",
+      "path": "characters/lanternweald/edda.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Orin",
+      "path": "characters/lanternweald/orin.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Tamsin",
+      "path": "characters/lanternweald/tamsin.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Lio",
+      "path": "characters/lanternweald/lio.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Nola",
+      "path": "characters/lanternweald/nola.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Renn",
+      "path": "characters/lanternweald/renn.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Ash",
+      "path": "characters/lanternweald/ash.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Tomas",
+      "path": "characters/lanternweald/tomas.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Vel",
+      "path": "characters/lanternweald/vel.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Mina",
+      "path": "characters/avatar/mina-original.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Jun",
+      "path": "characters/avatar/jun-relief-kitchen-original.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    },
+    {
+      "name": "Beren",
+      "path": "characters/lanternweald/beren.json",
+      "provenance": "Original fanfiction character: established from manuscript context, not public franchise canon",
+      "romance_match_eligible": false
+    }
+  ],
+  "total_new": 19,
+  "usage_rules": [
+    "Read the principal romance-lead profile and the relevant supporting profiles together before editing chapters.",
+    "Do not infer unstated biological details, ages, ancestry, diagnoses or personal histories for original residents.",
+    "Treat the Moana 2 film timeline and Jasper's chosen adult/alternate continuity as separate layers.",
+    "Protect every character's capacity to disagree, refuse free labor or exit a scene.",
+    "Do not add these secondary entries to the adult-romance matching pool by default."
+  ],
+  "continued_work": "A 300-chapter named-character census and full biography audit have not been completed. This supplement covers 19 verified gaps from the focused Pass 17 scenes."
+}
