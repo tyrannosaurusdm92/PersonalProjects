@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Clerk Ren",
+    "origin": "Original supporting character in Jasmine After Rain, not Avatar franchise canon",
+    "location": "Ba Sing Se municipal inspections"
+  },
+  "biography": {
+    "established": "Junior official accompanying Inspector Han; recognizes posted inspection protocol, corrects a missing receipt, and apologizes for improper treatment of staff.",
+    "unwritten": "Past family, rank, private life and future decisions are not established."
+  },
+  "personality": {
+    "voice": "Careful procedural wording; nervous under pressure but able to correct her superior",
+    "flaws": "Initially looks away from unfair conduct instead of intervening",
+    "strengths": "Will return with documentation and acknowledge errors when others would disappear"
+  },
+  "agency": "Has independent responsibilities and may respectfully challenge Han; is not a plot device to praise Jasper or Iroh.",
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/33.json"
+  ],
+  "boundary": "Story-grounded original. No external canon or invented backstory."
+}
