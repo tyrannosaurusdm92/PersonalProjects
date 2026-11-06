@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 73421,
+  "total_word_count": 74190,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -103,7 +103,7 @@
       "number": 9,
       "file": "09.json",
       "title": "Tea for Two",
-      "word_count": 1503,
+      "word_count": 1775,
       "id": "avatar-09",
       "relationship_stage": "flirting",
       "next_chapter_id": "avatar-10"
@@ -319,7 +319,7 @@
       "number": 33,
       "file": "33.json",
       "title": "A Small Rebellion",
-      "word_count": 1234,
+      "word_count": 1485,
       "id": "avatar-33",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-34"
@@ -455,7 +455,7 @@
       "file": "48.json",
       "title": "The Dragon and the Demigod",
       "id": "avatar-48",
-      "word_count": 1822,
+      "word_count": 2068,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-49"
     },
@@ -495,5 +495,15 @@
     "preference": "polyamory",
     "consent": "informed, specific and revisable",
     "disclosure_before_initial_romance": true
+  },
+  "editorial_pass18": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      9,
+      33,
+      48
+    ],
+    "delta_words_from_index": 769,
+    "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
   }
 }
