@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 81459,
+  "total_word_count": 82633,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -146,7 +146,7 @@
       "number": 15,
       "file": "15.json",
       "title": "No One Is a Prize",
-      "word_count": 1507,
+      "word_count": 1817,
       "id": "maui-15",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-16"
@@ -210,7 +210,7 @@
       "file": "22.json",
       "title": "Tea, Salt and Smoke",
       "id": "maui-22",
-      "word_count": 1729,
+      "word_count": 2038,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-23"
     },
@@ -399,7 +399,7 @@
       "file": "43.json",
       "title": "The Right to Disagree",
       "id": "maui-43",
-      "word_count": 1550,
+      "word_count": 1830,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-44"
     },
@@ -453,7 +453,7 @@
       "file": "49.json",
       "title": "The Boats That Return",
       "id": "maui-49",
-      "word_count": 1677,
+      "word_count": 1952,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-50"
     },
