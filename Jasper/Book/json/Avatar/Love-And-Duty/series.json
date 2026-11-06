@@ -12,7 +12,7 @@
   "description": "In a postwar Cranefish Town becoming something new, an adult nonbender reader finds themself drawn into Aang, Katara, and Toph’s complicated orbit. Love grows through reconstruction work, public scrutiny, cultural preservation, arguments, chosen boundaries, and the daily work of building a home where nobody has to disappear to belong.",
   "canon_window": "Adult postwar timeline only: Jasper, Aang, Katara, and Toph are explicitly adults before romance/private-interlude content. Their original minor-era canon versions are never used for adult intimacy.",
   "chapter_count": 50,
-  "total_word_count": 78218,
+  "total_word_count": 78171,
   "story_bible": [
     "This postwar polycule story is built through reconstruction work, public responsibility, cultural difference, arguments, chosen boundaries, and ordinary domestic labor.",
     "Aang, Katara, and Toph must remain three distinct people with separate needs, humor, histories, responsibilities, and relationships with Jasper; never collapse them into one collective partner voice.",
@@ -276,7 +276,7 @@
       "number": 28,
       "file": "28.json",
       "title": "The Things Toph Will Not Say",
-      "word_count": 1792,
+      "word_count": 1740,
       "id": "Love-And-Duty-28",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "Love-And-Duty-29"
@@ -394,7 +394,7 @@
       "file": "41.json",
       "title": "A Bridge Is a Promise",
       "id": "love-and-duty-41",
-      "word_count": 1687,
+      "word_count": 1692,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "love-and-duty-42"
     },
