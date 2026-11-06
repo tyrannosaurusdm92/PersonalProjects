@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS13_CONTINUITY.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS13_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS14_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -501,5 +501,82 @@
     }
   ],
   "length_review_status": "300/300 chapter slots each >=1200 recorded words, but literary-depth parity remains a qualitative editorial review rather than a passed test.",
-  "future_content_status": "Seasonal labels, future story seeds and possible civic links are not events already depicted in prose."
+  "future_content_status": "Seasonal labels, future story seeds and possible civic links are not events already depicted in prose.",
+  "latest_voice_guide": "docs/VOICE_AND_DIALOGUE_PASS14.md",
+  "latest_causal_ledger": "json/lanternweald-pass14-continuity-ledger.json",
+  "fourteenth_pass_verified_scene_links": [
+    {
+      "series": "the-shore-i-choose",
+      "chapters": [
+        33,
+        45
+      ],
+      "details": [
+        "Greg's unfinished music keeps actual pier time limits",
+        "Pip's revised poster preserves volunteer credit and Maui's desire to be seen"
+      ]
+    },
+    {
+      "series": "after-always",
+      "chapters": [
+        46,
+        48
+      ],
+      "details": [
+        "Moonroot three-column evidence categorization",
+        "Severus corrects lantern fault without shaming child"
+      ]
+    },
+    {
+      "series": "jasmine-after-rain",
+      "chapters": [
+        20,
+        21,
+        43,
+        48
+      ],
+      "details": [
+        "Redundant end montage trimmed",
+        "Spare key does not imply staffing or exclusive romance",
+        "Iroh and Severus dispute map provenance",
+        "Maui and Iroh resolve their own disagreement"
+      ]
+    },
+    {
+      "series": "love-and-duty",
+      "chapters": [
+        46,
+        48
+      ],
+      "details": [
+        "Family dinner respects competing responsibilities",
+        "Amel and Beren each validate an otherwise incomplete water plan"
+      ]
+    },
+    {
+      "series": "what-the-armor-leaves-behind",
+      "chapters": [
+        44,
+        48
+      ],
+      "details": [
+        "Ash's private latch must work for its occupant",
+        "Renn and Aster help safely resolve generator outage"
+      ]
+    },
+    {
+      "series": "stars-between-the-strings",
+      "chapters": [
+        19,
+        47,
+        49
+      ],
+      "details": [
+        "Apartment bed chronology corrected",
+        "Nola ends the cleanup shift",
+        "Chords and structural evidence stay separate"
+      ]
+    }
+  ],
+  "status_note_pass14": "15 edited existing chapters exact-matched offline overlays; 300 total chapters preserved. Future seeds still distinct from events that have occurred on-page."
 }

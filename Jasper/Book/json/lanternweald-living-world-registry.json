@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 13,
+  "editorial_revision_pass": 14,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -591,7 +591,7 @@
       "premise": "A performer stops when their chosen shift ends"
     }
   ],
-  "revised_chapter_count_this_pass": 46,
+  "revised_chapter_count_this_pass": 15,
   "revised_chapter_slots_by_series_pass8": {
     "the-shore-i-choose": [
       2,
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 434237,
+  "manifest_word_count": 438674,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,8 +848,8 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS13_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS13_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS14_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
@@ -981,5 +981,47 @@
     "labor": "Mina, Renn, Nola, Ressa, Lio, Edda, Sela, Fen, Neri and other workers have independent roles, payment and authority.",
     "sensuality": "Affection and fade-to-black are consensual, shy or awkward as fits each character, but never explicit or used as recompense.",
     "seasons": "First Water, Long Tables, Borrowed Light, Warm Routes are optional narrative season-label conventions; planned scenes are not canonical events."
+  },
+  "latest_voice_guide": "docs/VOICE_AND_DIALOGUE_PASS14.md",
+  "latest_causal_ledger": "json/lanternweald-pass14-continuity-ledger.json",
+  "revised_chapter_slots_by_series_pass14": {
+    "the-shore-i-choose": [
+      33,
+      45
+    ],
+    "after-always": [
+      46,
+      48
+    ],
+    "jasmine-after-rain": [
+      20,
+      21,
+      43,
+      48
+    ],
+    "love-and-duty": [
+      46,
+      48
+    ],
+    "what-the-armor-leaves-behind": [
+      44,
+      48
+    ],
+    "stars-between-the-strings": [
+      19,
+      47,
+      49
+    ]
+  },
+  "fourteenth_pass_canon_rules": {
+    "reader_qa": "All 15 changed canonical chapter JSON bodies, IDs, titles, numbers and recorded word counts rechecked against complete pass14-a/b/c reader overlays.",
+    "on_page_causality": "Maui 33/45, Severus 46/48, Iroh 20/21/43/48, Love & Duty 46/48, Danse 44/48, Greg 19/47/49 now have expanded or cleaned specific cross-story scenes.",
+    "resident_agency": "Nola controls pier schedule; Pip controls artistic credits; Ash tests her own lock; Renn sets verified generator priorities; Mina is paid for shop labor; Amel can reject an unusable proposed water time.",
+    "historical_uncertainty": "Closed Bells keeper remains unknown; historic lower flood passage remains sealed; Greg's sound recording and Danse's gauge reading are different types of evidence.",
+    "worlds": "Ba Sing Se Jasmine Dragon and Beach City venues are independent from the Lanternweald, even when a protagonist visits by choice.",
+    "relationship_voice": "Adult first-person Jasper names ethical non-monogamy and a preference for polyamory; Maui, Iroh, Severus, Greg, Danse, Aang, Katara and Toph keep different conversational rhythms and autonomy.",
+    "romance": "Non-explicit sensuality; natural, mutual fade-to-black moments after relationship choices rather than task completion.",
+    "quality_limit": "All recorded chapters remain >=1,200 words, but literary-depth parity, exact voice and actual browser execution are not certified.",
+    "unwritten": "Future resident-led events and seasonal motifs may be developed in prose, but are not retrospective completed scenes."
   }
 }

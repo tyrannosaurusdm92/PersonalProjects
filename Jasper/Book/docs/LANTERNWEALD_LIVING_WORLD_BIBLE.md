@@ -260,3 +260,36 @@ The vale's economy is deliberately ordinary: a donation does not buy artistic pe
 Jasper narrates as an adult first-person reader-insert and explicitly states **ethical non-monogamy** and a preference for **polyamory**. The dialogue does not reduce Maui, Iroh, Greg, Severus, Aang/Katara/Toph and Danse to the same all-wise partner. Romance is allowed to be funny, sensual, shy, awkward, conflicted and chosen; it stays **non-explicit**, and a private fade-to-black is a natural choice, not a task reward. Partner jealousy does not create a right to surveillance, partner history is not discarded to make room, and a person returning home is still free to leave.
 
 **Current references:** `docs/LANTERNWEALD_PASS13_CONTINUITY.md` (what happened on-page and what remains folklore), `json/lanternweald-pass13-social-web.json` (district-to-district responsibilities and cross-novel character relationships), and `docs/PROSE_DEPTH_PASS13_AUDIT.md` (validated 46 chapter text/reader copies and the remaining quality limits). Earlier audits and bibles remain historical records; future story seeds are not retroactive events.
+
+
+## 20. Fourteenth editorial pass — the choices the village keeps (November 5, 2026)
+
+The fourteenth pass improves **15 existing chapter slots across all six novels**, primarily for character-specific dialogue, quieter sensory detail, practical consequences and connected-cast causality. A new full-scene rewrite of **Iroh 21** removes generic summary writing: Jasper receives a spare key above the Jasmine Dragon, Mina insists the key is not an unpaid staff contract, a damaged jar becomes a real inventory cost, and a passerby's memory of war remains uncomfortable even after the tea is poured. The redundant final montage of Iroh 20 and the double-night transition in Greg 19 were trimmed. Existing chapter IDs, 50-chapter linear structures, series endings and disclosed consensual polyamory remain intact.
+
+### Keys, notices and instruments are not ownership
+
+**Lanternwell** separates public help from private information. A notice can give accurate safe routes without displaying someone's personal romantic itinerary. **Moonroot** sorts observed facts, reported testimony and inference; neither Iroh's old map nor the damaged Closed Bells ledger can name a culpable keeper without real evidence. Jasper's chosen residence keys, Greg's Beach City home and Ash's Brasswatch privacy latch involve different physical doors but the same boundary: access is granted, tested and revisable by the people who live with the consequences. An apartment is not a claim on Jasper, and a workshop cannot advertise privacy with a lock its occupant cannot operate.
+
+**Tideglass and Starwake** listen to the coast differently. Greg may hear an unfinished song where Danse sees a structural instrument reading, Tamsin a questionable cleat, Fen a change in tide, and Maui an opportunity to help. The mistake is not noticing one aspect; it is claiming that aspect answers every other question. The lower historic flood passage remains **sealed**; its authorized upper inspection space and separate temporary surface-flow infrastructure are not a seventh visitor portal.
+
+**Riverstone** connects the public consequences of these decisions to neighbors such as Amel, who needs drinking-water deliveries at usable times; Beren, who knows whether a cart can actually turn; Sela, who must protect seedlings; and Edda, who checks whether a bridge approach can be navigated. Aang's hope, Katara's urgency and Toph's physical certainty are distinct perspectives. Their dinner cannot become an endless meeting just because Jasper loves all of them.
+
+**Brasswatch** makes Danse's changing sense of authority visible. When the power fails, Renn controls the critical-load sheet; Aster and Pip can identify the actual corridor problem; Ash can reject a latch that works better for its designer than its user. Danse remains proud and capable, but the civilian crew does not exist merely to admire him. **Starwake** needs Nola's schedule and the paid cleanup crew as much as Greg's music; an unpaid encore is not a substitute for an instrument inspection, and leaving a song unfinished is not a failure.
+
+### Routines, relationships and delight
+
+A living world also needs pleasures that aren't emergencies. Maui can be embarrassed that he still enjoys applause while carrying Pip's carefully repainted poster. Iroh can make an astonishingly bad bun joke and need someone to call a locksmith. Severus may be annoyed to discover a duck-shaped lantern is charming. Greg can hum a ridiculous response instead of using perfect relationship language. The delight depends on the characters having distinct blind spots, not on everybody stating the moral of the scene before the dishes are washed.
+
+Jasper is an adult first-person reader-insert who openly discloses being **ethically non-monogamous** and preferring **polyamory**. Each person they love is allowed their own thoughts, family, grief, obligations, other friendships and right to refuse. Sensual, awkward intimacy can move naturally to a private fade-to-black without becoming sexually explicit or implying that a partner has to earn time with Jasper through civic service.
+
+### Specific shared-world continuity to retain
+
+- Pip's public event poster now names volunteer work instead of appointing Maui sole hero. They may still paint privately and refuse a display request.
+- Nola's east bench can be booked; a performer does not automatically have the whole pier when a previous event ends.
+- Severus's damaged-ledger notes explicitly separate **observed / reported / inferred**.
+- Iroh's military map is a record of the planner's perspective; civilian lives outside its ink remain significant and cannot be exhibited without attention to provenance and community voice.
+- Amel's proposed water-delivery schedule and Beren's actual route check are complementary evidence, not proof that the plan has already been executed everywhere.
+- The room key in Ba Sing Se is not a paid employment contract, and Mina's staff time is not a gift automatically available to Iroh's guests.
+- Greg and Danse may hear the same Starwake note for different reasons without treating music as safety certification.
+
+**Future-writing labels are not events.** The four seasonal planning motifs (**First Water, Long Tables, Borrowed Light, Warm Routes**) and new voluntary resident-led gatherings are reference concepts, not retroactive additions to the novels. Detailed sources: `docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md`, `json/lanternweald-pass14-continuity-ledger.json`, `docs/VOICE_AND_DIALOGUE_PASS14.md` and `docs/PROSE_DEPTH_PASS14_AUDIT.md`. Browser and accessibility verification remain outstanding.
