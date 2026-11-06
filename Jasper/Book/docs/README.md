@@ -1,5 +1,8 @@
 # Jasper's Fanfiction Spot — Six Novels, 300 Written Chapters
 
+> **Latest editorial update — November 6, 2026, Pass 18:** All six novels remain 50 chapters each (300 total). Fourteen canonical chapters across the six series received targeted, in-place prose revisions (+3,385 words), including distinct Iroh/Greg dialogue, direct ethical-non-monogamy conversations, and concrete Lanternweald consequences. Two runtime overlay files were wired into `index.html` so the reader displays the revisions; five original supporting-character reference files were added. The updated six-series indexed total is **461,463 words**. This is not a complete 300-chapter line edit. See [PROSE_DEPTH_PASS18_AUDIT.md](PROSE_DEPTH_PASS18_AUDIT.md) for edited chapter numbers, verification, limitations, and remaining work.
+
+
 The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
 ## Current manuscripts: November 5, 2026
