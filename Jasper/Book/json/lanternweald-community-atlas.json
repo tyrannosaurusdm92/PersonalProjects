@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.community_atlas.v1",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "status": "editorial reference; established-on-page details distinguished from optional unwritten story seeds",
   "purpose": "Increase original cozy-village depth while preserving independent fictional homeworlds, six linear novels, community agency and existing endings",
   "districts": [
@@ -415,7 +415,7 @@
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
   "latest_prose_continuity": "docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS14_AUDIT.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS18_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -578,5 +578,57 @@
       ]
     }
   ],
-  "status_note_pass14": "15 edited existing chapters exact-matched offline overlays; 300 total chapters preserved. Future seeds still distinct from events that have occurred on-page."
+  "status_note_pass14": "15 edited existing chapters exact-matched offline overlays; 300 total chapters preserved. Future seeds still distinct from events that have occurred on-page.",
+  "pass18_verified_scene_connections": [
+    {
+      "district": "Jasmine Steps",
+      "chapters": [
+        "Jasmine After Rain 09",
+        "Jasmine After Rain 33",
+        "Jasmine After Rain 48"
+      ],
+      "consequence": "Iroh's former military habits can create overreach; Mina's paid shift, actual ventilation design and safety decisions remain hers to contest."
+    },
+    {
+      "district": "Riverstone Terrace",
+      "chapters": [
+        "Love & Duty 11",
+        "Love & Duty 47"
+      ],
+      "consequence": "The polycule's agreements require distinct consent and time to respond. A loose kite anchor closes the affected festival section until stewards permit use."
+    },
+    {
+      "district": "Lanternwell Square / Tideglass Cove",
+      "chapters": [
+        "The Shore I Choose 08",
+        "The Shore I Choose 34"
+      ],
+      "consequence": "Neri safeguards traveler memory privacy while dock repair costs and workers' schedules cannot be erased by Maui's strength."
+    },
+    {
+      "district": "Brasswatch Yard",
+      "chapters": [
+        "What the Armor Leaves Behind 17",
+        "What the Armor Leaves Behind 36"
+      ],
+      "consequence": "Danse documents risks and technical limits; he doesn't assume that military maintenance skills qualify him to repair every kind of object."
+    },
+    {
+      "district": "Moonroot Archive",
+      "chapters": [
+        "After Always 09",
+        "After Always 44"
+      ],
+      "consequence": "Records and letters may be preserved without public disclosure. The rightful recipient controls publication, and transport closures require honest official notices."
+    },
+    {
+      "district": "Starwake Pier",
+      "chapters": [
+        "Stars Between the Strings 08",
+        "Stars Between the Strings 35",
+        "Stars Between the Strings 46"
+      ],
+      "consequence": "Greg gives polyamory a considered response and must verify actual stage bookings, fuel and equipment. A technician can remove a failed cable from service."
+    }
+  ]
 }
