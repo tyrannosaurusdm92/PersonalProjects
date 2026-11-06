@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 71886,
+  "total_word_count": 72105,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -202,7 +202,7 @@
       "number": 20,
       "file": "20.json",
       "title": "The Tea That Stays",
-      "word_count": 1504,
+      "word_count": 1368,
       "id": "avatar-20",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "avatar-21"
@@ -211,7 +211,7 @@
       "number": 21,
       "file": "21.json",
       "title": "The Lotus Opens",
-      "word_count": 1407,
+      "word_count": 1762,
       "id": "avatar-21",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-22"
