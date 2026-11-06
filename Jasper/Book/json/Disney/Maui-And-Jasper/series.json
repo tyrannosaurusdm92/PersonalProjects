@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 82943,
+  "total_word_count": 83289,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -363,7 +363,7 @@
       "file": "39.json",
       "title": "The Keeper's Refusal",
       "id": "maui-39",
-      "word_count": 1773,
+      "word_count": 2119,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-40"
     },
@@ -488,5 +488,13 @@
     ],
     "delta_words_from_index": 432,
     "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
+  },
+  "editorial_pass19": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      39
+    ],
+    "added_words_to_index": 346,
+    "scope": "Targeted in-place prose pass, preserving all 50 chapters."
   }
 }
