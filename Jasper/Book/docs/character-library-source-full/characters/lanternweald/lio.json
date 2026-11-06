@@ -1,0 +1,22 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Lio",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Tideglass landing"
+  },
+  "biography": {
+    "on_page": "Operates a skiff and transports real tools, messages and cargo",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Directly concerned with mooring, timing and agreed loads",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "A message requires a real trip; never assume an impossible instantaneous crossing",
+  "manuscript_sources": [
+    "Jasper/Book/json/Disney/Maui-And-Jasper/49.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}

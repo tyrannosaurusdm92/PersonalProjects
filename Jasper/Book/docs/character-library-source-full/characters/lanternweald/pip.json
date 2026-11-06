@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Pip",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Lanternwell Square / Starwake Pier"
+  },
+  "biography": {
+    "on_page": "Artist who designs public signs, posters and lanterns",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Visual jokes and precise boundaries; wants paid, credited work",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "Artwork and public information must not become gossip or an unpaid order",
+  "manuscript_sources": [
+    "Jasper/Book/json/Disney/Maui-And-Jasper/36.json",
+    "Jasper/Book/json/Disney/Maui-And-Jasper/45.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Nola",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Starwake Pier"
+  },
+  "biography": {
+    "on_page": "Coordinates music bookings and contracted sound-crew schedules",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Clear deadlines and crew rates; pushes back against unpaid improvisation",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "Her schedule and technicians do not belong to a musician's goodwill",
+  "manuscript_sources": [
+    "Jasper/Book/json/SU/Stars-Between-The-Strings/42.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}

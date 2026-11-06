@@ -1,0 +1,22 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Jun",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Ba Sing Se relief kitchen"
+  },
+  "biography": {
+    "on_page": "Original fanfiction cook managing supplies and meal service",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Directly asks what stock actually exists; not overawed by Iroh's rank",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "Iroh may volunteer for assigned tasks but never commandeer her kitchen",
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/37.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Vel",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Lanternwell communal spaces"
+  },
+  "biography": {
+    "on_page": "Neighbor who mistaken kindness for a claim on a recipient's future",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Defensive when corrected, capable of hard conversations",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "No apology demands forgiveness or anyone's travel details",
+  "manuscript_sources": [
+    "Jasper/Book/json/Disney/Maui-And-Jasper/27.json",
+    "Jasper/Book/json/Disney/Maui-And-Jasper/49.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}

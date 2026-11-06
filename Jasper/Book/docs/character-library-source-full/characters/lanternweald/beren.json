@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Beren",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Riverstone Terrace"
+  },
+  "biography": {
+    "on_page": "Cart delivery worker whose route reveals unsafe crossings",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Straightforward, focused on turns, loads and missed deliveries",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "Public works must account for his real lost time",
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Love-And-Duty/24.json",
+    "Jasper/Book/json/Avatar/Love-And-Duty/41.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Mina",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Jasmine Dragon, Ba Sing Se"
+  },
+  "biography": {
+    "on_page": "Original fanfiction colleague who handles tea-shop operations and shifts",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Wry, businesslike, can refuse extra hours without debating Iroh's dignity",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "Wages and schedules cannot be borrowed without permission",
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/12.json",
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/26.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}

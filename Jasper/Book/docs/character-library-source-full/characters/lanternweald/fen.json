@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Fen",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Tideglass Cove"
+  },
+  "biography": {
+    "on_page": "Works with tide charts, salt measurements and safe coastal access",
+    "history": "Only facts established in the linked manuscripts; unwritten history remains open"
+  },
+  "personality": {
+    "voice": "Dates measurements, resists untested promises, not intimidated by famous visitors",
+    "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
+  },
+  "agency": "Never declares a landing safe at all tides or the old underground route reopened",
+  "manuscript_sources": [
+    "Jasper/Book/json/Disney/Maui-And-Jasper/22.json",
+    "Jasper/Book/json/Disney/Maui-And-Jasper/43.json"
+  ],
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+}
