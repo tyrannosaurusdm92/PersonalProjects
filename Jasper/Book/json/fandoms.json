@@ -21,7 +21,7 @@
       "story_type": "linear_fanfiction",
       "chapter_count": 50,
       "choice_count": 0,
-      "total_word_count": 75921,
+      "total_word_count": 76850,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -56,7 +56,7 @@
       "story_type": "linear_fanfiction",
       "chapter_count": 50,
       "choice_count": 0,
-      "total_word_count": 78944,
+      "total_word_count": 79965,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -91,7 +91,7 @@
       "story_type": "linear_fanfiction",
       "chapter_count": 50,
       "choice_count": 0,
-      "total_word_count": 78569,
+      "total_word_count": 79485,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -126,7 +126,7 @@
       "story_type": "linear_fanfiction",
       "chapter_count": 50,
       "choice_count": 0,
-      "total_word_count": 74825,
+      "total_word_count": 75779,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -161,7 +161,7 @@
       "story_type": "linear_fanfiction",
       "chapter_count": 50,
       "choice_count": 0,
-      "total_word_count": 77435,
+      "total_word_count": 78357,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -196,7 +196,7 @@
       "story_type": "linear_fanfiction",
       "chapter_count": 50,
       "choice_count": 0,
-      "total_word_count": 83289,
+      "total_word_count": 84234,
       "adult_characters_confirmed": true,
       "consenting_adults_confirmed": true,
       "explicit_branching": false,
@@ -214,7 +214,7 @@
       }
     }
   ],
-  "total_word_count": 468983,
+  "total_word_count": 474670,
   "audience": {
     "private_project": true,
     "sole_reader": "Jasper",
@@ -280,5 +280,5 @@
   "target_chapters": 300,
   "next_unwritten_chapter_count": 0,
   "last_synced_date": "2026-11-06",
-  "latest_editorial_pass": 19
+  "latest_editorial_pass": 20
 }
