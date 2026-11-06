@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 74190,
+  "total_word_count": 75921,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -238,7 +238,7 @@
       "number": 24,
       "file": "24.json",
       "title": "A Question Worth Asking",
-      "word_count": 1298,
+      "word_count": 1656,
       "id": "avatar-24",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-25"
@@ -310,7 +310,7 @@
       "number": 32,
       "file": "32.json",
       "title": "The Things Iroh Cannot Carry",
-      "word_count": 1233,
+      "word_count": 1574,
       "id": "avatar-32",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-33"
@@ -328,7 +328,7 @@
       "number": 34,
       "file": "34.json",
       "title": "Under the Same Lantern",
-      "word_count": 1285,
+      "word_count": 1610,
       "id": "avatar-34",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-35"
@@ -382,7 +382,7 @@
       "number": 40,
       "file": "40.json",
       "title": "Jasmine After Rain",
-      "word_count": 1202,
+      "word_count": 1554,
       "id": "avatar-40",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-41"
@@ -400,7 +400,7 @@
       "number": 42,
       "file": "42.json",
       "title": "Six Tables and One Teapot",
-      "word_count": 1247,
+      "word_count": 1602,
       "id": "avatar-42",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-43"
@@ -505,5 +505,17 @@
     ],
     "delta_words_from_index": 769,
     "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
+  },
+  "editorial_pass19": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      24,
+      32,
+      34,
+      40,
+      42
+    ],
+    "added_words_to_index": 1731,
+    "scope": "Targeted in-place prose pass, preserving all 50 chapters."
   }
 }
