@@ -1,0 +1,23 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Inspector Han",
+    "origin": "Original supporting character in Jasmine After Rain, not Avatar franchise canon",
+    "location": "Ba Sing Se municipal sanitation service"
+  },
+  "biography": {
+    "established": "Arrives expecting preferential treatment; demands records and completes a real inspection; finds issues that still require correction.",
+    "unwritten": "His superiors, motives beyond observed status-seeking, and family are not established."
+  },
+  "personality": {
+    "voice": "Title-forward, curt and procedural when convenient",
+    "flaws": "Mistakes public authority for personal entitlement",
+    "strengths": "Technical concerns must not be dismissed merely because his manners are poor"
+  },
+  "agency": "He can issue legitimate findings, subject to protocol, without being transformed into a caricature or allowed to abuse staff.",
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/33.json"
+  ],
+  "boundary": "Story-grounded original. No external canon or invented backstory."
+}
