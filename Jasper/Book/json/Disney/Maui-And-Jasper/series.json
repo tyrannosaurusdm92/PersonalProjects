@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 68322,
+  "total_word_count": 68010,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -87,7 +87,7 @@
       "file": "08.json",
       "title": "What the Door Kept",
       "id": "maui-08",
-      "word_count": 1442,
+      "word_count": 1240,
       "next_chapter_id": "maui-09"
     },
     {
@@ -372,7 +372,7 @@
       "file": "40.json",
       "title": "A Day of Ordinary Things",
       "id": "maui-40",
-      "word_count": 1477,
+      "word_count": 1367,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-41"
     },
