@@ -1,0 +1,24 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Niko",
+    "provenance": "Original supporting character from the Brasswatch Workshop chapters",
+    "setting": "Brasswatch Yard, Lanternweald"
+  },
+  "biography": {
+    "on_page": "Beginning workshop student, worried that a worn fitting or rejected part means personal failure; learns safe inspection and labeling under Danse and Renn.",
+    "unknown": "Age, homeworld, family and past schooling not established; use neutral references until narrated."
+  },
+  "personality": {
+    "voice": "Curious, easily discouraged by technical failure, asks concrete questions about what a label or tool result means.",
+    "motivation": "Learn repairs safely without being punished for not already knowing.",
+    "conflict": "Has to distinguish a failed component from a failed person.",
+    "character_action": "Can ask for another lesson, save a defective part for a tagged demonstration only with staff approval, and teach another learner what the defect looks like."
+  },
+  "agency": "Their decisions and questions guide the lesson; Danse must not override or use the student as a proof of his own redemption.",
+  "manuscript_sources": [
+    "Jasper/Book/json/FO4/What-The-Armor-Leaves-Behind/50.json"
+  ],
+  "boundary": "Source-grounded original; age and other personal biography are not inferred."
+}
