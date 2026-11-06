@@ -1,0 +1,69 @@
+{
+  "schema_version": "jasper.supporting-character.v1",
+  "profile_type": "generator_character_profile",
+  "id": "su-vidalia",
+  "name": "Vidalia",
+  "fandom": "Steven Universe",
+  "provenance": "canon_researched_from_episodes_and_character_guides",
+  "age_status": "adult",
+  "identity": {
+    "role": "Beach City mother, painter and longtime acquaintance of Greg and Amethyst",
+    "fictional_character": true,
+    "continuity_scope": "Steven Universe canon / optional post-Future supporting character use"
+  },
+  "personality": {
+    "core_traits": [
+      "direct",
+      "creative",
+      "protective",
+      "has changed her lifestyle as a parent without losing her independent streak"
+    ],
+    "motivations": [
+      "Caring for Sour Cream and Onion",
+      "Art and self-expression",
+      "Keeping children's wellbeing ahead of entertainment business pressure"
+    ]
+  },
+  "voice": {
+    "register": "Plainspoken, skeptical of empty charm and quick to correct presumptions.",
+    "dialogue_tendencies": [
+      "Plainspoken, skeptical of empty charm and quick to correct presumptions.",
+      "Prefers practical checks and candid statements over sentimental rescue speeches."
+    ],
+    "writer_rules": [
+      "Keep character-specific emotional logic distinct from all six romance leads.",
+      "Do not assign new biography or dating history to a character without writing it as original fanfiction, not canon."
+    ]
+  },
+  "relationships": {
+    "Greg Universe": "Old friend; has previously entrusted him with babysitting, despite frustration with his immature choices.",
+    "Sour Cream": "Son with Marty.",
+    "Onion": "Son with Yellowtail.",
+    "Yellowtail": "Spouse.",
+    "Marty": "Former partner.",
+    "Amethyst": "Old friend and an artistic muse."
+  },
+  "capabilities": [
+    "visual art",
+    "parenting"
+  ],
+  "generator_use": {
+    "best_story_functions": [
+      "Greg history",
+      "Beach City friendships and boundaries",
+      "music-business consequences"
+    ],
+    "avoid": [
+      "automatic acceptance of Jasper's relationship arrangement",
+      "retconning documented canon family ties"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Vidalia",
+      "url": "https://steven-universe.fandom.com/wiki/Vidalia",
+      "source_type": "series episode transcript or community character guide"
+    }
+  ],
+  "research_notes": "Source-backed character profile; don't mistake unrecorded personal details or a future cameo for series canon."
+}
