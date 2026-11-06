@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 79060,
+  "total_word_count": 80021,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -201,7 +201,7 @@
       "file": "21.json",
       "title": "The Guest Who Stayed",
       "id": "maui-21",
-      "word_count": 1420,
+      "word_count": 1639,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-22"
     },
@@ -237,7 +237,7 @@
       "file": "25.json",
       "title": "Mereana Returns",
       "id": "maui-25",
-      "word_count": 1671,
+      "word_count": 1907,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-26"
     },
@@ -363,7 +363,7 @@
       "file": "39.json",
       "title": "The Keeper's Refusal",
       "id": "maui-39",
-      "word_count": 1553,
+      "word_count": 1773,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-40"
     },
@@ -417,7 +417,7 @@
       "file": "45.json",
       "title": "The Last Big Performance",
       "id": "maui-45",
-      "word_count": 1839,
+      "word_count": 2125,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-46"
     },

@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 72143,
+  "total_word_count": 72378,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -274,7 +274,7 @@
       "number": 28,
       "file": "28.json",
       "title": "The Game We Change",
-      "word_count": 1276,
+      "word_count": 1511,
       "id": "avatar-28",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-29"

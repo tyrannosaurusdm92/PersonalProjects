@@ -12,7 +12,7 @@
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
   "chapter_count": 50,
-  "total_word_count": 71186,
+  "total_word_count": 71428,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -328,7 +328,7 @@
       "number": 34,
       "file": "34.json",
       "title": "The Potion He Cannot Brew",
-      "word_count": 1361,
+      "word_count": 1603,
       "id": "after-always-34",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "after-always-35"
