@@ -506,5 +506,20 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": "2026-09-20-full-material-hub",
+  "character_voice_pass20": {
+    "date": "2026-11-06",
+    "canon_and_story_context": "Wartime spy and precise Potions specialist, capable of tenderness without emotional absolution.",
+    "voice_rules": [
+      "Questions evidence, contaminated samples and provenance before offering certainty.",
+      "Uses curt, sardonic phrasing, not Iroh's balanced sayings or Greg's joking lyrics.",
+      "Can admit an evidence-preservation mistake and still resent the damage; romance is not pardon."
+    ],
+    "scenes": [
+      "After Always 08 - damaged vandalism evidence documented",
+      "After Always 18 - rainy Hogsmeade date and injured hand",
+      "After Always 42 - map debate with Iroh, with Neri in charge"
+    ],
+    "boundary": "Original fanfiction scenes; do not claim these are licensed canon events."
+  }
 }
