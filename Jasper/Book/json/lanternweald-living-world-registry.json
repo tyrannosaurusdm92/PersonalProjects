@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.living_world.v1",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "status": "canon reference for six completed 50-chapter prose sequences",
   "total_written_chapters": 300,
   "distinct_series": 6,
@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 14,
+  "editorial_revision_pass": 18,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 438674,
+  "manifest_word_count": 461463,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,7 +848,7 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS14_AUDIT.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS18_AUDIT.md",
   "latest_continuity": "docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
@@ -1023,5 +1023,39 @@
     "romance": "Non-explicit sensuality; natural, mutual fade-to-black moments after relationship choices rather than task completion.",
     "quality_limit": "All recorded chapters remain >=1,200 words, but literary-depth parity, exact voice and actual browser execution are not certified.",
     "unwritten": "Future resident-led events and seasonal motifs may be developed in prose, but are not retrospective completed scenes."
-  }
+  },
+  "revised_chapter_slots_by_series_pass18": {
+    "jasmine-after-rain": [
+      9,
+      33,
+      48
+    ],
+    "love-and-duty": [
+      11,
+      47
+    ],
+    "the-shore-i-choose": [
+      8,
+      34
+    ],
+    "what-the-armor-leaves-behind": [
+      17,
+      36
+    ],
+    "after-always": [
+      9,
+      44
+    ],
+    "stars-between-the-strings": [
+      8,
+      35,
+      46
+    ]
+  },
+  "eighteenth_pass_world_rules": [
+    "A Threadway's travel-safety notice is separate from private names, memories and destination access.",
+    "Legitimate staff hours, safety inspection costs, stage bookings and repair liabilities persist regardless of heroic participants.",
+    "Independent characters can reject visitors' solutions without becoming enemies or romantic obstacles.",
+    "The sealed historic Closed Bells lower passage remains closed; this pass does not resolve the keeper's identity."
+  ]
 }
