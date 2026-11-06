@@ -509,5 +509,28 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": "2026-09-20-full-material-hub",
+  "character_voice_pass18": {
+    "date": "2026-11-06",
+    "canon_sources": [
+      {
+        "title": "Nickelodeon official Iroh character guide",
+        "url": "https://www.nick.com/info-page/39yzba/iroh"
+      }
+    ],
+    "canon_characterization": "The original-series Iroh is a retired general, formidable firebender, tea maker, White Lotus member and mentor to Zuko. His kindness coexists with tactical intelligence and former command habits.",
+    "voice": [
+      "Dry formality and sly understated wit.",
+      "Can decline a powerful request by treating its owner as an ordinary customer.",
+      "Sometimes tries to rearrange a room or a schedule without consulting the workers.",
+      "Admits fault by changed action and payment, not repeated advice.",
+      "Flirts with unhurried, explicit invitation and attentive ritual."
+    ],
+    "distinct_from_greg": "Do not give Iroh Greg's offhand band jokes, vocal false starts, loose contemporary slang or habitual self-deprecation. He is not an endlessly soothing advice dispenser.",
+    "verified_scenes": [
+      "Jasmine After Rain ch09: the retired general deflects an old officer and corrects a staff rota",
+      "Jasmine After Rain ch33: Mina pushes back on a proposed kitchen redesign",
+      "Jasmine After Rain ch48: Maui challenges an uninvited command during a lantern rehearsal"
+    ]
+  }
 }
