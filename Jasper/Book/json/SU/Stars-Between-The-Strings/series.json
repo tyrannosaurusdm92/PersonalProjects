@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 70562,
+  "total_word_count": 72269,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -319,7 +319,7 @@
       "number": 33,
       "file": "33.json",
       "title": "A Door in the Wall",
-      "word_count": 909,
+      "word_count": 1288,
       "id": "su-33",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-34"
@@ -364,7 +364,7 @@
       "number": 38,
       "file": "38.json",
       "title": "A Future with Windows",
-      "word_count": 1084,
+      "word_count": 1423,
       "id": "su-38",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-39"
@@ -382,7 +382,7 @@
       "number": 40,
       "file": "40.json",
       "title": "Stars Between the Strings",
-      "word_count": 1170,
+      "word_count": 1496,
       "id": "su-40",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-41"
@@ -418,7 +418,7 @@
       "number": 44,
       "file": "44.json",
       "title": "The Trouble with Requests",
-      "word_count": 1099,
+      "word_count": 1413,
       "id": "su-44",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-45"
@@ -437,7 +437,7 @@
       "file": "46.json",
       "title": "The Listening Fair",
       "id": "su-46",
-      "word_count": 1114,
+      "word_count": 1463,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-47"
     },
