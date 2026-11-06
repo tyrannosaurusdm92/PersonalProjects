@@ -499,5 +499,28 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": "2026-09-20-full-material-hub",
+  "character_voice_pass18": {
+    "date": "2026-11-06",
+    "canon_sources": [
+      {
+        "title": "Steven Universe character overview",
+        "url": "https://en.wikipedia.org/wiki/List_of_Steven_Universe_characters"
+      }
+    ],
+    "canon_characterization": "Greg Universe is Steven's father, a former traveling musician and Beach City car-wash owner. Music, improvisation, freedom after a controlling upbringing, Rose's loss and responsibility toward Steven shape his choices.",
+    "voice": [
+      "Informal false starts, jokes that almost become song lyrics, and unpolished sincerity.",
+      "Knows practical sound equipment, strings, stages, cables, transportation and gig logistics.",
+      "Can use humor to hide anxiety or agree too quickly; must be allowed to say no.",
+      "Supports polyamory discussions by asking real questions rather than automatically approving them.",
+      "Flirts through improvised silliness and awkward directness, not carefully staged tea rituals."
+    ],
+    "distinct_from_iroh": "Greg is not a former general or ceremonial philosopher; he should not speak in elegant paradoxes or silently arrange everyone into strategic positions.",
+    "verified_scenes": [
+      "Stars Between the Strings ch08: he processes Jasper's explicit polyamory disclosure without a scripted yes",
+      "Stars Between the Strings ch35: he checks booking, fuel and equipment rather than relying on sentiment",
+      "Stars Between the Strings ch46: he mutes a faulty sound channel and respects the technician's work"
+    ]
+  }
 }
