@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS14_CAUSAL_ATLAS.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS18_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS19_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS19_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -629,6 +629,104 @@
         "Stars Between the Strings 46"
       ],
       "consequence": "Greg gives polyamory a considered response and must verify actual stage bookings, fuel and equipment. A technician can remove a failed cable from service."
+    }
+  ],
+  "pass19_verified_scene_connections": [
+    {
+      "district": "Jasmine Steps",
+      "chapters": [
+        "Jasmine After Rain 24",
+        "Jasmine After Rain 32",
+        "Jasmine After Rain 34",
+        "Jasmine After Rain 40"
+      ],
+      "residents": [
+        "Iroh",
+        "Mina",
+        "Bo"
+      ],
+      "consequence": "Iroh corrects a presumptive White Lotus staff rota, does not falsely certify uninspected routes, pays workers for shifted delivery hours, and accepts that old war memories have independent claimants."
+    },
+    {
+      "district": "Lanternwell Square",
+      "chapters": [
+        "Jasmine After Rain 42",
+        "The Shore I Choose 39"
+      ],
+      "residents": [
+        "Mara",
+        "Neri",
+        "Orin",
+        "Edda",
+        "Lio",
+        "Fen"
+      ],
+      "consequence": "The Six Tables feast records actual food and volunteer limitations. At the Closed Bells testimony review, traveler Threadways are distinguished from the still-sealed lower maintenance passage."
+    },
+    {
+      "district": "Riverstone Terrace",
+      "chapters": [
+        "Love & Duty 44"
+      ],
+      "residents": [
+        "Sela",
+        "Aang",
+        "Toph",
+        "Katara"
+      ],
+      "consequence": "Aerial runoff mapping remains provisional until local growers, the clinic and on-the-ground inspectors are consulted; Appa never lands on garden beds by right."
+    },
+    {
+      "district": "Brasswatch Yard",
+      "chapters": [
+        "What the Armor Leaves Behind 50"
+      ],
+      "residents": [
+        "Danse",
+        "Renn",
+        "Ash",
+        "Niko",
+        "Edda"
+      ],
+      "consequence": "A defective training fitting is tagged demonstration-only; staff and travelers retain access and schedule authority instead of being put under military command."
+    },
+    {
+      "district": "Moonroot Archive / Spinner's End",
+      "chapters": [
+        "After Always 16",
+        "After Always 17",
+        "After Always 28",
+        "After Always 29",
+        "After Always 37",
+        "After Always 38",
+        "After Always 50"
+      ],
+      "residents": [
+        "Severus",
+        "Jasper",
+        "Neri",
+        "Orin"
+      ],
+      "consequence": "Evidence correction and privacy practices have real consequences; lost work cannot be excused with romance; an unverified keeper name stays an unverified lead, never a public revelation."
+    },
+    {
+      "district": "Starwake Pier / Beach City",
+      "chapters": [
+        "Stars Between the Strings 26",
+        "Stars Between the Strings 27",
+        "Stars Between the Strings 29",
+        "Stars Between the Strings 30",
+        "Stars Between the Strings 33",
+        "Stars Between the Strings 36",
+        "Stars Between the Strings 39",
+        "Stars Between the Strings 41"
+      ],
+      "residents": [
+        "Greg",
+        "Pilar",
+        "Ellis"
+      ],
+      "consequence": "Music equipment is borrowed, returned and safely inspected; volunteers choose their hours; Greg does not volunteer Jasper's time or silently accept an exclusive-romance publicity framing."
     }
   ]
 }
