@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 68010,
+  "total_word_count": 68720,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -309,7 +309,7 @@
       "file": "33.json",
       "title": "The Unfinished Song",
       "id": "maui-33",
-      "word_count": 1226,
+      "word_count": 1561,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-34"
     },
@@ -417,7 +417,7 @@
       "file": "45.json",
       "title": "The Last Big Performance",
       "id": "maui-45",
-      "word_count": 1259,
+      "word_count": 1634,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-46"
     },
