@@ -1,0 +1,24 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-06",
+  "identity": {
+    "name": "Pilar",
+    "provenance": "Original supporting character created for Jasper's Steven Universe fanfiction; not an official Steven Universe character",
+    "setting": "Beach City community center"
+  },
+  "biography": {
+    "on_page": "Community-center organizer managing posted schedules, volunteer labor, repair budgets and donor conditions; rejects financing that would trade public program autonomy for sponsor control.",
+    "unknown": "Age, personal relationships, earlier career, physical appearance beyond what is written in the chapters."
+  },
+  "personality": {
+    "voice": "Direct, practical, capable of dry responses to Greg's jokes when they interrupt a meeting.",
+    "motivations": "Keep the community room affordable, safe, accessible and under local decision-making.",
+    "conflict": "Must negotiate donated resources without letting donors own programming or make uncompensated staff work invisible.",
+    "unique_dialogue_rule": "Does not deliver Iroh-like philosophical summaries or Greg-like musical banter. Names the specific decision, cost or schedule."
+  },
+  "agency": "Can reject Greg volunteering Jasper without permission and can enforce safety closures until qualified inspections occur.",
+  "manuscript_sources": [
+    "Jasper/Book/json/SU/Stars-Between-The-Strings/30.json"
+  ],
+  "boundary": "Source-grounded original character, not researched licensed canon; leave unestablished details open."
+}
