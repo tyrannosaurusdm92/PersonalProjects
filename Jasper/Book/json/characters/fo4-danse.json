@@ -501,5 +501,20 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": "2026-09-20-full-material-hub",
+  "character_voice_pass20": {
+    "date": "2026-11-06",
+    "canon_and_story_context": "Former Brotherhood paladin whose tactical competence must coexist with other people's consent and technical authority.",
+    "voice_rules": [
+      "Direct tactical vocabulary and concrete assessment, not generic reassuring speeches.",
+      "Haylen chooses her own suitable shifts; Danse may not convert concern into command.",
+      "A Brotherhood courier insignia can expose a network; personal correspondence must remain private."
+    ],
+    "scenes": [
+      "What the Armor Leaves Behind 08 - relay-station retreat",
+      "What the Armor Leaves Behind 18 - Haylen's self-directed work",
+      "What the Armor Leaves Behind 42 - letter and workshop privacy"
+    ],
+    "boundary": "Original fanfiction scenes; maintain Brotherhood history and established story chronology."
+  }
 }
