@@ -25,13 +25,20 @@ This folder is a research and writing resource. It does not claim religious auth
 - 10_CHARACTER_AND_SCENE_TOOLKIT.md — dialogue, motivations, scenes, relationships and portrayal checklist.
 - 11_GLOSSARY.md — concise terms with context and cautions.
 - 12_ANNOTATED_SOURCES.md — research bibliography, links, provenance and source limitations.
+- 13_PERSONALITY_REWRITE_CANON.md — applied Disney-film Maui voice, emotional/romance engine, 50-chapter arc and crossover safeguards.
 - research_index.json — machine-readable guide to contents, strata and source IDs.
 
 ## Continuity with Jasper/Book
 
 Existing canon: six connected Lanternweald novels, with Maui/Jasper's The Shore I Choose at 50 chapters; Jasper narrates in first person and their ethically non-monogamous/polyamorous arrangements are explicit, consensual and non-exclusive. Maui is warm, competitive, theatrical, emotionally vulnerable and learning not to confuse strength with entitlement. The living-world's community labor, safety decisions, tides, visitor agency and sealed lower drainage passage must remain as currently written.
 
-Existing source material that is **not overwritten**:
+## November 5, 2026 — characterization pass now applied
+
+After the original research library was assembled, the user requested a complete personality correction for the Disney Maui character. **All 50 canonical Maui chapter JSON files have now received a tailored character-voice revision**; the old chapter numbers, relationships and endings remain. Changes are also loaded through five source-complete reader overlays in `../js/maui-personality-rewrite-01-10.js` to `../js/maui-personality-rewrite-41-50.js` before `js/app.js`.
+
+The new characterization guide is `13_PERSONALITY_REWRITE_CANON.md`. Its priority is film canon, not a synthesized universal Polynesian mythology. The original research documents remain intact and remain separate from applied prose. Future editorial revisions must preserve his swagger, physical comedy, magical hook, Mini Maui, jealousy, warmth, ambition, quick banter and fear of abandonment even when he is making better choices.
+
+**Original reference files retained (not rewritten by the research pass):**
 - ../json/Disney/Maui-And-Jasper/series.json and chapters 01–50
 - ../json/characters/disney-maui.json
 - ../docs/MAUI_CULTURAL_NOTES.md

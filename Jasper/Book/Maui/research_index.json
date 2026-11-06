@@ -7,7 +7,8 @@
     "published_chapters": 50,
     "relative_story_manifest": "../json/Disney/Maui-And-Jasper/series.json",
     "relative_character_profile": "../json/characters/disney-maui.json",
-    "existing_cultural_notes": "../docs/MAUI_CULTURAL_NOTES.md"
+    "existing_cultural_notes": "../docs/MAUI_CULTURAL_NOTES.md",
+    "characterization_status": "Applied to all 50 The Shore I Choose chapters with source-matching offline-reader overrides; selected crossover scenes are tracked separately"
   },
   "strata": [
     {
@@ -48,7 +49,8 @@
     "09_LANTERNWEALD_INTEGRATION.md",
     "10_CHARACTER_AND_SCENE_TOOLKIT.md",
     "11_GLOSSARY.md",
-    "12_ANNOTATED_SOURCES.md"
+    "12_ANNOTATED_SOURCES.md",
+    "13_PERSONALITY_REWRITE_CANON.md"
   ],
   "research_institutions": [
     "Te Ara Encyclopedia of New Zealand",
@@ -67,5 +69,20 @@
     "Avoid unconsulted tribal tattoo designs, ritual choreography, sacred genealogy and place-bound taniwha",
     "Attribute culture-specific and version-specific claims"
   ],
-  "release_status": "sourcebook created; manuscript unchanged; cultural sensitivity review recommended"
+  "release_status": "Sourcebook retained; film-voice characterization corrections applied to existing 50-chapter Maui novel; cultural sensitivity review still recommended for specific living tikanga.",
+  "applied_personality_rewrite": {
+    "date": "2026-11-05",
+    "film_source": "01_DISNEY_CANON.md",
+    "writing_source": "10_CHARACTER_AND_SCENE_TOOLKIT.md",
+    "applied_canon": "13_PERSONALITY_REWRITE_CANON.md",
+    "canonical_chapters_targeted": 50,
+    "reader_overlays": [
+      "maui-personality-rewrite-01-10.js",
+      "maui-personality-rewrite-11-20.js",
+      "maui-personality-rewrite-21-30.js",
+      "maui-personality-rewrite-31-40.js",
+      "maui-personality-rewrite-41-50.js"
+    ],
+    "cultural_layer": "Separate film adaptations from Māori traditions and modern Māori performance; no unconsulted sacred content."
+  }
 }

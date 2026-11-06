@@ -75,3 +75,8 @@ Ask these ten questions when deepening an existing Maui chapter:
 ## Community consultant questions
 
 For a culture-specific scene ask a knowledgeable Māori consultant about tribe/place specificity, attribution, consent to represent material, terminology, modern performance conditions, and whether the scene imposes an outsider explanatory burden. A consultant can challenge the scene's premise, not just correct spelling.
+
+
+## Applied November 5 characterization correction
+
+The user explicitly asked to restore Maui's actual Disney-screen personality after he had become too soft-spoken and generic in the later novels. **Use `13_PERSONALITY_REWRITE_CANON.md` as the primary film-voice checklist.** His growth changes his decisions, not his appetite for spectacle, mischief, teasing, transformation, recognition or flirtation. The 50-chapter rewrite adds specific character beats to the canonical JSON and five reader overlays. Later prose revision should avoid mechanically repeating a Mini Maui gesture; use different modes of humor, anger and vulnerability. The `01_DISNEY_CANON.md` screen dossier remains distinct from Māori and other Polynesian ancestral traditions.

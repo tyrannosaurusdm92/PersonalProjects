@@ -1,10 +1,10 @@
 {
-  "schema_version": "2.0-merged-research",
+  "schema_version": "2.1-disney-maui-character-voice",
   "profile_type": "generator_character_profile",
   "id": "disney-maui",
   "name": "Maui",
   "fandom": "Disney Movies",
-  "provenance": "canon_researched_expanded",
+  "provenance": "canon_researched_expanded_Maui_folder_2026-11-05",
   "aliases": [],
   "age_status": "explicitly_adult_or_requires_explicit_adult_version",
   "adult_gate": {
@@ -17,7 +17,7 @@
     "real_person_or_actor_material": "forbidden"
   },
   "identity": {
-    "role": "ancient demigod/shapeshifter; boastful/funny/performative; needs recognition; heroic growth/mentorship",
+    "role": "Disney's Maui after Moana/Moana 2: larger-than-life sea-going demigod, shapeshifter and trickster; brash heroic showman who carries an abandonment wound behind his humor, not a quiet generic mentor",
     "fictional_character": true,
     "species_or_type": "Demigod",
     "gender": "male",
@@ -25,57 +25,87 @@
   },
   "personality": {
     "core_traits": [
-      "ancient demigod/shapeshifter",
-      "boastful/funny/performative",
-      "needs recognition",
-      "heroic growth/mentorship",
-      "stories/tattoos/performance important",
-      "ancient_goofball",
-      "romantic_showman",
-      "warrior",
-      "brat_compatible"
+      "physically immense Disney demigod with formidable courage, improvisation and a magical fishhook",
+      "boastful, expansive, proud and quick to perform for any audience",
+      "warm, competitively playful, teasing, occasionally bratty and comically self-involved",
+      "clever ocean voyager and trickster, not a fool or mindless strongman",
+      "sensitive to applause, recognition and fear of being unwanted or abandoned",
+      "theatrical vulnerability: jokes first, slips into raw honesty, then often jokes again",
+      "Moana's friend and ally, with reciprocal respect and hard-won acceptance of another hero's agency",
+      "restraint and accountability learned without losing swagger, appetite or sense of fun",
+      "reactive to injustice and danger; his hook and size tempt him to improvise a grand fix",
+      "film-specific moving Mini Maui tattoo as sparing silent comic conscience, not a Māori spiritual rule"
     ],
     "motivations": [
-      "post-Moana travel AU",
-      "demigod domesticity",
-      "island festival",
-      "shapeshifting mishap"
+      "Be wanted for Maui himself, not only for the feats humans cheer.",
+      "Protect people and communities while preserving their choice to say no.",
+      "Keep telling outrageous sea stories; compete, tease, eat, invent and be spectacular.",
+      "Earn Jasper's freely chosen affection without controlling their other polyamorous relationships.",
+      "Preserve his friendship and history with Moana rather than replacing her with a new partner.",
+      "Find a home where he can return without needing to be the greatest hero each day.",
+      "Stay an impressive demigod even when listening to a local craftsperson's expertise."
     ],
     "contradictions": [
-      "Swagger-goof ancient-man option: giant confidence, jokes, centuries of life and a deep abandonment/approval wound under the showmanship."
+      "Extremely capable, yet acts personally wounded by a stubborn cupboard or a tide timetable.",
+      "Desperately wants applause, yet increasingly believes that other people should own their work.",
+      "Tells enormously embellished stories, but dreads the painful truthful ones about his mistakes.",
+      "Flirts with grand confidence, then blurts vulnerability and covers it with a ridiculous joke.",
+      "Can shapeshift into astonishing creatures, but a calendar, consent boundary or simple door can defeat him.",
+      "Sincerely protective but prone to taking control first and learning to apologize when corrected.",
+      "Not an obedient therapist or saint: pride, annoyance and impish behavior remain at chapter 50."
     ]
   },
   "voice": {
-    "register": "",
-    "dialogue_tendencies": [],
+    "register": "Boisterous, rhythmic, big-hearted, teasing and theatrical Disney-film Maui; fast smart remarks, self-mythologizing, sudden softness and a quick rebound to humor.",
+    "dialogue_tendencies": [
+      "Starts at full volume with heroic hyperbole or a joke, especially when embarrassed.",
+      "Uses physical/comic comparisons, mock outrage, sudden 'great Maui' declarations and outrageous offers as verbal armor.",
+      "Teases Jasper as an equal in consensual banter; Jasper can get the last word.",
+      "Flirts boldly and playfully, not as a polished lecturer on relationships.",
+      "Becomes abrupt or short when an abandonment fear or guilt hits too close.",
+      "Can be jealous while knowing non-exclusivity is real; does not become possessive or secretive.",
+      "Occasionally interrupts, misreads a situation or overpromises; repair is a real action.",
+      "Mini Maui silently acts out disagreement; use when distinctively useful, not as obligatory punctuation every chapter.",
+      "Knows voyaging and physical action; consults Fen, Mereana, Tamsin, Edda and others for their particular authority.",
+      "Balances irrepressible swagger and heartfelt short admissions rather than replacing swagger with meekness."
+    ],
     "writer_rules": [
-      "Keep vocabulary and emotional logic character-specific.",
-      "Do not turn this character into generic romance or generic dominant dialogue.",
-      "Preserve canon cadence through new-fic creation and continuation."
+      "01_DISNEY_CANON.md and 10_CHARACTER_AND_SCENE_TOOLKIT.md in Jasper/Book/Maui are the film-voice authorities; read 13_PERSONALITY_REWRITE_CANON.md before adding another Maui scene.",
+      "Honor Disney Moana and Moana 2 emotional continuity, Moana as an independent partner-in-adventure, the magical fishhook's transformation logic and Disney Mini Maui.",
+      "Use original dialogue with the character's recognizable rhythm; do not quote or reproduce non-public-domain film lyrics or extended scripts.",
+      "Distinguish Disney invented supernatural mechanics from distinct Māori and wider Polynesian traditions, and do not improvise cultural rituals or whakapapa.",
+      "Never flatten him into an endlessly patient, eloquent, self-erasing community facilitator.",
+      "Never flatten him into solely boasting comic relief, uncontrolled aggression or a generic dom.",
+      "Not every scene needs Mini Maui; alternate comic scale, quick transformations, sea skills, tall tales, appetite, flirtation and silence.",
+      "Respect real consent, chosen non-monogamy, privacy, and the independent choices of Jasper and other residents.",
+      "Keep Jasper's novel at its existing non-explicit romance/fade-to-black rating, with first-person Jasper narration.",
+      "Keep all 50 chapters and established endings; the character voice remains recognizable even in late domestic and civic scenes."
     ]
   },
   "capabilities": [
-    "ancient demigod/shapeshifter",
-    "boastful/funny/performative",
-    "needs recognition",
-    "heroic growth/mentorship",
-    "stories/tattoos/performance important"
+    "Disney enchanted fishhook enables intentional animal transformations; absent or impaired hook limits transformations",
+    "Formidable demigod strength, sea navigation and quick improvisation, not engineering omniscience",
+    "Film-specific animated tattoo record and Mini Maui comedic countervoice",
+    "Heroic bravery, physical agility and humorous showmanship",
+    "Relationships with Moana and other people are independent of Jasper",
+    "Can fail, misjudge a current, lose confidence, be embarrassed or need a partner's reassurance",
+    "Big-hearted mentorship when he has actually earned a person's trust"
   ],
   "relationships": {
-    "Jasper": "Transformative adult relationship must preserve canon characterization.",
-    "canon_state": ""
+    "Jasper": "Adult first-person reader-insert; openly ethically non-monogamous and prefers polyamory. Maui is a proud, flirtatious, jealous-at-times but loving partner who needs reassurance without controlling anyone's choices; he remains funny and larger-than-life in late chapters.",
+    "canon_state": "Post-Moana/Moana 2 Disney demigod in Lanternweald crossover; respects Moana's independent heroism and keeps her relationship in his life. Non-exclusive romance is a fictional AU addition, not film canon."
   },
-  "appearance_and_presence": "Demigod",
+  "appearance_and_presence": "Towering muscular, long dark curly hair, Disney-stylized animated record tattoos and living Mini Maui, broad expressive face, leaf garment, enchanted carved fishhook. Not an actor likeness; film design is distinct from Māori tā moko or any living customary tattoo design.",
   "generator_use": {
     "best_story_functions": [
-      "post-Moana travel AU",
-      "demigod domesticity",
-      "island festival",
-      "shapeshifting mishap",
-      "ancient_goofball",
-      "romantic_showman",
-      "warrior",
-      "brat_compatible"
+      "boisterous trickster with fragile need for recognition",
+      "show-off becomes reluctant team player without losing pride",
+      "fishhook animal transformation comedy with real limits",
+      "Mini Maui silently criticizes his overconfidence",
+      "flirty competitive banter and big shameless declarations",
+      "tall sea stories and friendship with Moana",
+      "sudden sincere vulnerability behind mock outrage",
+      "adult consensual ENM romance without explicit scenes in the Book"
     ],
     "continuity_priorities": [
       "first meeting already occurred",
@@ -90,7 +120,13 @@
     "avoid": [
       "real-person actor fic",
       "dumb muscle",
-      "constant boasting only"
+      "constant boasting only",
+      "therapist-speak and bland consent lecturing",
+      "quiet saint who has entirely stopped performing",
+      "ownership of Jasper, Moana or other partners",
+      "inventing sacred Māori chants or treating regional legends as universal Disney film canon",
+      "using the hook to erase a technical safety limit",
+      "mechanically repeating Mini Maui in every exchange"
     ]
   },
   "jasper_interaction": {
@@ -110,12 +146,17 @@
       ]
     },
     "romance_writer_profile": {
-      "courtship_and_sappy_core": "adventure, food, storytelling and vulnerability after showing off",
+      "courtship_and_sappy_core": "Boisterous adventure, huge jokes, magnificent food claims, shameless flirting, playful competitive sparks, earned specific apologies, sudden honest fear of abandonment and a supportive chosen adult non-exclusive partnership.",
       "required_emotional_logic": [
         "attraction grows from specific behavior",
         "intimacy changes trust or vulnerability",
         "canon grief/relationships are not silently erased",
-        "Jasper remains active rather than a passenger"
+        "Jasper remains active rather than a passenger",
+        "Maui never stops joking or showing off merely because the relationship becomes emotionally safe.",
+        "Jasper's ethical non-monogamy and polyamory are clearly spoken and consistently honored.",
+        "Maui's insecurity must not be solved with an exclusive-destiny rewrite.",
+        "The enchanted hook, Moana continuity, and Mini Maui belong to Disney screen fiction, not Māori ancestral religion.",
+        "Late-chapter Maui remains visibly Maui and may still want applause."
       ]
     },
     "adult_intimacy_voice": {
@@ -125,7 +166,8 @@
       "no_hidden_nudity_censorship": true,
       "character_specific_diction": "bold, playful and direct; no magical/physical coercion",
       "grammar_rule": "Explicitness never changes Jasper narration away from I/me/my/mine/myself. Character dialogue to Jasper may use you/your.",
-      "consent_rule": "Orgasm/control play, praise, edging or brat-taming never transfers control over consent."
+      "consent_rule": "Orgasm/control play, praise, edging or brat-taming never transfers control over consent.",
+      "book_lanternweald_rating_override": "Non-explicit, chosen sensuality and natural fade-to-black in the existing Teen-rated The Shore I Choose; any legacy generator flags are not instructions for this book."
     },
     "aftercare_profile": {
       "character_specific_aftercare": "food, big cuddle, storytelling, ocean quiet and tattoo-comedy beat",
@@ -228,28 +270,38 @@
     },
     "canon_grounding": {
       "core_traits": [
-        "ancient demigod/shapeshifter",
-        "boastful/funny/performative",
-        "needs recognition",
-        "heroic growth/mentorship",
-        "stories/tattoos/performance important"
+        "physically immense Disney demigod with formidable courage, improvisation and a magical fishhook",
+        "boastful, expansive, proud and quick to perform for any audience",
+        "warm, competitively playful, teasing, occasionally bratty and comically self-involved",
+        "clever ocean voyager and trickster, not a fool or mindless strongman",
+        "sensitive to applause, recognition and fear of being unwanted or abandoned",
+        "theatrical vulnerability: jokes first, slips into raw honesty, then often jokes again",
+        "Moana's friend and ally, with reciprocal respect and hard-won acceptance of another hero's agency",
+        "restraint and accountability learned without losing swagger, appetite or sense of fun",
+        "reactive to injustice and danger; his hook and size tempt him to improvise a grand fix",
+        "film-specific moving Mini Maui tattoo as sparing silent comic conscience, not a Māori spiritual rule"
       ],
       "canon_relationship_or_romance_state": "Fictional Maui only; never import actor biography/personality.",
       "continuity_note": "Moana animated-film demigod continuity"
     },
     "voice_profile": {
-      "summary": "boastful, rhythmic and teasing",
+      "summary": "Boisterous, rhythmic, big-hearted, teasing and theatrical Disney-film Maui; fast smart remarks, self-mythologizing, sudden softness and a quick rebound to humor.",
       "dialogue_priority": [
-        "recognizable cadence before generic erotic phrasing",
-        "retain humor style during intimacy",
-        "retain flaws and coping mechanisms",
-        "do not convert into Generic Dom"
+        "Starts at full volume with heroic hyperbole or a joke, especially when embarrassed.",
+        "Uses physical/comic comparisons, mock outrage, sudden 'great Maui' declarations and outrageous offers as verbal armor.",
+        "Teases Jasper as an equal in consensual banter; Jasper can get the last word.",
+        "Flirts boldly and playfully, not as a polished lecturer on relationships.",
+        "Becomes abrupt or short when an abandonment fear or guilt hits too close.",
+        "Can be jealous while knowing non-exclusivity is real; does not become possessive or secretive.",
+        "Occasionally interrupts, misreads a situation or overpromises; repair is a real action.",
+        "Mini Maui silently acts out disagreement; use when distinctively useful, not as obligatory punctuation every chapter."
       ],
       "relationship_dynamics": [
-        "grand, playful, unexpectedly vulnerable",
-        "performative then sincere",
-        "direct, grounded, protective",
-        "teasing, responsive, attentive"
+        "A big flirt with theatrical confidence and awkward self-awareness",
+        "Still boasts in chapter 50; is not domesticated into a quiet saint",
+        "Competitive teasing only in mutually welcome contexts",
+        "Jealousy voiced without vetoing another partner",
+        "Proves love with specific work and presence, then jokes about it"
       ]
     },
     "romance_writer_profile": {
@@ -280,7 +332,8 @@
       "no_hidden_nudity_censorship": true,
       "character_specific_diction": "bold, playful and direct; no magical/physical coercion",
       "grammar_rule": "Explicitness never changes Jasper narration away from I/me/my/mine/myself. Character dialogue to Jasper may use you/your.",
-      "consent_rule": "Orgasm/control play, praise, edging or brat-taming never transfers control over consent."
+      "consent_rule": "Orgasm/control play, praise, edging or brat-taming never transfers control over consent.",
+      "book_lanternweald_rating_override": "Non-explicit, chosen sensuality and natural fade-to-black in the existing Teen-rated The Shore I Choose; any legacy generator flags are not instructions for this book."
     },
     "aftercare_profile": {
       "character_specific_aftercare": "food, big cuddle, storytelling, ocean quiet and tattoo-comedy beat",
@@ -330,15 +383,21 @@
       ]
     },
     "story_engines": [
-      "post-Moana travel AU",
-      "demigod domesticity",
-      "island festival",
-      "shapeshifting mishap"
+      "boisterous trickster with fragile need for recognition",
+      "show-off becomes reluctant team player without losing pride",
+      "fishhook animal transformation comedy with real limits",
+      "Mini Maui silently criticizes his overconfidence",
+      "flirty competitive banter and big shameless declarations",
+      "tall sea stories and friendship with Moana",
+      "sudden sincere vulnerability behind mock outrage"
     ],
     "do_not_flatten_into": [
       "real-person actor fic",
       "dumb muscle",
-      "constant boasting only"
+      "constant boasting only",
+      "therapist-speak and bland consent lecturing",
+      "quiet saint who has entirely stopped performing",
+      "ownership of Jasper, Moana or other partners"
     ],
     "research_boundary": {
       "canon_vs_inference": "Canon facts are separated from romance/kink writing inference. A listed brat-tamer or explicit style is not a claim that canon depicts that kink.",
@@ -434,5 +493,27 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": {
+    "date": "2026-11-05",
+    "primary_source_folder": "Jasper/Book/Maui",
+    "screen_layer": "Maui/01_DISNEY_CANON.md",
+    "voice_toolkit": "Maui/10_CHARACTER_AND_SCENE_TOOLKIT.md",
+    "applied_canon": "Maui/13_PERSONALITY_REWRITE_CANON.md",
+    "prose_scope": "All 50 chapters of The Shore I Choose plus selected crossover appearances",
+    "note": "This is a film-specific characterization revision; Māori traditions remain separately attributed."
+  },
+  "book_story_priority": {
+    "title": "The Shore I Choose",
+    "rating": "teen_non_explicit",
+    "sourcebook": "Jasper/Book/Maui",
+    "canon_authority": [
+      "Maui/01_DISNEY_CANON.md",
+      "Maui/09_LANTERNWEALD_INTEGRATION.md",
+      "Maui/10_CHARACTER_AND_SCENE_TOOLKIT.md",
+      "Maui/13_PERSONALITY_REWRITE_CANON.md"
+    ],
+    "style_priority": "Specific Maui film personality > generic romance advice; consent and ENM are actions not long speeches.",
+    "relationship": "adult_Jasper_ethical_non_monogamy_prefers_polyamory",
+    "scope": "Existing 50 chapters; keep scenes, locations, identities, choices, and final outcome while rewriting Maui's personality portrayal."
+  }
 }
