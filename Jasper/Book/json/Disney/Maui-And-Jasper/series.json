@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 78289,
+  "total_word_count": 78604,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -201,7 +201,7 @@
       "file": "21.json",
       "title": "The Guest Who Stayed",
       "id": "maui-21",
-      "word_count": 1401,
+      "word_count": 1420,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-22"
     },
@@ -210,7 +210,7 @@
       "file": "22.json",
       "title": "Tea, Salt and Smoke",
       "id": "maui-22",
-      "word_count": 1705,
+      "word_count": 1729,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-23"
     },
@@ -219,7 +219,7 @@
       "file": "23.json",
       "title": "The Wrong Kind of Hero",
       "id": "maui-23",
-      "word_count": 1401,
+      "word_count": 1405,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-24"
     },
@@ -228,7 +228,7 @@
       "file": "24.json",
       "title": "A Place to Put Jealousy",
       "id": "maui-24",
-      "word_count": 1660,
+      "word_count": 1693,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-25"
     },
@@ -237,7 +237,7 @@
       "file": "25.json",
       "title": "Mereana Returns",
       "id": "maui-25",
-      "word_count": 1630,
+      "word_count": 1671,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-26"
     },
@@ -246,7 +246,7 @@
       "file": "26.json",
       "title": "The Price of Welcome",
       "id": "maui-26",
-      "word_count": 1572,
+      "word_count": 1596,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-27"
     },
@@ -255,7 +255,7 @@
       "file": "27.json",
       "title": "The Visitor's Right to Leave",
       "id": "maui-27",
-      "word_count": 1582,
+      "word_count": 1644,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-28"
     },
@@ -264,7 +264,7 @@
       "file": "28.json",
       "title": "The Spare Key",
       "id": "maui-28",
-      "word_count": 1562,
+      "word_count": 1587,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-29"
     },
@@ -273,7 +273,7 @@
       "file": "29.json",
       "title": "A Festival Without a Hero",
       "id": "maui-29",
-      "word_count": 1589,
+      "word_count": 1619,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-30"
     },
@@ -282,7 +282,7 @@
       "file": "30.json",
       "title": "The Edge of the Storm",
       "id": "maui-30",
-      "word_count": 1663,
+      "word_count": 1716,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-31"
     },
