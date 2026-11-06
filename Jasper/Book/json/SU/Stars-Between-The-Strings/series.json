@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 74169,
+  "total_word_count": 74923,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -94,7 +94,7 @@
       "number": 8,
       "file": "08.json",
       "title": "Jam Session",
-      "word_count": 1792,
+      "word_count": 2050,
       "id": "su-08",
       "relationship_stage": "flirting",
       "next_chapter_id": "su-09"
@@ -337,7 +337,7 @@
       "number": 35,
       "file": "35.json",
       "title": "The Note in the Glovebox",
-      "word_count": 1257,
+      "word_count": 1503,
       "id": "su-35",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-36"
@@ -437,7 +437,7 @@
       "file": "46.json",
       "title": "The Listening Fair",
       "id": "su-46",
-      "word_count": 1463,
+      "word_count": 1713,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-47"
     },
@@ -495,5 +495,15 @@
     "preference": "polyamory",
     "consent": "informed, specific and revisable",
     "disclosure_before_initial_romance": true
+  },
+  "editorial_pass18": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      8,
+      35,
+      46
+    ],
+    "delta_words_from_index": 754,
+    "scope": "Targeted edits to canonical prose; the other chapters remain preserved."
   }
 }
