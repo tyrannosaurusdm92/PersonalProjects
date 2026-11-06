@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 61235,
+  "total_word_count": 63478,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -47,7 +47,7 @@
       "file": "03.json",
       "title": "The Name Beneath the Bell",
       "id": "maui-03",
-      "word_count": 1193,
+      "word_count": 1433,
       "next_chapter_id": "maui-04"
     },
     {
@@ -55,7 +55,7 @@
       "file": "04.json",
       "title": "The Things Hands Remember",
       "id": "maui-04",
-      "word_count": 1007,
+      "word_count": 1309,
       "next_chapter_id": "maui-05"
     },
     {
@@ -63,7 +63,7 @@
       "file": "05.json",
       "title": "Where the Water Goes",
       "id": "maui-05",
-      "word_count": 1187,
+      "word_count": 1510,
       "next_chapter_id": "maui-06"
     },
     {
@@ -71,7 +71,7 @@
       "file": "06.json",
       "title": "A Song for the Unfinished",
       "id": "maui-06",
-      "word_count": 1068,
+      "word_count": 1369,
       "next_chapter_id": "maui-07"
     },
     {
@@ -79,7 +79,7 @@
       "file": "07.json",
       "title": "A Dance That Asked",
       "id": "maui-07",
-      "word_count": 1161,
+      "word_count": 1497,
       "next_chapter_id": "maui-08"
     },
     {
@@ -87,7 +87,7 @@
       "file": "08.json",
       "title": "What the Door Kept",
       "id": "maui-08",
-      "word_count": 1068,
+      "word_count": 1442,
       "next_chapter_id": "maui-09"
     },
     {
@@ -111,7 +111,7 @@
       "file": "11.json",
       "title": "The Tide Takes Inventory",
       "id": "maui-11",
-      "word_count": 1191,
+      "word_count": 1558,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-12"
     },
