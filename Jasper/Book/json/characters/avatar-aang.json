@@ -497,5 +497,19 @@
     ],
     "continuation_instruction": "Continue from the latest story state. Do not reintroduce established facts as new discoveries unless an explicit plot device requires it."
   },
-  "latest_research_sync": "2026-09-20-full-material-hub"
+  "latest_research_sync": "2026-09-20-full-material-hub",
+  "character_voice_pass20": {
+    "date": "2026-11-06",
+    "voice_rules": [
+      "Cheerful, spiritually engaged and sometimes tempted by ceremonial optimism; can halt a ribbon-cutting when structural safety is uncertain.",
+      "Air Nomad culture is not a dynastic bloodline or excuse to claim authority over future children.",
+      "Relationship boundaries with Katara, Toph and Jasper should include independent schedules, growth and uncertainty."
+    ],
+    "scenes": [
+      "Love & Duty 08 - unsafe bridge speech stopped",
+      "Love & Duty 18 - donor's dynastic condition refused",
+      "Love & Duty 42 - rest and household schedule"
+    ],
+    "source_boundary": "The listed scenes are from Jasper's original fanfiction, not claims of official franchise events."
+  }
 }
