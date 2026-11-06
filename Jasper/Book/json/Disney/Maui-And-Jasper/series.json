@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 63478,
+  "total_word_count": 65915,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -174,7 +174,7 @@
       "file": "18.json",
       "title": "One Door Closed by Choice",
       "id": "maui-18",
-      "word_count": 1147,
+      "word_count": 1494,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-19"
     },
@@ -210,7 +210,7 @@
       "file": "22.json",
       "title": "Tea, Salt and Smoke",
       "id": "maui-22",
-      "word_count": 1160,
+      "word_count": 1516,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-23"
     },
@@ -228,7 +228,7 @@
       "file": "24.json",
       "title": "A Place to Put Jealousy",
       "id": "maui-24",
-      "word_count": 1076,
+      "word_count": 1437,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-25"
     },
@@ -237,7 +237,7 @@
       "file": "25.json",
       "title": "Mereana Returns",
       "id": "maui-25",
-      "word_count": 1114,
+      "word_count": 1440,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-26"
     },
@@ -246,7 +246,7 @@
       "file": "26.json",
       "title": "The Price of Welcome",
       "id": "maui-26",
-      "word_count": 1046,
+      "word_count": 1401,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-27"
     },
@@ -255,7 +255,7 @@
       "file": "27.json",
       "title": "The Visitor's Right to Leave",
       "id": "maui-27",
-      "word_count": 1034,
+      "word_count": 1395,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-28"
     },
@@ -264,7 +264,7 @@
       "file": "28.json",
       "title": "The Spare Key",
       "id": "maui-28",
-      "word_count": 1043,
+      "word_count": 1374,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-29"
     },
