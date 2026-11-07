@@ -1,0 +1,68 @@
+{
+  "schema_version": "jasper.character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "hp-sinistra",
+  "name": "Professor Sinistra",
+  "fandom": "Harry Potter",
+  "provenance": "canon_researched",
+  "identity": {
+    "role": "Hogwarts Astronomy professor, observer of Severus Snape's restricted advanced Potions seminar in After Always chapter 36",
+    "fictional_character": true,
+    "age_status": "adult Hogwarts teacher",
+    "first_name_note": "Aurora is commonly used, but early draft variants Aurora/Aurelia have ambiguous textual status; use Professor Sinistra unless on-page continuity chooses a first name."
+  },
+  "personality": {
+    "canon_grounding": [
+      "Professional Astronomy instructor; teaches observation, star charts, movement of planets and moons",
+      "Participates in Hogwarts staff life and assists during school crises"
+    ],
+    "careful_fanfiction_extension": [
+      "Competent peer observer rather than a sycophant or unqualified Potions evaluator",
+      "May assess teaching clarity and student safety, while Snape retains expertise in Potions"
+    ]
+  },
+  "voice": {
+    "register": "Measured academic observer, sparse canon dialogue; do not invent a distinctive catchphrase as canonical.",
+    "dialogue_tendencies": [
+      "Asks what a student can observe and document",
+      "Separates procedural observations from assumptions about Severus's character"
+    ],
+    "avoid": [
+      "Making her a second Minerva",
+      "Claiming romance or precise personality not supported by canonical material"
+    ]
+  },
+  "relationships": {
+    "Severus Snape": "Colleague at Hogwarts; observing one of his seminars is original After Always continuity, not official book canon.",
+    "Minerva McGonagall": "Hogwarts colleague; oversight arrangements are fanfiction-specific."
+  },
+  "canon_functions": [
+    "Astronomy Tower observations",
+    "Telescopes and student star charts",
+    "Knowledge of constellations, stars and planetary motion"
+  ],
+  "story_evidence": [
+    {
+      "path": "Jasper/Book/json/HP/After-Always/36.json",
+      "detail": "Prof. Sinistra observes Snape's returning advanced Potions lesson as part of school oversight."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Harry Potter 101: The Hogwarts teachers",
+      "url": "https://www.harrypotter.com/features/harry-potter-101-the-hogwarts-teachers",
+      "kind": "official"
+    },
+    {
+      "title": "Astronomy (Official Harry Potter Encyclopedia)",
+      "url": "https://www.harrypotter.com/fact-file/magical-miscellany/astronomy",
+      "kind": "official"
+    },
+    {
+      "title": "Professor Sinistra (Harry Potter Lexicon)",
+      "url": "https://www.hp-lexicon.org/character/aurora-sinistra/",
+      "kind": "secondary canon annotation"
+    }
+  ],
+  "research_boundary": "Canon role and astronomy methods are verified; detailed personality, modern relationship politics and teaching observation in After Always are not licensed canon. This is a non-romantic supporting character profile."
+}
