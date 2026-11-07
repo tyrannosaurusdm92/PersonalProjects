@@ -1,0 +1,51 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "avatar-mei-original",
+  "name": "Mei",
+  "fandom": "Avatar: The Last Airbender / Love & Duty",
+  "provenance": "story_original",
+  "age_status": "14 at Love & Duty chapter 36; minor, strictly nonromantic",
+  "identity": {
+    "role": "Fourteen-year-old school student and independent participant in community aid",
+    "family": "Fire Nation father and Earth Kingdom mother, both deceased in a storm; staying with an injured uncle",
+    "location": "Cranefish Town school and supervised dormitory",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "wary of institutional promises",
+      "fiercely independent",
+      "dry sense of humor",
+      "clever and practical with workshop organization"
+    ],
+    "choices": [
+      "Chooses supervised dormitory instead of being immediately brought into anyone's home",
+      "Hesitant to accept help that might cost her uncle housing security",
+      "Works two afternoons per week organizing metal stock with Toph, without being adopted by the Avatar",
+      "Challenges naming of the community aid fund"
+    ]
+  },
+  "voice": {
+    "register": "Blunt teenager's practical questions; not a miniature adult therapist.",
+    "rules": [
+      "Keep agency appropriate to her age; adults remain responsible for safety and safeguarding.",
+      "No sexual, sensual, or romantic role.",
+      "Avoid portraying multicultural parentage as an automatic claim to Air Nomad descent or legal status."
+    ]
+  },
+  "relationships": {
+    "Uncle": "Caregiver whose injury and limited work affect housing; repairing their livelihood matters to Mei.",
+    "Aang": "Air Nomad educator, not adopted father.",
+    "Katara": "Provides appropriate care and access to physical therapy.",
+    "Toph": "Workshop mentor who values Mei's ability to organize stock.",
+    "Jasper": "Participates in applications and support without making Mei a symbol of a future child."
+  },
+  "manuscript_evidence": [
+    {
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/36.json",
+      "summary": "Explicit age, parentage, care options, schoolwork and autonomy are on page."
+    }
+  ],
+  "source_boundary": "Original supporting character researched from existing manuscript. There is no external franchise biography; never conflate original Mei with Avatar canon Mai."
+}
