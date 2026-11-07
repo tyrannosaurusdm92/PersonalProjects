@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 83588,
+  "total_word_count": 84336,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -68,7 +68,7 @@
       "number": 5,
       "file": "05.json",
       "title": "Righteous Authority",
-      "word_count": 1530,
+      "word_count": 1792,
       "id": "what-the-armor-leaves-behind-05",
       "relationship_stage": "chemistry",
       "next_chapter_id": "what-the-armor-leaves-behind-06"
@@ -266,7 +266,7 @@
       "number": 27,
       "file": "27.json",
       "title": "The Example",
-      "word_count": 1555,
+      "word_count": 1796,
       "id": "what-the-armor-leaves-behind-27",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "what-the-armor-leaves-behind-28"
@@ -428,7 +428,7 @@
       "number": 45,
       "file": "45.json",
       "title": "When the Plan Changes",
-      "word_count": 1541,
+      "word_count": 1786,
       "id": "what-the-armor-leaves-behind-45",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "what-the-armor-leaves-behind-46"
@@ -572,5 +572,15 @@
     ],
     "added_words": 585,
     "scope": "Character-specific substantial in-place scenes, complete 50-chapter story preserved."
+  },
+  "editorial_pass26": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      5,
+      27,
+      45
+    ],
+    "added_indexed_words": 748,
+    "scope": "Substantive in-place scene additions; prior canon, adult consent and chapters preserved."
   }
 }
