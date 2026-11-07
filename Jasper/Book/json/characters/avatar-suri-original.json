@@ -1,0 +1,46 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "avatar-suri-original",
+  "name": "Suri",
+  "fandom": "Avatar: The Last Airbender / Love & Duty",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Textile worker and civic charter participant advocating real fire-safe exits for nonbender workers",
+    "pronouns": "she/her on page",
+    "age": "not established",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "direct",
+      "civically engaged",
+      "protective of fellow workers",
+      "suspicious of compromise made without impacted residents"
+    ],
+    "voice": "Concrete workplace examples and pointed questions, not an abstract philosopher or political mascot."
+  },
+  "relationships": {
+    "Jasper": "Demands a roll-call copy and input before the charter group negotiates away workers' needs.",
+    "Aang": "Democratic autonomy: should not be turned into an Avatar-endorsed prop.",
+    "community": "Refers to a union steward for contact rather than revealing her personal schedule."
+  },
+  "manuscript_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/32.json"
+    }
+  ],
+  "known_unknowns": [
+    "family",
+    "exact job title",
+    "age",
+    "union leadership position"
+  ],
+  "source_boundary": "Story-original. Voting and donation details are part of this fanfiction's civic plot, not the Avatar show's historical canon.",
+  "writer_rules": [
+    "Keep this character's livelihood and decisions independent of Jasper's romantic arcs.",
+    "Maintain first-person Jasper perception; do not invent unseen knowledge.",
+    "No additional romantic or sensual role is implied."
+  ]
+}
