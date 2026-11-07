@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.pass14.causal-ledger.v1",
-  "updated": "2026-11-05",
+  "updated": "2026-11-07",
   "classification": "editorial continuity index; on-page facts and future writing proposals are explicitly separated",
   "coherence_rules": [
     "All six novels contain 50 linear chapters. Chapter numbers and endings are retained.",
@@ -311,5 +311,46 @@
     "source_overlay_matches_verified": 15,
     "visual_browser_tested": false,
     "meaning": "Source parity and manifest counts do not certify literary-depth equality."
-  }
+  },
+  "pass26_authored_scenes": {
+    "jasmine-after-rain": [
+      5,
+      27,
+      45
+    ],
+    "love-and-duty": [
+      5,
+      27,
+      45
+    ],
+    "what-the-armor-leaves-behind": [
+      5,
+      27,
+      45
+    ],
+    "after-always": [
+      5,
+      27,
+      45
+    ],
+    "stars-between-the-strings": [
+      5,
+      27,
+      45
+    ],
+    "the-shore-i-choose": [
+      5,
+      27,
+      45
+    ]
+  },
+  "pass26_cross_novel_constraints": [
+    "Tomas leaves freely; no public travel destination; Vel's later objections remain unforced.",
+    "Iroh and Greg remain recognizably distinct in dialogue, responsibilities and humor.",
+    "Civic minutes need resident evidence, not solely the Avatar or Toph's authority.",
+    "Danse's personal boundaries and Haylen's messages remain separate from public safety inspection.",
+    "Severus's book notes and testimony require permission and source distinctions.",
+    "Maui retains visible ego and viable ocean skill while respecting safe tide readings.",
+    "Festival play, art, music and food require safe space, volunteered or paid labor, and owner permission."
+  ]
 }

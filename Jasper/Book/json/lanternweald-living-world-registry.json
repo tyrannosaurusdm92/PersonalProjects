@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.living_world.v1",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "status": "canon reference for six completed 50-chapter prose sequences",
   "total_written_chapters": 300,
   "distinct_series": 6,
@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 23,
+  "editorial_revision_pass": 26,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 489763,
+  "manifest_word_count": 503459,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,8 +848,8 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS23_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS23_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS26_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS26_CONTINUITY.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
@@ -1298,5 +1298,45 @@
     "https://fallout.fandom.com/wiki/Cambridge_Police_Station_terminal_entries",
     "https://steven-universe.fandom.com/wiki/Greg_Universe"
   ],
-  "pass23_source_level_checks": "18 of 18 reader chapter overlays verified exact parity with canonical chapter JSON. Full browser testing not performed."
+  "pass23_source_level_checks": "18 of 18 reader chapter overlays verified exact parity with canonical chapter JSON. Full browser testing not performed.",
+  "revised_chapter_slots_by_series_pass26": {
+    "jasmine-after-rain": [
+      5,
+      27,
+      45
+    ],
+    "love-and-duty": [
+      5,
+      27,
+      45
+    ],
+    "what-the-armor-leaves-behind": [
+      5,
+      27,
+      45
+    ],
+    "after-always": [
+      5,
+      27,
+      45
+    ],
+    "stars-between-the-strings": [
+      5,
+      27,
+      45
+    ],
+    "the-shore-i-choose": [
+      5,
+      27,
+      45
+    ]
+  },
+  "twenty_sixth_pass_world_rules": {
+    "work": "No unlogged or automatically donated wages or shifts; a heroic action does not substitute for an inspection.",
+    "visits": "Threadway arrivals, departures and destinations remain consent- and privacy-governed.",
+    "voices": "Iroh strategy and tea; Greg music and family; Maui spectacle and voyaging; Danse operational precision; Severus documentary precision; Team Avatar retains three distinct kinds of expertise.",
+    "events": "Festival activities have voluntary organizers, safe routes, visible prices or waived fees, and no compulsory performance.",
+    "history": "Lower Closed Bells remains sealed; erased keeper unknown; upper temporary channel subject to posted tests.",
+    "romance": "Adult Jasper's ethical non-monogamy and polyamorous preference are openly communicated; each partner chooses terms."
+  }
 }

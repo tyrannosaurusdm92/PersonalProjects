@@ -1,6 +1,8 @@
 # Jasper's Fanfiction Spot — Six Novels, 300 Written Chapters
 
-> **Latest editorial update — November 7, 2026, Pass 25:** Substantively revised **12 existing chapters** (17 and 42 in each of six novels, +3,024 indexed words) directly on `main`; published the **18 previously committed Pass 24** chapters (14, 32, 48 per series) together with these new scenes via six canonical reader overlays. The library remains **300/300 chapters**, now **498,761 indexed words**. Mina, Fen and Tamsin were added from existing story-original research, increasing the active profile index to **184**. Iroh and Greg retain distinctly different voices and occupations; the Closed Bells passage remains sealed. See [PROSE_DEPTH_PASS25_AUDIT.md](PROSE_DEPTH_PASS25_AUDIT.md) and [LANTERNWEALD_PASS25_CONTINUITY.md](LANTERNWEALD_PASS25_CONTINUITY.md). This is **not** a claim of complete line editing across all 300 chapters.
+> **Latest editorial update — November 7, 2026, Pass 26:** Edited **18 existing chapters** (5, 27 and 45 of each novel), adding **4,698 indexed words** directly on `main`, without a new branch. Six stories remain **50 chapters each, 300/300 total** with **503,459 indexed words**. Updated the existing six reader overlays in place instead of adding redundant layers, improved Iroh-versus-Greg and other character voice rules, expanded seven-district village routines, and indexed five missing original supporting character biographies (**189 profiles**). See [Pass 26 editorial audit](PROSE_DEPTH_PASS26_AUDIT.md) and [Pass 26 continuity](LANTERNWEALD_PASS26_CONTINUITY.md). This is targeted editing, not a claim that all 300 chapters have the same narrative depth.
+
+> **Prior editorial update — November 7, 2026, Pass 25:** Substantively revised **12 existing chapters** (17 and 42 in each of six novels, +3,024 indexed words) directly on `main`; published the **18 previously committed Pass 24** chapters (14, 32, 48 per series) together with these new scenes via six canonical reader overlays. The library remains **300/300 chapters**, now **498,761 indexed words**. Mina, Fen and Tamsin were added from existing story-original research, increasing the active profile index to **184**. Iroh and Greg retain distinctly different voices and occupations; the Closed Bells passage remains sealed. See [PROSE_DEPTH_PASS25_AUDIT.md](PROSE_DEPTH_PASS25_AUDIT.md) and [LANTERNWEALD_PASS25_CONTINUITY.md](LANTERNWEALD_PASS25_CONTINUITY.md). This is **not** a claim of complete line editing across all 300 chapters.
 
 > **Prior editorial update — November 6, 2026, Pass 23:** Revised **18 existing prose chapters** (9, 24, and 39 in each of six novels), adding **5,121 indexed words** directly on `main`. The complete **300 chapters** now total **489,763 indexed words**. All **18/18** canonical chapter entries were mirrored into and exact-checked against the website reader. A direct Iroh–Greg tea-tasting scene in Jasmine After Rain 39 now has a matching Greg musical/tea callback in Stars Between the Strings 39. Added source-grounded Knight Keane and Horace Slughorn and story-original Beren, Nola and Sela profiles, increasing the active character index to **175**; Sela's preexisting source-full reference was edited in place. Repaired the broken and out-of-sequence Greg clinic paragraph in chapter 24. See [PROSE_DEPTH_PASS23_AUDIT.md](PROSE_DEPTH_PASS23_AUDIT.md) and [LANTERNWEALD_PASS23_CONTINUITY.md](LANTERNWEALD_PASS23_CONTINUITY.md). This is an incremental revision of eighteen chapters, not a 300-chapter complete line edit.
 
@@ -17,17 +19,17 @@
 
 The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
-## Current manuscripts: November 7, 2026 (Pass 25)
+## Current manuscripts: November 7, 2026 (Pass 26)
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 88,429 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 79,662 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 80,787 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 83,842 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 83,588 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 82,453 |
-| **Total** | **Six connected novels** | **300 / 300** | **498,761** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 89,247 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 80,394 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 81,571 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 84,636 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 84,336 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 83,275 |
+| **Total** | **Six connected novels** | **300 / 300** | **503,459** |
 
 *Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters now have at least 1,300 indexed words after Pass 19. The historical fourteenth editorial pass improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 

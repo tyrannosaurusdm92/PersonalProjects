@@ -328,3 +328,35 @@ The Lanternweald is not a portal where every visitor becomes the same gentle men
 Future scenes may return to these routines, but no as-yet unwritten event is retroactively asserted to have happened. Existing chronology, homeworld boundaries and independently working residents remain governing canon.
 
 **Editorial provenance:** On-page passages are in chapters 17 and 42 of the six novels; broader operating guidelines remain guardrails for future scenes, not fabricated past events. See `LANTERNWEALD_PASS25_CONTINUITY.md` and `PROSE_DEPTH_PASS25_AUDIT.md`.
+
+## 22. Pass 26 — Village rhythms and lives that keep going (November 7, 2026)
+
+The Lanternweald's appeal is its **inhabited districts**, not a claim to duplicate another game's mechanics. Residents cook, make art, argue about wages, inspect docks, perform music, rebuild roads, archive evidence and occasionally refuse each other. Their responsibilities persist between Jasper's dates. A person may decline work or leave through a Threadway without owing the village continued presence.
+
+**Lanternwell Square.** The public notice board lists paid work, agreed voluntary work, weather notices, lane closures and festival information. The restricted crossing register must never become a romantic attendance chart. Mara can refuse a donated-bread request that would make her workers unpaid; Neri can correct a sign without publishing Tomas's destination; Pip can decline to let artwork become a misleading event promise. Market benches, clear access routes and a place to sit without buying anything are ordinary scene stakes, not magic.
+
+**Tideglass Cove.** Fen posts a dated tide window. The landing, mooring hardware and old coastal barrier are separate infrastructures; a safe knot demonstration is not proof of a safe pier at high tide. Maui knows waves and boats, which makes him an excellent observer and dangerous if he rushes. Fen can say no; Sela can demand real flood data before her garden is affected. The old lower Closed Bells passage remains **sealed**. Nobody knows the erased keeper's identity.
+
+**Jasmine Steps.** The shared-world tea terrace is not the Jasmine Dragon in Ba Sing Se. Iroh can run a tasting here by invitation while Mina's actual shop and staff schedules continue elsewhere. Different grades of tea, leaf shortages, appropriate brewing temperatures and broken ceramics matter; his tenderness is specific to food and his history, never a generic speech about everyone being one family.
+
+**Riverstone Terrace.** Toph can identify cracks and shifts in the stone; Edda knows accessible passage; Beren knows cart widths; Katara knows patient transport needs; Sela knows seedling losses. The bridge is not reopened by a single impressive demonstration. Daron can recognize a late map, but accountable decisions require written revisions, real repair work and resident consent.
+
+**Moonroot Archive.** Orin and Neri separate observations, testimony and inference. Someone reading a page does not thereby inherit the right to show it publicly; Severus's expertise in documents does not give him the keeper's missing name. Research visits, quiet tables and conditional permission create natural scenes of disagreement, humor and attraction without revealing private life.
+
+**Brasswatch Yard.** Danse's Brotherhood habit of measuring, logging, retesting and obeying operational constraints can support civilian safety without turning the yard into a military chain of command. Aster, Renn, Ash and independent inspectors can challenge him. Passing an electrical test is not the same as certifying drinking water; workers do not owe shift time because a famous visitor is distressed.
+
+**Starwake Pier.** Nola manages the stage, times, rentals and access; Tamsin can close an unsafe platform; Rowan expects payment for actual work. Greg can soundcheck, play his promised set and decline extra songs. The borrowed-song corner is an invitation to discuss musical ideas, not a mechanism to compel a performance or expose private memories. People may enjoy the safe festival without attending a romance scene.
+
+### Life between quests and romantic scenes
+
+What gives the seven districts warmth is the repetition of *specific* routines: a tide chart being dated each morning, bread being counted before donation, a worker clocking out, a teapot steeping longer than intended, an instrument being put back in its case, and a resident choosing another route because a bridge is still closed. Characters sometimes cross paths over invoices, games and community events. They do not all narrate the same moral lesson.
+
+Attractions need meaningful constraints. A festival game should have a real volunteer, supplies, a place to play, and an option to watch. A repair quest should leave receipts and tested work behind. A winter crossing should require current conditions rather than an unconditional magical travel pass. Public records must reflect what a clerk can know; private decisions stay private. Friendly rivalries and domestic jokes should continue after the main mystery has moved on.
+
+### Continuity distinction: written scenes versus optional futures
+
+**Already established:** The living-world village has festivals, paid and voluntary labor, a public square, six novels with multiple resident crossovers, civic councils, a closed historic passage, an upper temporary channel subject to posted limits, consent-based travel, and adult ethical non-monogamy.
+
+**Optional, not yet asserted on-page:** A monthly maker's exchange where repairs can be taught rather than heroically solved; a tide-chart reading lesson led by Fen and a wayfinding observation from Maui; a joint neighborhood archive night where source labels are checked before public exhibition; a quiet acoustic set chosen by Greg and his bandmates, not assigned by a council; a winter warm-routes week organized with mobility and cart users; and a community recipe exchange where original local food is credited to its preparers. None of these future ideas resolves Closed Bells or forces romance, access or work.
+
+The **authored chapter additions** for this pass are listed individually in `LANTERNWEALD_PASS26_CONTINUITY.md`. Do not rewrite the homeworlds as seven interchangeable districts: Ba Sing Se remains a real city beyond Jasmine Steps; Beach City remains where Greg's car wash actually operates; Hogwarts and the Commonwealth keep their own dangers and political consequences. The lower historic Closed Bells passage remains sealed, and no new scene identifies its erased keeper.

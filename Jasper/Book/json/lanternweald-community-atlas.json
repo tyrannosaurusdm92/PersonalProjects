@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.community_atlas.v1",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "status": "editorial reference; established-on-page details distinguished from optional unwritten story seeds",
   "purpose": "Increase original cozy-village depth while preserving independent fictional homeworlds, six linear novels, community agency and existing endings",
   "districts": [
@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS23_CONTINUITY.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS23_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS26_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS26_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -1114,5 +1114,106 @@
     "series": 6,
     "complete_chapters": 300,
     "profile_count": 175
-  }
+  },
+  "pass26_verified_scene_connections": [
+    {
+      "series": "jasmine-after-rain",
+      "chapters": [
+        5,
+        27,
+        45
+      ],
+      "on_page_ref": "Jasmine After Rain chapters 5, 27 and 45",
+      "status": "authored canon; specifics in PROSE_DEPTH_PASS26_AUDIT and LANTERNWEALD_PASS26_CONTINUITY"
+    },
+    {
+      "series": "love-and-duty",
+      "chapters": [
+        5,
+        27,
+        45
+      ],
+      "on_page_ref": "Love & Duty chapters 5, 27 and 45",
+      "status": "authored canon; specifics in PROSE_DEPTH_PASS26_AUDIT and LANTERNWEALD_PASS26_CONTINUITY"
+    },
+    {
+      "series": "what-the-armor-leaves-behind",
+      "chapters": [
+        5,
+        27,
+        45
+      ],
+      "on_page_ref": "What the Armor Leaves Behind chapters 5, 27 and 45",
+      "status": "authored canon; specifics in PROSE_DEPTH_PASS26_AUDIT and LANTERNWEALD_PASS26_CONTINUITY"
+    },
+    {
+      "series": "after-always",
+      "chapters": [
+        5,
+        27,
+        45
+      ],
+      "on_page_ref": "After Always chapters 5, 27 and 45",
+      "status": "authored canon; specifics in PROSE_DEPTH_PASS26_AUDIT and LANTERNWEALD_PASS26_CONTINUITY"
+    },
+    {
+      "series": "stars-between-the-strings",
+      "chapters": [
+        5,
+        27,
+        45
+      ],
+      "on_page_ref": "Stars Between the Strings chapters 5, 27 and 45",
+      "status": "authored canon; specifics in PROSE_DEPTH_PASS26_AUDIT and LANTERNWEALD_PASS26_CONTINUITY"
+    },
+    {
+      "series": "the-shore-i-choose",
+      "chapters": [
+        5,
+        27,
+        45
+      ],
+      "on_page_ref": "The Shore I Choose chapters 5, 27 and 45",
+      "status": "authored canon; specifics in PROSE_DEPTH_PASS26_AUDIT and LANTERNWEALD_PASS26_CONTINUITY"
+    }
+  ],
+  "pass26_village_life_proposals": [
+    {
+      "proposal": "Maker's exchange",
+      "status": "unwritten_optional",
+      "requirements": [
+        "consenting instructor",
+        "actual supplies",
+        "inspected work",
+        "paid/voluntary distinction"
+      ]
+    },
+    {
+      "proposal": "Tide chart and wayfinding workshop",
+      "status": "unwritten_optional",
+      "requirements": [
+        "Fen controls safe coastal limits",
+        "Maui contributes observed wave expertise",
+        "no invented cultural ritual"
+      ]
+    },
+    {
+      "proposal": "Neighborhood warm-route week",
+      "status": "unwritten_optional",
+      "requirements": [
+        "bridge and cart users lead",
+        "posted open routes",
+        "accessible alternatives"
+      ]
+    },
+    {
+      "proposal": "Resident-led archive evening",
+      "status": "unwritten_optional",
+      "requirements": [
+        "clear provenance labels",
+        "public versus restricted records",
+        "no forced historical conclusion"
+      ]
+    }
+  ]
 }
