@@ -1,0 +1,61 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-mereana",
+  "name": "Mereana",
+  "fandom": "Lanternweald / The Shore I Choose",
+  "provenance": "story_original",
+  "age_status": "unspecified; not a romance route",
+  "identity": {
+    "role": "Representative of visiting artists and craft owners whose panels were displayed and stored without authorization",
+    "location": "Visiting artist from Aotearoa, arriving via Tideglass",
+    "pronouns_in_existing_prose": "she/her on page",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "assertive",
+      "methodical",
+      "protective of collaborators",
+      "pragmatic with contracts and technical handling"
+    ],
+    "motivations": [
+      "Declines an advertised performance that was never agreed",
+      "Seeks expert evaluation of warped panel",
+      "Requires owners' approval of packing and repair",
+      "Names the financial cost of missed work and delayed transport"
+    ]
+  },
+  "voice": {
+    "register": "Specific, calm but uncompromising on ownership, repair approval, booking time and consent to perform",
+    "writer_rules": [
+      "Keep this supporting character's concerns independent of Jasper's romance.",
+      "Never treat an unknown family history, appearance or title as a confirmed fact."
+    ]
+  },
+  "generator_use": {
+    "best_story_functions": [
+      "community continuity",
+      "autonomous choice and real-life responsibilities"
+    ],
+    "avoid": [
+      "giving this person automatic consent to help or be publicized",
+      "inventing a romance route"
+    ]
+  },
+  "source_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/25.json"
+    }
+  ],
+  "known_unknowns": [
+    "ethnic identity",
+    "family",
+    "age",
+    "ritual affiliations",
+    "whether she personally made each panel",
+    "home address"
+  ],
+  "source_boundary": "Story-original character: no external licensed biography exists. Research is limited to the named manuscript appearances. Cultural identity and personal history may not be inferred from a name or origin."
+}
