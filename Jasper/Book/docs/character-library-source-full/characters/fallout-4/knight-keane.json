@@ -1,0 +1,56 @@
+{
+  "schema_version": "jasper.character-profile.pass23.v1",
+  "profile_type": "generator_character_profile",
+  "id": "fo4-keane",
+  "name": "Knight Keane",
+  "fandom": "Fallout 4",
+  "provenance": "canon_researched",
+  "identity": {
+    "role": "Brotherhood of Steel Knight in Recon Squad Gladius, stationed at Cambridge Police Station",
+    "life_status": "Deceased before the player arrives in the Fallout 4 Fire Support quest",
+    "canonical_detail": "Gladius personnel terminal: KN-100K; killed in action during feral-ghoul attack in 2287",
+    "fictional_character": true
+  },
+  "personality": {
+    "core_traits_and_context": "Game documents establish military service and death, not a rich conversational personality. Do not invent a living speaking role without an explicit noncanon flashback.",
+    "voice_register": "Normally appears through remembrance and official records, not active dialogue."
+  },
+  "relationships": {
+    "Danse": "Former commanding officer of Recon Squad Gladius",
+    "Haylen": "Squad scribe who documented his wounds in a medical record",
+    "Rhys": "Surviving fellow Gladius member"
+  },
+  "source_evidence": [
+    {
+      "type": "game-primary-transcript",
+      "url": "https://fallout.fandom.com/wiki/Cambridge_Police_Station_terminal_entries",
+      "detail": "Gladius Personnel Status and Haylen Medical File KN-100K"
+    },
+    {
+      "type": "secondary",
+      "url": "https://fallout.fandom.com/wiki/Keane",
+      "detail": "Knight Keane character entry"
+    },
+    {
+      "type": "in-story",
+      "path": "Jasper/Book/json/FO4/What-The-Armor-Leaves-Behind/39.json",
+      "detail": "Haylen sends Danse Keane's old baseball card through Rhys"
+    }
+  ],
+  "known_unknowns": [
+    "personal hobbies or history",
+    "speaking style",
+    "relationship beyond squad service"
+  ],
+  "writer_constraints": "The baseball card, its preservation, and Haylen's act of sending it are original fanfiction continuity, not a Fallout 4 quest prop or canonical event. Do not resurrect him or invent dialogue without clearly marked AU.",
+  "scene_use": {
+    "continuity": "Preserve observed choices, debts, work, risks, and consequences between chapters.",
+    "pov": "Jasper narrates only what can be observed, read or plausibly inferred.",
+    "romance": "These are supporting characters; no new romance arc is implied."
+  },
+  "reference_library_notes": {
+    "basis": "Licensed character: public franchise research explicitly separated from fanfiction additions.",
+    "specificity": "Never replace unknown age, relationships, voice or history with fabricated details.",
+    "latest_verified_pass": 23
+  }
+}
