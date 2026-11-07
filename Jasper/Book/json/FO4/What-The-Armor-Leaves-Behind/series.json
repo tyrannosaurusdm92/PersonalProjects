@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 80281,
+  "total_word_count": 81159,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -77,7 +77,7 @@
       "number": 6,
       "file": "06.json",
       "title": "Steel and Scrap",
-      "word_count": 1533,
+      "word_count": 1801,
       "id": "what-the-armor-leaves-behind-06",
       "relationship_stage": "flirting",
       "next_chapter_id": "what-the-armor-leaves-behind-07"
@@ -194,7 +194,7 @@
       "number": 19,
       "file": "19.json",
       "title": "Under the Tanks",
-      "word_count": 1561,
+      "word_count": 1861,
       "id": "what-the-armor-leaves-behind-19",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "what-the-armor-leaves-behind-20"
@@ -347,7 +347,7 @@
       "number": 36,
       "file": "36.json",
       "title": "Three Chords",
-      "word_count": 1772,
+      "word_count": 2082,
       "id": "what-the-armor-leaves-behind-36",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "what-the-armor-leaves-behind-37"
@@ -533,5 +533,15 @@
     ],
     "indexed_words_added": 796,
     "scope": "In-place original scene revisions; full 50-chapter manuscript and earlier edits preserved."
+  },
+  "editorial_pass22": {
+    "date": "2026-11-06",
+    "chapters_revised": [
+      6,
+      19,
+      36
+    ],
+    "added_indexed_words": 878,
+    "scope": "In-place scene-level revisions; preexisting 50 chapters and all earlier prose retained."
   }
 }
