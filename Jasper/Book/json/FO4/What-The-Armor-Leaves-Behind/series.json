@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 81159,
+  "total_word_count": 81989,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -104,7 +104,7 @@
       "number": 9,
       "file": "09.json",
       "title": "Power Armor",
-      "word_count": 1562,
+      "word_count": 1836,
       "id": "what-the-armor-leaves-behind-09",
       "relationship_stage": "flirting",
       "next_chapter_id": "what-the-armor-leaves-behind-10"
@@ -239,7 +239,7 @@
       "number": 24,
       "file": "24.json",
       "title": "The List",
-      "word_count": 1504,
+      "word_count": 1784,
       "id": "what-the-armor-leaves-behind-24",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "what-the-armor-leaves-behind-25"
@@ -374,7 +374,7 @@
       "number": 39,
       "file": "39.json",
       "title": "To Victory",
-      "word_count": 1534,
+      "word_count": 1810,
       "id": "what-the-armor-leaves-behind-39",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "what-the-armor-leaves-behind-40"
@@ -543,5 +543,15 @@
     ],
     "added_indexed_words": 878,
     "scope": "In-place scene-level revisions; preexisting 50 chapters and all earlier prose retained."
+  },
+  "editorial_pass23": {
+    "date": "2026-11-06",
+    "chapters_revised": [
+      9,
+      24,
+      39
+    ],
+    "added_indexed_words": 830,
+    "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
   }
 }
