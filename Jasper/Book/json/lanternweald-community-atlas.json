@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS20_CONTINUITY.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS20_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS21_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS21_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -813,6 +813,92 @@
         "During a high-tide test Maui supports one beam under Edda's plan while Toph, Fen and Tamsin revise the permitted water conditions."
       ],
       "homeworld_boundary": "The lower Closed Bells maintenance passage is still sealed; a safe upper-channel test never opens the old barrier."
+    }
+  ],
+  "pass21_scene_links": [
+    {
+      "district": "Jasmine Steps and Ba Sing Se",
+      "chapters": [
+        "Jasmine After Rain 12",
+        "Jasmine After Rain 25",
+        "Jasmine After Rain 47"
+      ],
+      "evidence": [
+        "Mina receives explicit, paid authority to accept or reject tea deliveries while Iroh travels.",
+        "Lian retains control over damaged seedlings and what may be planted beside her wall; Huan remains a market source rather than a newly invented relative.",
+        "Halen chooses whether and where to sit after bereavement. The shop does not treat his absence as a permanent reservation."
+      ],
+      "rule": "Tea-shop affection never replaces wages, supplier consent, inspection or mourning boundaries."
+    },
+    {
+      "district": "Riverstone and the Southern Water Tribe",
+      "chapters": [
+        "Love & Duty 12",
+        "Love & Duty 25",
+        "Love & Duty 47"
+      ],
+      "evidence": [
+        "Katara protects patient privacy from a journalist; Aang and Toph choose separately what can be public about their relationships.",
+        "After a child falls through unsafe ice, local families, Hakoda, Gran Gran, Aang and Katara determine actual signs and patrol responsibility.",
+        "Kite makers retain credit, repair control and materials; festival celebration never converts Air Nomad sacred tradition into an unconsented performance."
+      ],
+      "rule": "Village authority and cultural stewardship belong to affected people, not famous visitors."
+    },
+    {
+      "district": "Brasswatch and the Commonwealth",
+      "chapters": [
+        "What the Armor Leaves Behind 12",
+        "What the Armor Leaves Behind 25",
+        "What the Armor Leaves Behind 47"
+      ],
+      "evidence": [
+        "Danse refuses an uncertified vertibird spare while acknowledging pilot and technician authority.",
+        "Haylen decides what risks she accepts when helping find Danse and does not make him owe a return.",
+        "Ash and Renn require independent complaints review instead of referring complaints straight to the supervisor they concern."
+      ],
+      "rule": "Former military rank cannot substitute for a technical standard or meaningful recourse."
+    },
+    {
+      "district": "Moonroot Archive and Spinner's End",
+      "chapters": [
+        "After Always 12",
+        "After Always 25",
+        "After Always 47"
+      ],
+      "evidence": [
+        "A harmed former pupil receives a factual school-record correction without being asked to forgive Severus.",
+        "Severus and Jasper share an awkward, non-explicit scene while relabeling a laboratory vial; the article's burned clipping no longer reappears mysteriously.",
+        "Orin learns that archive witness lists must use opt-in contact, not leaked addresses or repeated requests after refusal."
+      ],
+      "rule": "A true, limited record is better than a flattering or condemning simplification."
+    },
+    {
+      "district": "Starwake Pier and Beach City",
+      "chapters": [
+        "Stars Between the Strings 12",
+        "Stars Between the Strings 25",
+        "Stars Between the Strings 47"
+      ],
+      "evidence": [
+        "Greg, Jasper and Steven keep their own homes, photograph, spaces and boundaries in a nonexclusive relationship.",
+        "Alva's pump repair now occurs in coherent chronological order; Greg notifies customers and refunds lost services.",
+        "The pier's sound technician must be paid the agreed inspection fee, not offered public credit as substitute compensation."
+      ],
+      "rule": "Music, parenthood, romance and paid trades coexist without any one becoming an obligation to the others."
+    },
+    {
+      "district": "Lanternwell Square and Tideglass",
+      "chapters": [
+        "The Shore I Choose 12",
+        "The Shore I Choose 25",
+        "The Shore I Choose 47"
+      ],
+      "evidence": [
+        "Lark's departure route stays private, and Pip/Neri work toward an opt-in register; Maui does not announce the traveler.",
+        "Mereana and collaborators retain authority over display, storage, repair and extra travel costs for their panels.",
+        "Fen records tide limits and safe signage after the temporary upper-channel storm test; the lower Closed Bells passage remains sealed."
+      ],
+      "rule": "Movement, heritage and infrastructure are supervised by their actual owners and workers, not the loudest hero."
     }
   ]
 }
