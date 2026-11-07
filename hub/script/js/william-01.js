@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded',function(){
     showPage(a.dataset.page,{focusMain:true});
     if(innerWidth<1250)setCollapsed(masterNav,masterToggle,true);
   }));
-  $('.page-link').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.pageTarget,{focusMain:true})));
+  $$('.page-link').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.pageTarget,{focusMain:true})));
 
   const donationQrDialog=$('#donationQrDialog');
   const donationQrCode=$('#donationQrCode');
