@@ -1,0 +1,50 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-aster",
+  "name": "Aster",
+  "fandom": "Lanternweald / Brasswatch",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Brasswatch emergency-lamp and access-route volunteer who relays water-cart drawings",
+    "pronouns": "they/them in authored scenes",
+    "age": "not established",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "reliable under pressure",
+      "methodical",
+      "aware of corridor lighting",
+      "coordinates across shift boundaries"
+    ],
+    "voice": "Short status reports, verified lamp charge and route measurements; has a right to decline additional shifts."
+  },
+  "relationships": {
+    "Danse": "Works under agreed safety rules, brings Beren and Edda's checked water route to Danse, and requests safer lighting.",
+    "Renn": "Cooperates on cable clearance without taking over Renn's trained work.",
+    "Pip": "Coordinates movement and exits during outage."
+  },
+  "manuscript_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/FO4/What-The-Armor-Leaves-Behind/48.json"
+    },
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/48.json"
+    }
+  ],
+  "known_unknowns": [
+    "age",
+    "homeworld of origin",
+    "family",
+    "formal electrical qualifications"
+  ],
+  "source_boundary": "Original Lanternweald character, not a Brotherhood soldier; authorization and technical competency must come from on-page training.",
+  "writer_rules": [
+    "Keep supporting characters independent of Jasper's romantic arcs.",
+    "Use manuscript-grounded roles and preserve personal agency, labor and privacy.",
+    "Do not infer undocumented age, family, certifications or homeworld."
+  ]
+}
