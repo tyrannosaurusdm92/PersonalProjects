@@ -15,13 +15,27 @@
 <meta property="og:image" content="https://thetransgendertrex.com/hub/assets/images/site/profile-01-e447fcdaf3.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="stylesheet" href="hub/css/william-01.css">
+<link rel="stylesheet" href="hub/css/ourspace-public-profiles.css">
 </head>
 <body class="page-home">
 <a class="skip-link" href="#main">Skip to main content</a>
+
+<nav id="ourspaceTopTabs" aria-label="Top-level site tabs" role="tablist">
+  <button id="trexSiteTab" type="button" role="tab" aria-controls="trexSite" aria-selected="true">The Transgender T-Rex</button>
+  <div class="osp-menu">
+    <button id="ourspaceMenuButton" type="button" role="tab" aria-controls="ourspacePublic" aria-haspopup="menu" aria-expanded="false" aria-selected="false">OurSpace Profiles ▾</button>
+    <div id="ourspaceDropdown" role="menu" aria-label="Choose a published OurSpace profile" hidden>
+      <button type="button" role="menuitem" data-ourspace-person="jasper" aria-current="false">Jasper</button>
+      <button type="button" role="menuitem" data-ourspace-person="william" aria-current="false">William</button>
+    </div>
+  </div>
+</nav>
+<div id="trexSite" role="tabpanel" aria-labelledby="trexSiteTab">
+
 <nav aria-label="Master navigation" class="master-nav" id="masterNav">
 <button aria-controls="masterPanel" aria-expanded="true" class="master-toggle" id="masterToggle" title="Open or collapse menu" type="button">𓃑</button>
 <div class="master-panel" id="masterPanel">
-<div class="master-title">Menu</div>
+<div class="master-title" id="masterDragHandle" title="Drag to move the master navigation; double-click to reset">Menu</div>
 <div class="master-search">
 <input aria-label="Search all pages" id="masterSearch" placeholder="Search everything…" type="search"/>
 <button id="masterSearchButton" type="button">Find</button>
@@ -749,5 +763,19 @@ No matter what we withstand.</p>
 </div>
 <p class="admin-note">Use #admin at the end of the page address to open this editor again.</p>
 </div>
-</div></body>
+</div>
+</div><!-- /trexSite: all existing T-Rex content remains intact -->
+<section id="ourspacePublic" role="tabpanel" aria-labelledby="ourspaceMenuButton" hidden>
+  <div class="osp-public-top">
+    <div>
+      <h2>OurSpace Profiles</h2>
+      <p>Published, read-only profile information from OurSpace.</p>
+    </div>
+    <button type="button" id="ourspacePublicRefresh">Refresh published profile</button>
+  </div>
+  <p id="ourspacePublicStatus" role="status" aria-live="polite"></p>
+  <div id="ourspacePublishedContent" aria-live="polite"></div>
+</section>
+<script src="hub/script/js/ourspace-public-profiles.js"></script>
+</body>
 </html>
