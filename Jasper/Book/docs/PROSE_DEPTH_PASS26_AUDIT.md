@@ -44,3 +44,9 @@ The original Lanternweald, characters and specific crossovers are **fanfiction c
 
 ## Relationship and rating rules
 All romances are between adults; Jasper is an adult named first-person reader-insert. Their chosen **ethical non-monogamy and preference for polyamory are already disclosed** in the established chapters, and must remain clear to each partner. A partner may ask for time, privacy, reassurance, affection and negotiated terms without claiming exclusive ownership. Intimacy stays sensual, conversational and non-explicit, with fade-to-black where appropriate. No sexual detail or new non-consensual relationship was added.
+
+## Post-commit source verification (November 7, 2026)
+
+**48 / 48 exact reader entries passed:** for each of six novels, chapters **5, 14, 17, 27, 32, 42, 45 and 48** in the offline reader mirror have exactly the same chapter number, title, full prose content and indexed word count as the canonical JSON file. Each per-series manuscript index still has 50 chapters and reconciles to its word total. This also verifies that the already published Pass 24 and Pass 25 chapter edits remain available after updating the existing overlays for Pass 26.
+
+The six overlay scripts are ordered after Pass 23 and before `js/app.js`. The catalog sums to **503,459** words and **300** chapters, the active cast index has **189 unique profile IDs**, and the community registry reports editorial Pass 26. The Pass 26 additions were reformatted as separate dialogue/prose paragraphs, and the reader mirrors were rechecked after that change. These are structural and content checks, not a substitute for a live browser, device or accessibility test.
