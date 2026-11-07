@@ -24,5 +24,5 @@ body.osp-active::before{display:none!important}
 #ourspacePublicRefresh{padding:9px 13px;border-radius:6px;background:#31566f;color:white;border:1px solid #5686a6;font-weight:bold;cursor:pointer}
 #ourspacePublicStatus{max-width:1754px;margin:0 auto;padding:0 18px 7px;color:#31566f;font-size:12px;min-height:16px}
 #ourspacePublishedContent{width:100%;margin:0;padding:0}
-#ourspaceNativeFrame{display:block;width:100%;min-height:1200px;border:0;background:#e5e5e5}
+#ourspaceNativeFrame{display:block;width:100%;height:calc(100dvh - 128px);min-height:440px;border:0;background:#e5e5e5;overscroll-behavior:contain}
 @media(max-width:700px){#ourspaceTopTabs{gap:5px;padding:8px}#ourspaceTopTabs button{font-size:12px;padding:9px}#ourspaceDropdown{min-width:185px}.osp-public-top{padding:6px 10px}}
