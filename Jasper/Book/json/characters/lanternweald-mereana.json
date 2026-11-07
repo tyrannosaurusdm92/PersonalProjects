@@ -7,10 +7,11 @@
   "provenance": "story_original",
   "age_status": "unspecified; not a romance route",
   "identity": {
-    "role": "Representative of visiting artists and craft owners whose panels were displayed and stored without authorization",
+    "role": "Māori performer, teacher and visiting artist who organizes collaborators and protects their instruments, panels and choices about sharing performances.",
     "location": "Visiting artist from Aotearoa, arriving via Tideglass",
     "pronouns_in_existing_prose": "she/her on page",
-    "fictional_character": true
+    "fictional_character": true,
+    "cultural_identity_as_written": "Māori performer and teacher from Aotearoa, explicitly established in The Shore I Choose chapter 6; not an inference from her name."
   },
   "personality": {
     "grounded_traits": [
@@ -46,16 +47,22 @@
   "source_evidence": [
     {
       "type": "authored manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/06.json",
+      "evidence": "Explicitly introduces herself as Māori performer and teacher, and says she cannot speak for all iwi or traditions."
+    },
+    {
+      "type": "authored manuscript",
       "path": "Jasper/Book/json/Disney/Maui-And-Jasper/25.json"
     }
   ],
   "known_unknowns": [
-    "ethnic identity",
     "family",
     "age",
     "ritual affiliations",
     "whether she personally made each panel",
-    "home address"
+    "home address",
+    "specific iwi affiliation"
   ],
-  "source_boundary": "Story-original character: no external licensed biography exists. Research is limited to the named manuscript appearances. Cultural identity and personal history may not be inferred from a name or origin."
+  "source_boundary": "Original fanfiction character; chapter 6 explicitly establishes that Mereana identifies as a Māori performer and teacher from Aotearoa. Do not infer a particular iwi, ceremonial authority, family history or rituals not established on page. Research into Māori culture cannot be used to fabricate a personal biography for this fictional person.",
+  "editorial_pass22_correction": "Corrects Pass 21's mistaken claim that her Māori identity was unknown; direct authored dialogue in chapter 6 already specifies it."
 }
