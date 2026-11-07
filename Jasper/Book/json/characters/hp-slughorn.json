@@ -1,0 +1,48 @@
+{
+  "schema_version": "jasper.character-profile.pass23.v1",
+  "profile_type": "generator_character_profile",
+  "id": "hp-slughorn",
+  "name": "Professor Horace Slughorn",
+  "fandom": "Harry Potter",
+  "provenance": "canon_researched",
+  "identity": {
+    "role": "Hogwarts Potions master and former Slytherin Head of House, returns after retirement",
+    "canon_role": "Founding host of the Slug Club; cultivates talented and well-connected students; connected with memories about young Tom Riddle",
+    "fictional_character": true
+  },
+  "personality": {
+    "core_traits_and_context": "Sociable, jovial, vain about connections, ambitious and self-protective; capable of genuine courage and care, not merely a villain or blustering clown.",
+    "voice_register": "Effusive, flattering and anecdotal when networking; becomes wary or evasive around shame and complicated history."
+  },
+  "relationships": {
+    "Snape": "Potions colleague and former teacher; specific red-ink corrections to teenage Snape's school essay are fiction-specific.",
+    "Lily": "Former gifted pupil; canonical memory of her talent is relevant but do not turn her life into a collectible."
+  },
+  "source_evidence": [
+    {
+      "type": "official",
+      "url": "https://www.harrypotter.com/features/harry-potter-101-the-hogwarts-teachers",
+      "detail": "Teacher and Slug Club profile"
+    },
+    {
+      "type": "official",
+      "url": "https://www.harrypotter.com/features/chapter-that-made-us-fall-in-love-with-horace-slughorn",
+      "detail": "His morally mixed character and heroism"
+    },
+    {
+      "type": "in-story",
+      "path": "Jasper/Book/json/HP/After-Always/39.json",
+      "detail": "His corrections on Severus's old essays are story continuity"
+    }
+  ],
+  "known_unknowns": [
+    "exact wording of feedback to school-age Snape",
+    "current role in Lanternweald"
+  ],
+  "writer_constraints": "Do not treat the fic's red-ink corrections as a canonical historical artifact. Dialogue must keep Slughorn's specific social charm and blind spots distinct from Iroh, Greg, and Severus.",
+  "scene_use": {
+    "continuity": "Preserve observed choices, debts, work, risks, and consequences between chapters.",
+    "pov": "Jasper narrates only what can be observed, read or plausibly inferred.",
+    "romance": "These are supporting characters; no new romance arc is implied."
+  }
+}
