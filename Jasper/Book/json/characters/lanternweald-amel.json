@@ -1,0 +1,50 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-amel",
+  "name": "Amel",
+  "fandom": "Lanternweald / Love & Duty",
+  "provenance": "story_original",
+  "identity": {
+    "role": "East-shelter water distribution coordinator",
+    "pronouns": "she/her in authored scene",
+    "age": "not established",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "skeptical of beautiful but unusable paperwork",
+      "direct about delivery windows",
+      "protective of private household circumstances",
+      "practical and unflinching"
+    ],
+    "voice": "Uses numbers to challenge a schedule, not to make the spreadsheet feel kind; insists supplies arrive before people need them."
+  },
+  "relationships": {
+    "Jasper": "Requires specific arrival times and verifies receipts for proposed deliveries versus delivered water.",
+    "Katara": "Helps document actual clinic and shelter needs without exposing names.",
+    "Aang": "Rejects a long-term plan that depends on the Avatar carrying everything."
+  },
+  "manuscript_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/48.json"
+    },
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/FO4/What-The-Armor-Leaves-Behind/48.json"
+    }
+  ],
+  "known_unknowns": [
+    "family",
+    "age",
+    "official title",
+    "employer"
+  ],
+  "source_boundary": "Story-original Lanternweald resident. She is not assumed to be a member of any off-world franchise.",
+  "writer_rules": [
+    "Keep supporting characters independent of Jasper's romantic arcs.",
+    "Use manuscript-grounded roles and preserve personal agency, labor and privacy.",
+    "Do not infer undocumented age, family, certifications or homeworld."
+  ]
+}
