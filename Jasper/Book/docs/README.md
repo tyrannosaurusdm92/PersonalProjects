@@ -1,6 +1,8 @@
 # Jasper's Fanfiction Spot — Six Novels, 300 Written Chapters
 
-> **Latest editorial update — November 6, 2026, Pass 21:** Added **5,000 indexed words of substantive prose to 18 existing chapters** (12, 25 and 47 in each of six novels), directly on `main`, no new branch. The original **300 chapters** now total **479,670 indexed words**. The 18 revised chapters are synchronized with three new reader overlays, verified against canonical JSON **18/18**. Five missing story-original character profiles (Lian, Huan, Lark, Mereana, Alva) were added to the active index and reference folders, raising the character count to **168**. The Iroh/Greg/Severus/Danse/Maui/Aang/Katara/Toph voice distinctions and community consequences have been retained. See [PROSE_DEPTH_PASS21_AUDIT.md](PROSE_DEPTH_PASS21_AUDIT.md) and [LANTERNWEALD_PASS21_CONTINUITY.md](LANTERNWEALD_PASS21_CONTINUITY.md). This was a targeted prose revision, not a 300-chapter line-by-line rewrite.
+> **Latest editorial update — November 6, 2026, Pass 22:** Substantively revised **18 already-written chapters** (6, 19 and 36 in all six novels), adding **4,972 indexed words** directly to `main` without a new branch. The existing **300/300 chapters** now total **484,642 indexed words**. All **18/18** canonical chapter entries match their new web-reader overlays. The living-world crossover includes a new Greg–Danse guitar lesson; Iroh's strategy and Greg's musical humor remain distinct. Added source-grounded Professor Sinistra and story-original Mei profiles; corrected Mereana's established Māori identity and Lio's age, bringing the library to **170** profiles. See [PROSE_DEPTH_PASS22_AUDIT.md](PROSE_DEPTH_PASS22_AUDIT.md) and [LANTERNWEALD_PASS22_CONTINUITY.md](LANTERNWEALD_PASS22_CONTINUITY.md). This is not a full 300-chapter line edit.
+
+> **Prior editorial update — November 6, 2026, Pass 21:** Added **5,000 indexed words of substantive prose to 18 existing chapters** (12, 25 and 47 in each of six novels), directly on `main`, no new branch. The original **300 chapters** now total **479,670 indexed words**. The 18 revised chapters are synchronized with three new reader overlays, verified against canonical JSON **18/18**. Five missing story-original character profiles (Lian, Huan, Lark, Mereana, Alva) were added to the active index and reference folders, raising the character count to **168**. The Iroh/Greg/Severus/Danse/Maui/Aang/Katara/Toph voice distinctions and community consequences have been retained. See [PROSE_DEPTH_PASS21_AUDIT.md](PROSE_DEPTH_PASS21_AUDIT.md) and [LANTERNWEALD_PASS21_CONTINUITY.md](LANTERNWEALD_PASS21_CONTINUITY.md). This was a targeted prose revision, not a 300-chapter line-by-line rewrite.
 
 > **Prior editorial update — November 6, 2026, Pass 20:** Revised **18 existing prose chapters, three in each of six novels**, adding **5,687 indexed words** on `main` without a new branch. The six connected books remain **300 / 300 chapters**, totaling **474,670 indexed words**. All **18/18** new full-chapter reader overlays match their source JSON; six `series.json` manifests and `json/fandoms.json` reconcile. Four researched *Steven Universe* character profiles (Marty, Sour Cream, Vidalia, Yellowtail) are now in both character libraries; the unified index has **163 profiles**. See [PROSE_DEPTH_PASS20_AUDIT.md](PROSE_DEPTH_PASS20_AUDIT.md) and [LANTERNWEALD_PASS20_CONTINUITY.md](LANTERNWEALD_PASS20_CONTINUITY.md). This was a substantive targeted revision, not a full 300-chapter line edit.
 
@@ -11,17 +13,17 @@
 
 The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
-## Current manuscripts: November 6, 2026 (Pass 21)
+## Current manuscripts: November 6, 2026 (Pass 22)
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 85,076 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 76,622 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 77,638 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 80,821 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 80,281 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 79,232 |
-| **Total** | **Six connected novels** | **300 / 300** | **479,670** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 85,881 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 77,418 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 78,478 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 81,610 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 81,159 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 80,096 |
+| **Total** | **Six connected novels** | **300 / 300** | **484,642** |
 
 *Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters now have at least 1,300 indexed words after Pass 19. The historical fourteenth editorial pass improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
