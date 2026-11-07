@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 85881,
+  "total_word_count": 86762,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -95,7 +95,7 @@
       "file": "09.json",
       "title": "Stormlight",
       "id": "maui-09",
-      "word_count": 1447,
+      "word_count": 1746,
       "next_chapter_id": "maui-10"
     },
     {
@@ -228,7 +228,7 @@
       "file": "24.json",
       "title": "A Place to Put Jealousy",
       "id": "maui-24",
-      "word_count": 1693,
+      "word_count": 1999,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-25"
     },
@@ -363,7 +363,7 @@
       "file": "39.json",
       "title": "The Keeper's Refusal",
       "id": "maui-39",
-      "word_count": 2119,
+      "word_count": 2395,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-40"
     },
@@ -526,5 +526,15 @@
     ],
     "added_indexed_words": 805,
     "scope": "In-place scene-level revisions; preexisting 50 chapters and all earlier prose retained."
+  },
+  "editorial_pass23": {
+    "date": "2026-11-06",
+    "chapters_revised": [
+      9,
+      24,
+      39
+    ],
+    "added_indexed_words": 881,
+    "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
   }
 }
