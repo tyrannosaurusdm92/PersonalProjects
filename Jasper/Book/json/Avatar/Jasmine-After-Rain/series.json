@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 80355,
+  "total_word_count": 80787,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -175,7 +175,7 @@
       "number": 17,
       "file": "17.json",
       "title": "Return to Ba Sing Se",
-      "word_count": 1495,
+      "word_count": 1715,
       "id": "avatar-17",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "avatar-18"
@@ -400,7 +400,7 @@
       "number": 42,
       "file": "42.json",
       "title": "Six Tables and One Teapot",
-      "word_count": 1602,
+      "word_count": 1814,
       "id": "avatar-42",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-43"
@@ -567,5 +567,14 @@
     ],
     "added_indexed_words": 997,
     "scope": "In-place substantial scenes; existing 50 chapter arc retained; no branch."
+  },
+  "editorial_pass25": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      17,
+      42
+    ],
+    "added_words": 432,
+    "scope": "In-place prose, independent character voice; original 50-chapter arc retained."
   }
 }
