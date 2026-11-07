@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 76850,
+  "total_word_count": 77638,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -130,7 +130,7 @@
       "number": 12,
       "file": "12.json",
       "title": "The Dragon's Breath",
-      "word_count": 1866,
+      "word_count": 2121,
       "id": "avatar-12",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "avatar-13"
@@ -247,7 +247,7 @@
       "number": 25,
       "file": "25.json",
       "title": "The Garden Behind the Shop",
-      "word_count": 1349,
+      "word_count": 1607,
       "id": "avatar-25",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-26"
@@ -446,7 +446,7 @@
       "file": "47.json",
       "title": "The Empty Chair Is Not a Threat",
       "id": "avatar-47",
-      "word_count": 1433,
+      "word_count": 1708,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-48"
     },
@@ -527,5 +527,15 @@
     ],
     "added_indexed_words": 929,
     "scope": "Substantive scene revisions and targeted structural cleanup; original chapters preserved."
+  },
+  "editorial_pass21": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      12,
+      25,
+      47
+    ],
+    "indexed_words_added": 788,
+    "scope": "In-place original scene revisions; full 50-chapter manuscript and earlier edits preserved."
   }
 }
