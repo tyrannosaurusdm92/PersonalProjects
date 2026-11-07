@@ -549,5 +549,28 @@
     ],
     "distinct_from_greg": "Greg fumbles jokes and notices gig equipment. Iroh spots strategic mistakes and has to learn when not to decide for other people.",
     "boundary": "These scenes are original fanfiction continuity, not new official Avatar canon."
+  },
+  "character_voice_pass23": {
+    "date": "2026-11-06",
+    "core": "Older retired Fire Nation general, Pai Sho strategist and tea specialist. Warm, perceptive and mischievous, but capable of making decisions under pressure and of letting others retain expertise and consent.",
+    "sound": "Deliberate understatement, dry banter, occasional strategic vocabulary. He does not narrate a life lesson in every exchange, and he can openly dislike costs, bad tea or a flawed plan.",
+    "scene": "In Jasmine After Rain 39, Greg's amplified-music analogy interests Iroh but does not turn Iroh into a casual rock musician. Iroh compares leaf weight, smoke-drying and small-batch pricing; he asks after growers, staff and a cup's quality.",
+    "no": [
+      "Do not reuse Greg's 'uh', 'man', dad jokes or casual self-deprecation as Iroh's default speech.",
+      "Do not say every mundane repair is a romantic metaphor.",
+      "Do not convert regret over Lu Ten or Ba Sing Se siege into easy absolution."
+    ],
+    "grounding": [
+      {
+        "title": "Avatar Studios: Iroh",
+        "url": "https://www.avatarstudiosofficial.com/characters/",
+        "type": "official"
+      },
+      {
+        "title": "Pass 23 canonical fanfic chapter 39",
+        "path": "Jasper/Book/json/Avatar/Jasmine-After-Rain/39.json",
+        "type": "story"
+      }
+    ]
   }
 }
