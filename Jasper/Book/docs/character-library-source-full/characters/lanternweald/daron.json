@@ -1,0 +1,21 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-07",
+  "identity": {
+    "name": "Daron",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Lanternwell Square"
+  },
+  "biography": {
+    "on_page": "Council member in the Lanternwell Square bridge hearing who initially treats Toph's testimony as a shortcut to a final decision",
+    "history": "No private backstory established beyond the named scenes"
+  },
+  "personality": {
+    "voice": "Formal, procedural, initially too eager to close evidence; can acknowledge inaccurate framing and add late-submitted route data to the record.",
+    "dramatic_pressure": "Responsible for process, not entitled to overrule users, inspectors or residents by citing rank or reputation."
+  },
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Love-And-Duty/45.json"
+  ],
+  "boundary": "Story-grounded author reference only; unknown history remains unknown."
+}

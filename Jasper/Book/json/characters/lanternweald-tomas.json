@@ -1,0 +1,45 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass26",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-tomas",
+  "name": "Tomas",
+  "fandom": "Lanternweald / The Shore I Choose",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Traveler who chooses when to enter and leave through a Threadway; carries his own suitcase",
+    "fictional_character": true,
+    "canon_status": "Original to Jasper's fanfiction; not licensed franchise canon",
+    "age": "not independently established"
+  },
+  "personality": {
+    "voice": "Cautious, wry, concise under pressure, asserts his right to decide privately and return without promising permanent residence.",
+    "agency": "No residence, work debt, romance, escort or return date can be demanded as payment for aid."
+  },
+  "relationships": {
+    "Jasper": "May interact through the world, but their right to independent decisions and refusal is preserved."
+  },
+  "evidence": [
+    {
+      "type": "previous author reference",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/tomas.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/27.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/49.json"
+    }
+  ],
+  "unknowns": [
+    "Do not specify exact age beyond Jasper's approximate observation in chapter 27.",
+    "Do not print his destination in public registers.",
+    "Keep his eventual later return consistent with chapter 49."
+  ],
+  "authoring_rules": [
+    "Do not invent unobserved personal history.",
+    "Preserve first-person limits on Jasper's knowledge.",
+    "Use real work, costs, refusal and individual motives in dialogue."
+  ]
+}

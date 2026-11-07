@@ -541,5 +541,21 @@
       "The Shore I Choose 42 - high-tide structural test"
     ],
     "source_boundary": "The listed scenes are from Jasper's original fanfiction, not claims of official franchise events."
+  },
+  "character_voice_pass26": {
+    "date": "2026-11-07",
+    "review_scope": "Chapters 5, 27 and 45, plus established series evidence",
+    "research_classification": "official franchise reference",
+    "source": {
+      "title": "Disney D23 Moana 2 character overview",
+      "url_or_path": "https://d23.com/meet-the-characters-of-moana-2/"
+    },
+    "scene_constraints": [
+      "Theatrical shape-changing demigod and skilled voyager, brash and fiercely eager to be admired.",
+      "His ability to read waves and do heroic feats is real, but Fen's measurements and Sela's right to decline are also real.",
+      "Do not remove swagger, appetite, teasing or bravado just because he learns to share credit."
+    ],
+    "contrast_id": null,
+    "style_reference": "json/william-writing-style.json"
   }
 }

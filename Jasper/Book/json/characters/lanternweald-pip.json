@@ -1,0 +1,49 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass26",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-pip",
+  "name": "Pip",
+  "fandom": "Lanternweald / The Shore I Choose",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Independent artist and sign designer for resident-run Lanternweald gatherings",
+    "fictional_character": true,
+    "canon_status": "Original to Jasper's fanfiction; not licensed franchise canon",
+    "age": "not independently established"
+  },
+  "personality": {
+    "voice": "Visual, funny, exact about attribution and use of their designs; critiques unclear posters and audience assumptions rather than simply flattering Maui.",
+    "agency": "Must consent to public display and receive payment or a genuinely agreed volunteer role; artwork must not expose private schedules."
+  },
+  "relationships": {
+    "Jasper": "May interact through the world, but their right to independent decisions and refusal is preserved."
+  },
+  "evidence": [
+    {
+      "type": "previous author reference",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/pip.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/36.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/45.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/SU/Stars-Between-The-Strings/45.json"
+    }
+  ],
+  "unknowns": [
+    "Festival activity symbols do not guarantee a proposed event has taken place elsewhere.",
+    "Pip can say no to revisions or unpaid use.",
+    "Use they/them when supported by on-page references."
+  ],
+  "authoring_rules": [
+    "Do not invent unobserved personal history.",
+    "Preserve first-person limits on Jasper's knowledge.",
+    "Use real work, costs, refusal and individual motives in dialogue."
+  ]
+}

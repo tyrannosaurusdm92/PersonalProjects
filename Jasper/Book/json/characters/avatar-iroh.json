@@ -572,5 +572,21 @@
         "type": "story"
       }
     ]
+  },
+  "character_voice_pass26": {
+    "date": "2026-11-07",
+    "review_scope": "Chapters 5, 27 and 45, plus established series evidence",
+    "research_classification": "official franchise reference",
+    "source": {
+      "title": "Avatar Studios official character encyclopedia",
+      "url_or_path": "https://www.avatarstudiosofficial.com/characters/"
+    },
+    "scene_constraints": [
+      "Warm, perceptive Fire Nation firebender and skilled tea maker, but also strategic, emotionally scarred and capable of direct action.",
+      "Do not turn a war-scarred Ba Sing Se encounter into an aphorism; ask who owns the wall, who works the shift and who bears the cost.",
+      "Greg can make similar generous choices, but not military-strategy moves or Iroh's reserved register."
+    ],
+    "contrast_id": "su-greg",
+    "style_reference": "json/william-writing-style.json"
   }
 }

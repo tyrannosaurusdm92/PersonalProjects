@@ -1,0 +1,41 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass26",
+  "profile_type": "generator_character_profile",
+  "id": "avatar-ren-original",
+  "name": "Ren",
+  "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Tea shop worker with earned wages, shift limits and independent right to paid time off",
+    "fictional_character": true,
+    "canon_status": "Original to Jasper's fanfiction; not licensed franchise canon",
+    "age": "not independently established"
+  },
+  "personality": {
+    "voice": "Underwritten in existing chapters; future scenes should let Ren speak directly about availability and tea-shop work rather than become a silent schedule example.",
+    "agency": "An employee's wages and rest are not gifts from Iroh; Mina organizes shifts and Iroh approves his share of the expense."
+  },
+  "relationships": {
+    "Jasper": "May interact through the world, but their right to independent decisions and refusal is preserved."
+  },
+  "evidence": [
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Avatar/Jasmine-After-Rain/17.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Avatar/Jasmine-After-Rain/45.json"
+    }
+  ],
+  "unknowns": [
+    "Pronouns, age, family and exact job title are not independently established.",
+    "Never treat a day off as a reward for romantic service.",
+    "Distinguish Ren from unrelated franchise characters of the same name."
+  ],
+  "authoring_rules": [
+    "Do not invent unobserved personal history.",
+    "Preserve first-person limits on Jasper's knowledge.",
+    "Use real work, costs, refusal and individual motives in dialogue."
+  ]
+}

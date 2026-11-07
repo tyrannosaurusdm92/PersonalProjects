@@ -566,5 +566,21 @@
         "type": "story"
       }
     ]
+  },
+  "character_voice_pass26": {
+    "date": "2026-11-07",
+    "review_scope": "Chapters 5, 27 and 45, plus established series evidence",
+    "research_classification": "secondary franchise reference",
+    "source": {
+      "title": "Steven Universe series background",
+      "url_or_path": "https://steven-universe.fandom.com/wiki/Greg_Universe/History"
+    },
+    "scene_constraints": [
+      "Former touring musician and It's a Wash operator; fatherhood and music are not optional flavor.",
+      "Casual, fumbling, often joking when unsure; emotional clarity arrives through lived experience and specific choices, not Iroh-like parables.",
+      "A guitar case, a gig schedule, Steven's photograph and awkward real conversations matter more than generic sage lines."
+    ],
+    "contrast_id": "avatar-iroh",
+    "style_reference": "json/william-writing-style.json"
   }
 }

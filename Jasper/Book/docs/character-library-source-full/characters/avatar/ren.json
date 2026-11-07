@@ -1,0 +1,22 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-07",
+  "identity": {
+    "name": "Ren",
+    "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
+    "location": "Jasmine Dragon, Ba Sing Se"
+  },
+  "biography": {
+    "on_page": "Tea shop worker with earned wages, shift limits and independent right to paid time off",
+    "history": "No private backstory established beyond the named scenes"
+  },
+  "personality": {
+    "voice": "Underwritten in existing chapters; future scenes should let Ren speak directly about availability and tea-shop work rather than become a silent schedule example.",
+    "dramatic_pressure": "An employee's wages and rest are not gifts from Iroh; Mina organizes shifts and Iroh approves his share of the expense."
+  },
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/17.json",
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/45.json"
+  ],
+  "boundary": "Story-grounded author reference only; unknown history remains unknown."
+}

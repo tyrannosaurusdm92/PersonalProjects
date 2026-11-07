@@ -1,0 +1,45 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass26",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-vel",
+  "name": "Vel",
+  "fandom": "Lanternweald / The Shore I Choose",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Lanternwell neighbor who confuses hospitality with an obligation to stay",
+    "fictional_character": true,
+    "canon_status": "Original to Jasper's fanfiction; not licensed franchise canon",
+    "age": "not independently established"
+  },
+  "personality": {
+    "voice": "Defensive, firm, wounded by public correction; capable of changing but cannot require the person she hurt to forgive her.",
+    "agency": "May disagree and leave a conversation; no one has to reassure her or disclose a destination."
+  },
+  "relationships": {
+    "Jasper": "May interact through the world, but their right to independent decisions and refusal is preserved."
+  },
+  "evidence": [
+    {
+      "type": "previous author reference",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/vel.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/27.json"
+    },
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/49.json"
+    }
+  ],
+  "unknowns": [
+    "Do not turn a disappointed fan of Maui into a canon Disney character.",
+    "Do not retcon the returned carving or conversations in chapter 27.",
+    "Reconciliation is not compulsory."
+  ],
+  "authoring_rules": [
+    "Do not invent unobserved personal history.",
+    "Preserve first-person limits on Jasper's knowledge.",
+    "Use real work, costs, refusal and individual motives in dialogue."
+  ]
+}

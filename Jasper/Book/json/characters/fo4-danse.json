@@ -516,5 +516,21 @@
       "What the Armor Leaves Behind 42 - letter and workshop privacy"
     ],
     "boundary": "Original fanfiction scenes; maintain Brotherhood history and established story chronology."
+  },
+  "character_voice_pass26": {
+    "date": "2026-11-07",
+    "review_scope": "Chapters 5, 27 and 45, plus established series evidence",
+    "research_classification": "author manuscript continuity",
+    "source": {
+      "title": "Established authored Fallout 4 continuity",
+      "url_or_path": "Jasper/Book/json/FO4/What-The-Armor-Leaves-Behind/27.json"
+    },
+    "scene_constraints": [
+      "Formal Brotherhood-trained soldier whose trust in inspection and command structures survives being cast out.",
+      "Do not equate a synth's personhood with a faulty machine; having no rank does not make him Jasper's possession or responsibility.",
+      "Tenderness begins in procedural trust, safety choices and awkward, explicit requests for company."
+    ],
+    "contrast_id": null,
+    "style_reference": "json/william-writing-style.json"
   }
 }

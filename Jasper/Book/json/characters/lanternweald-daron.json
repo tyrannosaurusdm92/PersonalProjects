@@ -1,0 +1,37 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass26",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-daron",
+  "name": "Daron",
+  "fandom": "Lanternweald / Love & Duty",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Council member in the Lanternwell Square bridge hearing who initially treats Toph's testimony as a shortcut to a final decision",
+    "fictional_character": true,
+    "canon_status": "Original to Jasper's fanfiction; not licensed franchise canon",
+    "age": "not independently established"
+  },
+  "personality": {
+    "voice": "Formal, procedural, initially too eager to close evidence; can acknowledge inaccurate framing and add late-submitted route data to the record.",
+    "agency": "Responsible for process, not entitled to overrule users, inspectors or residents by citing rank or reputation."
+  },
+  "relationships": {
+    "Jasper": "May interact through the world, but their right to independent decisions and refusal is preserved."
+  },
+  "evidence": [
+    {
+      "type": "authored chapter",
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/45.json"
+    }
+  ],
+  "unknowns": [
+    "No invented political family, party affiliation or age.",
+    "His acknowledgment in chapter 45 does not mean unanimous policy reform.",
+    "Daron is an original author-created councilor, not an Avatar canon character."
+  ],
+  "authoring_rules": [
+    "Do not invent unobserved personal history.",
+    "Preserve first-person limits on Jasper's knowledge.",
+    "Use real work, costs, refusal and individual motives in dialogue."
+  ]
+}

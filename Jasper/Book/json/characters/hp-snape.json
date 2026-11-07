@@ -521,5 +521,21 @@
       "After Always 42 - map debate with Iroh, with Neri in charge"
     ],
     "boundary": "Original fanfiction scenes; do not claim these are licensed canon events."
+  },
+  "character_voice_pass26": {
+    "date": "2026-11-07",
+    "review_scope": "Chapters 5, 27 and 45, plus established series evidence",
+    "research_classification": "official franchise reference",
+    "source": {
+      "title": "Harry Potter official teacher background",
+      "url_or_path": "https://www.harrypotter.com/features/harry-potter-101-the-hogwarts-teachers"
+    },
+    "scene_constraints": [
+      "Extremely exacting former Potions teacher, emotionally guarded, sardonic, sometimes cutting; do not become an instantly fluent therapist.",
+      "He does not surrender private letters, books or consent just because Jasper loves him.",
+      "Romance is strained through precise permissions, humiliating blushes, sharply observed consequences and non-explicit physical closeness."
+    ],
+    "contrast_id": null,
+    "style_reference": "json/william-writing-style.json"
   }
 }

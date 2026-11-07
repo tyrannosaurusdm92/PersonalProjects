@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 184,
+  "profile_count": 189,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1474,6 +1474,46 @@
       "provenance": "story_original",
       "file": "lanternweald-tamsin.json",
       "canonical_key": "lanternwealdtheshoreichoose::tamsin"
+    },
+    {
+      "id": "lanternweald-tomas",
+      "name": "Tomas",
+      "fandom": "Lanternweald / The Shore I Choose",
+      "provenance": "story_original",
+      "file": "lanternweald-tomas.json",
+      "canonical_key": "lanternwealdtheshoreichoose::tomas"
+    },
+    {
+      "id": "lanternweald-vel",
+      "name": "Vel",
+      "fandom": "Lanternweald / The Shore I Choose",
+      "provenance": "story_original",
+      "file": "lanternweald-vel.json",
+      "canonical_key": "lanternwealdtheshoreichoose::vel"
+    },
+    {
+      "id": "lanternweald-pip",
+      "name": "Pip",
+      "fandom": "Lanternweald / The Shore I Choose",
+      "provenance": "story_original",
+      "file": "lanternweald-pip.json",
+      "canonical_key": "lanternwealdtheshoreichoose::pip"
+    },
+    {
+      "id": "lanternweald-daron",
+      "name": "Daron",
+      "fandom": "Lanternweald / Love & Duty",
+      "provenance": "story_original",
+      "file": "lanternweald-daron.json",
+      "canonical_key": "avatarloveandduty::daron"
+    },
+    {
+      "id": "avatar-ren-original",
+      "name": "Ren",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+      "provenance": "story_original",
+      "file": "avatar-ren-original.json",
+      "canonical_key": "avatarjasmineafterrain::ren"
     }
   ],
   "aliases": {
@@ -1760,7 +1800,12 @@
     "rowan (starwake pier)": "lanternweald-rowan-musician",
     "mina": "avatar-mina-original",
     "fen": "lanternweald-fen",
-    "tamsin": "lanternweald-tamsin"
+    "tamsin": "lanternweald-tamsin",
+    "tomas": "lanternweald-tomas",
+    "vel": "lanternweald-vel",
+    "pip": "lanternweald-pip",
+    "daron": "lanternweald-daron",
+    "ren": "avatar-ren-original"
   },
   "alias_records": [
     {
@@ -3785,6 +3830,41 @@
       "id": "lanternweald-tamsin",
       "fandom_key": "lanternwealdtheshoreichoose",
       "fandom": "Lanternweald / Tideglass and Starwake"
+    },
+    {
+      "alias": "Tomas",
+      "normalized": "tomas",
+      "id": "lanternweald-tomas",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Vel",
+      "normalized": "vel",
+      "id": "lanternweald-vel",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Pip",
+      "normalized": "pip",
+      "id": "lanternweald-pip",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Daron",
+      "normalized": "daron",
+      "id": "lanternweald-daron",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Lanternweald / Love & Duty"
+    },
+    {
+      "alias": "Ren",
+      "normalized": "ren",
+      "id": "avatar-ren-original",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
     }
   ],
   "fandom_profiles": {
@@ -3990,21 +4070,26 @@
       "avatar-lian",
       "avatar-huan",
       "avatar-yulan-original",
-      "avatar-mina-original"
+      "avatar-mina-original",
+      "avatar-ren-original"
     ],
     "lanternwealdtheshoreichoose": [
       "lanternweald-lark",
       "lanternweald-mereana",
       "lanternweald-sela",
       "lanternweald-fen",
-      "lanternweald-tamsin"
+      "lanternweald-tamsin",
+      "lanternweald-tomas",
+      "lanternweald-vel",
+      "lanternweald-pip"
     ],
     "avatarloveandduty": [
       "avatar-mei-original",
       "avatar-beren-original",
       "avatar-suri-original",
       "avatar-mara-sen-original",
-      "lanternweald-amel"
+      "lanternweald-amel",
+      "lanternweald-daron"
     ]
   },
   "series_cast": {
@@ -4018,7 +4103,8 @@
       "avatar-huan",
       "avatar-yulan-original",
       "avatar-mina-original",
-      "lanternweald-tamsin"
+      "lanternweald-tamsin",
+      "avatar-ren-original"
     ],
     "love-and-duty": [
       "avatar-aang",
@@ -4034,7 +4120,8 @@
       "avatar-beren-original",
       "avatar-suri-original",
       "avatar-mara-sen-original",
-      "lanternweald-amel"
+      "lanternweald-amel",
+      "lanternweald-daron"
     ],
     "what-the-armor-leaves-behind": [
       "fo4-danse",
@@ -4078,21 +4165,25 @@
       "su-alva",
       "su-nola-original",
       "lanternweald-rowan-musician",
-      "lanternweald-tamsin"
+      "lanternweald-tamsin",
+      "lanternweald-pip"
     ],
     "the-shore-i-choose": [
       "lanternweald-lark",
       "lanternweald-mereana",
       "lanternweald-sela",
       "lanternweald-fen",
-      "lanternweald-tamsin"
+      "lanternweald-tamsin",
+      "lanternweald-tomas",
+      "lanternweald-vel",
+      "lanternweald-pip"
     ]
   },
   "merge_summary": {
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 184
+    "final_canonical_profiles": 189
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -4102,7 +4193,7 @@
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
   ],
-  "latest_research_update": "2026-11-07-Pass25",
+  "latest_research_update": "2026-11-07-Pass26",
   "research_additions_pass20": [
     "su-marty",
     "su-sour-cream",
@@ -4146,5 +4237,13 @@
     "lanternweald-fen",
     "lanternweald-tamsin"
   ],
-  "research_boundary_pass25": "All three profiles are story-original, based on the source-full files already in docs/character-library-source-full and authored chapters, not invented franchise canon."
+  "research_boundary_pass25": "All three profiles are story-original, based on the source-full files already in docs/character-library-source-full and authored chapters, not invented franchise canon.",
+  "research_additions_pass26": [
+    "lanternweald-tomas",
+    "lanternweald-vel",
+    "lanternweald-pip",
+    "lanternweald-daron",
+    "avatar-ren-original"
+  ],
+  "canon_source_note_pass26": "Tomas, Vel and Pip promoted from previous original-character source references; Daron and Ren drawn only from authored chapter evidence. Original characters are not franchise canon."
 }
