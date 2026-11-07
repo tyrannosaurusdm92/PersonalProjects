@@ -1,5 +1,3 @@
-Jasper Fanfiction Spot now opens as a linear, Teen-rated reader.
+Jasper Fanfiction Spot contains six linear, Teen-rated, interconnected novels of 50 chapters each (300 chapters total). Open index.html for the complete offline reader; chapter selection and Previous/Next buttons work in order, with local reading-progress storage.
 
-Start at index.html. The five completed stories are presented in chapter order. Use the story and chapter menus or the Previous and Next buttons; reading progress is saved locally in the browser.
-
-The offline reader loads js/fanfic-data.js and js/app.js. Source chapter files are stored under json/<fandom>/<series>/. See docs/README.md and docs/MANIFEST.md for the current project map.
+Canonical source chapters live under json/<fandom>/<series>/NN.json. The reader loads js/fanfic-data.js, the historical continuation/revision layers, then six js/lanternweald-revisions-pass25-*.js overlays (including prior Pass 24 chapter edits) before js/app.js. See docs/README.md, docs/PROSE_DEPTH_PASS25_AUDIT.md and docs/LANTERNWEALD_PASS25_CONTINUITY.md.
