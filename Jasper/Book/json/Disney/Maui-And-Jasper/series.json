@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 86762,
+  "total_word_count": 87834,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -137,7 +137,7 @@
       "number": 14,
       "file": "14.json",
       "title": "The Quiet Work of Rope",
-      "word_count": 1575,
+      "word_count": 1931,
       "id": "maui-14",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-15"
@@ -300,7 +300,7 @@
       "file": "32.json",
       "title": "The Shape of an Agreement",
       "id": "maui-32",
-      "word_count": 1535,
+      "word_count": 1883,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-33"
     },
@@ -444,7 +444,7 @@
       "file": "48.json",
       "title": "The Lantern Ledger",
       "id": "maui-48",
-      "word_count": 1858,
+      "word_count": 2226,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-49"
     },
@@ -536,5 +536,15 @@
     ],
     "added_indexed_words": 881,
     "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
+  },
+  "editorial_pass24": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      14,
+      32,
+      48
+    ],
+    "added_indexed_words": 1072,
+    "scope": "In-place substantial scenes, original story arcs retained, no new branch."
   }
 }
