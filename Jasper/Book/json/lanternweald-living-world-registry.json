@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 22,
+  "editorial_revision_pass": 23,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 484642,
+  "manifest_word_count": 489763,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,8 +848,8 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS22_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS22_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS23_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS23_CONTINUITY.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
@@ -1241,5 +1241,62 @@
   "corrections_pass22": [
     "lanternweald-mereana",
     "docs/character-library-source-full/characters/lanternweald/lio.json"
-  ]
+  ],
+  "revised_chapter_slots_by_series_pass23": {
+    "jasmine-after-rain": [
+      9,
+      24,
+      39
+    ],
+    "love-and-duty": [
+      9,
+      24,
+      39
+    ],
+    "what-the-armor-leaves-behind": [
+      9,
+      24,
+      39
+    ],
+    "after-always": [
+      9,
+      24,
+      39
+    ],
+    "stars-between-the-strings": [
+      9,
+      24,
+      39
+    ],
+    "the-shore-i-choose": [
+      9,
+      24,
+      39
+    ]
+  },
+  "twenty_third_pass_constraints": [
+    "Iroh and Greg speak to each other in Jasmine After Rain chapter 39; Greg refers back to the sample citrus tea in Stars Between the Strings chapter 39. Preserve the same blend's smoke/citrus character and do not turn them into vocal clones.",
+    "Iroh's tea craft is measured in leaf ratios, peel drying, price and staff agency. Greg's music craft is measured in guitars, recording takes, note rests and rough jokes; neither uses the other's stock vocabulary.",
+    "Jasper explicitly tells Katara in Love & Duty 9 that Jasper is ethically non-monogamous and prefers polyamory. Existing partner disclosures in the other novels remain in force; this is not a demand for identical schedules or partners.",
+    "Knight Keane is Fallout 4 canon (Recon Squad Gladius member, deceased Cambridge Police Station); Keane's baseball card and its delivery by Rhys are fanfiction-only artifacts.",
+    "Horace Slughorn is canonical Potions professor and former Head of Slytherin; his red-ink corrections to Severus's old essays are original fic detail.",
+    "Beren is a working market cart driver, Nola a Starwake steward, Sela a gardener commissioning a skiff. Original biographical gaps must remain explicit rather than fabricated.",
+    "Safety rules: a mislabeled power armor exit, blocked trade route, uninspected Floo grate, and damaged storm gutter require workers with practical skills, not a hero's reputation.",
+    "Ethics: separate records and intimate spaces remain private, including Steven's messages, childhood Pensieve memories, Keane's commemorative card, and Neri's Closed Bells testimony.",
+    "The lower Closed Bells passage remains sealed; the keeper's name remains unverified, and no storm repair or testimony establishes otherwise."
+  ],
+  "research_additions_pass23": [
+    "fo4-keane",
+    "hp-slughorn",
+    "avatar-beren-original",
+    "su-nola-original",
+    "lanternweald-sela"
+  ],
+  "pass23_canon_web_sources": [
+    "https://www.avatarstudiosofficial.com/characters/",
+    "https://www.harrypotter.com/features/harry-potter-101-the-hogwarts-teachers",
+    "https://fallout.fandom.com/wiki/Cambridge_Police_Station_terminal_entries",
+    "https://steven-universe.fandom.com/wiki/Greg_Universe"
+  ],
+  "pass23_source_level_checks": "18 of 18 reader chapter overlays verified exact parity with canonical chapter JSON. Full browser testing not performed."
 }
