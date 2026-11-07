@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 84234,
+  "total_word_count": 85076,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -119,7 +119,7 @@
       "number": 12,
       "file": "12.json",
       "title": "A Place for the Departing",
-      "word_count": 1688,
+      "word_count": 1962,
       "id": "maui-12",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-13"
@@ -237,7 +237,7 @@
       "file": "25.json",
       "title": "Mereana Returns",
       "id": "maui-25",
-      "word_count": 1907,
+      "word_count": 2192,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-26"
     },
@@ -435,7 +435,7 @@
       "file": "47.json",
       "title": "Night at the Reopened Channel",
       "id": "maui-47",
-      "word_count": 1641,
+      "word_count": 1924,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-48"
     },
@@ -506,5 +506,15 @@
     ],
     "added_indexed_words": 945,
     "scope": "Substantive narrative edits, still 50 original chapters."
+  },
+  "editorial_pass21": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      12,
+      25,
+      47
+    ],
+    "indexed_words_added": 842,
+    "scope": "In-place original scene revisions; full 50-chapter manuscript and earlier edits preserved."
   }
 }
