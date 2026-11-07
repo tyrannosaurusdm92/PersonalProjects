@@ -1,6 +1,8 @@
 # Jasper's Fanfiction Spot — Six Novels, 300 Written Chapters
 
-> **Latest editorial update — November 6, 2026, Pass 22:** Substantively revised **18 already-written chapters** (6, 19 and 36 in all six novels), adding **4,972 indexed words** directly to `main` without a new branch. The existing **300/300 chapters** now total **484,642 indexed words**. All **18/18** canonical chapter entries match their new web-reader overlays. The living-world crossover includes a new Greg–Danse guitar lesson; Iroh's strategy and Greg's musical humor remain distinct. Added source-grounded Professor Sinistra and story-original Mei profiles; corrected Mereana's established Māori identity and Lio's age, bringing the library to **170** profiles. See [PROSE_DEPTH_PASS22_AUDIT.md](PROSE_DEPTH_PASS22_AUDIT.md) and [LANTERNWEALD_PASS22_CONTINUITY.md](LANTERNWEALD_PASS22_CONTINUITY.md). This is not a full 300-chapter line edit.
+> **Latest editorial update — November 6, 2026, Pass 23:** Revised **18 existing prose chapters** (9, 24, and 39 in each of six novels), adding **5,121 indexed words** directly on `main`. The complete **300 chapters** now total **489,763 indexed words**. All **18/18** canonical chapter entries were mirrored into and exact-checked against the website reader. A direct Iroh–Greg tea-tasting scene in Jasmine After Rain 39 now has a matching Greg musical/tea callback in Stars Between the Strings 39. Added source-grounded Knight Keane and Horace Slughorn and story-original Beren, Nola and Sela profiles, increasing the active character index to **175**; Sela's preexisting source-full reference was edited in place. Repaired the broken and out-of-sequence Greg clinic paragraph in chapter 24. See [PROSE_DEPTH_PASS23_AUDIT.md](PROSE_DEPTH_PASS23_AUDIT.md) and [LANTERNWEALD_PASS23_CONTINUITY.md](LANTERNWEALD_PASS23_CONTINUITY.md). This is an incremental revision of eighteen chapters, not a 300-chapter complete line edit.
+
+> **Prior editorial update — November 6, 2026, Pass 22:** Substantively revised **18 already-written chapters** (6, 19 and 36 in all six novels), adding **4,972 indexed words** directly to `main` without a new branch. The existing **300/300 chapters** now total **484,642 indexed words**. All **18/18** canonical chapter entries match their new web-reader overlays. The living-world crossover includes a new Greg–Danse guitar lesson; Iroh's strategy and Greg's musical humor remain distinct. Added source-grounded Professor Sinistra and story-original Mei profiles; corrected Mereana's established Māori identity and Lio's age, bringing the library to **170** profiles. See [PROSE_DEPTH_PASS22_AUDIT.md](PROSE_DEPTH_PASS22_AUDIT.md) and [LANTERNWEALD_PASS22_CONTINUITY.md](LANTERNWEALD_PASS22_CONTINUITY.md). This is not a full 300-chapter line edit.
 
 > **Prior editorial update — November 6, 2026, Pass 21:** Added **5,000 indexed words of substantive prose to 18 existing chapters** (12, 25 and 47 in each of six novels), directly on `main`, no new branch. The original **300 chapters** now total **479,670 indexed words**. The 18 revised chapters are synchronized with three new reader overlays, verified against canonical JSON **18/18**. Five missing story-original character profiles (Lian, Huan, Lark, Mereana, Alva) were added to the active index and reference folders, raising the character count to **168**. The Iroh/Greg/Severus/Danse/Maui/Aang/Katara/Toph voice distinctions and community consequences have been retained. See [PROSE_DEPTH_PASS21_AUDIT.md](PROSE_DEPTH_PASS21_AUDIT.md) and [LANTERNWEALD_PASS21_CONTINUITY.md](LANTERNWEALD_PASS21_CONTINUITY.md). This was a targeted prose revision, not a 300-chapter line-by-line rewrite.
 
@@ -13,17 +15,17 @@
 
 The **Lanternweald** is one connected, original, lived-in setting for six linear fanfiction romance novels. Jasper is the same adult, first-person reader-insert (externally they/them) across all six. They explicitly tell their partners they are **ethically non-monogamous** and **prefer polyamory**. Partners can negotiate privacy, schedules, reassurance and consent without control over anyone else. Romance is sensual but **not sexually explicit**; later intimacy uses private fade-to-black. The narrative style is guided by `json/william-writing-style.json` while preserving each partner's recognizable character voice.
 
-## Current manuscripts: November 6, 2026 (Pass 22)
+## Current manuscripts: November 6, 2026 (Pass 23)
 
 | Novel | Relationship focus | Written chapters | Approx. manuscript words* |
 |---|---|---:|---:|
-| The Shore I Choose | Maui / Jasper | **50 / 50** | 85,881 |
-| After Always | Severus Snape / Jasper | **50 / 50** | 77,418 |
-| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 78,478 |
-| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 81,610 |
-| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 81,159 |
-| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 80,096 |
-| **Total** | **Six connected novels** | **300 / 300** | **484,642** |
+| The Shore I Choose | Maui / Jasper | **50 / 50** | 86,762 |
+| After Always | Severus Snape / Jasper | **50 / 50** | 78,272 |
+| Jasmine After Rain | Iroh / Jasper | **50 / 50** | 79,358 |
+| Love & Duty | Adult Aang, Katara, Toph / Jasper | **50 / 50** | 82,480 |
+| What the Armor Leaves Behind | Danse / Jasper | **50 / 50** | 81,989 |
+| Stars Between the Strings | Greg Universe / Jasper | **50 / 50** | 80,902 |
+| **Total** | **Six connected novels** | **300 / 300** | **489,763** |
 
 *Manifest word totals are editorial metadata and may differ from an independent re-count after any future line edits. All 300 chapter slots have actual prose content, not stubs or outline text. **All 300 chapters now have at least 1,300 indexed words after Pass 19. The historical fourteenth editorial pass improved 15 individual chapter slots, including an Iroh full-scene rewrite and two chronology/repetition repairs; literary-depth and exact voice parity still require a full editorial review.** Word counts and dialogue richness vary across the series; do not claim full length/depth equalization solely from having 50 chapters each.
 
