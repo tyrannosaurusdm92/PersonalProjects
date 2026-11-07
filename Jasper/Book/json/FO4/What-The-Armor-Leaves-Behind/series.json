@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 81989,
+  "total_word_count": 83003,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -149,7 +149,7 @@
       "number": 14,
       "file": "14.json",
       "title": "Cutler",
-      "word_count": 1559,
+      "word_count": 1918,
       "id": "what-the-armor-leaves-behind-14",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "what-the-armor-leaves-behind-15"
@@ -311,7 +311,7 @@
       "number": 32,
       "file": "32.json",
       "title": "Civilian Clothes",
-      "word_count": 1514,
+      "word_count": 1822,
       "id": "what-the-armor-leaves-behind-32",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "what-the-armor-leaves-behind-33"
@@ -456,7 +456,7 @@
       "file": "48.json",
       "title": "The Night the Lights Went Out",
       "id": "what-the-armor-leaves-behind-48",
-      "word_count": 1656,
+      "word_count": 2003,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "what-the-armor-leaves-behind-49"
     },
@@ -553,5 +553,15 @@
     ],
     "added_indexed_words": 830,
     "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
+  },
+  "editorial_pass24": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      14,
+      32,
+      48
+    ],
+    "added_indexed_words": 1014,
+    "scope": "In-place substantial scenes; original 50 chapters and previous passes retained."
   }
 }
