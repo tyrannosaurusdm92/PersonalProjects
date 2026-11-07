@@ -4,19 +4,24 @@
   "identity": {
     "name": "Lio",
     "origin": "Original to Jasper's interconnected fanfiction, not licensed-character canon",
-    "location": "Tideglass landing"
+    "location": "Tideglass landing",
+    "age_at_chapter_19": 16,
+    "romance_status": "Minor; never a romantic or sensual character",
+    "role_at_chapter_19": "Boatbuilding apprentice, supervised by Fen"
   },
   "biography": {
-    "on_page": "Operates a skiff and transports real tools, messages and cargo",
+    "on_page": "Sixteen-year-old boatbuilding apprentice at Tideglass; designs a working skiff commissioned by Sela and asks Maui to hold a plank and observe knotwork instead of taking over. Later story may involve other transport work, but this chapter establishes the apprentice's current craft.",
     "history": "Only facts established in the linked manuscripts; unwritten history remains open"
   },
   "personality": {
-    "voice": "Directly concerned with mooring, timing and agreed loads",
+    "voice": "Direct and proud of a carefully measured craft; resists showmanship and correction that ignores the boat's actual use.",
     "dramatic_pressure": "Works, disagrees, remembers or refuses independently of Jasper and famous visitors"
   },
   "agency": "A message requires a real trip; never assume an impossible instantaneous crossing",
   "manuscript_sources": [
-    "Jasper/Book/json/Disney/Maui-And-Jasper/49.json"
+    "Jasper/Book/json/Disney/Maui-And-Jasper/49.json",
+    "Jasper/Book/json/Disney/Maui-And-Jasper/19.json"
   ],
-  "boundary": "This is a story-grounded characterization profile, not an external franchise biography."
+  "boundary": "This is a story-grounded characterization profile, not an external franchise biography.",
+  "editorial_pass22_correction": "The previous profile overemphasized transport and did not record explicit apprentice age or independence; do not imply adulthood."
 }
