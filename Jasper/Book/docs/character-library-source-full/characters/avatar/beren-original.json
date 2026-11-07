@@ -1,0 +1,46 @@
+{
+  "schema_version": "jasper.character-profile.pass23.v1",
+  "profile_type": "generator_character_profile",
+  "id": "avatar-beren-original",
+  "name": "Beren",
+  "fandom": "Avatar: The Last Airbender / Love & Duty",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Delivery-cart driver with a daily market route who challenges Aang's unsafe test course",
+    "location": "Cranefish Town festival testing yard and local market",
+    "fictional_character": true
+  },
+  "personality": {
+    "core_traits_and_context": "Practical, direct, protective of cargo and earnings; angry about avoidable delay, not impressed by the Avatar's fame.",
+    "voice_register": "Plainspoken market-worker objections, no symbolic speeches."
+  },
+  "relationships": {
+    "Aang": "Challenges him to account for blocked roads and damaged vegetables.",
+    "Katara": "Shows her how a temporary crossing must actually work for carts.",
+    "Jasper": "Provides route measurements and gives a real financial cost to experimental flying."
+  },
+  "source_evidence": [
+    {
+      "type": "in-story",
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/24.json",
+      "detail": "Named driver of a cart loaded with cabbages; route delay and loss are on page."
+    }
+  ],
+  "known_unknowns": [
+    "age",
+    "family",
+    "formal association",
+    "recurring delivery route outside the one shown"
+  ],
+  "writer_constraints": "Original supporting character, no franchise biography. Beren is a he/him named driver in current prose, not a new canonical Avatar character.",
+  "scene_use": {
+    "continuity": "Preserve observed choices, debts, work, risks, and consequences between chapters.",
+    "pov": "Jasper narrates only what can be observed, read or plausibly inferred.",
+    "romance": "These are supporting characters; no new romance arc is implied."
+  },
+  "reference_library_notes": {
+    "basis": "Original fanfiction character: grounded in existing manuscript scenes, not external lore.",
+    "specificity": "Never replace unknown age, relationships, voice or history with fabricated details.",
+    "latest_verified_pass": 23
+  }
+}
