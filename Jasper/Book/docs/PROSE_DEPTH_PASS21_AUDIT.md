@@ -1,5 +1,7 @@
 # Editorial Pass 21 — Narrative Depth, Voice and Integrated-World Audit
 
+> **Pass 22 factual correction (2026-11-06):** Mereana explicitly identifies as a Māori performer and teacher in *The Shore I Choose* chapter 6. Her iwi affiliation and specific personal rituals are not established. The original pass omitted this existing manuscript fact.
+
 **Date:** 2026-11-06  
 **Target:** `tyrannosaurusdm92/PersonalProjects`, `Jasper/Book`, existing **`main` branch**.  
 **Status:** Direct, in-place edits to existing prose; no new branch, pull request, new route or replacement manuscript.
@@ -30,7 +32,7 @@ These counts are reconciled chapter-index metadata (the previous collection tota
 
 **Greg — ch 12:** Greg, Steven's photograph, Jasper's independent shelf and the car/van life remain distinct; Jasper's ethical non-monogamy does not imply every partner gets the same housing or belongings. Greg is goofy, warm, musical and a father, not another tea philosopher. **Ch 25:** Greg contacts customers to offer refunds after the car wash pump fails and accepts Alva's technical limits; a previously scrambled sequence of her arrival and inspection has been corrected. **Ch 47:** Greg insists a hired sound technician receive the agreed fee, not a program credit in lieu of payment. The event technician remains **unnamed** rather than being conflated with Alva, the car wash specialist.
 
-**Maui — ch 12:** Lark's intended crossing and route are private; Pip and Neri work toward a voluntary register. Maui's very conspicuous wish to help is redirected toward respecting a no. **Ch 25:** Mereana and visiting collaborators control their own artworks, lending terms, repair authorization and missed bookings; their Aotearoa background is not license to invent rituals or assume ethnicity. **Ch 47:** Fen documents tide and debris limits for the temporary upper water channel, while the older Closed Bells lower maintenance passage remains sealed. Maui may joke about heroic persecution by paperwork, but he does not override actual measurements.
+**Maui — ch 12:** Lark's intended crossing and route are private; Pip and Neri work toward a voluntary register. Maui's very conspicuous wish to help is redirected toward respecting a no. **Ch 25:** Mereana and visiting collaborators control their own artworks, lending terms, repair authorization and missed bookings; chapter 6 already identifies Mereana as a Māori performer and teacher; her specific iwi and any undisclosed rituals remain unknown. **Ch 47:** Fen documents tide and debris limits for the temporary upper water channel, while the older Closed Bells lower maintenance passage remains sealed. Maui may joke about heroic persecution by paperwork, but he does not override actual measurements.
 
 ## Character reference research
 
@@ -41,7 +43,7 @@ Five **original** supporting characters lacked individualized files. Pass 21 res
 | **Lian** | *Jasmine After Rain* 25 | Neighboring gardener, damaged seedlings, asks for soil testing, chooses replacement planting | Age, history, family |
 | **Huan** | *Jasmine After Rain* 25 | Market plant grower or vendor recommended by Lian | Pronouns, personality, inventory |
 | **Lark** | *The Shore I Choose* 12 | Traveler who requests a confidential departure without required return date | Destination, home, age |
-| **Mereana** | *The Shore I Choose* 25 | Visiting artist from Aotearoa protecting art ownership, loan terms and costs | Ethnicity, invented cultural ceremonies, family |
+| **Mereana** | *The Shore I Choose* 6 and 25 | Māori performer and teacher from Aotearoa; protects artists' ownership and loan terms | Specific iwi, invented ceremonies, family |
 | **Alva** | *Stars Between the Strings* 25 | Beach City pump repair specialist with a maintenance checklist | Qualification to inspect an unrelated concert's electrical system |
 
 No external franchise biography exists for these **story-original characters**. Their reference files mark unknown details explicitly instead of making up biographies. The unified index now has **168** registered profiles (previously 163).
