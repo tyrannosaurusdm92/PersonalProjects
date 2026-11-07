@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 170,
+  "profile_count": 175,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1362,6 +1362,46 @@
       "provenance": "story_original",
       "file": "avatar-mei-original.json",
       "canonical_key": "avatarloveandduty::mei"
+    },
+    {
+      "id": "fo4-keane",
+      "name": "Knight Keane",
+      "fandom": "Fallout 4",
+      "provenance": "canon_researched",
+      "file": "fo4-keane.json",
+      "canonical_key": "fallout4::knight keane"
+    },
+    {
+      "id": "hp-slughorn",
+      "name": "Professor Horace Slughorn",
+      "fandom": "Harry Potter",
+      "provenance": "canon_researched",
+      "file": "hp-slughorn.json",
+      "canonical_key": "harrypotter::professor horace slughorn"
+    },
+    {
+      "id": "avatar-beren-original",
+      "name": "Beren",
+      "fandom": "Avatar: The Last Airbender / Love & Duty",
+      "provenance": "story_original",
+      "file": "avatar-beren-original.json",
+      "canonical_key": "avatarloveandduty::beren"
+    },
+    {
+      "id": "su-nola-original",
+      "name": "Nola",
+      "fandom": "Steven Universe / Stars Between the Strings",
+      "provenance": "story_original",
+      "file": "su-nola-original.json",
+      "canonical_key": "stevenuniversestarsbetweenthestrings::nola"
+    },
+    {
+      "id": "lanternweald-sela",
+      "name": "Sela",
+      "fandom": "Lanternweald / The Shore I Choose",
+      "provenance": "story_original",
+      "file": "lanternweald-sela.json",
+      "canonical_key": "lanternwealdtheshoreichoose::sela"
     }
   ],
   "aliases": {
@@ -1622,7 +1662,19 @@
     "sinistra": "hp-sinistra",
     "aurora sinistra": "hp-sinistra",
     "mei (love & duty)": "avatar-mei-original",
-    "mei (cranefish student)": "avatar-mei-original"
+    "mei (cranefish student)": "avatar-mei-original",
+    "knight keane": "fo4-keane",
+    "keane": "fo4-keane",
+    "kn-100k": "fo4-keane",
+    "professor slughorn": "hp-slughorn",
+    "horace slughorn": "hp-slughorn",
+    "slughorn": "hp-slughorn",
+    "beren": "avatar-beren-original",
+    "beren (cart driver)": "avatar-beren-original",
+    "nola": "su-nola-original",
+    "nola (starwake steward)": "su-nola-original",
+    "sela": "lanternweald-sela",
+    "sela (garden and skiff)": "lanternweald-sela"
   },
   "alias_records": [
     {
@@ -3465,6 +3517,90 @@
       "id": "avatar-mei-original",
       "fandom_key": "avatarloveandduty",
       "fandom": "Avatar: The Last Airbender / Love & Duty"
+    },
+    {
+      "alias": "Knight Keane",
+      "normalized": "knight keane",
+      "id": "fo4-keane",
+      "fandom_key": "fallout4",
+      "fandom": "Fallout 4"
+    },
+    {
+      "alias": "Keane",
+      "normalized": "keane",
+      "id": "fo4-keane",
+      "fandom_key": "fallout4",
+      "fandom": "Fallout 4"
+    },
+    {
+      "alias": "KN-100K",
+      "normalized": "kn-100k",
+      "id": "fo4-keane",
+      "fandom_key": "fallout4",
+      "fandom": "Fallout 4"
+    },
+    {
+      "alias": "Professor Slughorn",
+      "normalized": "professor slughorn",
+      "id": "hp-slughorn",
+      "fandom_key": "harrypotter",
+      "fandom": "Harry Potter"
+    },
+    {
+      "alias": "Horace Slughorn",
+      "normalized": "horace slughorn",
+      "id": "hp-slughorn",
+      "fandom_key": "harrypotter",
+      "fandom": "Harry Potter"
+    },
+    {
+      "alias": "Slughorn",
+      "normalized": "slughorn",
+      "id": "hp-slughorn",
+      "fandom_key": "harrypotter",
+      "fandom": "Harry Potter"
+    },
+    {
+      "alias": "Beren",
+      "normalized": "beren",
+      "id": "avatar-beren-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar: The Last Airbender / Love & Duty"
+    },
+    {
+      "alias": "Beren (cart driver)",
+      "normalized": "beren (cart driver)",
+      "id": "avatar-beren-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar: The Last Airbender / Love & Duty"
+    },
+    {
+      "alias": "Nola",
+      "normalized": "nola",
+      "id": "su-nola-original",
+      "fandom_key": "stevenuniversestarsbetweenthestrings",
+      "fandom": "Steven Universe / Stars Between the Strings"
+    },
+    {
+      "alias": "Nola (Starwake steward)",
+      "normalized": "nola (starwake steward)",
+      "id": "su-nola-original",
+      "fandom_key": "stevenuniversestarsbetweenthestrings",
+      "fandom": "Steven Universe / Stars Between the Strings"
+    },
+    {
+      "alias": "Sela",
+      "normalized": "sela",
+      "id": "lanternweald-sela",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Sela (garden and skiff)",
+      "normalized": "sela (garden and skiff)",
+      "id": "lanternweald-sela",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
     }
   ],
   "fandom_profiles": {
@@ -3545,7 +3681,8 @@
       "fo4-piper-wright",
       "fo4-preston-garvey",
       "fo4-quinlan",
-      "fo4-rhys"
+      "fo4-rhys",
+      "fo4-keane"
     ],
     "fallout4whatthearmorleavesbehind": [
       "fo4-amos",
@@ -3580,7 +3717,8 @@
       "hp-sirius-black",
       "hp-snape",
       "hp-voldemort",
-      "hp-sinistra"
+      "hp-sinistra",
+      "hp-slughorn"
     ],
     "hazbinhotel": [
       "hazbin-alastor",
@@ -3659,7 +3797,8 @@
     "stevenuniversestarsbetweenthestrings": [
       "su-lila",
       "su-mara",
-      "su-alva"
+      "su-alva",
+      "su-nola-original"
     ],
     "avatarjasmineafterrain": [
       "avatar-lian",
@@ -3667,10 +3806,12 @@
     ],
     "lanternwealdtheshoreichoose": [
       "lanternweald-lark",
-      "lanternweald-mereana"
+      "lanternweald-mereana",
+      "lanternweald-sela"
     ],
     "avatarloveandduty": [
-      "avatar-mei-original"
+      "avatar-mei-original",
+      "avatar-beren-original"
     ]
   },
   "series_cast": {
@@ -3693,7 +3834,8 @@
       "avatar-momo",
       "avatar-gran-gran",
       "avatar-hakoda",
-      "avatar-mei-original"
+      "avatar-mei-original",
+      "avatar-beren-original"
     ],
     "what-the-armor-leaves-behind": [
       "fo4-danse",
@@ -3708,7 +3850,8 @@
       "fo4-nick-valentine",
       "fo4-amos",
       "fo4-lena",
-      "fo4-mara"
+      "fo4-mara",
+      "fo4-keane"
     ],
     "after-always": [
       "hp-snape",
@@ -3722,7 +3865,8 @@
       "hp-hagrid",
       "hp-lucius",
       "hp-kingsley",
-      "hp-sinistra"
+      "hp-sinistra",
+      "hp-slughorn"
     ],
     "stars-between-the-strings": [
       "su-greg",
@@ -3731,18 +3875,20 @@
       "su-lion",
       "su-mara",
       "su-lila",
-      "su-alva"
+      "su-alva",
+      "su-nola-original"
     ],
     "the-shore-i-choose": [
       "lanternweald-lark",
-      "lanternweald-mereana"
+      "lanternweald-mereana",
+      "lanternweald-sela"
     ]
   },
   "merge_summary": {
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 170
+    "final_canonical_profiles": 175
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -3752,7 +3898,7 @@
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
   ],
-  "latest_research_update": "2026-11-06-Pass22",
+  "latest_research_update": "2026-11-06-Pass23",
   "research_additions_pass20": [
     "su-marty",
     "su-sour-cream",
@@ -3773,5 +3919,13 @@
   "profile_corrections_pass22": [
     "lanternweald-mereana",
     "original Lio profile"
-  ]
+  ],
+  "research_additions_pass23": [
+    "fo4-keane",
+    "hp-slughorn",
+    "avatar-beren-original",
+    "su-nola-original",
+    "lanternweald-sela"
+  ],
+  "canon_source_note_pass23": "Keane is a Fallout 4 Recon Squad Gladius NPC; baseball-card artifact in the manuscript remains story-original. Slughorn is canon Potions professor. Beren, Nola and Sela are original."
 }
