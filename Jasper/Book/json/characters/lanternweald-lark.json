@@ -1,0 +1,60 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-lark",
+  "name": "Lark",
+  "fandom": "Lanternweald / The Shore I Choose",
+  "provenance": "story_original",
+  "age_status": "unspecified; not a romance route",
+  "identity": {
+    "role": "Traveler who chooses to depart without announcing a route or expected return date",
+    "location": "Lanternwell east arch",
+    "pronouns_in_existing_prose": "they/them on page",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "protective of privacy",
+      "cautious",
+      "decisive",
+      "capable of accepting practical help selectively"
+    ],
+    "motivations": [
+      "Keeps their destination private",
+      "Asks Jasper to stand back while they open the arch",
+      "Declines being assigned a mandatory return date"
+    ]
+  },
+  "voice": {
+    "register": "Quiet, clear and direct when setting limits; avoids explanatory performances about private history",
+    "writer_rules": [
+      "Keep this supporting character's concerns independent of Jasper's romance.",
+      "Never treat an unknown family history, appearance or title as a confirmed fact."
+    ]
+  },
+  "generator_use": {
+    "best_story_functions": [
+      "community continuity",
+      "autonomous choice and real-life responsibilities"
+    ],
+    "avoid": [
+      "giving this person automatic consent to help or be publicized",
+      "inventing a romance route"
+    ]
+  },
+  "source_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/12.json"
+    }
+  ],
+  "known_unknowns": [
+    "destination",
+    "age",
+    "past",
+    "reason for departure",
+    "future return",
+    "family ties"
+  ],
+  "source_boundary": "Story-original character: no external licensed biography exists. Research is limited to the named manuscript appearances. Cultural identity and personal history may not be inferred from a name or origin."
+}
