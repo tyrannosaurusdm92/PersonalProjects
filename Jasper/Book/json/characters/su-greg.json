@@ -538,5 +538,33 @@
     ],
     "distinct_from_iroh": "Greg uses messy jokes, informal grammar, improvised melodies and schedule errors; Iroh speaks like a retired strategist who sometimes overplans staff lives.",
     "source_boundary": "Story scenes are original fanfiction continuity and not claims about new franchise canon."
+  },
+  "character_voice_pass23": {
+    "date": "2026-11-06",
+    "core": "Steven's father and former rock musician, car-wash owner who gravitates to guitars, vans, practical care and unpolished affection. He sometimes jokes to avoid a difficult thought but cannot be reduced to a fool.",
+    "sound": "Conversational, rambling, playfully self-deprecating. Knows chords, fret buzz, sound checks, mic cables, customer costs and what it takes to have a family; avoids the poised strategic parable.",
+    "scene": "In Stars Between the Strings 39, Greg labels a breath before an unfinished line, keeps a flawed take, and explains musical taste through amp levels and a cup of Iroh's citrus tea. He is interested in the tea as a musician's ear, not a retired general's lesson.",
+    "no": [
+      "Do not imitate Iroh's balanced, proverbial statements or command vocabulary.",
+      "Do not ignore Steven or reduce fatherhood to a romance accessory.",
+      "Do not treat Greg's practical musical expertise as magical expertise or technical certification beyond the evidence."
+    ],
+    "grounding": [
+      {
+        "title": "Steven Universe episode Greg the Babysitter (transcript)",
+        "url": "https://steven-universe.fandom.com/wiki/Greg_the_Babysitter/Transcript",
+        "type": "episode transcript"
+      },
+      {
+        "title": "Greg Universe series character background",
+        "url": "https://steven-universe.fandom.com/wiki/Greg_Universe",
+        "type": "episode-derived reference"
+      },
+      {
+        "title": "Pass 23 canonical fanfic chapter 39",
+        "path": "Jasper/Book/json/SU/Stars-Between-The-Strings/39.json",
+        "type": "story"
+      }
+    ]
   }
 }
