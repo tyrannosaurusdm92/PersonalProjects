@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 168,
+  "profile_count": 170,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1346,6 +1346,22 @@
       "provenance": "story_original",
       "file": "su-alva.json",
       "canonical_key": "stevenuniversestarsbetweenthestrings::alva"
+    },
+    {
+      "id": "hp-sinistra",
+      "name": "Professor Sinistra",
+      "fandom": "Harry Potter",
+      "provenance": "canon_researched",
+      "file": "hp-sinistra.json",
+      "canonical_key": "harrypotter::professor sinistra"
+    },
+    {
+      "id": "avatar-mei-original",
+      "name": "Mei",
+      "fandom": "Avatar: The Last Airbender / Love & Duty",
+      "provenance": "story_original",
+      "file": "avatar-mei-original.json",
+      "canonical_key": "avatarloveandduty::mei"
     }
   ],
   "aliases": {
@@ -1601,7 +1617,12 @@
     "mereana": "lanternweald-mereana",
     "mereana (visiting artist)": "lanternweald-mereana",
     "alva": "su-alva",
-    "alva (car wash technician)": "su-alva"
+    "alva (car wash technician)": "su-alva",
+    "professor sinistra": "hp-sinistra",
+    "sinistra": "hp-sinistra",
+    "aurora sinistra": "hp-sinistra",
+    "mei (love & duty)": "avatar-mei-original",
+    "mei (cranefish student)": "avatar-mei-original"
   },
   "alias_records": [
     {
@@ -3409,6 +3430,41 @@
       "id": "su-alva",
       "fandom_key": "stevenuniversestarsbetweenthestrings",
       "fandom": "Steven Universe / Stars Between the Strings"
+    },
+    {
+      "alias": "Professor Sinistra",
+      "normalized": "professor sinistra",
+      "id": "hp-sinistra",
+      "fandom_key": "harrypotter",
+      "fandom": "Harry Potter"
+    },
+    {
+      "alias": "Sinistra",
+      "normalized": "sinistra",
+      "id": "hp-sinistra",
+      "fandom_key": "harrypotter",
+      "fandom": "Harry Potter"
+    },
+    {
+      "alias": "Aurora Sinistra",
+      "normalized": "aurora sinistra",
+      "id": "hp-sinistra",
+      "fandom_key": "harrypotter",
+      "fandom": "Harry Potter"
+    },
+    {
+      "alias": "Mei (Love & Duty)",
+      "normalized": "mei (love & duty)",
+      "id": "avatar-mei-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar: The Last Airbender / Love & Duty"
+    },
+    {
+      "alias": "Mei (Cranefish student)",
+      "normalized": "mei (cranefish student)",
+      "id": "avatar-mei-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar: The Last Airbender / Love & Duty"
     }
   ],
   "fandom_profiles": {
@@ -3523,7 +3579,8 @@
       "hp-remus-lupin",
       "hp-sirius-black",
       "hp-snape",
-      "hp-voldemort"
+      "hp-voldemort",
+      "hp-sinistra"
     ],
     "hazbinhotel": [
       "hazbin-alastor",
@@ -3611,6 +3668,9 @@
     "lanternwealdtheshoreichoose": [
       "lanternweald-lark",
       "lanternweald-mereana"
+    ],
+    "avatarloveandduty": [
+      "avatar-mei-original"
     ]
   },
   "series_cast": {
@@ -3632,7 +3692,8 @@
       "avatar-appa",
       "avatar-momo",
       "avatar-gran-gran",
-      "avatar-hakoda"
+      "avatar-hakoda",
+      "avatar-mei-original"
     ],
     "what-the-armor-leaves-behind": [
       "fo4-danse",
@@ -3660,7 +3721,8 @@
       "hp-dumbledore",
       "hp-hagrid",
       "hp-lucius",
-      "hp-kingsley"
+      "hp-kingsley",
+      "hp-sinistra"
     ],
     "stars-between-the-strings": [
       "su-greg",
@@ -3680,7 +3742,7 @@
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 168
+    "final_canonical_profiles": 170
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -3690,7 +3752,7 @@
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
   ],
-  "latest_research_update": "2026-11-06-Pass21",
+  "latest_research_update": "2026-11-06-Pass22",
   "research_additions_pass20": [
     "su-marty",
     "su-sour-cream",
@@ -3703,5 +3765,13 @@
     "lanternweald-lark",
     "lanternweald-mereana",
     "su-alva"
+  ],
+  "research_additions_pass22": [
+    "hp-sinistra",
+    "avatar-mei-original"
+  ],
+  "profile_corrections_pass22": [
+    "lanternweald-mereana",
+    "original Lio profile"
   ]
 }
