@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 175,
+  "profile_count": 181,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1402,6 +1402,54 @@
       "provenance": "story_original",
       "file": "lanternweald-sela.json",
       "canonical_key": "lanternwealdtheshoreichoose::sela"
+    },
+    {
+      "id": "avatar-yulan-original",
+      "name": "Yulan",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+      "provenance": "story_original",
+      "file": "avatar-yulan-original.json",
+      "canonical_key": "avatarjasmineafterrain::yulan"
+    },
+    {
+      "id": "avatar-suri-original",
+      "name": "Suri",
+      "fandom": "Avatar: The Last Airbender / Love & Duty",
+      "provenance": "story_original",
+      "file": "avatar-suri-original.json",
+      "canonical_key": "avatarloveandduty::suri"
+    },
+    {
+      "id": "avatar-mara-sen-original",
+      "name": "Mara Sen",
+      "fandom": "Avatar: The Last Airbender / Love & Duty",
+      "provenance": "story_original",
+      "file": "avatar-mara-sen-original.json",
+      "canonical_key": "avatarloveandduty::mara sen"
+    },
+    {
+      "id": "lanternweald-amel",
+      "name": "Amel",
+      "fandom": "Lanternweald / Love & Duty",
+      "provenance": "story_original",
+      "file": "lanternweald-amel.json",
+      "canonical_key": "avatarloveandduty::amel"
+    },
+    {
+      "id": "lanternweald-aster",
+      "name": "Aster",
+      "fandom": "Lanternweald / Brasswatch",
+      "provenance": "story_original",
+      "file": "lanternweald-aster.json",
+      "canonical_key": "fallout4whatthearmorleavesbehind::aster"
+    },
+    {
+      "id": "lanternweald-rowan-musician",
+      "name": "Rowan",
+      "fandom": "Lanternweald / Stars Between the Strings",
+      "provenance": "story_original",
+      "file": "lanternweald-rowan-musician.json",
+      "canonical_key": "stevenuniversestarsbetweenthestrings::rowan"
     }
   ],
   "aliases": {
@@ -1674,7 +1722,18 @@
     "nola": "su-nola-original",
     "nola (starwake steward)": "su-nola-original",
     "sela": "lanternweald-sela",
-    "sela (garden and skiff)": "lanternweald-sela"
+    "sela (garden and skiff)": "lanternweald-sela",
+    "yulan": "avatar-yulan-original",
+    "yulan (cart driver)": "avatar-yulan-original",
+    "suri": "avatar-suri-original",
+    "suri (textile worker)": "avatar-suri-original",
+    "mara sen": "avatar-mara-sen-original",
+    "amel": "lanternweald-amel",
+    "amel (east shelter)": "lanternweald-amel",
+    "aster": "lanternweald-aster",
+    "aster (brasswatch)": "lanternweald-aster",
+    "rowan (musician)": "lanternweald-rowan-musician",
+    "rowan (starwake pier)": "lanternweald-rowan-musician"
   },
   "alias_records": [
     {
@@ -3601,6 +3660,83 @@
       "id": "lanternweald-sela",
       "fandom_key": "lanternwealdtheshoreichoose",
       "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Yulan",
+      "normalized": "yulan",
+      "id": "avatar-yulan-original",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Yulan (cart driver)",
+      "normalized": "yulan (cart driver)",
+      "id": "avatar-yulan-original",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Suri",
+      "normalized": "suri",
+      "id": "avatar-suri-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar: The Last Airbender / Love & Duty"
+    },
+    {
+      "alias": "Suri (textile worker)",
+      "normalized": "suri (textile worker)",
+      "id": "avatar-suri-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar: The Last Airbender / Love & Duty"
+    },
+    {
+      "alias": "Mara Sen",
+      "normalized": "mara sen",
+      "id": "avatar-mara-sen-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar: The Last Airbender / Love & Duty"
+    },
+    {
+      "alias": "Amel",
+      "normalized": "amel",
+      "id": "lanternweald-amel",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Lanternweald / Love & Duty"
+    },
+    {
+      "alias": "Amel (east shelter)",
+      "normalized": "amel (east shelter)",
+      "id": "lanternweald-amel",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Lanternweald / Love & Duty"
+    },
+    {
+      "alias": "Aster",
+      "normalized": "aster",
+      "id": "lanternweald-aster",
+      "fandom_key": "fallout4whatthearmorleavesbehind",
+      "fandom": "Lanternweald / Brasswatch"
+    },
+    {
+      "alias": "Aster (Brasswatch)",
+      "normalized": "aster (brasswatch)",
+      "id": "lanternweald-aster",
+      "fandom_key": "fallout4whatthearmorleavesbehind",
+      "fandom": "Lanternweald / Brasswatch"
+    },
+    {
+      "alias": "Rowan (musician)",
+      "normalized": "rowan (musician)",
+      "id": "lanternweald-rowan-musician",
+      "fandom_key": "stevenuniversestarsbetweenthestrings",
+      "fandom": "Lanternweald / Stars Between the Strings"
+    },
+    {
+      "alias": "Rowan (Starwake Pier)",
+      "normalized": "rowan (starwake pier)",
+      "id": "lanternweald-rowan-musician",
+      "fandom_key": "stevenuniversestarsbetweenthestrings",
+      "fandom": "Lanternweald / Stars Between the Strings"
     }
   ],
   "fandom_profiles": {
@@ -3687,7 +3823,8 @@
     "fallout4whatthearmorleavesbehind": [
       "fo4-amos",
       "fo4-lena",
-      "fo4-mara"
+      "fo4-mara",
+      "lanternweald-aster"
     ],
     "fallout76": [
       "fo76-adelaide",
@@ -3798,11 +3935,13 @@
       "su-lila",
       "su-mara",
       "su-alva",
-      "su-nola-original"
+      "su-nola-original",
+      "lanternweald-rowan-musician"
     ],
     "avatarjasmineafterrain": [
       "avatar-lian",
-      "avatar-huan"
+      "avatar-huan",
+      "avatar-yulan-original"
     ],
     "lanternwealdtheshoreichoose": [
       "lanternweald-lark",
@@ -3811,7 +3950,10 @@
     ],
     "avatarloveandduty": [
       "avatar-mei-original",
-      "avatar-beren-original"
+      "avatar-beren-original",
+      "avatar-suri-original",
+      "avatar-mara-sen-original",
+      "lanternweald-amel"
     ]
   },
   "series_cast": {
@@ -3822,7 +3964,8 @@
       "avatar-appa",
       "avatar-momo",
       "avatar-lian",
-      "avatar-huan"
+      "avatar-huan",
+      "avatar-yulan-original"
     ],
     "love-and-duty": [
       "avatar-aang",
@@ -3835,7 +3978,10 @@
       "avatar-gran-gran",
       "avatar-hakoda",
       "avatar-mei-original",
-      "avatar-beren-original"
+      "avatar-beren-original",
+      "avatar-suri-original",
+      "avatar-mara-sen-original",
+      "lanternweald-amel"
     ],
     "what-the-armor-leaves-behind": [
       "fo4-danse",
@@ -3851,7 +3997,8 @@
       "fo4-amos",
       "fo4-lena",
       "fo4-mara",
-      "fo4-keane"
+      "fo4-keane",
+      "lanternweald-aster"
     ],
     "after-always": [
       "hp-snape",
@@ -3876,7 +4023,8 @@
       "su-mara",
       "su-lila",
       "su-alva",
-      "su-nola-original"
+      "su-nola-original",
+      "lanternweald-rowan-musician"
     ],
     "the-shore-i-choose": [
       "lanternweald-lark",
@@ -3888,7 +4036,7 @@
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 175
+    "final_canonical_profiles": 181
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -3898,7 +4046,7 @@
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
   ],
-  "latest_research_update": "2026-11-06-Pass23",
+  "latest_research_update": "2026-11-07-Pass24",
   "research_additions_pass20": [
     "su-marty",
     "su-sour-cream",
@@ -3927,5 +4075,14 @@
     "su-nola-original",
     "lanternweald-sela"
   ],
-  "canon_source_note_pass23": "Keane is a Fallout 4 Recon Squad Gladius NPC; baseball-card artifact in the manuscript remains story-original. Slughorn is canon Potions professor. Beren, Nola and Sela are original."
+  "canon_source_note_pass23": "Keane is a Fallout 4 Recon Squad Gladius NPC; baseball-card artifact in the manuscript remains story-original. Slughorn is canon Potions professor. Beren, Nola and Sela are original.",
+  "research_additions_pass24": [
+    "avatar-yulan-original",
+    "avatar-suri-original",
+    "avatar-mara-sen-original",
+    "lanternweald-amel",
+    "lanternweald-aster",
+    "lanternweald-rowan-musician"
+  ],
+  "canon_source_note_pass24": "Six new story-original biographies were reconstructed from the authored prose, without falsely presenting them as licensed canon; ambiguous Rowan age and Mara surname are disambiguated."
 }
