@@ -1,0 +1,45 @@
+{
+  "schema_version": "jasper.character-profile.pass23.v1",
+  "profile_type": "generator_character_profile",
+  "id": "su-nola-original",
+  "name": "Nola",
+  "fandom": "Steven Universe / Stars Between the Strings",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Event steward / volunteer-coordinator at Starwake Pier, responsible for safe equipment handling and expense reconciliation",
+    "location": "Starwake Pier",
+    "fictional_character": true
+  },
+  "personality": {
+    "core_traits_and_context": "Organized, firm, direct, attentive to cable handling and load limits; distinguishes contracted labor from volunteer help.",
+    "voice_register": "Brief, specific corrections delivered without glamour."
+  },
+  "relationships": {
+    "Greg": "Stops him from taking cables from others and directs the heavy guitar case to the correct bay.",
+    "Jasper": "Community contact for post-show equipment and cost records."
+  },
+  "source_evidence": [
+    {
+      "type": "in-story",
+      "path": "Jasper/Book/json/SU/Stars-Between-The-Strings/47.json",
+      "detail": "Her clipboard, equipment and account corrections appear directly in the story."
+    }
+  ],
+  "known_unknowns": [
+    "age",
+    "history",
+    "family",
+    "status as a paid employee versus volunteer organizer"
+  ],
+  "writer_constraints": "Original Lanternweald supporting worker, not a Steven Universe franchise character. Do not turn her into a member of Greg's family without a written scene.",
+  "scene_use": {
+    "continuity": "Preserve observed choices, debts, work, risks, and consequences between chapters.",
+    "pov": "Jasper narrates only what can be observed, read or plausibly inferred.",
+    "romance": "These are supporting characters; no new romance arc is implied."
+  },
+  "reference_library_notes": {
+    "basis": "Original fanfiction character: grounded in existing manuscript scenes, not external lore.",
+    "specificity": "Never replace unknown age, relationships, voice or history with fabricated details.",
+    "latest_verified_pass": 23
+  }
+}
