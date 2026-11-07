@@ -12,7 +12,7 @@
   "description": "Jasper, the adult named first-person protagonist falls for Paladin Danse through Brotherhood missions, grief, hard arguments, Blind Betrayal, and the difficult work of building a life after rank and certainty are stripped away.",
   "canon_window": "Fallout 4 Commonwealth adult timeline centered on Paladin Danse and adult Jasper, including Brotherhood missions and the aftermath/consequences of Blind Betrayal; no under-18 romantic/private-interlude participants.",
   "chapter_count": 50,
-  "total_word_count": 79485,
+  "total_word_count": 80281,
   "story_bible": [
     "The romance grows through missions, competence, moral disagreement, loyalty under pressure, Blind Betrayal, and the slow reconstruction of identity after rank and certainty fail.",
     "Danse is formal, disciplined, literal, duty-shaped, protective, and uncomfortable with vulnerability; warmth should emerge through behavior before eloquent confession.",
@@ -131,7 +131,7 @@
       "number": 12,
       "file": "12.json",
       "title": "Vertibird Weather",
-      "word_count": 1548,
+      "word_count": 1825,
       "id": "what-the-armor-leaves-behind-12",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "what-the-armor-leaves-behind-13"
@@ -248,7 +248,7 @@
       "number": 25,
       "file": "25.json",
       "title": "Missing",
-      "word_count": 1500,
+      "word_count": 1753,
       "id": "what-the-armor-leaves-behind-25",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "what-the-armor-leaves-behind-26"
@@ -447,7 +447,7 @@
       "file": "47.json",
       "title": "A Practical Kind of Courage",
       "id": "what-the-armor-leaves-behind-47",
-      "word_count": 1402,
+      "word_count": 1668,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "what-the-armor-leaves-behind-48"
     },
@@ -523,5 +523,15 @@
     ],
     "added_indexed_words": 916,
     "scope": "In-place narrative corrections; all 50 original chapters preserved."
+  },
+  "editorial_pass21": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      12,
+      25,
+      47
+    ],
+    "indexed_words_added": 796,
+    "scope": "In-place original scene revisions; full 50-chapter manuscript and earlier edits preserved."
   }
 }
