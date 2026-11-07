@@ -1,4 +1,6 @@
-/* Navigation-only tabs. No page routes, URL fragments, or private account UI. */
+/* The T-Rex tabs, not a second imitation of OurSpace.
+   Jasper's and William's profiles render inside the native OurSpace viewer,
+   which imports the source module CSS from LifeHelpers directly. */
 #ourspaceTopTabs{position:sticky;top:0;z-index:22000;display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;padding:9px clamp(10px,3vw,32px);background:rgba(1,13,19,.98);border-bottom:2px solid #00ffff;box-shadow:0 6px 18px #0009}
 #ourspaceTopTabs button{font:700 14px/1.25 Verdana,Arial,sans-serif;cursor:pointer;min-height:44px}
 #trexSiteTab,#ourspaceMenuButton{background:#082630;color:#e7ffff;border:1px solid #3cd9e4;border-radius:9px;padding:11px 15px}
@@ -13,49 +15,14 @@
 #masterDragHandle::after{content:" · drag";font-size:10px;font-weight:normal;color:#bffeff;text-transform:none}
 #masterNav.trex-master-positioned{transform:none;top:15px;left:14px}
 #masterToggle{touch-action:none}
-body.osp-active{background:#06101b!important}
-body.osp-active::before{background:linear-gradient(145deg,#04111c,#091e25 55%,#12101a)!important}
-#ourspacePublic{min-height:calc(100vh - 80px);padding:24px clamp(10px,3vw,40px) 70px;color:#effbff}
-.osp-public-top{max-width:1160px;margin:0 auto 14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-.osp-public-top h2{margin:0;font-size:clamp(22px,3vw,34px);color:#c7fffb}
-.osp-public-top p{color:#c8dce3;margin:4px 0}
-#ourspacePublicRefresh{padding:10px 15px;border-radius:8px;background:#0c3844;color:#efffff;border:1px solid #59e0de;font-weight:bold;cursor:pointer}
-#ourspacePublicStatus{max-width:1160px;margin:0 auto 18px;color:#c5e9e7;min-height:20px}
-.osp-profile{--osp-accent:#ff9c44;--osp-accent2:#e5bf75;--osp-panel:#191c2e;max-width:1160px;margin:auto;color:#f5f6ff;font-family:Verdana,Arial,sans-serif;font-size:14px}
-.osp-profile.osp-william{--osp-accent:#00ffff;--osp-accent2:#90ff75;--osp-panel:#09252d}
-.osp-hero{position:relative;margin-bottom:19px;overflow:hidden;border:2px solid var(--osp-accent);border-radius:18px;background:var(--osp-panel);box-shadow:0 10px 32px #0008}
-.osp-banner{height:170px;position:relative;background:linear-gradient(130deg,#49254b,#1a2748 70%,#c27534)}
-.osp-william .osp-banner{background:linear-gradient(120deg,#003e51,#0d1739 65%,#22582f)}
-.osp-banner-image{height:100%;width:100%;object-fit:cover;display:block}
-.osp-identity{display:flex;gap:20px;align-items:center;padding:0 28px 23px;position:relative;margin-top:-36px}
-.osp-avatar{width:114px;height:114px;flex:0 0 114px;border-radius:16px;border:4px solid var(--osp-accent);display:grid;place-items:center;overflow:hidden;background:#071723;color:var(--osp-accent);font-weight:900;font-size:58px;box-shadow:0 7px 15px #0009}
-.osp-avatar-image{width:100%;height:100%;object-fit:cover}
-.osp-identity-copy{padding-top:40px;min-width:0}
-.osp-eyebrow{color:var(--osp-accent2);font-weight:700;letter-spacing:.07em;margin:0 0 4px}
-.osp-identity h1{font-size:clamp(23px,3.8vw,42px);margin:0;color:#fff;line-height:1.2}
-.osp-headline{margin:9px 0 0;color:#f4e9df;font-size:15px}
-.osp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;align-items:start}
-.osp-panel{border:1px solid var(--osp-accent);border-radius:12px;background:var(--osp-panel);padding:18px 22px;box-shadow:0 9px 25px #0006;min-width:0;overflow-wrap:anywhere}
-.osp-panel h2{color:var(--osp-accent);font-size:19px;margin:0 0 12px;border-bottom:1px solid #ffffff44;padding-bottom:9px}
-.osp-panel p{white-space:pre-line}
-.osp-panel a{color:#b3fffb;word-break:break-word}
-.osp-panel a:hover{color:var(--osp-accent2)}
-.osp-card{margin:12px 0;padding:12px;border:1px solid #ffffff45;border-radius:10px;background:#ffffff0a}
-.osp-card h3{font-size:15px;margin:0 0 6px;color:var(--osp-accent2)}
-.osp-card-image{max-width:100%;max-height:210px;display:block;object-fit:contain;margin:8px 0}
-.osp-chips{display:flex;flex-wrap:wrap;gap:8px}
-.osp-chip{display:inline-block;padding:6px 10px;border:1px solid var(--osp-accent);border-radius:999px;background:#ffffff10;color:#fff}
-.osp-link-list{display:grid;gap:10px}
-.osp-link-item{border-bottom:1px solid #ffffff2b;padding-bottom:8px}
-.osp-link{display:inline-flex;padding:8px 10px;border:1px solid var(--osp-accent);border-radius:8px;text-decoration:none;background:#ffffff0d}
-.osp-small{font-size:12px;opacity:.84}
-.osp-media-item{border-top:1px solid #ffffff30;padding:10px 0}
-.osp-media-item h3{font-size:14px;color:var(--osp-accent2);margin:0 0 7px}
-.osp-audio{width:100%;max-width:420px;display:block;margin:6px 0}
-.osp-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-.osp-visual{margin:0;padding:9px;border-radius:10px;background:#ffffff0d}
-.osp-gallery-image,.osp-video{width:100%;max-height:280px;object-fit:contain}
-.osp-visual figcaption{font-size:12px;line-height:1.4;margin-top:6px}
-.osp-privacy-note{text-align:center;color:#bed8da;font-size:12px;margin:24px 0}
-.osp-notice{max-width:800px;margin:25px auto;text-align:center;color:#fff}
-@media(max-width:700px){#ourspaceTopTabs{gap:5px;padding:8px}#ourspaceTopTabs button{font-size:12px;padding:9px}#ourspaceDropdown{min-width:185px}.osp-grid{grid-template-columns:1fr}.osp-identity{gap:12px;padding:0 13px 16px}.osp-avatar{width:78px;height:78px;flex-basis:78px;font-size:40px}.osp-identity-copy{padding-top:35px}}
+body.osp-active{background:#e5e5e5!important}
+body.osp-active::before{display:none!important}
+#ourspacePublic{min-height:calc(100vh - 70px);padding:8px 0 28px;color:#31566f;background:#e5e5e5}
+.osp-public-top{max-width:1754px;margin:0 auto 8px;padding:7px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.osp-public-top h2{margin:0;font-size:17px;color:#31566f}
+.osp-public-top p{color:#31566f;margin:2px 0;font-size:12px}
+#ourspacePublicRefresh{padding:9px 13px;border-radius:6px;background:#31566f;color:white;border:1px solid #5686a6;font-weight:bold;cursor:pointer}
+#ourspacePublicStatus{max-width:1754px;margin:0 auto;padding:0 18px 7px;color:#31566f;font-size:12px;min-height:16px}
+#ourspacePublishedContent{width:100%;margin:0;padding:0}
+#ourspaceNativeFrame{display:block;width:100%;min-height:1200px;border:0;background:#e5e5e5}
+@media(max-width:700px){#ourspaceTopTabs{gap:5px;padding:8px}#ourspaceTopTabs button{font-size:12px;padding:9px}#ourspaceDropdown{min-width:185px}.osp-public-top{padding:6px 10px}}
