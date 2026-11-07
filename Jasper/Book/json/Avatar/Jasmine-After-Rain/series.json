@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 80787,
+  "total_word_count": 81571,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -67,7 +67,7 @@
       "number": 5,
       "file": "05.json",
       "title": "The City's Quiet Scars",
-      "word_count": 1517,
+      "word_count": 1815,
       "id": "avatar-05",
       "relationship_stage": "chemistry",
       "next_chapter_id": "avatar-06"
@@ -265,7 +265,7 @@
       "number": 27,
       "file": "27.json",
       "title": "The Shape of Forgiveness",
-      "word_count": 1321,
+      "word_count": 1572,
       "id": "avatar-27",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "avatar-28"
@@ -427,7 +427,7 @@
       "number": 45,
       "file": "45.json",
       "title": "The Price of the Mountain Mint",
-      "word_count": 1608,
+      "word_count": 1843,
       "id": "avatar-45",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-46"
@@ -576,5 +576,15 @@
     ],
     "added_words": 432,
     "scope": "In-place prose, independent character voice; original 50-chapter arc retained."
+  },
+  "editorial_pass26": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      5,
+      27,
+      45
+    ],
+    "added_indexed_words": 784,
+    "scope": "Original prose additions to existing 5/27/45; all fifty chapters and prior edits preserved."
   }
 }
