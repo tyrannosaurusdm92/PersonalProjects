@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 82453,
+  "total_word_count": 83275,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -67,7 +67,7 @@
       "number": 5,
       "file": "05.json",
       "title": "A House with Wheels",
-      "word_count": 1607,
+      "word_count": 1893,
       "id": "su-05",
       "relationship_stage": "chemistry",
       "next_chapter_id": "su-06"
@@ -265,7 +265,7 @@
       "number": 27,
       "file": "27.json",
       "title": "The Shape of Sorry",
-      "word_count": 1485,
+      "word_count": 1754,
       "id": "su-27",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-28"
@@ -427,7 +427,7 @@
       "number": 45,
       "file": "45.json",
       "title": "A Better Kind of Jealousy",
-      "word_count": 1475,
+      "word_count": 1742,
       "id": "su-45",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-46"
@@ -579,5 +579,15 @@
     ],
     "added_words": 591,
     "scope": "Character-specific substantial in-place scenes, complete 50-chapter story preserved."
+  },
+  "editorial_pass26": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      5,
+      27,
+      45
+    ],
+    "added_indexed_words": 822,
+    "scope": "Original craft and continuity edits; all fifty existing chapters retained."
   }
 }

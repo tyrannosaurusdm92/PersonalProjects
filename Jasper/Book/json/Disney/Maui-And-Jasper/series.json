@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 88429,
+  "total_word_count": 89247,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -63,7 +63,7 @@
       "file": "05.json",
       "title": "Where the Water Goes",
       "id": "maui-05",
-      "word_count": 1676,
+      "word_count": 1963,
       "next_chapter_id": "maui-06"
     },
     {
@@ -255,7 +255,7 @@
       "file": "27.json",
       "title": "The Visitor's Right to Leave",
       "id": "maui-27",
-      "word_count": 1862,
+      "word_count": 2102,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-28"
     },
@@ -417,7 +417,7 @@
       "file": "45.json",
       "title": "The Last Big Performance",
       "id": "maui-45",
-      "word_count": 2125,
+      "word_count": 2416,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-46"
     },
@@ -555,5 +555,15 @@
     ],
     "added_words": 595,
     "scope": "Two substantial character-specific scene edits preserving all 50 chapters and endings."
+  },
+  "editorial_pass26": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      5,
+      27,
+      45
+    ],
+    "added_indexed_words": 818,
+    "scope": "Original craft and continuity edits; all fifty existing chapters retained."
   }
 }
