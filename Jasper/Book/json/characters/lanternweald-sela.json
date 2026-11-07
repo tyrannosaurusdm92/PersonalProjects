@@ -1,0 +1,41 @@
+{
+  "schema_version": "jasper.character-profile.pass23.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-sela",
+  "name": "Sela",
+  "fandom": "Lanternweald / The Shore I Choose",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Market gardener commissioning a shallow flood-season skiff",
+    "location": "Tideglass river markets and seasonal gardens",
+    "fictional_character": true
+  },
+  "personality": {
+    "core_traits_and_context": "Specific about real needs; tests access, stability, crate space and wet-deck handling before accepting a build.",
+    "voice_register": "Makes practical requests, asks about structural consequences, does not defer to a hero's spectacular solution."
+  },
+  "relationships": {
+    "Lio": "Client whose constraints guide the apprentice boatbuilder's revisions.",
+    "Fen": "Construction and buoyancy inspection collaborator.",
+    "Maui": "Needs careful boat handling, not a boast about what he can lift."
+  },
+  "source_evidence": [
+    {
+      "type": "in-story",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/19.json",
+      "detail": "Named gardener, shallow skiff, stable handhold and crate safety"
+    }
+  ],
+  "known_unknowns": [
+    "age",
+    "family",
+    "species of crops",
+    "involvement in pre-existing historical events"
+  ],
+  "writer_constraints": "Story-original character, not a licensed Disney character. Pronouns she/her supported by the chapter. Keep her right to refuse unsafe equipment.",
+  "scene_use": {
+    "continuity": "Preserve observed choices, debts, work, risks, and consequences between chapters.",
+    "pov": "Jasper narrates only what can be observed, read or plausibly inferred.",
+    "romance": "These are supporting characters; no new romance arc is implied."
+  }
+}
