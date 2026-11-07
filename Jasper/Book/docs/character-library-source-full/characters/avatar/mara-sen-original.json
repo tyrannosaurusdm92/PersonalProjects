@@ -1,0 +1,51 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "avatar-mara-sen-original",
+  "name": "Mara Sen",
+  "fandom": "Avatar: The Last Airbender / Love & Duty",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Community civic organizer and charter supporter who convenes public discussion after the Civic Balance Charter loses 7–6",
+    "pronouns": "not established by the quoted scenes",
+    "age": "not established",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "forthright",
+      "strategically patient after defeat",
+      "comfortable in tense public rooms",
+      "organizes rather than rescuing the narrator"
+    ],
+    "voice": "Direct political language and dry remarks grounded in meeting logistics, not generic inspirational speeches."
+  },
+  "relationships": {
+    "Jasper": "Stops Jasper from withdrawing after the defeat and invites a listening meeting.",
+    "Toph": "Does not require Toph to serve as the movement's only voice.",
+    "community": "Holds an after-closing bakery meeting with volunteers using flour invoices as notes."
+  },
+  "manuscript_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/32.json"
+    }
+  ],
+  "known_unknowns": [
+    "age",
+    "occupation",
+    "family",
+    "whether she holds an elected office"
+  ],
+  "source_boundary": "Original Mara Sen is not the separate SU Mara, FO4 Mara, or Lanternweald Mara. Keep aliases disambiguated; no unsupported titles or biographies.",
+  "writer_rules": [
+    "Keep this character's livelihood and decisions independent of Jasper's romantic arcs.",
+    "Maintain first-person Jasper perception; do not invent unseen knowledge.",
+    "No additional romantic or sensual role is implied."
+  ],
+  "reference_library_notes": {
+    "research": "Derived from direct authored manuscript appearances, not invented off-world canon.",
+    "constraints": "Missing ages, relatives, affiliations and long-term history are intentionally unknown.",
+    "pass": 24
+  }
+}
