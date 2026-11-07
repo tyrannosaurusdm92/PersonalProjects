@@ -1,0 +1,52 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-rowan-musician",
+  "name": "Rowan",
+  "fandom": "Lanternweald / Stars Between the Strings",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Young musician who borrowed and accidentally damaged Greg's guitar during the Listening Fair",
+    "pronouns": "they/them in authored scene",
+    "age": "described as young; exact age not established",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "remorseful",
+      "eager to learn",
+      "frightened of adult anger",
+      "able to accept a reasonable repair-payment plan"
+    ],
+    "voice": "Plain admissions and practical questions; not a miraculous student or a foil who only exists to make Greg noble."
+  },
+  "relationships": {
+    "Greg": "Returns the broken guitar, admits what happened, agrees to a repair arrangement and learns that continued access to this instrument isn't guaranteed.",
+    "Danse": "Observes workshop safety and does not independently handle restricted tools.",
+    "Renn": "Learns under scheduled supervised work."
+  },
+  "manuscript_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/SU/Stars-Between-The-Strings/48.json"
+    }
+  ],
+  "known_unknowns": [
+    "exact age",
+    "family",
+    "musical training",
+    "homeworld",
+    "financial history"
+  ],
+  "source_boundary": "Story-original young supporting musician, not licensed Steven Universe cast. Exact age is unknown: no romantic/sensual subplot; avoid assuming adulthood.",
+  "writer_rules": [
+    "Keep supporting characters independent of Jasper's romantic arcs.",
+    "Use manuscript-grounded roles and preserve personal agency, labor and privacy.",
+    "Do not infer undocumented age, family, certifications or homeworld."
+  ],
+  "reference_library_notes": {
+    "research": "Grounded in the novel's existing chapter scenes and direct documented actions; no external biographical canon exists.",
+    "constraints": "Unknown age, credentials and homeworld remain open rather than fabricated.",
+    "pass": 24
+  }
+}
