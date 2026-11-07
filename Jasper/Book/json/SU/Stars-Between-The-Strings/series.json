@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 81862,
+  "total_word_count": 82453,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -175,7 +175,7 @@
       "number": 17,
       "file": "17.json",
       "title": "The Almost Goodbye",
-      "word_count": 1500,
+      "word_count": 1809,
       "id": "su-17",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "su-18"
@@ -400,7 +400,7 @@
       "number": 42,
       "file": "42.json",
       "title": "Folding Chairs and Honest Labor",
-      "word_count": 1873,
+      "word_count": 2155,
       "id": "su-42",
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-43"
@@ -570,5 +570,14 @@
     ],
     "added_indexed_words": 960,
     "scope": "In-place substantial scenes, original story arcs retained, no new branch."
+  },
+  "editorial_pass25": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      17,
+      42
+    ],
+    "added_words": 591,
+    "scope": "Character-specific substantial in-place scenes, complete 50-chapter story preserved."
   }
 }
