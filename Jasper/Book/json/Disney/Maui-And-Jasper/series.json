@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 85076,
+  "total_word_count": 85881,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -71,7 +71,7 @@
       "file": "06.json",
       "title": "A Song for the Unfinished",
       "id": "maui-06",
-      "word_count": 1540,
+      "word_count": 1774,
       "next_chapter_id": "maui-07"
     },
     {
@@ -183,7 +183,7 @@
       "file": "19.json",
       "title": "The Apprenticeship of Asking",
       "id": "maui-19",
-      "word_count": 1504,
+      "word_count": 1773,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-20"
     },
@@ -336,7 +336,7 @@
       "file": "36.json",
       "title": "Permission for Privacy",
       "id": "maui-36",
-      "word_count": 2000,
+      "word_count": 2302,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-37"
     },
@@ -516,5 +516,15 @@
     ],
     "indexed_words_added": 842,
     "scope": "In-place original scene revisions; full 50-chapter manuscript and earlier edits preserved."
+  },
+  "editorial_pass22": {
+    "date": "2026-11-06",
+    "chapters_revised": [
+      6,
+      19,
+      36
+    ],
+    "added_indexed_words": 805,
+    "scope": "In-place scene-level revisions; preexisting 50 chapters and all earlier prose retained."
   }
 }
