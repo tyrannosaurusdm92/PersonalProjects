@@ -1,5 +1,7 @@
 # Lanternweald — Pass 21 Living-World and Character Continuity
 
+> **Pass 22 factual correction (2026-11-06):** Mereana explicitly identifies as a Māori performer and teacher in *The Shore I Choose* chapter 6. Her iwi affiliation and specific personal rituals are not established. The original pass omitted this existing manuscript fact.
+
 **Updated:** 2026-11-06  
 **Scope:** Events actually added in the 18 existing chapters revised during Pass 21. The future possibilities are explicitly not on-page canon.
 
@@ -54,14 +56,14 @@ The old **lower Closed Bells maintenance passage remains sealed**. A successful 
 ### Lanternwell and Tideglass — voluntary departures and art ownership
 
 - *The Shore I Choose* **12:** Lark asks for a confidential departure. Pip and Neri consider changing the return-date register, and Maui offers to help without demanding to know the route. Lark's destination and past remain private.
-- **25:** Mereana arrives with visiting artists from Aotearoa and has real authority about art-panel handling, possible restoration, display rights and travel delays. Do not infer her ethnic identity or any specific cultural ceremony from her name or place of origin.
+- **25:** Mereana arrives with visiting artists from Aotearoa and has real authority about art-panel handling, possible restoration, display rights and travel delays. Chapter 6 explicitly identifies Mereana as a Māori performer and teacher. Do not infer a particular iwi or ceremonial authority, or invent an unwritten tradition.
 - **47:** Fen reports the tide, blockage and accessibility limits of the temporary upper channel. Maui's desire to do something impressive cannot make every tide safe or reopen the sealed historic passage.
 
 **Maui's voice:** Physically daring, boastful, funny and acutely aware of audience expectations; Mini Maui can undercut the act. He learns to ask about consent and the engineering plan without turning into a generic mild-mannered romantic lead.
 
 ## Original supporting characters
 
-Pass 21 adds five source-grounded profiles to both the active index and the character-library reference folders: **Lian, Huan, Lark, Mereana, Alva**. Only their authored on-page identities, decisions and reported skills are treated as established. The references explicitly preserve gaps in age, pronouns where unstated, family history, professional certification and cultural identity. They belong to the **user's original fiction continuity**, not external franchise canon.
+Pass 21 adds five source-grounded profiles to both the active index and the character-library reference folders: **Lian, Huan, Lark, Mereana, Alva**. Only their authored on-page identities, decisions and reported skills are treated as established. The references explicitly preserve gaps in age, pronouns where unstated, family history and professional certification, and specifically unstated cultural affiliations or ceremonies. They belong to the **user's original fiction continuity**, not external franchise canon.
 
 ## Future opportunities, not canon scenes
 
