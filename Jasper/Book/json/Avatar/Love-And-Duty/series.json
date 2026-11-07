@@ -12,7 +12,7 @@
   "description": "In a postwar Cranefish Town becoming something new, an adult nonbender reader finds themself drawn into Aang, Katara, and Toph’s complicated orbit. Love grows through reconstruction work, public scrutiny, cultural preservation, arguments, chosen boundaries, and the daily work of building a home where nobody has to disappear to belong.",
   "canon_window": "Adult postwar timeline only: Jasper, Aang, Katara, and Toph are explicitly adults before romance/private-interlude content. Their original minor-era canon versions are never used for adult intimacy.",
   "chapter_count": 50,
-  "total_word_count": 82480,
+  "total_word_count": 83436,
   "story_bible": [
     "This postwar polycule story is built through reconstruction work, public responsibility, cultural difference, arguments, chosen boundaries, and ordinary domestic labor.",
     "Aang, Katara, and Toph must remain three distinct people with separate needs, humor, histories, responsibilities, and relationships with Jasper; never collapse them into one collective partner voice.",
@@ -150,7 +150,7 @@
       "number": 14,
       "file": "14.json",
       "title": "The Price of Being the Avatar",
-      "word_count": 1502,
+      "word_count": 1809,
       "id": "Love-And-Duty-14",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "Love-And-Duty-15"
@@ -312,7 +312,7 @@
       "number": 32,
       "file": "32.json",
       "title": "The Vote",
-      "word_count": 1502,
+      "word_count": 1828,
       "id": "Love-And-Duty-32",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "Love-And-Duty-33"
@@ -457,7 +457,7 @@
       "file": "48.json",
       "title": "Water for the Other Side",
       "id": "love-and-duty-48",
-      "word_count": 1727,
+      "word_count": 2050,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "love-and-duty-49"
     },
@@ -554,5 +554,15 @@
     ],
     "added_indexed_words": 870,
     "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
+  },
+  "editorial_pass24": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      14,
+      32,
+      48
+    ],
+    "added_indexed_words": 956,
+    "scope": "In-place substantial scenes; existing 50 chapter arc retained; no branch."
   }
 }
