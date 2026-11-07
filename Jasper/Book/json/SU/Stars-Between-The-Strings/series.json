@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 78357,
+  "total_word_count": 79232,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -130,7 +130,7 @@
       "number": 12,
       "file": "12.json",
       "title": "The Shape of Home",
-      "word_count": 1508,
+      "word_count": 1801,
       "id": "su-12",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "su-13"
@@ -247,7 +247,7 @@
       "number": 25,
       "file": "25.json",
       "title": "The Car Wash in Winter",
-      "word_count": 1531,
+      "word_count": 1815,
       "id": "su-25",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "su-26"
@@ -446,7 +446,7 @@
       "file": "47.json",
       "title": "The Night After the Show",
       "id": "su-47",
-      "word_count": 1573,
+      "word_count": 1871,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-48"
     },
@@ -530,5 +530,15 @@
     ],
     "added_indexed_words": 922,
     "scope": "Substantive narrative edits, still 50 original chapters."
+  },
+  "editorial_pass21": {
+    "date": "2026-11-06",
+    "revised_chapters": [
+      12,
+      25,
+      47
+    ],
+    "indexed_words_added": 875,
+    "scope": "In-place original scene revisions; full 50-chapter manuscript and earlier edits preserved."
   }
 }
