@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 20,
+  "editorial_revision_pass": 21,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 474670,
+  "manifest_word_count": 479670,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,8 +848,8 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS20_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS20_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS21_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS21_CONTINUITY.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
@@ -1143,5 +1143,53 @@
     "Closed Bells erased keeper stays unidentified and unsafe lower maintenance passage stays closed; traveler Threadways keep explicit privacy and voluntary crossing.",
     "Household commitments are nonexclusive and do not give any partner control over the others' rest, labor, privacy, housing or public image.",
     "Licensed Steven Universe supporting-character profiles for Marty, Sour Cream, Vidalia and Yellowtail were added as researched characterization guidance, not as retroactive on-page appearances."
+  ],
+  "revised_chapter_slots_by_series_pass21": {
+    "jasmine-after-rain": [
+      12,
+      25,
+      47
+    ],
+    "love-and-duty": [
+      12,
+      25,
+      47
+    ],
+    "what-the-armor-leaves-behind": [
+      12,
+      25,
+      47
+    ],
+    "after-always": [
+      12,
+      25,
+      47
+    ],
+    "stars-between-the-strings": [
+      12,
+      25,
+      47
+    ],
+    "the-shore-i-choose": [
+      12,
+      25,
+      47
+    ]
+  },
+  "twenty_first_pass_boundary_rules": [
+    "Relationship disclosures must preserve Jasper's ethical non-monogamy and preference for polyamory without making everyone a mandatory participant.",
+    "Staff and supporting characters retain authority to refuse, choose shifts, request payment, protect privacy and challenge a lead's decision.",
+    "Ba Sing Se trade and garden labor, Water Tribe shoreline safety, Brotherhood maintenance, Ministry records, Beach City audio/vehicle trades and Lanternweald Threadways retain distinct practical limitations.",
+    "The sealed Closed Bells lower maintenance passage is not reopened; a successful upper-channel storm test does not imply indefinite safe operation.",
+    "Unverified keeper names and private archival witnesses remain unverified or private; no event is retroactively invented to fill an unknown gap.",
+    "Five original profiles Lian, Huan, Lark, Mereana and Alva are canon-to-this-fanfiction only. Unknown biography details are intentionally left open.",
+    "Greg's car-wash technician Alva is not automatically the event power inspector; the canon chapter has been corrected to avoid conflating different technical qualifications."
+  ],
+  "research_additions_pass21": [
+    "avatar-lian",
+    "avatar-huan",
+    "lanternweald-lark",
+    "lanternweald-mereana",
+    "su-alva"
   ]
 }
