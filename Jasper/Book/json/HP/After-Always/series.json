@@ -12,7 +12,7 @@
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
   "chapter_count": 50,
-  "total_word_count": 77418,
+  "total_word_count": 78272,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -103,7 +103,7 @@
       "number": 9,
       "file": "09.json",
       "title": "A Cup of Tea, Unpoisoned",
-      "word_count": 1627,
+      "word_count": 1901,
       "id": "after-always-09",
       "relationship_stage": "flirting",
       "next_chapter_id": "after-always-10"
@@ -238,7 +238,7 @@
       "number": 24,
       "file": "24.json",
       "title": "The Memory He Offers",
-      "word_count": 1394,
+      "word_count": 1692,
       "id": "after-always-24",
       "relationship_stage": "established_dynamic",
       "next_chapter_id": "after-always-25"
@@ -373,7 +373,7 @@
       "number": 39,
       "file": "39.json",
       "title": "What We Choose to Keep",
-      "word_count": 1425,
+      "word_count": 1707,
       "id": "after-always-39",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "after-always-40"
@@ -548,5 +548,15 @@
     ],
     "added_indexed_words": 796,
     "scope": "In-place scene-level revisions; preexisting 50 chapters and all earlier prose retained."
+  },
+  "editorial_pass23": {
+    "date": "2026-11-06",
+    "chapters_revised": [
+      9,
+      24,
+      39
+    ],
+    "added_indexed_words": 854,
+    "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
   }
 }
