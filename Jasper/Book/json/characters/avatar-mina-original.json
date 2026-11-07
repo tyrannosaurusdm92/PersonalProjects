@@ -1,0 +1,53 @@
+{
+  "schema_version": "jasper.story-original-cast.v1",
+  "profile_type": "generator_character_profile",
+  "id": "avatar-mina-original",
+  "name": "Mina",
+  "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Jasmine Dragon tea-shop operations and shift coordinator",
+    "fictional_character": true,
+    "source_world": "Lanternweald shared fanfiction continuity",
+    "age": "not established",
+    "location": "Jasmine Dragon, Ba Sing Se"
+  },
+  "personality": {
+    "voice": "Wry, brisk and businesslike. Uses precise dates, hours and invoices instead of generalities, gently unimpressed by Iroh's former rank.",
+    "motivations": [
+      "Keep workers paid for actual labor",
+      "Protect schedules and time off",
+      "Ensure safe and reliable shop operations"
+    ],
+    "dramatic_agency": "Work, disagreement, obligations, personal boundaries, and right to refuse exist independent of the protagonist's romantic conflicts."
+  },
+  "relationships": {
+    "Iroh": "Values his expertise and generosity but expects written wage approval and respects staff autonomy.",
+    "Jasper": "Shares real shop responsibilities and will stop Jasper from carrying unreasonable loads."
+  },
+  "research_provenance": [
+    {
+      "source_type": "preexisting author research",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/avatar/mina-original.json"
+    },
+    {
+      "source_type": "authored manuscripts",
+      "paths": [
+        "Jasper/Book/json/Avatar/Jasmine-After-Rain/12.json",
+        "Jasper/Book/json/Avatar/Jasmine-After-Rain/17.json",
+        "Jasper/Book/json/Avatar/Jasmine-After-Rain/24.json",
+        "Jasper/Book/json/Avatar/Jasmine-After-Rain/26.json"
+      ]
+    }
+  ],
+  "known_unknowns": [
+    "Her family, age and private history are not established",
+    "Never imply she is part of licensed Avatar canon"
+  ],
+  "writer_rules": [
+    "Maintain distinct voice and practical trade expertise.",
+    "Do not treat this story-original profile as licensed character canon.",
+    "Do not invent unseen backstory, ages or secret knowledge.",
+    "Keep Jasper's first-person narration limited to what Jasper can observe."
+  ]
+}

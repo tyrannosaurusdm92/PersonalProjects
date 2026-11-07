@@ -1,0 +1,55 @@
+{
+  "schema_version": "jasper.story-original-cast.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-fen",
+  "name": "Fen",
+  "fandom": "Lanternweald / The Shore I Choose",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Tideglass Cove dock, coastal access and tidal measurement worker",
+    "fictional_character": true,
+    "source_world": "Lanternweald shared fanfiction continuity",
+    "age": "not established",
+    "location": "Tideglass Cove"
+  },
+  "personality": {
+    "voice": "Concise, wary of promises unsupported by dated readings, willing to tell heroes no without dramatics.",
+    "motivations": [
+      "Keep the landing safe at the tide actually observed",
+      "Record measurements so the next shift can trust them",
+      "Prevent unsafe access and unapproved structural work"
+    ],
+    "dramatic_agency": "Work, disagreement, obligations, personal boundaries, and right to refuse exist independent of the protagonist's romantic conflicts."
+  },
+  "relationships": {
+    "Maui": "Can ask him to hold a ladder rather than lift a dock; not deferential about safety.",
+    "Tamsin": "Coordinates inspections and closure decisions.",
+    "Jasper": "Respects Jasper's choice not to disclose private memorial names."
+  },
+  "research_provenance": [
+    {
+      "source_type": "preexisting author research",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/fen.json"
+    },
+    {
+      "source_type": "authored manuscripts",
+      "paths": [
+        "Jasper/Book/json/Disney/Maui-And-Jasper/14.json",
+        "Jasper/Book/json/Disney/Maui-And-Jasper/17.json",
+        "Jasper/Book/json/Disney/Maui-And-Jasper/22.json",
+        "Jasper/Book/json/Disney/Maui-And-Jasper/42.json",
+        "Jasper/Book/json/Disney/Maui-And-Jasper/43.json"
+      ]
+    }
+  ],
+  "known_unknowns": [
+    "Exact family, age and personal history are unwritten",
+    "Do not reopen the sealed lower Closed Bells as a consequence of surface testing"
+  ],
+  "writer_rules": [
+    "Maintain distinct voice and practical trade expertise.",
+    "Do not treat this story-original profile as licensed character canon.",
+    "Do not invent unseen backstory, ages or secret knowledge.",
+    "Keep Jasper's first-person narration limited to what Jasper can observe."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 181,
+  "profile_count": 184,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1450,6 +1450,30 @@
       "provenance": "story_original",
       "file": "lanternweald-rowan-musician.json",
       "canonical_key": "stevenuniversestarsbetweenthestrings::rowan"
+    },
+    {
+      "id": "avatar-mina-original",
+      "name": "Mina",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+      "provenance": "story_original",
+      "file": "avatar-mina-original.json",
+      "canonical_key": "avatarjasmineafterrain::mina"
+    },
+    {
+      "id": "lanternweald-fen",
+      "name": "Fen",
+      "fandom": "Lanternweald / The Shore I Choose",
+      "provenance": "story_original",
+      "file": "lanternweald-fen.json",
+      "canonical_key": "lanternwealdtheshoreichoose::fen"
+    },
+    {
+      "id": "lanternweald-tamsin",
+      "name": "Tamsin",
+      "fandom": "Lanternweald / Tideglass and Starwake",
+      "provenance": "story_original",
+      "file": "lanternweald-tamsin.json",
+      "canonical_key": "lanternwealdtheshoreichoose::tamsin"
     }
   ],
   "aliases": {
@@ -1733,7 +1757,10 @@
     "aster": "lanternweald-aster",
     "aster (brasswatch)": "lanternweald-aster",
     "rowan (musician)": "lanternweald-rowan-musician",
-    "rowan (starwake pier)": "lanternweald-rowan-musician"
+    "rowan (starwake pier)": "lanternweald-rowan-musician",
+    "mina": "avatar-mina-original",
+    "fen": "lanternweald-fen",
+    "tamsin": "lanternweald-tamsin"
   },
   "alias_records": [
     {
@@ -3737,6 +3764,27 @@
       "id": "lanternweald-rowan-musician",
       "fandom_key": "stevenuniversestarsbetweenthestrings",
       "fandom": "Lanternweald / Stars Between the Strings"
+    },
+    {
+      "alias": "Mina",
+      "normalized": "mina",
+      "id": "avatar-mina-original",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Fen",
+      "normalized": "fen",
+      "id": "lanternweald-fen",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Tamsin",
+      "normalized": "tamsin",
+      "id": "lanternweald-tamsin",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / Tideglass and Starwake"
     }
   ],
   "fandom_profiles": {
@@ -3941,12 +3989,15 @@
     "avatarjasmineafterrain": [
       "avatar-lian",
       "avatar-huan",
-      "avatar-yulan-original"
+      "avatar-yulan-original",
+      "avatar-mina-original"
     ],
     "lanternwealdtheshoreichoose": [
       "lanternweald-lark",
       "lanternweald-mereana",
-      "lanternweald-sela"
+      "lanternweald-sela",
+      "lanternweald-fen",
+      "lanternweald-tamsin"
     ],
     "avatarloveandduty": [
       "avatar-mei-original",
@@ -3965,7 +4016,9 @@
       "avatar-momo",
       "avatar-lian",
       "avatar-huan",
-      "avatar-yulan-original"
+      "avatar-yulan-original",
+      "avatar-mina-original",
+      "lanternweald-tamsin"
     ],
     "love-and-duty": [
       "avatar-aang",
@@ -4024,19 +4077,22 @@
       "su-lila",
       "su-alva",
       "su-nola-original",
-      "lanternweald-rowan-musician"
+      "lanternweald-rowan-musician",
+      "lanternweald-tamsin"
     ],
     "the-shore-i-choose": [
       "lanternweald-lark",
       "lanternweald-mereana",
-      "lanternweald-sela"
+      "lanternweald-sela",
+      "lanternweald-fen",
+      "lanternweald-tamsin"
     ]
   },
   "merge_summary": {
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 181
+    "final_canonical_profiles": 184
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -4046,7 +4102,7 @@
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
   ],
-  "latest_research_update": "2026-11-07-Pass24",
+  "latest_research_update": "2026-11-07-Pass25",
   "research_additions_pass20": [
     "su-marty",
     "su-sour-cream",
@@ -4084,5 +4140,11 @@
     "lanternweald-aster",
     "lanternweald-rowan-musician"
   ],
-  "canon_source_note_pass24": "Six new story-original biographies were reconstructed from the authored prose, without falsely presenting them as licensed canon; ambiguous Rowan age and Mara surname are disambiguated."
+  "canon_source_note_pass24": "Six new story-original biographies were reconstructed from the authored prose, without falsely presenting them as licensed canon; ambiguous Rowan age and Mara surname are disambiguated.",
+  "research_additions_pass25": [
+    "avatar-mina-original",
+    "lanternweald-fen",
+    "lanternweald-tamsin"
+  ],
+  "research_boundary_pass25": "All three profiles are story-original, based on the source-full files already in docs/character-library-source-full and authored chapters, not invented franchise canon."
 }

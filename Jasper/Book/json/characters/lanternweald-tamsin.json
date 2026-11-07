@@ -1,0 +1,56 @@
+{
+  "schema_version": "jasper.story-original-cast.v1",
+  "profile_type": "generator_character_profile",
+  "id": "lanternweald-tamsin",
+  "name": "Tamsin",
+  "fandom": "Lanternweald / Tideglass and Starwake",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Tideglass platform and Starwake stage structural-safety inspector",
+    "fictional_character": true,
+    "source_world": "Lanternweald shared fanfiction continuity",
+    "age": "not established",
+    "location": "Tideglass Cove / Starwake Pier"
+  },
+  "personality": {
+    "voice": "Competent, procedural and unsentimental about celebrity status. Speaks in clearances, fasteners, load tests, correct cables and sign-off.",
+    "motivations": [
+      "Inspect platforms and stages before use",
+      "Maintain access routes",
+      "Document safety decisions for users rather than performers"
+    ],
+    "dramatic_agency": "Work, disagreement, obligations, personal boundaries, and right to refuse exist independent of the protagonist's romantic conflicts."
+  },
+  "relationships": {
+    "Greg": "Accepts his musical work, not improvised electrical work.",
+    "Iroh": "Checks aisle clearance rather than deferring to his planning.",
+    "Fen": "Shares responsibility for testing and safe reopening.",
+    "Maui": "Measures what his strength cannot certify."
+  },
+  "research_provenance": [
+    {
+      "source_type": "preexisting author research",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/tamsin.json"
+    },
+    {
+      "source_type": "authored manuscripts",
+      "paths": [
+        "Jasper/Book/json/Disney/Maui-And-Jasper/03.json",
+        "Jasper/Book/json/Disney/Maui-And-Jasper/14.json",
+        "Jasper/Book/json/Disney/Maui-And-Jasper/42.json",
+        "Jasper/Book/json/SU/Stars-Between-The-Strings/42.json",
+        "Jasper/Book/json/Avatar/Jasmine-After-Rain/42.json"
+      ]
+    }
+  ],
+  "known_unknowns": [
+    "Do not invent personal biography or romantic involvement",
+    "A new repair is not certified before correct inspection"
+  ],
+  "writer_rules": [
+    "Maintain distinct voice and practical trade expertise.",
+    "Do not treat this story-original profile as licensed character canon.",
+    "Do not invent unseen backstory, ages or secret knowledge.",
+    "Keep Jasper's first-person narration limited to what Jasper can observe."
+  ]
+}
