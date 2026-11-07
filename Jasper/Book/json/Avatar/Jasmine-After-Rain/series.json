@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 79358,
+  "total_word_count": 80355,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -148,7 +148,7 @@
       "number": 14,
       "file": "14.json",
       "title": "The Road Through the Hills",
-      "word_count": 1509,
+      "word_count": 1859,
       "id": "avatar-14",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "avatar-15"
@@ -310,7 +310,7 @@
       "number": 32,
       "file": "32.json",
       "title": "The Things Iroh Cannot Carry",
-      "word_count": 1574,
+      "word_count": 1876,
       "id": "avatar-32",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-33"
@@ -455,7 +455,7 @@
       "file": "48.json",
       "title": "The Dragon and the Demigod",
       "id": "avatar-48",
-      "word_count": 2068,
+      "word_count": 2413,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-49"
     },
@@ -557,5 +557,15 @@
     ],
     "added_indexed_words": 880,
     "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
+  },
+  "editorial_pass24": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      14,
+      32,
+      48
+    ],
+    "added_indexed_words": 997,
+    "scope": "In-place substantial scenes; existing 50 chapter arc retained; no branch."
   }
 }
