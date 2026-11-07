@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 163,
+  "profile_count": 168,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1306,6 +1306,46 @@
       "provenance": "canon_researched_from_episodes_and_character_guides",
       "file": "su-yellowtail.json",
       "canonical_key": "stevenuniverse::yellowtail"
+    },
+    {
+      "id": "avatar-lian",
+      "name": "Lian",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+      "provenance": "story_original",
+      "file": "avatar-lian.json",
+      "canonical_key": "avatarjasmineafterrain::lian"
+    },
+    {
+      "id": "avatar-huan",
+      "name": "Huan",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+      "provenance": "story_original",
+      "file": "avatar-huan.json",
+      "canonical_key": "avatarjasmineafterrain::huan"
+    },
+    {
+      "id": "lanternweald-lark",
+      "name": "Lark",
+      "fandom": "Lanternweald / The Shore I Choose",
+      "provenance": "story_original",
+      "file": "lanternweald-lark.json",
+      "canonical_key": "lanternwealdtheshoreichoose::lark"
+    },
+    {
+      "id": "lanternweald-mereana",
+      "name": "Mereana",
+      "fandom": "Lanternweald / The Shore I Choose",
+      "provenance": "story_original",
+      "file": "lanternweald-mereana.json",
+      "canonical_key": "lanternwealdtheshoreichoose::mereana"
+    },
+    {
+      "id": "su-alva",
+      "name": "Alva",
+      "fandom": "Steven Universe / Stars Between the Strings",
+      "provenance": "story_original",
+      "file": "su-alva.json",
+      "canonical_key": "stevenuniversestarsbetweenthestrings::alva"
     }
   ],
   "aliases": {
@@ -1551,7 +1591,17 @@
     "s.c. (steven universe)": "su-sour-cream",
     "vidalia": "su-vidalia",
     "yellowtail": "su-yellowtail",
-    "yellow dad": "su-yellowtail"
+    "yellow dad": "su-yellowtail",
+    "lian": "avatar-lian",
+    "lian the gardener": "avatar-lian",
+    "huan": "avatar-huan",
+    "huan (jasmine steps grower)": "avatar-huan",
+    "lark": "lanternweald-lark",
+    "lark (traveler)": "lanternweald-lark",
+    "mereana": "lanternweald-mereana",
+    "mereana (visiting artist)": "lanternweald-mereana",
+    "alva": "su-alva",
+    "alva (car wash technician)": "su-alva"
   },
   "alias_records": [
     {
@@ -3289,6 +3339,76 @@
       "id": "su-yellowtail",
       "fandom_key": "stevenuniverse",
       "fandom": "Steven Universe"
+    },
+    {
+      "alias": "Lian",
+      "normalized": "lian",
+      "id": "avatar-lian",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Lian the gardener",
+      "normalized": "lian the gardener",
+      "id": "avatar-lian",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Huan",
+      "normalized": "huan",
+      "id": "avatar-huan",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Huan (Jasmine Steps grower)",
+      "normalized": "huan (jasmine steps grower)",
+      "id": "avatar-huan",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Lark",
+      "normalized": "lark",
+      "id": "lanternweald-lark",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Lark (traveler)",
+      "normalized": "lark (traveler)",
+      "id": "lanternweald-lark",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Mereana",
+      "normalized": "mereana",
+      "id": "lanternweald-mereana",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Mereana (visiting artist)",
+      "normalized": "mereana (visiting artist)",
+      "id": "lanternweald-mereana",
+      "fandom_key": "lanternwealdtheshoreichoose",
+      "fandom": "Lanternweald / The Shore I Choose"
+    },
+    {
+      "alias": "Alva",
+      "normalized": "alva",
+      "id": "su-alva",
+      "fandom_key": "stevenuniversestarsbetweenthestrings",
+      "fandom": "Steven Universe / Stars Between the Strings"
+    },
+    {
+      "alias": "Alva (car wash technician)",
+      "normalized": "alva (car wash technician)",
+      "id": "su-alva",
+      "fandom_key": "stevenuniversestarsbetweenthestrings",
+      "fandom": "Steven Universe / Stars Between the Strings"
     }
   ],
   "fandom_profiles": {
@@ -3481,7 +3601,16 @@
     ],
     "stevenuniversestarsbetweenthestrings": [
       "su-lila",
-      "su-mara"
+      "su-mara",
+      "su-alva"
+    ],
+    "avatarjasmineafterrain": [
+      "avatar-lian",
+      "avatar-huan"
+    ],
+    "lanternwealdtheshoreichoose": [
+      "lanternweald-lark",
+      "lanternweald-mereana"
     ]
   },
   "series_cast": {
@@ -3490,7 +3619,9 @@
       "avatar-zuko",
       "avatar-sokka",
       "avatar-appa",
-      "avatar-momo"
+      "avatar-momo",
+      "avatar-lian",
+      "avatar-huan"
     ],
     "love-and-duty": [
       "avatar-aang",
@@ -3537,14 +3668,19 @@
       "su-rose",
       "su-lion",
       "su-mara",
-      "su-lila"
+      "su-lila",
+      "su-alva"
+    ],
+    "the-shore-i-choose": [
+      "lanternweald-lark",
+      "lanternweald-mereana"
     ]
   },
   "merge_summary": {
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 163
+    "final_canonical_profiles": 168
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -3554,11 +3690,18 @@
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
   ],
-  "latest_research_update": "2026-11-06-Pass20",
+  "latest_research_update": "2026-11-06-Pass21",
   "research_additions_pass20": [
     "su-marty",
     "su-sour-cream",
     "su-vidalia",
     "su-yellowtail"
+  ],
+  "research_additions_pass21": [
+    "avatar-lian",
+    "avatar-huan",
+    "lanternweald-lark",
+    "lanternweald-mereana",
+    "su-alva"
   ]
 }
