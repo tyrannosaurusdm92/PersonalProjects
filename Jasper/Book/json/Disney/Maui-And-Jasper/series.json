@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 87834,
+  "total_word_count": 88429,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -165,7 +165,7 @@
       "file": "17.json",
       "title": "A Lantern for the Absent",
       "id": "maui-17",
-      "word_count": 1497,
+      "word_count": 1791,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-18"
     },
@@ -390,7 +390,7 @@
       "file": "42.json",
       "title": "Where the Water Cannot Go",
       "id": "maui-42",
-      "word_count": 2097,
+      "word_count": 2398,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-43"
     },
@@ -546,5 +546,14 @@
     ],
     "added_indexed_words": 1072,
     "scope": "In-place substantial scenes, original story arcs retained, no new branch."
+  },
+  "editorial_pass25": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      17,
+      42
+    ],
+    "added_words": 595,
+    "scope": "Two substantial character-specific scene edits preserving all 50 chapters and endings."
   }
 }
