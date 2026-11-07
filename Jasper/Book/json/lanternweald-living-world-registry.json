@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 21,
+  "editorial_revision_pass": 22,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 479670,
+  "manifest_word_count": 484642,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,8 +848,8 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS21_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS21_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS22_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS22_CONTINUITY.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
@@ -1191,5 +1191,55 @@
     "lanternweald-lark",
     "lanternweald-mereana",
     "su-alva"
+  ],
+  "revised_chapter_slots_by_series_pass22": {
+    "jasmine-after-rain": [
+      6,
+      19,
+      36
+    ],
+    "love-and-duty": [
+      6,
+      19,
+      36
+    ],
+    "what-the-armor-leaves-behind": [
+      6,
+      19,
+      36
+    ],
+    "after-always": [
+      6,
+      19,
+      36
+    ],
+    "stars-between-the-strings": [
+      6,
+      19,
+      36
+    ],
+    "the-shore-i-choose": [
+      6,
+      19,
+      36
+    ]
+  },
+  "twenty_second_pass_constraints": [
+    "Iroh remains a former general and practical tea-shop owner; his careful, sometimes strategic warm speech is distinct from Greg's casual jokes and musician's ear.",
+    "Greg and Danse's guitar lesson is canon to this fic only, with Greg bringing musical competence and Danse a measured, perfectionist approach.",
+    "Jasper's ethical non-monogamy and preference for polyamory must be disclosed without turning a partner's separate home, records or schedule into a shared entitlement.",
+    "Mereana's Māori performer/teacher identity is explicitly on page in The Shore I Choose 6. Specific iwi identity and unwritten rituals remain unspecified.",
+    "Lio is sixteen in The Shore I Choose 19; write them as a non-romantic teen apprentice, never an adult love interest.",
+    "Mei is fourteen in Love & Duty 36, a supervised dormitory student and non-romantic story-original character.",
+    "Professor Sinistra's Astronomy role is canon-sourced; her observation of Snape's limited teaching return is an original narrative event.",
+    "The lower Closed Bells passage stays sealed and the erased keeper name remains unverified; privacy and community safety are voluntary and maintained."
+  ],
+  "research_additions_pass22": [
+    "hp-sinistra",
+    "avatar-mei-original"
+  ],
+  "corrections_pass22": [
+    "lanternweald-mereana",
+    "docs/character-library-source-full/characters/lanternweald/lio.json"
   ]
 }
