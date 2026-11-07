@@ -1,0 +1,45 @@
+{
+  "schema_version": "jasper.story-original-character-profile.v1",
+  "profile_type": "generator_character_profile",
+  "id": "avatar-yulan-original",
+  "name": "Yulan",
+  "fandom": "Avatar: The Last Airbender / Jasmine After Rain",
+  "provenance": "story_original",
+  "identity": {
+    "role": "Cart driver and road mechanic who maintains the cart taking Iroh and Jasper through the hills",
+    "pronouns": "she/her in the authored scene",
+    "age": "not established",
+    "fictional_character": true
+  },
+  "personality": {
+    "grounded_traits": [
+      "Competent with axle repairs",
+      "plainspoken",
+      "unimpressed by rank",
+      "attentive to descent and load safety"
+    ],
+    "voice": "Short practical corrections grounded in weather, slopes, pins, and repair work; she neither needs Iroh's admiration nor humiliates him to show skill."
+  },
+  "relationships": {
+    "Iroh": "Corrects his proposed timber brace, asks him to hold a lantern lower, and installs her packed iron pin.",
+    "Jasper": "Trusts him to chock the wheel while she works."
+  },
+  "manuscript_evidence": [
+    {
+      "type": "authored manuscript",
+      "path": "Jasper/Book/json/Avatar/Jasmine-After-Rain/14.json"
+    }
+  ],
+  "known_unknowns": [
+    "family",
+    "long-term employer",
+    "cultural affiliation",
+    "age"
+  ],
+  "source_boundary": "Story-original. Never claim Yulan is Avatar franchise canon or grant her knowledge of future Threadways without a scene.",
+  "writer_rules": [
+    "Keep this character's livelihood and decisions independent of Jasper's romantic arcs.",
+    "Maintain first-person Jasper perception; do not invent unseen knowledge.",
+    "No additional romantic or sensual role is implied."
+  ]
+}
