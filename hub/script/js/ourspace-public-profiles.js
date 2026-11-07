@@ -276,6 +276,11 @@
     }
     [handle,toggle].forEach(function(h){if(!h)return;h.addEventListener('pointerdown',start);h.addEventListener('pointermove',move);h.addEventListener('pointerup',end);h.addEventListener('pointercancel',function(){dragging=null;});});
     toggle.addEventListener('click',function(e){if(suppressClick){suppressClick=false;e.preventDefault();e.stopImmediatePropagation();}},true);
+    toggle.addEventListener('click',function(){
+      if(master.classList.contains('trex-master-positioned'))requestAnimationFrame(function(){
+        var r=master.getBoundingClientRect();place(r.left,r.top);
+      });
+    });
     handle.addEventListener('dblclick',function(){master.classList.remove('trex-master-positioned');master.style.left='';master.style.top='';try{localStorage.removeItem(storeKey);}catch(_){}});
     try{var saved=JSON.parse(localStorage.getItem(storeKey)||'null');if(saved&&Number.isFinite(saved.x)&&Number.isFinite(saved.y))place(saved.x,saved.y);}catch(_){}
     window.addEventListener('resize',function(){if(master.classList.contains('trex-master-positioned')){var r=master.getBoundingClientRect();place(r.left,r.top);}});
