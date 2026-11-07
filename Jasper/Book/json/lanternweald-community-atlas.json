@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS22_CONTINUITY.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS22_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS23_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS23_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -991,5 +991,128 @@
       "Mei: original fourteen-year-old school student in Love & Duty chapter 36"
     ],
     "profile_count": 170
+  },
+  "pass23_scene_links": [
+    {
+      "district": "Jasmine Steps / Ba Sing Se",
+      "chapters": [
+        "Jasmine After Rain 9",
+        "Jasmine After Rain 24",
+        "Jasmine After Rain 39"
+      ],
+      "facts": [
+        "A potter identifies a faulty kiln batch after a cup breaks, protecting customers and preventing Jasper's jealousy from being reduced to a cup metaphor.",
+        "Iroh lets White Lotus volunteers choose if and when to help, instead of assigning shifts by title or friendship.",
+        "Greg personally visits Iroh's tea shop; the same new citrus/smoke-dried-peel blend reappears in Greg's song chapter. Their craft language remains different."
+      ],
+      "constraints": [
+        "Iroh's past as Fire Nation general is lived history; his tea expertise, staff wages and grief remain meaningful.",
+        "The tea blend has ingredient cost, drying time and price; a tasting note is not proof of historical lineage."
+      ]
+    },
+    {
+      "district": "Cranefish Town / western protected spring",
+      "chapters": [
+        "Love & Duty 9",
+        "Love & Duty 24",
+        "Love & Duty 39"
+      ],
+      "facts": [
+        "Katara and Jasper discuss separate agency and voluntary polyamory while sorting usable versus frayed medical cloth.",
+        "Beren the market driver is paid for produce damaged by Aang's unsafe festival test; his route and consent affect the plan.",
+        "At a protected spring excavation, local families and workers retain control of accounts, wages and testimony; the Avatar stops unsafe work but does not substitute for independent inspectors."
+      ],
+      "constraints": [
+        "Protected spring history remains locally sourced; distinguish spirit-related damage from company negligence.",
+        "Emergency rescue does not erase labor injuries or previously dismissed objections."
+      ]
+    },
+    {
+      "district": "Cambridge / Prydwen / Brasswatch",
+      "chapters": [
+        "What the Armor Leaves Behind 9",
+        "What the Armor Leaves Behind 24",
+        "What the Armor Leaves Behind 39"
+      ],
+      "facts": [
+        "Haylen clarifies the power-armor emergency-release safety markings, Danse and Rhys correct the documented latch defect.",
+        "Haylen privately identifies suspicious document requests but distinguishes observation from proof during the Danse security investigation.",
+        "Danse chooses to store Knight Keane's fictional commemorative baseball card privately, preserving grief and Haylen's independent feelings."
+      ],
+      "constraints": [
+        "Keane (KN-100K) is a real Fallout 4 Recon Squad Gladius Knight who died defending Cambridge; the baseball-card keepsake is fanfiction-only.",
+        "Danse cannot erase Maxson's order, change his own origins, or substitute loyalty for evidence."
+      ]
+    },
+    {
+      "district": "Hogwarts / Spinner's End / Moonroot",
+      "chapters": [
+        "After Always 9",
+        "After Always 24",
+        "After Always 39"
+      ],
+      "facts": [
+        "A damaged Floo route requires a verified inspection notice and honest timing, not a wishful fix by Snape.",
+        "A Pensieve memory shared voluntarily does not provide blanket consent to display living or dead witnesses' private histories.",
+        "Severus's teenage essays with Slughorn's corrections remain an original fanfiction artifact, not established HP canon; archival copies require permission."
+      ],
+      "constraints": [
+        "Slughorn is canonically Potions master and Slytherin Head of House, capable of charm and social calculation; do not make him a second Iroh.",
+        "The erased keeper's identity remains unknown, and the lower Closed Bells passage remains closed."
+      ]
+    },
+    {
+      "district": "Beach City / Starwake Pier",
+      "chapters": [
+        "Stars Between the Strings 9",
+        "Stars Between the Strings 24",
+        "Stars Between the Strings 39"
+      ],
+      "facts": [
+        "Greg quietly texts Steven rather than making Jasper's difficult day into a public account; light, sound and food boundaries have practical meaning.",
+        "Greg's routine clinic visit now flows chronologically from appointment to grocery stop to home; stray malformed prose was repaired.",
+        "Greg adjusts a song's rest cue and remembers Iroh's citrus tea, expressing affection through music and everyday jokes rather than borrowed general's wisdom."
+      ],
+      "constraints": [
+        "Greg is Steven's dad, former rock musician and owner of It's a Wash; his music knowledge does not turn him into a wizard or strategist.",
+        "Polyamorous relationships remain voluntary; no song or public event can make Jasper's private schedule into shared property."
+      ]
+    },
+    {
+      "district": "Tideglass / Lanternwell / Moonroot archive",
+      "chapters": [
+        "The Shore I Choose 9",
+        "The Shore I Choose 24",
+        "The Shore I Choose 39"
+      ],
+      "facts": [
+        "Fen checks storm water flow and evacuation reports before Maui moves a collapsed roof; Neri distinguishes unknown households from empty ones.",
+        "Iroh and Jasper investigate an unpaid/unverified garden path only through records and consultation, respecting Neri's archive restrictions.",
+        "Orin and Neri redact a child's details from public Closed Bells testimony; Maui aids with the box without converting evidence into a performance."
+      ],
+      "constraints": [
+        "A flood repair does not prove all historic Threadways safe.",
+        "Moonroot terrace maps, payment records and witness testimony may contain gaps; no omniscient magical map can fill them by assumption."
+      ]
+    }
+  ],
+  "pass23_research_additions": [
+    "fo4-keane",
+    "hp-slughorn",
+    "avatar-beren-original",
+    "su-nola-original",
+    "lanternweald-sela"
+  ],
+  "pass23_editorial_scope": {
+    "new_indexed_words": 5121,
+    "edited_chapters": 18,
+    "chapter_numbers": [
+      9,
+      24,
+      39
+    ],
+    "series": 6,
+    "complete_chapters": 300,
+    "profile_count": 175
   }
 }
