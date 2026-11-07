@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   next.title=(person==='jasper'?'Jasper':'William')+' · Read-only published OurSpace profile';
   next.loading='eager';next.referrerPolicy='no-referrer';
   next.setAttribute('sandbox','allow-scripts allow-same-origin');
-  next.style.height='3400px';
+  // The native iframe owns its scrolling, so its original draggable heart
+  // scrollbar remains functional rather than becoming a decorative marker.
+  next.style.height='calc(100dvh - 128px)';
   // The path belongs to the GitHub Pages iframe, never the site's visible URL.
   next.src=viewer+'?profile='+encodeURIComponent(person)+(force?'&refresh='+Date.now():'');
   content.appendChild(next);
@@ -54,8 +56,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(e.origin!==origin||!frame||e.source!==frame.contentWindow)return;
   const m=e.data;
   if(!m||m.type!=='ourspace:public-profile-height'||m.profileKey!==selected)return;
-  const h=Number(m.height);
-  if(Number.isFinite(h))frame.style.height=Math.min(12000,Math.max(500,h))+'px';
+  // Do not auto-expand the frame to the full content height: that would
+  // eliminate its scroll range and disable the native heart scrollbar.
   status.textContent='Showing '+(selected==='jasper'?"Jasper's":"William's")+' published OurSpace layout and modules.';
  });
  paintTabs();
