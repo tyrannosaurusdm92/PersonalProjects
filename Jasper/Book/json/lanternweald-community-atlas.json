@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS21_CONTINUITY.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS21_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS22_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS22_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -900,5 +900,96 @@
       ],
       "rule": "Movement, heritage and infrastructure are supervised by their actual owners and workers, not the loudest hero."
     }
-  ]
+  ],
+  "pass22_scene_links": [
+    {
+      "district": "Jasmine Steps / Ba Sing Se",
+      "chapters": [
+        "Jasmine After Rain 6",
+        "Jasmine After Rain 19",
+        "Jasmine After Rain 36"
+      ],
+      "facts": [
+        "Pai Sho tile's origin is not proven merely by a mark; an older owner and carpenter have their own expertise.",
+        "Jasper's separate key and private room above the tea shop are not a standing work assignment; Iroh learns to ask.",
+        "Iroh hears about Severus and Moonroot openly, admits jealousy without demanding exclusivity, and commits to one honest Friday rather than a possessive vow."
+      ]
+    },
+    {
+      "district": "Cranefish Town / Riverstone",
+      "chapters": [
+        "Love & Duty 6",
+        "Love & Duty 19",
+        "Love & Duty 36"
+      ],
+      "facts": [
+        "Toph investigates a falling loading-platform crate as an unsafe hoist job as well as teaching Jasper to defend himself.",
+        "The Air Nomad school must name a paid building manager and lesson-calendar steward rather than silently assign both duties to the Avatar or Jasper.",
+        "A school mutual-aid fund removes a bloodline eligibility question and protects families' confidential records; cultural survival is not a genealogy test."
+      ]
+    },
+    {
+      "district": "Commonwealth / Brasswatch",
+      "chapters": [
+        "What the Armor Leaves Behind 6",
+        "What the Armor Leaves Behind 19",
+        "What the Armor Leaves Behind 36"
+      ],
+      "facts": [
+        "Haylen's radio repairs and flying-window expertise alter Danse's response to a delayed pickup.",
+        "The Prydwen radstorm has real crew and stabilizer checks, while Danse offers company without declaring fear irrational.",
+        "Greg, visiting through the Starwake Door, teaches Danse a guitar setup issue in his own casual register rather than becoming his moral clone."
+      ]
+    },
+    {
+      "district": "Hogwarts / Moonroot",
+      "chapters": [
+        "After Always 6",
+        "After Always 19",
+        "After Always 36"
+      ],
+      "facts": [
+        "A reactive phial has uncertain provenance; Snape keeps failed observations rather than claiming a complete antidote.",
+        "Severus's flirtation emerges through annotations, precise quill gifts and brief difficult contact rather than generic reassurance.",
+        "Minerva and Severus establish student-safe complaint procedures for his restricted teaching return; Professor Sinistra observes without becoming a second Headmistress."
+      ]
+    },
+    {
+      "district": "Beach City / Starwake Pier",
+      "chapters": [
+        "Stars Between the Strings 6",
+        "Stars Between the Strings 19",
+        "Stars Between the Strings 36"
+      ],
+      "facts": [
+        "Greg's awkward morning after a private night remains affectionate and funny without assigning Jasper a debt.",
+        "Greg helps view Jasper's own apartment, acknowledges jealousy and negotiated polyamorous boundaries.",
+        "Greg refuses strangers' demand that a love song celebrate settling down; music, fatherhood, the van and his relationship stay independently meaningful."
+      ]
+    },
+    {
+      "district": "Lanternwell / Tideglass",
+      "chapters": [
+        "The Shore I Choose 6",
+        "The Shore I Choose 19",
+        "The Shore I Choose 36"
+      ],
+      "facts": [
+        "Mereana, explicitly a Māori performer/teacher from Aotearoa, sets the terms for handling visiting artists' cases; no specific iwi or ritual is invented.",
+        "Sixteen-year-old boatbuilder Lio directs Maui as an assistant on Sela's commissioned skiff.",
+        "Maui helps erase public relationship gossip without forcing a confrontation or speaking for Jasper."
+      ]
+    }
+  ],
+  "pass22_character_research": {
+    "corrected_existing": [
+      "Mereana: Māori identity already directly stated in Maui chapter 6",
+      "Lio: sixteen-year-old apprentice in Maui chapter 19"
+    ],
+    "added": [
+      "Professor Sinistra: canon Astronomy professor, official-source verified",
+      "Mei: original fourteen-year-old school student in Love & Duty chapter 36"
+    ],
+    "profile_count": 170
+  }
 }
