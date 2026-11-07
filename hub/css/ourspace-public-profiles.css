@@ -1,5 +1,5 @@
 /* Navigation-only tabs. No page routes, URL fragments, or private account UI. */
-#ourspaceTopTabs{position:sticky;top:0;z-index:22000;display:flex;align-items:stretch;gap:8px;padding:9px clamp(10px,3vw,32px);background:rgba(1,13,19,.98);border-bottom:2px solid #00ffff;box-shadow:0 6px 18px #0009}
+#ourspaceTopTabs{position:sticky;top:0;z-index:22000;display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;padding:9px clamp(10px,3vw,32px);background:rgba(1,13,19,.98);border-bottom:2px solid #00ffff;box-shadow:0 6px 18px #0009}
 #ourspaceTopTabs button{font:700 14px/1.25 Verdana,Arial,sans-serif;cursor:pointer;min-height:44px}
 #trexSiteTab,#ourspaceMenuButton{background:#082630;color:#e7ffff;border:1px solid #3cd9e4;border-radius:9px;padding:11px 15px}
 #trexSiteTab[aria-selected="true"],#ourspaceMenuButton[aria-selected="true"]{background:#00ffff;color:#002b2e;border-color:#e8ffff}
