@@ -4,20 +4,23 @@
   "identity": {
     "name": "Sela",
     "origin": "Original Lanternweald supporting character",
-    "location": "Riverstone Terrace"
+    "location": "Riverstone Terrace / Tideglass boatbuilding commission"
   },
   "biography": {
-    "established": "Maintains date-stamped flood and crop records, participates in floodplain garden and bridge concerns, and retains local authority over conditions affecting the gardens.",
+    "established": "Maintains date-stamped flood and crop records, participates in floodplain garden and bridge concerns, and retains local authority over conditions affecting the gardens. In The Shore I Choose chapter 19, Sela commissions a shallow skiff to transport garden tools during floods, specifying a low step, stable handhold, and safe crate space.",
     "unwritten": "Family history and outside-Lanternweald past are not established."
   },
   "personality": {
-    "voice": "Evidence-first, locally grounded; points to dates, watermarks and crop beds rather than broad claims",
+    "voice": "Evidence-first, locally grounded; points to dates, watermarks and crop beds rather than broad claims; gives specific practical feedback on boat fit and deck stability.",
     "writer_guidance": "Distinct from Katara's protective urgency, Toph's physical certainty, and Aang's diplomatic perspective."
   },
   "agency": "Can object to rerouting water or volunteers on behalf of a famous visitor without losing narrative legitimacy.",
   "manuscript_sources": [
     "Jasper/Book/json/lanternweald-community-atlas.json",
-    "Jasper/Book/json/lanternweald-living-world-registry.json"
+    "Jasper/Book/json/lanternweald-living-world-registry.json",
+    "Jasper/Book/json/Disney/Maui-And-Jasper/19.json",
+    "Jasper/Book/json/Disney/Maui-And-Jasper/47.json"
   ],
-  "boundary": "Original profile; distinctions are based on source material, not external franchise research."
+  "boundary": "Original profile; distinctions are based on source material, not external franchise research.",
+  "pass23_research_note": "Updated existing canonical source-full Sela profile in place; separate active JSON character index file is lanternweald-sela.json. Unwritten family/crop details remain open."
 }
