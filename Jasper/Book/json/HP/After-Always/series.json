@@ -12,7 +12,7 @@
   "description": "After the war, Jasper helps Severus Snape survive the life he was never expected to have, one difficult truth, potion, and quiet kindness at a time.",
   "canon_window": "Postwar adult timeline only: adult Jasper and adult Severus Snape rebuilding life after the war; no school-age version of any romantic/private-interlude participant is used.",
   "chapter_count": 50,
-  "total_word_count": 78272,
+  "total_word_count": 79249,
   "story_bible": [
     "The story is about surviving the life neither person expected after the war: difficult truths, potions, work, grief, accountability, and quiet acts of chosen care.",
     "Snape remains sharp, private, exact, dry, suspicious of sentimentality, and capable of cruelty when wounded; tenderness should never make him suddenly verbose, sunny, or generic.",
@@ -148,7 +148,7 @@
       "number": 14,
       "file": "14.json",
       "title": "Night Work",
-      "word_count": 1327,
+      "word_count": 1656,
       "id": "after-always-14",
       "relationship_stage": "boundary_conversations",
       "next_chapter_id": "after-always-15"
@@ -310,7 +310,7 @@
       "number": 32,
       "file": "32.json",
       "title": "What Lily Was and Was Not",
-      "word_count": 1415,
+      "word_count": 1722,
       "id": "after-always-32",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "after-always-33"
@@ -455,7 +455,7 @@
       "file": "48.json",
       "title": "The Lantern Vigil",
       "id": "after-always-48",
-      "word_count": 1715,
+      "word_count": 2056,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "after-always-49"
     },
@@ -558,5 +558,15 @@
     ],
     "added_indexed_words": 854,
     "scope": "Existing manuscript prose changed in place; original 50 chapters and previous pass edits retained."
+  },
+  "editorial_pass24": {
+    "date": "2026-11-07",
+    "chapters_revised": [
+      14,
+      32,
+      48
+    ],
+    "added_indexed_words": 977,
+    "scope": "In-place substantial scenes; original 50 chapters and previous passes retained."
   }
 }
