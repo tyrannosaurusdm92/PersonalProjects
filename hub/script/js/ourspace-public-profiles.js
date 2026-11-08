@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   // scrollbar remains functional rather than becoming a decorative marker.
   next.style.height='calc(100dvh - 128px)';
   // The path belongs to the GitHub Pages iframe, never the site's visible URL.
-  next.src=viewer+'?profile='+encodeURIComponent(person)+(force?'&refresh='+Date.now():'');
+  next.src=viewer+'?profile='+encodeURIComponent(person)+'&publishedRevision=20261107-346-sync'+(force?'&refresh='+Date.now():'');
+  next.addEventListener('error',()=>{if(frame===next)status.textContent='Could not open the published profile viewer. Use Refresh to retry.'});
   content.appendChild(next);
   window.scrollTo({top:0,behavior:'auto'});
  }
@@ -55,10 +56,15 @@ document.addEventListener('DOMContentLoaded',()=>{
  window.addEventListener('message',e=>{
   if(e.origin!==origin||!frame||e.source!==frame.contentWindow)return;
   const m=e.data;
-  if(!m||m.type!=='ourspace:public-profile-height'||m.profileKey!==selected)return;
-  // Do not auto-expand the frame to the full content height: that would
-  // eliminate its scroll range and disable the native heart scrollbar.
-  status.textContent='Showing '+(selected==='jasper'?"Jasper's":"William's")+' published OurSpace layout and modules.';
+  if(!m||m.profileKey!==selected)return;
+  if(m.type==='ourspace:public-profile-state'){
+    if(m.status==='ready')status.textContent='Showing '+(selected==='jasper'?"Jasper's":"William's")+' latest published OurSpace modules.';
+    else if(m.status==='error')status.textContent='The published profile could not load: '+String(m.reason||'Please refresh.').slice(0,250);
+    return;
+  }
+  if(m.type!=='ourspace:public-profile-height')return;
+  // Keep the iframe independently scrollable and its original heart scrollbar.
+  // The ready/error message from the actual child viewer controls status.
  });
  paintTabs();
 
