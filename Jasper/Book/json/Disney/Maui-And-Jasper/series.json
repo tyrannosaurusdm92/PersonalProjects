@@ -11,7 +11,7 @@
   "rating": "Teen",
   "description": "Before the other Threadways open, a memoryless Jasper meets Maui at Tideglass Cove and learns to choose a life rather than recover an assigned one.",
   "chapter_count": 50,
-  "total_word_count": 89247,
+  "total_word_count": 90385,
   "reading_order": "linear",
   "shared_world": {
     "name": "The Lanternweald",
@@ -71,7 +71,7 @@
       "file": "06.json",
       "title": "A Song for the Unfinished",
       "id": "maui-06",
-      "word_count": 1774,
+      "word_count": 2043,
       "next_chapter_id": "maui-07"
     },
     {
@@ -192,7 +192,7 @@
       "file": "20.json",
       "title": "The Second Bell",
       "id": "maui-20",
-      "word_count": 1433,
+      "word_count": 1724,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-21"
     },
@@ -309,7 +309,7 @@
       "file": "33.json",
       "title": "The Unfinished Song",
       "id": "maui-33",
-      "word_count": 1764,
+      "word_count": 2026,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-34"
     },
@@ -435,7 +435,7 @@
       "file": "47.json",
       "title": "Night at the Reopened Channel",
       "id": "maui-47",
-      "word_count": 1924,
+      "word_count": 2240,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "maui-48"
     },
@@ -565,5 +565,16 @@
     ],
     "added_indexed_words": 818,
     "scope": "Original craft and continuity edits; all fifty existing chapters retained."
+  },
+  "editorial_pass27": {
+    "date": "2026-11-08",
+    "chapters_revised": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "added_indexed_words": 1138,
+    "scope": "Original scene-level characterization and shared-world changes, preserving complete 50-chapter arc."
   }
 }

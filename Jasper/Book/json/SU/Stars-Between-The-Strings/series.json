@@ -12,7 +12,7 @@
   "description": "Music, Beach City, second chances, and Greg Universe learning that being wanted does not have to feel temporary.",
   "canon_window": "Post-series Beach City adult timeline; transformative fanwork using Greg Universe’s established history, family, music, van, humor, and emotional patterns.",
   "chapter_count": 50,
-  "total_word_count": 83275,
+  "total_word_count": 84406,
   "story_bible": [
     "The relationship grows through music, Beach City routines, family history, second chances, awkward honesty, money/work realities, and the fear that good things are temporary.",
     "Greg is warm, rambling, musical, self-deprecating, openly affectionate, and capable of surprising firmness; he should not become a generic laid-back stoner stereotype or effortless therapist.",
@@ -76,7 +76,7 @@
       "number": 6,
       "file": "06.json",
       "title": "Do Not Make Me Guess",
-      "word_count": 1896,
+      "word_count": 2177,
       "id": "su-06",
       "relationship_stage": "flirting",
       "next_chapter_id": "su-07"
@@ -202,7 +202,7 @@
       "number": 20,
       "file": "20.json",
       "title": "Everything I Need to Say",
-      "word_count": 1513,
+      "word_count": 1776,
       "id": "su-20",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "su-21"
@@ -319,7 +319,7 @@
       "number": 33,
       "file": "33.json",
       "title": "A Door in the Wall",
-      "word_count": 1666,
+      "word_count": 1980,
       "id": "su-33",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "su-34"
@@ -446,7 +446,7 @@
       "file": "47.json",
       "title": "The Night After the Show",
       "id": "su-47",
-      "word_count": 1871,
+      "word_count": 2144,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "su-48"
     },
@@ -589,5 +589,16 @@
     ],
     "added_indexed_words": 822,
     "scope": "Original craft and continuity edits; all fifty existing chapters retained."
+  },
+  "editorial_pass27": {
+    "date": "2026-11-08",
+    "chapters_revised": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "added_indexed_words": 1131,
+    "scope": "Original scene-level characterization and shared-world changes, preserving complete 50-chapter arc."
   }
 }
