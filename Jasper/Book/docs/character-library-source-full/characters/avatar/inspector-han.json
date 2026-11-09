@@ -1,0 +1,21 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-08",
+  "identity": {
+    "name": "Inspector Han",
+    "origin": "Original to Jasper's fanfiction (not canon)",
+    "location": "Avatar / Jasmine After Rain"
+  },
+  "biography": {
+    "on_page": "Ba Sing Se city inspection official who initially expects preferential service at the Jasmine Dragon",
+    "history": "Not independently established"
+  },
+  "personality": {
+    "voice": "Status-conscious, procedural, impatient and capable of noting actual safety issues despite unprofessional conduct.",
+    "agency": "Must distinguish documented violations from personal offended pride; his seal does not confer free meals or control of employees."
+  },
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/33.json"
+  ],
+  "boundary": "Original to this fanfiction, no independently established age, family, office rank beyond 'inspector', or larger political history."
+}

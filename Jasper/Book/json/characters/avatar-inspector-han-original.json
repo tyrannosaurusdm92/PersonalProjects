@@ -1,0 +1,34 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass27",
+  "id": "avatar-inspector-han-original",
+  "name": "Inspector Han",
+  "fandom": "Avatar / Jasmine After Rain",
+  "provenance": "story_original",
+  "canon_status": "Author-created fanfiction character; not a licensed franchise character",
+  "biography": {
+    "on_page": "Ba Sing Se city inspection official who initially expects preferential service at the Jasmine Dragon",
+    "unwritten": "No family history, motives, exact age or prior life beyond the manuscripts and cited author references should be invented."
+  },
+  "personality": {
+    "voice": "Status-conscious, procedural, impatient and capable of noting actual safety issues despite unprofessional conduct.",
+    "decision_making": "Must distinguish documented violations from personal offended pride; his seal does not confer free meals or control of employees.",
+    "contradictions": [
+      "Original to this fanfiction, no independently established age, family, office rank beyond 'inspector', or larger political history."
+    ]
+  },
+  "relationships": {
+    "Jasper": "Interactions reflect their role and agency; neither friendship nor partnership is assumed."
+  },
+  "research_sources": [
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Avatar/Jasmine-After-Rain/33.json"
+    }
+  ],
+  "voice_and_consent_rules": [
+    "Dialogue must arise from character-specific skills, conflicts and responsibilities.",
+    "No inaccessible knowledge, unresolved mystery solution or invented family biography.",
+    "Jasper's adult polyamorous romance must not make these supporting residents romantic participants by assumption.",
+    "The living-world community retains labor, privacy and safety boundaries."
+  ]
+}

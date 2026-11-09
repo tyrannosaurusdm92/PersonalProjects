@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0-merged",
   "library": "Jasper fanfiction unified character library",
-  "profile_count": 189,
+  "profile_count": 197,
   "profiles": [
     {
       "id": "avatar-aang",
@@ -1514,6 +1514,70 @@
       "provenance": "story_original",
       "file": "avatar-ren-original.json",
       "canonical_key": "avatarjasmineafterrain::ren"
+    },
+    {
+      "id": "lanternweald-neri",
+      "name": "Neri",
+      "fandom": "Lanternweald / Threadways and Moonroot",
+      "provenance": "story_original",
+      "file": "lanternweald-neri.json",
+      "canonical_key": "lanternwealdoriginal::neri"
+    },
+    {
+      "id": "lanternweald-orin",
+      "name": "Orin",
+      "fandom": "Lanternweald / Moonroot Archive",
+      "provenance": "story_original",
+      "file": "lanternweald-orin.json",
+      "canonical_key": "lanternwealdoriginal::orin"
+    },
+    {
+      "id": "lanternweald-renn",
+      "name": "Renn",
+      "fandom": "Lanternweald / Brasswatch Yard",
+      "provenance": "story_original",
+      "file": "lanternweald-renn.json",
+      "canonical_key": "lanternwealdoriginal::renn"
+    },
+    {
+      "id": "lanternweald-lio",
+      "name": "Lio",
+      "fandom": "Lanternweald / Tideglass Cove",
+      "provenance": "story_original",
+      "file": "lanternweald-lio.json",
+      "canonical_key": "lanternwealdoriginal::lio"
+    },
+    {
+      "id": "lanternweald-halen",
+      "name": "Halen (Jasmine Steps)",
+      "fandom": "Lanternweald / Jasmine Steps",
+      "provenance": "story_original",
+      "file": "lanternweald-halen.json",
+      "canonical_key": "lanternwealdoriginal::halen (jasmine steps)"
+    },
+    {
+      "id": "avatar-halen-customer-original",
+      "name": "Mr. Halen (Ba Sing Se)",
+      "fandom": "Avatar / Jasmine After Rain",
+      "provenance": "story_original",
+      "file": "avatar-halen-customer-original.json",
+      "canonical_key": "avatarjasmineafterrain::mr. halen (ba sing se)"
+    },
+    {
+      "id": "avatar-inspector-han-original",
+      "name": "Inspector Han",
+      "fandom": "Avatar / Jasmine After Rain",
+      "provenance": "story_original",
+      "file": "avatar-inspector-han-original.json",
+      "canonical_key": "avatarjasmineafterrain::inspector han"
+    },
+    {
+      "id": "avatar-wen-haru-original",
+      "name": "Wen Haru",
+      "fandom": "Avatar / Love & Duty",
+      "provenance": "story_original",
+      "file": "avatar-wen-haru-original.json",
+      "canonical_key": "avatarloveandduty::wen haru"
     }
   ],
   "aliases": {
@@ -1805,7 +1869,13 @@
     "vel": "lanternweald-vel",
     "pip": "lanternweald-pip",
     "daron": "lanternweald-daron",
-    "ren": "avatar-ren-original"
+    "ren": "avatar-ren-original",
+    "neri": "lanternweald-neri",
+    "orin": "lanternweald-orin",
+    "renn": "lanternweald-renn",
+    "lio": "lanternweald-lio",
+    "inspector han": "avatar-inspector-han-original",
+    "wen haru": "avatar-wen-haru-original"
   },
   "alias_records": [
     {
@@ -3865,6 +3935,48 @@
       "id": "avatar-ren-original",
       "fandom_key": "avatarjasmineafterrain",
       "fandom": "Avatar: The Last Airbender / Jasmine After Rain"
+    },
+    {
+      "alias": "Neri",
+      "normalized": "neri",
+      "id": "lanternweald-neri",
+      "fandom_key": "lanternwealdoriginal",
+      "fandom": "Lanternweald / Threadways and Moonroot"
+    },
+    {
+      "alias": "Orin",
+      "normalized": "orin",
+      "id": "lanternweald-orin",
+      "fandom_key": "lanternwealdoriginal",
+      "fandom": "Lanternweald / Moonroot Archive"
+    },
+    {
+      "alias": "Renn",
+      "normalized": "renn",
+      "id": "lanternweald-renn",
+      "fandom_key": "lanternwealdoriginal",
+      "fandom": "Lanternweald / Brasswatch Yard"
+    },
+    {
+      "alias": "Lio",
+      "normalized": "lio",
+      "id": "lanternweald-lio",
+      "fandom_key": "lanternwealdoriginal",
+      "fandom": "Lanternweald / Tideglass Cove"
+    },
+    {
+      "alias": "Inspector Han",
+      "normalized": "inspector han",
+      "id": "avatar-inspector-han-original",
+      "fandom_key": "avatarjasmineafterrain",
+      "fandom": "Avatar / Jasmine After Rain"
+    },
+    {
+      "alias": "Wen Haru",
+      "normalized": "wen haru",
+      "id": "avatar-wen-haru-original",
+      "fandom_key": "avatarloveandduty",
+      "fandom": "Avatar / Love & Duty"
     }
   ],
   "fandom_profiles": {
@@ -4071,7 +4183,9 @@
       "avatar-huan",
       "avatar-yulan-original",
       "avatar-mina-original",
-      "avatar-ren-original"
+      "avatar-ren-original",
+      "avatar-halen-customer-original",
+      "avatar-inspector-han-original"
     ],
     "lanternwealdtheshoreichoose": [
       "lanternweald-lark",
@@ -4089,7 +4203,15 @@
       "avatar-suri-original",
       "avatar-mara-sen-original",
       "lanternweald-amel",
-      "lanternweald-daron"
+      "lanternweald-daron",
+      "avatar-wen-haru-original"
+    ],
+    "lanternwealdoriginal": [
+      "lanternweald-neri",
+      "lanternweald-orin",
+      "lanternweald-renn",
+      "lanternweald-lio",
+      "lanternweald-halen"
     ]
   },
   "series_cast": {
@@ -4104,7 +4226,9 @@
       "avatar-yulan-original",
       "avatar-mina-original",
       "lanternweald-tamsin",
-      "avatar-ren-original"
+      "avatar-ren-original",
+      "avatar-halen-customer-original",
+      "avatar-inspector-han-original"
     ],
     "love-and-duty": [
       "avatar-aang",
@@ -4121,7 +4245,9 @@
       "avatar-suri-original",
       "avatar-mara-sen-original",
       "lanternweald-amel",
-      "lanternweald-daron"
+      "lanternweald-daron",
+      "lanternweald-lio",
+      "avatar-wen-haru-original"
     ],
     "what-the-armor-leaves-behind": [
       "fo4-danse",
@@ -4138,7 +4264,8 @@
       "fo4-lena",
       "fo4-mara",
       "fo4-keane",
-      "lanternweald-aster"
+      "lanternweald-aster",
+      "lanternweald-renn"
     ],
     "after-always": [
       "hp-snape",
@@ -4153,7 +4280,9 @@
       "hp-lucius",
       "hp-kingsley",
       "hp-sinistra",
-      "hp-slughorn"
+      "hp-slughorn",
+      "lanternweald-neri",
+      "lanternweald-orin"
     ],
     "stars-between-the-strings": [
       "su-greg",
@@ -4176,14 +4305,17 @@
       "lanternweald-tamsin",
       "lanternweald-tomas",
       "lanternweald-vel",
-      "lanternweald-pip"
+      "lanternweald-pip",
+      "lanternweald-neri",
+      "lanternweald-orin",
+      "lanternweald-lio"
     ]
   },
   "merge_summary": {
     "pass3_profiles": 40,
     "research_profiles": 134,
     "same_fandom_character_duplicates_merged": 15,
-    "final_canonical_profiles": 189
+    "final_canonical_profiles": 197
   },
   "rules": [
     "Resolve characters by fandom + character identity, not display name alone.",
@@ -4193,7 +4325,7 @@
     "Real people and performers are never valid character substitutions.",
     "Adult-only generation must use explicitly adult character versions."
   ],
-  "latest_research_update": "2026-11-07-Pass26",
+  "latest_research_update": "2026-11-08-Pass27",
   "research_additions_pass20": [
     "su-marty",
     "su-sour-cream",
@@ -4245,5 +4377,16 @@
     "lanternweald-daron",
     "avatar-ren-original"
   ],
-  "canon_source_note_pass26": "Tomas, Vel and Pip promoted from previous original-character source references; Daron and Ren drawn only from authored chapter evidence. Original characters are not franchise canon."
+  "canon_source_note_pass26": "Tomas, Vel and Pip promoted from previous original-character source references; Daron and Ren drawn only from authored chapter evidence. Original characters are not franchise canon.",
+  "research_additions_pass27": [
+    "lanternweald-neri",
+    "lanternweald-orin",
+    "lanternweald-renn",
+    "lanternweald-lio",
+    "lanternweald-halen",
+    "avatar-halen-customer-original",
+    "avatar-inspector-han-original",
+    "avatar-wen-haru-original"
+  ],
+  "pass27_ambiguous_names": "Halen appears both in the Jasmine Steps registry and as Mr. Halen in Ba Sing Se; keep their profiles disambiguated and never assume they are the same person."
 }

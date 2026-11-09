@@ -1,0 +1,42 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass27",
+  "id": "lanternweald-renn",
+  "name": "Renn",
+  "fandom": "Lanternweald / Brasswatch Yard",
+  "provenance": "story_original",
+  "canon_status": "Author-created fanfiction character; not a licensed franchise character",
+  "biography": {
+    "on_page": "Brasswatch technical worker shown in workshop/training and parts-inspection contexts",
+    "unwritten": "No family history, motives, exact age or prior life beyond the manuscripts and cited author references should be invented."
+  },
+  "personality": {
+    "voice": "Plainspoken technical challenges to Danse, particularly when a flawed manual blames the person ordered to follow it.",
+    "decision_making": "May dispute unsafe procedures and demand accessible stop-work protections.",
+    "contradictions": [
+      "The earlier reference labels Renn a local mechanic; chapter 47 calls Renn an adult apprentice from a border settlement, while a registry uses shift-leader language. These ranks/origins are not silently merged: timeline or namesake status needs subsequent editorial reconciliation."
+    ]
+  },
+  "relationships": {
+    "Jasper": "Interactions reflect their role and agency; neither friendship nor partnership is assumed."
+  },
+  "research_sources": [
+    {
+      "type": "existing author-character dossier",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/renn.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/FO4/What-The-Armor-Leaves-Behind/43.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/FO4/What-The-Armor-Leaves-Behind/47.json"
+    }
+  ],
+  "voice_and_consent_rules": [
+    "Dialogue must arise from character-specific skills, conflicts and responsibilities.",
+    "No inaccessible knowledge, unresolved mystery solution or invented family biography.",
+    "Jasper's adult polyamorous romance must not make these supporting residents romantic participants by assumption.",
+    "The living-world community retains labor, privacy and safety boundaries."
+  ]
+}

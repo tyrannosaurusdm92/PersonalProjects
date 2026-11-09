@@ -1,0 +1,21 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-08",
+  "identity": {
+    "name": "Mr. Halen (Ba Sing Se)",
+    "origin": "Original to Jasper's fanfiction (not canon)",
+    "location": "Avatar / Jasmine After Rain"
+  },
+  "biography": {
+    "on_page": "Older regular Jasmine Dragon customer temporarily absent while grieving his sister; chooses how much of their letters to share",
+    "history": "Not independently established"
+  },
+  "personality": {
+    "voice": "Wry, exacting, matter-of-fact, complains about tea and sweeping while retaining his fierce right to privacy.",
+    "agency": "Can decline visits, letters being read, surprise check-ins and public grief narratives; his shop attendance belongs to him."
+  },
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Jasmine-After-Rain/47.json"
+  ],
+  "boundary": "A separate author-created person from Halen named in the Lanternweald Jasmine Steps registry, barring explicit future identification."
+}

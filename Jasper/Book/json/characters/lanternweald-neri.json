@@ -1,0 +1,44 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass27",
+  "id": "lanternweald-neri",
+  "name": "Neri",
+  "fandom": "Lanternweald / Threadways and Moonroot",
+  "provenance": "story_original",
+  "canon_status": "Author-created fanfiction character; not a licensed franchise character",
+  "biography": {
+    "on_page": "Keeper of restricted Threadway arrivals and Closed Bells evidence",
+    "unwritten": "No family history, motives, exact age or prior life beyond the manuscripts and cited author references should be invented."
+  },
+  "personality": {
+    "voice": "Wary, measured, avoids promises about unread records; asks where an observation came from and whom it may expose.",
+    "decision_making": "Neri controls classification and never publishes private destinations or supplies a missing keeper's identity to satisfy curiosity.",
+    "contradictions": []
+  },
+  "relationships": {
+    "Jasper": "Interactions reflect their role and agency; neither friendship nor partnership is assumed."
+  },
+  "research_sources": [
+    {
+      "type": "existing author-character dossier",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/neri.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/20.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/47.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/27.json"
+    }
+  ],
+  "voice_and_consent_rules": [
+    "Dialogue must arise from character-specific skills, conflicts and responsibilities.",
+    "No inaccessible knowledge, unresolved mystery solution or invented family biography.",
+    "Jasper's adult polyamorous romance must not make these supporting residents romantic participants by assumption.",
+    "The living-world community retains labor, privacy and safety boundaries."
+  ]
+}

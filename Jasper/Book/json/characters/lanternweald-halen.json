@@ -1,0 +1,34 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass27",
+  "id": "lanternweald-halen",
+  "name": "Halen (Jasmine Steps)",
+  "fandom": "Lanternweald / Jasmine Steps",
+  "provenance": "story_original",
+  "canon_status": "Author-created fanfiction character; not a licensed franchise character",
+  "biography": {
+    "on_page": "Named Jasmine Steps resident in the living-world registry; personal identity beyond this not established",
+    "unwritten": "No family history, motives, exact age or prior life beyond the manuscripts and cited author references should be invented."
+  },
+  "personality": {
+    "voice": "No reliable direct speech or defining motive identified: incomplete research. Do not fabricate a stock helpful-neighbor personality.",
+    "decision_making": "Use only with explicit new on-page character development and a distinct voice.",
+    "contradictions": [
+      "This uncharacterized Lanternweald resident must NOT be merged automatically with Mr. Halen, the grief-stricken Ba Sing Se customer in Jasmine After Rain 47."
+    ]
+  },
+  "relationships": {
+    "Jasper": "Interactions reflect their role and agency; neither friendship nor partnership is assumed."
+  },
+  "research_sources": [
+    {
+      "type": "existing author-character dossier",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/halen.json"
+    }
+  ],
+  "voice_and_consent_rules": [
+    "Dialogue must arise from character-specific skills, conflicts and responsibilities.",
+    "No inaccessible knowledge, unresolved mystery solution or invented family biography.",
+    "Jasper's adult polyamorous romance must not make these supporting residents romantic participants by assumption.",
+    "The living-world community retains labor, privacy and safety boundaries."
+  ]
+}

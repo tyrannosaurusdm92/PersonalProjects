@@ -1,0 +1,21 @@
+{
+  "schema_version": "jasper.original-character-profile.v1",
+  "research_date": "2026-11-08",
+  "identity": {
+    "name": "Wen Haru",
+    "origin": "Original to Jasper's fanfiction (not canon)",
+    "location": "Avatar / Love & Duty"
+  },
+  "biography": {
+    "on_page": "Landlord challenged at a tenant housing hearing after unsafe flooring injuries",
+    "history": "Not independently established"
+  },
+  "personality": {
+    "voice": "Self-justifying formal concern that avoids measurable responsibility; do not supply repentance or a future redemption arc without written evidence.",
+    "agency": "Tenants and witnesses can dispute his claims without the Avatar substituting authority for a fair housing inquiry."
+  },
+  "manuscript_sources": [
+    "Jasper/Book/json/Avatar/Love-And-Duty/20.json"
+  ],
+  "boundary": "Story-original landlord; do not conflate him with the separate franchise Earth Kingdom earthbender named Haru."
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass27",
+  "id": "lanternweald-lio",
+  "name": "Lio",
+  "fandom": "Lanternweald / Tideglass Cove",
+  "provenance": "story_original",
+  "canon_status": "Author-created fanfiction character; not a licensed franchise character",
+  "biography": {
+    "on_page": "Boatbuilding apprentice, aged 16 in the established Tideglass chapter 19",
+    "unwritten": "No family history, motives, exact age or prior life beyond the manuscripts and cited author references should be invented."
+  },
+  "personality": {
+    "voice": "Direct, careful about measured loads and his own design choices; prefers skilled help on his terms to Maui taking over the work.",
+    "decision_making": "Must have safe adult supervision and may refuse to surrender his original designs.",
+    "contradictions": [
+      "Lio is a minor in chapter 19. NEVER include him in erotic, sensual, flirtatious or adult-polyamorous scenes."
+    ]
+  },
+  "relationships": {
+    "Jasper": "Interactions reflect their role and agency; neither friendship nor partnership is assumed."
+  },
+  "research_sources": [
+    {
+      "type": "existing author-character dossier",
+      "path": "Jasper/Book/docs/character-library-source-full/characters/lanternweald/lio.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/19.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Disney/Maui-And-Jasper/49.json"
+    },
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Avatar/Love-And-Duty/47.json"
+    }
+  ],
+  "voice_and_consent_rules": [
+    "Dialogue must arise from character-specific skills, conflicts and responsibilities.",
+    "No inaccessible knowledge, unresolved mystery solution or invented family biography.",
+    "Jasper's adult polyamorous romance must not make these supporting residents romantic participants by assumption.",
+    "The living-world community retains labor, privacy and safety boundaries."
+  ]
+}

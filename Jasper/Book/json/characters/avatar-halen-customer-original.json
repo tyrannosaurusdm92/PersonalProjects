@@ -1,0 +1,34 @@
+{
+  "schema_version": "jasper.story-original-character-profile.pass27",
+  "id": "avatar-halen-customer-original",
+  "name": "Mr. Halen (Ba Sing Se)",
+  "fandom": "Avatar / Jasmine After Rain",
+  "provenance": "story_original",
+  "canon_status": "Author-created fanfiction character; not a licensed franchise character",
+  "biography": {
+    "on_page": "Older regular Jasmine Dragon customer temporarily absent while grieving his sister; chooses how much of their letters to share",
+    "unwritten": "No family history, motives, exact age or prior life beyond the manuscripts and cited author references should be invented."
+  },
+  "personality": {
+    "voice": "Wry, exacting, matter-of-fact, complains about tea and sweeping while retaining his fierce right to privacy.",
+    "decision_making": "Can decline visits, letters being read, surprise check-ins and public grief narratives; his shop attendance belongs to him.",
+    "contradictions": [
+      "A separate author-created person from Halen named in the Lanternweald Jasmine Steps registry, barring explicit future identification."
+    ]
+  },
+  "relationships": {
+    "Jasper": "Interactions reflect their role and agency; neither friendship nor partnership is assumed."
+  },
+  "research_sources": [
+    {
+      "type": "published manuscript",
+      "path": "Jasper/Book/json/Avatar/Jasmine-After-Rain/47.json"
+    }
+  ],
+  "voice_and_consent_rules": [
+    "Dialogue must arise from character-specific skills, conflicts and responsibilities.",
+    "No inaccessible knowledge, unresolved mystery solution or invented family biography.",
+    "Jasper's adult polyamorous romance must not make these supporting residents romantic participants by assumption.",
+    "The living-world community retains labor, privacy and safety boundaries."
+  ]
+}
