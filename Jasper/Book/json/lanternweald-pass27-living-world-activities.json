@@ -1,0 +1,522 @@
+{
+  "schema_version": "lanternweald.pass27.activities.v1",
+  "updated": "2026-11-08",
+  "status": "Editorial worldbuilding reference only; does not create executable gameplay",
+  "inspiration_limit": "Original cozy fantasy village social depth; do not copy specific Disney Dreamlight Valley IP, plots or systems",
+  "district_count": 7,
+  "activity_count": 21,
+  "verified_on_page_activity_count": 7,
+  "unwritten_optional_activity_count": 14,
+  "connection_rules": [
+    "Every district remains distinct and has voluntary civic work, social leisure and weather constraints.",
+    "The seven districts do not replace the six characters' separate homeworlds.",
+    "Activities named unwritten_optional have not happened in the 300 chapters.",
+    "No activity promises romantic exclusivity or erases other adult partners.",
+    "Cultural performance remains with its makers and cannot be appropriated."
+  ],
+  "rhythms": {
+    "daily": [
+      "Open: check posted routes, stock and weather; resident-hosted activities are optional",
+      "Midday: craft, repair or learning can happen only if hosts have agreed",
+      "Evening: music, tea and social conversation coexist with cleanup and quiet hours"
+    ],
+    "weekly": [
+      "Work rosters, public corrections and voluntary gatherings are reviewed",
+      "People with other obligations can decline; a missed gathering is not a friendship failure"
+    ],
+    "seasonal": {
+      "spring": [
+        "Thaw-route repairs and seed inventories",
+        "Public inspection of shoreline storm hardware",
+        "Community notices for accessible paths"
+      ],
+      "summer": [
+        "Market shade and safe water availability",
+        "Short music sets and ingredient-labeled snacks",
+        "Tide-limited skiff outings"
+      ],
+      "autumn": [
+        "Longlight kite repairs and lantern-hook checks",
+        "Storm drain inspection before the rains",
+        "Paid shift planning ahead of reduced daylight"
+      ],
+      "winter": [
+        "Warm shelter route notices",
+        "Indoor instrument maintenance and archive visits",
+        "Accessible bridge alternatives and supply ledgers"
+      ]
+    }
+  },
+  "activities": [
+    {
+      "id": "longlight-kite-repairs",
+      "district": "Lanternwell Square",
+      "hosts": "Pip; Aang; children and makers",
+      "status": "existing_on_page",
+      "source_chapters": [
+        "Love & Duty 47"
+      ],
+      "description": "Kite frames and paid material repairs, accessible viewing and no appropriation of Air Nomad traditions",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "bakers-second-loaf",
+      "district": "Lanternwell Square",
+      "hosts": "Mara and voluntary participants",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Recipe exchange with ingredient labels, separate donated loaf budget and wages",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "festival-sign-study",
+      "district": "Lanternwell Square",
+      "hosts": "Pip and users of the public board",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Display clarity review, consent for portraits and clear sign-writing credits",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "tide-window-reading",
+      "district": "Tideglass Cove",
+      "hosts": "Fen and residents; Maui observing",
+      "status": "existing_on_page",
+      "source_chapters": [
+        "The Shore I Choose 20, 47"
+      ],
+      "description": "Measure high/low marks; no reopening of lower sealed passage",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "rope-and-knot-table",
+      "district": "Tideglass Cove",
+      "hosts": "Fen; local skiff apprentices",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Dry and supervised practice off active moorings",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "shoreline-debris-walk",
+      "district": "Tideglass Cove",
+      "hosts": "Sela, Fen and voluntary visitors",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Inventory cleanup without moving other people's gardens or reefs",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "jasmine-tea-tasting",
+      "district": "Jasmine Steps",
+      "hosts": "Mina or consenting stall staff; visiting Iroh",
+      "status": "existing_on_page",
+      "source_chapters": [
+        "Jasmine After Rain 48; The Shore I Choose 45"
+      ],
+      "description": "Different tea sources, actual stock and paid service; Jasmine Dragon remains in Ba Sing Se",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "blend-journal",
+      "district": "Jasmine Steps",
+      "hosts": "Local tea stall workers",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Smell/taste notes and credited blends without copying restricted supplier formulae",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "quiet-window-hour",
+      "district": "Jasmine Steps",
+      "hosts": "Resident-hosted tea table",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Low-cost seat without compulsory purchase or social contact",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "bridge-route-check",
+      "district": "Riverstone Terrace",
+      "hosts": "Toph, Edda, Sela and Beren",
+      "status": "existing_on_page",
+      "source_chapters": [
+        "Love & Duty 45, 47"
+      ],
+      "description": "Crack assessment plus cart widths, patient routes, and actual drainage measurements",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "garden-seed-swap",
+      "district": "Riverstone Terrace",
+      "hosts": "Sela and growers",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Seed provenance, consent and real water needs",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "walkable-route-tiles",
+      "district": "Riverstone Terrace",
+      "hosts": "Edda and accessible route users",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Test human and cart access rather than extrapolating from a famous earthbender",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "source-claims-workshop",
+      "district": "Moonroot Archive",
+      "hosts": "Orin and Neri; visiting Severus",
+      "status": "existing_on_page",
+      "source_chapters": [
+        "After Always 47"
+      ],
+      "description": "Public records only; dates and corrections must be traceable",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "family-letter-conservation",
+      "district": "Moonroot Archive",
+      "hosts": "Orin and residents choosing to share",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "No uninvited reading or mandatory grief narratives",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "closed-bells-fact-check",
+      "district": "Moonroot Archive",
+      "hosts": "Neri and designated inspectors",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Evaluate already public evidence without identifying keeper or opening lower passage",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "workshop-manual-revision",
+      "district": "Brasswatch Yard",
+      "hosts": "Danse, Renn, Ash and independent reviewer",
+      "status": "existing_on_page",
+      "source_chapters": [
+        "What the Armor Leaves Behind 47"
+      ],
+      "description": "Correct flawed pump diagrams, offer reachable stop-work signal",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "broken-tool-clinic",
+      "district": "Brasswatch Yard",
+      "hosts": "Trained local workers",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Part ratings and safe-use tests, no invented certifications",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "repair-mentor-pairs",
+      "district": "Brasswatch Yard",
+      "hosts": "Adult volunteers and approved apprentices",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Paid/voluntary boundaries, accessible benches and independent complaint route",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "unfinished-song-morning",
+      "district": "Starwake Pier",
+      "hosts": "Greg, Maui and chosen listeners",
+      "status": "existing_on_page",
+      "source_chapters": [
+        "The Shore I Choose 33"
+      ],
+      "description": "Musician controls when a new song can be heard; safe tested stage",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "borrowed-song-corner",
+      "district": "Starwake Pier",
+      "hosts": "Greg and consenting players",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Suggest musical fragments without claiming copyright or demanding performance",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    },
+    {
+      "id": "cable-care-table",
+      "district": "Starwake Pier",
+      "hosts": "Nola and stage technicians",
+      "status": "unwritten_optional",
+      "source_chapters": [],
+      "description": "Inventory, voltage safety and paid crew sign-off before an event",
+      "player_like_participation": "Residents may join, watch, decline, propose a contribution or leave early; this is a narrative world seed, not a programmed game.",
+      "earned_outcomes": [
+        "A documented choice by a named resident",
+        "A safe, consent-based artifact or recorded finding"
+      ],
+      "limits": [
+        "No forced work or affection",
+        "No public disclosure of restricted memories",
+        "No automatic resolution of the larger Closed Bells mystery"
+      ]
+    }
+  ],
+  "relationship_and_friendship_connections": [
+    {
+      "people": [
+        "Iroh",
+        "Greg"
+      ],
+      "established": "Iroh responds to Greg's invitation for tea and music",
+      "chapters": [
+        "Jasmine After Rain 47"
+      ],
+      "difference": "Iroh talks in calculated courtesies; Greg writes like a rehearsal note"
+    },
+    {
+      "people": [
+        "Greg",
+        "Maui"
+      ],
+      "established": "Greg requests a quiet beat rather than a heroic verse",
+      "chapters": [
+        "The Shore I Choose 33"
+      ],
+      "difference": "Greg songwriter and father; Maui boastful ocean voyager"
+    },
+    {
+      "people": [
+        "Aang",
+        "Toph",
+        "Katara",
+        "Jasper"
+      ],
+      "established": "Aang cannot volunteer their household without all partners agreeing",
+      "chapters": [
+        "Love & Duty 33"
+      ],
+      "difference": "Aang duty; Toph's practice space; Katara's clinic; Jasper's consensual scheduling"
+    },
+    {
+      "people": [
+        "Neri",
+        "Orin",
+        "Severus"
+      ],
+      "established": "Private witness testimony differs from public verified history",
+      "chapters": [
+        "After Always 47"
+      ],
+      "difference": "Records custodian, aspiring historian and exacting potions scholar"
+    },
+    {
+      "people": [
+        "Fen",
+        "Sela",
+        "Maui"
+      ],
+      "established": "Tide observations must not displace garden claims",
+      "chapters": [
+        "The Shore I Choose 20, 47"
+      ],
+      "difference": "Safety, soil and bravado"
+    },
+    {
+      "people": [
+        "Danse",
+        "Renn",
+        "Ash"
+      ],
+      "established": "Trainees challenge a biased safety handbook",
+      "chapters": [
+        "What the Armor Leaves Behind 47"
+      ],
+      "difference": "Military habit, trainee questions, independent worker rights"
+    }
+  ],
+  "identity_boundaries": {
+    "halens": "Two unrelated-by-evidence people sharing a surname; do not merge",
+    "lio": "16-year-old in established Tideglass chapter 19; no adult romance",
+    "renn": "Contradictory job labels require a separate editorial reconciliation rather than fabricated chronology"
+  }
+}

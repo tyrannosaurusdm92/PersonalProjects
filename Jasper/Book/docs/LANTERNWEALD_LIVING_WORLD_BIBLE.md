@@ -360,3 +360,41 @@ Attractions need meaningful constraints. A festival game should have a real volu
 **Optional, not yet asserted on-page:** A monthly maker's exchange where repairs can be taught rather than heroically solved; a tide-chart reading lesson led by Fen and a wayfinding observation from Maui; a joint neighborhood archive night where source labels are checked before public exhibition; a quiet acoustic set chosen by Greg and his bandmates, not assigned by a council; a winter warm-routes week organized with mobility and cart users; and a community recipe exchange where original local food is credited to its preparers. None of these future ideas resolves Closed Bells or forces romance, access or work.
 
 The **authored chapter additions** for this pass are listed individually in `LANTERNWEALD_PASS26_CONTINUITY.md`. Do not rewrite the homeworlds as seven interchangeable districts: Ba Sing Se remains a real city beyond Jasmine Steps; Beach City remains where Greg's car wash actually operates; Hogwarts and the Commonwealth keep their own dangers and political consequences. The lower historic Closed Bells passage remains sealed, and no new scene identifies its erased keeper.
+
+## 23. Pass 27 — Living districts, social games and people who say no (November 8, 2026)
+
+A connected cozy fantasy setting needs more than errands. Its residents need their own reasons to wake up, disagreements they can sustain after Jasper leaves, and enough ordinary pleasures that a festival does not feel like a plot checkpoint. The revised chapters give one version of this: a pot of tea whose price reflects real labor; a kite whose builder can decide not to fly it; a song that Greg can leave unfinished; a tide mark that Maui may observe but cannot overrule; and a trainee who can stop a dangerous machine even when Danse believes the manual is right.
+
+### What is **already written** in the novels
+**Iroh — Jasmine After Rain 47:** Greg sends an unfinished song-list and tea invitation to Ba Sing Se. Iroh replies as a deliberate host: he asks how many people need tea rather than sounding like an embarrassed bandmate. This is a message across the established Threadway network, not a retcon moving Beach City's car wash to Ba Sing Se.
+
+**Maui and Greg — The Shore I Choose 33:** Greg wants space to write an unfinished melody. Maui initially offers heroic lines, then contributes a quiet, asked-for beat and admits a transformation hook cannot improve his listening. Greg's informal songwriter rhythm and Maui's flamboyant but vulnerable manner coexist without becoming the same voice. Steven visits as his own person, not a prop in Jasper's relationships.
+
+**Team Avatar — Love & Duty 33, 47:** An adult shared household must consent before Aang offers its courtyard to a displaced delegation. Katara's patient work, Toph's training, and Jasper's negotiated polyamory have different schedules; no one person's noble intentions can automatically volunteer the others. The Longlight kite event belongs to valley residents; Air Nomad traditions remain Aang's to share or withhold. Pip records the cost of physical frames and permits access around the kite field.
+
+**Danse — What the Armor Leaves Behind 6, 33, 47:** Haylen's radio expertise has independent weight; Danse makes room for the painful truth about synth personhood; Renn and Ash can find errors in a former Paladin's manual and demand accessible ways to stop unsafe machinery. Command history does not certify water safety or erase harmed people.
+
+**Severus — After Always 6, 47:** Potion evidence needs chain-of-custody accuracy, while Orin's Moonroot historical report must distinguish a dramatic unsupported claim from evidence. Neri protects restricted testimony; no amount of romance licenses Jasper or Severus to access it.
+
+**Maui, Fen, Mereana and Sela — The Shore I Choose 6, 20, 47:** Cultural artists decide what performances may be shared; Maui's real skill reading wave-worn stone coexists with Fen's need to measure it; Sela's damaged plants are investigated rather than blamed on the first available celebrity. The historic lower Closed Bells passage stays sealed, and no current manuscript identifies its erased keeper.
+
+### Seven districts with independent livelihoods
+- **Lanternwell Square:** Paid stall labor, publicly priced bread, festival designs, accessible routes, voluntary display of art, and a public board that must never reveal restricted travel destinations. Pip may object to being volunteered.
+- **Tideglass Cove:** Dated tide marks, safe loading limits, skiff apprentices and an independent tidekeeper. A sea-legend sighting is evidence for a further survey, not permission to open an unsafe passage.
+- **Jasmine Steps:** Guest tea tables, differently priced blends and a separate work ledger. This is a Lanternweald district; it is not Iroh's Jasmine Dragon in Ba Sing Se.
+- **Riverstone Terrace:** Bridge accessibility, garden drainage, real cart-turning radii, seedling loss and the right to ask Toph to remeasure before work starts.
+- **Moonroot Archive:** Quiet source-comparison tables, public/restricted access categories, date corrections and testimony withdrawal rights. Orin is not automatically a narrator of every secret.
+- **Brasswatch Yard:** Part identification, shared maintenance learning and safety stops that an apprentice can reach. Danse's history supplies skills but does not exempt him from independent inspection.
+- **Starwake Pier:** Weather-tested stages, repairable instrument cases, scheduled sets that performers may refuse to extend, and an unfinished-song corner that does not compel someone to perform.
+
+These districts are linked by real people and requests, not teleporting universal expertise. Market prices, weather and worker availability affect how far a promise can travel. A cozy setting can be joyful and playful without erasing consequential autonomy.
+
+### Recurring games, workshops and seasonal rhythms
+`json/lanternweald-pass27-living-world-activities.json` defines **21** socially plausible activities across seven districts: **seven anchored in on-page activity types** and **fourteen clearly marked future, optional ideas**. Participants may attend, learn, help, decline, watch or leave. Hosts own materials, attribution and safety. Seasons change road access and supply conditions rather than magically resetting characters' histories. This is *lore for future narrative use*, not a claim that an actual interactive Dreamlight Valley clone has been programmed or that proposed games already happened.
+
+The village supports low-pressure relationships: running into each other at the notice board, arguing over whose artist credit belongs on a sign, thanking a grower without taking a crop, trying the safe bridge route at a different pace, or joining a song only after the songwriter asks. Different residents remember different events. Pip can decline a celebrity's request; Neri can protect a stranger's travel plans; Renn can question Danse; Orin can remove an unsupported fact even when it improves Severus's reputation.
+
+### Unresolved continuity is not an invitation to guess
+Halen named in the Jasmine Steps registry and Mr. Halen in Ba Sing Se are not proven identical. Renn's role differs across source descriptions and must be reviewed in a focused later edit. Lio is sixteen in the established boating apprenticeship and never appears as an adult romantic target. The erased Closed Bells keeper remains unidentified, and the historic lower passage remains sealed.
+
+The chapter-specific verified scenes, dialogue distinctions and relationship boundaries are detailed in `LANTERNWEALD_PASS27_CONTINUITY.md`. Earlier lore remains authoritative except where a new authored scene explicitly develops it.

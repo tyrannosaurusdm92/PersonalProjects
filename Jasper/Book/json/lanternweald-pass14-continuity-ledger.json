@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.pass14.causal-ledger.v1",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "classification": "editorial continuity index; on-page facts and future writing proposals are explicitly separated",
   "coherence_rules": [
     "All six novels contain 50 linear chapters. Chapter numbers and endings are retained.",
@@ -352,5 +352,56 @@
     "Severus's book notes and testimony require permission and source distinctions.",
     "Maui retains visible ego and viable ocean skill while respecting safe tide readings.",
     "Festival play, art, music and food require safe space, volunteered or paid labor, and owner permission."
+  ],
+  "pass27_authored_chapter_slots": {
+    "jasmine-after-rain": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "love-and-duty": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "what-the-armor-leaves-behind": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "after-always": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "stars-between-the-strings": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "the-shore-i-choose": [
+      6,
+      20,
+      33,
+      47
+    ]
+  },
+  "pass27_cross_novel_causal_links": [
+    "Iroh 47 receives a Greg music invitation; travel remains chosen and no homeworld moves.",
+    "Maui 33 places a direct Greg-Maui music session at Starwake Pier with independent creative roles.",
+    "Aang's offered courtyard in Love & Duty 33 cannot become a household decision without adult partners' agreement.",
+    "Pip's kite invoices in Love & Duty 47 reflect actual maker wages and paid materials.",
+    "Severus/Orin/Neri source work in After Always 47 retains archive privacy and version history.",
+    "Fen/Sela/Maui measurements in The Shore I Choose 20 and 47 cannot certify the sealed historic lower passage.",
+    "Danse/Renn/Ash manual corrections in Armor 47 allow a trainee to stop unsafe work."
+  ],
+  "pass27_unresolved_but_documented": [
+    "Renn's workshop role has source descriptions that differ across contexts and should be reconciled without guessing.",
+    "The registry's Halen is not proven to be Iroh's Mr. Halen in Ba Sing Se."
   ]
 }

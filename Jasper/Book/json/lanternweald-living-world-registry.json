@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.living_world.v1",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "status": "canon reference for six completed 50-chapter prose sequences",
   "total_written_chapters": 300,
   "distinct_series": 6,
@@ -519,7 +519,7 @@
     "relationships": "Six independent continuing relationship arcs remain open beyond their chapter-50 endings"
   },
   "qa_note": "Reader and manifests contain complete 300-chapter prose; equal chapter counts do not establish equal chapter length or editorial depth.",
-  "editorial_revision_pass": 26,
+  "editorial_revision_pass": 27,
   "revised_chapter_count": 19,
   "revised_chapter_slots_by_series": {
     "the-shore-i-choose": [
@@ -619,7 +619,7 @@
       40
     ]
   },
-  "manifest_word_count": 503459,
+  "manifest_word_count": 509850,
   "community_dependency_graph": [
     {
       "from": "tideglass-cove",
@@ -848,8 +848,8 @@
     "housing": "Emergency hall lodging is distinct from private shared homes; accommodation cannot be conditional on unpaid labor.",
     "romance": "Adult first-person Jasper explicitly discloses ethical non-monogamy and preferred polyamory; intimacy remains consensual and non-explicit."
   },
-  "latest_audit": "docs/PROSE_DEPTH_PASS26_AUDIT.md",
-  "latest_continuity": "docs/LANTERNWEALD_PASS26_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS27_AUDIT.md",
+  "latest_continuity": "docs/LANTERNWEALD_PASS27_CONTINUITY.md",
   "community_atlas": "json/lanternweald-community-atlas.json",
   "depth_review_below_1200": 0,
   "revised_chapter_slots_by_series_pass12": {
@@ -1338,5 +1338,51 @@
     "events": "Festival activities have voluntary organizers, safe routes, visible prices or waived fees, and no compulsory performance.",
     "history": "Lower Closed Bells remains sealed; erased keeper unknown; upper temporary channel subject to posted tests.",
     "romance": "Adult Jasper's ethical non-monogamy and polyamorous preference are openly communicated; each partner chooses terms."
+  },
+  "activity_reference_pass27": "json/lanternweald-pass27-living-world-activities.json",
+  "revised_chapter_slots_by_series_pass27": {
+    "jasmine-after-rain": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "love-and-duty": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "what-the-armor-leaves-behind": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "after-always": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "stars-between-the-strings": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "the-shore-i-choose": [
+      6,
+      20,
+      33,
+      47
+    ]
+  },
+  "pass27_world_rules": {
+    "differentiated_leads": "Iroh tactics vs Greg song/parenthood vs Maui bombast; Snape potions/evidence vs Danse procedures; Aang, Katara and Toph independent",
+    "character_research": "197 original and canon profiles; Halen namesakes separate; Lio minor; Renn status unresolved",
+    "village_play": "21 scene and optional activity references; optional future seeds explicitly not written chapter canon",
+    "safe_access": "No uninspected passage opening, no unapproved equipment, no automatic sharing of private registry details",
+    "romance": "Adult first-person Jasper openly prefers consensual ethical non-monogamy/polyamory with negotiated terms"
   }
 }

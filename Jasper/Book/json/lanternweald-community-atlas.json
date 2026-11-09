@@ -1,6 +1,6 @@
 {
   "schema_version": "lanternweald.community_atlas.v1",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "status": "editorial reference; established-on-page details distinguished from optional unwritten story seeds",
   "purpose": "Increase original cozy-village depth while preserving independent fictional homeworlds, six linear novels, community agency and existing endings",
   "districts": [
@@ -414,8 +414,8 @@
   ],
   "unwritten_ideas_label": "All district future arrays and seasonal optional_seed fields are suggestions for future writing, not events already in chapters",
   "latest_social_web": "json/lanternweald-pass13-social-web.json",
-  "latest_prose_continuity": "docs/LANTERNWEALD_PASS26_CONTINUITY.md",
-  "latest_audit": "docs/PROSE_DEPTH_PASS26_AUDIT.md",
+  "latest_prose_continuity": "docs/LANTERNWEALD_PASS27_CONTINUITY.md",
+  "latest_audit": "docs/PROSE_DEPTH_PASS27_AUDIT.md",
   "thirteenth_pass_verified_scene_connections": [
     {
       "book": "The Shore I Choose",
@@ -1215,5 +1215,81 @@
         "no forced historical conclusion"
       ]
     }
+  ],
+  "living_activities_pass27": "json/lanternweald-pass27-living-world-activities.json",
+  "pass27_verified_scene_connections": [
+    {
+      "series": "jasmine-after-rain",
+      "chapters": [
+        6,
+        20,
+        33,
+        47
+      ],
+      "on_page_ref": "Jasmine After Rain chapters 6, 20, 33, 47",
+      "classification": "authored in published manuscripts; details documented in Pass 27 continuity"
+    },
+    {
+      "series": "love-and-duty",
+      "chapters": [
+        6,
+        20,
+        33,
+        47
+      ],
+      "on_page_ref": "Love & Duty chapters 6, 20, 33, 47",
+      "classification": "authored in published manuscripts; details documented in Pass 27 continuity"
+    },
+    {
+      "series": "what-the-armor-leaves-behind",
+      "chapters": [
+        6,
+        20,
+        33,
+        47
+      ],
+      "on_page_ref": "What the Armor Leaves Behind chapters 6, 20, 33, 47",
+      "classification": "authored in published manuscripts; details documented in Pass 27 continuity"
+    },
+    {
+      "series": "after-always",
+      "chapters": [
+        6,
+        20,
+        33,
+        47
+      ],
+      "on_page_ref": "After Always chapters 6, 20, 33, 47",
+      "classification": "authored in published manuscripts; details documented in Pass 27 continuity"
+    },
+    {
+      "series": "stars-between-the-strings",
+      "chapters": [
+        6,
+        20,
+        33,
+        47
+      ],
+      "on_page_ref": "Stars Between the Strings chapters 6, 20, 33, 47",
+      "classification": "authored in published manuscripts; details documented in Pass 27 continuity"
+    },
+    {
+      "series": "the-shore-i-choose",
+      "chapters": [
+        6,
+        20,
+        33,
+        47
+      ],
+      "on_page_ref": "The Shore I Choose chapters 6, 20, 33, 47",
+      "classification": "authored in published manuscripts; details documented in Pass 27 continuity"
+    }
+  ],
+  "pass27_author_constraints": [
+    "Do not conflate Iroh's strategic cadence with Greg's musician/father humor.",
+    "Keep the two Halens distinct unless new future prose proves otherwise.",
+    "Renn's apparent mechanic/apprentice/shift-leader discrepancy remains a flagged editorial question.",
+    "Lio is sixteen when established; never make him part of adult romance.",
+    "Every optional activity has an independent responsible resident, real safety and paid/volunteer boundaries."
   ]
 }
