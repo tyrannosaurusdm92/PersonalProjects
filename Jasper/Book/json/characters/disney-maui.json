@@ -557,5 +557,27 @@
     ],
     "contrast_id": null,
     "style_reference": "json/william-writing-style.json"
+  },
+  "character_voice_pass27": {
+    "date": "2026-11-08",
+    "scope": "Edited chapters 6,20,33,47; first-person adult Jasper and connected Lanternweald continuity",
+    "rules": {
+      "social_role": "Disney Moana and Moana 2 shapeshifting demigod, experienced navigator, hunger for applause, deeply sentimental beneath swagger.",
+      "speech": "Large jokes, self-mythologizing, interruptions, absurd heroic titles and frank short admissions, not restrained moral lectures.",
+      "conflict": "Does not stop wanting to be admired; learns to ask Fen, Sela and resident artists without abandoning bravado.",
+      "flirtation": "Invites Jasper into a ridiculous dance with fierce confidence that cracks into genuine need; adult consent remains non-negotiable.",
+      "contrast": "Greg asks for silence while composing; Maui loudly offers the whole ocean, then learns he was asked only to sit."
+    },
+    "source": {
+      "url_or_path": "https://d23.com/meet-the-characters-of-moana-2/",
+      "source_class": "Official animated film continuity"
+    },
+    "quality_checks": [
+      "Do not reuse another lead character's rhetorical habits.",
+      "Dialogues must include contradictory desires, not instant mutual agreement.",
+      "Separate individual agency from romantic availability.",
+      "Keep all polyamorous relationships adult, negotiated, disclosed and non-explicit.",
+      "No character alone can resolve every village infrastructure or archival problem."
+    ]
   }
 }

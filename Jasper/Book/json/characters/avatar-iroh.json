@@ -588,5 +588,27 @@
     ],
     "contrast_id": "su-greg",
     "style_reference": "json/william-writing-style.json"
+  },
+  "character_voice_pass27": {
+    "date": "2026-11-08",
+    "scope": "Edited chapters 6,20,33,47; first-person adult Jasper and connected Lanternweald continuity",
+    "rules": {
+      "social_role": "Former general, postwar tea-shop proprietor, Pai Sho tactician and grieving father; his advice is earned and sometimes incomplete.",
+      "speech": "Deliberate, textured, observant; one understated teasing question is stronger than a string of fortune-cookie lessons.",
+      "conflict": "Tracks who owns a space or a cost, then asks permission; can become sharp when hierarchy hides real harm.",
+      "flirtation": "Touches the hand by a game board, notices tea temperature, admits he wants Jasper's company without claiming exclusivity.",
+      "contrast": "Greg stumbles conversationally and leads with music and fatherhood; Iroh chooses words with strategic care and holds unfinished grief."
+    },
+    "source": {
+      "url_or_path": "https://www.netflix.com/tudum/features/avatar-season-2-cast-guide?inapp=true-65",
+      "source_class": "Avatar-era background, not verbatim source dialogue"
+    },
+    "quality_checks": [
+      "Do not reuse another lead character's rhetorical habits.",
+      "Dialogues must include contradictory desires, not instant mutual agreement.",
+      "Separate individual agency from romantic availability.",
+      "Keep all polyamorous relationships adult, negotiated, disclosed and non-explicit.",
+      "No character alone can resolve every village infrastructure or archival problem."
+    ]
   }
 }

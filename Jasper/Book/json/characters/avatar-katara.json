@@ -507,5 +507,26 @@
       "Love & Duty 42 - clinic labor and protected time"
     ],
     "source_boundary": "The listed scenes are from Jasper's original fanfiction, not claims of official franchise events."
+  },
+  "character_voice_pass27": {
+    "date": "2026-11-08",
+    "scope": "Edited chapters 6,20,33,47; first-person adult Jasper and connected Lanternweald continuity",
+    "rules": {
+      "social_role": "Adult waterbending healer, civic advocate, survivor and guardian of medical privacy.",
+      "speech": "Compassionate yet forceful, specific about bodies and names; anger makes her more exact, not cruel by default.",
+      "conflict": "A housing ruling does not heal the injured child's leg or pay for repairs; her compassion coexists with a refusal to provide convenient forgiveness.",
+      "flirtation": "Offers tactile warmth and unambiguous requests without turning emotional caretaking into a debt."
+    },
+    "source": {
+      "url_or_path": "Jasper/Book/json/Avatar/Love-And-Duty/20.json",
+      "source_class": "Adult fanfiction continuity"
+    },
+    "quality_checks": [
+      "Do not reuse another lead character's rhetorical habits.",
+      "Dialogues must include contradictory desires, not instant mutual agreement.",
+      "Separate individual agency from romantic availability.",
+      "Keep all polyamorous relationships adult, negotiated, disclosed and non-explicit.",
+      "No character alone can resolve every village infrastructure or archival problem."
+    ]
   }
 }

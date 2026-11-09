@@ -511,5 +511,26 @@
       "Love & Duty 42 - rest and household schedule"
     ],
     "source_boundary": "The listed scenes are from Jasper's original fanfiction, not claims of official franchise events."
+  },
+  "character_voice_pass27": {
+    "date": "2026-11-08",
+    "scope": "Edited chapters 6,20,33,47; first-person adult Jasper and connected Lanternweald continuity",
+    "rules": {
+      "social_role": "Adult Avatar whose Air Nomad identity cannot be reduced to a spectacle requested by a festival committee.",
+      "speech": "Warm, playful, eager, sometimes evasive about painful confrontation; not a solemn oracle.",
+      "conflict": "Must ask before volunteering other people's home and time. The cultural memory he chooses to share remains his.",
+      "flirtation": "Joyful adult closeness and vulnerable apologies, with no automatic claim on Katara, Toph or Jasper."
+    },
+    "source": {
+      "url_or_path": "Jasper/Book/json/Avatar/Love-And-Duty/33.json",
+      "source_class": "Adult fanfiction continuity"
+    },
+    "quality_checks": [
+      "Do not reuse another lead character's rhetorical habits.",
+      "Dialogues must include contradictory desires, not instant mutual agreement.",
+      "Separate individual agency from romantic availability.",
+      "Keep all polyamorous relationships adult, negotiated, disclosed and non-explicit.",
+      "No character alone can resolve every village infrastructure or archival problem."
+    ]
   }
 }
