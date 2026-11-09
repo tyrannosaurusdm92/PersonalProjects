@@ -12,7 +12,7 @@
   "description": "Tea, Pai Sho, grief, and ordinary happiness make room for original-series Uncle Iroh to be a man instead of only a legend.",
   "canon_window": "Post-war Ba Sing Se; original-series Uncle Iroh only, explicitly excluding Iroh II from The Legend of Korra.",
   "chapter_count": 50,
-  "total_word_count": 81571,
+  "total_word_count": 82679,
   "story_bible": [
     "The central romance grows through tea-shop routines, repair after grief, private jokes, practical care, and the difference between being admired as a legend and loved as a person.",
     "Iroh remains a former general and strategist as well as a warm tea-shop owner; wisdom must not flatten him into a fortune-cookie therapist.",
@@ -76,7 +76,7 @@
       "number": 6,
       "file": "06.json",
       "title": "A Game of Pai Sho",
-      "word_count": 1792,
+      "word_count": 2056,
       "id": "avatar-06",
       "relationship_stage": "flirting",
       "next_chapter_id": "avatar-07"
@@ -202,7 +202,7 @@
       "number": 20,
       "file": "20.json",
       "title": "The Tea That Stays",
-      "word_count": 1368,
+      "word_count": 1671,
       "id": "avatar-20",
       "relationship_stage": "testing_power_play",
       "next_chapter_id": "avatar-21"
@@ -319,7 +319,7 @@
       "number": 33,
       "file": "33.json",
       "title": "A Small Rebellion",
-      "word_count": 1485,
+      "word_count": 1726,
       "id": "avatar-33",
       "relationship_stage": "integrated_trust",
       "next_chapter_id": "avatar-34"
@@ -446,7 +446,7 @@
       "file": "47.json",
       "title": "The Empty Chair Is Not a Threat",
       "id": "avatar-47",
-      "word_count": 1708,
+      "word_count": 2008,
       "relationship_stage": "established-and-revisable",
       "next_chapter_id": "avatar-48"
     },
@@ -586,5 +586,16 @@
     ],
     "added_indexed_words": 784,
     "scope": "Original prose additions to existing 5/27/45; all fifty chapters and prior edits preserved."
+  },
+  "editorial_pass27": {
+    "date": "2026-11-08",
+    "chapters_revised": [
+      6,
+      20,
+      33,
+      47
+    ],
+    "added_indexed_words": 1108,
+    "scope": "New scene/dialogue additions to existing chapters; no replacement of 50-chapter arc."
   }
 }
