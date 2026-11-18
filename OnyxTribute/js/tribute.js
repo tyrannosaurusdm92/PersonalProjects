@@ -26,7 +26,7 @@ const chapters=data.poems.map(poem=>({
 }));
 let slides=[],chosenChapter=null,selectedGroup='',currentIndex=-1,localTime=0,lastFrame=0;
 let started=false,playing=false,finished=false,ending=false,scrubbing=false,musicMuted=false;
-let endStarted=0,photoToken=0,frontLayer=1,videoOffset=0,poemKey='',preloaded=new Map(),toastTimer=0;
+let endStarted=0,endFadeStartVolume=0,photoToken=0,frontLayer=1,videoOffset=0,poemKey='',preloaded=new Map(),toastTimer=0;
 let errorSkipPending=false;
 
 function toast(message){
@@ -125,6 +125,7 @@ function playVideo(){
  const attempt=refs.video.play();
  if(attempt?.catch)attempt.catch(error=>{
   if(slides[currentIndex]?.type!=='video'||!playing)return;
+  refs.videoLayer.classList.add('is-active');refs.videoLayer.setAttribute('aria-hidden','false');
   refs.unlock.hidden=false;
   toast('Your browser needs a tap to allow video playback with sound.');
  });
@@ -156,7 +157,7 @@ function activate(index,offset=0){
 function nextSlide(){if(finished||ending)return;activate(currentIndex+1,0)}
 function complete(){
  if(ending||finished)return;
- playing=false;ending=true;endStarted=performance.now();
+ playing=false;ending=true;endStarted=performance.now();endFadeStartVolume=audio.volume;
  refs.video.pause();syncIcon();
 }
 function finishOutro(){
@@ -284,7 +285,7 @@ function frame(now){
   }
   if(ending){
    const fraction=clamp((now-endStarted)/(END_FADE_SECONDS*1000),0,1);
-   audio.volume=Math.max(0,audio.volume*(1-fraction));
+   audio.volume=Math.max(0,endFadeStartVolume*(1-fraction));
    if(fraction>=1)finishOutro();
   }else{
    const item=slides[currentIndex];
