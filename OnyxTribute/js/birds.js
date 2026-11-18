@@ -19,6 +19,10 @@
   {name:'cardinal',weight:8},
   {name:'sparrow',weight:5}
  ];
+ // The seven 1536×1536 species atlases each use a 6×6 layout:
+ // 36 COMPLETE, square 256×256 frames per sheet, all used in animation.
+ // A former 6×5 crop stretched rows to 307.2px and cut birds into pieces.
+ const atlas={columns:6,rows:6,frameCount:36};
  const images=new Map(catalog.map(({name})=>{
   const image=new Image();
   image.decoding='async';
@@ -107,7 +111,7 @@
    species,lane,direction,age:0,
    flight:rand(7.6,12),
    scale:rand(.73,1.08),
-   phase:rand(0,30),
+   phase:rand(0,atlas.frameCount),
    sway:rand(0,Math.PI*2),
    alpha:rand(.67,.86),
    drift:rand(-.009,.009),
@@ -134,15 +138,19 @@
   const bands=laneCount(rect);
   const altitude=(.13+(b.lane/Math.max(1,bands-1))*.70)+b.drift;
   const y=rect.y+(altitude+Math.sin(progress*7+b.sway)*.012)*rect.h;
-  const frame=Math.floor(b.age*14+b.phase)%30;
-  const cellW=image.naturalWidth/6,cellH=image.naturalHeight/5;
+  // Use EVERY sprite for this species, never just the first 30.
+  // The row and column must be computed from the same square-cell atlas.
+  const frame=Math.floor(b.age*14+b.phase)%atlas.frameCount;
+  const cellW=image.naturalWidth/atlas.columns;
+  const cellH=image.naturalHeight/atlas.rows;
   ctx.save();
   // Subtle fade at the edges; no abrupt entrance or exit.
   ctx.globalAlpha=b.alpha*Math.min(1,progress*8,(1-progress)*8);
   ctx.translate(x,y);
   if(b.direction<0)ctx.scale(-1,1);
   ctx.rotate(Math.sin(progress*9+b.sway)*.05);
-  ctx.drawImage(image,(frame%6)*cellW,Math.floor(frame/6)*cellH,
+  ctx.drawImage(image,
+   (frame%atlas.columns)*cellW,Math.floor(frame/atlas.columns)*cellH,
    cellW,cellH,-size/2,-size/2,size,size);
   ctx.restore();
  }
