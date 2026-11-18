@@ -365,3 +365,29 @@ body.azara-viewer-active .main{width:100%}
 @media(max-width:760px),(hover:none) and (pointer:coarse){
   .qr-desktop-only{display:none}
 }
+
+
+/* Onyx's memorial: a distinct featured section that retains the hub's existing structure. */
+.onyx-feature{border-color:#247e58}
+.onyx-feature .module-head{background:linear-gradient(90deg,#07251c,#23523c 58%,#103526);color:#f2ffed;border-color:#63ab7a}
+.onyx-feature-body{display:grid;grid-template-columns:minmax(180px,.82fr) minmax(0,1.6fr);align-items:stretch;gap:clamp(14px,2.3vw,30px);background:linear-gradient(132deg,#081e18,#154330 57%,#09271f);color:#ebf7e7;padding:clamp(14px,2.4vw,28px)}
+.onyx-feature-photo{min-width:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#071711;border:1px solid #699778;border-radius:8px;box-shadow:0 8px 30px #03170dbb}
+.onyx-feature-photo img{display:block;width:100%;height:100%;max-height:360px;object-fit:contain;transition:transform .45s ease}
+.onyx-feature-photo:hover img,.onyx-feature-photo:focus-visible img{transform:scale(1.02)}
+.onyx-feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;min-width:0}
+.onyx-feature-copy p{margin:0;line-height:1.6}
+.onyx-feature-eyebrow{color:#b4daa9;font-weight:700;letter-spacing:.17em;text-transform:uppercase;font-size:12px}
+.onyx-feature-copy h3{font:normal clamp(26px,3.2vw,42px)/1.12 Georgia,'Times New Roman',serif;color:#f7ffee;margin:0}
+.onyx-feature-copy h3 span{display:block;font:italic clamp(15px,1.5vw,21px)/1.35 Georgia,'Times New Roman',serif;color:#b9dfb7;margin-top:5px}
+.onyx-feature-dates{font-size:13px;color:#c3d6bd}
+.onyx-feature-button{margin-top:6px!important;background:linear-gradient(#e5f9de,#9ccd9b 55%,#5b986c)!important;color:#09251b!important;border-color:#8fc49a!important}
+.sidebar-memorial{background:#eaf5e8;border-left:4px solid #47835d;padding:8px 10px;line-height:1.6}
+.sidebar-memorial a{color:#065e4e;font-weight:700}
+.onyx-memory-card{border-color:#498b68;background:linear-gradient(145deg,#f4faef,#e0f1e4)}
+.onyx-memory-dates{font-size:12px;color:#376748;font-weight:700}
+.onyx-memory-link{margin-top:8px!important}
+.onyx-tribute-project{border-color:#408663;background:linear-gradient(130deg,#e6f6e8,#fafcf3)}
+.onyx-tribute-project .label{background:#185739;color:#fff}
+@media(max-width:900px){.onyx-feature-body{grid-template-columns:1fr}.onyx-feature-photo{min-height:220px;max-height:300px}.onyx-feature-photo img{max-height:300px}}
+@media(max-width:560px){.onyx-feature-body{padding:14px}.onyx-feature-photo{min-height:180px;max-height:250px}.onyx-feature-photo img{max-height:250px}.onyx-feature-copy h3{font-size:27px}.onyx-feature-copy{gap:9px}}
+@media(prefers-reduced-motion:reduce){.onyx-feature-photo img{transition:none}}
