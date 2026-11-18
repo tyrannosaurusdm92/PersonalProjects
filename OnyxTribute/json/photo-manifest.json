@@ -1,0 +1,624 @@
+{
+  "origin": "User-specified Google Drive folder",
+  "selection_rule": "Onyx alone, Onyx + William, or Onyx + Jasper; no other cats; no standalone people",
+  "verified_photos": [
+    {
+      "id": 1,
+      "src": "assets/photos/001.webp",
+      "source_filename": "Onyx_01.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "16e028cd4bc1dbaa0d172050f82081bc6c06503d375f01aed7c90d169b4ff4c3"
+    },
+    {
+      "id": 2,
+      "src": "assets/photos/002.webp",
+      "source_filename": "Onyx_02.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 896,
+      "sha256": "0b69d727e9decabc659c94ccfd2aae9175a53132660c8e8604c3b3793455b671"
+    },
+    {
+      "id": 3,
+      "src": "assets/photos/003.webp",
+      "source_filename": "Onyx_03.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 987,
+      "height": 1350,
+      "sha256": "739ce4188f27060233f31f1691f5e014c68f369c99b92987b7e5980da9de98f7"
+    },
+    {
+      "id": 4,
+      "src": "assets/photos/004.webp",
+      "source_filename": "Onyx_04.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 759,
+      "height": 1350,
+      "sha256": "d724dbbd888878d4768ed5068e7e9c6204d73072156df67c2fc6ee2bb7e7fbee"
+    },
+    {
+      "id": 5,
+      "src": "assets/photos/005.webp",
+      "source_filename": "Onyx_05.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1080,
+      "height": 892,
+      "sha256": "8e247b10e74d146155f56e231a44ee356bf88ff3e9f67f25e5fea7aac3bec603"
+    },
+    {
+      "id": 6,
+      "src": "assets/photos/006.webp",
+      "source_filename": "Onyx_06.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1080,
+      "height": 1080,
+      "sha256": "f05d7356fb8233269d03e98dfb3624802e6da2f6426aa453e44121977fb6f9ae"
+    },
+    {
+      "id": 7,
+      "src": "assets/photos/007.webp",
+      "source_filename": "Onyx_07.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "405836f129708cc2b6f850192cc18e5feb7790869cd08d735062be56ac09af48"
+    },
+    {
+      "id": 8,
+      "src": "assets/photos/008.webp",
+      "source_filename": "Onyx_08.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "9c9c7d11b509932af071ea802ba43a3c8f2034fa65264063ed8871ffe7709b35"
+    },
+    {
+      "id": 9,
+      "src": "assets/photos/009.webp",
+      "source_filename": "Onyx_09.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "dcfcc34e4302ba9dd85f2e806968db49c38de72d80410f09e5c0d8bda6624c44"
+    },
+    {
+      "id": 10,
+      "src": "assets/photos/010.webp",
+      "source_filename": "Onyx_10.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "1c820f0771277523ec9458f3e2b959867af8d097b4af52d4959cf0a267d4bca6"
+    },
+    {
+      "id": 11,
+      "src": "assets/photos/011.webp",
+      "source_filename": "Onyx_11.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "b5ba1e4479bda07c095d90f8368ec79f461d19fe6a355893de3d08eba1ed3ba1"
+    },
+    {
+      "id": 12,
+      "src": "assets/photos/012.webp",
+      "source_filename": "Onyx_12.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "45161a90b3ae13b5f972045e6e6fc9890babf69fc5670a6e9c2e7553714e1796"
+    },
+    {
+      "id": 13,
+      "src": "assets/photos/013.webp",
+      "source_filename": "Onyx_13.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "404be3f44b47c1b4ee87ce5f1a7a9730e613359dc2b4810cb16ad7ca8cae3fac"
+    },
+    {
+      "id": 14,
+      "src": "assets/photos/014.webp",
+      "source_filename": "Onyx_14.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "695c6b84ec2ade057eac7575781cbdc69219a442e7a481b4d592d92ea9b7559b"
+    },
+    {
+      "id": 15,
+      "src": "assets/photos/015.webp",
+      "source_filename": "Onyx_16.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "8b67c2dbb71dde41ab3dae4345a8b18fa1097433893530b78af289af4651437b"
+    },
+    {
+      "id": 16,
+      "src": "assets/photos/016.webp",
+      "source_filename": "Onyx_17.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 896,
+      "sha256": "ad834d0bfe5aaf8dcecc6f7a4916f5b9b7653bd561d17c2701c8e893bd801279"
+    },
+    {
+      "id": 17,
+      "src": "assets/photos/017.webp",
+      "source_filename": "Onyx_18.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1080,
+      "height": 1068,
+      "sha256": "5148bd77c37eee8b35f6f2eab18479bbd57651c290798da601bb977c63bc0e38"
+    },
+    {
+      "id": 18,
+      "src": "assets/photos/018.webp",
+      "source_filename": "Onyx_19.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "6af3638b406799a6777e57319f361f5ff64ac8b79e8fa2996047dcd46308749a"
+    },
+    {
+      "id": 19,
+      "src": "assets/photos/019.webp",
+      "source_filename": "Onyx_20.webp",
+      "source_drive_collection": "Background Images",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "565c89515b3632435ab40d9b45bf39c1a6b50e017913e9a000798c031e332777"
+    },
+    {
+      "id": 20,
+      "src": "assets/photos/020.webp",
+      "source_filename": "IMG_20240224_225057510.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "223ab4cb0bdcd72e771e6249e1469a052199a41ed2d7fe7ebe3ce980432b9267"
+    },
+    {
+      "id": 21,
+      "src": "assets/photos/021.webp",
+      "source_filename": "IMG_20240413_074946845.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "a9d54202050b25b1f67b0900a3296ccc6884f62ca6d290fe045e2deeb392e779"
+    },
+    {
+      "id": 22,
+      "src": "assets/photos/022.webp",
+      "source_filename": "IMG_20240418_031045558.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "fb2b6c79a60426c5d088b54b1001dbaf06ab4bd338c79c3a57be2230a35be1a0"
+    },
+    {
+      "id": 23,
+      "src": "assets/photos/023.webp",
+      "source_filename": "IMG_20240418_031331431.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "63e4f364b4411644705262ed72cb4da1c2ed8119475c7c81bb51e8460c2bcf02"
+    },
+    {
+      "id": 24,
+      "src": "assets/photos/024.webp",
+      "source_filename": "IMG_20240418_222011731.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "88e807af6e5d96a6ec3986059ba71bf2f679d0c50f1db6bd6ccaa806b10107f9"
+    },
+    {
+      "id": 25,
+      "src": "assets/photos/025.webp",
+      "source_filename": "IMG_20240422_001431412.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "6686623ff87eddb1a87621a7270a87f9ffbe5dc8d9112ffbcb08d3b389fa46ed"
+    },
+    {
+      "id": 26,
+      "src": "assets/photos/026.webp",
+      "source_filename": "IMG_20240422_001446802.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "712fcbdccd41b0b5b74d83f4b8872558a2a13cf8b358e1ee76348bbd4af31018"
+    },
+    {
+      "id": 27,
+      "src": "assets/photos/027.webp",
+      "source_filename": "IMG_20240509_225617510.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "047cdeb46b5d009f45e2d70b0fb800b27676697cd559bb2c62c9439a9417f078"
+    },
+    {
+      "id": 28,
+      "src": "assets/photos/028.webp",
+      "source_filename": "IMG_20240517_211850271.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "5cd6cf110b383157755b2ba042a5f7d6a72e8e1d619c3f410481feb278722043"
+    },
+    {
+      "id": 29,
+      "src": "assets/photos/029.webp",
+      "source_filename": "IMG_20240829_203935537.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "25fc35c38cd081457760c45326cacd63c3cd98cc5587dce1942533643a568e1e"
+    },
+    {
+      "id": 30,
+      "src": "assets/photos/030.webp",
+      "source_filename": "IMG_20240829_204033460.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "d0d38b24ffa8b252788da8714733a07e62983790a36e25ff1f23a2c173a0bf46"
+    },
+    {
+      "id": 31,
+      "src": "assets/photos/031.webp",
+      "source_filename": "IMG_20240831_181729999.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "3cfcc2f4fca9e3538ee5bf10ea80a5aadb15c860d47ec705d997239a4fd62677"
+    },
+    {
+      "id": 32,
+      "src": "assets/photos/032.webp",
+      "source_filename": "IMG_20240914_132826189.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "d24854e951763523b849c37745814f920d141cd7083e45e365cc8c3d07808b7f"
+    },
+    {
+      "id": 33,
+      "src": "assets/photos/033.webp",
+      "source_filename": "IMG_20241018_085638086.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "f338eb4044fc7facef7ae09e18d0da0a02dd7f4238476f86733bdc99e489afb0"
+    },
+    {
+      "id": 34,
+      "src": "assets/photos/034.webp",
+      "source_filename": "IMG_20241026_161447793.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "9a350cf339e1635a388d7ec04b0c6323c8260794793215db9fd2251092cd27f4"
+    },
+    {
+      "id": 35,
+      "src": "assets/photos/035.webp",
+      "source_filename": "IMG_20241027_172422934.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "af049afa7234e830a8ecc3abfb0f085a8980913c23c108e66ba40e6490df3f0d"
+    },
+    {
+      "id": 36,
+      "src": "assets/photos/036.webp",
+      "source_filename": "IMG_20241028_202635708.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "3de8f61dcfe67f698bb754581331040b8eb33f061fa22758d4b8f9635eef22f5"
+    },
+    {
+      "id": 37,
+      "src": "assets/photos/037.webp",
+      "source_filename": "IMG_20241028_212339372.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "353aadb834e6ebf87c8a9f8ee9b048daafd555a5160fabecdceacbbc8a1e46a0"
+    },
+    {
+      "id": 38,
+      "src": "assets/photos/038.webp",
+      "source_filename": "IMG_20241028_212714637.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "42c3e34b48b1ebfbbc3d4d7e1fbed657939993d1a37832273631fc0db73471e8"
+    },
+    {
+      "id": 39,
+      "src": "assets/photos/039.webp",
+      "source_filename": "IMG_20241029_124521539.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 874,
+      "height": 1350,
+      "sha256": "08f1f8dcb90ebaf557929a587e9e6dfd2894f01958ce832a1cf2a1b7e1fa209e"
+    },
+    {
+      "id": 40,
+      "src": "assets/photos/040.webp",
+      "source_filename": "IMG_20241029_130042878.jpg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "f52f919578d8c52ef0eb6348257852c654ba2e902674ece4f3c9a005f2bc5f37"
+    },
+    {
+      "id": 41,
+      "src": "assets/photos/041.webp",
+      "source_filename": "received_1223893374973360.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "2663e52efe9d0bffed45b1616b8c2507dc7d092dfcd4a9fe8914714e32e4f44b"
+    },
+    {
+      "id": 42,
+      "src": "assets/photos/042.webp",
+      "source_filename": "received_1237122943942761.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1013,
+      "height": 1350,
+      "sha256": "825eb1d58844e2554cf30ceb62be5ba657ee9a70ce61d7a6fb1fb3cf37685b33"
+    },
+    {
+      "id": 43,
+      "src": "assets/photos/043.webp",
+      "source_filename": "received_1582403055890657.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "0c36b7cd10cf1cdd891d0133c78fa432507df02795426b2b27920b8fa59eaa1e"
+    },
+    {
+      "id": 44,
+      "src": "assets/photos/044.webp",
+      "source_filename": "received_2293073891131198.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 686,
+      "height": 1350,
+      "sha256": "f167f2405a4d4aeb48c776bd9ef73552deba50ab981d746be7a805d12d9e0520"
+    },
+    {
+      "id": 45,
+      "src": "assets/photos/045.webp",
+      "source_filename": "received_24316830571240473.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1013,
+      "height": 1350,
+      "sha256": "3677584562baef7bfddb381d58e8a58346c0a6c5807d315503b63c4b5456e940"
+    },
+    {
+      "id": 46,
+      "src": "assets/photos/046.webp",
+      "source_filename": "received_256271610757226.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "1b10d0ca9a790b58ac6f78f20f5cd73b214644046c41631289318f5ca77cb4bd"
+    },
+    {
+      "id": 47,
+      "src": "assets/photos/047.webp",
+      "source_filename": "received_274320822400889.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "7dd186b75daee1768208b22f17dcf6ba3b3b123769c9620f9ffaf0424080bf6c"
+    },
+    {
+      "id": 48,
+      "src": "assets/photos/048.webp",
+      "source_filename": "received_3711322015796628.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 672,
+      "height": 1350,
+      "sha256": "bc8b4e0bc62dacff711b55a911edcb0a0310c2fadb39be9fe366b5db6b000252"
+    },
+    {
+      "id": 49,
+      "src": "assets/photos/049.webp",
+      "source_filename": "received_379568005027308.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 759,
+      "height": 1350,
+      "sha256": "e1bf56b5af5711ec7ddc0d62a6e1322702b9da14f8fdca208253c5aacef9129e"
+    },
+    {
+      "id": 50,
+      "src": "assets/photos/050.webp",
+      "source_filename": "received_399506002802615.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "33112e06a74ca7064a102d77e02da2135ef85b9deac1fc0558c996c6e5508d35"
+    },
+    {
+      "id": 51,
+      "src": "assets/photos/051.webp",
+      "source_filename": "received_436068735900784.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "e122db04f50e54ee714e1e3c0d67931acc11984bcf6d709405756519d305967c"
+    },
+    {
+      "id": 52,
+      "src": "assets/photos/052.webp",
+      "source_filename": "received_467676009316475~2.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1635,
+      "height": 1350,
+      "sha256": "d50123eae4621e3b8881049644705878ed9886522317d149e48fb78bdc8dbdca"
+    },
+    {
+      "id": 53,
+      "src": "assets/photos/053.webp",
+      "source_filename": "received_5024574227784069.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "c1ea0a54a82c8a1248276e00e9905a1534eebc4330a90666b81cfa2ea5ce253e"
+    },
+    {
+      "id": 54,
+      "src": "assets/photos/054.webp",
+      "source_filename": "received_660555823646164.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1013,
+      "height": 1350,
+      "sha256": "9826fbc60af4c22875a8ba2aad91872041432ca6eba3cfbe9e985bd4ac1d2738"
+    },
+    {
+      "id": 55,
+      "src": "assets/photos/055.webp",
+      "source_filename": "received_6679993628766508.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 672,
+      "height": 1350,
+      "sha256": "7f91062548f83c854ee075e42a9665c82e98f1557f272e692de10509fa8a3414"
+    },
+    {
+      "id": 56,
+      "src": "assets/photos/056.webp",
+      "source_filename": "received_749134123653843.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 759,
+      "height": 1350,
+      "sha256": "8fc9b25a62cbd60b758cb17bc4fdebaf9cd9756a0bd99e1d1c1f3ce6e0db73d9"
+    },
+    {
+      "id": 57,
+      "src": "assets/photos/057.webp",
+      "source_filename": "received_795907689068679.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1014,
+      "height": 1350,
+      "sha256": "629b3e4ab6ee2434fbb8a7fbcdcd5a81777ee7924fcc642d66e34fa2ebba804f"
+    },
+    {
+      "id": 58,
+      "src": "assets/photos/058.webp",
+      "source_filename": "received_8187251098008855.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1012,
+      "height": 1350,
+      "sha256": "69a5203ddea79a357bba79f38db047fc31014d5d9d5c611d35f5b8336f7c710f"
+    },
+    {
+      "id": 59,
+      "src": "assets/photos/059.webp",
+      "source_filename": "received_888106949992575~2.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 672,
+      "height": 1350,
+      "sha256": "d3f2f7212545fba1ab7ba89c87d5c22beec53de0ae2f3837f02f598b6b9cc726"
+    },
+    {
+      "id": 60,
+      "src": "assets/photos/060.webp",
+      "source_filename": "received_996820928498214.jpeg",
+      "source_drive_collection": "Media/Images/Onyx",
+      "alt": "A photograph of Onyx, the beloved black cat",
+      "width": 1800,
+      "height": 896,
+      "sha256": "c95a305280a64556294676231889cf8357b928302af90104289924a81adf88a8"
+    }
+  ],
+  "excluded_ambiguous_people_photos": [
+    "IMG_20240316_171117844.jpg",
+    "IMG_20240427_043351312.jpg",
+    "IMG_20240506_123607418.jpg",
+    "IMG_20240724_214711.jpg",
+    "IMG_20240826_155521875.jpg",
+    "IMG_20240828_021411781.jpg",
+    "IMG_20240910_011906330.jpg",
+    "IMG_20241018_010809660.jpg",
+    "IMG_20241025_164000977.jpg",
+    "IMG_20241027_170027202.jpg",
+    "IMG_20241027_170203203.jpg",
+    "IMG_20241027_180231793.jpg",
+    "IMG_20241028_210525482.jpg",
+    "Onyx_15.webp",
+    "received_1781900115898738.jpeg",
+    "received_918804610183354.jpeg"
+  ]
+}
