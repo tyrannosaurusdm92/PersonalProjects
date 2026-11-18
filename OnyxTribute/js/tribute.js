@@ -240,7 +240,7 @@ function updateClock(){
  refs.scrub.max=String(total);refs.scrub.value=String(pos);
  refs.scrub.style.setProperty('--played',(total?pos/total*100:0).toFixed(3)+'%');
  $('elapsed').textContent=fmt(pos);$('remaining').textContent=fmt(total-pos);
- window.ONYX_RUNTIME={time:pos,playing,energy:44+12*Math.sin(pos*.11)+8*Math.sin(pos*.024)};
+ window.ONYX_RUNTIME={time:pos,playing,slideIndex:currentIndex,slideType:slides[currentIndex]?.type||null,slideElapsed:localTime,slideDuration:slides[currentIndex]?.duration||0,energy:44+12*Math.sin(pos*.11)+8*Math.sin(pos*.024)};
 }
 refs.video.addEventListener('loadedmetadata',()=>{
  const item=slides[currentIndex];
