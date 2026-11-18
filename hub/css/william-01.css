@@ -391,3 +391,56 @@ body.azara-viewer-active .main{width:100%}
 @media(max-width:900px){.onyx-feature-body{grid-template-columns:1fr}.onyx-feature-photo{min-height:220px;max-height:300px}.onyx-feature-photo img{max-height:300px}}
 @media(max-width:560px){.onyx-feature-body{padding:14px}.onyx-feature-photo{min-height:180px;max-height:250px}.onyx-feature-photo img{max-height:250px}.onyx-feature-copy h3{font-size:27px}.onyx-feature-copy{gap:9px}}
 @media(prefers-reduced-motion:reduce){.onyx-feature-photo img{transition:none}}
+
+/* Full, playable Onyx memorial preview: keep its entire viewport visible
+   in the feature, rather than constraining the show to a thumbnail column. */
+.onyx-feature-preview{
+  grid-column:1 / -1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:11px;
+  padding-top:clamp(12px,1.6vw,22px);
+  border-top:1px solid rgba(173,217,175,.33);
+}
+.onyx-feature-preview h3{
+  color:#f0fae8;
+  font:normal clamp(23px,2.7vw,34px)/1.2 Georgia,'Times New Roman',serif;
+  margin:0;
+}
+.onyx-feature-preview p{
+  font-size:clamp(13px,1.25vw,16px);
+  color:#d1e8d0;
+  line-height:1.55;
+  margin:0;
+}
+.onyx-feature-embed{
+  position:relative;
+  width:100%;
+  height:clamp(540px,78svh,860px);
+  min-width:0;
+  border:1px solid #659d78;
+  border-radius:12px;
+  overflow:hidden;
+  background:#07190f;
+  box-shadow:0 12px 40px rgba(1,12,7,.5);
+}
+.onyx-feature-embed iframe{
+  display:block;
+  width:100%;
+  height:100%;
+  border:0;
+  background:#07190f;
+}
+.onyx-feature-preview .onyx-feature-preview-note{
+  color:#b9d7bd;
+  font-style:italic;
+  font-size:13px;
+}
+@media(max-width:700px){
+  .onyx-feature-embed{height:clamp(560px,84svh,900px)}
+  .onyx-feature-preview{padding-top:14px}
+}
+@media(max-width:410px){
+  .onyx-feature-embed{height:clamp(590px,90svh,920px)}
+}
