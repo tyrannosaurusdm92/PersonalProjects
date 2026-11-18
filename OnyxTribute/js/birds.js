@@ -54,7 +54,7 @@
   encounter=[];
   sceneTime=0;
   const video=runtime.slideType==='video';
-  if(Math.random()> (video?.28:.48))return;
+  if(Math.random()> (video ? 0.28 : 0.48))return;
   const count=video?1:(Math.random()<.16?2:1);
   for(let i=0;i<count;i++){
    const direction=Math.random()<.5?-1:1;
@@ -62,7 +62,7 @@
     species:chooseSpecies(),direction,
     delay:rand(.4,1.7)+(i?rand(3.2,4.4):0),
     flight:rand(5.1,8.2),
-    altitude:rand(.12,.42)+(i?.13:0),
+    altitude:rand(.12,.42)+(i ? 0.13 : 0),
     scale:rand(.75,1.1),
     phase:rand(0,30),
     sway:rand(0,Math.PI*2),
