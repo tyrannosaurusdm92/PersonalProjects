@@ -156,3 +156,22 @@ body{font-family:'Segoe UI',Candara,Arial,sans-serif;color:var(--cream);-webkit-
 @media(max-width:640px){
  .video-unlock{max-width:85%;font-size:13px;padding:12px 16px}
 }
+
+/* Original video audio is optional; a blocked autoplay never interrupts the film. */
+.memory-video-layer .video-unlock{
+ top:auto;bottom:clamp(11px,1.8vw,21px);left:clamp(10px,1.3vw,20px);
+ transform:none;max-width:min(230px,90%);
+ padding:9px 14px;font-size:12px;letter-spacing:.02em;opacity:.9;
+}
+.photo-stage.has-poem .memory-video-layer .video-unlock{
+ left:clamp(10px,1.3vw,20px);
+}
+@media(max-width:740px){
+ .photo-stage.has-poem .memory-video-layer .video-front{
+  left:0;right:0;width:100%;max-width:100%;height:54%;
+  object-position:center center;
+ }
+ .photo-stage.has-poem .memory-video-layer .video-unlock{
+  bottom:calc(57% + 9px);left:10px;max-width:75%;
+ }
+}
