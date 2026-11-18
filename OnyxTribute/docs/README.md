@@ -15,7 +15,7 @@ The photo manifest lists each approved source filename. Photos are drawn **only 
 
 ## Birds
 
-`assets/birds/*.png` includes exactly the **seven animated bird sprite sheets extracted from the user-provided `game (2)(1).html`**: bluejay, cardinal, dove, finch, hummingbird, robin and sparrow. Their exact original sprite-sheet artwork is preserved; the game world, menus, scenery, other characters, game engine, and mechanics were not carried over. `js/birds.js` animates flight and wing flaps independently of the original game.
+`assets/images/birds/*.png` includes exactly the **seven animated bird sprite sheets extracted from the user-provided `game (2)(1).html`**: bluejay, cardinal, dove, finch, hummingbird, robin and sparrow. Their exact original sprite-sheet artwork is preserved; the game world, menus, scenery, other characters, game engine, and mechanics were not carried over. `js/birds.js` animates flight and wing flaps independently of the original game.
 
 ## Poetry
 
