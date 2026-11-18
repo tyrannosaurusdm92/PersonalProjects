@@ -26,3 +26,89 @@ body{font-family:'Segoe UI',Candara,Arial,sans-serif;color:var(--cream);-webkit-
 /* The opening and closing dedication are fully opaque: no poem text or photographs should bleed through. */
 .intro{background:radial-gradient(ellipse 67% 70% at 50% 45%,#214c35 0%,#0a2b1d 63%,#04150d 100%)}
 .outro{background:radial-gradient(ellipse 68% 68% at 50% 45%,#1b4834 0%,#08251a 70%,#03140b 100%)}
+
+
+/* Memorial captions are HUD text, not photograph overlays.
+   Reserve a centered header region, with a separate row on narrow screens. */
+.masthead{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(280px,1.75fr) minmax(0,1fr);
+  grid-template-areas:"identity dedication music";
+  align-items:center;
+  min-height:76px;
+  column-gap:clamp(10px,1.7vw,26px);
+  row-gap:0;
+}
+.masthead .identity{grid-area:identity;justify-self:start;overflow:hidden}
+.masthead .now-playing{grid-area:music;justify-self:end}
+.masthead .dedication{
+  grid-area:dedication;
+  position:static;
+  inset:auto;
+  z-index:auto;
+  width:100%;
+  min-width:0;
+  min-height:60px;
+  margin:0;
+  padding:4px 2px;
+  overflow:visible;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  text-align:center;
+  background:none;
+  box-shadow:none;
+  border:0;
+  opacity:0;
+  visibility:hidden;
+  transform:none;
+  pointer-events:none;
+  transition:opacity .6s ease,visibility .6s ease;
+  text-transform:none;
+  letter-spacing:normal;
+}
+.masthead .dedication.show{opacity:1;visibility:visible;transform:none}
+.masthead .dedication-small{
+  display:block;
+  font-size:clamp(9px,.78vw,12px);
+  line-height:1.15;
+  letter-spacing:.2em;
+  color:#bdd9ae;
+  text-transform:uppercase;
+}
+.masthead .dedication strong{
+  display:block;
+  width:100%;
+  max-width:100%;
+  color:#f7fff0;
+  font:normal clamp(15px,1.45vw,24px)/1.25 Georgia,'Times New Roman',serif;
+  text-shadow:0 1px 15px rgba(87,153,107,.35);
+  white-space:normal;
+  overflow-wrap:break-word;
+}
+@media(max-width:900px){
+  .masthead{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    grid-template-areas:"identity music" "dedication dedication";
+    column-gap:12px;
+    row-gap:2px;
+    min-height:79px;
+  }
+  .masthead .identity span:last-child{display:none}
+  .masthead .dedication{min-height:42px;gap:2px;padding:1px 4px 3px}
+  .masthead .dedication-small{font-size:9px}
+  .masthead .dedication strong{font-size:clamp(13px,2.6vw,19px);line-height:1.18}
+}
+@media(max-width:450px){
+  .masthead{row-gap:0;min-height:72px;column-gap:6px}
+  .masthead .dedication{min-height:39px}
+  .masthead .dedication strong{font-size:clamp(12px,3.2vw,15px)}
+  .masthead .identity,.masthead .now-playing{font-size:10px;gap:5px}
+}
+@media(max-height:550px){
+  .masthead{min-height:54px}
+  .masthead .dedication{min-height:36px;gap:1px}
+  .masthead .dedication strong{font-size:clamp(12px,2vh,16px)}
+}
