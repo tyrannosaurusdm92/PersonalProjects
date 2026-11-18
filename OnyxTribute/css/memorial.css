@@ -112,3 +112,9 @@ body{font-family:'Segoe UI',Candara,Arial,sans-serif;color:var(--cream);-webkit-
   .masthead .dedication{min-height:36px;gap:1px}
   .masthead .dedication strong{font-size:clamp(12px,2vh,16px)}
 }
+
+/* Original-sound home videos: the Google Drive player retains its own sound controls. */
+.memory-video-overlay{position:absolute;inset:0;z-index:30;display:none;align-items:center;justify-content:center;padding:clamp(8px,2vw,26px);background:linear-gradient(135deg,rgba(3,15,11,.98),rgba(11,33,24,.98));}
+.memory-video-overlay.show{display:flex}.memory-video-shell{display:flex;flex-direction:column;width:min(100%,1120px);height:100%;min-height:0;gap:clamp(6px,1vh,14px)}.memory-video-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;font-size:clamp(10px,1.1vw,15px);color:#d6edcb;letter-spacing:.025em}.memory-video-header strong{color:#f0ffe8;font-weight:600}.memory-video-header span{color:#b2cda7}
+#memory-video{width:100%;height:100%;min-height:120px;flex:1;border:1px solid rgba(171,217,153,.4);border-radius:12px;background:#000;display:block}.memory-video-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#d1e4c9;font:italic clamp(11px,1.14vw,15px)/1.4 Georgia,serif}.memory-video-actions .begin-btn{flex:none;position:relative;display:inline-flex;align-items:center;gap:8px;margin:0;padding:clamp(8px,1vh,13px) clamp(14px,1.8vw,24px);font:600 clamp(11px,1vw,15px) 'Segoe UI',Arial,sans-serif}
+.photo-stage.showing-video .photo-vignette,.photo-stage.showing-video #photo-transition{display:none}@media(max-width:600px){.memory-video-actions{justify-content:center;text-align:center}.memory-video-actions span{width:100%}.memory-video-header{justify-content:center}#memory-video{min-height:160px}}
