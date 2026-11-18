@@ -10,7 +10,7 @@
  const playPath='M8 5v14l11-7z',pausePath='M7 5h4v14H7zm7 0h4v14h-4z';
  const clean=s=>String(s||'').trim();const clamp=(n,min,max)=>Math.min(max,Math.max(min,n));const fmt=t=>{t=Math.max(0,Math.floor(t));return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0')};
  const photoDeck=data.photos.slice(),videoDeck=(data.videos||[]).slice();let slides=[],photoIndex=-1,frontLayer=1,photoToken=0,poemKey='',cached=new Map(),videoActive=false,videoCursor=-1,waitingForSong=false,targetMusic=.91;let elapsed=0,anchor=0,playing=false,started=false,finished=false,scrubbing=false,muted=false,loading=false,lastAudioError=false,alertTimeout=0;
- const chapters=data.poems.map(poem=>{const lines=poem.text.split(/\n/).map(clean).filter(Boolean);const pages=[];for(let i=0;i<lines.length;i+=4)pages.push(lines.slice(i,i+4).join('\n'));return{...poem,pages}});
+ const chapters=data.poems.map(poem=>{const pages=poem.text.trim().split(/\n\s*\n/g).map(stanza=>stanza.split(/\n/).map(clean).filter(Boolean).join('\n')).filter(Boolean);return{...poem,pages}});
  const playlist=[{start:52,end:455,chapter:0},{start:472,end:775,chapter:1}];
  function toast(message){const el=$('status');el.textContent=message;el.classList.add('show');clearTimeout(alertTimeout);alertTimeout=setTimeout(()=>el.classList.remove('show'),5200)}
  function time(){return clamp(playing?elapsed+(performance.now()-anchor)/1000:elapsed,0,D)}
@@ -67,7 +67,7 @@
  }
  function chapterAt(t){for(const section of playlist){if(t>=section.start&&t<section.end){const chapter=chapters[section.chapter];const i=Math.min(chapter.pages.length-1,Math.floor((t-section.start)/(section.end-section.start)*chapter.pages.length));return{chapter,chapterIndex:section.chapter,pageIndex:i}}}return null}
  function showPoem(page){refs.dedication.classList.remove('show');refs.stage.classList.add('has-poem');const key=page.chapterIndex+':'+page.pageIndex;if(poemKey===key)return;poemKey=key;refs.panel.classList.add('changing');const chapter=page.chapter;refs.title.textContent=chapter.title;refs.date.textContent=chapter.dateLine||('Written '+chapter.written);refs.page.textContent=String(page.pageIndex+1).padStart(2,'0')+' / '+String(chapter.pages.length).padStart(2,'0');
-  // Update exactly one poem page at a time, grouped into four body lines per card.
+  // Display one original poetic stanza per card, preserving 4- and 5-line stanzas.
   refs.body.textContent=chapter.pages[page.pageIndex];refs.panel.classList.remove('changing');
  }
  function showDedication(t){refs.stage.classList.remove('has-poem');poemKey='';let text='';if(t<24)text='The day I found my forever friend.';else if(t<52)text='A royal heart wrapped in midnight fur.';else if(t<472)text='Everywhere we went, home meant you.';else text='Your paws are written across my heart.';if(refs.dedicationText.textContent!==text)refs.dedicationText.textContent=text;refs.dedication.classList.add('show')}
