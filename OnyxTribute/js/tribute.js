@@ -45,7 +45,10 @@ function preloadPhoto(src){
  if(preloaded.size>14)preloaded.delete(preloaded.keys().next().value);
 }
 function makeDeck(){
- const group=data.assetGroups[Math.floor(Math.random()*data.assetGroups.length)];
+ // Exactly one independent d10 and d4 roll per tribute, using the shared dice module.
+ const choice=window.OnyxBirdDice.rollTributeChoices();
+ const group=data.assetGroups.find(g=>g.name===choice.folderName);
+ if(!group)throw new Error('Missing Onyx tribute memory folder: '+choice.folderName);
  selectedGroup=group.name;
  const pictures=shuffle([...new Set(group.photos.filter(isApprovedPhoto))]);
  const movies=shuffle([...new Set(group.videos)]);
@@ -59,7 +62,10 @@ function makeDeck(){
  while(p<pictures.length)ordered.push({type:'photo',src:pictures[p++],duration:PHOTO_SECONDS});
  slides=ordered;
  chosenChapter=chapters[Math.random()<.20?0:1]; // 20% Sept. 2024, 80% Nov. 2026
- const soundtrack=data.soundtracks[Math.floor(Math.random()*data.soundtracks.length)];
+ const soundtrack=data.soundtracks.find(track=>
+  track.src.split('/').pop().startsWith(choice.audioArtistKey+'_')
+ );
+ if(!soundtrack)throw new Error('Missing Baby Mine recording: '+choice.audioArtistKey);
  audio.pause();audio.src=soundtrack.src;audio.loop=true;audio.volume=BASE_VOLUME;audio.muted=musicMuted;audio.load();
  $('audio-artist').textContent=soundtrack.artist;
  $('chapter-eyebrow').textContent='Our years together · 2016–2026';
@@ -163,7 +169,11 @@ function revealVideo(item,offset){
  videoOffset=offset;
  refs.videoLayer.classList.remove('is-active');refs.videoLayer.setAttribute('aria-hidden','false');
  refs.video.pause();refs.video.muted=false;refs.video.volume=1;
- refs.video.src=item.src;refs.video.load();
+ refs.video.src=item.src;
+ // Roll the existing bird d4/d6/d8/d10 BEFORE this video begins.
+ // Its own loadstart/play listeners then reuse this result on resume.
+ window.OnyxBirdDice.beforeVideo(refs.video);
+ refs.video.load();
  const next=slides[currentIndex+1];if(next?.type==='photo')preloadPhoto(next.src);
  // Keep the chosen recording looping all the way through the last video.
  // The soundtrack fades after the final memory instead of ending mid-clip.
