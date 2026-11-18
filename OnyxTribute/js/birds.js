@@ -1,8 +1,7 @@
 /* Birds for Onyx: a lively, gently scattered sky.
-   Each memory randomly features ONLY 2–3 of the seven original species,
-   weighted toward common visitors. Several individual birds remain in flight
-   throughout photos AND videos, but each bird occupies a separate flight lane.
-   Long videos occasionally choose a fresh palette after the current birds leave. */
+   Videos use the per-video d4/d6/d8/d10 bird selections from tribute_randomization.js.
+   Photos keep weighted 2–3-species selections. Birds continue arriving in separate
+   flight lanes; each video retains its dice-selected species through its entire clip. */
 (function(){
  'use strict';
  const canvas=document.getElementById('birds');
@@ -33,6 +32,15 @@
   return pool[pool.length-1].name;
  };
  function choosePalette(){
+  // Each video has its own dice-selected 2–3 species. The values are selected
+  // by the shared module before playback, so a photo's weights cannot override
+  // them. "blue-jay" is normalized to the existing "bluejay.png" sprite key.
+  if(window.ONYX_RUNTIME?.slideType==='video'){
+   const diceKeys=window.OnyxBirdDice?.getSelectedKeys?.()||[];
+   const chosen=[...new Set(diceKeys.map(key=>String(key).toLowerCase().replace(/[^a-z]/g,'')))];
+   const valid=chosen.filter(key=>images.has(key));
+   if(valid.length>=2&&valid.length<=3)return valid;
+  }
   const pool=catalog.slice();
   const count=Math.random()<.45?2:3;
   const result=[];
@@ -168,8 +176,8 @@
   for(const bird of activeBirds)bird.age+=delta;
   activeBirds=activeBirds.filter(b=>b.age<b.flight);
 
-  // On long videos, wait until one generation has flown out before changing
-  // species. This prevents all seven species from appearing together.
+  // New generations may fly in, but a video keeps the SAME dice-selected
+  // species until that clip ends; no extra dice are rolled mid-video.
   if(sceneTime>=rotateAt)rotationPending=true;
   if(rotationPending&&activeBirds.length===0){
    startPalette();
