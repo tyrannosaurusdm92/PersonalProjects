@@ -9,8 +9,8 @@
     "12vmQgJSpUByjpzhg8EuScqje7HOpe4Cc",
     "1TeQ-AMZdCCCyOKzgBYJV8_tGkmC9yacW"
   ],
-  "selection_rule": "Approved Drive photos only. No repeats of a Drive file or normalized filename within a playback. Older photos precede newer memories; video cues interleaved throughout. The original video's sound plays via the embedded Drive player.",
-  "photo_count": 357,
+  "selection_rule": "Curated visually from the two approved Drive folders: Onyx alone or with his parents; excluded Tiggy, an unrelated-cat photograph, near-identical poses and repeated filenames. Each selected photo appears once per playback, with pre-adoption and older photos first.",
+  "photo_count": 81,
   "video_count": 27,
   "photos": [
     {
@@ -24,12 +24,6 @@
       "filename": "16388343_1900053766906368_434960092027382429_n.jpg",
       "era": "older",
       "pre_adoption": true
-    },
-    {
-      "id": "1o6SZw8kn4ZtuUvAb5fkB9FedsMp62gka",
-      "filename": "01.jpg",
-      "era": "older",
-      "pre_adoption": false
     },
     {
       "id": "1htaGA35qjLWSbelyXi4uCBUUf-sW66yd",
@@ -278,290 +272,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1OiUs8_vCI2X4jEbRIrKeqUBSYecyKcnW",
-      "filename": "USER_SCOPED_TEMP_DATA_MSGR_PHOTO_FOR_UPLOAD_1572573832949.jpeg",
-      "era": "older",
-      "pre_adoption": false
-    },
-    {
-      "id": "1_PSmndTyZM-IPd_su83Lv5sPeurDYHhI",
-      "filename": "051d9222-020b-4886-98b0-a4300e40f90f.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1hByc7girKp2VcRzSvr1fTIEMnWRY3uaa",
-      "filename": "083c91ce-a6f6-480b-9e0c-1a742ecb4a1c.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ACoCbICNkLAUBIXkrhNZ6bn1cF8YxHP9",
-      "filename": "17238ebe-a278-4014-9e8f-1937c98e9eecphoto.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1dSkDbXnXR7CNtNA3A6flFzmDEqQcj1D5",
-      "filename": "1725227090778.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1liWmmHeqbsWl0DUUUhKXAD7kYEcLx7TP",
-      "filename": "1727836901064.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1bSRz8R5eC88poXJMKeP7paPb2P-SJzgX",
-      "filename": "1729635651532.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Ojts-nfPk62vuBW8pNGJtbyNvJ690_f9",
-      "filename": "5bbfe064-e6b6-4b02-801a-bf21ed95185a.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1NMNCejAELjWGxlGgHWOrIicJ9hRg-L2K",
-      "filename": "68dd37f9-4602-449f-a7df-e4bd9116cb46.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1bwifCLbq-hIGRyOKn5rFpUz9GHVsQOfI",
-      "filename": "6bcb49a9-20d0-4214-990e-29cd78498cf4photo.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1fJupvf2KP-igAh6DQ6hOXYMsaGn0zsUZ",
-      "filename": "7a75aa5c-9d58-4df9-9d76-31752b870a8fphoto.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1GCbLQJD1aoRdPtKJnpIlun0u3b1NlSlb",
-      "filename": "7c666717-d7eb-4740-a31d-ce4378c2b537photo.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1_skoRsvDFBIRWOoG3GGsAeRuiGA9CE4M",
-      "filename": "83a6ac22-efdf-476d-8cbe-5e1e2bbb8f89.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Noep7-zu0yquO75msbUxdfsZRvE2LxDv",
-      "filename": "aac10e97-1130-4f4f-8692-18ed27298b9fphoto.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1TJmhQVAU53OwqBLMmejpFk-2AELxJMhG",
-      "filename": "b82cccdc-7bb5-4ad4-b38e-8b35d95bd21e.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1tKHMXD1rgtA-iA9f_tMn8L64UmnHHrv2",
-      "filename": "c8441676-966f-432e-9f2f-42e5e2297d81photo.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ihSpyd8LQj2RmCreUDat7ymAUuEKrNbC",
-      "filename": "c932a3c8-e76d-4a84-948c-61398365281fphoto.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1pi8GFHkiAH5k0jQuzIYxoGC1GR7zBZHH",
-      "filename": "db11b246-a5e4-4907-aefc-467c3c767371.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1HIxqAn6uI4keqB8nOZsBSeZmEc-GdgI5",
-      "filename": "dc977d46-f04d-4172-95de-421a3079d73c.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1-J7TqdqnzgLR3h4rH3IJ9mZ5HYjGUi4M",
-      "filename": "dcf0a330-a17c-49cc-b913-bb7b18a15dc9photo.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "12X39v34PTGZuK0iHlM9dHHMNdPL8sOdn",
-      "filename": "FB_IMG_1704840563900.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1qAsz3uApciwbZu3nq33LlcNGxB_40LOw",
-      "filename": "FB_IMG_1704840580299.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1alRsiFGZfeNu17eJd-BzOGneXYL1DRON",
-      "filename": "FB_IMG_1704840587343.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "18FQKhIbHjCqEl6KZKIcJFL4KqbzJOztC",
-      "filename": "FB_IMG_1704840593068.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1PGk0J3XmgWohEb6Mjvak6cVOBcFihRl0",
-      "filename": "FB_IMG_1704840598077.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1QlpVJ_I1csXfwenroy20oDIk4qshPfFQ",
-      "filename": "FB_IMG_1704840606310~2.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1c6aJi_BceNrtdoz-0-AxMFI8zjSFBgTI",
-      "filename": "FB_IMG_1704840617161.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1LbyugeshLMY5euAY2WrgfsId6Hyfi1fT",
-      "filename": "FB_IMG_1704840625477.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1AjT57ZLBPAWJfFcpqlhsjbjOnmWlbEHL",
-      "filename": "FB_IMG_1714212098214.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1XUcE4C38DCa98y0xdUFZyrBJI0yHe8nT",
-      "filename": "FB_IMG_1714213821720.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1VU_3QRwc-TSqqrvjOuFEjvXGnB4UlRJE",
-      "filename": "FB_IMG_1714213824292.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1T1cZr0XiI72rRha-iQQHRMdSMRRoCVv3",
-      "filename": "FB_IMG_1714213826949.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1PQ5g625v9JI4Xv3HqnB1eelWPDQTTC8K",
-      "filename": "FB_IMG_1714213829588.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Uy_DQiNR06E98LxQozf6Vno8-Sv0CqPA",
-      "filename": "FB_IMG_1719800367423.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1EWtrk67PP8vjq1J9ZOQFN1V1tb7VasIo",
-      "filename": "FB_IMG_1721531538943.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1XKlxP3s_MEAX0hHQJbovD_idlrO16oOW",
-      "filename": "FB_IMG_1722455044835.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1O38YlOn7ikajNc_VJFfhAvz9_z_LhT7i",
-      "filename": "FB_IMG_1724972697885.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1uKo4Ou8CUT-DtN4D8GiQ01Exk79ZiJmd",
-      "filename": "FB_IMG_1725514264811.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1_PgMYq9sC2e5-KvMoFIGSOaoRRu766BV",
-      "filename": "FB_IMG_1726973074485.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Z-JkkXfCmUtpJaQqrjkFzLDND8fIDfUt",
-      "filename": "IMG_172989123953F.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1hfXHv-sSogLTBAO8jK_mZbIICGRhk2mt",
-      "filename": "IMG_20231210_175913026.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1y62PzWKEnkAm0JgTBxb5eGd7f_DOSbQL",
-      "filename": "IMG_20240210_131911027.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1tW2imJtsyOCaebXTuGP4zP4X4c1RaJfO",
       "filename": "IMG_20240224_225057510.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1jaQ1s1X8Mrv1o_kj4V_8STfxACoAqq7H",
-      "filename": "IMG_20240224_225102336.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "178LwO9PQsxBgt9K-_xGmKKZz8tfx5Uok",
-      "filename": "IMG_20240316_171113496.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "157_r0TVfioUXtYL-bQp19vV4ZS9oOmJp",
-      "filename": "IMG_20240316_171117844.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1OGZm8mq36eEH_1y5fi-1KQ24h5pon-GU",
-      "filename": "IMG_20240316_171124828.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1JmfPYpGin0HTlb84221XHLl7U9WzVRrl",
-      "filename": "IMG_20240413_074821491.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -572,20 +284,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1p6e6aKasNxquh7ENy2iYR0yagF7zy8zO",
-      "filename": "IMG_20240413_075011917~2.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1i_-6PpZjHixOl7iGY4GwEYnzd8oIAq6p",
       "filename": "IMG_20240418_031045558.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1YcBxbcyf_EyeUm0LifSAlAZ6Q-Bd9uU5",
-      "filename": "IMG_20240418_031123532.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -596,32 +296,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1NoSMBuB40gRoeQhHYcwx7sJOBdhkxT-H",
-      "filename": "IMG_20240418_031333327.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1rvC5kC6llMaMNLLXah8U5M-g-8H20N_Z",
-      "filename": "IMG_20240418_031341649.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1Hw2Y5dtl6j3y5zJELftTJo49UAUcl2D4",
       "filename": "IMG_20240418_222011731.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1mkDdMuGEBJUybI3LdB33V4jLk75_34a4",
-      "filename": "IMG_20240418_222023410.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Av43TkEEDwqJM38Iz7dmyqFj_v_zI5Cy",
-      "filename": "IMG_20240422_001150858.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -632,80 +308,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1LN4IqLbVmW_KvKs1qHYr32G1GpIzIywD",
-      "filename": "IMG_20240422_001435016.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1VkR47CAv98RgjSXismEx-cm5zoLB8OCQ",
-      "filename": "IMG_20240422_001441461.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Xx7zQx_8-F8oXahiLD82DqjeQcJ2p8uy",
-      "filename": "IMG_20240422_001446802.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1p8stWd1WnZIriHyd_AlK2Ztv6BGMf2ju",
-      "filename": "IMG_20240422_001448947.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "18_RxvhSrTPBTXQg1Qqd-oagxxoHsOzQt",
-      "filename": "IMG_20240427_043009931.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1-zqJeOn4cQmVxlflnOggfvTi8r90cqnI",
-      "filename": "IMG_20240427_043351312.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1OHQ64jCctb8_ngcqPCUssUzIcxzs43Ri",
-      "filename": "IMG_20240502_193415136.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "12pjHrcwYOcOpMktZmHbeEkQ5PcRNIkIm",
-      "filename": "IMG_20240506_123602128.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1eV5LxoWO0P_xTFxp6yTaA7w9P8LMGA7p",
-      "filename": "IMG_20240506_123607418.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1uX3OkWPo6C2wTj15Meq8Bm4Jxox2vc0w",
-      "filename": "IMG_20240506_124629730.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1WA8m1V1YSn6zXz8boak3RQ7IRnmcBiFU",
-      "filename": "IMG_20240506_134436521.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1SpviR7fepBCF8B6s7cndbAqpaVk3wGuo",
       "filename": "IMG_20240509_225617510.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1HFUPw7KNwRrydbQs--P1Sp3Q5itHqt4z",
-      "filename": "IMG_20240517_211802889.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -716,74 +320,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1IwzpJ-VoATNkefTV2E0b7fOY6cslVG2t",
-      "filename": "IMG_20240630_221612498.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1RzHqiWpNq7X9Qrj4er_lj6W1Eo-VVRE5",
-      "filename": "IMG_20240630_221727343.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1jbsL8_UWALsGBfqDXAFPvJ6EezL6tyeH",
-      "filename": "IMG_20240724_214711.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ZryOhKgWDqI9xhSP27ulmIzP5bzjN0Uw",
-      "filename": "IMG_20240814_061354808.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1buEGGJLQh5APNY91Yo4mDxEEiPIfbh5k",
-      "filename": "IMG_20240826_155521875.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1lGmKXD5pnb9TIKeDhZgF1uAODyRMOnYp",
-      "filename": "IMG_20240826_155537391.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Sb8rivR4kizISc1YI7WnsW7Aoc87NYXa",
-      "filename": "IMG_20240828_021402746.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Sx08nSvABeQZyzYFvh_A2mwc9wZeu0ll",
-      "filename": "IMG_20240828_021411781.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "17xsetAz3xp8qaAV9c6bbP1W_KlwWgcak",
-      "filename": "IMG_20240828_021418932.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1rfyNmzqCeY6xaWO_utr6CHS2wlQZZ1W7",
-      "filename": "IMG_20240828_111811650.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "15yoBD4xm_ma8RSBQdGyD3a7T_UZakZmZ",
       "filename": "IMG_20240829_203935537.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1cX1DzuITP4BVW8S-z63jBJCGC4CxRQti",
-      "filename": "IMG_20240829_204028407.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -794,50 +332,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1loATaijFifxBrW9UJEWf7ywWlFnmjoua",
-      "filename": "IMG_20240829_204036507.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1_knyaWlM5g4vaUf1dViZyw539cWoazCe",
-      "filename": "IMG_20240830_200118777.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "10Xb4zJ_QxQTD1jDLewkQ9IgjjCmdEtGB",
       "filename": "IMG_20240831_181729999.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "15o70-cbIJXEvgkE4bB0iE7s4ig3kBIS3",
-      "filename": "IMG_20240901_210559528.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1khK75FUaGEZ68Ho49-gAQoBeP9v4LGdy",
-      "filename": "IMG_20240901_210607494.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1nINn2aBc1CKKe6kBV1-rBpigs2IRdAxb",
-      "filename": "IMG_20240905_105609750.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1g87IENTVldG0shpmiZMF7uBcQIzgRKov",
-      "filename": "IMG_20240910_011906330.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Q5aJ7VX76VuNPLfPnN-4xwSqomByA-WP",
-      "filename": "IMG_20240911_103720443.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -848,74 +344,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1NBkVYFsovz_0ne2aKIgIjl66WwwVsEDg",
-      "filename": "IMG_20240914_132836982.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1rr0lwiMemfy3ur5nmtwEWrMzc9iATuw-",
-      "filename": "IMG_20241007_220507576.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1txLik-diDZ5aVpmYy9oPHDmD-vtjb05k",
-      "filename": "IMG_20241007_220517240.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1SKwgMlVNOxFvYAPvTG77B9KcjQtj47Bx",
-      "filename": "IMG_20241018_010809660.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Mkl9V19QauMe8Pw_pgpDE3Uucnykg9NU",
-      "filename": "IMG_20241018_085103095.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1KGvdEvsZvMqTS9QtnjQaczxcgPeoaUu4",
-      "filename": "IMG_20241018_085633379.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1jBCg-cTHaCa796kB6AQSdo5nTzJ6ITd_",
       "filename": "IMG_20241018_085638086.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1XfmevaH5x5ndgXuPaTPQ5CvyuIZ4-yco",
-      "filename": "IMG_20241018_232802484.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1-eF5EkRGWRiwjD7Ai2XluANylbqGNj4Q",
-      "filename": "IMG_20241023_205359247.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "12eA2Zx8xHKbur8_uv0uez_doskgZNrfa",
-      "filename": "IMG_20241025_164000977.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1bOAIzpdG1D7keygXvZnfKiCFJFqZliTF",
-      "filename": "IMG_20241025_164017763.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1iBFDpdFPmDIr_i4YZ2uwsLO1AJYNj_sZ",
-      "filename": "IMG_20241026_161218550.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -926,86 +356,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1puO0BXfVVXxttlJVxTRrGYI-PWNVQl_2",
-      "filename": "IMG_20241026_225550979.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1kHd3qPk0F0LZP7-Gtdk5wOs887J4F82Q",
-      "filename": "IMG_20241026_225608741.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "10eKcK_Ru30ftSpIDYs_1wllLUuUBYJvZ",
-      "filename": "IMG_20241027_170027202.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1-B3YtJzsJEx8znw02r_x7hr2p1SylR_E",
-      "filename": "IMG_20241027_170139279.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1DOjOSxCbAqz1PN4iRjcJp3ZSJ5XmrL16",
-      "filename": "IMG_20241027_170157051.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1sZog97V1Y5SbdgRUjoud_4u7tzfnVRr7",
-      "filename": "IMG_20241027_170203203.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Buxf7-_ODmlYPigDKsM_tEdD01qhrxuD",
-      "filename": "IMG_20241027_172413703.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1vEhSXEIz2rK2DiHgHXsAVF5BKoa2EPjU",
-      "filename": "IMG_20241027_172421472.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1wl1ON3qZ0fsxi9Al49ZTcDXxAyyNIkFt",
       "filename": "IMG_20241027_172422934.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1nsQMeZXsTHf57FuqMbq3E8EeD8tJGiK5",
-      "filename": "IMG_20241027_175202076.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1hne1PChqpQdobY1oBcR27UGssapfo4cg",
-      "filename": "IMG_20241027_180225381.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1830W8t4FQ8IEIUiCbXd4j28iJwrATgFq",
-      "filename": "IMG_20241027_180231793.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "16sRu6Pv1OP0ZwxZcv3Dl549s6yEIeyxo",
-      "filename": "IMG_20241027_180256940.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "18ruVmc1eJFks9SSZtZRq1EVTkekvz0Xg",
-      "filename": "IMG_20241027_181449758.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -1016,68 +368,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1mpxWB7jg-3qVBBx2pcFzjZepWrng4S-Y",
-      "filename": "IMG_20241028_210153521.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1sTk0AQ7XvdYwA0bmRAXIkGr_goyBYzm_",
-      "filename": "IMG_20241028_210219381.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1iSOcxS-hO-VKYJOtp5RSplYHUeCK6vWK",
-      "filename": "IMG_20241028_210525482.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1umJ0ZtVP-EZ31aMIQlH2iyC3pcWigx7G",
-      "filename": "IMG_20241028_210907672.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "19NC1J6yymko4ikZ797EgFQbn30Y-gTYq",
-      "filename": "IMG_20241028_212315379.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1C-vAabZf_mQZp-pEhjYJXmA4jwrKVVu-",
       "filename": "IMG_20241028_212339372.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ZX3t0KuUKNfBXorTSE3W2jONCw_kbnyj",
-      "filename": "IMG_20241028_212501567.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Zl_lEfWc7hKKC8KxRFlYH_SpZEImCpon",
-      "filename": "IMG_20241028_212655231.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1RPalmA7cYMDRBP7wZ_G-x3aJuefhwWuP",
-      "filename": "IMG_20241028_212714637.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1znqjmM4-2tHJeYV3XDjokfN0MTIBG4GE",
-      "filename": "IMG_20241028_213738382.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1UfwSJoNDbVq8cVFJgbgvpEQd3onopvA2",
-      "filename": "IMG_20241029_124513653.jpg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -1088,584 +380,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1FCYyv5AEeILsEGaqy00kASSzD5r58Dz_",
-      "filename": "IMG_20241029_124536441.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1BKWrqWSktqj6Mqp7cgVVXJBNXampXeMM",
-      "filename": "IMG_20241029_124541983.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1Q1yVzzJUh8dMJmFPOrLGUgVewb8w25xl",
       "filename": "IMG_20241029_130042878.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "12LUAZFJEHQC8vThDNeTkCJ4ieArYI6g6",
-      "filename": "IMG_8222.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Ss81LsqA6YA1y5hJoxkLYs-S5BIuaDIa",
-      "filename": "Messenger_creation_099D86A2-E760-4AC7-B773-2909D3C3D2E3.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1AfT3YsM7duZL2BxF9EvyLpzbe-WjL11j",
-      "filename": "Messenger_creation_1010194500648341.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1gRivGKq1zqekuSesaE7yR4lYPMgnUi5z",
-      "filename": "Messenger_creation_1025874849010695.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1OI6m-_e5nJ7FQevciyBykPHZrYmLX7bW",
-      "filename": "Messenger_creation_1056629969251599.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1QCQ5nmx3_uyJVsbATRb0ZVwQpz_r2ClV",
-      "filename": "Messenger_creation_1070537827914390.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Dz2cVl_qGJdH9mv68P6zlE9NMEIxzAKJ",
-      "filename": "Messenger_creation_1082220009411689.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1fxQRdsqrAELGi6erk3vtjGtUELHursSI",
-      "filename": "Messenger_creation_1183385419387169.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1s0IXVXR7DJUKq5N4XUBFAyk_Ey8klEtP",
-      "filename": "Messenger_creation_1195194361669164.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1PoTFfhlNxAKM_KOzKSTaVQy6z7icjZuY",
-      "filename": "Messenger_creation_1218809149368841.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1FK6y-mhqmm0kBFK5jHIEgQlvqHdw7kOC",
-      "filename": "Messenger_creation_1219107272760611.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1UbimcY00tB_cB9rKS2xC-JGNN6zrxUvQ",
-      "filename": "Messenger_creation_1229629241499717.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1oebh81HoVTDm4gEJEixJZE3iLFFICqVC",
-      "filename": "Messenger_creation_1239789770556840.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1gk8LXzHN8p4WMx5XnGxYsEL6osi4V3in",
-      "filename": "Messenger_creation_1248350433019938.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1VXNP6mFF_0nPIf3cvEU7aFsPnWTJIYlq",
-      "filename": "Messenger_creation_1250143956169262.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1TAew_qoKi39jR63J5xzna-b0zXZwTNhb",
-      "filename": "Messenger_creation_1257512901937421.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1lKdP52dSnC-5AziKPo2GIcyvG1IOphxy",
-      "filename": "Messenger_creation_1271900100884742.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1DbP_vmy13d1LkdF3_7LDu7YhcBK9XBop",
-      "filename": "Messenger_creation_1316351249729261.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1JaBMFYy9bSPJrk3W6i_qkLBP9KtTMdx2",
-      "filename": "Messenger_creation_1322068418779224.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "12hx8BMOQZLEwZ9ggT8YiZLBIMaFeVEZA",
-      "filename": "Messenger_creation_1437827213569185.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1zFo_N-cbIBFG6fT5eBnrC0KnTPX3nkdX",
-      "filename": "Messenger_creation_1457798614895573.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1tfOZ-J6B1Sd0u1diMW5Kac9TtGzfiiXk",
-      "filename": "Messenger_creation_1504938786820096.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1S32sqQhPmFIWd41dphCm2ZUKlsIwvUUk",
-      "filename": "Messenger_creation_1527340401246284.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1B4ogZe8iPX8-msd4ohO31Y1xv2fXCb3z",
-      "filename": "Messenger_creation_154511C1-6EA1-4129-8766-A3D85E8DD1EF.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1HVE7mnuOzoWXmq4rRRtztJ4ruyNsouzg",
-      "filename": "Messenger_creation_1546262969600556.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1GNG4torixbeEQwswlFGZMWRYexJku2ld",
-      "filename": "Messenger_creation_1584423935752163.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "16fFngCgxIVnhCQ8uROiPMng2xlG_LxBe",
-      "filename": "Messenger_creation_1637092693507761.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "18rqDdXyFcjfLA7F1wxSUfKdWxTA_2rMi",
-      "filename": "Messenger_creation_171DB527-B769-4D8F-9E5F-E08D9B07D585.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1J1AojZrx_PjzMWjB0aV8o5m-ZJl4EAim",
-      "filename": "Messenger_creation_1806716963067326.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1UpqrcKS9dM9iricY5jR56Roq-_2E1vIx",
-      "filename": "Messenger_creation_18192DDD-D7C8-4C84-B798-E732A3D1A844.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1lnrAw7XqrvbB4qGY59OGmgwmZhFsisgR",
-      "filename": "Messenger_creation_2052CEA1-5F4E-455C-8FC1-301A61F41469.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1eX_sJd9J0gU-vSYzmQgNKiS_VWVpf8zf",
-      "filename": "Messenger_creation_2184350158631908.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1NHn3yQZ3HoF89M6yv6pNUGGsMeD8Vltv",
-      "filename": "Messenger_creation_2463317997197911.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "10oYo_aljy3B3Fp9PhKYAtMXJSFDu6Bk3",
-      "filename": "Messenger_creation_31F7BC5D-80BF-40AA-B1BA-9BD78BC22962.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1KO1HxV42YSTrSI90TyNcQMM7tyZjhU0c",
-      "filename": "Messenger_creation_370829092764161.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1rjYmog2URF3f_tlRQ01SB326Sy4GsdYQ",
-      "filename": "Messenger_creation_38B1546E-64C4-4EFF-9586-D1805637A112.png",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1NojIRWyScj5oJq2UzRKogBcCshamUbGW",
-      "filename": "Messenger_creation_3923878477928064.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1PChhuXybA_W5iOp7Kt-8VaZH8i7Q5PaJ",
-      "filename": "Messenger_creation_41A345AC-9BB5-4447-979C-B04F117480B5.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1HamI1Gu5iCXZm-65lQRYV6qHBJ50dScB",
-      "filename": "Messenger_creation_427166320099696.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "13K6w0pme25Ws5YHGMxaiBfL3Z3ccghmW",
-      "filename": "Messenger_creation_431244599367503.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1E1r2lnleQ2mRh_38kAQJJqBnAY1-yFuX",
-      "filename": "Messenger_creation_4315C55C-1C46-4D09-9F0A-6D723B1A1F72.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1v_vbvoDkkxxnz6mPH8TrY_foHZYzMyQ0",
-      "filename": "Messenger_creation_444011238668776.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1VZShl2TwxyyIB3tv96MKR-bl_fJ56tYU",
-      "filename": "Messenger_creation_485821824412918.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "18ZMpTB1hxXVvVE-t_R90uhzgurP7336c",
-      "filename": "Messenger_creation_489933a2-27a5-48dc-9fde-661b4dd87e14.png",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1HdxvHUqRWeD2YnyLaaFb2LpGihb8WXJ2",
-      "filename": "Messenger_creation_4AE364A3-3AFD-4D81-A473-D4B39F94DF8A.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1hi_1rcSrVZGwh4qvSOtXGnJS6Ear4yH1",
-      "filename": "Messenger_creation_50B0D2D5-F89E-452D-9F62-ED70745F11F0.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "16e5EN8NybwLKcLI0wMTGntV3iCZFXtR5",
-      "filename": "Messenger_creation_518987160674992.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "18samqBH-iCA4RgK0txmJMqtI2PIjuv87",
-      "filename": "Messenger_creation_519713407203466.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ANns4eLTnmi0KTsKL1nZY7SeYNLVmPXK",
-      "filename": "Messenger_creation_51DCDB2D-AE7E-4BB6-BB3B-D911D68608DB.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1mwYp_CgTphG2urYQIOUVc8IO9b0JInG6",
-      "filename": "Messenger_creation_528043379857721.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1LCrNNsTsaK7ajtOR7z6mhJYdBsSRHra1",
-      "filename": "Messenger_creation_528609073188469.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1IpQ49zFMxoBVVrMo5e6ejzhaj_xvcVgV",
-      "filename": "Messenger_creation_539389675335131.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1fTKGGJs0RSXx6YwxNy18W9HYxkbNMxs8",
-      "filename": "Messenger_creation_541186755051167.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1u4_nQXfBQIMzlj7FtKBYTrR7HHixVj0L",
-      "filename": "Messenger_creation_573903118325709.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1iZaq9vaHLDoA6Zjcc-kjunFbZuiyRkUf",
-      "filename": "Messenger_creation_57C581D9-08E2-4749-81A5-B98063269314.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1r7oI4yynVrb54Ss_YZt1qSMX4_028mtE",
-      "filename": "Messenger_creation_5DBFF7ED-2A57-4D27-9BB2-B246CF38D4F9.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1cRNwfoSo51cYfOGyDWSkL6XdOK8NDfxD",
-      "filename": "Messenger_creation_628434056576383.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1xxDBKPNIe64SlpIuFb9QTAuq2uCrsYne",
-      "filename": "Messenger_creation_640279218322025.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1w7RKIXUsZzQ6Y89sq0HD5KELhu3d1VQE",
-      "filename": "Messenger_creation_67EEB1D7-2D72-4480-8EBF-F6205A8328F9.png",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1890gDQo5-4mMXkSYCjOBa9h-JXWtcqBc",
-      "filename": "Messenger_creation_6E2D4A33-414A-4BAD-8584-E3202E1E150A.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1S_-xNMVqNkZZVqe1yweH-_By3zFognzU",
-      "filename": "Messenger_creation_74A56DA4-362B-4DCD-93BC-A9518B544F47.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1MwA03i-wKX65-6CPSxIXqoyhctP1-L_d",
-      "filename": "Messenger_creation_803039142045613.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1_XdHHna0Ns0tmTIZwdpKI_SONci59R8q",
-      "filename": "Messenger_creation_819867260266950.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "17BMspuCyjOXtXLcSa0P3HfTcFX5qLIIX",
-      "filename": "Messenger_creation_822800586679003.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1YIcd0T4xtnE_COSJUNUB9K5J4IqWoAKD",
-      "filename": "Messenger_creation_827552682552914.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "137GZNkGXxySZqYeiYZmSedtSRp290l3I",
-      "filename": "Messenger_creation_8280242262068271.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1eR1C5i4PiUCw0O0suf0WLyuRyU1bFwIs",
-      "filename": "Messenger_creation_844420004328872.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "14z4vxcFq7lEUT02ZOvgOyWXZXFpHgPiA",
-      "filename": "Messenger_creation_8576384465760313.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ntv6MPyDlkOJTuEiZCIKfNPrkMQ8Au0r",
-      "filename": "Messenger_creation_898905778808989.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1cwdvciAzQ-LPY0XeYswltAbZWn88mTZC",
-      "filename": "Messenger_creation_8BEBB490-827B-41C6-B05A-02FD8E3FE233.png",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1-2p9LXn2X936hJi88z_BnqsWunce5B3s",
-      "filename": "Messenger_creation_901501691792906.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1_0FHf3wLgIcf0RAivWNLdZhfBna8wvqv",
-      "filename": "Messenger_creation_942291144395054.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1-OsJ_ZsDeRgAF8MarogsUJdTif7pw5zf",
-      "filename": "Messenger_creation_95683070-8C5C-4F6E-8A43-FC14519F53EA.png",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Lfxhpotr7Zh7Cc8fbdbFMG2ZMOzdMoZ0",
-      "filename": "Messenger_creation_95943290-E028-4614-9A47-F7A5C09A263A.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1xLgrxpP2kttgw7lVSLk6f3zVMz6f_Ak2",
-      "filename": "Messenger_creation_95E9C9C2-CF78-4A6A-AEEF-F03BB63B4317.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "11vIhUB3htSqVnMdofQPXyOAwwRLHMVGr",
-      "filename": "Messenger_creation_973342761532636.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1VdRxCoiizwAFq1Sg8qpUr7JuZuH-aA9P",
-      "filename": "Messenger_creation_A7009AAF-5FF4-49E2-A35A-9B903A0D2062.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Mbcb8G0yz8pAxnGFtJu-ODovmbm2Wn7v",
-      "filename": "Messenger_creation_AB1786E9-A8F2-492A-8C36-49F06AE5EAB7.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1UMl73zlRZCh_629q7NrAnW1xM5_fgy1Z",
-      "filename": "Messenger_creation_B20EA0F7-33B1-4073-A9A1-166F615001D2.png",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ppBFabdyxnK3E4fbhnSqEsKGKonC16-Y",
-      "filename": "Messenger_creation_B454127C-0078-4AE5-98E0-812F9A33D3D2.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1pYm5comuhs9kBIJMGcIwuUAY-ctGoO7b",
-      "filename": "Messenger_creation_f762d9b7-c6e4-4859-a905-34db123ce789.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1aQJrP5-9rTmA2QKIXA2qIGdpQo7CcAIS",
-      "filename": "Onyx.jpg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1LLjPmC9tTsXCEO58lV9Rv9RlbxCTsG-9",
-      "filename": "orca-image--974550364.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1t7nqHvJrf9rOZ-8EekZ5_v6U-HdcqbP7",
-      "filename": "orca-image--978623749.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1VeOZt46zy2O0SL-107B_cd2zlkfstJ-U",
-      "filename": "orca-image-1155804778.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "11B9kAH6Wm03uKN-qwxz3Wb7QrtJF7cAX",
-      "filename": "orca-image-163014489.jpeg.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "117QppLJkiJ7lLtx_nGEco4KThqyxNF4L",
-      "filename": "orca-image-2075727960.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1bVlMqY2awya0TyLYqjZPEU39NQjMOj87",
-      "filename": "orca-image-886196999.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1UHn1-h65cMMGiaBWaW3ciiQbKo9Os7ZJ",
-      "filename": "received_1033636431514640.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1DWelMhaW_jPWnRqyWEwBsUnzot8ZwZDl",
-      "filename": "received_1064182735737743.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Sy7lJrsu9cSn-M9o7tOuGwe_ycH25FhY",
-      "filename": "received_1086341243172388.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1rXCSgKPC_KZtfzaH_vo775kpc9ZgcNW-",
-      "filename": "received_1129710901536183.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1tGE7o2lnX_G8TxqpBj2gPHenMJ40wJ2F",
-      "filename": "received_1158468386190138.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1jHI39ERyP--A2MACmToylC-wQZleCJwi",
-      "filename": "received_1160837138495952.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -1676,158 +392,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1vCMf5tr5MlPNjU8n_CgqjhjUyjgcdjD0",
-      "filename": "received_1235877944055657.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1qA6nX5kd3auS9Ee6M42nKvGNHKy_hmiW",
-      "filename": "received_1237122943942761.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1vHa-ACtlNMc6m1V4SOtobpEUCugXjNtn",
-      "filename": "received_1289146781762938.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1KuZ4W7gPuOyeh1QmrjRaoB-1LPTU0J1H",
-      "filename": "received_1307723466613337.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1biMINBqUUXQ2_lyt6EA5SSuiKATMqUwq",
-      "filename": "received_1315146419376888.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ZhEBExtsK_MuL1E4DxidkZCdjusZIGyN",
-      "filename": "received_1317231865652116.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ZL2kh3GUGdL736r8jPosVvCIEFmvUXg4",
-      "filename": "received_1359079661858154.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1m7csfF9POY6TpAiUqQC5k4WRomhWjLpt",
-      "filename": "received_1402077890381285.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "19MgYxce6z9OvMAJ8sReCn75sKD6Yz2rB",
-      "filename": "received_1429584138309260.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1gW8-11DMXbvOcwnyHKMMCmBoMebgY-Ln",
-      "filename": "received_1446459116178258.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1baO2zE9XI2TaWa_bJp7VGwX5WArXvbl1",
-      "filename": "received_1511479670062574.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1jb18AJl3DKa8ZVNUyvHu9AzaFyEU-5Gk",
-      "filename": "received_1541002386953823.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "11FARn7Qw2htBTyLZJoSv87KX0fgz5p-W",
-      "filename": "received_1542115193836010.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "17gQy76NJULB6URmvKP2dpfj8U7QAcM5j",
       "filename": "received_1582403055890657.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1yvvzgk_n0kAwqFs-UyorS4Rzj3_hnU6A",
-      "filename": "received_1667061873719515.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "10g9zTp62I_RdRUOLLehVs3DpFtIdNbMO",
-      "filename": "received_1695419914746428.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1AqshSdoF8mN54lfTlBhCvLwH1AhKXQYg",
-      "filename": "received_1698052620684159.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1YxmmK-0bATo9VSOuB21OfHhBvvg2r0ki",
-      "filename": "received_1700872770439128.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1CSpZ5uXrCT3vhgahK-PEMW66YHtpbDTn",
-      "filename": "received_1706913913257685.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1iJiXsqlz5jspPIPFapIuyflsV3FCpXTS",
-      "filename": "received_1781900115898738.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1DhMl6O5jY1nIeRzjSPrDwltJv_goTdn-",
-      "filename": "received_1806861996420681.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "19iVeo5FIewhkSjjsKM8wXRVSOc-7BGkM",
-      "filename": "received_1815771048891676.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "12MOF1LA_NZ60ueX5FwLrNjJj9wy4pqaY",
-      "filename": "received_1822831414944628.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1tK5ygFc4ddp_gvd2xcht-qO4mRysH63m",
-      "filename": "received_1841533333105375.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1xFT_kl_FDj3rKLQG5LQ7Wi6MuLPbnk99",
-      "filename": "received_1949815039194954.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1-9oVOG6dhzY5hvAuIWjaj4EopVCflNqX",
-      "filename": "received_1962301244228133.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -1838,26 +404,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1ZwP9_N9fpB5gvIcU3i3452xKnjFftFP4",
-      "filename": "received_2361836154196936.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1O1M2OGmtwk9pQWWDEC-YYGxmKv6tMWlk",
       "filename": "received_24316830571240473.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1CNYE7WjsZX9N6bY2eaA2ZJAjeIEhqZ39",
-      "filename": "received_244332415166415.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "12gTL0NLbkOZ4_bn3-rE2zbQ5jejAtOfd",
-      "filename": "received_255035864046231.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -1874,38 +422,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1hD0jG4exED2nejQMZOebQyG7fmcFNBKb",
-      "filename": "received_314905958359255.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1SrQxWe4EVUutUvG2-LrUt2ckBQfwFoJW",
-      "filename": "received_342583165281912.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1Ko_iik7SxC8O6ENAFX7eBexDbISnP9ny",
-      "filename": "received_348128554998798.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1mZDIUQzf0XKVtV4SMKV9HuTaGfsCv2yI",
       "filename": "received_3711322015796628.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1xKmoaE5WHXxLLdEUu4v0eEzKUGRQspKz",
-      "filename": "received_371940865299997.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ijwp2iVgwHNlK9qgqssg5fsK6l2nbmLw",
-      "filename": "received_3785241068471090.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -1916,62 +434,14 @@
       "pre_adoption": false
     },
     {
-      "id": "1Odg2AQFbdKaklfdImqYJIb4XetrfHnsM",
-      "filename": "received_389731803756450.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1l-9AY6hoGMjCMl-xzvn4Q-EHC9dIKsQZ",
-      "filename": "received_397787089822488.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "19gHwfTgQL2KHXH6jRtvzGBOv5Vo46QTc",
       "filename": "received_399506002802615.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
     {
-      "id": "1--Xv76lVMoZe5gucV2HoiaUmHb4gSDdX",
-      "filename": "received_409788694751524.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1I4EvcM1xGwONLKwEBrVqC6FArai4wGaG",
-      "filename": "received_416359327521032.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1kkrXUvB2tVOA34zVxrl99PLm85Wa4igU",
-      "filename": "received_423636223487051.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1PZGCW_3p8u5DfXuZmDzvd-kkZsislemd",
       "filename": "received_436068735900784.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ECTDPVWAS9ePqPHumkkYHDI_36iBU8c1",
-      "filename": "received_437318492110294.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1j-JXquGxCddrA5w5SVL_0OpSO6Fx0y39",
-      "filename": "received_442707098728103.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1crhYO2JVJyZtvjRp0po3QONJQ4v86CAb",
-      "filename": "received_444435931423201.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -1988,26 +458,8 @@
       "pre_adoption": false
     },
     {
-      "id": "19uQCDNtUwnbSKGtlR23BYu2lc_mQmgfr",
-      "filename": "received_573903118325709.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1XR59BI0_bJJHiN0x08twAHcUJDy0j2LO",
       "filename": "received_660555823646164.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1TOO9CgH8mZyy0lXSlTL-fOICP8N7_lP3",
-      "filename": "received_661557326796131.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1JqkI-wR5oo4emrGb2fxYH-O4meSRA0u1",
-      "filename": "received_662038029137429.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -2018,56 +470,8 @@
       "pre_adoption": false
     },
     {
-      "id": "15sCdQoBt1n36Ek1kPW1iJndXG4473OBE",
-      "filename": "received_684296710437019.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1qQKgwipmny6MLuu3lpN6cR3vgJ2t2Rif",
-      "filename": "received_708587677754054.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1qcOuptBTv3WPvlLyvpmUaIIxmU_lw7YS",
-      "filename": "received_7158937560881641.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "14ohIQSduBEBb9rpxj9bAxnFgDyeVzOLe",
-      "filename": "received_717860717634158.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1nD8ZTM5jBaidrpcihHnSpiTl6EF28r9g",
-      "filename": "received_7342601912489553.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1mqgqrg4xVn-iH80KfbI-lG2xDJQUvowF",
       "filename": "received_749134123653843.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ARFcpbfEmISfi5Sg_VaTyZg8sG8FaiZH",
-      "filename": "received_777161290965026.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1qz4Fe7RjZ8HnIL-0galfta11vBRCVmr4",
-      "filename": "received_784547830211839.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1mT87hv0gLfaGz46bukozrqpvT5gLcgq8",
-      "filename": "received_790173226348410.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -2078,26 +482,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1EzBCOUPD29fqKlz_2_lRXDxlhoc4G9Xo",
-      "filename": "received_800055058852442.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1icEYUGJBxjvMaUPofX3wK9zieGdXS6by",
       "filename": "received_8187251098008855.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1OaWNsfXP3qBVhpDoXFsYDZfHAS1EwgV1",
-      "filename": "received_821200006490865.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ABi0TD7ch3X9nDDfLgau93x8fI98oZO5",
-      "filename": "received_830436535677525.jpeg",
       "era": "newer",
       "pre_adoption": false
     },
@@ -2108,50 +494,8 @@
       "pre_adoption": false
     },
     {
-      "id": "1lxkNg5b2OGJtqzc7HDjibweZFTfJPWo5",
-      "filename": "received_918804610183354.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1zXTmuhLUU6ok6SwaZr281X9uLiaX4Ekl",
-      "filename": "received_922625992488610.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1xHJ8F6W78iD4Fb000dbbZmiHmEGuTC-Q",
-      "filename": "received_935614487993396.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "15EVJ51Q_oLxUz_uvq4tbTR1FcuE3pUaD",
-      "filename": "received_943612107111594.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "18W067iW2mW62UpsCJ0SYO1xZ3gUAhQ2-",
-      "filename": "received_984243519743915.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "111f5Q6FlAfvnHnO5s7v9ngogOftbPf2d",
-      "filename": "received_9877038229009066.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
       "id": "1nhhpXVPXzpPe7HCJMqtgvuaGVGZMLszT",
       "filename": "received_996820928498214.jpeg",
-      "era": "newer",
-      "pre_adoption": false
-    },
-    {
-      "id": "1ofGD2wYp4s6zsxQbf7OcJqMnslpCN0Nx",
-      "filename": "received_999363611157097.jpeg",
       "era": "newer",
       "pre_adoption": false
     }
@@ -2297,5 +641,11 @@
     "received_935614487993396.jpeg",
     "received_6679993628766508.jpeg",
     "received_1434946080506234.mp4"
+  ],
+  "excluded_by_review": [
+    "Tiggy: received_1237122943942761.jpeg",
+    "Other-cat photo: 01.jpg",
+    "Near-identical images: IMG_20240422_001446802.jpg; IMG_20241028_212339372.jpg; USER_SCOPED_TEMP_DATA_MSGR_PHOTO_FOR_UPLOAD_1572573832949.jpeg",
+    "Excluded all Background Images photos outside the approved folders"
   ]
 }
