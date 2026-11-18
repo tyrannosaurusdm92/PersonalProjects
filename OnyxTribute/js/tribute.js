@@ -20,6 +20,12 @@ const PHOTO_SECONDS=9,VIDEO_ESTIMATE=15,BASE_VOLUME=.91,VIDEO_MUSIC_VOLUME=.15,E
 const clamp=(value,a,b)=>Math.min(b,Math.max(a,value));
 const fmt=t=>{t=Math.max(0,Math.floor(t));return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0')};
 const shuffle=items=>{const arr=items.slice();for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr};
+// This photo is Tiggy in the shower, not Onyx. Never select it, even if it is re-uploaded.
+const blockedPhotos=new Set(['received_8187251098008855.jpeg']);
+const isApprovedPhoto=src=>{
+ try{return !blockedPhotos.has(decodeURIComponent(src.split(/[?#]/)[0]).split('/').pop().toLowerCase())}
+ catch(_){return false}
+};
 const chapters=data.poems.map(poem=>({
  ...poem,
  pages:poem.text.trim().split(/\n\s*\n/).map(stanza=>stanza.trim()).filter(Boolean)
@@ -27,7 +33,7 @@ const chapters=data.poems.map(poem=>({
 let slides=[],chosenChapter=null,selectedGroup='',currentIndex=-1,localTime=0,lastFrame=0;
 let started=false,playing=false,finished=false,ending=false,scrubbing=false,musicMuted=false;
 let endStarted=0,endFadeStartVolume=0,photoToken=0,frontLayer=1,videoOffset=0,poemKey='',preloaded=new Map(),toastTimer=0;
-let errorSkipPending=false;
+let errorSkipPending=false,videoPlayToken=0;
 
 function toast(message){
  const el=$('status');el.textContent=message;el.classList.add('show');
@@ -41,7 +47,8 @@ function preloadPhoto(src){
 function makeDeck(){
  const group=data.assetGroups[Math.floor(Math.random()*data.assetGroups.length)];
  selectedGroup=group.name;
- const pictures=shuffle(group.photos),movies=shuffle(group.videos);
+ const pictures=shuffle([...new Set(group.photos.filter(isApprovedPhoto))]);
+ const movies=shuffle([...new Set(group.videos)]);
  const ordered=[];let p=0;
  // Every photo and video in ONE folder appears once; the final memory is a video.
  movies.forEach((movie,j)=>{
@@ -57,6 +64,7 @@ function makeDeck(){
  $('audio-artist').textContent=soundtrack.artist;
  $('chapter-eyebrow').textContent='Our years together · 2016–2026';
  preloaded.clear();poemKey='';refs.stage.classList.remove('has-poem');
+ videoPlayToken++;
  refs.video.pause();refs.video.removeAttribute('src');refs.video.load();
  refs.videoLayer.classList.remove('is-active');refs.videoLayer.setAttribute('aria-hidden','true');
  refs.unlock.hidden=true;refs.layers.forEach(el=>{el.classList.remove('is-active');el.setAttribute('aria-hidden','true')});
@@ -119,26 +127,46 @@ function revealPhoto(item){
  for(let j=1;j<=3;j++){const upcoming=slides[currentIndex+j];if(upcoming?.type==='photo')preloadPhoto(upcoming.src)}
  refs.stage.setAttribute('aria-label','Photograph of Onyx');
 }
-function playVideo(){
+async function playVideo(){
  if(!started||!playing||finished||ending||slides[currentIndex]?.type!=='video')return;
- refs.video.muted=false;refs.video.volume=1;
- const attempt=refs.video.play();
- if(attempt?.catch)attempt.catch(error=>{
-  if(slides[currentIndex]?.type!=='video'||!playing)return;
-  refs.videoLayer.classList.add('is-active');refs.videoLayer.setAttribute('aria-hidden','false');
-  refs.unlock.hidden=false;
-  toast('Your browser needs a tap to allow video playback with sound.');
- });
+ const token=videoPlayToken;
+ refs.video.volume=1;
+ refs.video.muted=false;
+ try{
+  await refs.video.play();
+  if(token===videoPlayToken)refs.unlock.hidden=true;
+ }catch(error){
+  if(token!==videoPlayToken||!playing||slides[currentIndex]?.type!=='video')return;
+  if(error?.name==='AbortError')return; // A newer memory replaced this source.
+  // Autoplay with sound is not universally allowed. Silent video still auto-plays:
+  // no interruption, no compulsory tap, and music continues beneath the clip.
+  refs.video.muted=true;
+  try{
+   await refs.video.play();
+   if(token!==videoPlayToken||!playing)return;
+   refs.unlock.textContent='Enable video sound';
+   refs.unlock.hidden=false;
+  }catch(mutedError){
+   if(token!==videoPlayToken||!playing||slides[currentIndex]?.type!=='video')return;
+   if(mutedError?.name==='AbortError')return;
+   toast('This video could not play on this device. Moving to the next memory.');
+   if(!errorSkipPending){errorSkipPending=true;setTimeout(()=>{
+    if(token===videoPlayToken&&slides[currentIndex]?.type==='video'){errorSkipPending=false;nextSlide()}
+   },900)}
+  }
+ }
 }
 function revealVideo(item,offset){
- photoToken++;
+ photoToken++;videoPlayToken++;
+ errorSkipPending=false;
  refs.unlock.hidden=true;
  videoOffset=offset;
  refs.videoLayer.classList.remove('is-active');refs.videoLayer.setAttribute('aria-hidden','false');
  refs.video.pause();refs.video.muted=false;refs.video.volume=1;
  refs.video.src=item.src;refs.video.load();
  const next=slides[currentIndex+1];if(next?.type==='photo')preloadPhoto(next.src);
- if(currentIndex===slides.length-1)audio.loop=false;
+ // Keep the chosen recording looping all the way through the last video.
+ // The soundtrack fades after the final memory instead of ending mid-clip.
  if(playing)playVideo();
  refs.stage.setAttribute('aria-label','Video memory of Onyx, playing with original sound');
 }
@@ -149,6 +177,7 @@ function activate(index,offset=0){
  localTime=clamp(offset,0,Math.max(.01,item.duration-.01));
  if(item.type==='video'){revealVideo(item,localTime)}
  else {
+  videoPlayToken++;
   refs.video.pause();
   revealPhoto(item);
  }
@@ -238,7 +267,16 @@ refs.video.addEventListener('error',()=>{
  toast('This video could not be loaded by the browser; continuing to the next memory.');
  setTimeout(()=>{errorSkipPending=false;if(slides[currentIndex]?.type==='video')nextSlide()},900);
 });
-refs.unlock.addEventListener('click',()=>{playVideo()});
+refs.unlock.addEventListener('click',()=>{
+ if(slides[currentIndex]?.type!=='video')return;
+ // This optional button is only needed to hear the original audio when the
+ // browser has already auto-started the clip muted.
+ refs.video.muted=false;
+ refs.video.volume=1;
+ refs.unlock.hidden=true;
+ const result=refs.video.play();
+ result?.catch?.(()=>{refs.video.muted=true;refs.unlock.hidden=false});
+});
 $('begin-btn').addEventListener('click',start);
 $('replay-btn').addEventListener('click',()=>{started=false;playing=false;finished=true;start()});
 refs.toggle.addEventListener('click',()=>{if(!started||finished)start();else if(playing)pause();else resume()});
@@ -289,11 +327,10 @@ function frame(now){
    if(fraction>=1)finishOutro();
   }else{
    const item=slides[currentIndex];
-   let goal=item?.type==='video'?VIDEO_MUSIC_VOLUME:BASE_VOLUME;
-   if(item?.type==='video'&&currentIndex===slides.length-1){
-    const remaining=Math.max(0,item.duration-localTime);
-    goal*=clamp(remaining/10,0,1);
-   }
+   // Duck music only when the original video soundtrack is actually audible.
+   // Keep Baby Mine playing during automatically muted clips.
+   const audibleVideo=item?.type==='video'&&!refs.video.muted&&!refs.video.paused;
+   const goal=audibleVideo?VIDEO_MUSIC_VOLUME:BASE_VOLUME;
    audio.volume+=clamp(goal-audio.volume,-.017,.017);
   }
   updateClock();
