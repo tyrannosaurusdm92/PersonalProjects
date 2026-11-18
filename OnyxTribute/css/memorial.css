@@ -175,3 +175,56 @@ body{font-family:'Segoe UI',Candara,Arial,sans-serif;color:var(--cream);-webkit-
   bottom:calc(57% + 9px);left:10px;max-width:75%;
  }
 }
+
+/* 2026-11-18: Fit every original frame, including during transitions.
+   The blurred background remains decorative; the actual photo/video never crops. */
+.photo-layer .photo-front{
+ inset:0;
+ width:100%;height:100%;max-width:100%;max-height:100%;
+ object-fit:contain;object-position:center center;
+ transform:scale(.98);
+ transform-origin:center center;
+}
+.photo-layer.is-active .photo-front,
+.photo-layer[data-direction="left"].is-active .photo-front,
+.photo-stage.has-poem .photo-layer.is-active .photo-front{
+ animation:memorial-contained-breathe 15s ease-in-out both;
+}
+@keyframes memorial-contained-breathe{
+ from{transform:scale(.965)}
+ to{transform:scale(.99)}
+}
+.memory-video-layer .video-front{
+ inset:0;width:100%;height:100%;max-width:100%;max-height:100%;
+ object-fit:contain;object-position:center center;
+ transform:none;
+}
+/* On wide screens, the image is fitted wholly inside the dedicated left column. */
+@media(min-width:741px){
+ .photo-stage.has-poem .photo-layer .photo-front,
+ .photo-stage.has-poem .memory-video-layer .video-front{
+  left:clamp(10px,1.3vw,20px);right:auto;
+  width:calc(100% - var(--poem-panel-width) - var(--poem-safe-gap) - clamp(10px,1.3vw,20px));
+  max-width:calc(100% - var(--poem-panel-width) - var(--poem-safe-gap) - clamp(10px,1.3vw,20px));
+  height:100%;max-height:100%;
+  object-fit:contain;object-position:center center;
+ }
+}
+/* On mobile, poems live BELOW the media, not on top of it.
+   These variables also keep portrait photographs and videos inside the visible area. */
+@media(max-width:740px){
+ .photo-stage{--memorial-poem-height:57%}
+ .photo-stage.has-poem .poem-panel{height:var(--memorial-poem-height)}
+ .photo-stage.has-poem .photo-layer .photo-front,
+ .photo-stage.has-poem .memory-video-layer .video-front{
+  top:0;bottom:auto;left:0;right:0;
+  width:100%;max-width:100%;
+  height:calc(99% - var(--memorial-poem-height));
+  max-height:calc(99% - var(--memorial-poem-height));
+  object-fit:contain;object-position:center center;
+  padding:6px;
+ }
+}
+@media(max-width:410px){
+ .photo-stage{--memorial-poem-height:61%}
+}
