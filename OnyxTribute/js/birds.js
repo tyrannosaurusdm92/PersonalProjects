@@ -2,7 +2,7 @@
 (function(){'use strict';
  const canvas=document.getElementById('birds');if(!canvas)return;const ctx=canvas.getContext('2d');if(!ctx)return;
  const motion=matchMedia('(prefers-reduced-motion:reduce)');if(motion.matches)return;
- const types=['dove','hummingbird','robin','bluejay','finch','cardinal','sparrow'];const images=types.map(name=>{const im=new Image();im.src=(window.ONYX_MEDIA&&window.ONYX_MEDIA['assets/birds/'+name+'.png'])||'assets/birds/'+name+'.png';return im});
+ const types=['dove','hummingbird','robin','bluejay','finch','cardinal','sparrow'];const images=types.map(name=>{const im=new Image();im.src='assets/birds/'+name+'.png';return im});
  let w=1,h=1,dpr=1,last=0,seed=10262026;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296};
  const birds=Array.from({length:11},(_,i)=>({species:i%7,phase:rand()*8,speed:.035+rand()*.065,baseY:.12+rand()*.65,direction:i%3===0?-1:1,start:rand()*1.2-.1,scale:.52+rand()*.67,flap:rand()*28,travel:rand()*10}));
  function resize(){const box=canvas.getBoundingClientRect();w=Math.max(1,box.width);h=Math.max(1,box.height);dpr=Math.min(1.7,devicePixelRatio||1);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0)}

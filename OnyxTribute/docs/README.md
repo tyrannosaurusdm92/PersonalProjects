@@ -19,7 +19,7 @@ The photo manifest lists each approved source filename. Photos are drawn **only 
 
 ## Poetry
 
-The two full poems are supplied verbatim in `json/poems.json` and `js/data.js`, split into two-stanza reading cards for accessible pacing. Their full source text is preserved. Photos continue to dissolve behind the reading cards. Intro and closing dedication are new to Onyx.
+The two full poems are supplied verbatim in `json/poems.json` and `js/data.js`, split into four-line reading cards for accessible pacing. Their full source text is preserved. Photos continue to dissolve behind the reading cards. Intro and closing dedication are new to Onyx.
 
 ## Running
 
@@ -28,7 +28,3 @@ Serve the project directory as static files or load `tribute.html` directly. The
 ## Accessibility
 
 Text is real selectable HTML rather than overlaid bitmap text. Motion honors `prefers-reduced-motion` for background animations and decorative birds. Playback pauses when the tab becomes hidden. All controls are keyboard-focusable, and no third-party tracking scripts are included.
-
-## GitHub hosted media delivery
-
-This GitHub deployment variant embeds only the screened photographs and original bird sprite sheets in `js/media-embedded.js`, eliminating dependence on public Google Drive hotlinks. The original `OnyxTribute/audio` directory remains unchanged. The downloadable ZIP variant stores the media as individual files and is otherwise visually identical.
