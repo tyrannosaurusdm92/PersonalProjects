@@ -118,3 +118,41 @@ body{font-family:'Segoe UI',Candara,Arial,sans-serif;color:var(--cream);-webkit-
 .memory-video-overlay.show{display:flex}.memory-video-shell{display:flex;flex-direction:column;width:min(100%,1120px);height:100%;min-height:0;gap:clamp(6px,1vh,14px)}.memory-video-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;font-size:clamp(10px,1.1vw,15px);color:#d6edcb;letter-spacing:.025em}.memory-video-header strong{color:#f0ffe8;font-weight:600}.memory-video-header span{color:#b2cda7}
 #memory-video{width:100%;height:100%;min-height:120px;flex:1;border:1px solid rgba(171,217,153,.4);border-radius:12px;background:#000;display:block}.memory-video-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#d1e4c9;font:italic clamp(11px,1.14vw,15px)/1.4 Georgia,serif}.memory-video-actions .begin-btn{flex:none;position:relative;display:inline-flex;align-items:center;gap:8px;margin:0;padding:clamp(8px,1vh,13px) clamp(14px,1.8vw,24px);font:600 clamp(11px,1vw,15px) 'Segoe UI',Arial,sans-serif}
 .photo-stage.showing-video .photo-vignette,.photo-stage.showing-video #photo-transition{display:none}@media(max-width:600px){.memory-video-actions{justify-content:center;text-align:center}.memory-video-actions span{width:100%}.memory-video-header{justify-content:center}#memory-video{min-height:160px}}
+
+/* Seamless native film layer: the same photo-stage, poem sidebar and dissolve treatment.
+   Videos retain their original audio; background music is ducked by tribute.js. */
+.memory-video-layer{
+ position:absolute;inset:0;z-index:2;opacity:0;visibility:hidden;
+ transition:opacity 1850ms cubic-bezier(.22,.7,.34,1),visibility 1850ms;
+ overflow:hidden;pointer-events:none;background:#07140e;
+}
+.memory-video-layer.is-active{opacity:1;visibility:visible}
+.memory-video-glow{
+ position:absolute;inset:-40px;
+ background:radial-gradient(ellipse at 48% 42%,rgba(69,123,83,.23),rgba(4,18,13,.94) 80%);
+ pointer-events:none;
+}
+.memory-video-layer .video-front{
+ position:absolute;inset:0;display:block;width:100%;height:100%;max-width:100%;
+ object-fit:contain;object-position:center;filter:drop-shadow(0 8px 24px rgba(1,8,5,.42));
+ background:transparent;
+}
+.photo-stage.has-poem .memory-video-layer .video-front{
+ width:calc(100% - var(--poem-panel-width) - var(--poem-safe-gap));
+ max-width:calc(100% - var(--poem-panel-width) - var(--poem-safe-gap));
+ left:clamp(10px,1.3vw,20px);right:auto;object-position:left center;
+}
+.video-unlock{
+ position:absolute;top:50%;left:50%;z-index:20;transform:translate(-50%,-50%);
+ padding:15px 24px;border:1px solid rgba(208,238,190,.7);
+ border-radius:50px;background:rgba(5,35,22,.95);color:#f4ffe8;
+ box-shadow:0 8px 25px rgba(0,0,0,.4);font:600 15px 'Segoe UI',sans-serif;
+ pointer-events:auto;cursor:pointer;
+}
+.video-unlock[hidden]{display:none!important}
+.photo-stage.has-poem .memory-video-layer .video-unlock{
+ left:calc((100% - var(--poem-panel-width) - var(--poem-safe-gap)) / 2);
+}
+@media(max-width:640px){
+ .video-unlock{max-width:85%;font-size:13px;padding:12px 16px}
+}
