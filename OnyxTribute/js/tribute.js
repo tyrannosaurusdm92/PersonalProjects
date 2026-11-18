@@ -4,6 +4,24 @@
 (function(){
 'use strict';
 const data=window.ONYX_DATA;
+if(new URLSearchParams(location.search).has('photoAudit')){
+ const n=Number(new URLSearchParams(location.search).get('photoAudit'))-1;
+ const group=data.assetGroups[n];
+ document.title='Onyx audit '+(n+1);
+ const styles=document.createElement('style');
+ styles.textContent='html,body{height:auto!important;overflow:auto!important;margin:0!important;background:#202020!important;color:white!important;font:15px Arial!important}main{display:none!important}body{display:block!important}#audit{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px}figure{background:#383838;margin:0;padding:5px;overflow:hidden}figure img{width:100%;height:230px;object-fit:contain;background:#111;display:block}figcaption{font-size:12px;line-height:1.3;overflow-wrap:anywhere;padding:5px}h1{font-size:24px;margin:12px 20px}';
+ document.head.append(styles);
+ const h=document.createElement('h1');h.textContent='FOLDER '+(n+1)+' — identify tabby cat lying in SHOWER';
+ document.body.append(h);
+ const grid=document.createElement('div');grid.id='audit';
+ for(let i=0;i<group.photos.length;i++){
+  const src=group.photos[i],figure=document.createElement('figure'),img=document.createElement('img'),name=document.createElement('figcaption');
+  img.src=src;img.loading='lazy';name.textContent=String(i+1).padStart(2,'0')+'  '+decodeURIComponent(src.split('/').pop());
+  figure.append(img,name);grid.append(figure);
+ }
+ document.body.append(grid);
+ return;
+}
 if(!data||!Array.isArray(data.assetGroups)||!data.assetGroups.length||!data.poems?.length)return;
 const $=id=>document.getElementById(id);
 const refs={
