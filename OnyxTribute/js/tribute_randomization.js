@@ -34,6 +34,11 @@
  *   window.OnyxBirdDice.beforeVideo(videoElement);
  *   // or: window.OnyxBirdDice.beforeVideo('unique-video-id');
  *
+ * Separate tribute-level dice are available via OnyxBirdDice.rollTributeChoices():
+ * folder d10 -> folder 01 on 1/6, 02 on 2/7, ..., 05 on 5/10;
+ * audio d4 -> odd Betty Noyes, even Broadway Theatre Players.
+ * Neither tribute roll is shared with any bird roll. A new viewing rolls again.
+ *
  * No interface or dice outcomes are displayed. debug defaults to false.
  */
 (function (root) {
@@ -221,7 +226,24 @@
     return String(name == null ? '' : name).toLowerCase().replace(/[^a-z]/g, '');
   }
 
+  // Independent tribute dice: these NEVER reuse the d4/d10 rolls for birds.
+  // One d10 chooses among exactly five Onyx_Photos folders (1/6 -> 01, etc.).
+  // One d4 chooses between the two Baby Mine recordings (odd Betty, even Broadway).
+  function rollTributeChoices() {
+    var folderRoll = rollDie(10);
+    var audioRoll = rollDie(4);
+    var folderNumber = ((folderRoll - 1) % 5) + 1;
+    return Object.freeze({
+      folderRoll: folderRoll,
+      folderNumber: folderNumber,
+      folderName: 'Onyx_Photos_' + String(folderNumber).padStart(2, '0'),
+      audioRoll: audioRoll,
+      audioArtistKey: audioRoll % 2 === 1 ? 'Betty_Noyes' : 'The_Broadway_Theatre_Players'
+    });
+  }
+
   var api = {
+    rollTributeChoices: rollTributeChoices,
     config: config,
     species: SPECIES,
     // Force a fresh secret roll directly BEFORE a new slideshow video.
